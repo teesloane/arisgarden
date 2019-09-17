@@ -1,0 +1,363 @@
+* DONE 5 ingredient granola bars
+CLOSED: [2019-09-01 Sun 13:41]
+:LOGBOOK:
+CLOCK: [2019-09-01 Sun 12:11]--[2019-09-01 Sun 12:36] =>  0:25
+CLOCK: [2019-09-01 Sun 11:46]--[2019-09-01 Sun 12:08] =>  0:22
+:END:
+:PROPERTIES:
+:original_recipe: https://minimalistbaker.com/healthy-5-ingredient-granola-bars/
+:slug: granola-bars
+:name: 5 Ingredient Granola Bars
+:day_made: [2019-09-01 Sun]
+:is_vegan: true
+:is_vegetarian: false
+:easy_of_making: 1
+:rating: 5
+:END:
+*** Ingredients
+| Ingredient                                       | Quantity | Unit |
+|--------------------------------------------------+----------+------|
+| Dates (Deglet noor or medjool)                   | 1        | cups |
+| Maple Syrup (or: agava nectar, honey)            | 1/4      | cups |
+| Natural Peanut Butter                            | 1/4      | cups |
+| Roasted, unsalted almonds                        | 1        | cups |
+| Rolled Oats                                      | 1+1/2    | cups |
+| Optional: Chocolate chips, dried fruit, nuts etc | -        | -    |
+| Parchment Paper                                  | -        | -    |
+| 8x8 Baking Pan                                   | -        | -    |
+*** Steps
+1) Chop almonds roughly. Put them in a bowl.
+2) Put oats in the bowl.
+3) Blend dates until dough-y. Put them in the bowl
+4) Put maple-syrup and peanut-butter into a sausapan and heat on low. Stir to combine.
+5) Pour mix into the bowl and stir to combine.
+6) Transfer to a baking dish (8 x 8) lined with parchment paper.
+* DONE 8 Minute Pantry Dahl
+CLOSED: [2019-09-01 Sun 15:24]
+:LOGBOOK:
+ CLOCK: [2019-09-01 Sun 12:50]--[2019-09-01 Sun 13:46] =>  0:56
+:END:
+:PROPERTIES:
+:original_recipe: https://ohsheglows.com/2017/07/21/8-minute-pantry-dal-two-ways/
+:slug: pantry-dahl
+:day_made: [2019-09-01 Sun]
+:name: Pantry Dahl
+:is_vegan:
+:is_vegetarian:
+:easy_of_making: 5
+:rating: 5
+:END:
+*** Ingredients
+| Ingredient                                      | Quantity | Unit  |
+|-------------------------------------------------+----------+-------|
+| Coconut Oil                                     |        1 | tbsp  |
+| Diced Veggies (Carrots, Potatoes, Broccoli etc) |        4 | cups  |
+| Uncooked Red Lentils                            |      1/2 | cups  |
+| Water                                           |     1/2+ | cups  |
+| Diced Tomato                                    |        1 | cups  |
+| Coconut Milk                                    |        1 | cups  |
+| Garlic Powder                                   |    1+1/2 | tbsp  |
+| Minced Onion                                    |    1+1/2 | tbsp  |
+| curry Powder                                    |        1 | tbsp  |
+| Sea salt                                        |        1 | tsp   |
+| Pepper                                          |        1 | pinch |
+| Rice or Grain for Base                          |        - | -     |
+*** Steps
+1) Melt coconut oil in a large pot
+2) peel (if necessary) and dice veggies into 1/2 inch pieces. Add to pot and stir.
+3) Add the rest of the ingredients.
+4) Bring to a boil and the reduce heat to medium.
+5) [t: 00:18:00] Cook for 18-30 minutes. Stir frequently.
+6) Serve over rice. Optional: Garnish with cilantro and lime.
+* DONE Easy Marinated Tofu
+CLOSED: [2019-09-02 Mon 13:49]
+:PROPERTIES:
+:original_recipe: https://simpleveganblog.com/easy-marinated-tofu/
+:day_made: [2019-09-02 Mon]
+:slug: marinated-tofu
+:is_vegan: true
+:is_vegetarian: true
+:easy_of_making: 5/5
+:rating: ?/5
+:END:
+:LOGBOOK:
+CLOCK: [2019-09-02 Mon 13:35]--[2019-09-02 Mon 13:49] =>  0:14
+:END:
+
+** Ingredients
+
+| Ingredient          | Quantity | Unit  |
+|---------------------+----------+-------|
+| Tofu                |        1 | brick |
+| Water               |      1/4 | cups  |
+| Soy Sauce           |        2 | tbsp  |
+| Maple syrup         |        1 | tbsp  |
+| Apple cider vinegar |        1 | tbsp  |
+| Garlic powder       |        1 | tsp   |
+|                     |          |       |
+|                     |          |       |
+|                     |          |       |
+** Steps
+1) Press the tofu for a while. Then dice/cube it.
+2) Mix the marinade ingredients in a bowl
+3) Put the tofu in the bowl and cover. Put it in the fridge for 15 min.
+4) Take the tofu out and pan fry until golden brown.
+* DONE Candied Ginger
+CLOSED: [2019-09-03 Tue 07:39]
+:LOGBOOK:
+CLOCK: [2019-09-02 Mon 14:04]--[2019-09-02 Mon 18:13] =>  4:19
+:END:
+:PROPERTIES:
+:original_recipe: https://www.davidlebovitz.com/candied-ginger/
+:day_made: [2019-09-02 Mon]
+:slug: candied-ginger
+:is_vegan: true
+:is_vegetarian: true
+:easy_of_making: 2/5
+:rating: 4/5
+:END:
+
+** Ingredients
+
+| Ingredient | Quantity | Unit  |
+|------------+----------+-------|
+| ginger     |        1 | lbs   |
+| sugar      |        4 | cups  |
+| water      |        4 | cups  |
+| salt       |        1 | pinch |
+
+** Steps
+
+1) Peel the ginger.
+2) Slice the ginger. Thin.
+3) Put ginger into a pot, cover with water. Bring water to a boil.
+4) [t: 00:10:00] Reduce heat and simmer for 10 minutes.
+5) Repeat the previous step.
+6) Mix the sugar, water, salt and ginger slices in the pot. Cook until the
+   temperature reaches 225ºF (106ºC). I don't have a thermometer. Some people
+   online report cooking for 50min - 1 hour. Other recipes say "Bring to a boil, reduce the heat to medium, and simmer uncovered for 35-40 minutes or until the temperature on a candy thermometer reads 225 degrees F."
+7) [t: 01:00:00] Remove from heat. Let stand for one hour.
+8) Drain the ginger through a colander, catch the syrup.
+9) Toss drained ginger in sugar.
+10) Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they’re somewhat dry.
+
+** Medias
+#+BEGIN_QUOTE
+- T: I hope I don't ruin your pan.
+- S: It's chemistry.
+#+END_QUOTE
+* DONE 1 Pot Chickpea Shakshuka
+CLOSED: [2019-09-03 Tue 21:30]
+:LOGBOOK:
+CLOCK: [2019-09-03 Tue 20:20]--[2019-09-03 Tue 21:15] =>  0:55
+:END:
+:PROPERTIES:
+:original_recipe: https://minimalistbaker.com/1-pot-chickpea-shakshuka/
+:day_made:
+:slug: shakshuka
+:is_vegan:
+:is_vegetarian:
+:easy_of_making: 5/5
+:rating: 4/5
+:END:
+*** Ingredients
+| Ingredient                | Quantity | Unit   |
+|---------------------------+----------+--------|
+| Olive Oil                 |        1 | tbsp   |
+| White onion (or: shallot) |     1/2/ | cups   |
+| Garlic                    |        3 | cloves |
+| Bell Pepper (chopped)     |     1/2/ | cups   |
+| Diced tomatoes            |       28 | oz     |
+| Tomato paste              |        3 | tbsp   |
+| Maple syrup               |        1 | tbsp   |
+| Ground cumin              |        1 | tsp    |
+| Paprika                   |        1 | tsp    |
+| Chili powder              |        2 | tsp    |
+| Ground cinnamon           |      1/4 | tsp    |
+| Chickpeas                 |       24 | oz     |
+*** Steps
+1) Heat a large metal or cast iron skilled on medium heat.
+2) [t: 00:04:00] When hot, add olive oil, onion, bell pepper and garlic. Saute for 4-5 minutes, stirring frequently.
+3) Add diced tomatoes, tomoato paste, maple syrup, sea salt, paprika, cumin, chili powser, cinnamon. Stir.
+4) [t: 00:03:00] Bring to a simmer. Cook for 2-3 minutes.
+5) [t: 00:15:00] Add chickpeas and olives. Reduce heaet to medium-low for 15-20 minutes.
+* DONE Lemony Collard Greens Pasta
+CLOSED: [2019-09-04 Wed 18:13]
+:LOGBOOK:
+CLOCK: [2019-09-04 Wed 18:15]--[2019-09-04 Wed 18:33] =>  0:18
+:END:
+:PROPERTIES:
+:original_recipe: https://cookieandkate.com/lemon-collard-greens-pasta/
+:day_made: [2019-09-04 Wed]
+:slug: collard-green-pasta
+:is_vegan: false
+:is_vegetarian: true
+:easy_of_making: 5/5
+:rating: 5/5
+:END:
+*** Ingredients
+| Ingredient                       | Quantity | Unit    |
+|----------------------------------+----------+---------|
+| Collard Greens (or: Swiss Chard) |       10 | leaves  |
+| Spaghetti                        |      1/3 | package |
+| Chopped Nuts                     |        3 | tbsp    |
+| Olive Oil                        |        1 | tbsp    |
+| Garlic                           |        2 | cloves  |
+| Red Pepper Flakes                |        1 | pinch   |
+| Parmesan Cheese                  |        1 | ounce   |
+| Lemon                            |        1 |         |
+*** Steps
+1) Bring a pot of salted water to boil. Cook the pasta.
+2) Drain the pasta, reserving a bit of cooking water. Set aside.
+3) Cut out the "rib" of the collard greens. Roll them up like a cigar. Slice across the role, as thinly as possible.
+4) Heat a skillet on medium heat. Toast the nuts until fragrant. Set aside.
+5) Using the same skillet, heat the olive oil. When hot, put in the garlic and red pepper flakes.
+6) After a bit, toss in the greens. Sprinkle with salt. Stit often, about three minutes.
+7) Scoop greens into pasta pot and toss with oil. Add pasta water if necessary.
+8) Divide onto plates, top with nuts and parmesan shavings. Add two big lemon
+   wedges per person.
+* DONE Protein Packed Buddha Bowl
+CLOSED: [2019-09-10 Tue 18:10]
+:LOGBOOK:
+:END:
+:PROPERTIES:
+:original_recipe: https://tasty.co/recipe/protein-packed-buddha-bowl
+:day_made: [2019-09-08]
+:slug: buddha-bowl
+:is_vegan: true
+:is_vegetarian: true
+:easy_of_making: 3/5
+:rating: 5/5
+:END:
+*** Ingredients
+| Ingredient       | Quantity | Unit |
+|------------------+----------+------|
+| Tofu             |        8 | oz   |
+| Sweet Potato     |        1 |      |
+| Onion            |        1 |      |
+| Garlic           |        2 |      |
+| Olive Oil        |        3 | tbsp |
+| Chickpeas        |        1 | cups |
+| Salt             |        1 | tsp  |
+| Pepper           |      1/2 | tsp  |
+| Chili powder     |        1 | tsp  |
+| Garlic powder    |        1 | tsp  |
+| Quinoa           |    1+1/2 | cups |
+| Shredded Carrots |      1/4 | cups |
+| Avacado          |        1 |      |
+| Lemon            |        1 |      |
+| Sesame Oil       |      1/2 | tsp  |
+| Hot Sauce        |        1 | tsp  |
+| Dried thyme      |        2 | tsp  |
+| Paprika          |        1 | tsp  |
+|                  |          |      |
+*** Steps
+1) Make the marinade: combine Olive oil, seasami oil, hot sauce, thyme, paprika,
+   and salt. Set aside.
+2) [t: 00:30:00] Add marinade and tofu to a container and marinate for 30 minutes, up to a day
+3) Preheat the oven to 400ºF (200ºC).
+4) [t: 00:20:00] Cut sweet potato into cubes. Slice the onion, dice garlic. Put it all on a
+   baking sheet. Drizzel with oil, season with salt and pepper. Bake for 20-25 min.
+5) In a medium bowl, add the chickpeas, salt, pepper, chili powder, and garlic
+   powder. Stir to combine.
+6) [t: 00:10:00] Transfer chickpeas to skilled and cook on medium heat for 10 minutes. Set aside.
+7) [t: 00:10:00] Fry the tofu in the same pan for about 10 minutes on each side.
+8) Slice tofu as you like.
+9) Combine with quinoa, greens, sweet potatoes, onions, chickpeas, carrots,
+   tofu, and avocado.
+* DONE Massaman Curry
+CLOSED: [2019-09-10 Tue 19:18]
+:LOGBOOK:
+CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
+:END:
+:PROPERTIES:
+:slug: massaman-curry
+:original_recipe: https://minimalistbaker.com/easy-1-pot-massaman-curry/
+:day_made: [2019-09-10]
+:is_vegan: true
+:is_vegetarian: true
+:easy_of_making: 5/5
+:rating: 5/5
+:END:
+*** Ingredients
+| Ingredient       | Quantity | Unit    |
+|------------------+----------+---------|
+| Tofu             |        1 | package |
+| Coconut oil      |        2 | tbsp    |
+| Cumin powder     |        1 | tsp     |
+| Coriander powder |        1 | tsp     |
+| Red Curry Paste  |        5 | tbsp    |
+| Baby potatoes    |    1+1/2 | cups    |
+| Carrots          |        2 |         |
+| Coconut milk     |       28 | oz      |
+| Water            |    1+1/2 | cups    |
+| Ground cinnamon  |      1/4 | tsp     |
+| Soy sauce        |        2 | tbsp    |
+| Maple syrup      |        2 | tbsp    |
+| Peanut butter    |        2 | tbsp    |
+| Lime juice       |        2 | tbsp    |
+*** Steps
+1) Press your tofu. You'll come back and cube it once pressed.
+2) Heat a large pot or dutch oven on medium heat. Once hot, add oil and shallot.
+3) [t: 00:02:00] Saute for 2 minutes. Stir frequently.
+4) [t: 00:02:00] Add cumin and coriander. Saute for 2 minutes, stirring frequently.
+5) [t: 00:01:00] Add red currey paste and stir for another minute.
+6) [t: 00:02:00] Add potatoes and carrots and stire to coat. Cook for 2 minutes.
+7) Add coconut milk, water, cinnamon, soysauce, maple syrup, and peanut butter.
+   Add your tofu or other protein now.
+8) [t: 00:10:00] Bring to a simmer and cook for 10-15 minutes uncovered. Don't
+   boil it. Simmer it.
+9) Near the end of the previous step, toss in your tofu and the lime. Cook for
+   another few minutes.
+10) [t: 00:05:00] Let stand for 10 minutes.
+11) Enjoy with a side of rice.
+* DONE Cauliflower Rice Stir Fry
+:LOGBOOK:
+:END:
+:PROPERTIES:
+:slug: cauliflower-rice-stir-fry
+:original_recipe: https://minimalistbaker.com/30-minute-cauliflower-rice-stir-fry/
+:day_made: [2019-09-12]
+:is_vegan: true
+:is_vegetarian: true
+:easy_of_making: 5/5
+:rating: 5/5
+:END:
+*** Ingredients
+| Ingredient                                | Quantity | Unit |
+|-------------------------------------------+----------+------|
+| Cauliflower                               |        1 | head |
+| Water (for cauliflower rice)              |        3 | tbsp |
+| Coconut oil                               |        2 | tbsp |
+| Peanut or Almond Butter                   |        2 | tbsp |
+| ginger                                    |        1 | tbsp  |
+| Maple syrup                               |        1 | tbsp |
+| Soy sauce (the sauce)                     |        4 | tbsp |
+| Soy sauce (the stir fry)                  |        3 | tbsp |
+| Lime juice                                |        2 | tbsp |
+| Chili garlic sauce or sriracha            |        3 | tsp  |
+| Garlic                                    |      2-4 | tbsp |
+| Water                                     |        - | tbsp |
+| Green beans (trimmed and halved)          |    1+1/2 | cups |
+| Cabbage (thinly sliced)                   |        1 | cups |
+| Green onions (diced)                      |        1 | cups |
+| Bell Pepper (thin slices, lengthwise)     |        1 | -    |
+| Cashews                                   |      3/4 | cups |
+| A Blender or a grater for the cauliflower |          |      |
+*** Steps
+1) Wash the cauliflower. Chop it in a blender until you have small chunks (that
+   look more like rice than cauliflower.)
+2) Create the sauce: add coconut oil, peanut butter, soy sauce lime juice, chili
+   garlic sauce, fresh ginger, maple syrup, and water into a small bowl. Whisk
+   to combine. Set aside.
+3) [t: 00:05:00] Heat a skillet over medium-low. Add cauliflower rice and water. Stir and
+   cover with a lid to steam. Cook for 4-6 minutes or until just tender. Remove
+   and let some steam out.
+4) [t: 00:04:00] Heat another skillet (or pot) on medium heat. When hot, add coconut oil and
+   green beans. Season with 1/3 of the soy sauce used for the stirfry (1tbsp).
+   Cover with lid and steam for about 4 minutes.
+5) [t: 00:03:00] Add bell peppers, green onion, cabbage, and remaining soy sauce (2tbsp).
+   Stir. Saute for 3-4 minutes.
+6) Add cashes and cauliflower rice and stire to combine.
+7) [t: 00:03:00] Add the sauce to the beans. Increase heat to medium-high. Cook for about
+   3 minutes until hot.
