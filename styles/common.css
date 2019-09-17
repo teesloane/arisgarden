@@ -1,0 +1,60 @@
+/* Common ---------------------------------------------------------------------*/
+
+.content {
+  max-width: 868px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.link-light {
+  color: white;
+  padding-bottom: 1px;
+  border-bottom: 1px dotted orange;
+}
+
+
+/* Image Hero */
+.v_Hero {
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Giant Quote */
+.v_GiantQuote {
+  display: flex;
+  padding: 100px 0;
+  margin: 100px 0;
+}
+
+.v_giantQuoteText {
+  font-size: 100px;
+  line-height: 90%;
+  text-align: right;
+  font-weight: bold;
+  padding: 24px 48px;
+  border-right: 3px dotted orchid;
+}
+
+.v_giantQuoteSym {
+  font-size: 300px;
+  padding: 32px;
+  align-self: center;
+}
+
+.v_LargeText {
+  text-transform: uppercase;
+  /* padding: 0 0 48px 0px; */
+		padding: 16px;
+		margin: 0 0 32px 0;
+		font-style: oblique;
+		background: #222;
+		letter-spacing: 8px;
+  font-size: 32px;
+  text-align: center;
+}

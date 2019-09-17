@@ -1,0 +1,229 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,  ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		/* vertical-align: baseline; */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+		display: block;
+}
+body {
+		line-height: 1;
+}
+ol, ul {
+		list-style: none;
+		/* margin-left: 16px; */
+}
+blockquote, q {
+		quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+		content: '';
+		content: none;
+}
+table {
+		border-collapse: collapse;
+		border-spacing: 0;
+}
+
+/* Defaults -------------------------------------------------------------------*/
+
+body, html {
+		padding: 0;
+		margin: 0;
+		font-family: Arial, Sans-serif;
+		font-weight: 400;
+		min-height: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		/* overflow-y: scroll; */
+		overflow-x: hidden;
+}
+
+th, td {
+		text-align: left;
+		padding: 8px;
+}
+
+
+
+
+a {
+		color: #fefefe;
+		border-bottom: 1px solid dotted;
+		text-decoration: none;
+}
+
+hr {
+		border: none;
+		width: 100%;
+		height: 2px;
+		width: 100%;
+		background-color: white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+		margin: 0;
+}
+
+
+/* Recipe ---------------------------------------------------------------------*/
+
+.bigTitle {
+		text-transform: uppercase;
+		padding: 8px;
+		font-size: 52px;
+		display: inline-flex;
+		text-align: center;
+}
+
+.recipeProperties {
+		background: #333;
+		color: white;
+		padding: 64px 0;
+		display: flex;
+		justify-content: center;
+}
+
+
+.recipeIngredients_th {
+		color: white;
+}
+
+.recipeMetaData {
+		display: flex;
+		justify-content: space-around;
+		padding: 0;
+}
+
+.recipeMetaDatum {
+		color: white;
+		display: flex;
+		font-style: oblique;
+}
+
+
+.recipeMeta {
+
+}
+
+.recipeIngredients-Instructions {
+		display: flex;
+		align-items: center;
+		height: 500px;
+		max-width: 1024px;
+		margin: 0 auto;
+		justify-content: center;
+}
+
+/* Instructions */
+
+.recipeInstructions {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		height: 100%;
+		margin-left: 8px;
+		list-style-type: none;
+}
+
+.recipeInstructionsHeading {
+		color: #555;
+}
+
+.recipeInstructionsHeading:before {
+		content: "• Steps •";
+}
+
+/* --- Ingredients --- */
+
+.recipeIngredientsHeading {
+		color: #555;
+}
+
+.recipeIngredientsHeading:before {
+		content: "• INGREDIENTS •";
+		color: lightseagreen;
+}
+
+.recipeIngredients {
+		flex: 1;
+		height: 100%;
+		color: white;
+		margin-right: 8px;
+}
+
+
+.recipeIngredientHeadRow {
+		color: white;
+		background: lightseagreen;
+		border-bottom: 2px solid white;
+}
+
+.recipeIngredient {
+		color: white;
+		background: lightseagreen;
+		padding: 12px;
+}
+
+.recipeIngredient:nth-child(odd) {
+		background: #21a9a1;
+}
+
+.split-h1 {
+		position: relative;
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: -48px;
+		margin-bottom: 28px;
+		color: lightorange;
+
+}
+
+.split-h1:before {
+		height: 46%;
+		text-transform: uppercase;
+		position: absolute;
+		overflow: hidden;
+		color: #333;
+}
+
+
+/* --- Steps --- */
+
+.recipeStep {
+		cursor: pointer;
+		background: white;
+		border-radius: 2px;
+		border: 1px solid gainsboro;
+		padding: 20px 8px;
+		margin: 4px 0;
+		border-left: 2px solid #999;
+}
+
+.recipeStep--active {
+		border-left: 2px solid lightcoral;
+}
+
+
