@@ -24,3 +24,10 @@ function v_GiantQuote(t) {
     ])
   );
 }
+
+
+function v_Timer(timer, state) {
+  return h(
+    "div", {class: "timer"}, "Timer"
+  )
+}

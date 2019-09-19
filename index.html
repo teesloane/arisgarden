@@ -6,6 +6,7 @@
   </head>
   <body>
 				<script src="scripts/common.js" type="text/javascript"> </script>
+				<script src="scripts/util.js" type="text/javascript"> </script>
 				<script src="scripts/recipes.js" type="text/javascript"> </script>
 				<script src="scripts/hyperapp.js" type="text/javascript"> </script>
 				<script src="scripts/db.js" type="text/javascript"> </script>
@@ -17,13 +18,18 @@
 						window.app = app
 
 						var initState = {
-								currentRecipe: db.recipes["granola-bars"],
+								currentRecipe: db.recipes["pantry-dahl"],
 								currentRecipeStep: 0,
 								timer: null,
+								timerRunning: false,
 						}
 
 						const actions = {
 								updateCurrentRecipeStep: (s, i) => ({...s, currentRecipeStep: i}),
+
+								setTimer: (s, t) => ({...s, timer: t, timerRunning: true}),
+
+								countDown: (s, t) => ({...s, timer: s.timer - 1})
 						}
 
       app({
@@ -32,7 +38,10 @@
           h("main", {}, [
 												recipeView(state),
           ]),
-        node: document.getElementById("app")
+        node: document.getElementById("app"),
+								subscriptions: state => [
+										state.timerRunning && interval(actions.countDown, {delay: 1000})
+								]
       })
     </script>
 

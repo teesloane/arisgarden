@@ -15,6 +15,15 @@
   border-bottom: 1px dotted orange;
 }
 
+.flex {
+		display: flex;
+}
+
+.justify-between {
+		justify-content: space-between;
+}
+
+/* View Functions */
 
 /* Image Hero */
 .v_Hero {

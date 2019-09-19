@@ -21,9 +21,7 @@ function recipeView(state) {
 						recipeViewIngredients(state),
 						recipeViewInstructions(state)
 				])
-
 		])
-
 }
 
 // Views -----------------------------------------------------------------------
@@ -39,7 +37,7 @@ function recipeViewMetaData(state) {
 				is_vegan,
 				is_vegetarian,
 				rating
-		} = state.currentRecipe.meta.properties; // FIXME
+		} = state.currentRecipe.meta.properties;
 
 
 		let mealType = () => {
@@ -67,7 +65,7 @@ function recipeViewMetaData(state) {
 
 
 function recipeViewIngredients(state) {
-		let ingredients = state.currentRecipe.ingredients; // FIXME
+		let ingredients = state.currentRecipe.ingredients;
 		let renderTableHeadings = () => ingredients.keys.map(e => h("th", {}, e))
 		let renderTableCells = () => ingredients.data.map(e => {
 				return (
@@ -88,13 +86,27 @@ function recipeViewIngredients(state) {
 }
 
 function recipeViewInstructions(state) {
-		let steps = state.currentRecipe.instructions; // FIXME
+		let steps = state.currentRecipe.instructions;
+		console.log("state is", state);
 
 		return h("div", {class: "recipeInstructions"}, [
 				steps.map((s, index) => {
 						let stepClass = index == state.currentRecipeStep ? "recipeStep recipeStep--active" : "recipeStep"
-						return h("li", {class: stepClass, onClick: [actions.updateCurrentRecipeStep, index]}, [
-								h("div", {}, s.f)
+						let renderTimer = () => {
+								if (s.timer) {
+										if (state.timerRunning == false) {
+											return h("div", {onClick: [actions.setTimer, timeStringtoSeconds(s.timer) ]}, h("img", {src: "media/icons/watch.svg"}))
+										} else if (state.timerRunning) {
+											return h("div", {}, `Time Remaining: ${state.timer}`)
+										}
+								}
+						}
+
+						return h("li", {class: stepClass, onClick: [actions.updateCurrentRecipeStep, index] }, [
+								h("div", {class: "flex justify-between"}, [
+										h("div", {}, s.f),
+										renderTimer()
+								])
 						])
 				})
 		])

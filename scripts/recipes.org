@@ -361,3 +361,47 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 6) Add cashes and cauliflower rice and stire to combine.
 7) [t: 00:03:00] Add the sauce to the beans. Increase heat to medium-high. Cook for about
    3 minutes until hot.
+* DONE Spicy Kale and Coconut Fried Rice
+:LOGBOOK:
+:END:
+:PROPERTIES:
+:slug: kale-coconut-rice
+:original_recipe: https://cookieandkate.com/spicy-kale-and-coconut-fried-rice/
+:time: 00:40:00
+:day_made: [2019-09-17]
+:is_vegan: false
+:is_vegetarian: true
+:easy_of_making: 4
+:rating: 5
+:END:
+*** Ingredients
+| Ingredient                                        | Quantity | Unit  |
+|---------------------------------------------------+----------+-------|
+| coconut oil                                       |        2 | tbsp  |
+| eggs                                              |        2 | -     |
+| garlic (minced)                                   |        2 |       |
+| green onions (chopped)                            |        1 | bunch |
+| Chopped vegetables (peppers, brussel sprouts etc) |        1 | cups  |
+| Kale (ribs removed, chopped)                      |        1 | bunch |
+| Sea salt                                          |      1/4 | tsp   |
+| unsweetened coconut flakes or shreds              |      3/4 | cups  |
+| Rice (uncooked)                                   |        1 | cup   |
+| Soy sauce                                         |        2 | tsp   |
+| Sriracha                                          |        2 | tsp   |
+| Lime (halved)                                     |        1 |       |
+| Cilantro                                          |          |       |
+*** Steps
+1) Cook the rice and set it aside to cool.
+2) Heat a large skillet on medium high heat. Add 1 teaspoon of coconut oil.
+3) Add eggs and stir frequently so they are sort of scrambled. Transfer to bowl
+   when done and wipe the pan clean.
+4) Add a tablespoon of coconut oil to pan. Add garlic, green onions and
+   vegetables. Cook until fragrant (30 seconds).  Add the kale and salt . Cook
+   until wilted, about 1-2 minutes. Transfer to bowl with eggs.
+5) Add 2 more tablespoons of coconut oil to the pan AGAIN. Add the coconut
+   flakes, stir frequently until golden. Add the cooked rice and stir
+   occaisionally until hot, about 3 minutes
+6) Pour the contents of the bowl back into the pan, breaking up the scrambled
+   egg with a spatula.
+7) Add tamari, Sriracha, and half of the lime juice. Stir.
+8)

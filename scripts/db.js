@@ -96,10 +96,11 @@ var db = {
           "original_recipe": "https://ohsheglows.com/2017/07/21/8-minute-pantry-dal-two-ways/",
           "slug": "pantry-dahl",
           "day_made": "[2019-09-01 Sun]",
+          "name": "Pantry Dahl",
           "is_vegan": "",
           "is_vegetarian": "",
-          "easy_of_making": "5/5",
-          "rating": "5/5"
+          "easy_of_making": "5",
+          "rating": "5"
         },
         "logbook": []
       },
@@ -190,8 +191,9 @@ var db = {
           "f": "Bring to a boil and the reduce heat to medium."
         },
         {
-          "o": "[TIMER-18-m] Cook for 18-30 minutes. Stir frequently.",
-          "f": "<final string>"
+          "o": "[t: 00:18:00] Cook for 18-30 minutes. Stir frequently.",
+          "f": "Cook for 18-30 minutes. Stir frequently.",
+          "timer": "00:18:00"
         },
         {
           "o": "Serve over rice. Optional: Garnish with cilantro and lime.",
