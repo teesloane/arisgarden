@@ -217,13 +217,23 @@ h1,h2,h3,h4,h5,h6 {
 		background: white;
 		border-radius: 2px;
 		border: 1px solid gainsboro;
-		padding: 20px 8px;
-		margin: 4px 0;
+		padding: 4px 12px;
+		margin-bottom: 8px;
 		border-left: 2px solid #999;
+		min-height: 12px;
+		display: flex;
+		align-items: center;
+		flex: 1;
+
 }
 
 .recipeStep--active {
 		border-left: 2px solid lightcoral;
 }
 
-
+.recipeStep_Text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+}

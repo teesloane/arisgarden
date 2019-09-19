@@ -20,23 +20,24 @@
 						var initState = {
 								currentRecipe: db.recipes["pantry-dahl"],
 								currentRecipeStep: 0,
+								currentRecipeStepText: "",
 								timer: null,
 								timerRunning: false,
 						}
 
 						const actions = {
 								updateCurrentRecipeStep: (s, i) => ({...s, currentRecipeStep: i}),
-
-								setTimer: (s, t) => ({...s, timer: t, timerRunning: true}),
-
-								countDown: (s, t) => ({...s, timer: s.timer - 1})
+								setTimer:                (s, p) => ({...s, timer: p.time, timerRunning: true, currentRecipeStepText: p.step}),
+								cancelTimer:             (s)    => ({...s, timer: null, timerRunning: false}),
+								countDown:               (s, t) => ({...s, timer: s.timer - 1})
 						}
 
       app({
         init: initState,
         view: state =>
-          h("main", {}, [
+          h("main", {style: {marginBottom: "128px"}}, [
 												recipeView(state),
+												v_Timer(state)
           ]),
         node: document.getElementById("app"),
 								subscriptions: state => [

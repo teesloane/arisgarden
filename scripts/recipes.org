@@ -116,7 +116,6 @@ CLOCK: [2019-09-02 Mon 14:04]--[2019-09-02 Mon 18:13] =>  4:19
 :easy_of_making: 2/5
 :rating: 4/5
 :END:
-
 ** Ingredients
 
 | Ingredient | Quantity | Unit  |
@@ -125,7 +124,6 @@ CLOCK: [2019-09-02 Mon 14:04]--[2019-09-02 Mon 18:13] =>  4:19
 | sugar      |        4 | cups  |
 | water      |        4 | cups  |
 | salt       |        1 | pinch |
-
 ** Steps
 
 1) Peel the ginger.
@@ -140,7 +138,6 @@ CLOCK: [2019-09-02 Mon 14:04]--[2019-09-02 Mon 18:13] =>  4:19
 8) Drain the ginger through a colander, catch the syrup.
 9) Toss drained ginger in sugar.
 10) Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they’re somewhat dry.
-
 ** Medias
 #+BEGIN_QUOTE
 - T: I hope I don't ruin your pan.
