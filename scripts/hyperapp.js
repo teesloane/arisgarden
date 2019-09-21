@@ -48,7 +48,7 @@ var hyperapp = (function(e) {
             "-" === f[0] ? e[n].setProperty(f, r) : (e[n][f] = r);
       else
         "o" === n[0] && "n" === n[1]
-          ? ((e.actions || (e.actions = {}))[
+          ? ((e.$act || (e.$act = {}))[
               (n = n.slice(2).toLowerCase())
             ] = t)
             ? r || e.addEventListener(n, o)
@@ -168,7 +168,7 @@ var hyperapp = (function(e) {
         a = e.subscriptions,
         s = [],
         d = function(e) {
-          y(this.actions[e.type], e);
+          y(this.$act[e.type], e);
         },
         p = function(e) {
           return (
@@ -243,6 +243,10 @@ var hyperapp = (function(e) {
 })({});
 //# sourceMappingURL=hyperapp.js.map
 
+//
+// TIME STUFF / MIDDLEWARE THINGS
+//
+
 var timeFx = function(fx) {
   return function(action, props) {
     return [fx, { action: action, delay: props.delay }];
@@ -263,3 +267,4 @@ var interval = timeFx(function interval(dispatch, props) {
     clearInterval(id);
   };
 });
+

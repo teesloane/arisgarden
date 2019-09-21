@@ -12,113 +12,105 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-		margin: 0;
-		padding: 0;
-		border: 0;
-		font-size: 100%;
-		font: inherit;
-		/* vertical-align: baseline; */
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	/* vertical-align: baseline; */
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-		display: block;
+	display: block;
 }
 body {
-		line-height: 1;
+	line-height: 1;
 }
 ol, ul {
-		list-style: none;
-		/* margin-left: 16px; */
+	list-style: none;
+	/* margin-left: 16px; */
 }
 blockquote, q {
-		quotes: none;
+	quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-		content: '';
-		content: none;
+	content: '';
+	content: none;
 }
 table {
-		border-collapse: collapse;
-		border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* Defaults -------------------------------------------------------------------*/
 
 body, html {
-		padding: 0;
-		margin: 0;
-		font-family: Arial, Sans-serif;
-		font-weight: 400;
-		min-height: 100%;
-		height: 100%;
-		display: flex;
-		flex-direction: column;
-		/* overflow-y: scroll; */
-		overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Sans-serif;
+	font-weight: 400;
+	min-height: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	/* overflow-y: scroll; */
+	overflow-x: hidden;
 }
 
 th, td {
-		text-align: left;
-		padding: 8px;
+	text-align: left;
+	padding: 8px;
 }
 
 
 
 
 a {
-		color: #fefefe;
-		border-bottom: 1px solid dotted;
-		text-decoration: none;
+	/* color: #fefefe; */
+	border-bottom: 1px solid dotted;
+	text-decoration: none;
 }
 
 hr {
-		border: none;
-		width: 100%;
-		height: 2px;
-		width: 100%;
-		background-color: white;
+	border: none;
+	width: 100%;
+	height: 2px;
+	width: 100%;
+	background-color: white;
 }
 
 h1,h2,h3,h4,h5,h6 {
-		margin: 0;
+	margin: 0;
 }
 
 
-/* Recipe ---------------------------------------------------------------------*/
-
-.bigTitle {
-		text-transform: uppercase;
-		padding: 8px;
-		font-size: 52px;
-		display: inline-flex;
-		text-align: center;
-}
+/* RecipeSingle View---------------------------------------------------------------------*/
 
 .recipeProperties {
-		background: #333;
-		color: white;
-		padding: 64px 0;
-		display: flex;
-		justify-content: center;
+	background: #333;
+	color: white;
+	padding: 64px 0;
+	display: flex;
+	justify-content: center;
 }
 
 
 .recipeIngredients_th {
-		color: white;
+	color: white;
 }
 
 .recipeMetaData {
-		display: flex;
-		justify-content: space-around;
-		padding: 0;
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
 }
 
 .recipeMetaDatum {
-		color: white;
-		display: flex;
-		font-style: oblique;
+	color: white;
+	display: flex;
+	font-style: oblique;
 }
 
 
@@ -127,108 +119,108 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .recipeIngredients-Instructions {
-		display: flex;
-		align-items: center;
-		height: 500px;
-		max-width: 1024px;
-		margin: 0 auto;
-		justify-content: center;
+	display: flex;
+	align-items: center;
+	height: 500px;
+	max-width: 1024px;
+	margin: 0 auto;
+	justify-content: center;
 }
 
 /* Instructions */
 
 .recipeInstructions {
-		display: flex;
-		flex-direction: column;
-		flex: 1;
-		height: 100%;
-		margin-left: 8px;
-		list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	height: 100%;
+	margin-left: 8px;
+	list-style-type: none;
 }
 
 .recipeInstructionsHeading {
-		color: #555;
+	color: #555;
 }
 
 .recipeInstructionsHeading:before {
-		content: "• Steps •";
+	content: "• Steps •";
 }
 
 /* --- Ingredients --- */
 
 .recipeIngredientsHeading {
-		color: #555;
+	color: #555;
 }
 
 .recipeIngredientsHeading:before {
-		content: "• INGREDIENTS •";
-		color: lightseagreen;
+	content: "• INGREDIENTS •";
+	color: lightseagreen;
 }
 
 .recipeIngredients {
-		flex: 1;
-		height: 100%;
-		color: white;
-		margin-right: 8px;
+	flex: 1;
+	height: 100%;
+	color: white;
+	margin-right: 8px;
 }
 
 
 .recipeIngredientHeadRow {
-		color: white;
-		background: lightseagreen;
-		border-bottom: 2px solid white;
+	color: white;
+	background: lightseagreen;
+	border-bottom: 2px solid white;
 }
 
 .recipeIngredient {
-		color: white;
-		background: lightseagreen;
-		padding: 12px;
+	color: white;
+	background: lightseagreen;
+	padding: 12px;
 }
 
 .recipeIngredient:nth-child(odd) {
-		background: #21a9a1;
+	background: #21a9a1;
 }
 
 .split-h1 {
-		position: relative;
-		text-transform: uppercase;
-		font-size: 20px;
-		font-weight: bold;
-		text-align: center;
-		margin-top: -48px;
-		margin-bottom: 28px;
-		color: lightorange;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: -48px;
+	margin-bottom: 28px;
+	color: lightorange;
 
 }
 
 .split-h1:before {
-		height: 46%;
-		text-transform: uppercase;
-		position: absolute;
-		overflow: hidden;
-		color: #333;
+	height: 46%;
+	text-transform: uppercase;
+	position: absolute;
+	overflow: hidden;
+	color: #333;
 }
 
 
 /* --- Steps --- */
 
 .recipeStep {
-		cursor: pointer;
-		background: white;
-		border-radius: 2px;
-		border: 1px solid gainsboro;
-		padding: 4px 16px;
-		margin-bottom: 8px;
-		border-left: 2px solid #999;
-		min-height: 12px;
-		display: flex;
-		align-items: center;
-		flex: 1;
+	cursor: pointer;
+	background: white;
+	border-radius: 2px;
+	border: 1px solid gainsboro;
+	padding: 4px 16px;
+	margin-bottom: 8px;
+	border-left: 2px solid #999;
+	min-height: 12px;
+	display: flex;
+	align-items: center;
+	flex: 1;
 
 }
 
 .recipeStep--active {
-		border-left: 2px solid lightcoral;
+	border-left: 2px solid lightcoral;
 }
 
 .recipeStep_Text {
@@ -236,4 +228,10 @@ h1,h2,h3,h4,h5,h6 {
 	justify-content: space-between;
 	align-items: center;
 	flex: 1;
+}
+
+/* RecipeList View---------------------------------------------------------------------*/
+.recipeList {
+	display: flex;
+	flex-direction: column;
 }

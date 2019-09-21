@@ -174,7 +174,7 @@ function getLogbook(h) {
  ':day_made: [2019-09-01 Sun]\n' +
  ':is_vegan:\n' +
  ':is_vegetarian:\n' +
- ':easy_of_making: 5/5\n' +
+ ':ease_of_making: 5/5\n' +
  ':rating: 5/5',
 */
 function parseProperties(p) {

@@ -42,7 +42,7 @@ function v_Timer(state) {
   let v_CloseBtn = () =>
     h(
       "span",
-      { class: "v_TimerFixed_closeBtn", onClick: [actions.cancelTimer] },
+      { class: "v_TimerFixed_closeBtn", onClick: [$act.cancelTimer] },
       v_Icon("x-circle-wh.svg")
     );
 
