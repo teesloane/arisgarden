@@ -23,8 +23,8 @@ var Recipe = {
   },
 
   viewAll(state) {
-    return h("section", { class: "recipeList" }, [
-      h("ul", {}, [
+    return h("section", { class: "content"}, [
+      h("ul", { class: "recipeList"}, [
         Object.keys(db.recipes).map(k => {
           let r = db.recipes[k]
           let p = this.getProps(r)
