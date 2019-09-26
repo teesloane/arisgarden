@@ -20,7 +20,20 @@ const $act = {
 
   setId: (s, p) => ({ ...s, currentId: p }),
 
+  setRoutePath: (a, s) => {
+    let {event, state} = s;
+    let hash = location.hash;
+    let newRoute = typeof(routes[hash]) == "undefined" ? routes["404"] : routes[hash]
+
+    // TODO: parse the route and build a slug fetcher from it.
+
+    let newState = ({...state, route: hash, currentRoute: newRoute})
+    return (newState)
+  },
+
   cancelTimer: s => ({ ...s, timer: null, timerRunning: false }),
+
+  setRoute: (s, p) => ({...s, route: p}),
 
   countDown: (s, t) => {
     if (s.timer == 0) {
@@ -36,12 +49,15 @@ var initState = {
   currentId: null,
   currentRecipeStep: 0,
   currentRecipeStepText: "",
+  currentRoute: () => h("div", {}, "loading state"),
   timer: null,
   timerRunning: false,
-  route: undefined
+  route: "/"
 };
 
 
 var subscriptions = (state) => [
-  state.timerRunning && interval($act.countDown, { delay: 1000 })
+  state.timerRunning && interval($act.countDown, { delay: 1000 }),
+  true && handleRouter($act.setRoutePath, state)
 ]
+

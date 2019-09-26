@@ -13,21 +13,22 @@ var Recipe = {
   viewSingle(state) {
     return h("section", {}, [
       v_Hero("media/002.jpg"),
-      this.viewMetaData(state),
+      Recipe.viewMetaData(state),
       v_GiantQuote("...I've made a tornado of dates."),
       h("div", { class: "recipeIngredients-Instructions" }, [
-        this.viewIngredients(state),
-        this.viewInstructions(state)
+        Recipe.viewIngredients(state),
+        Recipe.viewInstructions(state)
       ])
     ]);
   },
 
   viewAll(state) {
+    console.log("state in recipe view all is ", state);
     return h("section", { class: "content"}, [
       h("ul", { class: "recipeList"}, [
         Object.keys(db.recipes).map(k => {
           let r = db.recipes[k]
-          let p = this.getProps(r)
+          let p = Recipe.getProps(r)
           return h("li", { class: "" }, [
             h("a", {}, p.name)
           ])

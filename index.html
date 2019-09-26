@@ -34,9 +34,7 @@
         init: initState,
         view: state =>
           h("main", { style: { marginBottom: "128px" } }, [
-            Recipe.viewAll(state),
-            /* viewHome(state), */
-            /* Router.handler(state), */
+            state.currentRoute(state),
             v_Timer(state)
           ]),
 

@@ -1276,6 +1276,110 @@ var db = {
           "f": "Add the potatoes and broccoli as a side or mixed with the salad."
         }
       ]
+    },
+    "sweet-potato-gnocci": {
+      "meta": {
+        "properties": {
+          "slug": "sweet-potato-gnocci",
+          "original_recipe": "https://biancazapatka.com/en/vegan-sweet-potato-gnocchi/",
+          "time": "00:40:00",
+          "day_made": "[2019-09-22]",
+          "is_vegan": "false",
+          "is_vegetarian": "true",
+          "name": "Sweet Potato Gnocchi",
+          "ease_of_making": "-/5",
+          "rating": "_/5"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit"
+        ],
+        "data": [
+          {
+            "Ingredient": "Sweet Potato (large / 600g)",
+            "Quantity": "1",
+            "Unit": "--"
+          },
+          {
+            "Ingredient": "Nutritional Yeast or Parmesan (optional)",
+            "Quantity": "2-3",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Flour",
+            "Quantity": "1+1/3 (or is it 3/4 cups?)",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Salt",
+            "Quantity": "1/2",
+            "Unit": "tsp"
+          },
+          {
+            "Ingredient": "Vegan butter or coconut oil",
+            "Quantity": "2",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Garlic",
+            "Quantity": "3",
+            "Unit": "--"
+          },
+          {
+            "Ingredient": "Optional Nuts (pine or pecan, or whatever)",
+            "Quantity": "4",
+            "Unit": "tbsp"
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "[t: 00:50:00] Prick the sweet potato several times with a fork. Put it in the oven for 50-60 minutes at about 425 degrees.",
+          "f": "Prick the sweet potato several times with a fork. Put it in the oven for 50-60 minutes at about 425 degrees.",
+          "timer": "00:50:00"
+        },
+        {
+          "o": "Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add salt. Add nutritional yeast if you want. Add the flour and knead gently. Don't over knead. Try to use as little flour as possible.",
+          "f": "Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add salt. Add nutritional yeast if you want. Add the flour and knead gently. Don't over knead. Try to use as little flour as possible."
+        },
+        {
+          "o": "Transfer the dough to a floured work surface. Form it in a flat ball and cut into quarters. Take a piece and form a long rope, rolling it into a long rope. Cut the rope into 2cm pieces.",
+          "f": "Transfer the dough to a floured work surface. Form it in a flat ball and cut into quarters. Take a piece and form a long rope, rolling it into a long rope. Cut the rope into 2cm pieces."
+        },
+        {
+          "o": "Create gnocchi \"ridges\" into the sweet potato pieces by rolling it along the tines of a fork (from the tip backward).",
+          "f": "Create gnocchi \"ridges\" into the sweet potato pieces by rolling it along the tines of a fork (from the tip backward)."
+        },
+        {
+          "o": "Bring a pot of salted water to a boil. Add the gnocchi, cook until they float to the top of the water. Drain. Optional: toss with a little olive oil to prevent sticking.",
+          "f": "Bring a pot of salted water to a boil. Add the gnocchi, cook until they float to the top of the water. Drain. Optional: toss with a little olive oil to prevent sticking."
+        },
+        {
+          "o": "If you have more gnocchi than you need, now is the time to freeze the abundance.",
+          "f": "If you have more gnocchi than you need, now is the time to freeze the abundance."
+        },
+        {
+          "o": "[t: 00:15:00] Put tomatoes onto a baking sheet with cloves of garlic. Drizzle  with olive oil. Season with salt and pepper. Roast in the oven at 400 for 15 minutes.",
+          "f": "Put tomatoes onto a baking sheet with cloves of garlic. Drizzle  with olive oil. Season with salt and pepper. Roast in the oven at 400 for 15 minutes.",
+          "timer": "00:15:00"
+        },
+        {
+          "o": "Toast nuts in a small pan with additional oil. Set aside.",
+          "f": "Toast nuts in a small pan with additional oil. Set aside."
+        },
+        {
+          "o": "Heat butter or coconut oil on medium. Add the gnocchi and roast until golden-brown and crispy.",
+          "f": "Heat butter or coconut oil on medium. Add the gnocchi and roast until golden-brown and crispy."
+        },
+        {
+          "o": "Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs if you like.",
+          "f": "Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs if you like."
+        }
+      ]
     }
   }
 }
