@@ -121,7 +121,8 @@ h1,h2,h3,h4,h5,h6 {
 .recipeIngredients-Instructions {
 	display: flex;
 	align-items: center;
-	height: 500px;
+	/* height: 500px; */
+	max-height: 550px;
 	max-width: 1024px;
 	margin: 0 auto;
 	justify-content: center;
@@ -131,6 +132,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .recipeInstructions {
 	display: flex;
+	align-self: flex-start;
 	flex-direction: column;
 	flex: 1;
 	height: 100%;
@@ -162,6 +164,7 @@ h1,h2,h3,h4,h5,h6 {
 	height: 100%;
 	color: white;
 	margin-right: 8px;
+	align-self: flex-start;
 }
 
 
@@ -181,27 +184,6 @@ h1,h2,h3,h4,h5,h6 {
 	background: #21a9a1;
 }
 
-.split-h1 {
-	position: relative;
-	text-transform: uppercase;
-	font-size: 20px;
-	font-weight: bold;
-	text-align: center;
-	margin-top: -48px;
-	margin-bottom: 28px;
-	color: lightorange;
-
-}
-
-.split-h1:before {
-	height: 46%;
-	text-transform: uppercase;
-	position: absolute;
-	overflow: hidden;
-	color: #333;
-}
-
-
 /* --- Steps --- */
 
 .recipeStep {
@@ -209,7 +191,10 @@ h1,h2,h3,h4,h5,h6 {
 	background: white;
 	border-radius: 2px;
 	border: 1px solid gainsboro;
-	padding: 4px 16px;
+	padding: 20px;
+	color: #222;
+	line-height: 20px;
+	font-size: 14px;
 	margin-bottom: 8px;
 	border-left: 2px solid #999;
 	min-height: 12px;

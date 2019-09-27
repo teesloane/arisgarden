@@ -32,8 +32,10 @@ function Recipe() {
         Object.keys(db.recipes).map(k => {
           let r = db.recipes[k]
           let p = r.meta.properties;
+          let link = "#/recipes/" + p.slug;
+          // let link =
           return h("li", { class: "" }, [
-            h("a", {}, p.name)
+            h("a", {href: link}, p.name)
           ])
         })
       ])
@@ -75,7 +77,6 @@ function Recipe() {
       });
 
     return h("div", { class: "recipeIngredients" }, [
-      h("h1", { class: "recipeIngredientHeading split-h1" }, "Inredients"),
       h("table", { style: { width: "100%", height: "100%" } }, [
         h("tr", { class: "recipeIngredientHeadRow" }, renderTableHeadings()),
         renderTableCells()
