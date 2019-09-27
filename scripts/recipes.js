@@ -3,48 +3,56 @@
  */
 
 
-// Views -----------------------------------------------------------------------
 
-var Recipe = {
-  getProps(r) {
-    return r.meta.properties;
-  },
+function Recipe() {
 
-  viewSingle(state) {
+  // Logic
+  // Null.
+
+
+  // Full Views ----------------------------------------------------------------
+
+  this.viewSingle = (state) => {
+    // TODO handle invalid reciple currentId; make a gotoview func
+    // 
     return h("section", {}, [
-      v_Hero("media/002.jpg"),
-      Recipe.viewMetaData(state),
-      v_GiantQuote("...I've made a tornado of dates."),
+      ui.hero("media/002.jpg"),
+      this._viewMetaData(state),
+      ui.giantQuote("...I've made a tornado of dates."),
       h("div", { class: "recipeIngredients-Instructions" }, [
-        Recipe.viewIngredients(state),
-        Recipe.viewInstructions(state)
+        this._viewIngredients(state),
+        this._viewInstructions(state)
       ])
     ]);
-  },
+  }
 
-  viewAll(state) {
-    console.log("state in recipe view all is ", state);
+  this.viewAll = (state) => {
     return h("section", { class: "content"}, [
       h("ul", { class: "recipeList"}, [
         Object.keys(db.recipes).map(k => {
           let r = db.recipes[k]
-          let p = Recipe.getProps(r)
+          let p = r.meta.properties;
           return h("li", { class: "" }, [
             h("a", {}, p.name)
           ])
         })
       ])
     ])
-  },
+  }
 
-  viewMetaData(state) {
+
+  /**
+   * SUB VIEWS -----------------------------------------------------------------
+   */
+
+  this._viewMetaData = (state) => {
     let liClass = { class: "recipeMetaData" };
     let { original_recipe, day_made, name, is_vegan, rating } = state.currentRecipe.meta.properties;
     let mealType = is_vegan ? "Vegan" : "Vegetarian"
 
     return h("div", { class: "recipeProperties" }, [
       h("div", { class: "content" }, [
-        v_LargeText(name),
+        ui.largeText(name),
         h("ul", { class: "recipeMetaData" }, [
           h("li", liClass,
             h("a", { href: original_recipe, class: "link-light" }, "original recipe")),
@@ -52,9 +60,9 @@ var Recipe = {
           h("li", liClass, `Rating: ${rating}`),
           h("li", liClass, `Made: ${day_made}`)
         ])])]);
-  },
+  }
 
-  viewIngredients(state) {
+  this._viewIngredients = (state) => {
     let ingredients = state.currentRecipe.ingredients;
     let renderTableHeadings = () => ingredients.keys.map(e => h("th", {}, e));
     let renderTableCells = () =>
@@ -76,7 +84,7 @@ var Recipe = {
   },
 
 
-  viewInstructions(state) {
+  this._viewInstructions = (state) => {
     let steps = state.currentRecipe.instructions;
 
     return h("div", { class: "recipeInstructions" }, [
@@ -89,7 +97,7 @@ var Recipe = {
           if (s.timer) {
             let setTimerPayload = { time: time.strToSec(s.timer), step: s.f };
             if (state.timerRunning == false) {
-              return h("div", { onClick: [$act.setTimer, setTimerPayload] }, v_Icon("watch.svg"));
+              return h("div", { onClick: [$act.setTimer, setTimerPayload] }, ui.icon("watch.svg"));
             } else if (state.timerRunning) {
               return h("div", {}, "");
             }

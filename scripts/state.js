@@ -12,28 +12,33 @@ const $act = {
     currentRecipeStepText: p.step
   }),
 
-  moveTo: (s, p) => {
-    return [state, pushHistory({ pathname: p.pathName })];
-  },
 
   setRoute: (state, props) => ({ ...state, route: props.route }),
 
-  setId: (s, p) => ({ ...s, currentId: p }),
+  setId: (s, p) => {
+    return { ...s, currentId: p };
+  },
+
 
   setRoutePath: (a, s) => {
-    let {event, state} = s;
+    let { event, state } = s;
     let hash = location.hash;
-    let newRoute = typeof(routes[hash]) == "undefined" ? routes["404"] : routes[hash]
+    let newRoute = v.getRoute(hash, state)
 
     // TODO: parse the route and build a slug fetcher from it.
-
-    let newState = ({...state, route: hash, currentRoute: newRoute})
+    let newState = ({
+      ...state,
+      route: hash,
+      currentRoute: newRoute.view,
+      currentId: newRoute.id,
+      currentRecipe: db.recipes[newRoute.id] // not optimal?
+    })
     return (newState)
   },
 
   cancelTimer: s => ({ ...s, timer: null, timerRunning: false }),
 
-  setRoute: (s, p) => ({...s, route: p}),
+  setRoute: (s, p) => ({ ...s, route: p }),
 
   countDown: (s, t) => {
     if (s.timer == 0) {
@@ -58,6 +63,6 @@ var initState = {
 
 var subscriptions = (state) => [
   state.timerRunning && interval($act.countDown, { delay: 1000 }),
-  true && handleRouter($act.setRoutePath, state)
+  true && v.handleRouter($act.setRoutePath, state)
 ]
 
