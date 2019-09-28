@@ -122,12 +122,9 @@ h1,h2,h3,h4,h5,h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* height: 500px; */
-  /* max-height: 550px; */
-  /* max-width: 1024px; */
   margin: 0 auto;
   justify-content: center;
-  background: #efefef;
+  background: antiquewhite;
   padding: 84px 0;
 }
 
@@ -148,51 +145,38 @@ h1,h2,h3,h4,h5,h6 {
   padding: 0 12px;
 }
 
-.recipeInstructionsHeading {
-  color: #555;
-}
-
-.recipeInstructionsHeading:before {
-  content: "• Steps •";
-}
 
 /* --- Ingredients --- */
 
-.recipeIngredientsHeading {
-  color: #555;
-}
-
-.recipeIngredientsHeading:before {
-  content: "• INGREDIENTS •";
-  color: lightseagreen;
-}
-
-.recipeIngredients {
+.recipeIngredients-Instructions-bg {
   flex: 1;
   height: 100%;
   color: white;
   margin-right: 8px;
   align-self: flex-start;
+  background: white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 
   max-height: 550px;
   overflow-y: scroll;
-  padding: 0 12px;
+  padding: 16px;
 }
 
 
 .recipeIngredientHeadRow {
-  color: white;
-  background: lightseagreen;
+  color: #333;
+  background: #fafafa;
+  height: 32px;
   border-bottom: 2px solid white;
 }
 
 .recipeIngredient {
-  color: white;
-  background: lightseagreen;
+  background: #fafafa;
+  color: #333;
 }
 
 .recipeIngredient:nth-child(odd) {
-  background: #21a9a1;
+  background: white;
 }
 
 /* --- Steps --- */
@@ -206,18 +190,25 @@ h1,h2,h3,h4,h5,h6 {
   line-height: 20px;
   font-size: 14px;
   margin-bottom: 8px;
-  border-left: 2px solid #999;
+  border-left: 3px solid #afafaf;
+  display: flex;
+  align-items: center;
+}
+
+.recipeStep--active {
+  border-left: 3px solid lightcoral;
 }
 
 
 .recipeStepTimer {
+  transition: all 0.3s ease;
   border-left: 1px solid gainsboro;
   padding: 16px;
+  align-self: stretch;
+  justify-content: center;
+  display: flex;
 }
 
-.recipeStep--active {
-  border-left: 2px solid lightcoral;
-}
 
 .recipeStep_Wrap {
   display: flex;

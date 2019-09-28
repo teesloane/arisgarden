@@ -55,14 +55,13 @@ function Recipe() {
 
   this._viewIngredients = (state) => {
     let ingredients = state.currentRecipe.ingredients;
+    let $tr = {style: {padding: "16px 8px"}};
 
 
-    return h("div", { class: "recipeIngredients" }, [
+    return h("div", { class: "recipeIngredients-Instructions-bg" }, [
       h("table", { class: "recipeIngredientTable", style: { width: "100%" } }, [
         h("thead", { class: "recipeIngredientHeadRow" },
-          h("tr", {}, [
-            ingredients.keys.map(e => h("th", {}, e))
-          ])
+          h("tr", {}, [ingredients.keys.map(e => h("th", $tr, e))])
         ),
         h('tbody', { class: "recipeIngredientTableBody" }, [
           ingredients.data.map(e => {
@@ -76,7 +75,7 @@ function Recipe() {
     this._viewInstructions = (state) => {
       let steps = state.currentRecipe.instructions;
 
-      return h("div", { class: "recipeInstructions" }, [
+      return h("div", { class: "recipeIngredients-Instructions-bg" }, [
         steps.map((s, index) => {
           let stepClass =
             index == state.currentRecipeStep
@@ -88,7 +87,7 @@ function Recipe() {
               if (state.timerRunning == false) {
                 return h("div", { class: "recipeStepTimer", onClick: [$act.setTimer, setTimerPayload] }, ui.icon("watch.svg"));
               } else if (state.timerRunning) {
-                return h("div", { class: "recipeStepTimer", style: { visibility: "hidden" } }, ui.icon("watch.svg"));
+                return h("div", { class: "recipeStepTimer", style: { opacity: 0 } }, ui.icon("watch.svg"));
               }
             }
           };
@@ -97,6 +96,7 @@ function Recipe() {
             { class: stepClass, onClick: [$act.updateCurrentRecipeStep, index] },
             [h("div", { class: "recipeStep_Wrap" }, [
               h("div", { class: "recipeStep_TextContent", style: { alignContent: "center" } }, s.f),
+            ]),
               renderTimer()
-            ])])})])} // I miss lisp
+            ])})])} // I miss lisp
 }
