@@ -11,7 +11,7 @@ function Recipe() {
       ui.giantQuote("...I've made a tornado of dates."),
       h("div", { class: "recipeIngredients-Instructions" }, [
         ui.largeText("INGREDIENTS / INSTRUCTIONS"),
-        h("div", { class: "content-w", style: { flexDirection: "row" } }, [
+        h("div", { class: "content-w", style: { flexDirection: "row", marginTop: "32px" } }, [
           this._viewIngredients(state),
           this._viewInstructions(state)
         ])
@@ -58,7 +58,9 @@ function Recipe() {
     let $tr = {style: {padding: "16px 8px"}};
 
 
-    return h("div", { class: "recipeIngredients-Instructions-bg" }, [
+    return h("div", {style: {marginRight: "16px"},
+                     class: "recipeIngredients-Instructions-bg"
+                    }, [
       h("table", { class: "recipeIngredientTable", style: { width: "100%" } }, [
         h("thead", { class: "recipeIngredientHeadRow" },
           h("tr", {}, [ingredients.keys.map(e => h("th", $tr, e))])
@@ -74,8 +76,9 @@ function Recipe() {
 
     this._viewInstructions = (state) => {
       let steps = state.currentRecipe.instructions;
+      let $wrapper = {style: {marginLeft: "16px"}}
 
-      return h("div", { class: "recipeIngredients-Instructions-bg" }, [
+      return h("div", {...$wrapper , class: "recipeIngredients-Instructions-bg" }, [
         steps.map((s, index) => {
           let stepClass =
             index == state.currentRecipeStep
@@ -93,9 +96,11 @@ function Recipe() {
           };
 
           return h("li",
-            { class: stepClass, onClick: [$act.updateCurrentRecipeStep, index] },
-            [h("div", { class: "recipeStep_Wrap" }, [
-              h("div", { class: "recipeStep_TextContent", style: { alignContent: "center" } }, s.f),
+            { class: stepClass, onClick: [$act.updateCurrentRecipeStep, index] }, [
+              h("div", { class: "recipeStep_Wrap" }, [
+                h("div",
+                { class: "recipeStep_TextContent", style: { alignContent: "center" } },
+                (index+1 + ". " +  s.f)),
             ]),
               renderTimer()
             ])})])} // I miss lisp

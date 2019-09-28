@@ -28,7 +28,7 @@ body {
   line-height: 1;
 }
 ol, ul {
-  list-style: none;
+  list-style: disc;
   /* margin-left: 16px; */
 }
 blockquote, q {
@@ -138,7 +138,7 @@ h1,h2,h3,h4,h5,h6 {
   flex: 1;
   height: 100%;
   margin-left: 8px;
-  list-style-type: none;
+  /* list-style-type: none; */
 
   max-height: 550px;
   overflow-y: scroll;
@@ -155,12 +155,12 @@ h1,h2,h3,h4,h5,h6 {
   margin-right: 8px;
   align-self: flex-start;
   background: white;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
   max-height: 550px;
   overflow-y: scroll;
   padding: 16px;
 }
+
 
 
 .recipeIngredientHeadRow {
@@ -182,21 +182,28 @@ h1,h2,h3,h4,h5,h6 {
 /* --- Steps --- */
 
 .recipeStep {
-  cursor: pointer;
-  background: white;
-  border-radius: 2px;
-  border: 1px solid gainsboro;
-  color: #222;
-  line-height: 20px;
-  font-size: 14px;
-  margin-bottom: 8px;
-  border-left: 3px solid #afafaf;
-  display: flex;
   align-items: center;
+  background: white;
+  /* border-left: 1px solid #efefef; */
+  border-radius: 2px;
+  color: #222;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .recipeStep--active {
-  border-left: 3px solid lightcoral;
+  font-weight: bold;
+}
+
+.recipeStep--active:before {
+  content: "\279c";
+  margin-left: -28px;
+  margin-right: 0px;
+  font-size: 40px;
+  color: lightseagreen;
+  background: white;
 }
 
 
@@ -218,7 +225,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .recipeStep_TextContent {
-  padding: 12px;
+  padding: 16px;
 }
 
 
