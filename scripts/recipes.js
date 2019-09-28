@@ -1,51 +1,40 @@
-/**
- * Wrapping recipeView
- */
-
-
-
 function Recipe() {
-
-  // Logic
-  // Null.
-
 
   // Full Views ----------------------------------------------------------------
 
   this.viewSingle = (state) => {
     // TODO handle invalid reciple currentId; make a gotoview func
-    // 
+    //
     return h("section", {}, [
       ui.hero("media/002.jpg"),
       this._viewMetaData(state),
       ui.giantQuote("...I've made a tornado of dates."),
       h("div", { class: "recipeIngredients-Instructions" }, [
-        this._viewIngredients(state),
-        this._viewInstructions(state)
+        ui.largeText("INGREDIENTS / INSTRUCTIONS"),
+        h("div", { class: "content-w", style: { flexDirection: "row" } }, [
+          this._viewIngredients(state),
+          this._viewInstructions(state)
+        ])
       ])
     ]);
   }
 
   this.viewAll = (state) => {
-    return h("section", { class: "content"}, [
-      h("ul", { class: "recipeList"}, [
+    return h("section", { class: "content" }, [
+      h("ul", { class: "recipeList" }, [
         Object.keys(db.recipes).map(k => {
           let r = db.recipes[k]
           let p = r.meta.properties;
           let link = "#/recipes/" + p.slug;
-          // let link =
           return h("li", { class: "" }, [
-            h("a", {href: link}, p.name)
+            h("a", { href: link }, p.name)
           ])
         })
       ])
     ])
   }
 
-
-  /**
-   * SUB VIEWS -----------------------------------------------------------------
-   */
+  // SUB VIEWS -----------------------------------------------------------------
 
   this._viewMetaData = (state) => {
     let liClass = { class: "recipeMetaData" };
@@ -66,54 +55,48 @@ function Recipe() {
 
   this._viewIngredients = (state) => {
     let ingredients = state.currentRecipe.ingredients;
-    let renderTableHeadings = () => ingredients.keys.map(e => h("th", {}, e));
-    let renderTableCells = () =>
-      ingredients.data.map(e => {
-        return h("tr", { class: "recipeIngredient" }, [
-          h("td", {}, e.Ingredient),
-          h("td", {}, e.Quantity),
-          h("td", {}, e.Unit)
-        ]);
-      });
+
 
     return h("div", { class: "recipeIngredients" }, [
-      h("table", { style: { width: "100%", height: "100%" } }, [
-        h("tr", { class: "recipeIngredientHeadRow" }, renderTableHeadings()),
-        renderTableCells()
-      ])
-    ]);
-  },
-
-
-  this._viewInstructions = (state) => {
-    let steps = state.currentRecipe.instructions;
-
-    return h("div", { class: "recipeInstructions" }, [
-      steps.map((s, index) => {
-        let stepClass =
-          index == state.currentRecipeStep
-            ? "recipeStep recipeStep--active"
-            : "recipeStep";
-        let renderTimer = () => {
-          if (s.timer) {
-            let setTimerPayload = { time: time.strToSec(s.timer), step: s.f };
-            if (state.timerRunning == false) {
-              return h("div", { onClick: [$act.setTimer, setTimerPayload] }, ui.icon("watch.svg"));
-            } else if (state.timerRunning) {
-              return h("div", {}, "");
-            }
-          }
-        };
-
-        return h("li",
-          { class: stepClass, onClick: [$act.updateCurrentRecipeStep, index] },
-          [h("div", { class: "recipeStep_Text" }, [
-            h("div", { style: { alignContent: "center" } }, s.f),
-            renderTimer()
+      h("table", { class: "recipeIngredientTable", style: { width: "100%" } }, [
+        h("thead", { class: "recipeIngredientHeadRow" },
+          h("tr", {}, [
+            ingredients.keys.map(e => h("th", {}, e))
           ])
-          ]
-        );
-      })
-    ]);
-  }
+        ),
+        h('tbody', { class: "recipeIngredientTableBody" }, [
+          ingredients.data.map(e => {
+            return h("tr", { class: "recipeIngredient" }, [
+              h("td", {}, e.Ingredient),
+              h("td", {}, e.Quantity),
+              h("td", {}, e.Unit)
+            ])})])])])},
+
+
+    this._viewInstructions = (state) => {
+      let steps = state.currentRecipe.instructions;
+
+      return h("div", { class: "recipeInstructions" }, [
+        steps.map((s, index) => {
+          let stepClass =
+            index == state.currentRecipeStep
+              ? "recipeStep recipeStep--active"
+              : "recipeStep";
+          let renderTimer = () => {
+            if (s.timer) {
+              let setTimerPayload = { time: time.strToSec(s.timer), step: s.f };
+              if (state.timerRunning == false) {
+                return h("div", { class: "recipeStepTimer", onClick: [$act.setTimer, setTimerPayload] }, ui.icon("watch.svg"));
+              } else if (state.timerRunning) {
+                return h("div", { class: "recipeStepTimer", style: { visibility: "hidden" } }, ui.icon("watch.svg"));
+              }
+            }
+          };
+
+          return h("li",
+            { class: stepClass, onClick: [$act.updateCurrentRecipeStep, index] },
+            [h("div", { class: "recipeStep_Wrap" }, [
+              h("div", { class: "recipeStep_TextContent", style: { alignContent: "center" } }, s.f),
+              renderTimer()
+            ])])})])} // I miss lisp
 }

@@ -8,6 +8,15 @@
   width: 100%;
 }
 
+.content-w {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
 
 .link-light {
   color: white;
@@ -52,11 +61,12 @@
 .v_LargeText {
   text-transform: uppercase;
   /* padding: 0 0 48px 0px; */
-		padding: 16px;
-		margin: 0 0 32px 0;
-		font-style: oblique;
-		background: #222;
-		letter-spacing: 8px;
+  padding: 16px;
+  margin: 0 0 32px 0;
+  font-style: oblique;
+  background: #222;
+  color: white;
+  letter-spacing: 8px;
   font-size: 32px;
   text-align: center;
 }
