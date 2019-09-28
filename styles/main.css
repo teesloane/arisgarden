@@ -184,7 +184,6 @@ h1,h2,h3,h4,h5,h6 {
 .recipeStep {
   align-items: center;
   background: white;
-  /* border-left: 1px solid #efefef; */
   border-radius: 2px;
   color: #222;
   cursor: pointer;
@@ -199,8 +198,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .recipeStep--active:before {
   content: "\279c";
-  margin-left: -28px;
-  margin-right: 0px;
+  margin-left: -40px;
+  margin-right: 4px;
   font-size: 40px;
   color: lightseagreen;
   background: white;
@@ -209,8 +208,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .recipeStepTimer {
   transition: all 0.3s ease;
-  border-left: 1px solid gainsboro;
-  padding: 16px;
+  /* border-left: 1px solid gainsboro; */
+  padding: 8px;
   align-self: stretch;
   justify-content: center;
   display: flex;
