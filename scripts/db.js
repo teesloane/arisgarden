@@ -1380,6 +1380,249 @@ var db = {
           "f": "Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs if you like."
         }
       ]
+    },
+    "Garlic": {
+      "meta": {
+        "properties": {
+          "slug": "Garlic",
+          "original_recipe": "https://minimalistbaker.com/vegan-garlic-alfredo-pasta/",
+          "time": "00:40:00",
+          "day_made": "[2019-09-23]",
+          "is_vegan": "false",
+          "is_vegetarian": "true",
+          "name": "Garlic and White Wine Pasta with Brussel Sprouts",
+          "ease_of_making": "-/5",
+          "rating": "_/5"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit"
+        ],
+        "data": [
+          {
+            "Ingredient": "Brussel Sprouts (halved)",
+            "Quantity": "16",
+            "Unit": "ounces"
+          },
+          {
+            "Ingredient": "Olive Oil",
+            "Quantity": "~",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Garlic",
+            "Quantity": "4",
+            "Unit": "cloves"
+          },
+          {
+            "Ingredient": "White Wine",
+            "Quantity": "1/3",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Cornstarch",
+            "Quantity": "4",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Almond milk",
+            "Quantity": "3/4",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Nutritional Yeast",
+            "Quantity": "4",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Parmesean",
+            "Quantity": "1/4",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Pasta",
+            "Quantity": "10",
+            "Unit": "ounces"
+          },
+          {
+            "Ingredient": "",
+            "Quantity": "",
+            "Unit": ""
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "Preheat oven to 400 F. Add brussel sprouts to baking sheet in a single layer. Drizzel with oil and season with salt and pepper. Arranger in a single layer.",
+          "f": "Preheat oven to 400 F. Add brussel sprouts to baking sheet in a single layer. Drizzel with oil and season with salt and pepper. Arranger in a single layer."
+        },
+        {
+          "o": "Bring a pot of water to a boil.",
+          "f": "Bring a pot of water to a boil."
+        },
+        {
+          "o": "Heat a skillet. Add 1-2 tbsp of oil. Add garlic. Saute for 3 minutes.",
+          "f": "Heat a skillet. Add 1-2 tbsp of oil. Add garlic. Saute for 3 minutes."
+        },
+        {
+          "o": "[t:00:02:00] Add wine. Saute for 2-4 minutes.",
+          "f": "Add wine. Saute for 2-4 minutes.",
+          "timer": "0:02:00"
+        },
+        {
+          "o": "Add cornstarch and almond milk and whisk. It'll be clumpy.",
+          "f": "Add cornstarch and almond milk and whisk. It'll be clumpy."
+        },
+        {
+          "o": "Move the mixture to a blender. Add nutritional yeast, salt + pepper, parmesean cheese. Blend on high until cremay and smooth.",
+          "f": "Move the mixture to a blender. Add nutritional yeast, salt + pepper, parmesean cheese. Blend on high until cremay and smooth."
+        },
+        {
+          "o": "Transfer sauce back to skilled and warm over medium low heat. It should thicken, then lower the heat to low and simmer until the pasta is cooked. If it gets too thick, add almond milk to thin it out. Try not to let a film form overtop.",
+          "f": "Transfer sauce back to skilled and warm over medium low heat. It should thicken, then lower the heat to low and simmer until the pasta is cooked. If it gets too thick, add almond milk to thin it out. Try not to let a film form overtop."
+        },
+        {
+          "o": "[t:00:12:00] Add brussel sprouts to the oven for 12-15 minutes or umtil golden brown.",
+          "f": "Add brussel sprouts to the oven for 12-15 minutes or umtil golden brown.",
+          "timer": "0:12:00"
+        },
+        {
+          "o": "At the same time as the previous step, add pasta to boiling water and cook according to the package instructions.",
+          "f": "At the same time as the previous step, add pasta to boiling water and cook according to the package instructions."
+        },
+        {
+          "o": "Once the pasta is cooked, drain the water and add directly to the sauce along with the brussel sprouts. Season with more parmesean if you want.",
+          "f": "Once the pasta is cooked, drain the water and add directly to the sauce along with the brussel sprouts. Season with more parmesean if you want."
+        }
+      ]
+    },
+    "salad-raw-beet": {
+      "meta": {
+        "properties": {
+          "slug": "salad-raw-beet",
+          "original_recipe": "https://cookieandkate.com/raw-beet-salad-with-carrot-quinoa-spinach",
+          "time": "00:50:00",
+          "day_made": "[2019-09-24]",
+          "is_vegan": "?",
+          "is_vegetarian": "?",
+          "name": "Raw Beet Salad w/ Quinoa",
+          "ease_of_making": "-/5",
+          "rating": "_/5"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit"
+        ],
+        "data": [
+          {
+            "Ingredient": "Quinoa",
+            "Quantity": "1/2",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Edamame",
+            "Quantity": "1",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Nuts (almonds, pecans, whatever)",
+            "Quantity": "1/3",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "A Beet (peeled)",
+            "Quantity": "1",
+            "Unit": "--"
+          },
+          {
+            "Ingredient": "A Large carrot",
+            "Quantity": "1",
+            "Unit": "--"
+          },
+          {
+            "Ingredient": "Baby Spinach or Arugula",
+            "Quantity": "2",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Avocado (cubed)",
+            "Quantity": "1",
+            "Unit": "--"
+          },
+          {
+            "Ingredient": "Apple Cider Vinegar",
+            "Quantity": "3",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Lime Juice",
+            "Quantity": "2",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Olive Oil",
+            "Quantity": "2",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Maple Syrup",
+            "Quantity": "2",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Dijon Mustard",
+            "Quantity": "1",
+            "Unit": "tsp"
+          },
+          {
+            "Ingredient": "Salt, Pepper",
+            "Quantity": "--",
+            "Unit": "--"
+          },
+          {
+            "Ingredient": "",
+            "Quantity": "",
+            "Unit": ""
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "[t:00:15:00] Cook the quinoa: combine the quinoa with 1 cup of water. Bring to a boil, reduce heat and simmer for 15 minutes.",
+          "f": "Cook the quinoa: combine the quinoa with 1 cup of water. Bring to a boil, reduce heat and simmer for 15 minutes.",
+          "timer": "0:15:00"
+        },
+        {
+          "o": "[t:00:05:00] Cook the edamame: bring a pot of water to boil, add the frozen edamame for 5 minutes. Drain and set aside.",
+          "f": "Cook the edamame: bring a pot of water to boil, add the frozen edamame for 5 minutes. Drain and set aside.",
+          "timer": "0:05:00"
+        },
+        {
+          "o": "[t:00:05:00] Toast the nuts in a pan over medium heat until they are fragrant. About 5 minutes.",
+          "f": "Toast the nuts in a pan over medium heat until they are fragrant. About 5 minutes.",
+          "timer": "0:05:00"
+        },
+        {
+          "o": "Prepare the beets/carrots: either chop finely or use a spiralizer to prepare the vegetables.",
+          "f": "Prepare the beets/carrots: either chop finely or use a spiralizer to prepare the vegetables."
+        },
+        {
+          "o": "Prepare the vinaigrette: whisk together Apple cider vinegar, lime juice, olive oil, maple syrup, dijon mustard, and salt and pepper.",
+          "f": "Prepare the vinaigrette: whisk together Apple cider vinegar, lime juice, olive oil, maple syrup, dijon mustard, and salt and pepper."
+        },
+        {
+          "o": "Apply the dressing, not too much - if you have a lot of salad, portion it out and store undressed leftovers and save the dressing for leftovers.",
+          "f": "Apply the dressing, not too much - if you have a lot of salad, portion it out and store undressed leftovers and save the dressing for leftovers."
+        }
+      ]
     }
   }
 }

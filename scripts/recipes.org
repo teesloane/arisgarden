@@ -14,7 +14,7 @@ CLOCK: [2019-09-01 Sun 11:46]--[2019-09-01 Sun 12:08] =>  0:22
 :ease_of_making: 5/5
 :rating: 5/5
 :END:
-*** Ingredients
+** Ingredients
 | Ingredient                                       | Quantity | Unit |
 |--------------------------------------------------+----------+------|
 | Dates (Deglet noor or medjool)                   | 1        | cups |
@@ -25,7 +25,7 @@ CLOCK: [2019-09-01 Sun 11:46]--[2019-09-01 Sun 12:08] =>  0:22
 | Optional: Chocolate chips, dried fruit, nuts etc | -        | -    |
 | Parchment Paper                                  | -        | -    |
 | 8x8 Baking Pan                                   | -        | -    |
-*** Steps
+** Steps
 1) Chop almonds roughly. Put them in a bowl.
 2) Put oats in the bowl.
 3) Blend dates until dough-y. Put them in the bowl
@@ -47,7 +47,7 @@ CLOSED: [2019-09-01 Sun 15:24]
 :ease_of_making: 5/5
 :rating: 5/5
 :END:
-*** Ingredients
+** Ingredients
 | Ingredient                                      | Quantity | Unit  |
 |-------------------------------------------------+----------+-------|
 | Coconut Oil                                     |        1 | tbsp  |
@@ -62,7 +62,7 @@ CLOSED: [2019-09-01 Sun 15:24]
 | Sea salt                                        |        1 | tsp   |
 | Pepper                                          |        1 | pinch |
 | Rice or Grain for Base                          |        - | -     |
-*** Steps
+** Steps
 1) Melt coconut oil in a large pot
 2) peel (if necessary) and dice veggies into 1/2 inch pieces. Add to pot and stir.
 3) Add the rest of the ingredients.
@@ -159,7 +159,7 @@ CLOCK: [2019-09-03 Tue 20:20]--[2019-09-03 Tue 21:15] =>  0:55
 :ease_of_making: 5/5
 :rating: 4/5
 :END:
-*** Ingredients
+** Ingredients
 | Ingredient                | Quantity | Unit   |
 |---------------------------+----------+--------|
 | Olive Oil                 |        1 | tbsp   |
@@ -174,7 +174,7 @@ CLOCK: [2019-09-03 Tue 20:20]--[2019-09-03 Tue 21:15] =>  0:55
 | Chili powder              |        2 | tsp    |
 | Ground cinnamon           |      1/4 | tsp    |
 | Chickpeas                 |       24 | oz     |
-*** Steps
+** Steps
 1) Heat a large metal or cast iron skilled on medium heat.
 2) [t: 00:04:00] When hot, add olive oil, onion, bell pepper and garlic. Saute for 4-5 minutes, stirring frequently.
 3) Add diced tomatoes, tomoato paste, maple syrup, sea salt, paprika, cumin, chili powser, cinnamon. Stir.
@@ -195,7 +195,7 @@ CLOCK: [2019-09-04 Wed 18:15]--[2019-09-04 Wed 18:33] =>  0:18
 :ease_of_making: 5/5
 :rating: 5/5
 :END:
-*** Ingredients
+** Ingredients
 | Ingredient                       | Quantity | Unit    |
 |----------------------------------+----------+---------|
 | Collard Greens (or: Swiss Chard) |       10 | leaves  |
@@ -206,7 +206,7 @@ CLOCK: [2019-09-04 Wed 18:15]--[2019-09-04 Wed 18:33] =>  0:18
 | Red Pepper Flakes                |        1 | pinch   |
 | Parmesan Cheese                  |        1 | ounce   |
 | Lemon                            |        1 |         |
-*** Steps
+** Steps
 1) Bring a pot of salted water to boil. Cook the pasta.
 2) Drain the pasta, reserving a bit of cooking water. Set aside.
 3) Cut out the "rib" of the collard greens. Roll them up like a cigar. Slice across the role, as thinly as possible.
@@ -230,7 +230,7 @@ CLOSED: [2019-09-10 Tue 18:10]
 :ease_of_making: 3/5
 :rating: 5/5
 :END:
-*** Ingredients
+** Ingredients
 | Ingredient       | Quantity | Unit |
 |------------------+----------+------|
 | Tofu             |        8 | oz   |
@@ -252,7 +252,7 @@ CLOSED: [2019-09-10 Tue 18:10]
 | Dried thyme      |        2 | tsp  |
 | Paprika          |        1 | tsp  |
 |                  |          |      |
-*** Steps
+** Steps
 1) Make the marinade: combine Olive oil, seasami oil, hot sauce, thyme, paprika,
    and salt. Set aside.
 2) [t: 00:30:00] Add marinade and tofu to a container and marinate for 30 minutes, up to a day
@@ -281,7 +281,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 :ease_of_making: 5/5
 :rating: 5/5
 :END:
-*** Ingredients
+** Ingredients
 | Ingredient       | Quantity | Unit    |
 |------------------+----------+---------|
 | Tofu             |        1 | package |
@@ -298,7 +298,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 | Maple syrup      |        2 | tbsp    |
 | Peanut butter    |        2 | tbsp    |
 | Lime juice       |        2 | tbsp    |
-*** Steps
+** Steps
 1) Press your tofu. You'll come back and cube it once pressed.
 2) Heat a large pot or dutch oven on medium heat. Once hot, add oil and shallot.
 3) [t: 00:02:00] Saute for 2 minutes. Stir frequently.
@@ -326,7 +326,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 :ease_of_making: 5/5
 :rating: 5/5
 :END:
-*** Ingredients
+** Ingredients
 | Ingredient                                | Quantity | Unit |
 |-------------------------------------------+----------+------|
 | Cauliflower                               |        1 | head |
@@ -347,7 +347,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 | Bell Pepper (thin slices, lengthwise)     |        1 | -    |
 | Cashews                                   |      3/4 | cups |
 | A Blender or a grater for the cauliflower |          |      |
-*** Steps
+** Steps
 1) Wash the cauliflower. Chop it in a blender until you have small chunks (that
    look more like rice than cauliflower.)
 2) Create the sauce: add coconut oil, peanut butter, soy sauce lime juice, chili
@@ -378,7 +378,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 :ease_of_making: 4
 :rating: 5
 :END:
-*** Ingredients
+** Ingredients
 | Ingredient                                        | Quantity | Unit  |
 |---------------------------------------------------+----------+-------|
 | coconut oil                                       |        2 | tbsp  |
@@ -394,7 +394,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 | Sriracha                                          |        2 | tsp   |
 | Lime (halved)                                     |        1 |       |
 | Cilantro                                          |          |       |
-*** Steps
+** Steps
 1) Cook the rice and set it aside to cool.
 2) Heat a large skillet on medium high heat. Add 1 teaspoon of coconut oil.
 3) Add eggs and stir frequently so they are sort of scrambled. Transfer to bowl
@@ -423,7 +423,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 :ease_of_making: 5/5
 :rating: 5/5
 :END:
-*** Ingredients
+** Ingredients
 | Ingredient                   | Quantity | Unit   |
 |------------------------------+----------+--------|
 | Greens: Spinach / Arugla etc |        4 | cups   |
@@ -441,7 +441,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 | Shallots (minced)            |        1 | tbsp   |
 | Maple Syrup                  |        1 | tbsp   |
 | Pepper                       |        1 | pinch  |
-*** Steps
+** Steps
 1) [t: 00:12:00] Preheat oven to 425. Add chopped potatoes and broccoli florets to bowl with olive oil and salt and pepper and dill. Put on a baking sheet on parchment paper. Bake for 10-12 minutes
 2) Prepare the dressing for the salad. Add the following to a container and whisk: Olive oil, Rice wine vinegar, shallots, maple syrup, ground pepper.
 3) Prepare the salad: Lightly apply the dressing to the greens Arrange pear slices and briece on plate.  Drizzle with dressing. Add greens, cranberries,
@@ -459,7 +459,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 :ease_of_making: -/5
 :rating: _/5
 :END:
-*** Ingredients
+** Ingredients
 | Ingredient                                 |                   Quantity | Unit |
 |--------------------------------------------+----------------------------+------|
 | Sweet Potato (large / 600g)                |                          1 | --   |
@@ -469,7 +469,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 | Vegan butter or coconut oil                |                          2 | tbsp |
 | Garlic                                     |                          3 | --   |
 | Optional Nuts (pine or pecan, or whatever) |                          4 | tbsp |
-*** Steps
+** Steps
 1) [t: 00:50:00] Prick the sweet potato several times with a fork. Put it in the oven for 50-60 minutes at about 425 degrees.
 2) Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add salt. Add nutritional yeast if you want. Add the flour and knead gently. Don't over knead. Try to use as little flour as possible.
 3) Transfer the dough to a floured work surface. Form it in a flat ball and cut into quarters. Take a piece and form a long rope, rolling it into a long rope. Cut the rope into 2cm pieces.
@@ -492,7 +492,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 :ease_of_making: -/5
 :rating: _/5
 :END:
-*** Ingredients
+** Ingredients
 | Ingredient               | Quantity | Unit   |
 |--------------------------+----------+--------|
 | Brussel Sprouts (halved) |       16 | ounces |
@@ -505,7 +505,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 | Parmesean                |      1/4 | cups   |
 | Pasta                    |       10 | ounces |
 |                          |          |        |
-*** Steps
+** Steps
 1) Preheat oven to 400 F. Add brussel sprouts to baking sheet in a single layer. Drizzel with oil and season with salt and pepper. Arranger in a single layer.
 2) Bring a pot of water to a boil.
 3) Heat a skillet. Add 1-2 tbsp of oil. Add garlic. Saute for 3 minutes.
@@ -535,7 +535,7 @@ CLOSED: [2019-09-25 Wed 14:42]
 :ease_of_making: -/5
 :rating: _/5
 :END:
-*** Ingredients
+** Ingredients
 | Ingredient                       | Quantity | Unit |
 |----------------------------------+----------+------|
 | Quinoa                           |      1/2 | cups |
@@ -552,7 +552,7 @@ CLOSED: [2019-09-25 Wed 14:42]
 | Dijon Mustard                    |        1 | tsp  |
 | Salt, Pepper                     |       -- | --   |
 |                                  |          |      |
-*** Steps
+** Steps
 1) [t:00:15:00] Cook the quinoa: combine the quinoa with 1 cup of water. Bring to a boil,
    reduce heat and simmer for 15 minutes.
 2) [t:00:05:00] Cook the edamame: bring a pot of water to boil, add the frozen edamame for 5
