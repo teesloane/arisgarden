@@ -376,13 +376,13 @@ var db = {
         }
       ]
     },
-    "shakshuka": {
+    "chickpea-shakshuka": {
       "meta": {
         "properties": {
           "original_recipe": "https://minimalistbaker.com/1-pot-chickpea-shakshuka/",
           "day_made": "[2019-09-03 Tue]",
           "name": "1 Pot Chickpea Shakshuka",
-          "slug": "shakshuka",
+          "slug": "chickpea-shakshuka",
           "is_vegan": "true",
           "is_vegetarian": "true",
           "ease_of_making": "5/5",
@@ -583,14 +583,14 @@ var db = {
         }
       ]
     },
-    "buddha-bowl": {
+    "bowl1": {
       "meta": {
         "properties": {
           "original_recipe": "https://tasty.co/recipe/protein-packed-buddha-bowl",
           "day_made": "[2019-09-08]",
-          "slug": "buddha-bowl",
+          "slug": "bowl1",
           "is_vegan": "true",
-          "name": "Protein Bowl",
+          "name": "Bowl #1",
           "is_vegetarian": "true",
           "ease_of_making": "3/5",
           "rating": "5/5"
@@ -766,7 +766,7 @@ var db = {
         ],
         "data": [
           {
-            "Ingredient": "Tofu",
+            "Ingredient": "Tofu (we used shrimp)",
             "Quantity": "1",
             "Unit": "package"
           },

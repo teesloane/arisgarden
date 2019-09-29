@@ -153,7 +153,7 @@ CLOCK: [2019-09-03 Tue 20:20]--[2019-09-03 Tue 21:15] =>  0:55
 :original_recipe: https://minimalistbaker.com/1-pot-chickpea-shakshuka/
 :day_made: [2019-09-03 Tue]
 :name: 1 Pot Chickpea Shakshuka
-:slug: shakshuka
+:slug: chickpea-shakshuka
 :is_vegan: true
 :is_vegetarian: true
 :ease_of_making: 5/5
@@ -216,16 +216,16 @@ CLOCK: [2019-09-04 Wed 18:15]--[2019-09-04 Wed 18:33] =>  0:18
 7) Scoop greens into pasta pot and toss with oil. Add pasta water if necessary.
 8) Divide onto plates, top with nuts and parmesan shavings. Add two big lemon
    wedges per person.
-* DONE Protein Packed Buddha Bowl
+* DONE Bowl #1
 CLOSED: [2019-09-10 Tue 18:10]
 :LOGBOOK:
 :END:
 :PROPERTIES:
 :original_recipe: https://tasty.co/recipe/protein-packed-buddha-bowl
 :day_made: [2019-09-08]
-:slug: buddha-bowl
+:slug: bowl1
 :is_vegan: true
-:name: Protein Bowl
+:name: Bowl #1
 :is_vegetarian: true
 :ease_of_making: 3/5
 :rating: 5/5
@@ -282,22 +282,22 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 :rating: 5/5
 :END:
 ** Ingredients
-| Ingredient       | Quantity | Unit    |
-|------------------+----------+---------|
-| Tofu             |        1 | package |
-| Coconut oil      |        2 | tbsp    |
-| Cumin powder     |        1 | tsp     |
-| Coriander powder |        1 | tsp     |
-| Red Curry Paste  |        5 | tbsp    |
-| Baby potatoes    |    1+1/2 | cups    |
-| Carrots          |        2 |         |
-| Coconut milk     |       28 | oz      |
-| Water            |    1+1/2 | cups    |
-| Ground cinnamon  |      1/4 | tsp     |
-| Soy sauce        |        2 | tbsp    |
-| Maple syrup      |        2 | tbsp    |
-| Peanut butter    |        2 | tbsp    |
-| Lime juice       |        2 | tbsp    |
+| Ingredient            | Quantity | Unit    |
+|-----------------------+----------+---------|
+| Tofu (we used shrimp) |        1 | package |
+| Coconut oil           |        2 | tbsp    |
+| Cumin powder          |        1 | tsp     |
+| Coriander powder      |        1 | tsp     |
+| Red Curry Paste       |        5 | tbsp    |
+| Baby potatoes         |    1+1/2 | cups    |
+| Carrots               |        2 |         |
+| Coconut milk          |       28 | oz      |
+| Water                 |    1+1/2 | cups    |
+| Ground cinnamon       |      1/4 | tsp     |
+| Soy sauce             |        2 | tbsp    |
+| Maple syrup           |        2 | tbsp    |
+| Peanut butter         |        2 | tbsp    |
+| Lime juice            |        2 | tbsp    |
 ** Steps
 1) Press your tofu. You'll come back and cube it once pressed.
 2) Heat a large pot or dutch oven on medium heat. Once hot, add oil and shallot.

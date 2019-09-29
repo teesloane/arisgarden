@@ -3,10 +3,12 @@ function Recipe() {
   // Full Views ----------------------------------------------------------------
 
   this.viewSingle = (state) => {
+    let heroImg = `media/imgs/${state.currentRecipe.meta.properties.slug}-hero.jpg`;
+
     // TODO handle invalid reciple currentId; make a gotoview func
     //
     return h("section", {}, [
-      ui.hero("media/002.jpg"),
+      ui.hero(heroImg),
       this._viewMetaData(state),
       ui.giantQuote("...I've made a tornado of dates."),
       h("div", { class: "recipeIngredients-Instructions" }, [
