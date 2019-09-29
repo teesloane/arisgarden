@@ -303,7 +303,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 2) Heat a large pot or dutch oven on medium heat. Once hot, add oil and shallot.
 3) [t: 00:02:00] Saute for 2 minutes. Stir frequently.
 4) [t: 00:02:00] Add cumin and coriander. Saute for 2 minutes, stirring frequently.
-5) [t: 00:01:00] Add red currey paste and stir for another minute.
+5) [t: 00:01:00] Add red curry paste and stir for another minute.
 6) [t: 00:02:00] Add potatoes and carrots and stire to coat. Cook for 2 minutes.
 7) Add coconut milk, water, cinnamon, soysauce, maple syrup, and peanut butter.
    Add your tofu or other protein now.

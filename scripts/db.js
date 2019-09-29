@@ -857,8 +857,8 @@ var db = {
           "timer": "00:02:00"
         },
         {
-          "o": "[t: 00:01:00] Add red currey paste and stir for another minute.",
-          "f": "Add red currey paste and stir for another minute.",
+          "o": "[t: 00:01:00] Add red curry paste and stir for another minute.",
+          "f": "Add red curry paste and stir for another minute.",
           "timer": "00:01:00"
         },
         {
