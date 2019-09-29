@@ -304,7 +304,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 3) [t: 00:02:00] Saute for 2 minutes. Stir frequently.
 4) [t: 00:02:00] Add cumin and coriander. Saute for 2 minutes, stirring frequently.
 5) [t: 00:01:00] Add red curry paste and stir for another minute.
-6) [t: 00:02:00] Add potatoes and carrots and stire to coat. Cook for 2 minutes.
+6) [t: 00:02:00] Add potatoes and carrots and stir to coat. Cook for 2 minutes.
 7) Add coconut milk, water, cinnamon, soysauce, maple syrup, and peanut butter.
    Add your tofu or other protein now.
 8) [t: 00:10:00] Bring to a simmer and cook for 10-15 minutes uncovered. Don't
@@ -333,13 +333,12 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 | Water (for cauliflower rice)              |        3 | tbsp |
 | Coconut oil                               |        2 | tbsp |
 | Peanut or Almond Butter                   |        2 | tbsp |
-| ginger                                    |        1 | tbsp  |
+| ginger                                    |        1 | tbsp |
 | Maple syrup                               |        1 | tbsp |
-| Soy sauce (the sauce)                     |        4 | tbsp |
-| Soy sauce (the stir fry)                  |        3 | tbsp |
+| Soy sauce (for the sauce)                 |        4 | tbsp |
+| Soy sauce (for the stir fry)              |        3 | tbsp |
 | Lime juice                                |        2 | tbsp |
-| Chili garlic sauce or sriracha            |        3 | tsp  |
-| Garlic                                    |      2-4 | tbsp |
+| Chili garlic sauce or sriracha            |      2-4 | tbsp |
 | Water                                     |        - | tbsp |
 | Green beans (trimmed and halved)          |    1+1/2 | cups |
 | Cabbage (thinly sliced)                   |        1 | cups |
@@ -361,7 +360,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
    Cover with lid and steam for about 4 minutes.
 5) [t: 00:03:00] Add bell peppers, green onion, cabbage, and remaining soy sauce (2tbsp).
    Stir. Saute for 3-4 minutes.
-6) Add cashes and cauliflower rice and stire to combine.
+6) Add cashes and cauliflower rice and stir to combine.
 7) [t: 00:03:00] Add the sauce to the beans. Increase heat to medium-high. Cook for about
    3 minutes until hot.
 * DONE Spicy Kale and Coconut Fried Rice

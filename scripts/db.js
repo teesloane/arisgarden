@@ -862,8 +862,8 @@ var db = {
           "timer": "00:01:00"
         },
         {
-          "o": "[t: 00:02:00] Add potatoes and carrots and stire to coat. Cook for 2 minutes.",
-          "f": "Add potatoes and carrots and stire to coat. Cook for 2 minutes.",
+          "o": "[t: 00:02:00] Add potatoes and carrots and stir to coat. Cook for 2 minutes.",
+          "f": "Add potatoes and carrots and stir to coat. Cook for 2 minutes.",
           "timer": "00:02:00"
         },
         {
@@ -958,11 +958,6 @@ var db = {
           },
           {
             "Ingredient": "Chili garlic sauce or sriracha",
-            "Quantity": "3",
-            "Unit": "tsp"
-          },
-          {
-            "Ingredient": "Garlic",
             "Quantity": "2-4",
             "Unit": "tbsp"
           },
@@ -1028,8 +1023,8 @@ var db = {
           "timer": "00:03:00"
         },
         {
-          "o": "Add cashes and cauliflower rice and stire to combine.",
-          "f": "Add cashes and cauliflower rice and stire to combine."
+          "o": "Add cashes and cauliflower rice and stir to combine.",
+          "f": "Add cashes and cauliflower rice and stir to combine."
         },
         {
           "o": "[t: 00:03:00] Add the sauce to the beans. Increase heat to medium-high. Cook for about 3 minutes until hot.",
