@@ -13,6 +13,7 @@ CLOCK: [2019-09-01 Sun 11:46]--[2019-09-01 Sun 12:08] =>  0:22
 :is_vegetarian: false
 :ease_of_making: 5/5
 :rating: 5/5
+:imgs: 1.JPG,2.JPG,1.gif
 :END:
 ** Ingredients
 | Ingredient                                       | Quantity | Unit |
@@ -46,6 +47,7 @@ CLOSED: [2019-09-01 Sun 15:24]
 :is_vegetarian: true
 :ease_of_making: 5/5
 :rating: 5/5
+:imgs: 1.JPG,2.JPG,3.JPG
 :END:
 ** Ingredients
 | Ingredient                                      | Quantity | Unit  |
@@ -79,6 +81,7 @@ CLOSED: [2019-09-02 Mon 13:49]
 :name: Easy Marinated Tofu
 :is_vegetarian: true
 :ease_of_making: 5/5
+:imgs: false
 :rating: 4/5
 :END:
 :LOGBOOK:
@@ -114,6 +117,7 @@ CLOCK: [2019-09-02 Mon 14:04]--[2019-09-02 Mon 18:13] =>  4:19
 :name: Candied Ginger
 :is_vegan: true
 :is_vegetarian: true
+:imgs: 1.JPG,2.JPG,3.JPG
 :ease_of_making: 2/5
 :rating: 4/5
 :END:
@@ -156,6 +160,7 @@ CLOCK: [2019-09-03 Tue 20:20]--[2019-09-03 Tue 21:15] =>  0:55
 :slug: chickpea-shakshuka
 :is_vegan: true
 :is_vegetarian: true
+:imgs: 1.JPG,2.JPG,3.JPG
 :ease_of_making: 5/5
 :rating: 4/5
 :END:
@@ -191,6 +196,7 @@ CLOCK: [2019-09-04 Wed 18:15]--[2019-09-04 Wed 18:33] =>  0:18
 :slug: collard-green-pasta
 :is_vegan: false
 :is_vegetarian: true
+:imgs: 1.JPG,2.JPG,3.JPG
 :name: Leafy Spaghetti
 :ease_of_making: 5/5
 :rating: 5/5
@@ -227,6 +233,7 @@ CLOSED: [2019-09-10 Tue 18:10]
 :is_vegan: true
 :name: Bowl #1
 :is_vegetarian: true
+:imgs: 1.JPG,2.JPG,3.JPG
 :ease_of_making: 3/5
 :rating: 5/5
 :END:
@@ -276,6 +283,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 :original_recipe: https://minimalistbaker.com/easy-1-pot-massaman-curry/
 :day_made: [2019-09-10]
 :is_vegan: true
+:imgs: false
 :name: Massaman Curry
 :is_vegetarian: true
 :ease_of_making: 5/5
@@ -323,6 +331,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 :is_vegan: true
 :is_vegetarian: true
 :name: Cauliflower Rice Stir Fry
+:imgs: 1.JPG,2.JPG,3.JPG
 :ease_of_making: 5/5
 :rating: 5/5
 :END:
@@ -374,8 +383,9 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 :is_vegan: false
 :name: Kale And Coconut Rice
 :is_vegetarian: true
-:ease_of_making: 4
-:rating: 5
+:ease_of_making: 4/5
+:rating: 5/5
+:imgs: 1.JPG,2.JPG,3.gif
 :END:
 ** Ingredients
 | Ingredient                                        | Quantity | Unit  |
@@ -418,6 +428,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 :day_made: [2019-09-19]
 :is_vegan: false
 :is_vegetarian: true
+:imgs: 1.JPG,2.JPG,3.JPG
 :name: Pear + Brie Salad
 :ease_of_making: 5/5
 :rating: 5/5
@@ -455,19 +466,20 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 :is_vegan: false
 :is_vegetarian: true
 :name: Sweet Potato Gnocchi
-:ease_of_making: -/5
-:rating: _/5
+:ease_of_making: 3/5
+:imgs: 1.JPG,2.JPG,4.gif
+:rating: 4/5
 :END:
 ** Ingredients
-| Ingredient                                 |                   Quantity | Unit |
-|--------------------------------------------+----------------------------+------|
-| Sweet Potato (large / 600g)                |                          1 | --   |
-| Nutritional Yeast or Parmesan (optional)   |                        2-3 | tbsp |
-| Flour                                      | 1+1/3 (or is it 3/4 cups?) | cups |
-| Salt                                       |                        1/2 | tsp  |
-| Vegan butter or coconut oil                |                          2 | tbsp |
-| Garlic                                     |                          3 | --   |
-| Optional Nuts (pine or pecan, or whatever) |                          4 | tbsp |
+| Ingredient                                 | Quantity | Unit |
+|--------------------------------------------+----------+------|
+| Sweet Potato (large / 600g)                |        1 | --   |
+| Nutritional Yeast or Parmesan (optional)   |      2-3 | tbsp |
+| Flour                                      |      1/3 | cups |
+| Salt                                       |      1/2 | tsp  |
+| Vegan butter or coconut oil                |        2 | tbsp |
+| Garlic                                     |        3 | --   |
+| Optional Nuts (pine or pecan, or whatever) |        4 | tbsp |
 ** Steps
 1) [t: 00:50:00] Prick the sweet potato several times with a fork. Put it in the oven for 50-60 minutes at about 425 degrees.
 2) Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add salt. Add nutritional yeast if you want. Add the flour and knead gently. Don't over knead. Try to use as little flour as possible.
@@ -481,15 +493,16 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 10) Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs if you like.
 * DONE Garlic and White Wine Pasta with Brussel Sprouts
 :PROPERTIES:
-:slug: Garlic
+:slug: garlic-alfredo-pasta
 :original_recipe: https://minimalistbaker.com/vegan-garlic-alfredo-pasta/
-:time: 00:40:00
+:time: 01:00:00
 :day_made: [2019-09-23]
-:is_vegan: false
+:is_vegan: true
 :is_vegetarian: true
 :name: Garlic and White Wine Pasta with Brussel Sprouts
-:ease_of_making: -/5
-:rating: _/5
+:imgs: false
+:ease_of_making: 3/5
+:rating: 3/5
 :END:
 ** Ingredients
 | Ingredient               | Quantity | Unit   |
@@ -531,8 +544,9 @@ CLOSED: [2019-09-25 Wed 14:42]
 :is_vegan: ?
 :is_vegetarian: ?
 :name:     Raw Beet Salad w/ Quinoa
-:ease_of_making: -/5
-:rating: _/5
+:ease_of_making: 4/5
+:imgs: 1.JPG,2.JPG,3.JPG,5.gif
+:rating: 4/5
 :END:
 ** Ingredients
 | Ingredient                       | Quantity | Unit |

@@ -84,6 +84,14 @@
 		transition: all 0.5s ease;
 }
 
+.v_TimerText {
+	align-self: center;
+	max-width: 60%;
+	overflow-x: scroll;
+	white-space: nowrap;
+	alignSelf: center;
+}
+
 
 .v_TimerFixed_hidden {
 		position: fixed;

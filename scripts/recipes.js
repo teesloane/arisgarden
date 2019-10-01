@@ -1,109 +1,146 @@
 function Recipe() {
 
-  // Full Views ----------------------------------------------------------------
+	// Getters -------------------------------------------------------------------
 
-  this.viewSingle = (state) => {
-    let heroImg = `media/imgs/${state.currentRecipe.meta.properties.slug}-hero.jpg`;
+	this.props		 = (state) => state.currentRecipe.meta.properties
+	this.getSlug	 = (state) => this.props(state).slug
+	this.getPhotos = (state) => {
+		// this.props(state).imgs.split(",") || false
+		let imgs = this.props(state).imgs
+		if (imgs == "false") {
+			return false
+		} else {
+			return imgs.split(",")
+		}
+	}
 
-    // TODO handle invalid reciple currentId; make a gotoview func
-    //
-    return h("section", {}, [
-      ui.hero(heroImg),
-      this._viewMetaData(state),
-      ui.giantQuote("...I've made a tornado of dates."),
-      h("div", { class: "recipeIngredients-Instructions" }, [
-        ui.largeText("INGREDIENTS / INSTRUCTIONS"),
-        h("div", { class: "content-w", style: { flexDirection: "row", marginTop: "32px" } }, [
-          this._viewIngredients(state),
-          this._viewInstructions(state)
-        ])
-      ])
-    ]);
-  }
+	// Full Views ----------------------------------------------------------------
 
-  this.viewAll = (state) => {
-    return h("section", { class: "content" }, [
-      h("ul", { class: "recipeList" }, [
-        Object.keys(db.recipes).map(k => {
-          let r = db.recipes[k]
-          let p = r.meta.properties;
-          let link = "#/recipes/" + p.slug;
-          return h("li", { class: "" }, [
-            h("a", { href: link }, p.name)
-          ])
-        })
-      ])
-    ])
-  }
+	this.viewSingle = (state) => {
+		let heroImg = `media/imgs/${this.getSlug(state)}-hero.jpg`;
 
-  // SUB VIEWS -----------------------------------------------------------------
+		// TODO handle invalid reciple currentId; make a gotoview func
+		//
+		return h("section", {}, [
+			ui.hero(heroImg),
+			this._viewMetaData(state),
+			ui.giantQuote("...I've made a tornado of dates."),
+			this._viewPhotos(state),
+			h("div", { class: "recipeIngredients-Instructions" }, [
+				ui.largeText("INGREDIENTS / INSTRUCTIONS"),
+				h("div", { class: "content-w", style: { flexDirection: "row", margin: "32px 0 32px" } }, [
+					this._viewIngredients(state),
+					this._viewInstructions(state),
+				]),
+			]),
 
-  this._viewMetaData = (state) => {
-    let liClass = { class: "recipeMetaData" };
-    let { original_recipe, day_made, name, is_vegan, rating } = state.currentRecipe.meta.properties;
-    let mealType = is_vegan ? "Vegan" : "Vegetarian"
+		]);
+	}
 
-    return h("div", { class: "recipeProperties" }, [
-      h("div", { class: "content" }, [
-        ui.largeText(name),
-        h("ul", { class: "recipeMetaData" }, [
-          h("li", liClass,
-            h("a", { href: original_recipe, class: "link-light" }, "original recipe")),
-          h("li", liClass, mealType),
-          h("li", liClass, `Rating: ${rating}`),
-          h("li", liClass, `Made: ${day_made}`)
-        ])])]);
-  }
+	this.viewAll = (state) => {
+		return h("section", { class: "content" }, [
+			h("ul", { class: "recipeList" }, [
+				Object.keys(db.recipes).map(k => {
+					let r = db.recipes[k]
+					let p = r.meta.properties;
+					let link = "#/recipes/" + p.slug;
+					return h("li", { class: "" }, [
+						h("a", { href: link }, p.name)
+					])
+				})
+			])
+		])
+	}
 
-  this._viewIngredients = (state) => {
-    let ingredients = state.currentRecipe.ingredients;
-    let $tr = {style: {padding: "16px 8px"}};
+	// SUB VIEWS -----------------------------------------------------------------
+
+	this._viewMetaData = (state) => {
+		let liClass = { class: "recipeMetaData" };
+		let { original_recipe, day_made, name, is_vegan, rating } = state.currentRecipe.meta.properties;
+		let mealType = is_vegan ? "Vegan" : "Vegetarian"
+
+		return h("div", { class: "recipeProperties" }, [
+			h("div", { class: "content" }, [
+				ui.largeText(name),
+				h("ul", { class: "recipeMetaData" }, [
+					h("li", liClass,
+						h("a", { href: original_recipe, class: "link-light" }, "original recipe")),
+					h("li", liClass, mealType),
+					h("li", liClass, `Rating: ${rating}`),
+					h("li", liClass, `Made: ${day_made}`)
+				])])]);
+	}
+
+	/**
+	 * Looks for photos of the recipe to display
+	 * If no photos, return a hidden span.
+	 */
+	this._viewPhotos = (state) => {
+		if (this.getPhotos(state) == false) {
+			return h("span", {}, "")
+		} else {
+			return h("section", { class: "recipePhotos" }, [
+				this.getPhotos(state).map(i => {
+					let img = `media/imgs/${this.getSlug(state)}-${i}`;
+					let style = { class: "recipePhoto", style: { backgroundImage: `url(${img})` } }
+					return h("div", style, "")
+				})
+			])
+		}
+	}
+
+	this._viewIngredients = (state) => {
+		let ingredients = state.currentRecipe.ingredients;
+		let $tr = { style: { padding: "16px 8px" } };
 
 
-    return h("div", {style: {marginRight: "16px"},
-                     class: "recipeIngredients-Instructions-bg"
-                    }, [
-      h("table", { class: "recipeIngredientTable", style: { width: "100%" } }, [
-        h("thead", { class: "recipeIngredientHeadRow" },
-          h("tr", {}, [ingredients.keys.map(e => h("th", $tr, e))])
-        ),
-        h('tbody', { class: "recipeIngredientTableBody" }, [
-          ingredients.data.map(e => {
-            return h("tr", { class: "recipeIngredient" }, [
-              h("td", {}, e.Ingredient),
-              h("td", {}, e.Quantity),
-              h("td", {}, e.Unit)
-            ])})])])])},
+		return h("div", {
+			style: { marginRight: "16px" },
+			class: "recipeIngredients-Instructions-bg"
+		}, [
+			h("table", { class: "recipeIngredientTable", style: { width: "100%" } }, [
+				h("thead", { class: "recipeIngredientHeadRow" },
+					h("tr", {}, [ingredients.keys.map(e => h("th", $tr, e))])
+				 ),
+				h('tbody', { class: "recipeIngredientTableBody" }, [
+					ingredients.data.map(e => {
+						return h("tr", { class: "recipeIngredient" }, [
+							h("td", {}, e.Ingredient),
+							h("td", {}, e.Quantity),
+							h("td", {}, e.Unit)
+						])
+					})])])])
+	},
 
 
-    this._viewInstructions = (state) => {
-      let steps = state.currentRecipe.instructions;
-      let $wrapper = {style: {marginLeft: "16px"}}
+	this._viewInstructions = (state) => {
+		let steps = state.currentRecipe.instructions;
+		let $wrapper = { style: { marginLeft: "16px" } }
 
-      return h("div", {...$wrapper , class: "recipeIngredients-Instructions-bg" }, [
-        steps.map((s, index) => {
-          let stepClass =
-            index == state.currentRecipeStep
-              ? "recipeStep recipeStep--active"
-              : "recipeStep";
-          let renderTimer = () => {
-            if (s.timer) {
-              let setTimerPayload = { time: time.strToSec(s.timer), step: s.f };
-              if (state.timerRunning == false) {
-                return h("div", { class: "recipeStepTimer", onClick: [$act.setTimer, setTimerPayload] }, ui.icon("watch.svg"));
-              } else if (state.timerRunning) {
-                return h("div", { class: "recipeStepTimer", style: { opacity: 0 } }, ui.icon("watch.svg"));
-              }
-            }
-          };
+		return h("div", { ...$wrapper, class: "recipeIngredients-Instructions-bg" }, [
+			steps.map((s, index) => {
+				let stepClass =
+						index == state.currentRecipeStep
+						? "recipeStep recipeStep--active"
+						: "recipeStep";
+				let renderTimer = () => {
+					if (s.timer) {
+						let setTimerPayload = { time: time.strToSec(s.timer), step: s.f };
+						if (state.timerRunning == false) {
+							return h("div", { class: "recipeStepTimer", onClick: [$act.setTimer, setTimerPayload] }, ui.icon("watch.svg"));
+						} else if (state.timerRunning) {
+							return h("div", { class: "recipeStepTimer", style: { opacity: 0 } }, ui.icon("watch.svg"));
+						}
+					}
+				};
 
-          return h("li",
-            { class: stepClass, onClick: [$act.updateCurrentRecipeStep, index] }, [
-              h("div", { class: "recipeStep_Wrap" }, [
-                h("div",
-                { class: "recipeStep_TextContent", style: { alignContent: "center" } },
-                (index+1 + ". " +  s.f)),
-            ]),
-              renderTimer()
-            ])})])} // I miss lisp
+				return h("li",
+								 { class: stepClass, onClick: [$act.updateCurrentRecipeStep, index] }, [
+									 h("div", { class: "recipeStep_Wrap" }, [
+										 h("div",
+											 { class: "recipeStep_TextContent", style: { alignContent: "center" } },
+											 (index + 1 + ". " + s.f)),
+									 ]),
+									 renderTimer()
+								 ])})])} // I miss lisp
 }

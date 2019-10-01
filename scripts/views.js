@@ -71,7 +71,7 @@ function UiFn() {
         h("span", { class: "pr1" }, this.icon("watch-wh.svg")),
         h("span", { class: "pr4", style: { alignSelf: "center" } }, `${timeStr}`)
       ]),
-      h("span", { style: { alignSelf: "center" } }, `${stepText}`),
+      h("span", { class: "v_TimerText" }, `${stepText}`),
       v_CloseBtn()
     ]);
   }

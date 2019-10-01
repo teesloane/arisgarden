@@ -25,7 +25,7 @@
       app({
         init: initState,
         view: state =>
-          h("main", { style: { marginBottom: "128px" } }, [
+          h("main", {}, [
             state.currentRoute(state),
             ui.timer(state)
           ]),

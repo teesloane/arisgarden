@@ -10,7 +10,8 @@ var db = {
           "is_vegan": "true",
           "is_vegetarian": "false",
           "ease_of_making": "5/5",
-          "rating": "5/5"
+          "rating": "5/5",
+          "imgs": "1.JPG,2.JPG,1.gif"
         },
         "logbook": []
       },
@@ -100,7 +101,8 @@ var db = {
           "is_vegan": "true",
           "is_vegetarian": "true",
           "ease_of_making": "5/5",
-          "rating": "5/5"
+          "rating": "5/5",
+          "imgs": "1.JPG,2.JPG,3.JPG"
         },
         "logbook": []
       },
@@ -211,6 +213,7 @@ var db = {
           "name": "Easy Marinated Tofu",
           "is_vegetarian": "true",
           "ease_of_making": "5/5",
+          "imgs": "false",
           "rating": "4/5"
         },
         "logbook": []
@@ -297,6 +300,7 @@ var db = {
           "name": "Candied Ginger",
           "is_vegan": "true",
           "is_vegetarian": "true",
+          "imgs": "1.JPG,2.JPG,3.JPG",
           "ease_of_making": "2/5",
           "rating": "4/5"
         },
@@ -385,6 +389,7 @@ var db = {
           "slug": "chickpea-shakshuka",
           "is_vegan": "true",
           "is_vegetarian": "true",
+          "imgs": "1.JPG,2.JPG,3.JPG",
           "ease_of_making": "5/5",
           "rating": "4/5"
         },
@@ -493,6 +498,7 @@ var db = {
           "slug": "collard-green-pasta",
           "is_vegan": "false",
           "is_vegetarian": "true",
+          "imgs": "1.JPG,2.JPG,3.JPG",
           "name": "Leafy Spaghetti",
           "ease_of_making": "5/5",
           "rating": "5/5"
@@ -592,6 +598,7 @@ var db = {
           "is_vegan": "true",
           "name": "Bowl #1",
           "is_vegetarian": "true",
+          "imgs": "1.JPG,2.JPG,3.JPG",
           "ease_of_making": "3/5",
           "rating": "5/5"
         },
@@ -751,6 +758,7 @@ var db = {
           "original_recipe": "https://minimalistbaker.com/easy-1-pot-massaman-curry/",
           "day_made": "[2019-09-10]",
           "is_vegan": "true",
+          "imgs": "false",
           "name": "Massaman Curry",
           "is_vegetarian": "true",
           "ease_of_making": "5/5",
@@ -899,6 +907,7 @@ var db = {
           "is_vegan": "true",
           "is_vegetarian": "true",
           "name": "Cauliflower Rice Stir Fry",
+          "imgs": "1.JPG,2.JPG,3.JPG",
           "ease_of_making": "5/5",
           "rating": "5/5"
         },
@@ -942,12 +951,12 @@ var db = {
             "Unit": "tbsp"
           },
           {
-            "Ingredient": "Soy sauce (the sauce)",
+            "Ingredient": "Soy sauce (for the sauce)",
             "Quantity": "4",
             "Unit": "tbsp"
           },
           {
-            "Ingredient": "Soy sauce (the stir fry)",
+            "Ingredient": "Soy sauce (for the stir fry)",
             "Quantity": "3",
             "Unit": "tbsp"
           },
@@ -1043,8 +1052,9 @@ var db = {
           "is_vegan": "false",
           "name": "Kale And Coconut Rice",
           "is_vegetarian": "true",
-          "ease_of_making": "4",
-          "rating": "5"
+          "ease_of_making": "4/5",
+          "rating": "5/5",
+          "imgs": "1.JPG,2.JPG,3.gif"
         },
         "logbook": []
       },
@@ -1162,6 +1172,7 @@ var db = {
           "day_made": "[2019-09-19]",
           "is_vegan": "false",
           "is_vegetarian": "true",
+          "imgs": "1.JPG,2.JPG,3.JPG",
           "name": "Pear + Brie Salad",
           "ease_of_making": "5/5",
           "rating": "5/5"
@@ -1282,8 +1293,9 @@ var db = {
           "is_vegan": "false",
           "is_vegetarian": "true",
           "name": "Sweet Potato Gnocchi",
-          "ease_of_making": "-/5",
-          "rating": "_/5"
+          "ease_of_making": "3/5",
+          "imgs": "1.JPG,2.JPG,4.gif",
+          "rating": "4/5"
         },
         "logbook": []
       },
@@ -1306,7 +1318,7 @@ var db = {
           },
           {
             "Ingredient": "Flour",
-            "Quantity": "1+1/3 (or is it 3/4 cups?)",
+            "Quantity": "1/3",
             "Unit": "cups"
           },
           {
@@ -1376,18 +1388,19 @@ var db = {
         }
       ]
     },
-    "Garlic": {
+    "garlic-alfredo-pasta": {
       "meta": {
         "properties": {
-          "slug": "Garlic",
+          "slug": "garlic-alfredo-pasta",
           "original_recipe": "https://minimalistbaker.com/vegan-garlic-alfredo-pasta/",
-          "time": "00:40:00",
+          "time": "01:00:00",
           "day_made": "[2019-09-23]",
-          "is_vegan": "false",
+          "is_vegan": "true",
           "is_vegetarian": "true",
           "name": "Garlic and White Wine Pasta with Brussel Sprouts",
-          "ease_of_making": "-/5",
-          "rating": "_/5"
+          "imgs": "false",
+          "ease_of_making": "3/5",
+          "rating": "3/5"
         },
         "logbook": []
       },
@@ -1505,8 +1518,9 @@ var db = {
           "is_vegan": "?",
           "is_vegetarian": "?",
           "name": "Raw Beet Salad w/ Quinoa",
-          "ease_of_making": "-/5",
-          "rating": "_/5"
+          "ease_of_making": "4/5",
+          "imgs": "1.JPG,2.JPG,3.JPG,5.gif",
+          "rating": "4/5"
         },
         "logbook": []
       },

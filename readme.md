@@ -15,9 +15,9 @@ discovering food.
 - Images can be turned into gifs using `ImageMagick's` `mogrify` command:
 
 ```sh
-mogrify -resize 320 *.jpg 
+mogrify -resize 400 *.JPG
 
-convert -delay 15 -loop 0 *.jpg douglas.gif
+convert -delay 5 -loop 0 *.JPG output.gif
 ```
   
 
