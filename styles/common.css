@@ -29,7 +29,9 @@
 
 /* Image Hero */
 .v_Hero {
-  height: 400px;
+  height: 500px;
+	display: flex;
+	justify-content: center;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;

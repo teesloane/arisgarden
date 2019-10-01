@@ -22,8 +22,8 @@ function Recipe() {
 		// TODO handle invalid reciple currentId; make a gotoview func
 		//
 		return h("section", {}, [
-			ui.hero(heroImg),
-			this._viewMetaData(state),
+				ui.hero(heroImg, () => this._viewMetaData(state)),
+			// this._viewMetaData(state),
 			ui.giantQuote("...I've made a tornado of dates."),
 			this._viewPhotos(state),
 			h("div", { class: "recipeIngredients-Instructions" }, [
@@ -33,7 +33,6 @@ function Recipe() {
 					this._viewInstructions(state),
 				]),
 			]),
-
 		]);
 	}
 
@@ -54,20 +53,21 @@ function Recipe() {
 
 	// SUB VIEWS -----------------------------------------------------------------
 
+		
 	this._viewMetaData = (state) => {
 		let liClass = { class: "recipeMetaData" };
 		let { original_recipe, day_made, name, is_vegan, rating } = state.currentRecipe.meta.properties;
 		let mealType = is_vegan ? "Vegan" : "Vegetarian"
 
 		return h("div", { class: "recipeProperties" }, [
-			h("div", { class: "content" }, [
+			h("div", { class: "content-w" }, [
 				ui.largeText(name),
 				h("ul", { class: "recipeMetaData" }, [
 					h("li", liClass,
-						h("a", { href: original_recipe, class: "link-light" }, "original recipe")),
+							h("a", { href: original_recipe, target: "_blank", class: "link-light" }, "Original Recipe")),
 					h("li", liClass, mealType),
 					h("li", liClass, `Rating: ${rating}`),
-					h("li", liClass, `Made: ${day_made}`)
+					h("li", liClass, day_made)
 				])])]);
 	}
 

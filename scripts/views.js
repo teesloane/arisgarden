@@ -99,12 +99,12 @@ function UiFn() {
   }
 
 
-  this.hero = (bgImage) => {
+  this.hero = (bgImage, childFn) => {
     let attrs = {
       class: "v_Hero",
       style: { backgroundImage: `url(${bgImage})` }
     };
-    return h("section", attrs);
+    return h("section", attrs, childFn());
   }
 
 }

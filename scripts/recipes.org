@@ -418,6 +418,14 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
    egg with a spatula.
 7) Add tamari, Sriracha, and half of the lime juice. Stir.
 8)
+** Content
+*** Oh my what a lettucemess.                                                 :quote:
+*** Clap Clap                                                                 :dialogue:
+#+BEGIN_QUOTE
+- *Clap Clap* (!) You know what that means?
+- Dinner time!
+#+END_QUOTE
+
 * DONE Pear And Brie Salad
 :LOGBOOK:
 :END:

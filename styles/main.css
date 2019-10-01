@@ -89,11 +89,11 @@ h1,h2,h3,h4,h5,h6 {
 /* RecipeSingle View---------------------------------------------------------------------*/
 
 .recipeProperties {
-  background: #333;
   color: white;
   padding: 64px 0;
   display: flex;
-  justify-content: center;
+	flex: 1;
+	align-self: center;
 }
 
 
@@ -102,9 +102,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .recipeMetaData {
+  background: #222;
   display: flex;
+	width: 80%;
+	margin: 0 auto;
+	padding: 8px;
   justify-content: space-around;
-  padding: 0;
 }
 
 .recipeMetaDatum {
