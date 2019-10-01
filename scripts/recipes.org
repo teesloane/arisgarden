@@ -577,3 +577,39 @@ CLOSED: [2019-09-25 Wed 14:42]
    olive oil, maple syrup, dijon mustard, and salt and pepper.
 6) Apply the dressing, not too much - if you have a lot of salad, portion it out
    and store undressed leftovers and save the dressing for leftovers.
+* TODO  Kimchi Udon
+:PROPERTIES:
+:slug: kimchi-udon
+:original_recipe: https://www.bonappetit.com/recipe/kimchi-udon-with-scallions
+:time: 00:??:00
+:day_made: [2019-09-30]
+:is_vegan: false
+:is_vegetarian: true
+:name: Kimchi Udon
+:ease_of_making: ?/5
+:rating: ?/5
+:END:
+** Ingredients
+| Ingredient                                           | Quantity | Unit |
+|------------------------------------------------------+----------+------|
+| Butter, unsalted                                     |        5 | tbsp |
+| Kimchi (chopped)                                     |        1 | cups |
+| Kimchi (juice)                                       |      1/3 | cups |
+| Gochujang                                            |        2 | tbsp |
+| Vegetable Broth                                      |     1/2/ | cup  |
+| Udon Noodles                                         |        1 | lb   |
+| Toasted Sesame Seeds                                 |        1 | tbsp |
+| Salt                                                 |          | --   |
+| Egg yolks                                            |        4 | --   |
+| Scallions (white and pale green only, thinly sliced) |        3 | --   |
+** Steps
+1) Chop kimchi and collect kimchi juice.
+2) [t: 00:04:00] Heat 2 tbsp of butter on medium high. Add chopped kimchi and gochujang and
+   cook, stirring until kimchi is softened and lightly caramelized, around 4 minutes.
+3) [t: 00:03:00] Add brows and kimchi juice and bring to a simmer. Cook until slightly reduce,
+   about 3 minutes
+4) Boil noodles according to package directions.
+5) [t: 00:02:00] Using tongs, transfer noodles to the skiller and add the remaining 3 tbsp of
+   butter. Cook, tossing often, about 2 minutes.
+6) Season with salt if needed.
+7) Deviding into bowls, top with egg yolks, scallions and sesame seeds.
