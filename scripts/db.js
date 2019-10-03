@@ -1740,6 +1740,101 @@ var db = {
           "f": "Deviding into bowls, top with egg yolks, scallions and sesame seeds."
         }
       ]
+    },
+    "breakfast-quinoa": {
+      "meta": {
+        "properties": {
+          "slug": "breakfast-quinoa",
+          "original_recipe": "",
+          "time": "00:30:00",
+          "day_made": "[2019-10-03]",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "name": "Breakfast Quiona",
+          "ease_of_making": "5/5",
+          "rating": "5/5"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit"
+        ],
+        "data": [
+          {
+            "Ingredient": "Quinoa",
+            "Quantity": "1",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Water",
+            "Quantity": "2",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Maple Syrup",
+            "Quantity": "2~",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Pecans or Walnuts (chopped)",
+            "Quantity": "1/4",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Cinnamon",
+            "Quantity": "1 or 2",
+            "Unit": "tsp"
+          },
+          {
+            "Ingredient": "Coconut oil",
+            "Quantity": "2",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Fresh berries",
+            "Quantity": "--",
+            "Unit": "--"
+          },
+          {
+            "Ingredient": "Almond butter",
+            "Quantity": "--",
+            "Unit": "--"
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "[t:00:15:00] Make the quinoa: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes",
+          "f": "Make the quinoa: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes",
+          "timer": "0:15:00"
+        },
+        {
+          "o": "[t:00:04:00] Heat chopped nuts in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes.",
+          "f": "Heat chopped nuts in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes.",
+          "timer": "0:04:00"
+        },
+        {
+          "o": "[t:00:00:15] Add coconut oil, cinnamon to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds.",
+          "f": "Add coconut oil, cinnamon to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds.",
+          "timer": "0:00:15"
+        },
+        {
+          "o": "[t:00:00:02] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add maple syrup.",
+          "f": "Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add maple syrup.",
+          "timer": "0:00:02"
+        },
+        {
+          "o": "Add the nut to the quinoa. Top with a sprinkle of cinnamon.",
+          "f": "Add the nut to the quinoa. Top with a sprinkle of cinnamon."
+        },
+        {
+          "o": "Top with fresh berries and almond butter.",
+          "f": "Top with fresh berries and almond butter."
+        }
+      ]
     }
   }
 }

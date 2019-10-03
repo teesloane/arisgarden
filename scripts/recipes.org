@@ -425,7 +425,6 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 - *Clap Clap* (!) You know what that means?
 - Dinner time!
 #+END_QUOTE
-
 * DONE Pear And Brie Salad
 :LOGBOOK:
 :END:
@@ -585,7 +584,7 @@ CLOSED: [2019-09-25 Wed 14:42]
    olive oil, maple syrup, dijon mustard, and salt and pepper.
 6) Apply the dressing, not too much - if you have a lot of salad, portion it out
    and store undressed leftovers and save the dressing for leftovers.
-* TODO  Kimchi Udon
+* TODO Kimchi Udon                                                              :needs_photos:
 :PROPERTIES:
 :slug: kimchi-udon
 :original_recipe: https://www.bonappetit.com/recipe/kimchi-udon-with-scallions
@@ -621,3 +620,33 @@ CLOSED: [2019-09-25 Wed 14:42]
    butter. Cook, tossing often, about 2 minutes.
 6) Season with salt if needed.
 7) Deviding into bowls, top with egg yolks, scallions and sesame seeds.
+* TODO Breakfast Quinoa                                                         :needs_photos:
+:PROPERTIES:
+:slug: breakfast-quinoa
+:original_recipe:
+:time: 00:30:00
+:day_made: [2019-10-03]
+:is_vegan: true
+:is_vegetarian: true
+:name: Breakfast Quiona
+:ease_of_making: 5/5
+:rating: 5/5
+:END:
+** Ingredients
+| Ingredient                  | Quantity | Unit |
+|-----------------------------+----------+------|
+| Quinoa                      | 1        | cups |
+| Water                       | 2        | cups |
+| Maple Syrup                 | 2~       | tbsp |
+| Pecans or Walnuts (chopped) | 1/4      | cups |
+| Cinnamon                    | 1 or 2   | tsp  |
+| Coconut oil                 | 2        | tbsp |
+| Fresh berries               | --       | --   |
+| Almond butter               | --       | --   |
+** Steps
+1) [t:00:15:00] Make the quinoa: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes
+2) [t:00:04:00] Heat chopped nuts in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes.
+3) [t:00:00:15] Add coconut oil, cinnamon to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds.
+4) [t:00:00:02] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add maple syrup.
+5) Add the nut to the quinoa. Top with a sprinkle of cinnamon.
+6) Top with fresh berries and almond butter.
