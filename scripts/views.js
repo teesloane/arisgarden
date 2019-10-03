@@ -50,29 +50,50 @@ function View() {
  */
 function UiFn() {
 
+  /**
+   * Displays the timer at the bottom
+   */
   this.timer = (state) => {
     let timeStr     = state.timer ? time.secToStr(state.timer) : "00:00:00";
     let centerStyle = { style: { alignSelf: "center", display: "flex" } };
     let stepText    = state.currentRecipeStepText;
+    let isCountDown = () => state.timerMode == "countdown" ? true : false;
 
-    let _class = state.timerRunning
+    let _class = state.timerRunning || state.timerAlarmPlaying
         ? "v_TimerFixed"
         : "v_TimerFixed v_TimerFixed_hidden";
 
-    let v_CloseBtn = () =>
-        h(
-          "span",
-          { class: "v_TimerFixed_closeBtn", onClick: [$act.cancelTimer] },
-          this.icon("x-circle-wh.svg")
-        );
+    let v_cancelTimer = () => {
+      let action;
+      if (isCountDown()) {
+        action = $act.timerCancel
+      } else {
+        action = $act.timerStopAlarm
+      }
+
+      return h("span", {
+        class: "v_TimerFixed_closeBtn",
+        onClick: [action]
+      }, this.icon("x-circle-wh.svg"));
+    }
+
+    let timerText = () => {
+      if (isCountDown()) {
+        return h("span", { class: "v_TimerText" }, `${stepText}`)
+      } else {
+        return h("span", { class: "v_TimerText" }, "BEEP BEEP BEEP. TIME'S UP!")
+      }
+    }
+
+    console.log("rerendering with handle close changing and timerMode being", state.timerMode)
 
     return h("div", { class: _class }, [
       h("span", centerStyle, [
         h("span", { class: "pr1" }, this.icon("watch-wh.svg")),
         h("span", { class: "pr4", style: { alignSelf: "center" } }, `${timeStr}`)
       ]),
-      h("span", { class: "v_TimerText" }, `${stepText}`),
-      v_CloseBtn()
+      timerText(),
+      v_cancelTimer()
     ]);
   }
 

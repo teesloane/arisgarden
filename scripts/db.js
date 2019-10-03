@@ -1265,9 +1265,9 @@ var db = {
       },
       "instructions": [
         {
-          "o": "[t: 00:12:00] Preheat oven to 425. Add chopped potatoes and broccoli florets to bowl with olive oil and salt and pepper and dill. Put on a baking sheet on parchment paper. Bake for 10-12 minutes",
+          "o": "[t: 00:00:05] Preheat oven to 425. Add chopped potatoes and broccoli florets to bowl with olive oil and salt and pepper and dill. Put on a baking sheet on parchment paper. Bake for 10-12 minutes",
           "f": "Preheat oven to 425. Add chopped potatoes and broccoli florets to bowl with olive oil and salt and pepper and dill. Put on a baking sheet on parchment paper. Bake for 10-12 minutes",
-          "timer": "00:12:00"
+          "timer": "00:00:05"
         },
         {
           "o": "Prepare the dressing for the salad. Add the following to a container and whisk: Olive oil, Rice wine vinegar, shallots, maple syrup, ground pepper.",
@@ -1630,6 +1630,114 @@ var db = {
         {
           "o": "Apply the dressing, not too much - if you have a lot of salad, portion it out and store undressed leftovers and save the dressing for leftovers.",
           "f": "Apply the dressing, not too much - if you have a lot of salad, portion it out and store undressed leftovers and save the dressing for leftovers."
+        }
+      ]
+    },
+    "kimchi-udon": {
+      "meta": {
+        "properties": {
+          "slug": "kimchi-udon",
+          "original_recipe": "https://www.bonappetit.com/recipe/kimchi-udon-with-scallions",
+          "time": "00:??:00",
+          "day_made": "[2019-09-30]",
+          "is_vegan": "false",
+          "is_vegetarian": "true",
+          "name": "Kimchi Udon",
+          "ease_of_making": "?/5",
+          "rating": "?/5"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit"
+        ],
+        "data": [
+          {
+            "Ingredient": "Butter, unsalted",
+            "Quantity": "5",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Kimchi (chopped)",
+            "Quantity": "1",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Kimchi (juice)",
+            "Quantity": "1/3",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Gochujang",
+            "Quantity": "2",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Vegetable Broth",
+            "Quantity": "1/2/",
+            "Unit": "cup"
+          },
+          {
+            "Ingredient": "Udon Noodles",
+            "Quantity": "1",
+            "Unit": "lb"
+          },
+          {
+            "Ingredient": "Toasted Sesame Seeds",
+            "Quantity": "1",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Salt",
+            "Quantity": "",
+            "Unit": "--"
+          },
+          {
+            "Ingredient": "Egg yolks",
+            "Quantity": "4",
+            "Unit": "--"
+          },
+          {
+            "Ingredient": "Scallions (white and pale green only, thinly sliced)",
+            "Quantity": "3",
+            "Unit": "--"
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "Chop kimchi and collect kimchi juice.",
+          "f": "Chop kimchi and collect kimchi juice."
+        },
+        {
+          "o": "[t: 00:04:00] Heat 2 tbsp of butter on medium high. Add chopped kimchi and gochujang and cook, stirring until kimchi is softened and lightly caramelized, around 4 minutes.",
+          "f": "Heat 2 tbsp of butter on medium high. Add chopped kimchi and gochujang and cook, stirring until kimchi is softened and lightly caramelized, around 4 minutes.",
+          "timer": "00:04:00"
+        },
+        {
+          "o": "[t: 00:03:00] Add brows and kimchi juice and bring to a simmer. Cook until slightly reduce, about 3 minutes",
+          "f": "Add brows and kimchi juice and bring to a simmer. Cook until slightly reduce, about 3 minutes",
+          "timer": "00:03:00"
+        },
+        {
+          "o": "Boil noodles according to package directions.",
+          "f": "Boil noodles according to package directions."
+        },
+        {
+          "o": "[t: 00:02:00] Using tongs, transfer noodles to the skiller and add the remaining 3 tbsp of butter. Cook, tossing often, about 2 minutes.",
+          "f": "Using tongs, transfer noodles to the skiller and add the remaining 3 tbsp of butter. Cook, tossing often, about 2 minutes.",
+          "timer": "00:02:00"
+        },
+        {
+          "o": "Season with salt if needed.",
+          "f": "Season with salt if needed."
+        },
+        {
+          "o": "Deviding into bowls, top with egg yolks, scallions and sesame seeds.",
+          "f": "Deviding into bowls, top with egg yolks, scallions and sesame seeds."
         }
       ]
     }

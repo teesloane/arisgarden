@@ -460,7 +460,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 | Maple Syrup                  |        1 | tbsp   |
 | Pepper                       |        1 | pinch  |
 ** Steps
-1) [t: 00:12:00] Preheat oven to 425. Add chopped potatoes and broccoli florets to bowl with olive oil and salt and pepper and dill. Put on a baking sheet on parchment paper. Bake for 10-12 minutes
+1) [t: 00:00:05] Preheat oven to 425. Add chopped potatoes and broccoli florets to bowl with olive oil and salt and pepper and dill. Put on a baking sheet on parchment paper. Bake for 10-12 minutes
 2) Prepare the dressing for the salad. Add the following to a container and whisk: Olive oil, Rice wine vinegar, shallots, maple syrup, ground pepper.
 3) Prepare the salad: Lightly apply the dressing to the greens Arrange pear slices and briece on plate.  Drizzle with dressing. Add greens, cranberries,
    pecans, and extra slices of pear. Add a bit more dressing.

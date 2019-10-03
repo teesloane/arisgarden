@@ -3,15 +3,54 @@
  */
 
 const $act = {
+
   updateCurrentRecipeStep: (s, i) => ({ ...s, currentRecipeStep: i }),
 
-  setTimer: (s, p) => ({
+  /* TIMER ------------------------------------------------------------------- */
+
+  timerSet: (s, p) => ({
     ...s,
     timer: p.time,
     timerRunning: true,
     currentRecipeStepText: p.step
   }),
 
+  timerCancel: s => ({ ...s, timer: null, timerRunning: false }),
+
+  timerStopAlarm: s => {
+    return ({
+      ...s,
+      timer: null,
+      timerRunning: false,
+      timerAlarmPlaying: false,
+      timerMode: "countdown",
+    })
+  },
+
+  timerCountDown: (s, t) => {
+    if (s.timer == 0) {
+      return {
+        ...s,
+        timer: null,
+        timerRunning: false,
+        timerAlarmPlaying: true,
+        timerMode: "finished",
+      };
+    } else {
+      return { ...s, timer: s.timer - 1 };
+    }
+  },
+
+  timerRingFX: (s, p) => {
+    var audio = new Audio('./media/sounds/alarm.wav');
+    audio.play();
+    return {
+      ...s,
+    }
+  },
+
+
+  /* ROUTING ------------------------------------------------------------------- */
 
   setRoute: (state, props) => ({ ...state, route: props.route }),
 
@@ -36,17 +75,7 @@ const $act = {
     return (newState)
   },
 
-  cancelTimer: s => ({ ...s, timer: null, timerRunning: false }),
-
   setRoute: (s, p) => ({ ...s, route: p }),
-
-  countDown: (s, t) => {
-    if (s.timer == 0) {
-      return { ...s, timer: null, timerRunning: false };
-    } else {
-      return { ...s, timer: s.timer - 1 };
-    }
-  }
 };
 
 var initState = {
@@ -56,13 +85,22 @@ var initState = {
   currentRecipeStepText: "",
   currentRoute: () => h("div", {}, "loading state"),
   timer: null,
+  timerAudio: null,
   timerRunning: false,
+  timerAlarmPlaying: false,
+  timerMode: "countdown",
   route: "/"
 };
 
 
 var subscriptions = (state) => [
-  state.timerRunning && interval($act.countDown, { delay: 1000 }),
-  true && v.handleRouter($act.setRoutePath, state)
-]
 
+  // Routing
+  true && v.handleRouter($act.setRoutePath, state),
+
+  // Count down the timer
+  state.timerRunning && interval($act.timerCountDown, { delay: 1000 }),
+
+  // Alarm player - Plays alarm when timer is counted down.
+  state.timerAlarmPlaying && timeout($act.timerRingFX, {delay: 1000})
+]
