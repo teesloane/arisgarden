@@ -139,7 +139,7 @@ function UiFn() {
     return h("nav", {class: "v_Navbar"}, [
       h("div", {style: {alignItems: "center", background: "#222"}}, [
         ui.icon("c_home.svg", {width: 48}),
-        h("a", {class: "v_Navbar_text", href: "#/"}, "GOUTFOOD")
+        h("a", {class: "v_Navbar_text", href: "#/"}, "GOÛTFOOD")
       ]),
 
       // random / restaurants
