@@ -42,8 +42,7 @@ function View() {
 }
 
 
-
-
+// ------------------------------------------------------------------------------
 
 /**
  * Common ui functions
@@ -97,11 +96,9 @@ function UiFn() {
     ]);
   }
 
-
-  this.icon = (name) => {
-    return h("img", { src: `media/icons/${name}` });
+  this.icon = (name, attrs) => {
+    return h("img", {...attrs, src: `media/icons/${name}` });
   }
-
 
   this.giantQuote = (t) => {
     return h(
@@ -114,11 +111,13 @@ function UiFn() {
     );
   }
 
-
   this.largeText = (t) => {
     return h("h1", { class: "v_LargeText" }, t);
   }
 
+  this.heading = (t) => {
+    return h("h1", { class: "v_Heading" }, t);
+  }
 
   this.hero = (bgImage, childFn) => {
     let attrs = {
@@ -128,4 +127,23 @@ function UiFn() {
     return h("section", attrs, childFn());
   }
 
+  this.navbar = () => {
+    let $txt = {class: "v_Navbar_text"}
+    return h("nav", {class: "v_Navbar"}, [
+      h("div", {style: {alignItems: "center", background: "#222"}}, [
+        ui.icon("c_home.svg", {width: 48}),
+        h("div", $txt, "GOUTFOOD")
+      ]),
+
+      h("div", {}, [
+        h("div", $txt, [
+         h("div", {}, "RNDM"),
+          ui.icon("shuffle.svg", {width: 16})
+
+
+        ]),
+        // h("div", $txt, "Restaurants")
+      ])
+    ])
+  }
 }

@@ -21,11 +21,13 @@
       const recipes = new Recipe();
       const v       = new View();
       const ui      = new UiFn();
+      const util    = new Util();
 
       app({
         init: initState,
         view: state =>
           h("main", {}, [
+            ui.navbar(),
             state.currentRoute(state),
             ui.timer(state)
           ]),

@@ -28,7 +28,7 @@ body {
   line-height: 1;
 }
 ol, ul {
-  list-style: disc;
+  list-style: none;
   /* margin-left: 16px; */
 }
 blockquote, q {
@@ -253,16 +253,39 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-/* RecipeList View---------------------------------------------------------------------*/
+/* RecipeList View: rL -------------------------------------------------------------*/
 
-.recipeList {
+.rL {
+}
+
+.rL_list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 64px 0;
 }
 
-.recipeList li {
-  width: 200px;
-  padding: 12px;
+.rL_list li {
+  width: 30%;
+  padding: 12px 0;
+}
+
+.rL_link {
+  color: #333;
+  font-weight: bold;
+  padding: 24px 0;
+}
+
+.rL_hero_data {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
+  padding: 32px;
+  letter-spacing: 4px;
+}
+
+.rL_hero_li {
+  padding: 4px 0;
 }

@@ -1638,13 +1638,14 @@ var db = {
         "properties": {
           "slug": "kimchi-udon",
           "original_recipe": "https://www.bonappetit.com/recipe/kimchi-udon-with-scallions",
-          "time": "00:??:00",
+          "time": "00:40:00",
           "day_made": "[2019-09-30]",
           "is_vegan": "false",
           "is_vegetarian": "true",
           "name": "Kimchi Udon",
-          "ease_of_making": "?/5",
-          "rating": "?/5"
+          "imgs": "1.JPG,2.JPG,3.JPG,4.JPG",
+          "ease_of_making": "4/5",
+          "rating": "4/5"
         },
         "logbook": []
       },
@@ -1741,16 +1742,115 @@ var db = {
         }
       ]
     },
+    "miso-asparagus": {
+      "meta": {
+        "properties": {
+          "slug": "miso-asparagus",
+          "original_recipe": "https://www.bonappetit.com/recipe/ginger-miso-grilled-asparagus",
+          "time": "00:30:00",
+          "day_made": "[2019-10-01]",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "name": "Miso Asparagus",
+          "imgs": "1.JPG,2.JPG,3.gif",
+          "ease_of_making": "4/5",
+          "rating": "4/5"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit"
+        ],
+        "data": [
+          {
+            "Ingredient": "Mirin",
+            "Quantity": "1/4",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Miso",
+            "Quantity": "1/4",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Rice Wine Vinegar",
+            "Quantity": "2",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Ginger - peeled and grated",
+            "Quantity": "2",
+            "Unit": "tsp"
+          },
+          {
+            "Ingredient": "Asparagus",
+            "Quantity": "2",
+            "Unit": "bunches"
+          },
+          {
+            "Ingredient": "Lime wedges",
+            "Quantity": "4",
+            "Unit": "--"
+          },
+          {
+            "Ingredient": "Scallions (Green onions)",
+            "Quantity": "1/4",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Sesame Seeds",
+            "Quantity": "--",
+            "Unit": "sprinkle"
+          },
+          {
+            "Ingredient": "",
+            "Quantity": "",
+            "Unit": ""
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "Prepare a grill to heat.",
+          "f": "Prepare a grill to heat."
+        },
+        {
+          "o": "Whisk mirin, miso, vinegar, ginger, in a small bowl.",
+          "f": "Whisk mirin, miso, vinegar, ginger, in a small bowl."
+        },
+        {
+          "o": "Place asparagus in a baking dish and pour miso mixture over. Toss to coat.",
+          "f": "Place asparagus in a baking dish and pour miso mixture over. Toss to coat."
+        },
+        {
+          "o": "Let things stew a few minutes. Cut the scallions.",
+          "f": "Let things stew a few minutes. Cut the scallions."
+        },
+        {
+          "o": "[t:00:04:00] Grill asparagus, turning occasionally until charred on all sides.",
+          "f": "Grill asparagus, turning occasionally until charred on all sides.",
+          "timer": "0:04:00"
+        },
+        {
+          "o": "Transfer to plate, squeeze lime juice and top with scallions and sesame seeds.",
+          "f": "Transfer to plate, squeeze lime juice and top with scallions and sesame seeds."
+        }
+      ]
+    },
     "breakfast-quinoa": {
       "meta": {
         "properties": {
           "slug": "breakfast-quinoa",
-          "original_recipe": "",
+          "original_recipe": "https://cookieandkate.com/cinnamon-breakfast-quinoa-recipe/",
           "time": "00:30:00",
           "day_made": "[2019-10-03]",
           "is_vegan": "true",
           "is_vegetarian": "true",
-          "name": "Breakfast Quiona",
+          "imgs": "false",
+          "name": "Breakfast Quinoa",
           "ease_of_making": "5/5",
           "rating": "5/5"
         },
@@ -1833,6 +1933,112 @@ var db = {
         {
           "o": "Top with fresh berries and almond butter.",
           "f": "Top with fresh berries and almond butter."
+        }
+      ]
+    },
+    "black-bean-salad": {
+      "meta": {
+        "properties": {
+          "slug": "black-bean-salad",
+          "original_recipe": "https://cookieandkate.com/black-bean-salad-recipe/",
+          "time": "00:20:00",
+          "day_made": "[2019-10-03]",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "imgs": "1.JPG,2.JPG,3.JPG",
+          "name": "Black Bean Salad",
+          "ease_of_making": "5/5",
+          "rating": "5/5"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit"
+        ],
+        "data": [
+          {
+            "Ingredient": "Black beans",
+            "Quantity": "3",
+            "Unit": "Cans (15oz/each)"
+          },
+          {
+            "Ingredient": "Canned Corn",
+            "Quantity": "1",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Bell Pepper (any colour)",
+            "Quantity": "1",
+            "Unit": "--"
+          },
+          {
+            "Ingredient": "Cherry Tomatoes",
+            "Quantity": "1",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Red Onion (diced)",
+            "Quantity": "1",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Jalapeno (seeds optional)",
+            "Quantity": "1",
+            "Unit": ""
+          },
+          {
+            "Ingredient": "Lime Zest",
+            "Quantity": "1/2",
+            "Unit": "tsp"
+          },
+          {
+            "Ingredient": "Lime juice",
+            "Quantity": "2",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Olive oil",
+            "Quantity": "1/4",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "White vinegar",
+            "Quantity": "1/4",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Chili powder",
+            "Quantity": "1/2",
+            "Unit": "tsp"
+          },
+          {
+            "Ingredient": "Cumin",
+            "Quantity": "1/2",
+            "Unit": "tsp"
+          },
+          {
+            "Ingredient": "Salt",
+            "Quantity": "1/2",
+            "Unit": "tsp"
+          },
+          {
+            "Ingredient": "Sliced Avocado (optional)",
+            "Quantity": "1",
+            "Unit": "--"
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "In a large serving bowl combine all the ingredients.",
+          "f": "In a large serving bowl combine all the ingredients."
+        },
+        {
+          "o": "Cover and chill. Leftovers should last 3 to 4 days.",
+          "f": "Cover and chill. Leftovers should last 3 to 4 days."
         }
       ]
     }

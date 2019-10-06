@@ -70,6 +70,19 @@
 					<key>promptMessage</key>
 					<string>Choose a Finder Item:</string>
 				</dict>
+				<key>ActionRuntimeParameters</key>
+				<dict>
+					<key>defaultLocation</key>
+					<string>/Users/tees/Desktop</string>
+					<key>granularity</key>
+					<integer>0</integer>
+					<key>multipleSelection</key>
+					<true/>
+					<key>promptMessage</key>
+					<string>Choose a Finder Item:</string>
+					<key>temporary items path</key>
+					<string>/var/folders/z_/zhhgkf5j25scsdpf2tkrkxc00000gn/T/CDF43814-D478-42D3-A1BD-4BFFC0AAB62E/1/com.apple.Automator.AskForFinderItems</string>
+				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.AskForFinderItems</string>
 				<key>CFBundleVersion</key>
@@ -205,7 +218,7 @@
 					<dict>
 						<key>tokenizedValue</key>
 						<array>
-							<string>salad-raw-beet</string>
+							<string>black-bean-salad</string>
 						</array>
 					</dict>
 					<key>ignoreCase</key>
@@ -275,7 +288,7 @@
 					<key>dateToUse</key>
 					<integer>0</integer>
 					<key>defaultName</key>
-					<string>salad-raw-beet</string>
+					<string>black-bean-salad</string>
 					<key>ignoreCase</key>
 					<true/>
 					<key>includeExtensions</key>
@@ -805,19 +818,19 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>4912E3B5-DD07-446F-A98D-F65023507067</key>
-		<dict>
-			<key>from</key>
-			<string>105F1E37-636E-4778-B772-AF75CDAA03F4 - 105F1E37-636E-4778-B772-AF75CDAA03F4</string>
-			<key>to</key>
-			<string>4B4813BE-38ED-4E03-A636-4E12C2E9A7B2 - 4B4813BE-38ED-4E03-A636-4E12C2E9A7B2</string>
-		</dict>
-		<key>72A5B569-1679-49CB-BB0A-636908DA50A2</key>
+		<key>3FADEE67-AAAD-4D08-A59C-292CDDC4D0C6</key>
 		<dict>
 			<key>from</key>
 			<string>4B4813BE-38ED-4E03-A636-4E12C2E9A7B2 - 4B4813BE-38ED-4E03-A636-4E12C2E9A7B2</string>
 			<key>to</key>
 			<string>BC177593-2AC3-4B6E-A970-EE3C588836F9 - BC177593-2AC3-4B6E-A970-EE3C588836F9</string>
+		</dict>
+		<key>806EDA60-18DF-4D28-801B-2DFE9391EA34</key>
+		<dict>
+			<key>from</key>
+			<string>105F1E37-636E-4778-B772-AF75CDAA03F4 - 105F1E37-636E-4778-B772-AF75CDAA03F4</string>
+			<key>to</key>
+			<string>4B4813BE-38ED-4E03-A636-4E12C2E9A7B2 - 4B4813BE-38ED-4E03-A636-4E12C2E9A7B2</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>

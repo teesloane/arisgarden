@@ -1,3 +1,4 @@
+// TODO - move this int Util.
 var time = {
   strToSec: function(str) {
     var a = str.split(":");
@@ -22,3 +23,12 @@ var time = {
     return hours + ":" + minutes + ":" + seconds;
   }
 };
+
+
+function Util() {
+  // get a random property from an object
+  this.randomProperty = function (obj) {
+    var keys = Object.keys(obj)
+    return obj[keys[ keys.length * Math.random() << 0]];
+  };
+}
