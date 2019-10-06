@@ -13,9 +13,11 @@ function View() {
    * 1: resource model / 2: single instance
    */
   this.getRoute = (hash, event) => {
+    let rs = hash.split("/");              // route structure
     let out = { view: this.routes["404"], id: rs[2] }   // rdata: routes / route metadata
 
     // Router --------------------------------------------
+    
     switch(hash) {
       case "":
         out.view = this.routes["#/"]
@@ -28,10 +30,9 @@ function View() {
         break
       // handle more complex routes.
       default:
-        let rs = hash.split("/"); // route structure
         if (rs[1] === "recipes" && rs[2] !== undefined) {
           out.view = this.routes["#/recipes/:id"]
-        } 
+        }
     }
     return out
   }
