@@ -52,11 +52,6 @@ const $act = {
 
   /* ROUTING ------------------------------------------------------------------- */
 
-  setId: (s, p) => {
-    return { ...s, currentId: p };
-  },
-
-
   setRoutePath: (a, s) => {
     let { event, state } = s;
     let hash = location.hash;
