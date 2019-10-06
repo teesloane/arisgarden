@@ -66,7 +66,6 @@
 
 .v_LargeText {
   text-transform: uppercase;
-  /* padding: 0 0 48px 0px; */
   padding: 16px;
   margin: 0 0 32px 0;
   font-style: oblique;
@@ -75,6 +74,7 @@
   letter-spacing: 8px;
   font-size: 32px;
   text-align: center;
+  align-self: center;
 }
 
 .v_Heading {
