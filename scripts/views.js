@@ -1,9 +1,9 @@
 function View() {
   this.routes = {
-    "#": recipes.viewAll,
+    "#/": recipes.viewAll,
     "#/recipes": recipes.viewAll,
     "#/recipes/:id": recipes.viewSingle,
-    "404": () => h("div", {}, "not found")
+    "404": () => h("div", {}, "Not Found")
   }
 
 
@@ -12,18 +12,26 @@ function View() {
    * Returns an object with a route fn and potential currentId
    * 1: resource model / 2: single instance
    */
-  this.getRoute = (hash, state) => {
-    // TODO: handle invalid route at the gate
-    let rs = hash.split("/");
-    let out = { view: "404", id: rs[2] }
+  this.getRoute = (hash, event) => {
+    let out = { view: this.routes["404"], id: rs[2] }   // rdata: routes / route metadata
 
-    // FIXME: Clean this up.
-    if (rs[1] === "recipes" && rs[2] !== undefined) {
-      out.view = this.routes["#/recipes/:id"]
-    } else if (rs[1] === "recipes") {
-      out.view = this.routes["#/recipes"]
-    } else {
-      return out
+    // Router --------------------------------------------
+    switch(hash) {
+      case "":
+        out.view = this.routes["#/"]
+        break;
+      case "#/":
+        out.view = this.routes["#/"]
+        break;
+      case "#/recipes":
+        out.view = this.routes["#/recipes"]
+        break
+      // handle more complex routes.
+      default:
+        let rs = hash.split("/"); // route structure
+        if (rs[1] === "recipes" && rs[2] !== undefined) {
+          out.view = this.routes["#/recipes/:id"]
+        } 
     }
     return out
   }

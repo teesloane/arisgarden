@@ -55,7 +55,7 @@ const $act = {
   setRoutePath: (a, s) => {
     let { event, state } = s;
     let hash = location.hash;
-    let newRoute = v.getRoute(hash, state)
+    let newRoute = v.getRoute(hash, event) // fetch new route based on url vals
 
     let newState = ({
       ...state,
