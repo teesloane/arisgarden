@@ -271,7 +271,7 @@ h1,h2,h3,h4,h5,h6 {
 .rL_link {
   color: #333;
   font-weight: bold;
-  padding: 24px 0;
+  /* padding: 24px 0; */
 }
 
 .rL_hero_data {
