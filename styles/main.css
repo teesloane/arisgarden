@@ -51,13 +51,12 @@ body, html {
   margin: 0;
   font-family: Arial, Sans-serif;
   font-weight: 400;
-  min-height: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* overflow-y: scroll; */
-  overflow-x: hidden;
 }
+html { height: 100%; overflow:auto; }
+body { height: 100%; }
 
 th, td {
   text-align: left;
@@ -265,8 +264,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .rL_list li {
-  width: 30%;
-  padding: 12px 0;
+  width: 50%;
+  padding: 8px 0;
 }
 
 .rL_link {

@@ -56,6 +56,7 @@ const $act = {
     let { event, state } = s;
     let hash = location.hash;
     let newRoute = v.getRoute(hash, event) // fetch new route based on url vals
+    window.scrollTo(0, 0)
 
     let newState = ({
       ...state,

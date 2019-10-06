@@ -139,18 +139,18 @@ function UiFn() {
     return h("nav", {class: "v_Navbar"}, [
       h("div", {style: {alignItems: "center", background: "#222"}}, [
         ui.icon("c_home.svg", {width: 48}),
-        h("div", $txt, "GOUTFOOD")
+        h("a", {class: "v_Navbar_text", href: "#/"}, "GOUTFOOD")
       ]),
 
-      h("div", {}, [
-        h("div", $txt, [
-         h("div", {}, "RNDM"),
-          ui.icon("shuffle.svg", {width: 16})
+      // random / restaurants
 
-
-        ]),
-        // h("div", $txt, "Restaurants")
-      ])
+      // h("div", {}, [
+      //   h("div", $txt, [
+      //    h("div", {}, "RNDM"),
+      //     ui.icon("shuffle.svg", {width: 16})
+      //   ]),
+      //   h("div", $txt, "Restaurants")
+      // ])
     ])
   }
 }
