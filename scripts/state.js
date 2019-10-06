@@ -52,8 +52,6 @@ const $act = {
 
   /* ROUTING ------------------------------------------------------------------- */
 
-  setRoute: (state, props) => ({ ...state, route: props.route }),
-
   setId: (s, p) => {
     return { ...s, currentId: p };
   },
@@ -64,7 +62,6 @@ const $act = {
     let hash = location.hash;
     let newRoute = v.getRoute(hash, state)
 
-    // TODO: parse the route and build a slug fetcher from it.
     let newState = ({
       ...state,
       route: hash,
@@ -75,7 +72,6 @@ const $act = {
     return (newState)
   },
 
-  setRoute: (s, p) => ({ ...s, route: p }),
 };
 
 var initState = {

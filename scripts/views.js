@@ -84,8 +84,6 @@ function UiFn() {
       }
     }
 
-    console.log("rerendering with handle close changing and timerMode being", state.timerMode)
-
     return h("div", { class: _class }, [
       h("span", centerStyle, [
         h("span", { class: "pr1" }, this.icon("watch-wh.svg")),

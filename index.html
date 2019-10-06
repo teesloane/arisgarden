@@ -27,8 +27,9 @@
         init: initState,
         view: state =>
           h("main", {}, [
-            ui.navbar(),
-            state.currentRoute(state),
+            /* ui.navbar(), */
+            h("div", {class: "main"},
+              state.currentRoute(state)),
             ui.timer(state)
           ]),
 

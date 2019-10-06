@@ -65,8 +65,6 @@ th, td {
 }
 
 
-
-
 a {
   /* color: #fefefe; */
   border-bottom: 1px solid dotted;
@@ -256,6 +254,7 @@ h1,h2,h3,h4,h5,h6 {
 /* RecipeList View: rL -------------------------------------------------------------*/
 
 .rL {
+  margin-bottom: 1000px;
 }
 
 .rL_list {
