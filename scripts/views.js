@@ -62,7 +62,7 @@ function UiFn() {
    * Displays the timer at the bottom
    */
   this.timer = (state) => {
-    let timeStr     = state.timer ? time.secToStr(state.timer) : "00:00:00";
+    let timeStr     = state.timer ? util.secToStr(state.timer) : "00:00:00";
     let centerStyle = { style: { alignSelf: "center", display: "flex" } };
     let stepText    = state.currentRecipeStepText;
     let isCountDown = () => state.timerMode == "countdown" ? true : false;
@@ -143,7 +143,7 @@ function UiFn() {
       ]),
 
       // random / restaurants
-
+      
       // h("div", {}, [
       //   h("div", $txt, [
       //    h("div", {}, "RNDM"),

@@ -18,12 +18,9 @@ function Recipe() {
 
   this.viewSingle = (state) => {
     let heroImg = `media/imgs/${this.getSlug(state)}-hero.jpg`;
-
     // TODO handle invalid reciple currentId; make a gotoview func
-    //
     return h("section", {}, [
       ui.hero(heroImg, () => this._viewMetaData(state)),
-      // this._viewMetaData(state),
       ui.giantQuote("...I've made a tornado of dates."),
       this._viewPhotos(state),
       h("div", { class: "recipeIngredients-Instructions" }, [
@@ -139,7 +136,7 @@ function Recipe() {
               : "recipeStep";
           let renderTimer = () => {
             if (s.timer) {
-              let setTimerPayload = { time: time.strToSec(s.timer), step: s.f };
+              let setTimerPayload = { time: util.strToSec(s.timer), step: s.f };
               if (state.timerRunning == false) {
                 return h("div", { class: "recipeStepTimer", onClick: [$act.timerSet, setTimerPayload] }, ui.icon("watch.svg"));
               } else if (state.timerRunning) {

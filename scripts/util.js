@@ -1,11 +1,16 @@
-// TODO - move this int Util.
-var time = {
-  strToSec: function(str) {
+function Util() {
+  // get a random property from an object
+  this.randomProperty = function (obj) {
+    var keys = Object.keys(obj)
+    return obj[keys[ keys.length * Math.random() << 0]];
+  };
+
+  this.strToSec = function(str) {
     var a = str.split(":");
     return +a[0] * 60 * 60 + +a[1] * 60 + +a[2];
   },
 
-  secToStr: function(num) {
+  this.secToStr = function(num) {
     var sec_num = parseInt(num, 10);
     var hours = Math.floor(sec_num / 3600);
     var minutes = Math.floor((sec_num - hours * 3600) / 60);
@@ -22,13 +27,4 @@ var time = {
     }
     return hours + ":" + minutes + ":" + seconds;
   }
-};
-
-
-function Util() {
-  // get a random property from an object
-  this.randomProperty = function (obj) {
-    var keys = Object.keys(obj)
-    return obj[keys[ keys.length * Math.random() << 0]];
-  };
 }

@@ -584,7 +584,8 @@ CLOSED: [2019-09-25 Wed 14:42]
    olive oil, maple syrup, dijon mustard, and salt and pepper.
 6) Apply the dressing, not too much - if you have a lot of salad, portion it out
    and store undressed leftovers and save the dressing for leftovers.
-* TODO Kimchi Udon                                                              :needs_photos:
+* DONE Kimchi Udon                                                              :needs_photos:
+CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
 :slug: kimchi-udon
 :original_recipe: https://www.bonappetit.com/recipe/kimchi-udon-with-scallions
@@ -621,7 +622,8 @@ CLOSED: [2019-09-25 Wed 14:42]
    butter. Cook, tossing often, about 2 minutes.
 6) Season with salt if needed.
 7) Deviding into bowls, top with egg yolks, scallions and sesame seeds.
-* TODO Miso Asparagus
+* DONE Miso Asparagus
+CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
 :slug: miso-asparagus
 :original_recipe: https://www.bonappetit.com/recipe/ginger-miso-grilled-asparagus
@@ -653,7 +655,8 @@ CLOSED: [2019-09-25 Wed 14:42]
 4) Let things stew a few minutes. Cut the scallions.
 5) [t:00:04:00] Grill asparagus, turning occasionally until charred on all sides.
 6) Transfer to plate, squeeze lime juice and top with scallions and sesame seeds.
-* TODO Breakfast Quinoa                                                         :needs_photos:
+* DONE Breakfast Quinoa                                                         :needs_photos:
+CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
 :slug: breakfast-quinoa
 :original_recipe: https://cookieandkate.com/cinnamon-breakfast-quinoa-recipe/
@@ -684,7 +687,8 @@ CLOSED: [2019-09-25 Wed 14:42]
 4) [t:00:00:02] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add maple syrup.
 5) Add the nut to the quinoa. Top with a sprinkle of cinnamon.
 6) Top with fresh berries and almond butter.
-* TODO Black Bean Salad
+* DONE Black Bean Salad
+CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
 :slug: black-bean-salad
 :original_recipe: https://cookieandkate.com/black-bean-salad-recipe/
