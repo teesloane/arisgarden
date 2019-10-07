@@ -4,7 +4,10 @@
 
 const $act = {
 
-  updateCurrentRecipeStep: (s, i) => ({ ...s, currentRecipeStep: i }),
+  updateCurrentRecipeStep: (s, i) => {
+    return { ...s, currentRecipeStep: i }
+  },
+
 
   /* TIMER ------------------------------------------------------------------- */
 
@@ -63,6 +66,7 @@ const $act = {
       route: hash,
       currentRoute: newRoute.view,
       currentId: newRoute.id,
+      currentRecipeStep: 0,
       currentRecipe: db.recipes[newRoute.id] // not optimal?
     })
     return (newState)

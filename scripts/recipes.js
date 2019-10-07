@@ -128,7 +128,7 @@ function Recipe() {
       let steps = state.currentRecipe.instructions;
       let $wrapper = { style: { marginLeft: "16px" } }
 
-      return h("div", { ...$wrapper, class: "recipeIngredients-Instructions-bg" }, [
+      return h("div", {...$wrapper, class: "recipeIngredients-Instructions-bg" }, [
         steps.map((s, index) => {
           let stepClass =
             index == state.currentRecipeStep
