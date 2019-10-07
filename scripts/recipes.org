@@ -33,6 +33,11 @@ CLOCK: [2019-09-01 Sun 11:46]--[2019-09-01 Sun 12:08] =>  0:22
 4) Put maple-syrup and peanut-butter into a sausapan and heat on low. Stir to combine.
 5) Pour mix into the bowl and stir to combine.
 6) Transfer to a baking dish (8 x 8) lined with parchment paper.
+** Content
+:PROPERTIES:
+:type: big-quote
+:END:
+"hi"
 * DONE 8 Minute Pantry Dahl
 CLOSED: [2019-09-01 Sun 15:24]
 :LOGBOOK:
@@ -721,3 +726,43 @@ CLOSED: [2019-10-06 Sun 12:50]
 ** Steps
 1) In a large serving bowl combine all the ingredients.
 2) Cover and chill. Leftovers should last 3 to 4 days.
+* TODO Thai-Spice Rice Bowls                                                    :needs_photos:
+:PROPERTIES:
+:slug: thai-rice-bowl
+:original_recipe: https://cookieandkate.com/thai-spiced-rice-bowls-recipe/
+:time: 00:40:00
+:day_made: [2019-10-07]
+:is_vegan: true
+:is_vegetarian: true
+:imgs: 1.JPG,2.JPG,3.JPG
+:name: Thai-Spice Rice Bowls
+:ease_of_making: 5/5
+:rating: 3/5
+:END:
+** Ingredients
+| Ingredient             |  Quantity | Unit      |
+|------------------------+-----------+-----------|
+| Rice                   |         1 | cups      |
+| Olive oil              |         1 | tsp       |
+| Garlic                 |         4 | cloves    |
+| Ginger                 |         1 | thumb-tip |
+| Red curry paste        |         1 | tbsp      |
+| Soy sauce              |       1/4 | cups      |
+| Peanut butter          |       1/4 | cups      |
+| Vegetable broth        |         4 | cups      |
+| Coconut milk           | 1 (14 oz) | can       |
+| Honey                  |         2 | tbsp      |
+| Carrots (matchsticked) |         1 | cups      |
+| Cucumber               |       1/2 | --        |
+| Bell pepper (sliced)   |         1 | --        |
+| Peanuts                |       1/4 | cups      |
+| Green onions (sliced)  |         2 | --        |
+| Jalapeno               |         1 | --        |
+| Lime                   |         1 | --        |
+** Step
+1) Make the rice. Cook according to packaging.
+2) Prepare garnishes: matchstick the carrots, thinly slice the cucumber, slice the jalapeno into rings and chop the peanuts.
+3) Broth pt. 1: heat saucepan with oil. Add garlic and ginger when hot, for 30 seconds.
+4) Broth pt. 2: Add thai curry paste, soy sauce, peanut butter, vegetable broth, coconut milk and honey.
+5) [t:00:10:00] Broth pt. 3: Bring to boil, reduce heat, simmer for 10 minutes.
+6) Put rice in bowls, add broth, add diced vegetables as garnish. Enjoy!
