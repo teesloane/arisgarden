@@ -89,7 +89,15 @@ var db = {
           "o": "Transfer to a baking dish (8 x 8) lined with parchment paper.",
           "f": "Transfer to a baking dish (8 x 8) lined with parchment paper."
         }
-      ]
+      ],
+      "content": {
+        "props": {
+          "type": "big-quote"
+        },
+        "value": [
+          "I've made a tornado of dates."
+        ]
+      }
     },
     "pantry-dahl": {
       "meta": {
@@ -201,7 +209,15 @@ var db = {
           "o": "Serve over rice. Optional: Garnish with cilantro and lime.",
           "f": "Serve over rice. Optional: Garnish with cilantro and lime."
         }
-      ]
+      ],
+      "content": {
+        "props": {
+          "type": "whisper"
+        },
+        "value": [
+          "I know of a pantry--and while the light at the outset glows bright and warm-- it recedes into such depths that no light can reach. Now there... there grows the great and unimaginable vegetables."
+        ]
+      }
     },
     "marinated-tofu": {
       "meta": {
@@ -254,21 +270,6 @@ var db = {
             "Ingredient": "Garlic powder",
             "Quantity": "1",
             "Unit": "tsp"
-          },
-          {
-            "Ingredient": "",
-            "Quantity": "",
-            "Unit": ""
-          },
-          {
-            "Ingredient": "",
-            "Quantity": "",
-            "Unit": ""
-          },
-          {
-            "Ingredient": "",
-            "Quantity": "",
-            "Unit": ""
           }
         ]
       },
@@ -289,7 +290,15 @@ var db = {
           "o": "Take the tofu out and pan fry until golden brown.",
           "f": "Take the tofu out and pan fry until golden brown."
         }
-      ]
+      ],
+      "content": {
+        "props": {
+          "type": "whisper"
+        },
+        "value": [
+          "Well, they are using plants to press the tofu. Big hulking things, sitting on top of 'em. Not trees, mind you. Frankly, I'm not surprised. It's about time they threw that weight around."
+        ]
+      }
     },
     "candied-ginger": {
       "meta": {
@@ -378,7 +387,16 @@ var db = {
           "o": "Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they’re somewhat dry.",
           "f": "Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they’re somewhat dry."
         }
-      ]
+      ],
+      "content": {
+        "props": {
+          "type": "dialogue"
+        },
+        "value": [
+          "- I hope I don't ruin your pan.",
+          "- That's ok. It's Chemistry."
+        ]
+      }
     },
     "chickpea-shakshuka": {
       "meta": {
@@ -488,7 +506,10 @@ var db = {
           "f": "Add chickpeas and olives. Reduce heaet to medium-low for 15-20 minutes.",
           "timer": "00:15:00"
         }
-      ]
+      ],
+      "content": {
+        "props": null
+      }
     },
     "collard-green-pasta": {
       "meta": {
@@ -587,7 +608,10 @@ var db = {
           "o": "Divide onto plates, top with nuts and parmesan shavings. Add two big lemon wedges per person.",
           "f": "Divide onto plates, top with nuts and parmesan shavings. Add two big lemon wedges per person."
         }
-      ]
+      ],
+      "content": {
+        "props": null
+      }
     },
     "bowl1": {
       "meta": {
@@ -749,7 +773,10 @@ var db = {
           "o": "Combine with quinoa, greens, sweet potatoes, onions, chickpeas, carrots, tofu, and avocado.",
           "f": "Combine with quinoa, greens, sweet potatoes, onions, chickpeas, carrots, tofu, and avocado."
         }
-      ]
+      ],
+      "content": {
+        "props": null
+      }
     },
     "massaman-curry": {
       "meta": {
@@ -896,7 +923,10 @@ var db = {
           "o": "Enjoy with a side of rice.",
           "f": "Enjoy with a side of rice."
         }
-      ]
+      ],
+      "content": {
+        "props": null
+      }
     },
     "cauliflower-rice-stir-fry": {
       "meta": {
@@ -1040,7 +1070,10 @@ var db = {
           "f": "Add the sauce to the beans. Increase heat to medium-high. Cook for about 3 minutes until hot.",
           "timer": "00:03:00"
         }
-      ]
+      ],
+      "content": {
+        "props": null
+      }
     },
     "kale-coconut-rice": {
       "meta": {
@@ -1161,7 +1194,10 @@ var db = {
           "o": "Add tamari, Sriracha, and half of the lime juice. Stir.",
           "f": "Add tamari, Sriracha, and half of the lime juice. Stir."
         }
-      ]
+      ],
+      "content": {
+        "props": null
+      }
     },
     "pear-brie-salad": {
       "meta": {
@@ -1281,7 +1317,10 @@ var db = {
           "o": "Add the potatoes and broccoli as a side or mixed with the salad.",
           "f": "Add the potatoes and broccoli as a side or mixed with the salad."
         }
-      ]
+      ],
+      "content": {
+        "props": null
+      }
     },
     "sweet-potato-gnocci": {
       "meta": {
@@ -1386,7 +1425,10 @@ var db = {
           "o": "Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs if you like.",
           "f": "Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs if you like."
         }
-      ]
+      ],
+      "content": {
+        "props": null
+      }
     },
     "garlic-alfredo-pasta": {
       "meta": {
@@ -1506,7 +1548,10 @@ var db = {
           "o": "Once the pasta is cooked, drain the water and add directly to the sauce along with the brussel sprouts. Season with more parmesean if you want.",
           "f": "Once the pasta is cooked, drain the water and add directly to the sauce along with the brussel sprouts. Season with more parmesean if you want."
         }
-      ]
+      ],
+      "content": {
+        "props": null
+      }
     },
     "salad-raw-beet": {
       "meta": {
@@ -1631,7 +1676,10 @@ var db = {
           "o": "Apply the dressing, not too much - if you have a lot of salad, portion it out and store undressed leftovers and save the dressing for leftovers.",
           "f": "Apply the dressing, not too much - if you have a lot of salad, portion it out and store undressed leftovers and save the dressing for leftovers."
         }
-      ]
+      ],
+      "content": {
+        "props": null
+      }
     },
     "kimchi-udon": {
       "meta": {
@@ -1740,7 +1788,10 @@ var db = {
           "o": "Deviding into bowls, top with egg yolks, scallions and sesame seeds.",
           "f": "Deviding into bowls, top with egg yolks, scallions and sesame seeds."
         }
-      ]
+      ],
+      "content": {
+        "props": null
+      }
     },
     "miso-asparagus": {
       "meta": {
@@ -1838,7 +1889,10 @@ var db = {
           "o": "Transfer to plate, squeeze lime juice and top with scallions and sesame seeds.",
           "f": "Transfer to plate, squeeze lime juice and top with scallions and sesame seeds."
         }
-      ]
+      ],
+      "content": {
+        "props": null
+      }
     },
     "breakfast-quinoa": {
       "meta": {
@@ -1934,7 +1988,10 @@ var db = {
           "o": "Top with fresh berries and almond butter.",
           "f": "Top with fresh berries and almond butter."
         }
-      ]
+      ],
+      "content": {
+        "props": null
+      }
     },
     "black-bean-salad": {
       "meta": {
@@ -2040,7 +2097,10 @@ var db = {
           "o": "Cover and chill. Leftovers should last 3 to 4 days.",
           "f": "Cover and chill. Leftovers should last 3 to 4 days."
         }
-      ]
+      ],
+      "content": {
+        "props": null
+      }
     }
   }
 }

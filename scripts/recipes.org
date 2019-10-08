@@ -37,7 +37,7 @@ CLOCK: [2019-09-01 Sun 11:46]--[2019-09-01 Sun 12:08] =>  0:22
 :PROPERTIES:
 :type: big-quote
 :END:
-"hi"
+- I've made a tornado of dates.
 * DONE 8 Minute Pantry Dahl
 CLOSED: [2019-09-01 Sun 15:24]
 :LOGBOOK:
@@ -76,6 +76,13 @@ CLOSED: [2019-09-01 Sun 15:24]
 4) Bring to a boil and the reduce heat to medium.
 5) [t: 00:18:00] Cook for 18-30 minutes. Stir frequently.
 6) Serve over rice. Optional: Garnish with cilantro and lime.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- I know of a pantry--and while the light at the outset glows bright and warm--
+  it recedes into such depths that no light can reach. Now there... there grows
+  the great and unimaginable vegetables.
 * DONE Easy Marinated Tofu
 CLOSED: [2019-09-02 Mon 13:49]
 :PROPERTIES:
@@ -93,7 +100,6 @@ CLOSED: [2019-09-02 Mon 13:49]
 CLOCK: [2019-09-02 Mon 13:35]--[2019-09-02 Mon 13:49] =>  0:14
 :END:
 ** Ingredients
-
 | Ingredient          | Quantity | Unit  |
 |---------------------+----------+-------|
 | Tofu                |        1 | brick |
@@ -102,14 +108,17 @@ CLOCK: [2019-09-02 Mon 13:35]--[2019-09-02 Mon 13:49] =>  0:14
 | Maple syrup         |        1 | tbsp  |
 | Apple cider vinegar |        1 | tbsp  |
 | Garlic powder       |        1 | tsp   |
-|                     |          |       |
-|                     |          |       |
-|                     |          |       |
 ** Steps
 1) Press the tofu for a while. Then dice/cube it.
 2) Mix the marinade ingredients in a bowl
 3) Put the tofu in the bowl and cover. Put it in the fridge for 15 min.
 4) Take the tofu out and pan fry until golden brown.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- Well, they are using plants to press the tofu. Big hulking things, sitting
+  on top of 'em. Not trees, mind you. Frankly, I'm not surprised. It's about time they threw that weight around.
 * DONE Candied Ginger
 CLOSED: [2019-09-03 Tue 07:39]
 :LOGBOOK:
@@ -148,11 +157,12 @@ CLOCK: [2019-09-02 Mon 14:04]--[2019-09-02 Mon 18:13] =>  4:19
 8) Drain the ginger through a colander, catch the syrup.
 9) Toss drained ginger in sugar.
 10) Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they’re somewhat dry.
-** Medias
-#+BEGIN_QUOTE
-- T: I hope I don't ruin your pan.
-- S: It's chemistry.
-#+END_QUOTE
+** Content
+:PROPERTIES:
+:type: dialogue
+:END:
+- - I hope I don't ruin your pan.
+- - That's ok. It's Chemistry.
 * DONE 1 Pot Chickpea Shakshuka
 CLOSED: [2019-09-03 Tue 21:30]
 :LOGBOOK:
@@ -589,7 +599,7 @@ CLOSED: [2019-09-25 Wed 14:42]
    olive oil, maple syrup, dijon mustard, and salt and pepper.
 6) Apply the dressing, not too much - if you have a lot of salad, portion it out
    and store undressed leftovers and save the dressing for leftovers.
-* DONE Kimchi Udon                                                              :needs_photos:
+* DONE Kimchi Udon
 CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
 :slug: kimchi-udon
@@ -660,7 +670,7 @@ CLOSED: [2019-10-06 Sun 12:50]
 4) Let things stew a few minutes. Cut the scallions.
 5) [t:00:04:00] Grill asparagus, turning occasionally until charred on all sides.
 6) Transfer to plate, squeeze lime juice and top with scallions and sesame seeds.
-* DONE Breakfast Quinoa                                                         :needs_photos:
+* DONE Breakfast Quinoa 
 CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
 :slug: breakfast-quinoa
@@ -726,43 +736,43 @@ CLOSED: [2019-10-06 Sun 12:50]
 ** Steps
 1) In a large serving bowl combine all the ingredients.
 2) Cover and chill. Leftovers should last 3 to 4 days.
-* TODO Thai-Spice Rice Bowls                                                    :needs_photos:
-:PROPERTIES:
-:slug: thai-rice-bowl
-:original_recipe: https://cookieandkate.com/thai-spiced-rice-bowls-recipe/
-:time: 00:40:00
-:day_made: [2019-10-07]
-:is_vegan: true
-:is_vegetarian: true
-:imgs: 1.JPG,2.JPG,3.JPG
-:name: Thai-Spice Rice Bowls
-:ease_of_making: 5/5
-:rating: 3/5
-:END:
-** Ingredients
-| Ingredient             |  Quantity | Unit      |
-|------------------------+-----------+-----------|
-| Rice                   |         1 | cups      |
-| Olive oil              |         1 | tsp       |
-| Garlic                 |         4 | cloves    |
-| Ginger                 |         1 | thumb-tip |
-| Red curry paste        |         1 | tbsp      |
-| Soy sauce              |       1/4 | cups      |
-| Peanut butter          |       1/4 | cups      |
-| Vegetable broth        |         4 | cups      |
-| Coconut milk           | 1 (14 oz) | can       |
-| Honey                  |         2 | tbsp      |
-| Carrots (matchsticked) |         1 | cups      |
-| Cucumber               |       1/2 | --        |
-| Bell pepper (sliced)   |         1 | --        |
-| Peanuts                |       1/4 | cups      |
-| Green onions (sliced)  |         2 | --        |
-| Jalapeno               |         1 | --        |
-| Lime                   |         1 | --        |
-** Step
-1) Make the rice. Cook according to packaging.
-2) Prepare garnishes: matchstick the carrots, thinly slice the cucumber, slice the jalapeno into rings and chop the peanuts.
-3) Broth pt. 1: heat saucepan with oil. Add garlic and ginger when hot, for 30 seconds.
-4) Broth pt. 2: Add thai curry paste, soy sauce, peanut butter, vegetable broth, coconut milk and honey.
-5) [t:00:10:00] Broth pt. 3: Bring to boil, reduce heat, simmer for 10 minutes.
-6) Put rice in bowls, add broth, add diced vegetables as garnish. Enjoy!
+# * TODO Thai-Spice Rice Bowls                                                    :needs_photos:
+# :PROPERTIES:
+# :slug: thai-rice-bowl
+# :original_recipe: https://cookieandkate.com/thai-spiced-rice-bowls-recipe/
+# :time: 00:40:00
+# :day_made: [2019-10-07]
+# :is_vegan: true
+# :is_vegetarian: true
+# :imgs: 1.JPG,2.JPG,3.JPG
+# :name: Thai-Spice Rice Bowls
+# :ease_of_making: 5/5
+# :rating: 3/5
+# :END:
+# ** Ingredients
+# | Ingredient             |  Quantity | Unit      |
+# |------------------------+-----------+-----------|
+# | Rice                   |         1 | cups      |
+# | Olive oil              |         1 | tsp       |
+# | Garlic                 |         4 | cloves    |
+# | Ginger                 |         1 | thumb-tip |
+# | Red curry paste        |         1 | tbsp      |
+# | Soy sauce              |       1/4 | cups      |
+# | Peanut butter          |       1/4 | cups      |
+# | Vegetable broth        |         4 | cups      |
+# | Coconut milk           | 1 (14 oz) | can       |
+# | Honey                  |         2 | tbsp      |
+# | Carrots (matchsticked) |         1 | cups      |
+# | Cucumber               |       1/2 | --        |
+# | Bell pepper (sliced)   |         1 | --        |
+# | Peanuts                |       1/4 | cups      |
+# | Green onions (sliced)  |         2 | --        |
+# | Jalapeno               |         1 | --        |
+# | Lime                   |         1 | --        |
+# ** Step
+# 1) Make the rice. Cook according to packaging.
+# 2) Prepare garnishes: matchstick the carrots, thinly slice the cucumber, slice the jalapeno into rings and chop the peanuts.
+# 3) Broth pt. 1: heat saucepan with oil. Add garlic and ginger when hot, for 30 seconds.
+# 4) Broth pt. 2: Add thai curry paste, soy sauce, peanut butter, vegetable broth, coconut milk and honey.
+# 5) [t:00:10:00] Broth pt. 3: Bring to boil, reduce heat, simmer for 10 minutes.
+# 6) Put rice in bowls, add broth, add diced vegetables as garnish. Enjoy!

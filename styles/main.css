@@ -216,8 +216,6 @@ h1,h2,h3,h4,h5,h6 {
   display: flex;
 }
 
-
-
 .recipeStep_Wrap {
   display: flex;
   justify-content: space-between;
@@ -236,8 +234,9 @@ h1,h2,h3,h4,h5,h6 {
 	overflow-x: scroll;
 	display: flex;
 	justify-content: space-around;
-	margin-top: -32px;
-	margin-bottom: 64px;
+  /* padding: 48px 0; */
+	/* margin-top: -32px; */
+	margin-bottom: 128px;
 }
 
 .recipePhoto {

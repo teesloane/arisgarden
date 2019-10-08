@@ -11,14 +11,7 @@ fs.readFile("recipes.org", "utf8", function(_, data) {
   };
 
   recipes.forEach(r => {
-    let _r = getRecipe(r);
-    let key = _r.meta.properties.slug;
-    output.recipes[key] = _r;
-  });
-  let stringify = "var db = " + JSON.stringify(output, null, 2);
-
-  fs.writeFile("./db.js", stringify, function(err) {
-    if (err) {
+    let _r = getRecipe(r); let key = _r.meta.properties.slug; output.recipes[key] = _r;}); let stringify = "var db = " + JSON.stringify(output, null, 2); fs.writeFile("./db.js", stringify, function(err) {if (err) {
       return console.log(err);
     }
     console.log("The file was saved!");
@@ -32,14 +25,35 @@ function getRecipe(heading) {
       logbook: []
     },
     ingredients: getIngredients(heading),
-    instructions: getInstructions(heading)
+    instructions: getInstructions(heading),
+    content: getContent(heading)
   };
 }
 
 function getIngredients(n) {
-  let recipe = n;
+  let recipe = n; // ?
   let ingredients = tableParser(recipe.children[1].children[1].children);
   return ingredients;
+}
+
+function getContent(n) {
+  try {
+    let contentParent = n.children[3].children
+    let contentProps = contentParent[0].children[1]
+    let content = contentParent[1]
+
+    let parsedProps = parseProperties(contentProps.value)
+    let parsedContent = parseListShallow(content.children)
+    return {
+      props: parsedProps,
+      value: parsedContent
+    }
+  }
+  catch {
+    console.log("Recipe item did not have content or something else was wrong.")
+    return {props: null}
+  }
+
 }
 
 // Returns a recipes instructions
@@ -192,3 +206,24 @@ function parseProperties(p) {
 
 // current not available in orga-js
 function parseLogbook() {}
+
+
+
+/**
+ * Parses a one-level-deep list:
+ *
+  [{
+     type: 'list.item',
+     children: [Array],
+     ordered: false,
+     tag: undefined,
+     parent: [Circular]
+   }],
+
+ * Returns: a list of strings.
+ */
+function parseListShallow(listItems) {
+  return listItems.map(li => {
+    return li.children[0].value
+  })
+}

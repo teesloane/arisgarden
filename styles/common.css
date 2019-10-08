@@ -64,6 +64,36 @@
   align-self: center;
 }
 
+.v_Dialogue {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 128px 0;
+    align-content: center;
+    max-width: 500px;
+    margin: 128px auto;
+}
+
+.v_DialogueItem {
+  padding: 24px;
+  margin: 12px 0;
+  font-size: 24px;
+  background: lightsteelblue;
+  color: white;
+}
+
+.v_Whisper {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 100;
+  max-width: 400px;
+  margin: 128px auto;
+  padding: 32px;
+  line-height: 2;
+  border: 1px dotted grey;
+}
+
 .v_LargeText {
   text-transform: uppercase;
   padding: 16px;

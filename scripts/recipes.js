@@ -2,10 +2,10 @@ function Recipe() {
 
   // Getters -------------------------------------------------------------------
 
-  this.props = (state) => state.currentRecipe.meta.properties
-  this.getSlug = (state) => this.props(state).slug
+  this.getProps = (state) => state.currentRecipe.meta.properties
+  this.getSlug = (state) => this.getProps(state).slug
   this.getPhotos = (state) => {
-    let imgs = this.props(state).imgs
+    let imgs = this.getProps(state).imgs
     if (imgs == "false") {
       return false
     } else {
@@ -21,7 +21,8 @@ function Recipe() {
     // TODO handle invalid reciple currentId; make a gotoview func
     return h("section", {}, [
       ui.hero(heroImg, () => this._viewMetaData(state)),
-      ui.giantQuote("...I've made a tornado of dates."),
+      // ui.giantQuote("...I've made a tornado of dates."),
+      this._viewContent(state),
       this._viewPhotos(state),
       h("div", { class: "recipeIngredients-Instructions" }, [
         ui.largeText("INGREDIENTS / INSTRUCTIONS"),
@@ -85,6 +86,23 @@ function Recipe() {
           h("li", liClass, `Rating: ${rating}`),
           h("li", liClass, day_made)
         ])])]);
+  }
+
+  this._viewContent = (state) => {
+    let content = state.currentRecipe.content
+    let contentType = content.props.type
+    let val = content.value
+
+    switch(contentType) {
+      case "big-quote":
+        return ui.giantQuote(val[0])
+      case "whisper":
+        return ui.whisper(val[0])
+      case "dialogue":
+        return ui.dialogue(val)
+      default:
+        return h("span", {}, "")
+    }
   }
 
   /**
