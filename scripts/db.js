@@ -508,7 +508,12 @@ var db = {
         }
       ],
       "content": {
-        "props": null
+        "props": {
+          "type": "big-quote"
+        },
+        "value": [
+          "I will be forever de-shelling chickpeas."
+        ]
       }
     },
     "collard-green-pasta": {
@@ -610,7 +615,14 @@ var db = {
         }
       ],
       "content": {
-        "props": null
+        "props": {
+          "type": "haiku"
+        },
+        "value": [
+          "Big leaflet of chard",
+          "Or, collars of collard greens",
+          "Friend of spaghetti."
+        ]
       }
     },
     "bowl1": {
@@ -775,7 +787,12 @@ var db = {
         }
       ],
       "content": {
-        "props": null
+        "props": {
+          "type": "big-quote"
+        },
+        "value": [
+          "Sit and be patient, like marinating tofu."
+        ]
       }
     },
     "massaman-curry": {
@@ -801,7 +818,7 @@ var db = {
         ],
         "data": [
           {
-            "Ingredient": "Tofu (we used shrimp)",
+            "Ingredient": "Tofu",
             "Quantity": "1",
             "Unit": "package"
           },
@@ -1072,7 +1089,12 @@ var db = {
         }
       ],
       "content": {
-        "props": null
+        "props": {
+          "type": "whisper"
+        },
+        "value": [
+          "Don't use too much soy-sauce. Just don't."
+        ]
       }
     },
     "kale-coconut-rice": {
@@ -1191,8 +1213,8 @@ var db = {
           "f": "Pour the contents of the bowl back into the pan, breaking up the scrambled egg with a spatula."
         },
         {
-          "o": "Add tamari, Sriracha, and half of the lime juice. Stir.",
-          "f": "Add tamari, Sriracha, and half of the lime juice. Stir."
+          "o": "Add Soy sauce, Sriracha, and half of the lime juice. Stir.",
+          "f": "Add Soy sauce, Sriracha, and half of the lime juice. Stir."
         }
       ],
       "content": {
@@ -1319,7 +1341,12 @@ var db = {
         }
       ],
       "content": {
-        "props": null
+        "props": {
+          "type": "whisper"
+        },
+        "value": [
+          "A voice echoes out from the darkness. \"You can put cheese on salad\". It sounds weird, but you didn't know this before. You can feel yourself becoming more cultured already."
+        ]
       }
     },
     "sweet-potato-gnocci": {
@@ -1427,7 +1454,12 @@ var db = {
         }
       ],
       "content": {
-        "props": null
+        "props": {
+          "type": "big-quote"
+        },
+        "value": [
+          "This one is worth the extra prep time."
+        ]
       }
     },
     "garlic-alfredo-pasta": {
@@ -1550,7 +1582,12 @@ var db = {
         }
       ],
       "content": {
-        "props": null
+        "props": {
+          "type": "big-quote"
+        },
+        "value": [
+          "I forgot to take photos for this one."
+        ]
       }
     },
     "salad-raw-beet": {
@@ -1678,7 +1715,12 @@ var db = {
         }
       ],
       "content": {
-        "props": null
+        "props": {
+          "type": "whisper"
+        },
+        "value": [
+          "You don't need a spiralizer for this, but it's helpful."
+        ]
       }
     },
     "kimchi-udon": {
@@ -1790,7 +1832,12 @@ var db = {
         }
       ],
       "content": {
-        "props": null
+        "props": {
+          "type": "whisper"
+        },
+        "value": [
+          "You can strain an egg white by moving the egg from hand to hand."
+        ]
       }
     },
     "miso-asparagus": {
@@ -1873,16 +1920,16 @@ var db = {
           "f": "Whisk mirin, miso, vinegar, ginger, in a small bowl."
         },
         {
-          "o": "Place asparagus in a baking dish and pour miso mixture over. Toss to coat.",
-          "f": "Place asparagus in a baking dish and pour miso mixture over. Toss to coat."
+          "o": "Place asparagus in a container and pour miso mixture over. Toss to coat.",
+          "f": "Place asparagus in a container and pour miso mixture over. Toss to coat."
         },
         {
           "o": "Let things stew a few minutes. Cut the scallions.",
           "f": "Let things stew a few minutes. Cut the scallions."
         },
         {
-          "o": "[t:00:04:00] Grill asparagus, turning occasionally until charred on all sides.",
-          "f": "Grill asparagus, turning occasionally until charred on all sides.",
+          "o": "[t:00:04:00] Grill asparagus (or put it in a pan if you don't have a grill), turning occasionally until charred on all sides. About 4 minutes.",
+          "f": "Grill asparagus (or put it in a pan if you don't have a grill), turning occasionally until charred on all sides. About 4 minutes.",
           "timer": "0:04:00"
         },
         {
@@ -1891,7 +1938,12 @@ var db = {
         }
       ],
       "content": {
-        "props": null
+        "props": {
+          "type": "whisper"
+        },
+        "value": [
+          "This one is a good side. We don't have a BBQ right now so we use a pan."
+        ]
       }
     },
     "breakfast-quinoa": {
@@ -1990,7 +2042,12 @@ var db = {
         }
       ],
       "content": {
-        "props": null
+        "props": {
+          "type": "big-quote"
+        },
+        "value": [
+          "I NEED ALL THE ALMOND BUTTER."
+        ]
       }
     },
     "black-bean-salad": {
@@ -2099,7 +2156,12 @@ var db = {
         }
       ],
       "content": {
-        "props": null
+        "props": {
+          "type": "blurb"
+        },
+        "value": [
+          "This has a lot of ingredients but very few steps. You'll basically end up just combing a bunch of stuff in a bowl  and then adding a dressing. We'd recommend not adding the dressing to the entire bowl if you plan on having leftovers, but adding the dressing every time you have the dish."
+        ]
       }
     }
   }

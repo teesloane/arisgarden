@@ -200,6 +200,11 @@ CLOCK: [2019-09-03 Tue 20:20]--[2019-09-03 Tue 21:15] =>  0:55
 3) Add diced tomatoes, tomoato paste, maple syrup, sea salt, paprika, cumin, chili powser, cinnamon. Stir.
 4) [t: 00:03:00] Bring to a simmer. Cook for 2-3 minutes.
 5) [t: 00:15:00] Add chickpeas and olives. Reduce heaet to medium-low for 15-20 minutes.
+** Content
+:PROPERTIES:
+:type: big-quote
+:END:
+- I will be forever de-shelling chickpeas.
 * DONE Lemony Collard Greens Pasta
 CLOSED: [2019-09-04 Wed 18:13]
 :LOGBOOK:
@@ -237,6 +242,13 @@ CLOCK: [2019-09-04 Wed 18:15]--[2019-09-04 Wed 18:33] =>  0:18
 7) Scoop greens into pasta pot and toss with oil. Add pasta water if necessary.
 8) Divide onto plates, top with nuts and parmesan shavings. Add two big lemon
    wedges per person.
+** Content
+:PROPERTIES:
+:type: haiku
+:END:
+- Big leaflet of chard
+- Or, collars of collard greens
+- Friend of spaghetti.
 * DONE Bowl #1
 CLOSED: [2019-09-10 Tue 18:10]
 :LOGBOOK:
@@ -288,6 +300,11 @@ CLOSED: [2019-09-10 Tue 18:10]
 8) Slice tofu as you like.
 9) Combine with quinoa, greens, sweet potatoes, onions, chickpeas, carrots,
    tofu, and avocado.
+** Content
+:PROPERTIES:
+:type: big-quote
+:END:
+- Sit and be patient, like marinating tofu.
 * DONE Massaman Curry
 CLOSED: [2019-09-10 Tue 19:18]
 :LOGBOOK:
@@ -305,22 +322,22 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 :rating: 5/5
 :END:
 ** Ingredients
-| Ingredient            | Quantity | Unit    |
-|-----------------------+----------+---------|
-| Tofu (we used shrimp) |        1 | package |
-| Coconut oil           |        2 | tbsp    |
-| Cumin powder          |        1 | tsp     |
-| Coriander powder      |        1 | tsp     |
-| Red Curry Paste       |        5 | tbsp    |
-| Baby potatoes         |    1+1/2 | cups    |
-| Carrots               |        2 |         |
-| Coconut milk          |       28 | oz      |
-| Water                 |    1+1/2 | cups    |
-| Ground cinnamon       |      1/4 | tsp     |
-| Soy sauce             |        2 | tbsp    |
-| Maple syrup           |        2 | tbsp    |
-| Peanut butter         |        2 | tbsp    |
-| Lime juice            |        2 | tbsp    |
+| Ingredient       | Quantity | Unit    |
+|------------------+----------+---------|
+| Tofu             |        1 | package |
+| Coconut oil      |        2 | tbsp    |
+| Cumin powder     |        1 | tsp     |
+| Coriander powder |        1 | tsp     |
+| Red Curry Paste  |        5 | tbsp    |
+| Baby potatoes    |    1+1/2 | cups    |
+| Carrots          |        2 |         |
+| Coconut milk     |       28 | oz      |
+| Water            |    1+1/2 | cups    |
+| Ground cinnamon  |      1/4 | tsp     |
+| Soy sauce        |        2 | tbsp    |
+| Maple syrup      |        2 | tbsp    |
+| Peanut butter    |        2 | tbsp    |
+| Lime juice       |        2 | tbsp    |
 ** Steps
 1) Press your tofu. You'll come back and cube it once pressed.
 2) Heat a large pot or dutch oven on medium heat. Once hot, add oil and shallot.
@@ -387,6 +404,11 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 6) Add cashes and cauliflower rice and stir to combine.
 7) [t: 00:03:00] Add the sauce to the beans. Increase heat to medium-high. Cook for about
    3 minutes until hot.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- Don't use too much soy-sauce. Just don't.
 * DONE Spicy Kale and Coconut Fried Rice
 :LOGBOOK:
 :END:
@@ -431,7 +453,7 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
    occaisionally until hot, about 3 minutes
 6) Pour the contents of the bowl back into the pan, breaking up the scrambled
    egg with a spatula.
-7) Add tamari, Sriracha, and half of the lime juice. Stir.
+7) Add Soy sauce, Sriracha, and half of the lime juice. Stir.
 8)
 ** Content
 *** Oh my what a lettucemess.                                                 :quote:
@@ -479,6 +501,15 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 3) Prepare the salad: Lightly apply the dressing to the greens Arrange pear slices and briece on plate.  Drizzle with dressing. Add greens, cranberries,
    pecans, and extra slices of pear. Add a bit more dressing.
 4) Add the potatoes and broccoli as a side or mixed with the salad.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- A voice echoes out from the darkness.
+  "You can put cheese on salad".
+  It sounds weird, but you didn't know this before.
+  You can feel yourself becoming more cultured already.
+
 * DONE Sweet Potato Gnocchi
 :PROPERTIES:
 :slug: sweet-potato-gnocci
@@ -513,6 +544,11 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 8) Toast nuts in a small pan with additional oil. Set aside.
 9) Heat butter or coconut oil on medium. Add the gnocchi and roast until golden-brown and crispy.
 10) Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs if you like.
+** Content
+:PROPERTIES:
+:type: big-quote
+:END:
+- This one is worth the extra prep time.
 * DONE Garlic and White Wine Pasta with Brussel Sprouts
 :PROPERTIES:
 :slug: garlic-alfredo-pasta
@@ -556,6 +592,11 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
    according to the package instructions.
 10) Once the pasta is cooked, drain the water and add directly to the sauce
     along with the brussel sprouts. Season with more parmesean if you want.
+** Content
+:PROPERTIES:
+:type: big-quote
+:END:
+- I forgot to take photos for this one.
 * DONE Raw beet salad
 CLOSED: [2019-09-25 Wed 14:42]
 :PROPERTIES:
@@ -599,6 +640,11 @@ CLOSED: [2019-09-25 Wed 14:42]
    olive oil, maple syrup, dijon mustard, and salt and pepper.
 6) Apply the dressing, not too much - if you have a lot of salad, portion it out
    and store undressed leftovers and save the dressing for leftovers.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- You don't need a spiralizer for this, but it's helpful.
 * DONE Kimchi Udon
 CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
@@ -637,6 +683,11 @@ CLOSED: [2019-10-06 Sun 12:50]
    butter. Cook, tossing often, about 2 minutes.
 6) Season with salt if needed.
 7) Deviding into bowls, top with egg yolks, scallions and sesame seeds.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- You can strain an egg white by moving the egg from hand to hand.
 * DONE Miso Asparagus
 CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
@@ -666,10 +717,15 @@ CLOSED: [2019-10-06 Sun 12:50]
 ** Steps
 1) Prepare a grill to heat.
 2) Whisk mirin, miso, vinegar, ginger, in a small bowl.
-3) Place asparagus in a baking dish and pour miso mixture over. Toss to coat.
+3) Place asparagus in a container and pour miso mixture over. Toss to coat.
 4) Let things stew a few minutes. Cut the scallions.
-5) [t:00:04:00] Grill asparagus, turning occasionally until charred on all sides.
+5) [t:00:04:00] Grill asparagus (or put it in a pan if you don't have a grill), turning occasionally until charred on all sides. About 4 minutes.
 6) Transfer to plate, squeeze lime juice and top with scallions and sesame seeds.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- This one is a good side. We don't have a BBQ right now so we use a pan.
 * DONE Breakfast Quinoa 
 CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
@@ -702,6 +758,11 @@ CLOSED: [2019-10-06 Sun 12:50]
 4) [t:00:00:02] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add maple syrup.
 5) Add the nut to the quinoa. Top with a sprinkle of cinnamon.
 6) Top with fresh berries and almond butter.
+** Content
+:PROPERTIES:
+:type: big-quote
+:END:
+- I NEED ALL THE ALMOND BUTTER.
 * DONE Black Bean Salad
 CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
@@ -776,3 +837,8 @@ CLOSED: [2019-10-06 Sun 12:50]
 # 4) Broth pt. 2: Add thai curry paste, soy sauce, peanut butter, vegetable broth, coconut milk and honey.
 # 5) [t:00:10:00] Broth pt. 3: Bring to boil, reduce heat, simmer for 10 minutes.
 # 6) Put rice in bowls, add broth, add diced vegetables as garnish. Enjoy!
+** Content
+:PROPERTIES:
+:type: blurb
+:END:
+- This has a lot of ingredients but very few steps. You'll basically end up just combing a bunch of stuff in a bowl  and then adding a dressing. We'd recommend not adding the dressing to the entire bowl if you plan on having leftovers, but adding the dressing every time you have the dish.

@@ -45,13 +45,12 @@
 /* Giant Quote */
 .v_GiantQuote {
   display: flex;
-  padding: 100px 0;
-  margin: 100px 0;
+  padding: 160px 0;
 }
 
 .v_giantQuoteText {
   font-size: 100px;
-  line-height: 90%;
+  line-height: 100%;
   text-align: right;
   font-weight: bold;
   padding: 24px 48px;
@@ -64,11 +63,24 @@
   align-self: center;
 }
 
+
+.v_Blurb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  max-width: 500px;
+  margin: 96px auto;
+  /* margin-top: 96px; */
+  font-size: 18px;
+  line-height: 2;
+  color: #555;
+}
+
 .v_Dialogue {
   display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     margin: 128px 0;
     align-content: center;
     max-width: 500px;
@@ -83,14 +95,35 @@
   color: white;
 }
 
+.v_Haiku {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 128px auto;
+}
+
+.v_HaikuItem {
+  padding: 24px;
+  margin: 12px 0;
+  font-size: 20px;
+  font-weight: 100;
+  font-style: italic;
+  text-align: center;
+  color: #888;
+}
+
 .v_Whisper {
-  font-size: 14px;
+  font-size: 15px;
   font-style: italic;
   font-weight: 100;
-  max-width: 400px;
+  max-width: 470px;
+  display: table;
   margin: 128px auto;
+  letter-spacing: 1px;
   padding: 32px;
   line-height: 2;
+  text-align: center;
   border: 1px dotted grey;
 }
 

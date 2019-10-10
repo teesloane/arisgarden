@@ -89,19 +89,29 @@ function Recipe() {
   }
 
   this._viewContent = (state) => {
-    let content = state.currentRecipe.content
-    let contentType = content.props.type
-    let val = content.value
+    try{
+      let content = state.currentRecipe.content
+      let contentType = content.props.type
+      let val = content.value
 
-    switch(contentType) {
-      case "big-quote":
-        return ui.giantQuote(val[0])
-      case "whisper":
-        return ui.whisper(val[0])
-      case "dialogue":
-        return ui.dialogue(val)
-      default:
-        return h("span", {}, "")
+      switch(contentType) {
+        case "big-quote":
+          return ui.giantQuote(val[0])
+        case "whisper":
+          return ui.whisper(val[0])
+        case "dialogue":
+          return ui.dialogue(val)
+        case "haiku":
+          return ui.haiku(val)
+        case "blurb":
+          return ui.blurb(val)
+        default:
+      return ui.spacer(100)
+      }
+    }
+
+    catch {
+      return ui.spacer(128)
     }
   }
 

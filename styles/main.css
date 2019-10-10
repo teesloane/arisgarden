@@ -234,9 +234,8 @@ h1,h2,h3,h4,h5,h6 {
 	overflow-x: scroll;
 	display: flex;
 	justify-content: space-around;
-  /* padding: 48px 0; */
-	/* margin-top: -32px; */
-	margin-bottom: 128px;
+	margin: 128px 0;
+  margin-top: 0;
 }
 
 .recipePhoto {

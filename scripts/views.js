@@ -120,10 +120,25 @@ function UiFn() {
     return h("div", {class: "v_Whisper"}, t)
   }
 
+
+  this.blurb = (t) => {
+    return h("div", {class: "v_Blurb"}, t)
+  }
+
+  this.spacer = (size) => {
+    return h("div", {style: {height: size + "px", width: "12px"}}, "")
+  }
+
   this.dialogue = (a) => {
     return h("div", {class: "v_Dialogue"},
         a.map(d => {
           return h("div", {class: "v_DialogueItem"}, d)
+        }))}
+
+  this.haiku = (a) => {
+    return h("div", {class: "v_Haiku"},
+        a.map(d => {
+          return h("div", {class: "v_HaikuItem"}, d)
         }))}
 
 
