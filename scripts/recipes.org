@@ -509,7 +509,6 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
   "You can put cheese on salad".
   It sounds weird, but you didn't know this before.
   You can feel yourself becoming more cultured already.
-
 * DONE Sweet Potato Gnocchi
 :PROPERTIES:
 :slug: sweet-potato-gnocci
@@ -687,7 +686,7 @@ CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
 :type: whisper
 :END:
-- You can strain an egg white by moving the egg from hand to hand.
+- You can remove an egg white by moving the egg from hand to hand.
 * DONE Miso Asparagus
 CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
@@ -797,48 +796,101 @@ CLOSED: [2019-10-06 Sun 12:50]
 ** Steps
 1) In a large serving bowl combine all the ingredients.
 2) Cover and chill. Leftovers should last 3 to 4 days.
-# * TODO Thai-Spice Rice Bowls                                                    :needs_photos:
-# :PROPERTIES:
-# :slug: thai-rice-bowl
-# :original_recipe: https://cookieandkate.com/thai-spiced-rice-bowls-recipe/
-# :time: 00:40:00
-# :day_made: [2019-10-07]
-# :is_vegan: true
-# :is_vegetarian: true
-# :imgs: 1.JPG,2.JPG,3.JPG
-# :name: Thai-Spice Rice Bowls
-# :ease_of_making: 5/5
-# :rating: 3/5
-# :END:
-# ** Ingredients
-# | Ingredient             |  Quantity | Unit      |
-# |------------------------+-----------+-----------|
-# | Rice                   |         1 | cups      |
-# | Olive oil              |         1 | tsp       |
-# | Garlic                 |         4 | cloves    |
-# | Ginger                 |         1 | thumb-tip |
-# | Red curry paste        |         1 | tbsp      |
-# | Soy sauce              |       1/4 | cups      |
-# | Peanut butter          |       1/4 | cups      |
-# | Vegetable broth        |         4 | cups      |
-# | Coconut milk           | 1 (14 oz) | can       |
-# | Honey                  |         2 | tbsp      |
-# | Carrots (matchsticked) |         1 | cups      |
-# | Cucumber               |       1/2 | --        |
-# | Bell pepper (sliced)   |         1 | --        |
-# | Peanuts                |       1/4 | cups      |
-# | Green onions (sliced)  |         2 | --        |
-# | Jalapeno               |         1 | --        |
-# | Lime                   |         1 | --        |
-# ** Step
-# 1) Make the rice. Cook according to packaging.
-# 2) Prepare garnishes: matchstick the carrots, thinly slice the cucumber, slice the jalapeno into rings and chop the peanuts.
-# 3) Broth pt. 1: heat saucepan with oil. Add garlic and ginger when hot, for 30 seconds.
-# 4) Broth pt. 2: Add thai curry paste, soy sauce, peanut butter, vegetable broth, coconut milk and honey.
-# 5) [t:00:10:00] Broth pt. 3: Bring to boil, reduce heat, simmer for 10 minutes.
-# 6) Put rice in bowls, add broth, add diced vegetables as garnish. Enjoy!
 ** Content
 :PROPERTIES:
 :type: blurb
 :END:
 - This has a lot of ingredients but very few steps. You'll basically end up just combing a bunch of stuff in a bowl  and then adding a dressing. We'd recommend not adding the dressing to the entire bowl if you plan on having leftovers, but adding the dressing every time you have the dish.
+* TODO Thai-Spice Rice Bowls                                                    :needs_photos:
+:PROPERTIES:
+:slug: thai-rice-bowl
+:original_recipe: https://cookieandkate.com/thai-spiced-rice-bowls-recipe/
+:time: 00:40:00
+:day_made: [2019-10-07]
+:is_vegan: true
+:is_vegetarian: true
+:imgs: 1.JPG,2.JPG,3.JPG
+:name: Thai-Spice Rice Bowls
+:ease_of_making: 5/5
+:rating: 3/5
+:END:
+** Ingredients
+| Ingredient             |  Quantity | Unit      |
+|------------------------+-----------+-----------|
+| Rice                   |         1 | cups      |
+| Olive oil              |         1 | tsp       |
+| Garlic                 |         4 | cloves    |
+| Ginger                 |         1 | thumb-tip |
+| Red curry paste        |         1 | tbsp      |
+| Soy sauce              |       1/4 | cups      |
+| Peanut butter          |       1/4 | cups      |
+| Vegetable broth        |         4 | cups      |
+| Coconut milk           | 1 (14 oz) | can       |
+| Honey                  |         2 | tbsp      |
+| Carrots (matchsticked) |         1 | cups      |
+| Cucumber               |       1/2 | --        |
+| Bell pepper (sliced)   |         1 | --        |
+| Peanuts                |       1/4 | cups      |
+| Green onions (sliced)  |         2 | --        |
+| Jalapeno               |         1 | --        |
+| Lime                   |         1 | --        |
+** Steps
+1) Make the rice. Cook according to packaging.
+2) Prepare garnishes: matchstick the carrots, thinly slice the cucumber, slice the jalapeno into rings and chop the peanuts.
+3) Broth pt. 1: heat saucepan with oil. Add garlic and ginger when hot, for 30 seconds.
+4) Broth pt. 2: Add thai curry paste, soy sauce, peanut butter, vegetable broth, coconut milk and honey.
+5) [t:00:10:00] Broth pt. 3: Bring to boil, reduce heat, simmer for 10 minutes.
+6) Put rice in bowls, add broth, add diced vegetables as garnish. Enjoy!
+* TODO Grilled Tofu + Pineapple Salsa + Coconut Rice                                                    :needs_photos:
+:PROPERTIES:
+:slug: tofu-pineapple-rice
+:original_recipe: https://ohsheglows.com/2012/07/09/grilled-tofu-with-pineapple-salsa-and-coconut-rice/
+:time: 00:50:00
+:day_made: [2019-10-10]
+:is_vegan: true
+:is_vegetarian: true
+:imgs: 1.JPG,2.JPG,3.JPG
+:name: Grilled Tofu + Pineapple Salsa + Coconut Rice
+:ease_of_making: 3/5
+:serves: 2-3
+:rating: 3/5
+:END:
+** Ingredients
+| Ingredient                | Quantity | Unit        | Group           | Id                |
+|---------------------------+----------+-------------+-----------------+-------------------|
+| Tofu (firm)               |        1 | package     | tofu            | tofu              |
+| Olive oil                 |       -- | --          | tofu            | olive_oil         |
+| salt                      |       -- | pinch       | tofu            | salt              |
+| Shredded Coconut          |      1/4 | cups        | coconut rice    | shredded_coconut  |
+| Brown rice                |        1 | cups        | coconut rice    | brown_rice        |
+| Coconut milk              |        1 | can (400ml) | coconut rice    | coconut_milk      |
+| Brown Sugar               |        2 | tsp         | coconut rice    | brown_sugar       |
+| Coconut oil               |        1 | tsp         | coconut rice    | coconut_oil       |
+| Pineapple (diced)         |    1+1/2 | cups        | pineapple salsa | pineapple         |
+| Red onion (diced)         |      1/4 | cups        | pineapple salsa | red_onion         |
+| Jalapenos (seeded, diced) |        1 | pepper      | pineapple salsa | jalapenos         |
+| Garlic (minced)           |        1 | clove       | pineapple salsa | garlic            |
+| Bell pepper               |        1 | --          | pineapple salsa | bell_pepper       |
+| Fresh lime juice          |        3 | tbsp        | pineapple salsa | lime_juice        |
+| Red pepper flakes         |        1 | dash        | pineapple salsa | red_pepper_flakes |
+** Steps
+1) [t:00:20:00] Press the tofu for about 20 minutes (put something heavy on it.)
+2) Preheat your oven for the coconut rice. 300 degrees farenheiht. Toast it for
+   8-12 minutes until golden brown.
+3) Go prep the salsa. Mix in bowl: diced pineapple, diced red onion, diced
+   jalapenos, garlic clove, peppers, lime juice, red pepper flakes.
+4) Make the rice, but with the coconut milk (instead of water!). Mix the can
+   with the rice, bring it to a boil and then cover with a lid for 20-25 minutes
+   until it's tender.
+5) When rice is done, stir in some brown sugar and, optionally, coconut oil.
+6) Grill the tofu - use a bbq or pan and heat the tofu for about 5 minutes on
+   each side.
+** Content
+:PROPERTIES:
+:type: blurb
+:END:
+- This recipe has a lot going on at once. If you are good at multitasking it
+  might go quickly. I wouldn't know. Anyway. We'd recommend pressing the
+  tofu first and then starting the coconut rice, both of which take 20-25
+  minutes. Also, when you grill the tofu, don't cut it too thick. If the tofu is
+  bland, you could use some BBQ sauce. You know what it is.

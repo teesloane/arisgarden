@@ -130,6 +130,11 @@ function Recipe() {
           return h("div", style, "")
         })])}}
 
+  /**
+   * Creates a table to view the recipes ingredients
+   * Ingredients are spread in an object that has the table keys and the table value separately
+   * TODO: remove the meta columns!
+   */
   this._viewIngredients = (state) => {
     let ingredients = state.currentRecipe.ingredients;
     let $tr = { style: { padding: "16px 8px" } };

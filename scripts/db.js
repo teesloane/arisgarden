@@ -1836,7 +1836,7 @@ var db = {
           "type": "whisper"
         },
         "value": [
-          "You can strain an egg white by moving the egg from hand to hand."
+          "You can remove an egg white by moving the egg from hand to hand."
         ]
       }
     },
@@ -2161,6 +2161,315 @@ var db = {
         },
         "value": [
           "This has a lot of ingredients but very few steps. You'll basically end up just combing a bunch of stuff in a bowl  and then adding a dressing. We'd recommend not adding the dressing to the entire bowl if you plan on having leftovers, but adding the dressing every time you have the dish."
+        ]
+      }
+    },
+    "thai-rice-bowl": {
+      "meta": {
+        "properties": {
+          "slug": "thai-rice-bowl",
+          "original_recipe": "https://cookieandkate.com/thai-spiced-rice-bowls-recipe/",
+          "time": "00:40:00",
+          "day_made": "[2019-10-07]",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "imgs": "1.JPG,2.JPG,3.JPG",
+          "name": "Thai-Spice Rice Bowls",
+          "ease_of_making": "5/5",
+          "rating": "3/5"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit"
+        ],
+        "data": [
+          {
+            "Ingredient": "Rice",
+            "Quantity": "1",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Olive oil",
+            "Quantity": "1",
+            "Unit": "tsp"
+          },
+          {
+            "Ingredient": "Garlic",
+            "Quantity": "4",
+            "Unit": "cloves"
+          },
+          {
+            "Ingredient": "Ginger",
+            "Quantity": "1",
+            "Unit": "thumb-tip"
+          },
+          {
+            "Ingredient": "Red curry paste",
+            "Quantity": "1",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Soy sauce",
+            "Quantity": "1/4",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Peanut butter",
+            "Quantity": "1/4",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Vegetable broth",
+            "Quantity": "4",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Coconut milk",
+            "Quantity": "1 (14 oz)",
+            "Unit": "can"
+          },
+          {
+            "Ingredient": "Honey",
+            "Quantity": "2",
+            "Unit": "tbsp"
+          },
+          {
+            "Ingredient": "Carrots (matchsticked)",
+            "Quantity": "1",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Cucumber",
+            "Quantity": "1/2",
+            "Unit": "--"
+          },
+          {
+            "Ingredient": "Bell pepper (sliced)",
+            "Quantity": "1",
+            "Unit": "--"
+          },
+          {
+            "Ingredient": "Peanuts",
+            "Quantity": "1/4",
+            "Unit": "cups"
+          },
+          {
+            "Ingredient": "Green onions (sliced)",
+            "Quantity": "2",
+            "Unit": "--"
+          },
+          {
+            "Ingredient": "Jalapeno",
+            "Quantity": "1",
+            "Unit": "--"
+          },
+          {
+            "Ingredient": "Lime",
+            "Quantity": "1",
+            "Unit": "--"
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "Make the rice. Cook according to packaging.",
+          "f": "Make the rice. Cook according to packaging."
+        },
+        {
+          "o": "Prepare garnishes: matchstick the carrots, thinly slice the cucumber, slice the jalapeno into rings and chop the peanuts.",
+          "f": "Prepare garnishes: matchstick the carrots, thinly slice the cucumber, slice the jalapeno into rings and chop the peanuts."
+        },
+        {
+          "o": "Broth pt. 1: heat saucepan with oil. Add garlic and ginger when hot, for 30 seconds.",
+          "f": "Broth pt. 1: heat saucepan with oil. Add garlic and ginger when hot, for 30 seconds."
+        },
+        {
+          "o": "Broth pt. 2: Add thai curry paste, soy sauce, peanut butter, vegetable broth, coconut milk and honey.",
+          "f": "Broth pt. 2: Add thai curry paste, soy sauce, peanut butter, vegetable broth, coconut milk and honey."
+        },
+        {
+          "o": "[t:00:10:00] Broth pt. 3: Bring to boil, reduce heat, simmer for 10 minutes.",
+          "f": "Broth pt. 3: Bring to boil, reduce heat, simmer for 10 minutes.",
+          "timer": "0:10:00"
+        },
+        {
+          "o": "Put rice in bowls, add broth, add diced vegetables as garnish. Enjoy!",
+          "f": "Put rice in bowls, add broth, add diced vegetables as garnish. Enjoy!"
+        }
+      ],
+      "content": {
+        "props": null
+      }
+    },
+    "tofu-pineapple-rice": {
+      "meta": {
+        "properties": {
+          "slug": "tofu-pineapple-rice",
+          "original_recipe": "https://ohsheglows.com/2012/07/09/grilled-tofu-with-pineapple-salsa-and-coconut-rice/",
+          "time": "00:40:00",
+          "day_made": "[2019-10-10]",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "imgs": "1.JPG,2.JPG,3.JPG",
+          "name": "Grilled Tofu + Pineapple Salsa + Coconut Rice",
+          "ease_of_making": "3/5",
+          "rating": "3/5"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Group",
+          "Id"
+        ],
+        "data": [
+          {
+            "Ingredient": "Tofu (firm)",
+            "Quantity": "1",
+            "Unit": "package",
+            "Group": "tofu",
+            "Id": "tofu"
+          },
+          {
+            "Ingredient": "Olive oil",
+            "Quantity": "--",
+            "Unit": "--",
+            "Group": "tofu",
+            "Id": "olive_oil"
+          },
+          {
+            "Ingredient": "salt",
+            "Quantity": "--",
+            "Unit": "pinch",
+            "Group": "tofu",
+            "Id": "salt"
+          },
+          {
+            "Ingredient": "Shredded Coconut",
+            "Quantity": "1/4",
+            "Unit": "cups",
+            "Group": "coconut rice",
+            "Id": "shredded_coconut"
+          },
+          {
+            "Ingredient": "Brown rice",
+            "Quantity": "1",
+            "Unit": "cups",
+            "Group": "coconut rice",
+            "Id": "brown_rice"
+          },
+          {
+            "Ingredient": "Coconut milk",
+            "Quantity": "1",
+            "Unit": "can (400ml)",
+            "Group": "coconut rice",
+            "Id": "coconut_milk"
+          },
+          {
+            "Ingredient": "Brown Sugar",
+            "Quantity": "2",
+            "Unit": "tsp",
+            "Group": "coconut rice",
+            "Id": "brown_sugar"
+          },
+          {
+            "Ingredient": "Coconut oil",
+            "Quantity": "1",
+            "Unit": "tsp",
+            "Group": "coconut rice",
+            "Id": "coconut_oil"
+          },
+          {
+            "Ingredient": "Pineapple (diced)",
+            "Quantity": "1+1/2",
+            "Unit": "cups",
+            "Group": "pineapple salsa",
+            "Id": "pineapple"
+          },
+          {
+            "Ingredient": "Red onion (diced)",
+            "Quantity": "1/4",
+            "Unit": "cups",
+            "Group": "pineapple salsa",
+            "Id": "red_onion"
+          },
+          {
+            "Ingredient": "Jalapenos (seeded, diced)",
+            "Quantity": "1",
+            "Unit": "pepper",
+            "Group": "pineapple salsa",
+            "Id": "jalapenos"
+          },
+          {
+            "Ingredient": "Garlic (minced)",
+            "Quantity": "1",
+            "Unit": "clove",
+            "Group": "pineapple salsa",
+            "Id": "garlic"
+          },
+          {
+            "Ingredient": "Bell pepper",
+            "Quantity": "1",
+            "Unit": "--",
+            "Group": "pineapple salsa",
+            "Id": "bell_pepper"
+          },
+          {
+            "Ingredient": "Fresh lime juice",
+            "Quantity": "3",
+            "Unit": "tbsp",
+            "Group": "pineapple salsa",
+            "Id": "lime_juice"
+          },
+          {
+            "Ingredient": "Red pepper flakes",
+            "Quantity": "1",
+            "Unit": "dash",
+            "Group": "pineapple salsa",
+            "Id": "red_pepper_flakes"
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "[t:00:20:00] Press the tofu for about 20 minutes (put something heavy on it.)",
+          "f": "Press the tofu for about 20 minutes (put something heavy on it.)",
+          "timer": "0:20:00"
+        },
+        {
+          "o": "Preheat your oven for the coconut rice. 300 degrees farenheiht. Toast it for 8-12 minutes until golden brown.",
+          "f": "Preheat your oven for the coconut rice. 300 degrees farenheiht. Toast it for 8-12 minutes until golden brown."
+        },
+        {
+          "o": "Go prep the salsa. Mix in bowl: diced pineapple, diced red onion, diced jalapenos, garlic clove, peppers, lime juice, red pepper flakes.",
+          "f": "Go prep the salsa. Mix in bowl: diced pineapple, diced red onion, diced jalapenos, garlic clove, peppers, lime juice, red pepper flakes."
+        },
+        {
+          "o": "Make the rice, but with the coconut milk (instead of water!). Mix the can with the rice, bring it to a boil and then cover with a lid for 20-25 minutes until it's tender.",
+          "f": "Make the rice, but with the coconut milk (instead of water!). Mix the can with the rice, bring it to a boil and then cover with a lid for 20-25 minutes until it's tender."
+        },
+        {
+          "o": "When rice is done, stir in some brown sugar and, optionally, coconut oil.",
+          "f": "When rice is done, stir in some brown sugar and, optionally, coconut oil."
+        },
+        {
+          "o": "Grill the tofu - use a bbq or pan and heat the tofu for about 5 minutes on each side.",
+          "f": "Grill the tofu - use a bbq or pan and heat the tofu for about 5 minutes on each side."
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "blurb"
+        },
+        "value": [
+          "This recipe has a lot going on at once. If you are good at multitasking it might go quickly. I wouldn't know though. Anyway. we'd recommend pressing the tofu first and then starting the coconut rice, both of which take 20-25 minutes. Also, when you grill the tofu, don't cut it too thick. If the tofu is bland, you could use some BBQ sauce. You know what it is."
         ]
       }
     }
