@@ -9,6 +9,8 @@ CLOCK: [2019-09-01 Sun 11:46]--[2019-09-01 Sun 12:08] =>  0:22
 :slug: granola-bars
 :name: 5 Ingredient Granola Bars
 :day_made: [2019-09-01 Sun]
+:time: 00:25:00
+:serves: 10 bars
 :is_vegan: true
 :is_vegetarian: false
 :ease_of_making: 5/5
@@ -40,14 +42,13 @@ CLOCK: [2019-09-01 Sun 11:46]--[2019-09-01 Sun 12:08] =>  0:22
 - I've made a tornado of dates.
 * DONE 8 Minute Pantry Dahl
 CLOSED: [2019-09-01 Sun 15:24]
-:LOGBOOK:
- CLOCK: [2019-09-01 Sun 12:50]--[2019-09-01 Sun 13:46] =>  0:56
-:END:
 :PROPERTIES:
 :original_recipe: https://ohsheglows.com/2017/07/21/8-minute-pantry-dal-two-ways/
 :slug: pantry-dahl
 :day_made: [2019-09-01 Sun]
 :name: Pantry Dahl
+:serves: 4
+:time: 00:40:00
 :is_vegan: true
 :is_vegetarian: true
 :ease_of_making: 5/5
@@ -85,18 +86,17 @@ CLOSED: [2019-09-01 Sun 15:24]
 * DONE Easy Marinated Tofu
 CLOSED: [2019-09-02 Mon 13:49]
 :PROPERTIES:
-:original_recipe: https://simpleveganblog.com/easy-marinated-tofu/
 :day_made: [2019-09-02 Mon]
-:slug: marinated-tofu
-:is_vegan: true
-:name: Easy Marinated Tofu
-:is_vegetarian: true
 :ease_of_making: 5/5
 :imgs: false
+:is_vegan: true
+:is_vegetarian: true
+:name: Easy Marinated Tofu
+:original_recipe: https://simpleveganblog.com/easy-marinated-tofu/
 :rating: 4/5
-:END:
-:LOGBOOK:
-CLOCK: [2019-09-02 Mon 13:35]--[2019-09-02 Mon 13:49] =>  0:14
+:slug: marinated-tofu
+:serves: 2
+:time: 00:25:00
 :END:
 ** Ingredients
 | Ingredient          | Quantity | Unit  |
@@ -120,14 +120,13 @@ CLOCK: [2019-09-02 Mon 13:35]--[2019-09-02 Mon 13:49] =>  0:14
   on top of 'em. Not trees, mind you. Frankly, I'm not surprised. It's about time they threw that weight around.
 * DONE Candied Ginger
 CLOSED: [2019-09-03 Tue 07:39]
-:LOGBOOK:
-CLOCK: [2019-09-02 Mon 14:04]--[2019-09-02 Mon 18:13] =>  4:19
-:END:
 :PROPERTIES:
 :original_recipe: https://www.davidlebovitz.com/candied-ginger/
 :day_made: [2019-09-02 Mon]
 :slug: candied-ginger
 :name: Candied Ginger
+:serves: one jar! (roughly)
+:time: 04:00:00
 :is_vegan: true
 :is_vegetarian: true
 :imgs: 1.JPG,2.JPG,3.JPG
@@ -164,16 +163,15 @@ CLOCK: [2019-09-02 Mon 14:04]--[2019-09-02 Mon 18:13] =>  4:19
 - That's ok. It's Chemistry.
 * DONE 1 Pot Chickpea Shakshuka
 CLOSED: [2019-09-03 Tue 21:30]
-:LOGBOOK:
-CLOCK: [2019-09-03 Tue 20:20]--[2019-09-03 Tue 21:15] =>  0:55
-:END:
 :PROPERTIES:
 :original_recipe: https://minimalistbaker.com/1-pot-chickpea-shakshuka/
 :day_made: [2019-09-03 Tue]
 :name: 1 Pot Chickpea Shakshuka
 :slug: chickpea-shakshuka
 :is_vegan: true
+:time: 01:00:00
 :is_vegetarian: true
+:serves: 3
 :imgs: 1.JPG,2.JPG,3.JPG
 :ease_of_making: 5/5
 :rating: 4/5
@@ -206,15 +204,14 @@ CLOCK: [2019-09-03 Tue 20:20]--[2019-09-03 Tue 21:15] =>  0:55
 - I will be forever de-shelling chickpeas.
 * DONE Lemony Collard Greens Pasta
 CLOSED: [2019-09-04 Wed 18:13]
-:LOGBOOK:
-CLOCK: [2019-09-04 Wed 18:15]--[2019-09-04 Wed 18:33] =>  0:18
-:END:
 :PROPERTIES:
 :original_recipe: https://cookieandkate.com/lemon-collard-greens-pasta/
 :day_made: [2019-09-04 Wed]
 :slug: collard-green-pasta
 :is_vegan: false
 :is_vegetarian: true
+:time: 00:25:00
+:serves: 2
 :imgs: 1.JPG,2.JPG,3.JPG
 :name: Leafy Spaghetti
 :ease_of_making: 5/5
@@ -250,14 +247,13 @@ CLOCK: [2019-09-04 Wed 18:15]--[2019-09-04 Wed 18:33] =>  0:18
 - Friend of spaghetti.
 * DONE Bowl #1
 CLOSED: [2019-09-10 Tue 18:10]
-:LOGBOOK:
-:END:
 :PROPERTIES:
 :original_recipe: https://tasty.co/recipe/protein-packed-buddha-bowl
 :day_made: [2019-09-08]
 :slug: bowl1
 :is_vegan: true
 :name: Bowl #1
+:serves: 2
 :is_vegetarian: true
 :imgs: 1.JPG,2.JPG,3.JPG
 :ease_of_making: 3/5
@@ -306,19 +302,18 @@ CLOSED: [2019-09-10 Tue 18:10]
 - Sit and be patient, like marinating tofu.
 * DONE Massaman Curry
 CLOSED: [2019-09-10 Tue 19:18]
-:LOGBOOK:
-CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
-:END:
 :PROPERTIES:
-:slug: massaman-curry
-:original_recipe: https://minimalistbaker.com/easy-1-pot-massaman-curry/
 :day_made: [2019-09-10]
-:is_vegan: true
-:imgs: false
-:name: Massaman Curry
-:is_vegetarian: true
 :ease_of_making: 5/5
+:imgs: false
+:is_vegan: true
+:is_vegetarian: true
+:name: Massaman Curry
+:original_recipe: https://minimalistbaker.com/easy-1-pot-massaman-curry/
 :rating: 5/5
+:serves: 2
+:slug: massaman-curry
+:time: 01:00:00
 :END:
 ** Ingredients
 | Ingredient       | Quantity | Unit    |
@@ -364,18 +359,18 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
   decision not to is becoming more intentional and political. So, I guess that
   comes with a bit of guilt. So yeah. Anyway. It was pretty good.
 * DONE Cauliflower Rice Stir Fry
-:LOGBOOK:
-:END:
 :PROPERTIES:
-:slug: cauliflower-rice-stir-fry
-:original_recipe: https://minimalistbaker.com/30-minute-cauliflower-rice-stir-fry/
 :day_made: [2019-09-12]
+:ease_of_making: 5/5
+:imgs: 1.JPG,2.JPG,3.JPG
 :is_vegan: true
 :is_vegetarian: true
 :name: Cauliflower Rice Stir Fry
-:imgs: 1.JPG,2.JPG,3.JPG
-:ease_of_making: 5/5
+:original_recipe: https://minimalistbaker.com/30-minute-cauliflower-rice-stir-fry/
 :rating: 5/5
+:serves: 2
+:slug: cauliflower-rice-stir-fry
+:timer: 00:45:00
 :END:
 ** Ingredients
 | Ingredient                                | Quantity | Unit |
@@ -423,16 +418,17 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 :LOGBOOK:
 :END:
 :PROPERTIES:
-:slug: kale-coconut-rice
-:original_recipe: https://cookieandkate.com/spicy-kale-and-coconut-fried-rice/
-:time: 00:40:00
 :day_made: [2019-09-17]
-:is_vegan: false
-:name: Kale And Coconut Rice
-:is_vegetarian: true
 :ease_of_making: 4/5
-:rating: 5/5
 :imgs: 1.JPG,2.JPG,3.gif
+:is_vegan: false
+:is_vegetarian: true
+:name: Kale And Coconut Rice
+:original_recipe: https://cookieandkate.com/spicy-kale-and-coconut-fried-rice/
+:rating: 5/5
+:serves: 4
+:slug: kale-coconut-rice
+:time: 00:40:00
 :END:
 ** Ingredients
 | Ingredient                                        | Quantity | Unit  |
@@ -472,19 +468,18 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 - Clap-Clap (!) You know what that means?
 - Dinner time!
 * DONE Pear And Brie Salad
-:LOGBOOK:
-:END:
 :PROPERTIES:
-:slug: pear-brie-salad
-:original_recipe: https://www.theorganickitchen.org/pears-and-brie-salad-with-honey-champagne-vinaigrette/
-:time: 00:40:00
 :day_made: [2019-09-19]
+:ease_of_making: 5/5
+:imgs: 1.JPG,2.JPG,3.JPG
 :is_vegan: false
 :is_vegetarian: true
-:imgs: 1.JPG,2.JPG,3.JPG
 :name: Pear + Brie Salad
-:ease_of_making: 5/5
+:original_recipe: https://www.theorganickitchen.org/pears-and-brie-salad-with-honey-champagne-vinaigrette/
 :rating: 5/5
+:serves: 2
+:slug: pear-brie-salad
+:time: 00:30:00
 :END:
 ** Ingredients
 | Ingredient                   | Quantity | Unit   |
@@ -520,16 +515,17 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
   You can feel yourself becoming more cultured already.
 * DONE Sweet Potato Gnocchi
 :PROPERTIES:
-:slug: sweet-potato-gnocci
-:original_recipe: https://biancazapatka.com/en/vegan-sweet-potato-gnocchi/
-:time: 00:40:00
 :day_made: [2019-09-22]
+:ease_of_making: 3/5
+:imgs: 1.JPG,2.JPG,4.gif
 :is_vegan: false
 :is_vegetarian: true
 :name: Sweet Potato Gnocchi
-:ease_of_making: 3/5
-:imgs: 1.JPG,2.JPG,4.gif
+:original_recipe: https://biancazapatka.com/en/vegan-sweet-potato-gnocchi/
 :rating: 4/5
+:slug: sweet-potato-gnocci
+:serves: 2
+:time: 01:10:00
 :END:
 ** Ingredients
 | Ingredient                                 | Quantity | Unit |
@@ -559,16 +555,17 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 - This one is worth the extra prep time.
 * DONE Garlic and White Wine Pasta with Brussel Sprouts
 :PROPERTIES:
-:slug: garlic-alfredo-pasta
-:original_recipe: https://minimalistbaker.com/vegan-garlic-alfredo-pasta/
-:time: 01:00:00
 :day_made: [2019-09-23]
+:ease_of_making: 3/5
+:imgs: false
 :is_vegan: true
 :is_vegetarian: true
 :name: Garlic and White Wine Pasta with Brussel Sprouts
-:imgs: false
-:ease_of_making: 3/5
+:original_recipe: https://minimalistbaker.com/vegan-garlic-alfredo-pasta/
 :rating: 3/5
+:slug: garlic-alfredo-pasta
+:serves: 2
+:time: 00:30:00
 :END:
 ** Ingredients
 | Ingredient               | Quantity | Unit   |
@@ -656,16 +653,17 @@ CLOSED: [2019-09-25 Wed 14:42]
 * DONE Kimchi Udon
 CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
-:slug: kimchi-udon
-:original_recipe: https://www.bonappetit.com/recipe/kimchi-udon-with-scallions
-:time: 00:40:00
 :day_made: [2019-09-30]
+:ease_of_making: 4/5
+:imgs: 1.JPG,2.JPG,3.JPG,4.JPG
 :is_vegan: false
 :is_vegetarian: true
 :name: Kimchi Udon
-:imgs: 1.JPG,2.JPG,3.JPG,4.JPG
-:ease_of_making: 4/5
+:original_recipe: https://www.bonappetit.com/recipe/kimchi-udon-with-scallions
 :rating: 4/5
+:slug: kimchi-udon
+:serves: 2
+:time: 00:40:00
 :END:
 ** Ingredients
 | Ingredient                                           | Quantity | Unit |
@@ -699,16 +697,17 @@ CLOSED: [2019-10-06 Sun 12:50]
 * DONE Miso Asparagus
 CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
-:slug: miso-asparagus
-:original_recipe: https://www.bonappetit.com/recipe/ginger-miso-grilled-asparagus
-:time: 00:30:00
 :day_made: [2019-10-01]
+:ease_of_making: 4/5
+:imgs: 1.JPG,2.JPG,3.gif
 :is_vegan: true
 :is_vegetarian: true
 :name: Miso Asparagus
-:imgs: 1.JPG,2.JPG,3.gif
-:ease_of_making: 4/5
-:rating: 4/5
+:original_recipe: https://www.bonappetit.com/recipe/ginger-miso-grilled-asparagus
+:rating: 2.5/5
+:slug: miso-asparagus
+:serves: 2
+:time: 00:30:00
 :END:
 ** Ingredients
 | Ingredient                 | Quantity | Unit     |
@@ -733,20 +732,24 @@ CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
 :type: whisper
 :END:
-- This one is a good side. We don't have a BBQ right now so we use a pan.
+- This could probably be a good side but we don't think it turned out super
+  well. We don't have a BBQ right now so we used a pan. This made the asparagus
+  a bit limp. We also probably over-doused it in the miso sauce... if you were
+  using a grill it would have more places to drip off.
 * DONE Breakfast Quinoa 
 CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
-:slug: breakfast-quinoa
-:original_recipe: https://cookieandkate.com/cinnamon-breakfast-quinoa-recipe/
-:time: 00:30:00
 :day_made: [2019-10-03]
+:ease_of_making: 5/5
+:imgs: false
 :is_vegan: true
 :is_vegetarian: true
-:imgs: false
 :name: Breakfast Quinoa
-:ease_of_making: 5/5
+:original_recipe: https://cookieandkate.com/cinnamon-breakfast-quinoa-recipe/
 :rating: 5/5
+:slug: breakfast-quinoa
+:serves: 4
+:time: 00:40:00
 :END:
 ** Ingredients
 | Ingredient                  | Quantity | Unit |
@@ -774,16 +777,17 @@ CLOSED: [2019-10-06 Sun 12:50]
 * DONE Black Bean Salad
 CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
-:slug: black-bean-salad
-:original_recipe: https://cookieandkate.com/black-bean-salad-recipe/
-:time: 00:20:00
 :day_made: [2019-10-03]
+:ease_of_making: 5/5
+:imgs: 1.JPG,2.JPG,3.JPG
 :is_vegan: true
 :is_vegetarian: true
-:imgs: 1.JPG,2.JPG,3.JPG
 :name: Black Bean Salad
-:ease_of_making: 5/5
+:original_recipe: https://cookieandkate.com/black-bean-salad-recipe/
 :rating: 5/5
+:slug: black-bean-salad
+:serves: 4
+:time: 00:20:00
 :END:
 ** Ingredients
 | Ingredient                | Quantity | Unit             |
@@ -812,16 +816,17 @@ CLOSED: [2019-10-06 Sun 12:50]
 - This has a lot of ingredients but very few steps. You'll basically end up just combing a bunch of stuff in a bowl  and then adding a dressing. We'd recommend not adding the dressing to the entire bowl if you plan on having leftovers, but adding the dressing every time you have the dish.
 * TODO Thai-Spice Rice Bowls                                                    :needs_photos:
 :PROPERTIES:
-:slug: thai-rice-bowl
-:original_recipe: https://cookieandkate.com/thai-spiced-rice-bowls-recipe/
-:time: 00:40:00
 :day_made: [2019-10-07]
+:ease_of_making: 5/5
+:imgs: 1.JPG,2.JPG,3.JPG
 :is_vegan: true
 :is_vegetarian: true
-:imgs: 1.JPG,2.JPG,3.JPG
 :name: Thai-Spice Rice Bowls
-:ease_of_making: 5/5
+:original_recipe: https://cookieandkate.com/thai-spiced-rice-bowls-recipe/
 :rating: 3/5
+:slug: thai-rice-bowl
+:serves: 6
+:time: 00:40:00
 :END:
 ** Ingredients
 | Ingredient             |  Quantity | Unit      |

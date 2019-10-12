@@ -7,6 +7,8 @@ var db = {
           "slug": "granola-bars",
           "name": "5 Ingredient Granola Bars",
           "day_made": "[2019-09-01 Sun]",
+          "time": "00:25:00",
+          "serves": "10 bars",
           "is_vegan": "true",
           "is_vegetarian": "false",
           "ease_of_making": "5/5",
@@ -106,6 +108,8 @@ var db = {
           "slug": "pantry-dahl",
           "day_made": "[2019-09-01 Sun]",
           "name": "Pantry Dahl",
+          "serves": "4",
+          "time": "00:40:00",
           "is_vegan": "true",
           "is_vegetarian": "true",
           "ease_of_making": "5/5",
@@ -222,15 +226,17 @@ var db = {
     "marinated-tofu": {
       "meta": {
         "properties": {
-          "original_recipe": "https://simpleveganblog.com/easy-marinated-tofu/",
           "day_made": "[2019-09-02 Mon]",
-          "slug": "marinated-tofu",
-          "is_vegan": "true",
-          "name": "Easy Marinated Tofu",
-          "is_vegetarian": "true",
           "ease_of_making": "5/5",
           "imgs": "false",
-          "rating": "4/5"
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "name": "Easy Marinated Tofu",
+          "original_recipe": "https://simpleveganblog.com/easy-marinated-tofu/",
+          "rating": "4/5",
+          "slug": "marinated-tofu",
+          "serves": "2",
+          "time": "00:25:00"
         },
         "logbook": []
       },
@@ -307,6 +313,8 @@ var db = {
           "day_made": "[2019-09-02 Mon]",
           "slug": "candied-ginger",
           "name": "Candied Ginger",
+          "serves": "one jar! (roughly)",
+          "time": "04:00:00",
           "is_vegan": "true",
           "is_vegetarian": "true",
           "imgs": "1.JPG,2.JPG,3.JPG",
@@ -406,7 +414,9 @@ var db = {
           "name": "1 Pot Chickpea Shakshuka",
           "slug": "chickpea-shakshuka",
           "is_vegan": "true",
+          "time": "01:00:00",
           "is_vegetarian": "true",
+          "serves": "3",
           "imgs": "1.JPG,2.JPG,3.JPG",
           "ease_of_making": "5/5",
           "rating": "4/5"
@@ -524,6 +534,8 @@ var db = {
           "slug": "collard-green-pasta",
           "is_vegan": "false",
           "is_vegetarian": "true",
+          "time": "00:25:00",
+          "serves": "2",
           "imgs": "1.JPG,2.JPG,3.JPG",
           "name": "Leafy Spaghetti",
           "ease_of_making": "5/5",
@@ -633,6 +645,7 @@ var db = {
           "slug": "bowl1",
           "is_vegan": "true",
           "name": "Bowl #1",
+          "serves": "2",
           "is_vegetarian": "true",
           "imgs": "1.JPG,2.JPG,3.JPG",
           "ease_of_making": "3/5",
@@ -798,15 +811,17 @@ var db = {
     "massaman-curry": {
       "meta": {
         "properties": {
-          "slug": "massaman-curry",
-          "original_recipe": "https://minimalistbaker.com/easy-1-pot-massaman-curry/",
           "day_made": "[2019-09-10]",
-          "is_vegan": "true",
-          "imgs": "false",
-          "name": "Massaman Curry",
-          "is_vegetarian": "true",
           "ease_of_making": "5/5",
-          "rating": "5/5"
+          "imgs": "false",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "name": "Massaman Curry",
+          "original_recipe": "https://minimalistbaker.com/easy-1-pot-massaman-curry/",
+          "rating": "5/5",
+          "serves": "2",
+          "slug": "massaman-curry",
+          "time": "01:00:00"
         },
         "logbook": []
       },
@@ -953,15 +968,17 @@ var db = {
     "cauliflower-rice-stir-fry": {
       "meta": {
         "properties": {
-          "slug": "cauliflower-rice-stir-fry",
-          "original_recipe": "https://minimalistbaker.com/30-minute-cauliflower-rice-stir-fry/",
           "day_made": "[2019-09-12]",
+          "ease_of_making": "5/5",
+          "imgs": "1.JPG,2.JPG,3.JPG",
           "is_vegan": "true",
           "is_vegetarian": "true",
           "name": "Cauliflower Rice Stir Fry",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "ease_of_making": "5/5",
-          "rating": "5/5"
+          "original_recipe": "https://minimalistbaker.com/30-minute-cauliflower-rice-stir-fry/",
+          "rating": "5/5",
+          "serves": "2",
+          "slug": "cauliflower-rice-stir-fry",
+          "timer": "00:45:00"
         },
         "logbook": []
       },
@@ -1105,16 +1122,17 @@ var db = {
     "kale-coconut-rice": {
       "meta": {
         "properties": {
-          "slug": "kale-coconut-rice",
-          "original_recipe": "https://cookieandkate.com/spicy-kale-and-coconut-fried-rice/",
-          "time": "00:40:00",
           "day_made": "[2019-09-17]",
-          "is_vegan": "false",
-          "name": "Kale And Coconut Rice",
-          "is_vegetarian": "true",
           "ease_of_making": "4/5",
+          "imgs": "1.JPG,2.JPG,3.gif",
+          "is_vegan": "false",
+          "is_vegetarian": "true",
+          "name": "Kale And Coconut Rice",
+          "original_recipe": "https://cookieandkate.com/spicy-kale-and-coconut-fried-rice/",
           "rating": "5/5",
-          "imgs": "1.JPG,2.JPG,3.gif"
+          "serves": "4",
+          "slug": "kale-coconut-rice",
+          "time": "00:40:00"
         },
         "logbook": []
       },
@@ -1235,16 +1253,17 @@ var db = {
     "pear-brie-salad": {
       "meta": {
         "properties": {
-          "slug": "pear-brie-salad",
-          "original_recipe": "https://www.theorganickitchen.org/pears-and-brie-salad-with-honey-champagne-vinaigrette/",
-          "time": "00:40:00",
           "day_made": "[2019-09-19]",
+          "ease_of_making": "5/5",
+          "imgs": "1.JPG,2.JPG,3.JPG",
           "is_vegan": "false",
           "is_vegetarian": "true",
-          "imgs": "1.JPG,2.JPG,3.JPG",
           "name": "Pear + Brie Salad",
-          "ease_of_making": "5/5",
-          "rating": "5/5"
+          "original_recipe": "https://www.theorganickitchen.org/pears-and-brie-salad-with-honey-champagne-vinaigrette/",
+          "rating": "5/5",
+          "serves": "2",
+          "slug": "pear-brie-salad",
+          "time": "00:30:00"
         },
         "logbook": []
       },
@@ -1363,16 +1382,17 @@ var db = {
     "sweet-potato-gnocci": {
       "meta": {
         "properties": {
-          "slug": "sweet-potato-gnocci",
-          "original_recipe": "https://biancazapatka.com/en/vegan-sweet-potato-gnocchi/",
-          "time": "00:40:00",
           "day_made": "[2019-09-22]",
+          "ease_of_making": "3/5",
+          "imgs": "1.JPG,2.JPG,4.gif",
           "is_vegan": "false",
           "is_vegetarian": "true",
           "name": "Sweet Potato Gnocchi",
-          "ease_of_making": "3/5",
-          "imgs": "1.JPG,2.JPG,4.gif",
-          "rating": "4/5"
+          "original_recipe": "https://biancazapatka.com/en/vegan-sweet-potato-gnocchi/",
+          "rating": "4/5",
+          "slug": "sweet-potato-gnocci",
+          "serves": "2",
+          "time": "01:10:00"
         },
         "logbook": []
       },
@@ -1476,16 +1496,17 @@ var db = {
     "garlic-alfredo-pasta": {
       "meta": {
         "properties": {
-          "slug": "garlic-alfredo-pasta",
-          "original_recipe": "https://minimalistbaker.com/vegan-garlic-alfredo-pasta/",
-          "time": "01:00:00",
           "day_made": "[2019-09-23]",
+          "ease_of_making": "3/5",
+          "imgs": "false",
           "is_vegan": "true",
           "is_vegetarian": "true",
           "name": "Garlic and White Wine Pasta with Brussel Sprouts",
-          "imgs": "false",
-          "ease_of_making": "3/5",
-          "rating": "3/5"
+          "original_recipe": "https://minimalistbaker.com/vegan-garlic-alfredo-pasta/",
+          "rating": "3/5",
+          "slug": "garlic-alfredo-pasta",
+          "serves": "2",
+          "time": "00:30:00"
         },
         "logbook": []
       },
@@ -1737,16 +1758,17 @@ var db = {
     "kimchi-udon": {
       "meta": {
         "properties": {
-          "slug": "kimchi-udon",
-          "original_recipe": "https://www.bonappetit.com/recipe/kimchi-udon-with-scallions",
-          "time": "00:40:00",
           "day_made": "[2019-09-30]",
+          "ease_of_making": "4/5",
+          "imgs": "1.JPG,2.JPG,3.JPG,4.JPG",
           "is_vegan": "false",
           "is_vegetarian": "true",
           "name": "Kimchi Udon",
-          "imgs": "1.JPG,2.JPG,3.JPG,4.JPG",
-          "ease_of_making": "4/5",
-          "rating": "4/5"
+          "original_recipe": "https://www.bonappetit.com/recipe/kimchi-udon-with-scallions",
+          "rating": "4/5",
+          "slug": "kimchi-udon",
+          "serves": "2",
+          "time": "00:40:00"
         },
         "logbook": []
       },
@@ -1854,16 +1876,17 @@ var db = {
     "miso-asparagus": {
       "meta": {
         "properties": {
-          "slug": "miso-asparagus",
-          "original_recipe": "https://www.bonappetit.com/recipe/ginger-miso-grilled-asparagus",
-          "time": "00:30:00",
           "day_made": "[2019-10-01]",
+          "ease_of_making": "4/5",
+          "imgs": "1.JPG,2.JPG,3.gif",
           "is_vegan": "true",
           "is_vegetarian": "true",
           "name": "Miso Asparagus",
-          "imgs": "1.JPG,2.JPG,3.gif",
-          "ease_of_making": "4/5",
-          "rating": "4/5"
+          "original_recipe": "https://www.bonappetit.com/recipe/ginger-miso-grilled-asparagus",
+          "rating": "2.5/5",
+          "slug": "miso-asparagus",
+          "serves": "2",
+          "time": "00:30:00"
         },
         "logbook": []
       },
@@ -1953,23 +1976,24 @@ var db = {
           "type": "whisper"
         },
         "value": [
-          "This one is a good side. We don't have a BBQ right now so we use a pan."
+          "This could probably be a good side but we don't think it turned out super well. We don't have a BBQ right now so we used a pan. This made the asparagus a bit limp. We also probably over-doused it in the miso sauce... if you were using a grill it would have more places to drip off."
         ]
       }
     },
     "breakfast-quinoa": {
       "meta": {
         "properties": {
-          "slug": "breakfast-quinoa",
-          "original_recipe": "https://cookieandkate.com/cinnamon-breakfast-quinoa-recipe/",
-          "time": "00:30:00",
           "day_made": "[2019-10-03]",
+          "ease_of_making": "5/5",
+          "imgs": "false",
           "is_vegan": "true",
           "is_vegetarian": "true",
-          "imgs": "false",
           "name": "Breakfast Quinoa",
-          "ease_of_making": "5/5",
-          "rating": "5/5"
+          "original_recipe": "https://cookieandkate.com/cinnamon-breakfast-quinoa-recipe/",
+          "rating": "5/5",
+          "slug": "breakfast-quinoa",
+          "serves": "4",
+          "time": "00:40:00"
         },
         "logbook": []
       },
@@ -2064,16 +2088,17 @@ var db = {
     "black-bean-salad": {
       "meta": {
         "properties": {
-          "slug": "black-bean-salad",
-          "original_recipe": "https://cookieandkate.com/black-bean-salad-recipe/",
-          "time": "00:20:00",
           "day_made": "[2019-10-03]",
+          "ease_of_making": "5/5",
+          "imgs": "1.JPG,2.JPG,3.JPG",
           "is_vegan": "true",
           "is_vegetarian": "true",
-          "imgs": "1.JPG,2.JPG,3.JPG",
           "name": "Black Bean Salad",
-          "ease_of_making": "5/5",
-          "rating": "5/5"
+          "original_recipe": "https://cookieandkate.com/black-bean-salad-recipe/",
+          "rating": "5/5",
+          "slug": "black-bean-salad",
+          "serves": "4",
+          "time": "00:20:00"
         },
         "logbook": []
       },
@@ -2178,16 +2203,17 @@ var db = {
     "thai-rice-bowl": {
       "meta": {
         "properties": {
-          "slug": "thai-rice-bowl",
-          "original_recipe": "https://cookieandkate.com/thai-spiced-rice-bowls-recipe/",
-          "time": "00:40:00",
           "day_made": "[2019-10-07]",
+          "ease_of_making": "5/5",
+          "imgs": "1.JPG,2.JPG,3.JPG",
           "is_vegan": "true",
           "is_vegetarian": "true",
-          "imgs": "1.JPG,2.JPG,3.JPG",
           "name": "Thai-Spice Rice Bowls",
-          "ease_of_making": "5/5",
-          "rating": "3/5"
+          "original_recipe": "https://cookieandkate.com/thai-spiced-rice-bowls-recipe/",
+          "rating": "3/5",
+          "slug": "thai-rice-bowl",
+          "serves": "6",
+          "time": "00:40:00"
         },
         "logbook": []
       },

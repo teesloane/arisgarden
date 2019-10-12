@@ -72,7 +72,7 @@ function Recipe() {
    */
   this._viewMetaData = (state) => {
     let liClass = { class: "recipeMetaData" };
-    let { original_recipe, day_made, name, is_vegan, rating } = state.currentRecipe.meta.properties;
+    let { original_recipe, day_made, name, is_vegan, rating, serves, time } = state.currentRecipe.meta.properties;
     let mealType = is_vegan ? "Vegan" : "Vegetarian"
 
     return h("div", { class: "recipeProperties" }, [
@@ -83,6 +83,8 @@ function Recipe() {
           h("li", liClass,
             h("a", { href: original_recipe, target: "_blank", class: "link-light" }, "Original Recipe")),
           h("li", liClass, mealType),
+          h("li", liClass, `Serves: ${serves}`),
+          h("li", liClass, `Time: ${time}`),
           h("li", liClass, `Rating: ${rating}`),
           h("li", liClass, day_made)
         ])])]);
