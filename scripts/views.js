@@ -131,16 +131,18 @@ function UiFn() {
 
   this.dialogue = (a) => {
     return h("div", {class: "v_Dialogue"},
-        a.map(d => {
-          return h("div", {class: "v_DialogueItem"}, d)
+        a.map((d, i ) => {
+          if (i % 2 === 0 ) {
+            return h("div", {class: "v_DialogueItem v_DialogueItem-l"}, d)
+          }
+            return h("div", {class: "v_DialogueItem v_DialogueItem-r"}, d)
         }))}
 
   this.haiku = (a) => {
     return h("div", {class: "v_Haiku"},
-        a.map(d => {
+        a.map((d, index) => {
           return h("div", {class: "v_HaikuItem"}, d)
         }))}
-
 
   this.largeText = (t) => {
     return h("h1", { class: "v_LargeText" }, t);

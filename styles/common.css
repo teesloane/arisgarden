@@ -78,21 +78,64 @@
 }
 
 .v_Dialogue {
+  align-content: center;
+  max-width: 500px;
+  margin: 128px auto;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 128px 0;
-    align-content: center;
-    max-width: 500px;
-    margin: 128px auto;
+  flex-direction: column;
+
 }
 
 .v_DialogueItem {
   padding: 24px;
   margin: 12px 0;
-  font-size: 24px;
-  background: lightsteelblue;
-  color: white;
+  color: var(--offwhite);
+  font-size: 20px;
+  position: relative;
+	border-radius: .4em;
+  background: var(--darkblue);
+  display: inline-flex;
+
+}
+
+.v_DialogueItem-l {
+  align-self: flex-start;
+}
+
+.v_DialogueItem-r {
+  align-self: flex-end;
+}
+
+.v_DialogueItem-l:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-right-color: var(--darkblue);
+	border-left: 0;
+	margin-top: -10px;
+	margin-left: -10px;
+
+}
+.v_DialogueItem-r:after {
+	content: '';
+	position: absolute;
+  align-self: flex-end;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-left-color: var(--darkblue);
+	border-right: 0;
+  text-align: right;
+	margin-top: -10px;
+	margin-right: -10px;
+
+
 }
 
 .v_Haiku {

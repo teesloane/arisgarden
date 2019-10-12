@@ -46,6 +46,15 @@ table {
 
 /* Defaults -------------------------------------------------------------------*/
 
+:root {
+  --primary: #27ae60;
+  --secondary: #27ae60;
+  --darkblue: #34495e;
+  --offwhite: #fdfdfd;
+  --offblack: #333
+
+}
+
 body, html {
   padding: 0;
   margin: 0;
@@ -185,25 +194,28 @@ h1,h2,h3,h4,h5,h6 {
 .recipeStep {
   align-items: center;
   background: white;
-  border-radius: 2px;
   color: #222;
   cursor: pointer;
   display: flex;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 .recipeStep--active {
   font-weight: bold;
+  border-left: 3px solid var(--primary);
 }
 
 .recipeStep--active:before {
-  content: "\279c";
-  margin-left: -40px;
-  margin-right: 4px;
-  font-size: 40px;
-  color: lightseagreen;
-  background: white;
+  content: "";
+  /* margin-left: -40px; */
+  margin-right: -4px;
+  /* font-size: 40px; */
+  /* color: lightseagreen; */
+  /* border-left: 3px solid black; */
+  background: var(--primary);
+  /* width: 4px; */
+  /* height: 20px; */
 }
 
 
@@ -224,7 +236,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .recipeStep_TextContent {
-  padding: 16px;
+  padding: 0px 16px;
+  margin: 8px 0;
 }
 
 /* RecipeSingle Photos */

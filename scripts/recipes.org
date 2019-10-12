@@ -161,8 +161,8 @@ CLOCK: [2019-09-02 Mon 14:04]--[2019-09-02 Mon 18:13] =>  4:19
 :PROPERTIES:
 :type: dialogue
 :END:
-- - I hope I don't ruin your pan.
-- - That's ok. It's Chemistry.
+- I hope I don't ruin your pan.
+- That's ok. It's Chemistry.
 * DONE 1 Pot Chickpea Shakshuka
 CLOSED: [2019-09-03 Tue 21:30]
 :LOGBOOK:

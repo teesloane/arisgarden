@@ -393,8 +393,8 @@ var db = {
           "type": "dialogue"
         },
         "value": [
-          "- I hope I don't ruin your pan.",
-          "- That's ok. It's Chemistry."
+          "I hope I don't ruin your pan.",
+          "That's ok. It's Chemistry."
         ]
       }
     },
@@ -2310,13 +2310,14 @@ var db = {
         "properties": {
           "slug": "tofu-pineapple-rice",
           "original_recipe": "https://ohsheglows.com/2012/07/09/grilled-tofu-with-pineapple-salsa-and-coconut-rice/",
-          "time": "00:40:00",
+          "time": "00:50:00",
           "day_made": "[2019-10-10]",
           "is_vegan": "true",
           "is_vegetarian": "true",
           "imgs": "1.JPG,2.JPG,3.JPG",
           "name": "Grilled Tofu + Pineapple Salsa + Coconut Rice",
           "ease_of_making": "3/5",
+          "serves": "2-3",
           "rating": "3/5"
         },
         "logbook": []
@@ -2469,7 +2470,7 @@ var db = {
           "type": "blurb"
         },
         "value": [
-          "This recipe has a lot going on at once. If you are good at multitasking it might go quickly. I wouldn't know though. Anyway. we'd recommend pressing the tofu first and then starting the coconut rice, both of which take 20-25 minutes. Also, when you grill the tofu, don't cut it too thick. If the tofu is bland, you could use some BBQ sauce. You know what it is."
+          "This recipe has a lot going on at once. If you are good at multitasking it might go quickly. I wouldn't know. Anyway. We'd recommend pressing the tofu first and then starting the coconut rice, both of which take 20-25 minutes. Also, when you grill the tofu, don't cut it too thick. If the tofu is bland, you could use some BBQ sauce. You know what it is."
         ]
       }
     }
