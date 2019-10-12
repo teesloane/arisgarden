@@ -215,7 +215,7 @@ var db = {
           "type": "whisper"
         },
         "value": [
-          "I know of a pantry--and while the light at the outset glows bright and warm-- it recedes into such depths that no light can reach. Now there... there grows the great and unimaginable vegetables."
+          "I know of a pantry--and while the light at the outset glows bright and warm--it recedes into such depths that no light can reach. Now there... there grows the great and unimaginable vegetables."
         ]
       }
     },
@@ -384,8 +384,8 @@ var db = {
           "f": "Toss drained ginger in sugar."
         },
         {
-          "o": "Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they’re somewhat dry.",
-          "f": "Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they’re somewhat dry."
+          "o": "Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they are somewhat dry.",
+          "f": "Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they are somewhat dry."
         }
       ],
       "content": {
@@ -942,7 +942,12 @@ var db = {
         }
       ],
       "content": {
-        "props": null
+        "props": {
+          "type": "blurb"
+        },
+        "value": [
+          "We made this quite a while ago. In fact, I can't really remember much about it since then, except that we used shrimp, and now I feel bad about that because the original recipe posts it up as vegan. I shouldn't feel bad, but I'm also making a concerted effort that these recipes be vegetarian or vegan. I've been thinking about those terms a lot. I rarely eat meat these days, and now my decision not to is becoming more intentional and political. So, I guess that comes with a bit of guilt. So yeah. Anyway. It was pretty good."
+        ]
       }
     },
     "cauliflower-rice-stir-fry": {
@@ -1218,7 +1223,13 @@ var db = {
         }
       ],
       "content": {
-        "props": null
+        "props": {
+          "type": "dialogue"
+        },
+        "value": [
+          "Clap-Clap (!) You know what that means?",
+          "Dinner time!"
+        ]
       }
     },
     "pear-brie-salad": {

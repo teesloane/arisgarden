@@ -50,7 +50,7 @@ function getContent(n) {
     }
   }
   catch {
-    console.log("Recipe item did not have content or something else was wrong.")
+    console.log("Missing value / problem with:", n.children[0].children[0].value)
     return {props: null}
   }
 

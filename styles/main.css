@@ -199,6 +199,7 @@ h1,h2,h3,h4,h5,h6 {
   display: flex;
   font-size: 14px;
   line-height: 22px;
+  margin: 20px 0;
 }
 
 .recipeStep--active {
@@ -208,20 +209,13 @@ h1,h2,h3,h4,h5,h6 {
 
 .recipeStep--active:before {
   content: "";
-  /* margin-left: -40px; */
   margin-right: -4px;
-  /* font-size: 40px; */
-  /* color: lightseagreen; */
-  /* border-left: 3px solid black; */
   background: var(--primary);
-  /* width: 4px; */
-  /* height: 20px; */
 }
 
 
 .recipeStepTimer {
   transition: all 0.3s ease;
-  /* border-left: 1px solid gainsboro; */
   padding: 8px;
   align-self: stretch;
   justify-content: center;
@@ -237,7 +231,6 @@ h1,h2,h3,h4,h5,h6 {
 
 .recipeStep_TextContent {
   padding: 0px 16px;
-  margin: 8px 0;
 }
 
 /* RecipeSingle Photos */

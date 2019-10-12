@@ -80,8 +80,7 @@ CLOSED: [2019-09-01 Sun 15:24]
 :PROPERTIES:
 :type: whisper
 :END:
-- I know of a pantry--and while the light at the outset glows bright and warm--
-  it recedes into such depths that no light can reach. Now there... there grows
+- I know of a pantry--and while the light at the outset glows bright and warm--it recedes into such depths that no light can reach. Now there... there grows
   the great and unimaginable vegetables.
 * DONE Easy Marinated Tofu
 CLOSED: [2019-09-02 Mon 13:49]
@@ -156,7 +155,7 @@ CLOCK: [2019-09-02 Mon 14:04]--[2019-09-02 Mon 18:13] =>  4:19
 7) [t: 01:00:00] Remove from heat. Let stand for one hour.
 8) Drain the ginger through a colander, catch the syrup.
 9) Toss drained ginger in sugar.
-10) Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they’re somewhat dry.
+10) Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they are somewhat dry.
 ** Content
 :PROPERTIES:
 :type: dialogue
@@ -353,6 +352,17 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
    another few minutes.
 10) [t: 00:05:00] Let stand for 10 minutes.
 11) Enjoy with a side of rice.
+** Content
+:PROPERTIES:
+:type: blurb
+:END:
+- We made this quite a while ago. In fact, I can't really remember much about it
+  since then, except that we used shrimp, and now I feel bad about that because
+  the original recipe posts it up as vegan. I shouldn't feel bad, but I'm also
+  making a concerted effort that these recipes be vegetarian or vegan. I've been
+  thinking about those terms a lot. I rarely eat meat these days, and now my
+  decision not to is becoming more intentional and political. So, I guess that
+  comes with a bit of guilt. So yeah. Anyway. It was pretty good.
 * DONE Cauliflower Rice Stir Fry
 :LOGBOOK:
 :END:
@@ -456,12 +466,11 @@ CLOCK: [2019-09-10 Tue 18:15]--[2019-09-10 Tue 19:17] =>  1:02
 7) Add Soy sauce, Sriracha, and half of the lime juice. Stir.
 8)
 ** Content
-*** Oh my what a lettucemess.                                                 :quote:
-*** Clap Clap                                                                 :dialogue:
-#+BEGIN_QUOTE
-- *Clap Clap* (!) You know what that means?
+:PROPERTIES:
+:type: dialogue
+:END:
+- Clap-Clap (!) You know what that means?
 - Dinner time!
-#+END_QUOTE
 * DONE Pear And Brie Salad
 :LOGBOOK:
 :END:
@@ -841,7 +850,7 @@ CLOSED: [2019-10-06 Sun 12:50]
 4) Broth pt. 2: Add thai curry paste, soy sauce, peanut butter, vegetable broth, coconut milk and honey.
 5) [t:00:10:00] Broth pt. 3: Bring to boil, reduce heat, simmer for 10 minutes.
 6) Put rice in bowls, add broth, add diced vegetables as garnish. Enjoy!
-* TODO Grilled Tofu + Pineapple Salsa + Coconut Rice                                                    :needs_photos:
+* TODO Grilled Tofu + Pineapple Salsa + Coconut Rice                            :needs_photos:
 :PROPERTIES:
 :slug: tofu-pineapple-rice
 :original_recipe: https://ohsheglows.com/2012/07/09/grilled-tofu-with-pineapple-salsa-and-coconut-rice/

@@ -69,12 +69,11 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  max-width: 500px;
+  max-width: 600px;
   margin: 96px auto;
-  /* margin-top: 96px; */
   font-size: 18px;
   line-height: 2;
-  color: #555;
+  color: var(--offblack);
 }
 
 .v_Dialogue {
