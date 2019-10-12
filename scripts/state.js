@@ -20,35 +20,18 @@ const $act = {
 
   timerCancel: s => ({ ...s, timer: null, timerRunning: false }),
 
-  timerStopAlarm: s => {
-    return ({
-      ...s,
-      timer: null,
-      timerRunning: false,
-      timerAlarmPlaying: false,
-      timerMode: "countdown",
-    })
-  },
-
   timerCountDown: (s, t) => {
     if (s.timer == 0) {
+      var audio = new Audio('./media/sounds/alarm.wav');
+      audio.play();
+
       return {
         ...s,
         timer: null,
         timerRunning: false,
-        timerAlarmPlaying: true,
-        timerMode: "finished",
       };
     } else {
       return { ...s, timer: s.timer - 1 };
-    }
-  },
-
-  timerRingFX: (s, p) => {
-    var audio = new Audio('./media/sounds/alarm.wav');
-    audio.play();
-    return {
-      ...s,
     }
   },
 
@@ -65,7 +48,6 @@ const $act = {
       ...state,
       route: hash,
       currentRoute: newRoute.view,
-      currentId: newRoute.id,
       currentRecipeStep: 0,
       currentRecipe: db.recipes[newRoute.id] // not optimal?
     })
@@ -76,15 +58,11 @@ const $act = {
 
 var initState = {
   currentRecipe: db.recipes["shakshuka"],
-  currentId: null,
   currentRecipeStep: 0,
   currentRecipeStepText: "",
   currentRoute: () => h("div", {}, "loading state"),
   timer: null,
-  timerAudio: null,
   timerRunning: false,
-  timerAlarmPlaying: false,
-  timerMode: "countdown",
   route: "/"
 };
 
@@ -97,6 +75,4 @@ var subscriptions = (state) => [
   // Count down the timer
   state.timerRunning && interval($act.timerCountDown, { delay: 1000 }),
 
-  // Alarm player - Plays alarm when timer is counted down.
-  state.timerAlarmPlaying && timeout($act.timerRingFX, {delay: 1000})
 ]

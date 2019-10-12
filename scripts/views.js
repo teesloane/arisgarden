@@ -65,32 +65,16 @@ function UiFn() {
     let timeStr     = state.timer ? util.secToStr(state.timer) : "00:00:00";
     let centerStyle = { style: { alignSelf: "center", display: "flex" } };
     let stepText    = state.currentRecipeStepText;
-    let isCountDown = () => state.timerMode == "countdown" ? true : false;
 
-    let _class = state.timerRunning || state.timerAlarmPlaying
+    let _class = state.timerRunning
         ? "v_TimerFixed"
         : "v_TimerFixed v_TimerFixed_hidden";
 
     let v_cancelTimer = () => {
-      let action;
-      if (isCountDown()) {
-        action = $act.timerCancel
-      } else {
-        action = $act.timerStopAlarm
-      }
-
       return h("span", {
         class: "v_TimerFixed_closeBtn",
-        onClick: [action]
+        onClick: [$act.timerCancel]
       }, this.icon("x-circle-wh.svg"));
-    }
-
-    let timerText = () => {
-      if (isCountDown()) {
-        return h("span", { class: "v_TimerText" }, `${stepText}`)
-      } else {
-        return h("span", { class: "v_TimerText" }, "BEEP BEEP BEEP. TIME'S UP!")
-      }
     }
 
     return h("div", { class: _class }, [
@@ -98,7 +82,7 @@ function UiFn() {
         h("span", { class: "pr1" }, this.icon("watch-wh.svg")),
         h("span", { class: "pr4", style: { alignSelf: "center" } }, `${timeStr}`)
       ]),
-      timerText(),
+      h("span", { class: "v_TimerText" }, `${stepText}`),
       v_cancelTimer()
     ]);
   }
