@@ -8,6 +8,10 @@ const $act = {
     return { ...s, currentRecipeStep: i }
   },
 
+  showIngredientQuant: (s, p) => {
+    return {...s, currentRecipeIngredientQuant: p}
+  },
+
 
   /* TIMER ------------------------------------------------------------------- */
 
@@ -61,6 +65,8 @@ var initState = {
   currentRecipe: db.recipes["shakshuka"],
   currentRecipeStep: 0,
   currentRecipeStepText: "",
+  currentRecipeIngredientQuant: "",
+  currentRecipeIngredientVisible: false, // FIXME: leaving off - this is a subscription / interval for displaying a hud with the quant
   currentRoute: () => h("div", {}, "loading state"),
   timer: null,
   timerRunning: false,

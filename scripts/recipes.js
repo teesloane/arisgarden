@@ -187,7 +187,14 @@ function Recipe() {
           // Rendered ingredient step
           let renderStep = (f) => {
             return f.map(c => {
-              return h("span", {"data-id": c.attr}, c.val + " ")
+              if (typeof(c.attr) === "undefined") {
+                return h("span", {}, c.val + " ")
+              }
+
+              return h("span", {
+                "data-id": c.attr,
+                onClick: [$act.showIngredientQuant, c.attr]
+              }, c.val + " ")
             })
           }
 
