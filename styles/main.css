@@ -96,10 +96,15 @@ h1,h2,h3,h4,h5,h6 {
 
 .recipeProperties {
   color: white;
-  padding: 64px 0;
   display: flex;
-	flex: 1;
-	align-self: center;
+  flex-direction: column;
+  flex: 1;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  justify-content: center
+
 }
 
 
@@ -110,10 +115,13 @@ h1,h2,h3,h4,h5,h6 {
 .recipeMetaData {
   background: #222;
   display: flex;
-	width: 80%;
-	margin: 0 auto;
-	padding: 8px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 0;
   justify-content: space-around;
+  /* position: absolute; */
+  bottom: -32px;
+
 }
 
 .recipeMetaDatum {
@@ -236,22 +244,22 @@ h1,h2,h3,h4,h5,h6 {
 /* RecipeSingle Photos */
 
 .recipePhotos {
-	display: flex;
-	overflow-x: scroll;
-	display: flex;
-	justify-content: space-around;
-	margin: 128px 0;
+  display: flex;
+  overflow-x: scroll;
+  display: flex;
+  justify-content: space-around;
+  margin: 128px 0;
   margin-top: 0;
 }
 
 .recipePhoto {
-	width: 350px;
-	height: 200px;
-	margin: 0 12px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding: 16px;
-	border-radius: 8px;
+  width: 350px;
+  height: 200px;
+  margin: 0 12px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 16px;
+  border-radius: 8px;
 }
 
 

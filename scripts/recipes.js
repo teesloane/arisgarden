@@ -71,15 +71,16 @@ function Recipe() {
    * Renders inside the recipeSingle view hero head.er
    */
   this._viewMetaData = (state) => {
-    let liClass = { class: "recipeMetaData" };
+    let liClass = { class: "recipeMetaDatum" };
     let { original_recipe, day_made, name, is_vegan, rating, serves, time } = state.currentRecipe.meta.properties;
     let mealType = is_vegan ? "Vegan" : "Vegetarian"
 
     return h("div", { class: "recipeProperties" }, [
       ui.navbar(),
-      h("div", { class: "content-w" }, [
-        ui.largeText(name),
-        h("ul", { class: "recipeMetaData" }, [
+
+      ui.largeText(name),
+
+      h("ul", { class: "recipeMetaData", style: {position: "absolute"} }, [
           h("li", liClass,
             h("a", { href: original_recipe, target: "_blank", class: "link-light" }, "Original Recipe")),
           h("li", liClass, mealType),
@@ -87,7 +88,8 @@ function Recipe() {
           h("li", liClass, `Time: ${time}`),
           h("li", liClass, `Rating: ${rating}`),
           h("li", liClass, day_made)
-        ])])]);
+        ])
+    ]);
   }
 
   this._viewContent = (state) => {
@@ -169,6 +171,8 @@ function Recipe() {
             index == state.currentRecipeStep
               ? "recipeStep recipeStep--active"
               : "recipeStep";
+
+          // Timer ---
           let renderTimer = () => {
             if (s.timer) {
               let setTimerPayload = { time: util.strToSec(s.timer), step: s.f };
@@ -180,12 +184,25 @@ function Recipe() {
             }
           };
 
+          // Rendered ingredient step
+          let renderStep = (f) => {
+            return f.map(c => {
+              return h("span", {"data-id": c.attr}, c.val + " ")
+            })
+          }
+
+
+          // Template ---
           return h("li",
             { class: stepClass, onClick: [$act.updateCurrentRecipeStep, index] }, [
             h("div", { class: "recipeStep_Wrap" }, [
               h("div",
                 { class: "recipeStep_TextContent", style: { alignContent: "center" } },
-                (index + 1 + ". " + s.f)),
+                [
+                  h("span", {}, index + 1 + ". "),
+                  renderStep(s.f)
+                ]
+               ),
             ]),
             renderTimer()
           ])})])} // I miss lisp

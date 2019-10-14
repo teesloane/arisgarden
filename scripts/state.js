@@ -11,12 +11,13 @@ const $act = {
 
   /* TIMER ------------------------------------------------------------------- */
 
-  timerSet: (s, p) => ({
+  timerSet: (s, p) => {
+    return {
     ...s,
     timer: p.time,
     timerRunning: true,
-    currentRecipeStepText: p.step
-  }),
+    currentRecipeStepText: p.step.map(c => c.val).join(" ")
+  }},
 
   timerCancel: s => ({ ...s, timer: null, timerRunning: false }),
 
