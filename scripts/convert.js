@@ -11,7 +11,10 @@ fs.readFile("recipes.org", "utf8", function(_, data) {
   };
 
   recipes.forEach(r => {
-    let _r = getRecipe(r); let key = _r.meta.properties.slug; output.recipes[key] = _r;}); let stringify = "var db = " + JSON.stringify(output, null, 2); fs.writeFile("./db.js", stringify, function(err) {if (err) {
+    let _r = getRecipe(r);
+    let key = _r.meta.properties.slug; output.recipes[key] = _r;});
+    let stringify = "var db = " + JSON.stringify(output, null, 2);
+    fs.writeFile("./db.js", stringify, function(err) {if (err) {
       return console.log(err);
     }
     console.log("The file was saved!");
