@@ -1,4 +1,5 @@
-# recipe count: 20
+#+TITLE: RECIPES
+#+RECIPE_COUNT: 20
 * DONE 5 ingredient granola bars
 CLOSED: [2019-09-01 Sun 13:41]
 :PROPERTIES:
@@ -660,7 +661,7 @@ CLOSED: [2019-10-06 Sun 12:50]
 :rating: 4/5
 :slug: kimchi-udon
 :serves: 2
-:time: 00:40:00
+:time: 00:30:00
 :END:
 ** Ingredients
 | Ingredient                                           | Quantity | Unit |
@@ -679,13 +680,13 @@ CLOSED: [2019-10-06 Sun 12:50]
 1) Chop kimchi and collect kimchi juice.
 2) [&: 00:04:00] Heat 2 tbsp of butter on medium high. Add chopped kimchi and gochujang and
    cook, stirring until kimchi is softened and lightly caramelized, around 4 minutes.
-3) [&: 00:03:00] Add brows and kimchi juice and bring to a simmer. Cook until slightly reduce,
-   about 3 minutes
+3) [&: 00:03:00] Add broth and kimchi juice and bring to a simmer. Cook until slightly reduced,
+   about 3 minutes.
 4) Boil noodles according to package directions.
-5) [&: 00:02:00] Using tongs, transfer noodles to the skiller and add the remaining 3 tbsp of
+5) [&: 00:02:00] Using tongs, transfer noodles to the skillet and add the remaining 3 tbsp of
    butter. Cook, tossing often, about 2 minutes.
 6) Season with salt if needed.
-7) Deviding into bowls, top with egg yolks, scallions and sesame seeds.
+7) Divide into bowls, top with egg yolks, scallions and sesame seeds.
 ** Content
 :PROPERTIES:
 :type: whisper

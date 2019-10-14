@@ -2188,7 +2188,7 @@ var db = {
           "rating": "4/5",
           "slug": "kimchi-udon",
           "serves": "2",
-          "time": "00:40:00"
+          "time": "00:30:00"
         },
         "logbook": []
       },
@@ -2270,10 +2270,10 @@ var db = {
           "timer": "00:04:00"
         },
         {
-          "o": "[&: 00:03:00] Add brows and kimchi juice and bring to a simmer. Cook until slightly reduce, about 3 minutes",
+          "o": "[&: 00:03:00] Add broth and kimchi juice and bring to a simmer. Cook until slightly reduced, about 3 minutes.",
           "f": [
             {
-              "val": "Add brows and kimchi juice and bring to a simmer. Cook until slightly reduce, about 3 minutes"
+              "val": "Add broth and kimchi juice and bring to a simmer. Cook until slightly reduced, about 3 minutes."
             }
           ],
           "timer": "00:03:00"
@@ -2287,10 +2287,10 @@ var db = {
           ]
         },
         {
-          "o": "[&: 00:02:00] Using tongs, transfer noodles to the skiller and add the remaining 3 tbsp of butter. Cook, tossing often, about 2 minutes.",
+          "o": "[&: 00:02:00] Using tongs, transfer noodles to the skillet and add the remaining 3 tbsp of butter. Cook, tossing often, about 2 minutes.",
           "f": [
             {
-              "val": "Using tongs, transfer noodles to the skiller and add the remaining 3 tbsp of butter. Cook, tossing often, about 2 minutes."
+              "val": "Using tongs, transfer noodles to the skillet and add the remaining 3 tbsp of butter. Cook, tossing often, about 2 minutes."
             }
           ],
           "timer": "00:02:00"
@@ -2304,10 +2304,10 @@ var db = {
           ]
         },
         {
-          "o": "Deviding into bowls, top with egg yolks, scallions and sesame seeds.",
+          "o": "Divide into bowls, top with egg yolks, scallions and sesame seeds.",
           "f": [
             {
-              "val": "Deviding into bowls, top with egg yolks, scallions and sesame seeds."
+              "val": "Divide into bowls, top with egg yolks, scallions and sesame seeds."
             }
           ]
         }
