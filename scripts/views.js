@@ -145,22 +145,29 @@ function UiFn() {
     return h("section", attrs, childFn());
   }
 
+  this.modal = (state) => {
+    if (state.currentModal) {
+      return h("section", {class: "v_Modal"}, [
+        h("div", {
+          class: "v_Modal--blose_btn",
+          onClick: [$act.modalClose]
+        }, "X"),
+        state.currentModal()
+        ]
+      )
+    } else {
+      return h("section", {class: "v_Modal--empty"}, "")
+    }
+  }
+
+  this.modalShowIngredient = (val) => {
+    return h("section", {class: "v_Modal--ingredient"}, "the content" + val)
+  }
+
   this.navbar = () => {
     return h("nav", {class: "v_Navbar"}, [
       h("div", {style: {alignItems: "center", background: "#222"}}, [
         ui.icon("c_home.svg", {width: 48}),
         h("a", {class: "v_Navbar_text", href: "#/"}, "GO\u00DBT/FOOD")
-      ]),
-
-      // random / restaurants
-      
-      // h("div", {}, [
-      //   h("div", $txt, [
-      //    h("div", {}, "RNDM"),
-      //     ui.icon("shuffle.svg", {width: 16})
-      //   ]),
-      //   h("div", $txt, "Restaurants")
-      // ])
-    ])
-  }
+      ])])}
 }

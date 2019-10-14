@@ -18,6 +18,8 @@
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -256,6 +258,42 @@
   color: #f1c40f;
 }
 
+
+.v_Modal {
+  align-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.v_Modal--empty {
+  display: none;
+}
+
+.v_Modal--blose_btn {
+  cursor: pointer;
+  font-size: 24px;
+  padding: 32px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.v_Modal--ingredient {
+  background: white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  min-height: 50vh;
+
+
+}
 
 
 /* UTILITIES */

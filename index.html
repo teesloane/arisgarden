@@ -5,12 +5,12 @@
     <link rel="stylesheet" href="styles/common.css" type="text/css" />
   </head>
   <body>
-    <script src="scripts/hyperapp.js"     type="text/javascript"></script>
-    <script src="scripts/db.js"           type="text/javascript"></script>
-    <script src="scripts/util.js"         type="text/javascript"></script>
-    <script src="scripts/recipes.js"      type="text/javascript"></script>
-    <script src="scripts/views.js"        type="text/javascript"></script>
-    <script src="scripts/state.js"        type="text/javascript"></script>
+    <script src="scripts/hyperapp.js" type="text/javascript"></script>
+    <script src="scripts/db.js"       type="text/javascript"></script>
+    <script src="scripts/util.js"     type="text/javascript"></script>
+    <script src="scripts/recipes.js"  type="text/javascript"></script>
+    <script src="scripts/views.js"    type="text/javascript"></script>
+    <script src="scripts/state.js"    type="text/javascript"></script>
     <div id="app"></div>
 
     <script>
@@ -28,8 +28,9 @@
         view: state =>
           h("main", {}, [
             h("div", {class: "main"},
+              ui.modal(state),
               state.currentRoute(state)),
-            ui.timer(state)
+              ui.timer(state)
           ]),
 
         node: document.getElementById("app"),

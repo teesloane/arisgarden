@@ -185,6 +185,7 @@ function Recipe() {
           };
 
           // Rendered ingredient step
+          // activates a modal with the ingredients quantity in it.
           let renderStep = (f) => {
             return f.map(c => {
               if (typeof(c.attr) === "undefined") {
@@ -192,8 +193,11 @@ function Recipe() {
               }
 
               return h("span", {
-                "data-id": c.attr,
-                onClick: [$act.showIngredientQuant, c.attr]
+                onClick: [$act.modalSet,
+                          {fn: ui.modalShowIngredient,
+                           val: c.attr,
+                           state,
+                           type: "temp"}]
               }, c.val + " ")
             })
           }
@@ -201,7 +205,7 @@ function Recipe() {
 
           // Template ---
           return h("li",
-            { class: stepClass, onClick: [$act.updateCurrentRecipeStep, index] }, [
+            { class: stepClass, onClick: [$act.setRecipeStep, index] }, [
             h("div", { class: "recipeStep_Wrap" }, [
               h("div",
                 { class: "recipeStep_TextContent", style: { alignContent: "center" } },

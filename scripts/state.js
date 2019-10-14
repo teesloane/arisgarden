@@ -2,14 +2,25 @@
  * Booting point for all state related things.
  */
 
+const $fx = {
+  tempModal: (dispatch, props) => {
+    setTimeout(() => {
+      dispatch($act.modalClose)
+    }, props.delay)
+    return
+  }
+}
+
 const $act = {
-
-  updateCurrentRecipeStep: (s, i) => {
-    return { ...s, currentRecipeStep: i }
-  },
-
-  showIngredientQuant: (s, p) => {
-    return {...s, currentRecipeIngredientQuant: p}
+  // actions
+  setRecipeStep: (s, i) => ({...s, currentRecipeStep: i}),
+  modalClose:    (s, _) => ({...s, currentModal: null}),
+  modalSet:      (s, p) => {
+    if (p.type === "temp") {
+      return [({...s, currentModal: () => p.fn(p.val)}),
+         [$fx.tempModal, {delay: 30000}]]
+    }
+    return ({...s, currentModal: () => p.fn(p.val)})
   },
 
 
@@ -65,9 +76,8 @@ var initState = {
   currentRecipe: db.recipes["shakshuka"],
   currentRecipeStep: 0,
   currentRecipeStepText: "",
-  currentRecipeIngredientQuant: "",
-  currentRecipeIngredientVisible: false, // FIXME: leaving off - this is a subscription / interval for displaying a hud with the quant
   currentRoute: () => h("div", {}, "loading state"),
+  currentModal: null,
   timer: null,
   timerRunning: false,
   route: "/"
@@ -75,11 +85,7 @@ var initState = {
 
 
 var subscriptions = (state) => [
-
-  // Routing
-  true && v.handleRouter($act.setRoutePath, state),
-
-  // Count down the timer
-  state.timerRunning && interval($act.timerCountDown, { delay: 1000 }),
+  true && v.handleRouter($act.setRoutePath, state),                        // Routing
+  state.timerRunning && interval($act.timerCountDown, { delay: 1000 }), // Timer
 
 ]
