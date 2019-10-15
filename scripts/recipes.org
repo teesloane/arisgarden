@@ -16,21 +16,20 @@ CLOSED: [2019-09-01 Sun 13:41]
 :imgs: 1.JPG,2.JPG,1.gif
 :END:
 ** Ingredients
-| Ingredient                                       | Quantity | Unit |
-|--------------------------------------------------+----------+------|
-| Dates (Deglet noor or medjool)                   | 1        | cups |
-| Maple Syrup (or: agava nectar, honey)            | 1/4      | cups |
-| Natural Peanut Butter                            | 1/4      | cups |
-| Roasted, unsalted almonds                        | 1        | cups |
-| Rolled Oats                                      | 1+1/2    | cups |
-| Optional: Chocolate chips, dried fruit, nuts etc | -        | -    |
-| Parchment Paper                                  | -        | -    |
-| 8x8 Baking Pan                                   | -        | -    |
+| Ingredient                            | Quantity | Unit | Id              | Group |
+|---------------------------------------+----------+------+-----------------+-------|
+| Dates (Deglet noor or medjool)        | 1        | cups | dates           |       |
+| Maple Syrup (or: agava nectar, honey) | 1/4      | cups | maple-syrup     |       |
+| Natural Peanut Butter                 | 1/4      | cups | peanut-butter   |       |
+| Roasted, unsalted almonds             | 1        | cups | almonds         |       |
+| Rolled Oats                           | 1+1/2    | cups | oats-rolled     |       |
+| Parchment Paper                       | -        | -    | parchment-paper |       |
+| 8x8 Baking Pan                        | -        | -    |                 |       |
 ** Steps
-1) [&:00:02:00] Chop [#: almonds-id | almonds] roughly. Put them in a bowl.
-2) Put oats in the bowl.
-3) Blend dates until dough-y. Put them in the bowl
-4) Put maple-syrup and peanut-butter into a sausapan and heat on low. Stir to combine.
+1) Chop [#: almonds | almonds] roughly. Put them in a bowl.
+2) Put [#: oats-rolled | oats] in the bowl.
+3) Blend [#: dates | dates] until dough-y. Put them in the bowl
+4) Put [#: maple-syrup | maple syrup] and [#: peanut-butter | peanut-butter] into a saucepan and heat on low. Stir to combine.
 5) Pour mix into the bowl and stir to combine.
 6) Transfer to a baking dish (8 x 8) lined with parchment paper.
 ** Content
@@ -54,23 +53,23 @@ CLOSED: [2019-09-01 Sun 15:24]
 :imgs: 1.JPG,2.JPG,3.JPG
 :END:
 ** Ingredients
-| Ingredient                                      | Quantity | Unit  |
-|-------------------------------------------------+----------+-------|
-| Coconut Oil                                     |        1 | tbsp  |
-| Diced Veggies (Carrots, Potatoes, Broccoli etc) |        4 | cups  |
-| Uncooked Red Lentils                            |      1/2 | cups  |
-| Water                                           |     1/2+ | cups  |
-| Diced Tomato                                    |        1 | cups  |
-| Coconut Milk                                    |        1 | cups  |
-| Garlic Powder                                   |    1+1/2 | tbsp  |
-| Minced Onion                                    |    1+1/2 | tbsp  |
-| curry Powder                                    |        1 | tbsp  |
-| Sea salt                                        |        1 | tsp   |
-| Pepper                                          |        1 | pinch |
-| Rice or Grain for Base                          |        - | -     |
+| Ingredient                                         | Quantity | Unit  | Id               | Group |
+|----------------------------------------------------+----------+-------+------------------+-------|
+| Coconut oil                                        |        1 | tbsp  | oil-coconut      |       |
+| Diced begetables (Carrots, Potatoes, Broccoli etc) |        4 | cups  | vegetables-misc  |       |
+| Uncooked red lentils                               |      1/2 | cups  | lentils-red      |       |
+| Water                                              |     1/2+ | cups  | water            |       |
+| Diced tomato                                       |        1 | cups  | tomato-diced-can |       |
+| Coconut milk                                       |        1 | cups  | milk-coconut     |       |
+| Garlic powder                                      |    1+1/2 | tbsp  | powder-garlic    |       |
+| Minced onion                                       |    1+1/2 | tbsp  | onion-minced     |       |
+| Curry powder                                       |        1 | tbsp  | powder-curry     |       |
+| Sea salt                                           |        1 | tsp   | salt-sea         |       |
+| Pepper                                             |        1 | pinch | pepper           |       |
+| Rice or Grain for Base                             |        - | -     | rice             |       |
 ** Steps
-1) Melt coconut oil in a large pot
-2) peel (if necessary) and dice veggies into 1/2 inch pieces. Add to pot and stir.
+1) Melt [#: oil-coconut | coconut oil] in a large pot
+2) Peel (if necessary) and dice vegetables into 1/2 inch pieces. Add to pot and stir.
 3) Add the rest of the ingredients.
 4) Bring to a boil and the reduce heat to medium.
 5) [&: 00:18:00] Cook for 18-30 minutes. Stir frequently.
@@ -97,18 +96,18 @@ CLOSED: [2019-09-02 Mon 13:49]
 :time: 00:25:00
 :END:
 ** Ingredients
-| Ingredient          | Quantity | Unit  |
-|---------------------+----------+-------|
-| Tofu                |        1 | brick |
-| Water               |      1/4 | cups  |
-| Soy Sauce           |        2 | tbsp  |
-| Maple syrup         |        1 | tbsp  |
-| Apple cider vinegar |        1 | tbsp  |
-| Garlic powder       |        1 | tsp   |
+| Ingredient          | Quantity | Unit  | Id                  | Group |
+|---------------------+----------+-------+---------------------+-------|
+| Tofu                |        1 | brick | tofu                |       |
+| Water               |      1/4 | cups  | water               |       |
+| Soy Sauce           |        2 | tbsp  | sauce-soy           |       |
+| Maple syrup         |        1 | tbsp  | maple-syrup         |       |
+| Apple cider vinegar |        1 | tbsp  | vinegar-apple-cider |       |
+| Garlic powder       |        1 | tsp   | powder-garlic       |       |
 ** Steps
-1) Press the tofu for a while. Then dice/cube it.
-2) Mix the marinade ingredients in a bowl
-3) Put the tofu in the bowl and cover. Put it in the fridge for 15 min.
+1) [&:00:20:00] Press the [#: tofu | tofu] for a while (around 20 minutes). Then dice/cube it.
+2) Mix the marinade ingredients in a bowl.
+3) [&:00:15:00] Put the tofu in the bowl and cover. Put it in the fridge for 15 min.
 4) Take the tofu out and pan fry until golden brown.
 ** Content
 :PROPERTIES:
@@ -133,23 +132,24 @@ CLOSED: [2019-09-03 Tue 07:39]
 :END:
 ** Ingredients
 
-| Ingredient | Quantity | Unit  |
-|------------+----------+-------|
-| ginger     |        1 | lbs   |
-| sugar      |        4 | cups  |
-| water      |        4 | cups  |
-| salt       |        1 | pinch |
+| Ingredient  | Quantity | Unit  | Id          | Group |
+|-------------+----------+-------+-------------+-------|
+| Ginger      |        1 | lbs   | ginger      |       |
+| White Sugar |        4 | cups  | sugar-white |       |
+| Water       |        4 | cups  | water       |       |
+| Salt        |        1 | pinch | salt        |       |
 ** Steps
 
-1) Peel the ginger.
-2) Slice the ginger. Thin.
+1) Peel the [#: ginger | ginger].
+2) Slice the ginger thinly.
 3) Put ginger into a pot, cover with water. Bring water to a boil.
-4) [&: 00:10:00] Reduce heat and simmer for 10 minutes.
+4) [&:00:10:00] Reduce heat and simmer for 10 minutes.
 5) Repeat the previous step.
-6) Mix the sugar, water, salt and ginger slices in the pot. Cook until the
-   temperature reaches 225ºF (106ºC). I don't have a thermometer. Some people
-   online report cooking for 50min - 1 hour. Other recipes say "Bring to a boil, reduce the heat to medium, and simmer uncovered for 35-40 minutes or until the temperature on a candy thermometer reads 225 degrees F."
-7) [&: 01:00:00] Remove from heat. Let stand for one hour.
+6) Mix the [#: sugar-white | sugar], [#: water | water], [#: salt | salt] and
+   ginger slices in the pot. Cook until the temperature reaches 225F (106C). A
+   candy thermometer is very helpful, but otherwise, you can estimate cooking
+   for 40 to 60 min.
+7) [&:01:00:00] Remove from heat. Let stand for one hour.
 8) Drain the ginger through a colander, catch the syrup.
 9) Toss drained ginger in sugar.
 10) Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they are somewhat dry.
@@ -175,26 +175,31 @@ CLOSED: [2019-09-03 Tue 21:30]
 :rating: 4/5
 :END:
 ** Ingredients
-| Ingredient                | Quantity | Unit   |
-|---------------------------+----------+--------|
-| Olive Oil                 |        1 | tbsp   |
-| White onion (or: shallot) |     1/2/ | cups   |
-| Garlic                    |        3 | cloves |
-| Bell Pepper (chopped)     |     1/2/ | cups   |
-| Diced tomatoes            |       28 | oz     |
-| Tomato paste              |        3 | tbsp   |
-| Maple syrup               |        1 | tbsp   |
-| Ground cumin              |        1 | tsp    |
-| Paprika                   |        1 | tsp    |
-| Chili powder              |        2 | tsp    |
-| Ground cinnamon           |      1/4 | tsp    |
-| Chickpeas                 |       24 | oz     |
+| Ingredient                | Quantity | Unit   | Id              | Group |
+|---------------------------+----------+--------+-----------------+-------|
+| Olive Oil                 |        1 | tbsp   | oil-olive       |       |
+| White onion (or: shallot) |     1/2/ | cups   | onion-white     |       |
+| Garlic                    |        3 | cloves | garlic          |       |
+| Bell Pepper (chopped)     |     1/2/ | cups   | pepper-bell     |       |
+| Diced tomatoes            |       28 | oz     | tomato-diced    |       |
+| Tomato paste              |        3 | tbsp   | tomato-paste    |       |
+| Olives                    |        5 | --     | olives          |       |
+| Maple syrup               |        1 | tbsp   | maple-syrup     |       |
+| Ground cumin              |        1 | tsp    | cumin-ground    |       |
+| Paprika                   |        1 | tsp    | paprika         |       |
+| Chili powder              |        2 | tsp    | chili-powder    |       |
+| Ground cinnamon           |      1/4 | tsp    | cinnamon-ground |       |
+| Chickpeas                 |       24 | oz     | chickpeas       |       |
+| Sea Salt                  |        1 | pinch  | salt-sea        |       |
 ** Steps
 1) Heat a large metal or cast iron skilled on medium heat.
-2) [&: 00:04:00] When hot, add olive oil, onion, bell pepper and garlic. Saute for 4-5 minutes, stirring frequently.
-3) Add diced tomatoes, tomoato paste, maple syrup, sea salt, paprika, cumin, chili powser, cinnamon. Stir.
+2) [&: 00:04:00] When hot, add [#: oil-olive | olive oil ], [#: onion-white |
+   onion], [#: pepper-bell | bell pepper] and [#: garlic | garlic]. Saute for 4-5 minutes, stirring frequently.
+3) Add [#: tomato-diced | diced tomatoes], [#: tomato-paste | tomato paste], [#:
+   maple-syrup | maple syrup], [#: salt-sea | sea salt], [#: paprika | paprika],
+   [#: cumin-ground | cumin], [#: chili-powder | chili powder], [#: cinnamon-ground | cinnamon]. Stir.
 4) [&: 00:03:00] Bring to a simmer. Cook for 2-3 minutes.
-5) [&: 00:15:00] Add chickpeas and olives. Reduce heaet to medium-low for 15-20 minutes.
+5) [&: 00:15:00] Add [#: chickpeas | chickpeas] and [#: olives | olives]. Reduce heat to medium-low for 15-20 minutes.
 ** Content
 :PROPERTIES:
 :type: big-quote
@@ -216,24 +221,25 @@ CLOSED: [2019-09-04 Wed 18:13]
 :rating: 5/5
 :END:
 ** Ingredients
-| Ingredient                       | Quantity | Unit    |
-|----------------------------------+----------+---------|
-| Collard Greens (or: Swiss Chard) |       10 | leaves  |
-| Spaghetti                        |      1/3 | package |
-| Chopped Nuts                     |        3 | tbsp    |
-| Olive Oil                        |        1 | tbsp    |
-| Garlic                           |        2 | cloves  |
-| Red Pepper Flakes                |        1 | pinch   |
-| Parmesan Cheese                  |        1 | ounce   |
-| Lemon                            |        1 |         |
+| Ingredient        | Quantity | Unit    | Id                |
+|-------------------+----------+---------+-------------------|
+| Swiss Chard       |       10 | leaves  | swiss-chard       |
+| Spaghetti         |      1/3 | package | spaghetti         |
+| Chopped Nuts      |        3 | tbsp    | nuts              |
+| Olive Oil         |        1 | tbsp    | oil-olive         |
+| Garlic            |        2 | cloves  | garlic            |
+| Red Pepper Flakes |        1 | pinch   | red-pepper-flakes |
+| Parmesan Cheese   |        1 | ounce   | cheese-parmesan   |
+| Lemon             |        1 |         | lemon             |
 ** Steps
-1) Bring a pot of salted water to boil. Cook the pasta.
+1) Bring a pot of salted water to boil. Cook the [#: spaghetti | pasta].
 2) Drain the pasta, reserving a bit of cooking water. Set aside.
-3) Cut out the "rib" of the collard greens. Roll them up like a cigar. Slice across the role, as thinly as possible.
-4) Heat a skillet on medium heat. Toast the nuts until fragrant. Set aside.
-5) Using the same skillet, heat the olive oil. When hot, put in the garlic and red pepper flakes.
-6) After a bit, toss in the greens. Sprinkle with salt. Stit often, about three minutes.
-7) Scoop greens into pasta pot and toss with oil. Add pasta water if necessary.
+3) Cut out the "rib" of the swiss chard. Roll up the leaves like a cigar. Slice across the role, as thinly as possible.
+4) Heat a skillet on medium heat. Toast the [#: nuts | nuts] until fragrant. Set aside.
+5) Using the same skillet, heat the [#: oil-olive | olive oil]. When hot, put in
+   the [#: garlic | garlic] and [#: red-pepper-flakes | red pepper flakes].
+6) [&: 00:03:00] After a bit, toss in the swiss-chard. Sprinkle with salt. Stir often, about three minutes.
+7) Scoop chard into pasta pot and toss with oil. Add pasta water if necessary.
 8) Divide onto plates, top with nuts and parmesan shavings. Add two big lemon
    wedges per person.
 ** Content
@@ -258,40 +264,43 @@ CLOSED: [2019-09-10 Tue 18:10]
 :rating: 5/5
 :END:
 ** Ingredients
-| Ingredient       | Quantity | Unit |
-|------------------+----------+------|
-| Tofu             |        8 | oz   |
-| Sweet Potato     |        1 |      |
-| Onion            |        1 |      |
-| Garlic           |        2 |      |
-| Olive Oil        |        3 | tbsp |
-| Chickpeas        |        1 | cups |
-| Salt             |        1 | tsp  |
-| Pepper           |      1/2 | tsp  |
-| Chili powder     |        1 | tsp  |
-| Garlic powder    |        1 | tsp  |
-| Quinoa           |    1+1/2 | cups |
-| Shredded Carrots |      1/4 | cups |
-| Avacado          |        1 |      |
-| Lemon            |        1 |      |
-| Sesame Oil       |      1/2 | tsp  |
-| Hot Sauce        |        1 | tsp  |
-| Dried thyme      |        2 | tsp  |
-| Paprika          |        1 | tsp  |
-|                  |          |      |
+| Ingredient       | Quantity | Unit | Id               | Group    |
+|------------------+----------+------+------------------+----------|
+| Tofu             |        8 | oz   | tofu             |          |
+| Sweet Potato     |        1 |      | potato-sweet     |          |
+| Onion            |        1 |      | onion            |          |
+| Garlic           |        2 |      | garlic           |          |
+| Olive Oil        |        3 | tbsp | oil-olive        | Marinade |
+| Chickpeas        |        1 | cups | chickpeas        |          |
+| Salt             |        1 | tsp  | salt             | Marinade |
+| Pepper           |      1/2 | tsp  | pepper           |          |
+| Chili powder     |        1 | tsp  | chili-powder     |          |
+| Garlic powder    |        1 | tsp  | garlic-powder    |          |
+| Quinoa           |    1+1/2 | cups | quinoa           |          |
+| Shredded Carrots |      1/4 | cups | carrots-shredded |          |
+| Avocado          |        1 |      | avocado          |          |
+| Lemon            |        1 |      | lemon            |          |
+| Sesame Oil       |      1/2 | tsp  | oil-sesame       | Marinade |
+| Hot Sauce        |        1 | tsp  | sauce-hot        | Marinade |
+| Dried thyme      |        2 | tsp  | thyme            | Marinade |
+| Paprika          |        1 | tsp  | paprika          | Marinade |
+|                  |          |      |                  |          |
 ** Steps
-1) Make the marinade: combine Olive oil, seasami oil, hot sauce, thyme, paprika,
-   and salt. Set aside.
-2) [&: 00:30:00] Add marinade and tofu to a container and marinate for 30 minutes, up to a day
-3) Preheat the oven to 400ºF (200ºC).
-4) [&: 00:20:00] Cut sweet potato into cubes. Slice the onion, dice garlic. Put it all on a
+1) Make the marinade: combine [#: oil-olive | olive oil], [#: oil-sesame |
+   seasame oil], [#: sauce-hot | hot sauce], [#: thyme | thyme], [#: paprika | paprika],
+   and [#: salt | salt]. Set aside.
+2) [&: 00:30:00] Add marinade and tofu to a container and marinate for at least
+   30 minutes (up to a day).
+3) Preheat the oven to 400F (200C).
+4) [&: 00:20:00] Cut [#: potato-sweet | sweet potato] into cubes. Slice the [#:
+   onion | onion], dice [#:garlic | garlic]. Put it all on a
    baking sheet. Drizzel with oil, season with salt and pepper. Bake for 20-25 min.
-5) In a medium bowl, add the chickpeas, salt, pepper, chili powder, and garlic
-   powder. Stir to combine.
-6) [&: 00:10:00] Transfer chickpeas to skilled and cook on medium heat for 10 minutes. Set aside.
+5) In a medium bowl, add the [#: chickpeas | chickpeas], salt, pepper, [#:
+   chili-powder | chili powder], and [#: garlic-powder | garlic powder]. Stir to combine.
+6) [&: 00:10:00] Transfer chickpeas to skillet and cook on medium heat for 10 minutes. Set aside.
 7) [&: 00:10:00] Fry the tofu in the same pan for about 10 minutes on each side.
 8) Slice tofu as you like.
-9) Combine with quinoa, greens, sweet potatoes, onions, chickpeas, carrots,
+9) Optional: Combine with quinoa, greens, sweet potatoes, onions, chickpeas, carrots,
    tofu, and avocado.
 ** Content
 :PROPERTIES:
@@ -868,25 +877,25 @@ CLOSED: [2019-10-06 Sun 12:50]
 :time: 00:50:00
 :END:
 ** Ingredients
-| Ingredient                | Quantity | Unit        | Group           | Id                |
-|---------------------------+----------+-------------+-----------------+-------------------|
-| Tofu (firm)               |        1 | package     | tofu            | tofu              |
-| Olive oil                 |       -- | --          | tofu            | olive_oil         |
-| salt                      |       -- | pinch       | tofu            | salt              |
-| Shredded Coconut          |      1/4 | cups        | coconut rice    | shredded_coconut  |
-| Brown rice                |        1 | cups        | coconut rice    | brown_rice        |
-| Coconut milk              |        1 | can (400ml) | coconut rice    | coconut_milk      |
-| Brown Sugar               |        2 | tsp         | coconut rice    | brown_sugar       |
-| Coconut oil               |        1 | tsp         | coconut rice    | coconut_oil       |
-| Pineapple (diced)         |    1+1/2 | cups        | pineapple salsa | pineapple         |
-| Red onion (diced)         |      1/4 | cups        | pineapple salsa | red_onion         |
-| Jalapenos (seeded, diced) |        1 | pepper      | pineapple salsa | jalapenos         |
-| Garlic (minced)           |        1 | clove       | pineapple salsa | garlic            |
-| Bell pepper               |        1 | --          | pineapple salsa | bell_pepper       |
-| Fresh lime juice          |        3 | tbsp        | pineapple salsa | lime_juice        |
-| Red pepper flakes         |        1 | dash        | pineapple salsa | red_pepper_flakes |
+| Ingredient                | Quantity | Unit        | Id                | Group           |
+|---------------------------+----------+-------------+-------------------+-----------------|
+| Tofu (firm)               |        1 | package     | tofu              | tofu            |
+| Olive oil                 |       -- | --          | olive_oil         | tofu            |
+| salt                      |       -- | pinch       | salt              | tofu            |
+| Shredded Coconut          |      1/4 | cups        | shredded_coconut  | coconut rice    |
+| Brown rice                |        1 | cups        | brown_rice        | coconut rice    |
+| Coconut milk              |        1 | can (400ml) | coconut_milk      | coconut rice    |
+| Brown Sugar               |        2 | tsp         | brown_sugar       | coconut rice    |
+| Coconut oil               |        1 | tsp         | coconut_oil       | coconut rice    |
+| Pineapple (diced)         |    1+1/2 | cups        | pineapple         | pineapple salsa |
+| Red onion (diced)         |      1/4 | cups        | red_onion         | pineapple salsa |
+| Jalapenos (seeded, diced) |        1 | pepper      | jalapenos         | pineapple salsa |
+| Garlic (minced)           |        1 | clove       | garlic            | pineapple salsa |
+| Bell pepper               |        1 | --          | bell_pepper       | pineapple salsa |
+| Fresh lime juice          |        3 | tbsp        | lime_juice        | pineapple salsa |
+| Red pepper flakes         |        1 | dash        | red_pepper_flakes | pineapple salsa |
 ** Steps
-1) [&:00:20:00] Press the tofu for about 20 minutes (put something heavy on it.)
+1) [&:00:20:00] Press the [#: tofu | tofu] for about 20 minutes (put something heavy on it.)
 2) Preheat your oven for the coconut rice. 300 degrees farenheiht. Toast it for
    8-12 minutes until golden brown.
 3) Go prep the salsa. Mix in bowl: diced pineapple, diced red onion, diced

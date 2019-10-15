@@ -149,7 +149,7 @@ function UiFn() {
     if (state.currentModal) {
       return h("section", {class: "v_Modal"}, [
         h("div", {
-          class: "v_Modal--blose_btn",
+          class: "v_Modal--close_btn",
           onClick: [$act.modalClose]
         }, "X"),
         state.currentModal()
@@ -160,8 +160,20 @@ function UiFn() {
     }
   }
 
-  this.modalShowIngredient = (val) => {
-    return h("section", {class: "v_Modal--ingredient"}, "the content" + val)
+  /**
+   * @param props: ingredient-id for fetching quantity from.
+   * Shows how much of an ingredient to use;
+   * fetches value from current recipe ingredients table.
+   */
+  this.modalShowIngredient = (state, props) => {
+    let ingredients = state.currentRecipe.ingredients.data
+    let f           = ingredients.filter(i => i.Id === props)[0]
+    let rdata       = f.Quantity + " " + f.Unit
+
+    return h("section", {class: "v_Modal--ingredient"}, [
+      h("div", {class: "v_Modal--ingredientHeading"}, f.Ingredient),
+      h("div", {class: "v_Modal--ingredientQuant"}, rdata),
+    ])
   }
 
   this.navbar = () => {

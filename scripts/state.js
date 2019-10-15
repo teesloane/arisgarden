@@ -17,10 +17,10 @@ const $act = {
   modalClose:    (s, _) => ({...s, currentModal: null}),
   modalSet:      (s, p) => {
     if (p.type === "temp") {
-      return [({...s, currentModal: () => p.fn(p.val)}),
-         [$fx.tempModal, {delay: 30000}]]
+      return [({...s, currentModal: () => p.fn(s, p.val)}),
+         [$fx.tempModal, {delay: 3000}]]
     }
-    return ({...s, currentModal: () => p.fn(p.val)})
+    return ({...s, currentModal: () => p.fn(s, p.val)})
   },
 
 

@@ -150,14 +150,16 @@ function Recipe() {
     }, [
       h("table", { class: "recipeIngredientTable", style: { width: "100%" } }, [
         h("thead", { class: "recipeIngredientHeadRow" },
-          h("tr", {}, [ingredients.keys.map(e => h("th", $tr, e))])
+          h("tr", {}, [ingredients.keys.map((e, index) => {
+						if (index < 3) return h("th", $tr, e)
+					})])
         ),
         h('tbody', { class: "recipeIngredientTableBody" }, [
           ingredients.data.map(e => {
             return h("tr", { class: "recipeIngredient" }, [
-              h("td", {}, e.Ingredient),
-              h("td", {}, e.Quantity),
-              h("td", {}, e.Unit)
+              h("td", {style: {height: "40px"}}, e.Ingredient),
+              h("td", {style: {height: "40px"}}, e.Quantity),
+              h("td", {style: {height: "40px"}}, e.Unit)
             ])
           })])])])}
 
@@ -167,6 +169,7 @@ function Recipe() {
 
       return h("div", {...$wrapper, class: "recipeIngredients-Instructions-bg" }, [
         steps.map((s, index) => {
+					console.log(s);
           let stepClass =
             index == state.currentRecipeStep
               ? "recipeStep recipeStep--active"
@@ -188,17 +191,13 @@ function Recipe() {
           // activates a modal with the ingredients quantity in it.
           let renderStep = (f) => {
             return f.map(c => {
+							let rejoinedVal = c.val === "," ? "" : " "
+
               if (typeof(c.attr) === "undefined") {
-                return h("span", {}, c.val + " ")
+                return h("span", {}, c.val.trim() + rejoinedVal)
               }
 
-              return h("span", {
-                onClick: [$act.modalSet,
-                          {fn: ui.modalShowIngredient,
-                           val: c.attr,
-                           state,
-                           type: "temp"}]
-              }, c.val + " ")
+              return h("span", {class: "recipeStepSingleIngredient", onClick: [$act.modalSet, {fn: ui.modalShowIngredient, val: c.attr, state, type: "temp"}]}, c.val.trim() + rejoinedVal)
             })
           }
 

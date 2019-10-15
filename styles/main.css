@@ -207,8 +207,20 @@ h1,h2,h3,h4,h5,h6 {
   cursor: pointer;
   display: flex;
   font-size: 14px;
-  line-height: 22px;
-  margin: 20px 0;
+  margin: 22px 0;
+}
+
+.recipeStep:first-child {
+  margin-top: 12px;
+}
+
+.recipeStepSingleIngredient {
+  padding: 3px 2px 4px 6px;
+  margin-left: 4px;
+  margin-right: 5px;
+  border: 1px solid #333;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .recipeStep--active {
@@ -240,6 +252,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .recipeStep_TextContent {
   padding: 0px 16px;
+  line-height: 32px;
+  font-size: 16px;
 }
 
 /* RecipeSingle Photos */
