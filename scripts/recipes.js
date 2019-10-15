@@ -197,7 +197,7 @@ function Recipe() {
                 return h("span", {}, c.val.trim() + rejoinedVal)
               }
 
-              return h("span", {class: "recipeStepSingleIngredient", onClick: [$act.modalSet, {fn: ui.modalShowIngredient, val: c.attr, state, type: "temp"}]}, c.val.trim() + rejoinedVal)
+              return h("span", {class: "recipeStepSingleIngredient", onClick: [$act.modalSet, {fn: ui.modalShowIngredient, val: c.attr, state}]}, c.val.trim() + rejoinedVal)
             })
           }
 

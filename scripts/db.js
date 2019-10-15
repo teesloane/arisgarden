@@ -63,15 +63,15 @@ var db = {
           },
           {
             "Ingredient": "Parchment Paper",
-            "Quantity": "-",
-            "Unit": "-",
+            "Quantity": "",
+            "Unit": "",
             "Id": "parchment-paper",
             "Group": ""
           },
           {
             "Ingredient": "8x8 Baking Pan",
-            "Quantity": "-",
-            "Unit": "-",
+            "Quantity": "",
+            "Unit": "",
             "Id": "",
             "Group": ""
           }
@@ -276,8 +276,8 @@ var db = {
           },
           {
             "Ingredient": "Rice or Grain for Base",
-            "Quantity": "-",
-            "Unit": "-",
+            "Quantity": "",
+            "Unit": "",
             "Id": "rice",
             "Group": ""
           }
@@ -721,7 +721,7 @@ var db = {
           {
             "Ingredient": "Olives",
             "Quantity": "5",
-            "Unit": "--",
+            "Unit": "",
             "Id": "olives",
             "Group": ""
           },
@@ -1165,7 +1165,7 @@ var db = {
           {
             "Ingredient": "Garlic",
             "Quantity": "2",
-            "Unit": "",
+            "Unit": "cloves",
             "Id": "garlic",
             "Group": ""
           },
@@ -1468,78 +1468,99 @@ var db = {
         "keys": [
           "Ingredient",
           "Quantity",
-          "Unit"
+          "Unit",
+          "Id"
         ],
         "data": [
           {
             "Ingredient": "Tofu",
             "Quantity": "1",
-            "Unit": "package"
+            "Unit": "package",
+            "Id": "tofu"
           },
           {
             "Ingredient": "Coconut oil",
             "Quantity": "2",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "oil-coconut"
           },
           {
             "Ingredient": "Cumin powder",
             "Quantity": "1",
-            "Unit": "tsp"
+            "Unit": "tsp",
+            "Id": "cumin-powder"
           },
           {
             "Ingredient": "Coriander powder",
             "Quantity": "1",
-            "Unit": "tsp"
+            "Unit": "tsp",
+            "Id": "coriander-powder"
           },
           {
             "Ingredient": "Red Curry Paste",
             "Quantity": "5",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "red-curry-paste"
           },
           {
             "Ingredient": "Baby potatoes",
             "Quantity": "1+1/2",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "potatoes-baby"
           },
           {
             "Ingredient": "Carrots",
             "Quantity": "2",
-            "Unit": ""
+            "Unit": "",
+            "Id": "carrots"
           },
           {
             "Ingredient": "Coconut milk",
             "Quantity": "28",
-            "Unit": "oz"
+            "Unit": "oz",
+            "Id": "milk-coconut"
           },
           {
             "Ingredient": "Water",
             "Quantity": "1+1/2",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "water"
           },
           {
             "Ingredient": "Ground cinnamon",
             "Quantity": "1/4",
-            "Unit": "tsp"
+            "Unit": "tsp",
+            "Id": "ground-cinnamon"
           },
           {
             "Ingredient": "Soy sauce",
             "Quantity": "2",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "sauce-soy"
           },
           {
             "Ingredient": "Maple syrup",
             "Quantity": "2",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "maple-syrup"
           },
           {
             "Ingredient": "Peanut butter",
             "Quantity": "2",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "peanut-butter"
           },
           {
             "Ingredient": "Lime juice",
             "Quantity": "2",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "lime-juice"
+          },
+          {
+            "Ingredient": "Rice/Grain",
+            "Quantity": "",
+            "Unit": "",
+            "Id": "rice"
           }
         ]
       },
@@ -1553,10 +1574,25 @@ var db = {
           ]
         },
         {
-          "o": "Heat a large pot or dutch oven on medium heat. Once hot, add oil and shallot.",
+          "o": "Cook desired serving of rice as per package instructions",
           "f": [
             {
-              "val": "Heat a large pot or dutch oven on medium heat. Once hot, add oil and shallot."
+              "val": "Cook desired serving of rice as per package instructions"
+            }
+          ]
+        },
+        {
+          "o": "Heat a large pot or dutch oven on medium heat. Once hot, add [#: oil-coconut | oil] and shallot.",
+          "f": [
+            {
+              "val": "Heat a large pot or dutch oven on medium heat. Once hot, add"
+            },
+            {
+              "val": "oil",
+              "attr": "oil-coconut"
+            },
+            {
+              "val": "and shallot."
             }
           ]
         },
@@ -1570,37 +1606,114 @@ var db = {
           "timer": "00:02:00"
         },
         {
-          "o": "[&: 00:02:00] Add cumin and coriander. Saute for 2 minutes, stirring frequently.",
+          "o": "[&: 00:02:00] Add [#: cumin-powder | cumin] and [#: coriander-powder | coriander]. Saute for 2 minutes, stirring frequently.",
           "f": [
             {
-              "val": "Add cumin and coriander. Saute for 2 minutes, stirring frequently."
+              "val": "Add"
+            },
+            {
+              "val": "cumin",
+              "attr": "cumin-powder"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "coriander",
+              "attr": "coriander-powder"
+            },
+            {
+              "val": ". Saute for 2 minutes, stirring frequently."
             }
           ],
           "timer": "00:02:00"
         },
         {
-          "o": "[&: 00:01:00] Add red curry paste and stir for another minute.",
+          "o": "[&: 00:01:00] Add [#: red-curry-paste | red curry paste] and stir for another minute.",
           "f": [
             {
-              "val": "Add red curry paste and stir for another minute."
+              "val": "Add"
+            },
+            {
+              "val": "red curry paste",
+              "attr": "red-curry-paste"
+            },
+            {
+              "val": "and stir for another minute."
             }
           ],
           "timer": "00:01:00"
         },
         {
-          "o": "[&: 00:02:00] Add potatoes and carrots and stir to coat. Cook for 2 minutes.",
+          "o": "[&: 00:02:00] Add [#: potatoes-baby | potatoes] and [#: carrots | carrots] and stir to coat. Cook for 2 minutes.",
           "f": [
             {
-              "val": "Add potatoes and carrots and stir to coat. Cook for 2 minutes."
+              "val": "Add"
+            },
+            {
+              "val": "potatoes",
+              "attr": "potatoes-baby"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "carrots",
+              "attr": "carrots"
+            },
+            {
+              "val": "and stir to coat. Cook for 2 minutes."
             }
           ],
           "timer": "00:02:00"
         },
         {
-          "o": "Add coconut milk, water, cinnamon, soysauce, maple syrup, and peanut butter. Add your tofu or other protein now.",
+          "o": "Add [#: milk-coconut | coconut milk], [#: water | water], [#: ground-cinnamon | cinnamon], [#: sauce-soy | soy-sauce], [#: maple-syrup | maple syrup], and [#: peanut-butter | peanut butter]. Add your tofu or other protein now.",
           "f": [
             {
-              "val": "Add coconut milk, water, cinnamon, soysauce, maple syrup, and peanut butter. Add your tofu or other protein now."
+              "val": "Add"
+            },
+            {
+              "val": "coconut milk",
+              "attr": "milk-coconut"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "water",
+              "attr": "water"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "cinnamon",
+              "attr": "ground-cinnamon"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "soy-sauce",
+              "attr": "sauce-soy"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "maple syrup",
+              "attr": "maple-syrup"
+            },
+            {
+              "val": ", and"
+            },
+            {
+              "val": "peanut butter",
+              "attr": "peanut-butter"
+            },
+            {
+              "val": ". Add your tofu or other protein now."
             }
           ]
         },
@@ -1614,10 +1727,17 @@ var db = {
           "timer": "00:10:00"
         },
         {
-          "o": "Near the end of the previous step, toss in your tofu and the lime. Cook for another few minutes.",
+          "o": "Near the end of the previous step, toss in your tofu and the [#: lime-juice | lime juice]. Cook for another few minutes.",
           "f": [
             {
-              "val": "Near the end of the previous step, toss in your tofu and the lime. Cook for another few minutes."
+              "val": "Near the end of the previous step, toss in your tofu and the"
+            },
+            {
+              "val": "lime juice",
+              "attr": "lime-juice"
+            },
+            {
+              "val": ". Cook for another few minutes."
             }
           ]
         },
@@ -1669,93 +1789,129 @@ var db = {
         "keys": [
           "Ingredient",
           "Quantity",
-          "Unit"
+          "Unit",
+          "Id",
+          "Group"
         ],
         "data": [
           {
             "Ingredient": "Cauliflower",
             "Quantity": "1",
-            "Unit": "head"
+            "Unit": "head",
+            "Id": "cauliflower",
+            "Group": "cauliflower"
           },
           {
             "Ingredient": "Water (for cauliflower rice)",
             "Quantity": "3",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "water",
+            "Group": "cauliflower"
           },
           {
             "Ingredient": "Coconut oil",
-            "Quantity": "2",
-            "Unit": "tbsp"
+            "Quantity": "1",
+            "Unit": "tsp",
+            "Id": "oil-coconut",
+            "Group": "sauce"
           },
           {
             "Ingredient": "Peanut or Almond Butter",
             "Quantity": "2",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "almond-butter",
+            "Group": "sauce"
           },
           {
             "Ingredient": "ginger",
             "Quantity": "1",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "ginger",
+            "Group": "sauce"
           },
           {
             "Ingredient": "Maple syrup",
             "Quantity": "1",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "maple-syrup",
+            "Group": "sauce"
           },
           {
             "Ingredient": "Soy sauce (for the sauce)",
             "Quantity": "4",
-            "Unit": "tbsp"
-          },
-          {
-            "Ingredient": "Soy sauce (for the stir fry)",
-            "Quantity": "3",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "soy-sauce-1",
+            "Group": "sauce"
           },
           {
             "Ingredient": "Lime juice",
             "Quantity": "2",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "lime-juice",
+            "Group": "sauce"
           },
           {
             "Ingredient": "Chili garlic sauce or sriracha",
             "Quantity": "2-4",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "chili-garlic-sauce",
+            "Group": "sauce"
           },
           {
             "Ingredient": "Water",
-            "Quantity": "-",
-            "Unit": "tbsp"
+            "Quantity": "2-3",
+            "Unit": "tbsp",
+            "Id": "water",
+            "Group": "sauce"
           },
           {
             "Ingredient": "Green beans (trimmed and halved)",
             "Quantity": "1+1/2",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "green-beans",
+            "Group": "stir-fry"
           },
           {
             "Ingredient": "Cabbage (thinly sliced)",
             "Quantity": "1",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "cabbage",
+            "Group": "stir-fry"
+          },
+          {
+            "Ingredient": "soy-sauce",
+            "Quantity": "3",
+            "Unit": "tbsp",
+            "Id": "soy-sauce-2",
+            "Group": "stir-fry"
           },
           {
             "Ingredient": "Green onions (diced)",
             "Quantity": "1",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "onions-green",
+            "Group": "stir-fry"
           },
           {
-            "Ingredient": "Bell Pepper (thin slices, lengthwise)",
+            "Ingredient": "Bell Pepper (sliced thinly)",
             "Quantity": "1",
-            "Unit": "-"
+            "Unit": "",
+            "Id": "pepper-bell",
+            "Group": "stir-fry"
           },
           {
             "Ingredient": "Cashews",
             "Quantity": "3/4",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "cashews",
+            "Group": "stir-fry"
           },
           {
-            "Ingredient": "A Blender or a grater for the cauliflower",
+            "Ingredient": "A Blender",
             "Quantity": "",
-            "Unit": ""
+            "Unit": "",
+            "Id": "",
+            "Group": ""
           }
         ]
       },
@@ -1851,114 +2007,184 @@ var db = {
         "keys": [
           "Ingredient",
           "Quantity",
-          "Unit"
+          "Unit",
+          "Id"
         ],
         "data": [
           {
-            "Ingredient": "coconut oil",
+            "Ingredient": "Coconut oil",
             "Quantity": "2",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "oil-coconut"
           },
           {
-            "Ingredient": "eggs",
+            "Ingredient": "Eggs",
             "Quantity": "2",
-            "Unit": "-"
+            "Unit": "",
+            "Id": "eggs"
           },
           {
-            "Ingredient": "garlic (minced)",
+            "Ingredient": "Garlic (minced)",
             "Quantity": "2",
-            "Unit": ""
+            "Unit": "cloves",
+            "Id": "garlic"
           },
           {
-            "Ingredient": "green onions (chopped)",
+            "Ingredient": "Green onions (chopped)",
             "Quantity": "1",
-            "Unit": "bunch"
+            "Unit": "bunch",
+            "Id": "onions-green"
           },
           {
             "Ingredient": "Chopped vegetables (peppers, brussel sprouts etc)",
             "Quantity": "1",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "vegetables-chopped"
           },
           {
             "Ingredient": "Kale (ribs removed, chopped)",
             "Quantity": "1",
-            "Unit": "bunch"
+            "Unit": "bunch",
+            "Id": "kale"
           },
           {
             "Ingredient": "Sea salt",
             "Quantity": "1/4",
-            "Unit": "tsp"
+            "Unit": "tsp",
+            "Id": "salt-sea"
           },
           {
-            "Ingredient": "unsweetened coconut flakes or shreds",
+            "Ingredient": "Coconut flakes",
             "Quantity": "3/4",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "coconut-flakes"
           },
           {
-            "Ingredient": "Rice (uncooked)",
+            "Ingredient": "Rice",
             "Quantity": "1",
-            "Unit": "cup"
+            "Unit": "cup",
+            "Id": "rice"
           },
           {
             "Ingredient": "Soy sauce",
             "Quantity": "2",
-            "Unit": "tsp"
+            "Unit": "tsp",
+            "Id": "sauce-soy"
           },
           {
             "Ingredient": "Sriracha",
             "Quantity": "2",
-            "Unit": "tsp"
+            "Unit": "tsp",
+            "Id": "sriracha"
           },
           {
             "Ingredient": "Lime (halved)",
             "Quantity": "1",
-            "Unit": ""
+            "Unit": "",
+            "Id": "lime"
           },
           {
             "Ingredient": "Cilantro",
-            "Quantity": "",
-            "Unit": ""
+            "Quantity": "1",
+            "Unit": "handful",
+            "Id": "cilantro"
           }
         ]
       },
       "instructions": [
         {
-          "o": "Cook the rice and set it aside to cool.",
+          "o": "Cook the [#: rice | rice] and set it aside to cool.",
           "f": [
             {
-              "val": "Cook the rice and set it aside to cool."
+              "val": "Cook the"
+            },
+            {
+              "val": "rice",
+              "attr": "rice"
+            },
+            {
+              "val": "and set it aside to cool."
             }
           ]
         },
         {
-          "o": "Heat a large skillet on medium high heat. Add 1 teaspoon of coconut oil.",
+          "o": "Heat a large skillet on medium high heat. Add 1 teaspoon of [#: oil-coconut | coconut oil].",
           "f": [
             {
-              "val": "Heat a large skillet on medium high heat. Add 1 teaspoon of coconut oil."
+              "val": "Heat a large skillet on medium high heat. Add 1 teaspoon of"
+            },
+            {
+              "val": "coconut oil",
+              "attr": "oil-coconut"
+            },
+            {
+              "val": "."
             }
           ]
         },
         {
-          "o": "Add eggs and stir frequently so they are sort of scrambled. Transfer to bowl when done and wipe the pan clean.",
+          "o": "Add [#: eggs | eggs] and stir frequently so they are sort of scrambled. Transfer to bowl when done and wipe the pan clean.",
           "f": [
             {
-              "val": "Add eggs and stir frequently so they are sort of scrambled. Transfer to bowl when done and wipe the pan clean."
+              "val": "Add"
+            },
+            {
+              "val": "eggs",
+              "attr": "eggs"
+            },
+            {
+              "val": "and stir frequently so they are sort of scrambled. Transfer to bowl when done and wipe the pan clean."
             }
           ]
         },
         {
-          "o": "Add a tablespoon of coconut oil to pan. Add garlic, green onions and vegetables. Cook until fragrant (30 seconds).  Add the kale and salt . Cook until wilted, about 1-2 minutes. Transfer to bowl with eggs.",
+          "o": "Add a tablespoon of coconut oil to pan. Add [#: garlic | garlic], [#: onions-green | green onions] and [#: vegetables-chopped | vegetables]. Cook until fragrant (30 seconds).  Add the [#: kale | kale] and [#: salt-sea | salt] . Cook until wilted, about 1-2 minutes. Transfer to bowl with eggs.",
           "f": [
             {
-              "val": "Add a tablespoon of coconut oil to pan. Add garlic, green onions and vegetables. Cook until fragrant (30 seconds).  Add the kale and salt . Cook until wilted, about 1-2 minutes. Transfer to bowl with eggs."
+              "val": "Add a tablespoon of coconut oil to pan. Add"
+            },
+            {
+              "val": "garlic",
+              "attr": "garlic"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "green onions",
+              "attr": "onions-green"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "vegetables",
+              "attr": "vegetables-chopped"
+            },
+            {
+              "val": ". Cook until fragrant (30 seconds).  Add the"
+            },
+            {
+              "val": "kale",
+              "attr": "kale"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "salt",
+              "attr": "salt-sea"
+            },
+            {
+              "val": ". Cook until wilted, about 1-2 minutes. Transfer to bowl with eggs."
             }
           ]
         },
         {
-          "o": "Add 2 more tablespoons of coconut oil to the pan AGAIN. Add the coconut flakes, stir frequently until golden. Add the cooked rice and stir occaisionally until hot, about 3 minutes",
+          "o": "Add 2 more tablespoons of coconut oil to the pan AGAIN. Add the coconut flakes, stir frequently until golden. Add the cooked rice and stir occaisionally until hot, about 3 minutes.",
           "f": [
             {
-              "val": "Add 2 more tablespoons of coconut oil to the pan AGAIN. Add the coconut flakes, stir frequently until golden. Add the cooked rice and stir occaisionally until hot, about 3 minutes"
+              "val": "Add 2 more tablespoons of coconut oil to the pan AGAIN. Add the coconut flakes, stir frequently until golden. Add the cooked rice and stir occaisionally until hot, about 3 minutes."
             }
           ]
         },
@@ -2010,117 +2236,228 @@ var db = {
         "keys": [
           "Ingredient",
           "Quantity",
-          "Unit"
+          "Unit",
+          "Id",
+          "Group"
         ],
         "data": [
           {
-            "Ingredient": "Greens: Spinach / Arugla etc",
-            "Quantity": "4",
-            "Unit": "cups"
-          },
-          {
             "Ingredient": "Broccoli",
             "Quantity": "2",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "broc",
+            "Group": "salad"
           },
           {
             "Ingredient": "Potatoes (chopped)",
             "Quantity": "1",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "potatoes",
+            "Group": "salad"
           },
           {
             "Ingredient": "Dill",
             "Quantity": "1",
-            "Unit": "sprig"
+            "Unit": "sprig",
+            "Id": "dill",
+            "Group": "salad"
           },
           {
             "Ingredient": "Pears (sliced)",
             "Quantity": "2",
-            "Unit": "--"
+            "Unit": "",
+            "Id": "pears",
+            "Group": "salad"
           },
           {
-            "Ingredient": "Brie Cheeze",
+            "Ingredient": "Brie cheese",
             "Quantity": "4-6",
-            "Unit": "slices"
+            "Unit": "slices",
+            "Id": "cheese",
+            "Group": "salad"
           },
           {
             "Ingredient": "Cranberries",
             "Quantity": "1/3",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "cran",
+            "Group": "salad"
           },
           {
             "Ingredient": "Avocado",
             "Quantity": "1/2",
-            "Unit": "--"
+            "Unit": "",
+            "Id": "avocado",
+            "Group": "salad"
           },
           {
             "Ingredient": "Pecans (chopped)",
             "Quantity": "1/3",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "pecans",
+            "Group": "salad"
           },
           {
             "Ingredient": "Olive oil",
             "Quantity": "1/2",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "oil-olive",
+            "Group": "dressing"
           },
           {
             "Ingredient": "Apple cider vinegar",
             "Quantity": "2",
-            "Unit": "tsp"
+            "Unit": "tsp",
+            "Id": "vinegar-apple",
+            "Group": "dressing"
           },
           {
             "Ingredient": "Rice wine vinegar",
             "Quantity": "1/4",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "vinegar-rice-wine",
+            "Group": "dressing"
           },
           {
             "Ingredient": "Shallots (minced)",
             "Quantity": "1",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "shallots",
+            "Group": "dressing"
           },
           {
             "Ingredient": "Maple Syrup",
             "Quantity": "1",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "maple-syrup",
+            "Group": "dressing"
           },
           {
             "Ingredient": "Pepper",
             "Quantity": "1",
-            "Unit": "pinch"
+            "Unit": "pinch",
+            "Id": "pepper",
+            "Group": "dressing"
           }
         ]
       },
       "instructions": [
         {
-          "o": "[&: 00:00:05] Preheat oven to 425. Add chopped potatoes and broccoli florets to bowl with olive oil and salt and pepper and dill. Put on a baking sheet on parchment paper. Bake for 10-12 minutes",
+          "o": "Preheat oven to 425.",
           "f": [
             {
-              "val": "Preheat oven to 425. Add chopped potatoes and broccoli florets to bowl with olive oil and salt and pepper and dill. Put on a baking sheet on parchment paper. Bake for 10-12 minutes"
+              "val": "Preheat oven to 425."
+            }
+          ]
+        },
+        {
+          "o": "Add chopped [#: potatoes | potatoes] and [#: broc | broccoli] florets to bowl with [#: oil-olive | olive oil] and salt and pepper and [#: dill | dill]. Stir to coat.",
+          "f": [
+            {
+              "val": "Add chopped"
+            },
+            {
+              "val": "potatoes",
+              "attr": "potatoes"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "broccoli",
+              "attr": "broc"
+            },
+            {
+              "val": "florets to bowl with"
+            },
+            {
+              "val": "olive oil",
+              "attr": "oil-olive"
+            },
+            {
+              "val": "and salt and pepper and"
+            },
+            {
+              "val": "dill",
+              "attr": "dill"
+            },
+            {
+              "val": ". Stir to coat."
+            }
+          ]
+        },
+        {
+          "o": "[&:00:12:00] Put contents of bowl on a baking sheet on parchment paper. Bake for 10-12 minutes.",
+          "f": [
+            {
+              "val": "Put contents of bowl on a baking sheet on parchment paper. Bake for 10-12 minutes."
             }
           ],
-          "timer": "00:00:05"
+          "timer": "00:12:00"
         },
         {
-          "o": "Prepare the dressing for the salad. Add the following to a container and whisk: Olive oil, Rice wine vinegar, shallots, maple syrup, ground pepper.",
+          "o": "Prepare the dressing for the salad. Add the following to a container and whisk: [#: oil-olive | Olive oil], [#: vinegar-rice-wine | Rice wine vinegar], [#: shallots | shallots], [#: maple-syrup | maple syrup], [#: pepper | ground pepper].",
           "f": [
             {
-              "val": "Prepare the dressing for the salad. Add the following to a container and whisk: Olive oil, Rice wine vinegar, shallots, maple syrup, ground pepper."
+              "val": "Prepare the dressing for the salad. Add the following to a container and whisk:"
+            },
+            {
+              "val": "Olive oil",
+              "attr": "oil-olive"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "Rice wine vinegar",
+              "attr": "vinegar-rice-wine"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "shallots",
+              "attr": "shallots"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "maple syrup",
+              "attr": "maple-syrup"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "ground pepper",
+              "attr": "pepper"
+            },
+            {
+              "val": "."
             }
           ]
         },
         {
-          "o": "Prepare the salad: Lightly apply the dressing to the greens Arrange pear slices and briece on plate.  Drizzle with dressing. Add greens, cranberries, pecans, and extra slices of pear. Add a bit more dressing.",
+          "o": "Prepare the salad: Lightly apply the dressing to the greens. Arrange pear slices and brie on a plate. Drizzle with dressing. Add greens, cranberries, pecans, and extra slices of pear. Add a bit more dressing.",
           "f": [
             {
-              "val": "Prepare the salad: Lightly apply the dressing to the greens Arrange pear slices and briece on plate.  Drizzle with dressing. Add greens, cranberries, pecans, and extra slices of pear. Add a bit more dressing."
+              "val": "Prepare the salad: Lightly apply the dressing to the greens. Arrange pear slices and brie on a plate. Drizzle with dressing. Add greens, cranberries, pecans, and extra slices of pear. Add a bit more dressing."
             }
           ]
         },
         {
-          "o": "Add the potatoes and broccoli as a side or mixed with the salad.",
+          "o": "Add the [#: potatoes | potatoes] and broccoli as a side or mixed with the salad.",
           "f": [
             {
-              "val": "Add the potatoes and broccoli as a side or mixed with the salad."
+              "val": "Add the"
+            },
+            {
+              "val": "potatoes",
+              "attr": "potatoes"
+            },
+            {
+              "val": "and broccoli as a side or mixed with the salad."
             }
           ]
         }
@@ -2155,61 +2492,96 @@ var db = {
         "keys": [
           "Ingredient",
           "Quantity",
-          "Unit"
+          "Unit",
+          "Id"
         ],
         "data": [
           {
             "Ingredient": "Sweet Potato (large / 600g)",
             "Quantity": "1",
-            "Unit": "--"
+            "Unit": "",
+            "Id": "potato-sweet"
           },
           {
             "Ingredient": "Nutritional Yeast or Parmesan (optional)",
             "Quantity": "2-3",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "parm"
           },
           {
             "Ingredient": "Flour",
             "Quantity": "1/3",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "flour"
           },
           {
             "Ingredient": "Salt",
             "Quantity": "1/2",
-            "Unit": "tsp"
+            "Unit": "tsp",
+            "Id": "salt"
+          },
+          {
+            "Ingredient": "Cherry tomatoes",
+            "Quantity": "250",
+            "Unit": "grams",
+            "Id": "tomatoes"
           },
           {
             "Ingredient": "Vegan butter or coconut oil",
             "Quantity": "2",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "coco-oil"
           },
           {
             "Ingredient": "Garlic",
             "Quantity": "3",
-            "Unit": "--"
+            "Unit": "cloves",
+            "Id": "garlic"
           },
           {
             "Ingredient": "Optional Nuts (pine or pecan, or whatever)",
             "Quantity": "4",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "nuts"
           }
         ]
       },
       "instructions": [
         {
-          "o": "[&: 00:50:00] Prick the sweet potato several times with a fork. Put it in the oven for 50-60 minutes at about 425 degrees.",
+          "o": "[&: 00:50:00] Prick the [#: potato-sweet | sweet potato] several times with a fork. Put it in the oven for 50-60 minutes at about 425 degrees.",
           "f": [
             {
-              "val": "Prick the sweet potato several times with a fork. Put it in the oven for 50-60 minutes at about 425 degrees."
+              "val": "Prick the"
+            },
+            {
+              "val": "sweet potato",
+              "attr": "potato-sweet"
+            },
+            {
+              "val": "several times with a fork. Put it in the oven for 50-60 minutes at about 425 degrees."
             }
           ],
           "timer": "00:50:00"
         },
         {
-          "o": "Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add salt. Add nutritional yeast if you want. Add the flour and knead gently. Don't over knead. Try to use as little flour as possible.",
+          "o": "Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add [#: salt | salt]. Add nutritional yeast or parmesan if you want. Add the [#: flour | flour] and knead gently. Don't over knead. Try to use as little flour as possible.",
           "f": [
             {
-              "val": "Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add salt. Add nutritional yeast if you want. Add the flour and knead gently. Don't over knead. Try to use as little flour as possible."
+              "val": "Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add"
+            },
+            {
+              "val": "salt",
+              "attr": "salt"
+            },
+            {
+              "val": ". Add nutritional yeast or parmesan if you want. Add the"
+            },
+            {
+              "val": "flour",
+              "attr": "flour"
+            },
+            {
+              "val": "and knead gently. Don't over knead. Try to use as little flour as possible."
             }
           ]
         },
@@ -2238,43 +2610,64 @@ var db = {
           ]
         },
         {
-          "o": "If you have more gnocchi than you need, now is the time to freeze the abundance.",
+          "o": "If you have more gnocchi than you need, now is the time to freeze the abundance!",
           "f": [
             {
-              "val": "If you have more gnocchi than you need, now is the time to freeze the abundance."
+              "val": "If you have more gnocchi than you need, now is the time to freeze the abundance!"
             }
           ]
         },
         {
-          "o": "[&: 00:15:00] Put tomatoes onto a baking sheet with cloves of garlic. Drizzle  with olive oil. Season with salt and pepper. Roast in the oven at 400 for 15 minutes.",
+          "o": "[&: 00:15:00] Put [#: tomatoes | tomatoes] onto a baking sheet with cloves of garlic. Drizzle  with olive oil. Season with salt and pepper. Roast in the oven at 400 for 15 minutes.",
           "f": [
             {
-              "val": "Put tomatoes onto a baking sheet with cloves of garlic. Drizzle  with olive oil. Season with salt and pepper. Roast in the oven at 400 for 15 minutes."
+              "val": "Put"
+            },
+            {
+              "val": "tomatoes",
+              "attr": "tomatoes"
+            },
+            {
+              "val": "onto a baking sheet with cloves of garlic. Drizzle  with olive oil. Season with salt and pepper. Roast in the oven at 400 for 15 minutes."
             }
           ],
           "timer": "00:15:00"
         },
         {
-          "o": "Toast nuts in a small pan with additional oil. Set aside.",
+          "o": "Toast [#: nuts | nuts] in a small pan with additional oil. Set aside.",
           "f": [
             {
-              "val": "Toast nuts in a small pan with additional oil. Set aside."
+              "val": "Toast"
+            },
+            {
+              "val": "nuts",
+              "attr": "nuts"
+            },
+            {
+              "val": "in a small pan with additional oil. Set aside."
             }
           ]
         },
         {
-          "o": "Heat butter or coconut oil on medium. Add the gnocchi and roast until golden-brown and crispy.",
+          "o": "Heat [#: coco-oil | coconut oil] on medium. Add the gnocchi and roast until golden-brown and crispy.",
           "f": [
             {
-              "val": "Heat butter or coconut oil on medium. Add the gnocchi and roast until golden-brown and crispy."
+              "val": "Heat"
+            },
+            {
+              "val": "coconut oil",
+              "attr": "coco-oil"
+            },
+            {
+              "val": "on medium. Add the gnocchi and roast until golden-brown and crispy."
             }
           ]
         },
         {
-          "o": "Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs if you like.",
+          "o": "Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs.",
           "f": [
             {
-              "val": "Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs if you like."
+              "val": "Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs."
             }
           ]
         }
@@ -2309,67 +2702,92 @@ var db = {
         "keys": [
           "Ingredient",
           "Quantity",
-          "Unit"
+          "Unit",
+          "Id"
         ],
         "data": [
           {
             "Ingredient": "Brussel Sprouts (halved)",
             "Quantity": "16",
-            "Unit": "ounces"
+            "Unit": "ounces",
+            "Id": "brus"
           },
           {
             "Ingredient": "Olive Oil",
-            "Quantity": "~",
-            "Unit": "tbsp"
+            "Quantity": "1-2",
+            "Unit": "tbsp",
+            "Id": "oil"
           },
           {
             "Ingredient": "Garlic",
             "Quantity": "4",
-            "Unit": "cloves"
+            "Unit": "cloves",
+            "Id": "garlic"
           },
           {
             "Ingredient": "White Wine",
             "Quantity": "1/3",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "wine"
           },
           {
             "Ingredient": "Cornstarch",
             "Quantity": "4",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "corn"
           },
           {
             "Ingredient": "Almond milk",
             "Quantity": "3/4",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "milk"
           },
           {
             "Ingredient": "Nutritional Yeast",
             "Quantity": "4",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "yeast"
           },
           {
             "Ingredient": "Parmesean",
             "Quantity": "1/4",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "parm"
           },
           {
             "Ingredient": "Pasta",
             "Quantity": "10",
-            "Unit": "ounces"
+            "Unit": "ounces",
+            "Id": "pasta"
           },
           {
             "Ingredient": "",
             "Quantity": "",
-            "Unit": ""
+            "Unit": "",
+            "Id": ""
           }
         ]
       },
       "instructions": [
         {
-          "o": "Preheat oven to 400 F. Add brussel sprouts to baking sheet in a single layer. Drizzel with oil and season with salt and pepper. Arranger in a single layer.",
+          "o": "Preheat oven to 400F. Add [#: brus | brussel sprouts] to baking sheet in a single layer. Drizzel with [#: oil | oil] and season with salt and pepper. Arranger in a single layer.",
           "f": [
             {
-              "val": "Preheat oven to 400 F. Add brussel sprouts to baking sheet in a single layer. Drizzel with oil and season with salt and pepper. Arranger in a single layer."
+              "val": "Preheat oven to 400F. Add"
+            },
+            {
+              "val": "brussel sprouts",
+              "attr": "brus"
+            },
+            {
+              "val": "to baking sheet in a single layer. Drizzel with"
+            },
+            {
+              "val": "oil",
+              "attr": "oil"
+            },
+            {
+              "val": "and season with salt and pepper. Arranger in a single layer."
             }
           ]
         },
@@ -2382,35 +2800,77 @@ var db = {
           ]
         },
         {
-          "o": "Heat a skillet. Add 1-2 tbsp of oil. Add garlic. Saute for 3 minutes.",
+          "o": "Heat a skillet. Add 1-2 tbsp of oil. Add [#: garlic | garlic]. Saute for 3 minutes.",
           "f": [
             {
-              "val": "Heat a skillet. Add 1-2 tbsp of oil. Add garlic. Saute for 3 minutes."
+              "val": "Heat a skillet. Add 1-2 tbsp of oil. Add"
+            },
+            {
+              "val": "garlic",
+              "attr": "garlic"
+            },
+            {
+              "val": ". Saute for 3 minutes."
             }
           ]
         },
         {
-          "o": "[&:00:02:00] Add wine. Saute for 2-4 minutes.",
+          "o": "[&:00:02:00] Add [#: wine | wine]. Saute for 2-4 minutes.",
           "f": [
             {
-              "val": "Add wine. Saute for 2-4 minutes."
+              "val": "Add"
+            },
+            {
+              "val": "wine",
+              "attr": "wine"
+            },
+            {
+              "val": ". Saute for 2-4 minutes."
             }
           ],
           "timer": "00:02:00"
         },
         {
-          "o": "Add cornstarch and almond milk and whisk. It'll be clumpy.",
+          "o": "Add [#: corn | cornstarch] and [#: milk | almond milk] and whisk. It'll be clumpy.",
           "f": [
             {
-              "val": "Add cornstarch and almond milk and whisk. It'll be clumpy."
+              "val": "Add"
+            },
+            {
+              "val": "cornstarch",
+              "attr": "corn"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "almond milk",
+              "attr": "milk"
+            },
+            {
+              "val": "and whisk. It'll be clumpy."
             }
           ]
         },
         {
-          "o": "Move the mixture to a blender. Add nutritional yeast, salt + pepper, parmesean cheese. Blend on high until cremay and smooth.",
+          "o": "Move the mixture to a blender. Add [#: yeast | nutritional yeast], salt + pepper, [#: parm | parmesan cheese]. Blend on high until creamy and smooth.",
           "f": [
             {
-              "val": "Move the mixture to a blender. Add nutritional yeast, salt + pepper, parmesean cheese. Blend on high until cremay and smooth."
+              "val": "Move the mixture to a blender. Add"
+            },
+            {
+              "val": "nutritional yeast",
+              "attr": "yeast"
+            },
+            {
+              "val": ", salt + pepper,"
+            },
+            {
+              "val": "parmesan cheese",
+              "attr": "parm"
+            },
+            {
+              "val": ". Blend on high until creamy and smooth."
             }
           ]
         },
@@ -2423,10 +2883,10 @@ var db = {
           ]
         },
         {
-          "o": "[&:00:12:00] Add brussel sprouts to the oven for 12-15 minutes or umtil golden brown.",
+          "o": "[&:00:12:00] Add brussel sprouts to the oven for 12-15 minutes or until golden brown.",
           "f": [
             {
-              "val": "Add brussel sprouts to the oven for 12-15 minutes or umtil golden brown."
+              "val": "Add brussel sprouts to the oven for 12-15 minutes or until golden brown."
             }
           ],
           "timer": "00:12:00"
@@ -2477,122 +2937,222 @@ var db = {
         "keys": [
           "Ingredient",
           "Quantity",
-          "Unit"
+          "Unit",
+          "Id",
+          "Group"
         ],
         "data": [
           {
             "Ingredient": "Quinoa",
             "Quantity": "1/2",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "quin",
+            "Group": "salad"
           },
           {
             "Ingredient": "Edamame",
             "Quantity": "1",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "eda",
+            "Group": "salad"
           },
           {
             "Ingredient": "Nuts (almonds, pecans, whatever)",
             "Quantity": "1/3",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "nuts",
+            "Group": "salad"
           },
           {
             "Ingredient": "A Beet (peeled)",
             "Quantity": "1",
-            "Unit": "--"
+            "Unit": "",
+            "Id": "beet",
+            "Group": "salad"
           },
           {
             "Ingredient": "A Large carrot",
             "Quantity": "1",
-            "Unit": "--"
+            "Unit": "",
+            "Id": "carrot",
+            "Group": "salad"
           },
           {
             "Ingredient": "Baby Spinach or Arugula",
             "Quantity": "2",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "greens",
+            "Group": "salad"
           },
           {
             "Ingredient": "Avocado (cubed)",
             "Quantity": "1",
-            "Unit": "--"
+            "Unit": "",
+            "Id": "avo",
+            "Group": "salad"
           },
           {
             "Ingredient": "Apple Cider Vinegar",
             "Quantity": "3",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "vin",
+            "Group": "dressing"
           },
           {
             "Ingredient": "Lime Juice",
             "Quantity": "2",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "lime",
+            "Group": "dressing"
           },
           {
             "Ingredient": "Olive Oil",
             "Quantity": "2",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "oil",
+            "Group": "dressing"
           },
           {
             "Ingredient": "Maple Syrup",
             "Quantity": "2",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "syr",
+            "Group": "dressing"
           },
           {
             "Ingredient": "Dijon Mustard",
             "Quantity": "1",
-            "Unit": "tsp"
+            "Unit": "tsp",
+            "Id": "dij",
+            "Group": "dressing"
           },
           {
             "Ingredient": "Salt, Pepper",
-            "Quantity": "--",
-            "Unit": "--"
-          },
-          {
-            "Ingredient": "",
-            "Quantity": "",
-            "Unit": ""
+            "Quantity": "1",
+            "Unit": "dash",
+            "Id": "salt",
+            "Group": "dressing"
           }
         ]
       },
       "instructions": [
         {
-          "o": "[&:00:15:00] Cook the quinoa: combine the quinoa with 1 cup of water. Bring to a boil, reduce heat and simmer for 15 minutes.",
+          "o": "[&:00:15:00] Cook the [#: quin | quinoa]: combine the quinoa with 1 cup of water. Bring to a boil, reduce heat and simmer for 15 minutes.",
           "f": [
             {
-              "val": "Cook the quinoa: combine the quinoa with 1 cup of water. Bring to a boil, reduce heat and simmer for 15 minutes."
+              "val": "Cook the"
+            },
+            {
+              "val": "quinoa",
+              "attr": "quin"
+            },
+            {
+              "val": ": combine the quinoa with 1 cup of water. Bring to a boil, reduce heat and simmer for 15 minutes."
             }
           ],
           "timer": "00:15:00"
         },
         {
-          "o": "[&:00:05:00] Cook the edamame: bring a pot of water to boil, add the frozen edamame for 5 minutes. Drain and set aside.",
+          "o": "[&:00:05:00] Cook the [#: eda | edamame]: bring a pot of water to boil, add the frozen edamame for 5 minutes. Drain and set aside.",
           "f": [
             {
-              "val": "Cook the edamame: bring a pot of water to boil, add the frozen edamame for 5 minutes. Drain and set aside."
+              "val": "Cook the"
+            },
+            {
+              "val": "edamame",
+              "attr": "eda"
+            },
+            {
+              "val": ": bring a pot of water to boil, add the frozen edamame for 5 minutes. Drain and set aside."
             }
           ],
           "timer": "00:05:00"
         },
         {
-          "o": "[&:00:05:00] Toast the nuts in a pan over medium heat until they are fragrant. About 5 minutes.",
+          "o": "[&:00:05:00] Toast the [#: nuts | nuts] in a pan over medium heat until they are fragrant. About 5 minutes.",
           "f": [
             {
-              "val": "Toast the nuts in a pan over medium heat until they are fragrant. About 5 minutes."
+              "val": "Toast the"
+            },
+            {
+              "val": "nuts",
+              "attr": "nuts"
+            },
+            {
+              "val": "in a pan over medium heat until they are fragrant. About 5 minutes."
             }
           ],
           "timer": "00:05:00"
         },
         {
-          "o": "Prepare the beets/carrots: either chop finely or use a spiralizer to prepare the vegetables.",
+          "o": "Prepare the [#: beets | beets] and [#: carrot | carrots]: either chop finely or use a spiralizer to prepare the vegetables.",
           "f": [
             {
-              "val": "Prepare the beets/carrots: either chop finely or use a spiralizer to prepare the vegetables."
+              "val": "Prepare the"
+            },
+            {
+              "val": "beets",
+              "attr": "beets"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "carrots",
+              "attr": "carrot"
+            },
+            {
+              "val": ": either chop finely or use a spiralizer to prepare the vegetables."
             }
           ]
         },
         {
-          "o": "Prepare the vinaigrette: whisk together Apple cider vinegar, lime juice, olive oil, maple syrup, dijon mustard, and salt and pepper.",
+          "o": "Prepare the vinaigrette: whisk together [#: vin | apple cider vinegar], [#: lime | lime juice], [#: oil | olive oil], [#: syr |  maple syrup ], [#:dij | dijon mustard], and [#: salt | salt and pepper].",
           "f": [
             {
-              "val": "Prepare the vinaigrette: whisk together Apple cider vinegar, lime juice, olive oil, maple syrup, dijon mustard, and salt and pepper."
+              "val": "Prepare the vinaigrette: whisk together"
+            },
+            {
+              "val": "apple cider vinegar",
+              "attr": "vin"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "lime juice",
+              "attr": "lime"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "olive oil",
+              "attr": "oil"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "maple syrup",
+              "attr": "syr"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "dijon mustard",
+              "attr": "ij"
+            },
+            {
+              "val": ", and"
+            },
+            {
+              "val": "salt and pepper",
+              "attr": "salt"
+            },
+            {
+              "val": "."
             }
           ]
         },
@@ -2635,93 +3195,139 @@ var db = {
         "keys": [
           "Ingredient",
           "Quantity",
-          "Unit"
+          "Unit",
+          "Id"
         ],
         "data": [
           {
             "Ingredient": "Butter, unsalted",
             "Quantity": "5",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "butter"
           },
           {
             "Ingredient": "Kimchi (chopped)",
             "Quantity": "1",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "kimchi"
           },
           {
             "Ingredient": "Kimchi (juice)",
             "Quantity": "1/3",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "kimchi-juice"
           },
           {
             "Ingredient": "Gochujang",
             "Quantity": "2",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "gochu"
           },
           {
             "Ingredient": "Vegetable Broth",
             "Quantity": "1/2/",
-            "Unit": "cup"
+            "Unit": "cup",
+            "Id": "veg-broth"
           },
           {
             "Ingredient": "Udon Noodles",
             "Quantity": "1",
-            "Unit": "lb"
+            "Unit": "lb",
+            "Id": "udon"
           },
           {
             "Ingredient": "Toasted Sesame Seeds",
             "Quantity": "1",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "sesa"
           },
           {
             "Ingredient": "Salt",
-            "Quantity": "",
-            "Unit": "--"
+            "Quantity": "1",
+            "Unit": "pinch",
+            "Id": "salt"
           },
           {
             "Ingredient": "Egg yolks",
-            "Quantity": "4",
-            "Unit": "--"
+            "Quantity": "2- 4",
+            "Unit": "",
+            "Id": "yolks"
           },
           {
-            "Ingredient": "Scallions (white and pale green only, thinly sliced)",
+            "Ingredient": "Scallions (thinly sliced)",
             "Quantity": "3",
-            "Unit": "--"
+            "Unit": "",
+            "Id": "scall"
           }
         ]
       },
       "instructions": [
         {
-          "o": "Chop kimchi and collect kimchi juice.",
+          "o": "Chop [#: kimchi | kimchi] and collect [#: kimchi-juice | kimchi juice].",
           "f": [
             {
-              "val": "Chop kimchi and collect kimchi juice."
+              "val": "Chop"
+            },
+            {
+              "val": "kimchi",
+              "attr": "kimchi"
+            },
+            {
+              "val": "and collect"
+            },
+            {
+              "val": "kimchi juice",
+              "attr": "kimchi-juice"
+            },
+            {
+              "val": "."
             }
           ]
         },
         {
-          "o": "[&: 00:04:00] Heat 2 tbsp of butter on medium high. Add chopped kimchi and gochujang and cook, stirring until kimchi is softened and lightly caramelized, around 4 minutes.",
+          "o": "[&: 00:04:00] Heat 2 tbsp of butter on medium high. Add chopped kimchi and [#: gochu | gochujang] and cook, stirring until kimchi is softened and lightly caramelized, around 4 minutes.",
           "f": [
             {
-              "val": "Heat 2 tbsp of butter on medium high. Add chopped kimchi and gochujang and cook, stirring until kimchi is softened and lightly caramelized, around 4 minutes."
+              "val": "Heat 2 tbsp of butter on medium high. Add chopped kimchi and"
+            },
+            {
+              "val": "gochujang",
+              "attr": "gochu"
+            },
+            {
+              "val": "and cook, stirring until kimchi is softened and lightly caramelized, around 4 minutes."
             }
           ],
           "timer": "00:04:00"
         },
         {
-          "o": "[&: 00:03:00] Add broth and kimchi juice and bring to a simmer. Cook until slightly reduced, about 3 minutes.",
+          "o": "[&: 00:03:00] Add [#: veg-broth | broth] and kimchi juice and bring to a simmer. Cook until slightly reduced, about 3 minutes.",
           "f": [
             {
-              "val": "Add broth and kimchi juice and bring to a simmer. Cook until slightly reduced, about 3 minutes."
+              "val": "Add"
+            },
+            {
+              "val": "broth",
+              "attr": "veg-broth"
+            },
+            {
+              "val": "and kimchi juice and bring to a simmer. Cook until slightly reduced, about 3 minutes."
             }
           ],
           "timer": "00:03:00"
         },
         {
-          "o": "Boil noodles according to package directions.",
+          "o": "Boil [#: udon | noodles] according to package directions.",
           "f": [
             {
-              "val": "Boil noodles according to package directions."
+              "val": "Boil"
+            },
+            {
+              "val": "noodles",
+              "attr": "udon"
+            },
+            {
+              "val": "according to package directions."
             }
           ]
         },
@@ -2743,10 +3349,17 @@ var db = {
           ]
         },
         {
-          "o": "Divide into bowls, top with egg yolks, scallions and sesame seeds.",
+          "o": "Divide into bowls, top with egg yolks, [#: scall | scallions] and sesame seeds.",
           "f": [
             {
-              "val": "Divide into bowls, top with egg yolks, scallions and sesame seeds."
+              "val": "Divide into bowls, top with egg yolks,"
+            },
+            {
+              "val": "scallions",
+              "attr": "scall"
+            },
+            {
+              "val": "and sesame seeds."
             }
           ]
         }
@@ -2781,53 +3394,63 @@ var db = {
         "keys": [
           "Ingredient",
           "Quantity",
-          "Unit"
+          "Unit",
+          "Id"
         ],
         "data": [
           {
             "Ingredient": "Mirin",
             "Quantity": "1/4",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "mirin"
           },
           {
             "Ingredient": "Miso",
             "Quantity": "1/4",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "miso"
           },
           {
             "Ingredient": "Rice Wine Vinegar",
             "Quantity": "2",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "rwv"
           },
           {
             "Ingredient": "Ginger - peeled and grated",
             "Quantity": "2",
-            "Unit": "tsp"
+            "Unit": "tsp",
+            "Id": "ginger"
           },
           {
             "Ingredient": "Asparagus",
             "Quantity": "2",
-            "Unit": "bunches"
+            "Unit": "bunches",
+            "Id": "asp"
           },
           {
             "Ingredient": "Lime wedges",
             "Quantity": "4",
-            "Unit": "--"
+            "Unit": "",
+            "Id": "lime"
           },
           {
             "Ingredient": "Scallions (Green onions)",
             "Quantity": "1/4",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "scall"
           },
           {
             "Ingredient": "Sesame Seeds",
-            "Quantity": "--",
-            "Unit": "sprinkle"
+            "Quantity": "",
+            "Unit": "sprinkle",
+            "Id": "seeds"
           },
           {
             "Ingredient": "",
             "Quantity": "",
-            "Unit": ""
+            "Unit": "",
+            "Id": ""
           }
         ]
       },
@@ -2841,26 +3464,68 @@ var db = {
           ]
         },
         {
-          "o": "Whisk mirin, miso, vinegar, ginger, in a small bowl.",
+          "o": "Whisk [#: mirin |  mirin ], [#: miso | miso], [#: rwv | vinegar], [#: ginger | ginger], in a small bowl.",
           "f": [
             {
-              "val": "Whisk mirin, miso, vinegar, ginger, in a small bowl."
+              "val": "Whisk"
+            },
+            {
+              "val": "mirin",
+              "attr": "mirin"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "miso",
+              "attr": "miso"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "vinegar",
+              "attr": "rwv"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "ginger",
+              "attr": "ginger"
+            },
+            {
+              "val": ", in a small bowl."
             }
           ]
         },
         {
-          "o": "Place asparagus in a container and pour miso mixture over. Toss to coat.",
+          "o": "Place [#: asp | asparagus] in a container and pour miso mixture over. Toss to coat.",
           "f": [
             {
-              "val": "Place asparagus in a container and pour miso mixture over. Toss to coat."
+              "val": "Place"
+            },
+            {
+              "val": "asparagus",
+              "attr": "asp"
+            },
+            {
+              "val": "in a container and pour miso mixture over. Toss to coat."
             }
           ]
         },
         {
-          "o": "Let things stew a few minutes. Cut the scallions.",
+          "o": "Let things stew a few minutes. Cut the [#: scall | scallions].",
           "f": [
             {
-              "val": "Let things stew a few minutes. Cut the scallions."
+              "val": "Let things stew a few minutes. Cut the"
+            },
+            {
+              "val": "scallions",
+              "attr": "scall"
+            },
+            {
+              "val": "."
             }
           ]
         },
@@ -2874,10 +3539,17 @@ var db = {
           "timer": "00:04:00"
         },
         {
-          "o": "Transfer to plate, squeeze lime juice and top with scallions and sesame seeds.",
+          "o": "Transfer to plate, squeeze [#: lime | lime juice] and top with scallions and sesame seeds.",
           "f": [
             {
-              "val": "Transfer to plate, squeeze lime juice and top with scallions and sesame seeds."
+              "val": "Transfer to plate, squeeze"
+            },
+            {
+              "val": "lime juice",
+              "attr": "lime"
+            },
+            {
+              "val": "and top with scallions and sesame seeds."
             }
           ]
         }
@@ -2912,101 +3584,159 @@ var db = {
         "keys": [
           "Ingredient",
           "Quantity",
-          "Unit"
+          "Unit",
+          "Id"
         ],
         "data": [
           {
             "Ingredient": "Quinoa",
             "Quantity": "1",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "quin"
           },
           {
             "Ingredient": "Water",
             "Quantity": "2",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "water"
           },
           {
             "Ingredient": "Maple Syrup",
-            "Quantity": "2~",
-            "Unit": "tbsp"
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "syr"
           },
           {
             "Ingredient": "Pecans or Walnuts (chopped)",
             "Quantity": "1/4",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "nuts"
           },
           {
             "Ingredient": "Cinnamon",
             "Quantity": "1 or 2",
-            "Unit": "tsp"
+            "Unit": "tsp",
+            "Id": "cin"
           },
           {
             "Ingredient": "Coconut oil",
             "Quantity": "2",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "oil"
           },
           {
             "Ingredient": "Fresh berries",
-            "Quantity": "--",
-            "Unit": "--"
+            "Quantity": "",
+            "Unit": "",
+            "Id": "berr"
           },
           {
             "Ingredient": "Almond butter",
-            "Quantity": "--",
-            "Unit": "--"
+            "Quantity": "",
+            "Unit": "",
+            "Id": "almbut"
           }
         ]
       },
       "instructions": [
         {
-          "o": "[&:00:15:00] Make the quinoa: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes",
+          "o": "[&:00:15:00] Make the [#: quin | quinoa]: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes",
           "f": [
             {
-              "val": "Make the quinoa: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes"
+              "val": "Make the"
+            },
+            {
+              "val": "quinoa",
+              "attr": "quin"
+            },
+            {
+              "val": ": Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes"
             }
           ],
           "timer": "00:15:00"
         },
         {
-          "o": "[&:00:04:00] Heat chopped nuts in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes.",
+          "o": "[&:00:04:00] Heat chopped [#: nuts | nuts] in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes.",
           "f": [
             {
-              "val": "Heat chopped nuts in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes."
+              "val": "Heat chopped"
+            },
+            {
+              "val": "nuts",
+              "attr": "nuts"
+            },
+            {
+              "val": "in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes."
             }
           ],
           "timer": "00:04:00"
         },
         {
-          "o": "[&:00:00:15] Add coconut oil, cinnamon to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds.",
+          "o": "[&:00:00:15] Add [#: oil | coconut oil], [#: cin | cinnamon] to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds.",
           "f": [
             {
-              "val": "Add coconut oil, cinnamon to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds."
+              "val": "Add"
+            },
+            {
+              "val": "coconut oil",
+              "attr": "oil"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "cinnamon",
+              "attr": "cin"
+            },
+            {
+              "val": "to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds."
             }
           ],
           "timer": "00:00:15"
         },
         {
-          "o": "[&:00:00:02] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add maple syrup.",
+          "o": "[&:00:00:02] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add [#: syr | maple syrup].",
           "f": [
             {
-              "val": "Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add maple syrup."
+              "val": "Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add"
+            },
+            {
+              "val": "maple syrup",
+              "attr": "syr"
+            },
+            {
+              "val": "."
             }
           ],
           "timer": "00:00:02"
         },
         {
-          "o": "Add the nut to the quinoa. Top with a sprinkle of cinnamon.",
+          "o": "Add the nuts to the quinoa. Top with a sprinkle of cinnamon.",
           "f": [
             {
-              "val": "Add the nut to the quinoa. Top with a sprinkle of cinnamon."
+              "val": "Add the nuts to the quinoa. Top with a sprinkle of cinnamon."
             }
           ]
         },
         {
-          "o": "Top with fresh berries and almond butter.",
+          "o": "Top with [#: berr | fresh berries] and [#: almbut | almond butter].",
           "f": [
             {
-              "val": "Top with fresh berries and almond butter."
+              "val": "Top with"
+            },
+            {
+              "val": "fresh berries",
+              "attr": "berr"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "almond butter",
+              "attr": "almbut"
+            },
+            {
+              "val": "."
             }
           ]
         }
@@ -3041,78 +3771,93 @@ var db = {
         "keys": [
           "Ingredient",
           "Quantity",
-          "Unit"
+          "Unit",
+          "Id"
         ],
         "data": [
           {
             "Ingredient": "Black beans",
             "Quantity": "3",
-            "Unit": "Cans (15oz/each)"
+            "Unit": "Cans (15oz/each)",
+            "Id": "beans"
           },
           {
             "Ingredient": "Canned Corn",
             "Quantity": "1",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "corn"
           },
           {
             "Ingredient": "Bell Pepper (any colour)",
             "Quantity": "1",
-            "Unit": "--"
+            "Unit": "",
+            "Id": "pepper"
           },
           {
             "Ingredient": "Cherry Tomatoes",
             "Quantity": "1",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "tomatoes"
           },
           {
             "Ingredient": "Red Onion (diced)",
             "Quantity": "1",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "onion"
           },
           {
             "Ingredient": "Jalapeno (seeds optional)",
             "Quantity": "1",
-            "Unit": ""
+            "Unit": "",
+            "Id": "jalap"
           },
           {
             "Ingredient": "Lime Zest",
             "Quantity": "1/2",
-            "Unit": "tsp"
+            "Unit": "tsp",
+            "Id": "lime-zest"
           },
           {
             "Ingredient": "Lime juice",
             "Quantity": "2",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "lime-juice"
           },
           {
             "Ingredient": "Olive oil",
             "Quantity": "1/4",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "oil"
           },
           {
             "Ingredient": "White vinegar",
             "Quantity": "1/4",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "vin-wh"
           },
           {
             "Ingredient": "Chili powder",
             "Quantity": "1/2",
-            "Unit": "tsp"
+            "Unit": "tsp",
+            "Id": "chil"
           },
           {
             "Ingredient": "Cumin",
             "Quantity": "1/2",
-            "Unit": "tsp"
+            "Unit": "tsp",
+            "Id": "cumin"
           },
           {
             "Ingredient": "Salt",
             "Quantity": "1/2",
-            "Unit": "tsp"
+            "Unit": "tsp",
+            "Id": "salt"
           },
           {
             "Ingredient": "Sliced Avocado (optional)",
             "Quantity": "1",
-            "Unit": "--"
+            "Unit": "",
+            "Id": "avo"
           }
         ]
       },
@@ -3164,126 +3909,253 @@ var db = {
         "keys": [
           "Ingredient",
           "Quantity",
-          "Unit"
+          "Unit",
+          "Id",
+          "Group"
         ],
         "data": [
           {
-            "Ingredient": "Rice",
-            "Quantity": "1",
-            "Unit": "cups"
-          },
-          {
             "Ingredient": "Olive oil",
             "Quantity": "1",
-            "Unit": "tsp"
-          },
-          {
-            "Ingredient": "Garlic",
-            "Quantity": "4",
-            "Unit": "cloves"
-          },
-          {
-            "Ingredient": "Ginger",
-            "Quantity": "1",
-            "Unit": "thumb-tip"
+            "Unit": "tsp",
+            "Id": "oil",
+            "Group": "broth"
           },
           {
             "Ingredient": "Red curry paste",
             "Quantity": "1",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "rcp",
+            "Group": "broth"
           },
           {
             "Ingredient": "Soy sauce",
             "Quantity": "1/4",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "soysauce",
+            "Group": "broth"
           },
           {
             "Ingredient": "Peanut butter",
             "Quantity": "1/4",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "pb",
+            "Group": "broth"
           },
           {
             "Ingredient": "Vegetable broth",
             "Quantity": "4",
-            "Unit": "cups"
-          },
-          {
-            "Ingredient": "Coconut milk",
-            "Quantity": "1 (14 oz)",
-            "Unit": "can"
+            "Unit": "cups",
+            "Id": "vegbroth",
+            "Group": "broth"
           },
           {
             "Ingredient": "Honey",
             "Quantity": "2",
-            "Unit": "tbsp"
+            "Unit": "tbsp",
+            "Id": "honey",
+            "Group": "broth"
+          },
+          {
+            "Ingredient": "Coconut milk",
+            "Quantity": "1 (14 oz)",
+            "Unit": "can",
+            "Id": "coco",
+            "Group": "broth"
+          },
+          {
+            "Ingredient": "Garlic",
+            "Quantity": "4",
+            "Unit": "cloves",
+            "Id": "garlic",
+            "Group": "broth"
+          },
+          {
+            "Ingredient": "Ginger",
+            "Quantity": "1",
+            "Unit": "thumb-tip",
+            "Id": "ginger",
+            "Group": "broth"
+          },
+          {
+            "Ingredient": "Rice",
+            "Quantity": "1",
+            "Unit": "cups",
+            "Id": "rice",
+            "Group": ""
           },
           {
             "Ingredient": "Carrots (matchsticked)",
             "Quantity": "1",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "carrots",
+            "Group": ""
           },
           {
             "Ingredient": "Cucumber",
             "Quantity": "1/2",
-            "Unit": "--"
+            "Unit": "",
+            "Id": "cucu",
+            "Group": ""
           },
           {
             "Ingredient": "Bell pepper (sliced)",
             "Quantity": "1",
-            "Unit": "--"
+            "Unit": "",
+            "Id": "bell",
+            "Group": ""
           },
           {
             "Ingredient": "Peanuts",
             "Quantity": "1/4",
-            "Unit": "cups"
+            "Unit": "cups",
+            "Id": "peanuts",
+            "Group": ""
           },
           {
             "Ingredient": "Green onions (sliced)",
             "Quantity": "2",
-            "Unit": "--"
+            "Unit": "",
+            "Id": "gonion",
+            "Group": ""
           },
           {
             "Ingredient": "Jalapeno",
             "Quantity": "1",
-            "Unit": "--"
+            "Unit": "",
+            "Id": "jalap",
+            "Group": ""
           },
           {
             "Ingredient": "Lime",
             "Quantity": "1",
-            "Unit": "--"
+            "Unit": "",
+            "Id": "lime",
+            "Group": ""
           }
         ]
       },
       "instructions": [
         {
-          "o": "Make the rice. Cook according to packaging.",
+          "o": "Make the [#: rice | rice]. Cook according to packaging.",
           "f": [
             {
-              "val": "Make the rice. Cook according to packaging."
+              "val": "Make the"
+            },
+            {
+              "val": "rice",
+              "attr": "rice"
+            },
+            {
+              "val": ". Cook according to packaging."
             }
           ]
         },
         {
-          "o": "Prepare garnishes: matchstick the carrots, thinly slice the cucumber, slice the jalapeno into rings and chop the peanuts.",
+          "o": "Prepare garnishes: matchstick the [#:carrots | carrots], thinly slice the [#: cucu | cucumber], slice the [#: jalap | jalapeno] into rings and chop the [#: peanuts | peanuts].",
           "f": [
             {
-              "val": "Prepare garnishes: matchstick the carrots, thinly slice the cucumber, slice the jalapeno into rings and chop the peanuts."
+              "val": "Prepare garnishes: matchstick the"
+            },
+            {
+              "val": "carrots",
+              "attr": "arrots"
+            },
+            {
+              "val": ", thinly slice the"
+            },
+            {
+              "val": "cucumber",
+              "attr": "cucu"
+            },
+            {
+              "val": ", slice the"
+            },
+            {
+              "val": "jalapeno",
+              "attr": "jalap"
+            },
+            {
+              "val": "into rings and chop the"
+            },
+            {
+              "val": "peanuts",
+              "attr": "peanuts"
+            },
+            {
+              "val": "."
             }
           ]
         },
         {
-          "o": "Broth pt. 1: heat saucepan with oil. Add garlic and ginger when hot, for 30 seconds.",
+          "o": "Broth pt. 1: heat saucepan with oil. Add [#: garlic | garlic] and [#: ginger | ginger] when hot, for 30 seconds.",
           "f": [
             {
-              "val": "Broth pt. 1: heat saucepan with oil. Add garlic and ginger when hot, for 30 seconds."
+              "val": "Broth pt. 1: heat saucepan with oil. Add"
+            },
+            {
+              "val": "garlic",
+              "attr": "garlic"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "ginger",
+              "attr": "ginger"
+            },
+            {
+              "val": "when hot, for 30 seconds."
             }
           ]
         },
         {
-          "o": "Broth pt. 2: Add thai curry paste, soy sauce, peanut butter, vegetable broth, coconut milk and honey.",
+          "o": "Broth pt. 2: Add [#: rcp | thai curry paste], [#: soysauce | soy sauce], [#: pb | peanut butter], [#: vegbroth | vegetable broth], [#: coco | coconut milk] and [#: honey | honey].",
           "f": [
             {
-              "val": "Broth pt. 2: Add thai curry paste, soy sauce, peanut butter, vegetable broth, coconut milk and honey."
+              "val": "Broth pt. 2: Add"
+            },
+            {
+              "val": "thai curry paste",
+              "attr": "rcp"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "soy sauce",
+              "attr": "soysauce"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "peanut butter",
+              "attr": "pb"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "vegetable broth",
+              "attr": "vegbroth"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "coconut milk",
+              "attr": "coco"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "honey",
+              "attr": "honey"
+            },
+            {
+              "val": "."
             }
           ]
         },
@@ -3344,14 +4216,14 @@ var db = {
           },
           {
             "Ingredient": "Olive oil",
-            "Quantity": "--",
-            "Unit": "--",
+            "Quantity": "",
+            "Unit": "",
             "Id": "olive_oil",
             "Group": "tofu"
           },
           {
             "Ingredient": "salt",
-            "Quantity": "--",
+            "Quantity": "",
             "Unit": "pinch",
             "Id": "salt",
             "Group": "tofu"
@@ -3422,7 +4294,7 @@ var db = {
           {
             "Ingredient": "Bell pepper",
             "Quantity": "1",
-            "Unit": "--",
+            "Unit": "",
             "Id": "bell_pepper",
             "Group": "pineapple salsa"
           },

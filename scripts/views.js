@@ -168,7 +168,9 @@ function UiFn() {
   this.modalShowIngredient = (state, props) => {
     let ingredients = state.currentRecipe.ingredients.data
     let f           = ingredients.filter(i => i.Id === props)[0]
-    let rdata       = f.Quantity + " " + f.Unit
+    let rdata;
+    try {rdata       = f.Quantity + " " + f.Unit}
+    catch {alert("Value missing!")}
 
     return h("section", {class: "v_Modal--ingredient"}, [
       h("div", {class: "v_Modal--ingredientHeading"}, f.Ingredient),

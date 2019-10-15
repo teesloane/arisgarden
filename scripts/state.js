@@ -3,12 +3,13 @@
  */
 
 const $fx = {
-  tempModal: (dispatch, props) => {
-    setTimeout(() => {
-      dispatch($act.modalClose)
-    }, props.delay)
-    return
-  }
+  // Example effect (no longer used)
+  // tempModal: (dispatch, props) => {
+  //   setTimeout(() => {
+  //     dispatch($act.modalClose)
+  //   }, props.delay)
+  //   return
+  // }
 }
 
 const $act = {
@@ -16,10 +17,6 @@ const $act = {
   setRecipeStep: (s, i) => ({...s, currentRecipeStep: i}),
   modalClose:    (s, _) => ({...s, currentModal: null}),
   modalSet:      (s, p) => {
-    if (p.type === "temp") {
-      return [({...s, currentModal: () => p.fn(s, p.val)}),
-         [$fx.tempModal, {delay: 3000}]]
-    }
     return ({...s, currentModal: () => p.fn(s, p.val)})
   },
 
