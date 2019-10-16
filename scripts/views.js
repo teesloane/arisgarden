@@ -64,6 +64,7 @@ function UiFn() {
   this.timer = (state) => {
     let timeStr     = state.timer ? util.secToStr(state.timer) : "00:00:00";
     let centerStyle = { style: { alignSelf: "center", display: "flex" } };
+    console.log("state is ", state);
     let stepText    = state.currentRecipeStepText;
 
     let _class = state.timerRunning
@@ -144,22 +145,43 @@ function UiFn() {
     return h("section", attrs, childFn());
   }
 
+  this.modal = (state) => {
+    if (state.currentModal) {
+      return h("section", {class: "v_Modal", onClick: [$act.modalClose]}, [
+        h("div", {
+          class: "v_Modal--close_btn",
+          onClick: [$act.modalClose]
+        }, "X"),
+        state.currentModal()
+        ]
+      )
+    } else {
+      return h("section", {class: "v_Modal--empty"}, "")
+    }
+  }
+
+  /**
+   * @param props: ingredient-id for fetching quantity from.
+   * Shows how much of an ingredient to use;
+   * fetches value from current recipe ingredients table.
+   */
+  this.modalShowIngredient = (state, props) => {
+    let ingredients = state.currentRecipe.ingredients.data
+    let f           = ingredients.filter(i => i.Id === props)[0]
+    let rdata;
+    try {rdata       = f.Quantity + " " + f.Unit}
+    catch {alert("Value missing!")}
+
+    return h("section", {class: "v_Modal--ingredient"}, [
+      h("div", {class: "v_Modal--ingredientHeading"}, f.Ingredient),
+      h("div", {class: "v_Modal--ingredientQuant"}, rdata),
+    ])
+  }
+
   this.navbar = () => {
     return h("nav", {class: "v_Navbar"}, [
       h("div", {style: {alignItems: "center", background: "#222"}}, [
         ui.icon("c_home.svg", {width: 48}),
         h("a", {class: "v_Navbar_text", href: "#/"}, "GO\u00DBT/FOOD")
-      ]),
-
-      // random / restaurants
-      
-      // h("div", {}, [
-      //   h("div", $txt, [
-      //    h("div", {}, "RNDM"),
-      //     ui.icon("shuffle.svg", {width: 16})
-      //   ]),
-      //   h("div", $txt, "Restaurants")
-      // ])
-    ])
-  }
+      ])])}
 }

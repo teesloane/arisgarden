@@ -11,7 +11,10 @@ fs.readFile("recipes.org", "utf8", function(_, data) {
   };
 
   recipes.forEach(r => {
-    let _r = getRecipe(r); let key = _r.meta.properties.slug; output.recipes[key] = _r;}); let stringify = "var db = " + JSON.stringify(output, null, 2); fs.writeFile("./db.js", stringify, function(err) {if (err) {
+    let _r = getRecipe(r);
+    let key = _r.meta.properties.slug; output.recipes[key] = _r;});
+    let stringify = "var db = " + JSON.stringify(output, null, 2);
+    fs.writeFile("./db.js", stringify, function(err) {if (err) {
       return console.log(err);
     }
     console.log("The file was saved!");
@@ -69,7 +72,7 @@ function getInstructions(n) {
   return out;
 }
 
-// Parses template strings and returns data structures.
+// Parses recipes instruction strings and returns data structures.
 // example:
 //
 // 1) Chop [#: almonds | almonds] roughly. Put them in a bowl.
@@ -81,41 +84,32 @@ function getInstructions(n) {
 // Will return timer data for an inline timer.
 function templateParser(str) {
   let ogstr = str;
-  let ogRE = /\[(.*?)\]/;
-  let bracketRE = /[^[\]]+(?=])/g;
-  let matches = str.match(bracketRE);
-  let out = { o: ogstr, f: "<final string>" };
+  // let ogRE = /\[(.*?)\]/;
+  // let bracketRE = /[^[\]]+(?=])/;
+  let newRE = /\s*\[([^\]]*)]\s*/;
+  let out = { o: ogstr, f: [] };
+  let splitStr = str.split(newRE).filter(Boolean);
 
-  // set f (final string)
-  if (matches == null) {
-    out["f"] = out.o;
-    return out;
-  }
+  splitStr.forEach(s => {
 
-  matches.forEach(m => {
-    let matchCategory = m.slice(0, 1); // ie, gets "t" from: "[t: 00:10:00]"
-    switch (matchCategory) {
-      case "t":
-        out["timer"] = m.slice(3, 11); // parse the timestring.
-        out["f"] = str.replace(ogRE, "").trim(); // remover timer block.
+    switch (s[0]) {
+      case "&":
+        out["timer"] = s.slice(2, 11).trim(); // parse the timestring.
         return out;
 
+      // Parse # to assign meta data (for linking)
       case "#":
-        out["f"] = ogstr.replace(ogRE, match => {
-          let tagContent = match
-            .split("|")[1]
-            .trim()
-            .slice(0, -1);
-          let tagId = match
-            .split("|")[0]
-            .slice(3)
-            .trim();
-          return `<span data-quant="${tagId}" class="ingredient-tooltip">${tagContent}</span>`;
-        });
+        let split = s.split("|")
+        let tagId = split[0].slice(3).trim()
+        let tagContent = split[1].trim()
+        out["f"].push({val: tagContent, attr: tagId })
+        return out
+
       default:
-        break;
+        out["f"].push({val: s})
     }
-  });
+  })
+
 
   return out;
 }

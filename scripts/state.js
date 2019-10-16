@@ -2,21 +2,32 @@
  * Booting point for all state related things.
  */
 
-const $act = {
+const $fx = {
+  // Example effect (no longer used)
+  // tempModal: (dispatch, props) => {
+  //   setTimeout(() => {
+  //     dispatch($act.modalClose)
+  //   }, props.delay)
+  //   return
+  // }
+}
 
-  updateCurrentRecipeStep: (s, i) => {
-    return { ...s, currentRecipeStep: i }
-  },
+const $act = {
+  // actions
+  setRecipeStep: (s, i) => ({...s, currentRecipeStep: i}),
+  modalClose:    (s, _) => ({...s, currentModal: null}),
+  modalSet:      (s, p) => {return ({...s, currentModal: () => p.fn(s, p.val)})},
 
 
   /* TIMER ------------------------------------------------------------------- */
 
-  timerSet: (s, p) => ({
+  timerSet: (s, p) => {
+    return {
     ...s,
     timer: p.time,
     timerRunning: true,
-    currentRecipeStepText: p.step
-  }),
+    currentRecipeStepText: p.step.map(c => c.val).join(" ")
+  }},
 
   timerCancel: s => ({ ...s, timer: null, timerRunning: false }),
 
@@ -61,6 +72,7 @@ var initState = {
   currentRecipeStep: 0,
   currentRecipeStepText: "",
   currentRoute: () => h("div", {}, "loading state"),
+  currentModal: null,
   timer: null,
   timerRunning: false,
   route: "/"
@@ -68,11 +80,7 @@ var initState = {
 
 
 var subscriptions = (state) => [
-
-  // Routing
-  true && v.handleRouter($act.setRoutePath, state),
-
-  // Count down the timer
-  state.timerRunning && interval($act.timerCountDown, { delay: 1000 }),
+  true && v.handleRouter($act.setRoutePath, state),                        // Routing
+  state.timerRunning && interval($act.timerCountDown, { delay: 1000 }), // Timer
 
 ]

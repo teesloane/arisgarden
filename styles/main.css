@@ -51,7 +51,8 @@ table {
   --secondary: #27ae60;
   --darkblue: #34495e;
   --offwhite: #fdfdfd;
-  --offblack: #333
+  --offblack: #333;
+  --black: #000;
 
 }
 
@@ -96,10 +97,15 @@ h1,h2,h3,h4,h5,h6 {
 
 .recipeProperties {
   color: white;
-  padding: 64px 0;
   display: flex;
-	flex: 1;
-	align-self: center;
+  flex-direction: column;
+  flex: 1;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  justify-content: center
+
 }
 
 
@@ -110,10 +116,13 @@ h1,h2,h3,h4,h5,h6 {
 .recipeMetaData {
   background: #222;
   display: flex;
-	width: 80%;
-	margin: 0 auto;
-	padding: 8px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 0;
   justify-content: space-around;
+  /* position: absolute; */
+  bottom: -32px;
+
 }
 
 .recipeMetaDatum {
@@ -133,7 +142,7 @@ h1,h2,h3,h4,h5,h6 {
   align-items: center;
   margin: 0 auto;
   justify-content: center;
-  background: antiquewhite;
+  background: #faebd79e;
   padding: 84px 0;
 }
 
@@ -165,8 +174,8 @@ h1,h2,h3,h4,h5,h6 {
   align-self: flex-start;
   background: white;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
-  max-height: 550px;
-  overflow-y: scroll;
+  /* max-height: 550px; */
+  /* overflow-y: scroll; */
   padding: 16px;
 }
 
@@ -198,18 +207,29 @@ h1,h2,h3,h4,h5,h6 {
   cursor: pointer;
   display: flex;
   font-size: 14px;
-  line-height: 22px;
-  margin: 20px 0;
+  margin: 22px 0;
+}
+
+.recipeStep:first-child {
+  margin-top: 12px;
+}
+
+.recipeStepSingleIngredient {
+  padding: 3px 2px 4px 6px;
+  margin-left: 4px;
+  margin-right: 5px;
+  border: 1px solid #333;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .recipeStep--active {
-  font-weight: bold;
   border-left: 3px solid var(--primary);
 }
 
 .recipeStep--active:before {
   content: "";
-  margin-right: -4px;
+  margin-right: -3px;
   background: var(--primary);
 }
 
@@ -231,27 +251,29 @@ h1,h2,h3,h4,h5,h6 {
 
 .recipeStep_TextContent {
   padding: 0px 16px;
+  line-height: 28px;
+  font-size: 16px;
 }
 
 /* RecipeSingle Photos */
 
 .recipePhotos {
-	display: flex;
-	overflow-x: scroll;
-	display: flex;
-	justify-content: space-around;
-	margin: 128px 0;
+  display: flex;
+  overflow-x: scroll;
+  display: flex;
+  justify-content: space-around;
+  margin: 128px 0;
   margin-top: 0;
 }
 
 .recipePhoto {
-	width: 350px;
-	height: 200px;
-	margin: 0 12px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding: 16px;
-	border-radius: 8px;
+  width: 350px;
+  height: 200px;
+  margin: 0 12px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 16px;
+  border-radius: 8px;
 }
 
 

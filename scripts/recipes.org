@@ -1,14 +1,12 @@
+#+TITLE: RECIPES
+#+RECIPE_COUNT: 20
 * DONE 5 ingredient granola bars
 CLOSED: [2019-09-01 Sun 13:41]
-:LOGBOOK:
-CLOCK: [2019-09-01 Sun 12:11]--[2019-09-01 Sun 12:36] =>  0:25
-CLOCK: [2019-09-01 Sun 11:46]--[2019-09-01 Sun 12:08] =>  0:22
-:END:
 :PROPERTIES:
 :original_recipe: https://minimalistbaker.com/healthy-5-ingredient-granola-bars/
 :slug: granola-bars
 :name: 5 Ingredient Granola Bars
-:day_made: [2019-09-01 Sun]
+:day_made: [2019-09-01]
 :time: 00:25:00
 :serves: 10 bars
 :is_vegan: true
@@ -18,21 +16,20 @@ CLOCK: [2019-09-01 Sun 11:46]--[2019-09-01 Sun 12:08] =>  0:22
 :imgs: 1.JPG,2.JPG,1.gif
 :END:
 ** Ingredients
-| Ingredient                                       | Quantity | Unit |
-|--------------------------------------------------+----------+------|
-| Dates (Deglet noor or medjool)                   | 1        | cups |
-| Maple Syrup (or: agava nectar, honey)            | 1/4      | cups |
-| Natural Peanut Butter                            | 1/4      | cups |
-| Roasted, unsalted almonds                        | 1        | cups |
-| Rolled Oats                                      | 1+1/2    | cups |
-| Optional: Chocolate chips, dried fruit, nuts etc | -        | -    |
-| Parchment Paper                                  | -        | -    |
-| 8x8 Baking Pan                                   | -        | -    |
+| Ingredient                            | Quantity | Unit | Id              | Group |
+|---------------------------------------+----------+------+-----------------+-------|
+| Dates (Deglet noor or medjool)        | 1        | cups | dates           |       |
+| Maple Syrup (or: agava nectar, honey) | 1/4      | cups | maple-syrup     |       |
+| Natural Peanut Butter                 | 1/4      | cups | peanut-butter   |       |
+| Roasted, unsalted almonds             | 1        | cups | almonds         |       |
+| Rolled Oats                           | 1+1/2    | cups | oats-rolled     |       |
+| Parchment Paper                       |          |      | parchment-paper |       |
+| 8x8 Baking Pan                        |          |      |                 |       |
 ** Steps
-1) Chop almonds roughly. Put them in a bowl.
-2) Put oats in the bowl.
-3) Blend dates until dough-y. Put them in the bowl
-4) Put maple-syrup and peanut-butter into a sausapan and heat on low. Stir to combine.
+1) Chop [#: almonds | almonds] roughly. Put them in a bowl.
+2) Put [#: oats-rolled | oats] in the bowl.
+3) Blend [#: dates | dates] until dough-y. Put them in the bowl
+4) Put [#: maple-syrup | maple syrup] and [#: peanut-butter | peanut-butter] into a saucepan and heat on low. Stir to combine.
 5) Pour mix into the bowl and stir to combine.
 6) Transfer to a baking dish (8 x 8) lined with parchment paper.
 ** Content
@@ -45,7 +42,7 @@ CLOSED: [2019-09-01 Sun 15:24]
 :PROPERTIES:
 :original_recipe: https://ohsheglows.com/2017/07/21/8-minute-pantry-dal-two-ways/
 :slug: pantry-dahl
-:day_made: [2019-09-01 Sun]
+:day_made: [2019-09-01]
 :name: Pantry Dahl
 :serves: 4
 :time: 00:40:00
@@ -56,26 +53,26 @@ CLOSED: [2019-09-01 Sun 15:24]
 :imgs: 1.JPG,2.JPG,3.JPG
 :END:
 ** Ingredients
-| Ingredient                                      | Quantity | Unit  |
-|-------------------------------------------------+----------+-------|
-| Coconut Oil                                     |        1 | tbsp  |
-| Diced Veggies (Carrots, Potatoes, Broccoli etc) |        4 | cups  |
-| Uncooked Red Lentils                            |      1/2 | cups  |
-| Water                                           |     1/2+ | cups  |
-| Diced Tomato                                    |        1 | cups  |
-| Coconut Milk                                    |        1 | cups  |
-| Garlic Powder                                   |    1+1/2 | tbsp  |
-| Minced Onion                                    |    1+1/2 | tbsp  |
-| curry Powder                                    |        1 | tbsp  |
-| Sea salt                                        |        1 | tsp   |
-| Pepper                                          |        1 | pinch |
-| Rice or Grain for Base                          |        - | -     |
+| Ingredient                                         | Quantity | Unit  | Id               | Group |
+|----------------------------------------------------+----------+-------+------------------+-------|
+| Coconut oil                                        |        1 | tbsp  | oil-coconut      |       |
+| Diced begetables (Carrots, Potatoes, Broccoli etc) |        4 | cups  | vegetables-misc  |       |
+| Uncooked red lentils                               |      1/2 | cups  | lentils-red      |       |
+| Water                                              |     1/2+ | cups  | water            |       |
+| Diced tomato                                       |        1 | cups  | tomato-diced-can |       |
+| Coconut milk                                       |        1 | cups  | milk-coconut     |       |
+| Garlic powder                                      |    1+1/2 | tbsp  | powder-garlic    |       |
+| Minced onion                                       |    1+1/2 | tbsp  | onion-minced     |       |
+| Curry powder                                       |        1 | tbsp  | powder-curry     |       |
+| Sea salt                                           |        1 | tsp   | salt-sea         |       |
+| Pepper                                             |        1 | pinch | pepper           |       |
+| Rice or Grain for Base                             |          |       | rice             |       |
 ** Steps
-1) Melt coconut oil in a large pot
-2) peel (if necessary) and dice veggies into 1/2 inch pieces. Add to pot and stir.
+1) Melt [#: oil-coconut | coconut oil] in a large pot
+2) Peel (if necessary) and dice vegetables into 1/2 inch pieces. Add to pot and stir.
 3) Add the rest of the ingredients.
 4) Bring to a boil and the reduce heat to medium.
-5) [t: 00:18:00] Cook for 18-30 minutes. Stir frequently.
+5) [&: 00:18:00] Cook for 18-30 minutes. Stir frequently.
 6) Serve over rice. Optional: Garnish with cilantro and lime.
 ** Content
 :PROPERTIES:
@@ -86,7 +83,7 @@ CLOSED: [2019-09-01 Sun 15:24]
 * DONE Easy Marinated Tofu
 CLOSED: [2019-09-02 Mon 13:49]
 :PROPERTIES:
-:day_made: [2019-09-02 Mon]
+:day_made: [2019-09-02]
 :ease_of_making: 5/5
 :imgs: false
 :is_vegan: true
@@ -99,18 +96,18 @@ CLOSED: [2019-09-02 Mon 13:49]
 :time: 00:25:00
 :END:
 ** Ingredients
-| Ingredient          | Quantity | Unit  |
-|---------------------+----------+-------|
-| Tofu                |        1 | brick |
-| Water               |      1/4 | cups  |
-| Soy Sauce           |        2 | tbsp  |
-| Maple syrup         |        1 | tbsp  |
-| Apple cider vinegar |        1 | tbsp  |
-| Garlic powder       |        1 | tsp   |
+| Ingredient          | Quantity | Unit  | Id                  | Group |
+|---------------------+----------+-------+---------------------+-------|
+| Tofu                |        1 | brick | tofu                |       |
+| Water               |      1/4 | cups  | water               |       |
+| Soy Sauce           |        2 | tbsp  | sauce-soy           |       |
+| Maple syrup         |        1 | tbsp  | maple-syrup         |       |
+| Apple cider vinegar |        1 | tbsp  | vinegar-apple-cider |       |
+| Garlic powder       |        1 | tsp   | powder-garlic       |       |
 ** Steps
-1) Press the tofu for a while. Then dice/cube it.
-2) Mix the marinade ingredients in a bowl
-3) Put the tofu in the bowl and cover. Put it in the fridge for 15 min.
+1) [&:00:20:00] Press the [#: tofu | tofu] for a while (around 20 minutes). Then dice/cube it.
+2) Mix the marinade ingredients in a bowl.
+3) [&:00:15:00] Put the tofu in the bowl and cover. Put it in the fridge for 15 min.
 4) Take the tofu out and pan fry until golden brown.
 ** Content
 :PROPERTIES:
@@ -122,7 +119,7 @@ CLOSED: [2019-09-02 Mon 13:49]
 CLOSED: [2019-09-03 Tue 07:39]
 :PROPERTIES:
 :original_recipe: https://www.davidlebovitz.com/candied-ginger/
-:day_made: [2019-09-02 Mon]
+:day_made: [2019-09-02]
 :slug: candied-ginger
 :name: Candied Ginger
 :serves: one jar! (roughly)
@@ -135,23 +132,24 @@ CLOSED: [2019-09-03 Tue 07:39]
 :END:
 ** Ingredients
 
-| Ingredient | Quantity | Unit  |
-|------------+----------+-------|
-| ginger     |        1 | lbs   |
-| sugar      |        4 | cups  |
-| water      |        4 | cups  |
-| salt       |        1 | pinch |
+| Ingredient  | Quantity | Unit  | Id          | Group |
+|-------------+----------+-------+-------------+-------|
+| Ginger      |        1 | lbs   | ginger      |       |
+| White Sugar |        4 | cups  | sugar-white |       |
+| Water       |        4 | cups  | water       |       |
+| Salt        |        1 | pinch | salt        |       |
 ** Steps
 
-1) Peel the ginger.
-2) Slice the ginger. Thin.
+1) Peel the [#: ginger | ginger].
+2) Slice the ginger thinly.
 3) Put ginger into a pot, cover with water. Bring water to a boil.
-4) [t: 00:10:00] Reduce heat and simmer for 10 minutes.
+4) [&:00:10:00] Reduce heat and simmer for 10 minutes.
 5) Repeat the previous step.
-6) Mix the sugar, water, salt and ginger slices in the pot. Cook until the
-   temperature reaches 225ºF (106ºC). I don't have a thermometer. Some people
-   online report cooking for 50min - 1 hour. Other recipes say "Bring to a boil, reduce the heat to medium, and simmer uncovered for 35-40 minutes or until the temperature on a candy thermometer reads 225 degrees F."
-7) [t: 01:00:00] Remove from heat. Let stand for one hour.
+6) Mix the [#: sugar-white | sugar], [#: water | water], [#: salt | salt] and
+   ginger slices in the pot. Cook until the temperature reaches 225F (106C). A
+   candy thermometer is very helpful, but otherwise, you can estimate cooking
+   for 40 to 60 min.
+7) [&:01:00:00] Remove from heat. Let stand for one hour.
 8) Drain the ginger through a colander, catch the syrup.
 9) Toss drained ginger in sugar.
 10) Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they are somewhat dry.
@@ -165,7 +163,7 @@ CLOSED: [2019-09-03 Tue 07:39]
 CLOSED: [2019-09-03 Tue 21:30]
 :PROPERTIES:
 :original_recipe: https://minimalistbaker.com/1-pot-chickpea-shakshuka/
-:day_made: [2019-09-03 Tue]
+:day_made: [2019-09-03]
 :name: 1 Pot Chickpea Shakshuka
 :slug: chickpea-shakshuka
 :is_vegan: true
@@ -177,26 +175,31 @@ CLOSED: [2019-09-03 Tue 21:30]
 :rating: 4/5
 :END:
 ** Ingredients
-| Ingredient                | Quantity | Unit   |
-|---------------------------+----------+--------|
-| Olive Oil                 |        1 | tbsp   |
-| White onion (or: shallot) |     1/2/ | cups   |
-| Garlic                    |        3 | cloves |
-| Bell Pepper (chopped)     |     1/2/ | cups   |
-| Diced tomatoes            |       28 | oz     |
-| Tomato paste              |        3 | tbsp   |
-| Maple syrup               |        1 | tbsp   |
-| Ground cumin              |        1 | tsp    |
-| Paprika                   |        1 | tsp    |
-| Chili powder              |        2 | tsp    |
-| Ground cinnamon           |      1/4 | tsp    |
-| Chickpeas                 |       24 | oz     |
+| Ingredient                | Quantity | Unit   | Id              | Group |
+|---------------------------+----------+--------+-----------------+-------|
+| Olive Oil                 |        1 | tbsp   | oil-olive       |       |
+| White onion (or: shallot) |     1/2/ | cups   | onion-white     |       |
+| Garlic                    |        3 | cloves | garlic          |       |
+| Bell Pepper (chopped)     |     1/2/ | cups   | pepper-bell     |       |
+| Diced tomatoes            |       28 | oz     | tomato-diced    |       |
+| Tomato paste              |        3 | tbsp   | tomato-paste    |       |
+| Olives                    |        5 |        | olives          |       |
+| Maple syrup               |        1 | tbsp   | maple-syrup     |       |
+| Ground cumin              |        1 | tsp    | cumin-ground    |       |
+| Paprika                   |        1 | tsp    | paprika         |       |
+| Chili powder              |        2 | tsp    | chili-powder    |       |
+| Ground cinnamon           |      1/4 | tsp    | cinnamon-ground |       |
+| Chickpeas                 |       24 | oz     | chickpeas       |       |
+| Sea Salt                  |        1 | pinch  | salt-sea        |       |
 ** Steps
 1) Heat a large metal or cast iron skilled on medium heat.
-2) [t: 00:04:00] When hot, add olive oil, onion, bell pepper and garlic. Saute for 4-5 minutes, stirring frequently.
-3) Add diced tomatoes, tomoato paste, maple syrup, sea salt, paprika, cumin, chili powser, cinnamon. Stir.
-4) [t: 00:03:00] Bring to a simmer. Cook for 2-3 minutes.
-5) [t: 00:15:00] Add chickpeas and olives. Reduce heaet to medium-low for 15-20 minutes.
+2) [&: 00:04:00] When hot, add [#: oil-olive | olive oil ], [#: onion-white |
+   onion], [#: pepper-bell | bell pepper] and [#: garlic | garlic]. Saute for 4-5 minutes, stirring frequently.
+3) Add [#: tomato-diced | diced tomatoes], [#: tomato-paste | tomato paste], [#:
+   maple-syrup | maple syrup], [#: salt-sea | sea salt], [#: paprika | paprika],
+   [#: cumin-ground | cumin], [#: chili-powder | chili powder], [#: cinnamon-ground | cinnamon]. Stir.
+4) [&: 00:03:00] Bring to a simmer. Cook for 2-3 minutes.
+5) [&: 00:15:00] Add [#: chickpeas | chickpeas] and [#: olives | olives]. Reduce heat to medium-low for 15-20 minutes.
 ** Content
 :PROPERTIES:
 :type: big-quote
@@ -206,7 +209,7 @@ CLOSED: [2019-09-03 Tue 21:30]
 CLOSED: [2019-09-04 Wed 18:13]
 :PROPERTIES:
 :original_recipe: https://cookieandkate.com/lemon-collard-greens-pasta/
-:day_made: [2019-09-04 Wed]
+:day_made: [2019-09-04]
 :slug: collard-green-pasta
 :is_vegan: false
 :is_vegetarian: true
@@ -218,24 +221,25 @@ CLOSED: [2019-09-04 Wed 18:13]
 :rating: 5/5
 :END:
 ** Ingredients
-| Ingredient                       | Quantity | Unit    |
-|----------------------------------+----------+---------|
-| Collard Greens (or: Swiss Chard) |       10 | leaves  |
-| Spaghetti                        |      1/3 | package |
-| Chopped Nuts                     |        3 | tbsp    |
-| Olive Oil                        |        1 | tbsp    |
-| Garlic                           |        2 | cloves  |
-| Red Pepper Flakes                |        1 | pinch   |
-| Parmesan Cheese                  |        1 | ounce   |
-| Lemon                            |        1 |         |
+| Ingredient        | Quantity | Unit    | Id                |
+|-------------------+----------+---------+-------------------|
+| Swiss Chard       |       10 | leaves  | swiss-chard       |
+| Spaghetti         |      1/3 | package | spaghetti         |
+| Chopped Nuts      |        3 | tbsp    | nuts              |
+| Olive Oil         |        1 | tbsp    | oil-olive         |
+| Garlic            |        2 | cloves  | garlic            |
+| Red Pepper Flakes |        1 | pinch   | red-pepper-flakes |
+| Parmesan Cheese   |        1 | ounce   | cheese-parmesan   |
+| Lemon             |        1 |         | lemon             |
 ** Steps
-1) Bring a pot of salted water to boil. Cook the pasta.
+1) Bring a pot of salted water to boil. Cook the [#: spaghetti | pasta].
 2) Drain the pasta, reserving a bit of cooking water. Set aside.
-3) Cut out the "rib" of the collard greens. Roll them up like a cigar. Slice across the role, as thinly as possible.
-4) Heat a skillet on medium heat. Toast the nuts until fragrant. Set aside.
-5) Using the same skillet, heat the olive oil. When hot, put in the garlic and red pepper flakes.
-6) After a bit, toss in the greens. Sprinkle with salt. Stit often, about three minutes.
-7) Scoop greens into pasta pot and toss with oil. Add pasta water if necessary.
+3) Cut out the "rib" of the swiss chard. Roll up the leaves like a cigar. Slice across the role, as thinly as possible.
+4) Heat a skillet on medium heat. Toast the [#: nuts | nuts] until fragrant. Set aside.
+5) Using the same skillet, heat the [#: oil-olive | olive oil]. When hot, put in
+   the [#: garlic | garlic] and [#: red-pepper-flakes | red pepper flakes].
+6) [&: 00:03:00] After a bit, toss in the swiss-chard. Sprinkle with salt. Stir often, about three minutes.
+7) Scoop chard into pasta pot and toss with oil. Add pasta water if necessary.
 8) Divide onto plates, top with nuts and parmesan shavings. Add two big lemon
    wedges per person.
 ** Content
@@ -260,40 +264,43 @@ CLOSED: [2019-09-10 Tue 18:10]
 :rating: 5/5
 :END:
 ** Ingredients
-| Ingredient       | Quantity | Unit |
-|------------------+----------+------|
-| Tofu             |        8 | oz   |
-| Sweet Potato     |        1 |      |
-| Onion            |        1 |      |
-| Garlic           |        2 |      |
-| Olive Oil        |        3 | tbsp |
-| Chickpeas        |        1 | cups |
-| Salt             |        1 | tsp  |
-| Pepper           |      1/2 | tsp  |
-| Chili powder     |        1 | tsp  |
-| Garlic powder    |        1 | tsp  |
-| Quinoa           |    1+1/2 | cups |
-| Shredded Carrots |      1/4 | cups |
-| Avacado          |        1 |      |
-| Lemon            |        1 |      |
-| Sesame Oil       |      1/2 | tsp  |
-| Hot Sauce        |        1 | tsp  |
-| Dried thyme      |        2 | tsp  |
-| Paprika          |        1 | tsp  |
-|                  |          |      |
+| Ingredient       | Quantity | Unit   | Id               | Group    |
+|------------------+----------+--------+------------------+----------|
+| Tofu             |        8 | oz     | tofu             |          |
+| Sweet Potato     |        1 |        | potato-sweet     |          |
+| Onion            |        1 |        | onion            |          |
+| Garlic           |        2 | cloves | garlic           |          |
+| Olive Oil        |        3 | tbsp   | oil-olive        | Marinade |
+| Chickpeas        |        1 | cups   | chickpeas        |          |
+| Salt             |        1 | tsp    | salt             | Marinade |
+| Pepper           |      1/2 | tsp    | pepper           |          |
+| Chili powder     |        1 | tsp    | chili-powder     |          |
+| Garlic powder    |        1 | tsp    | garlic-powder    |          |
+| Quinoa           |    1+1/2 | cups   | quinoa           |          |
+| Shredded Carrots |      1/4 | cups   | carrots-shredded |          |
+| Avocado          |        1 |        | avocado          |          |
+| Lemon            |        1 |        | lemon            |          |
+| Sesame Oil       |      1/2 | tsp    | oil-sesame       | Marinade |
+| Hot Sauce        |        1 | tsp    | sauce-hot        | Marinade |
+| Dried thyme      |        2 | tsp    | thyme            | Marinade |
+| Paprika          |        1 | tsp    | paprika          | Marinade |
+|                  |          |        |                  |          |
 ** Steps
-1) Make the marinade: combine Olive oil, seasami oil, hot sauce, thyme, paprika,
-   and salt. Set aside.
-2) [t: 00:30:00] Add marinade and tofu to a container and marinate for 30 minutes, up to a day
-3) Preheat the oven to 400ºF (200ºC).
-4) [t: 00:20:00] Cut sweet potato into cubes. Slice the onion, dice garlic. Put it all on a
+1) Make the marinade: combine [#: oil-olive | olive oil], [#: oil-sesame |
+   seasame oil], [#: sauce-hot | hot sauce], [#: thyme | thyme], [#: paprika | paprika],
+   and [#: salt | salt]. Set aside.
+2) [&: 00:30:00] Add marinade and tofu to a container and marinate for at least
+   30 minutes (up to a day).
+3) Preheat the oven to 400F (200C).
+4) [&: 00:20:00] Cut [#: potato-sweet | sweet potato] into cubes. Slice the [#:
+   onion | onion], dice [#:garlic | garlic]. Put it all on a
    baking sheet. Drizzel with oil, season with salt and pepper. Bake for 20-25 min.
-5) In a medium bowl, add the chickpeas, salt, pepper, chili powder, and garlic
-   powder. Stir to combine.
-6) [t: 00:10:00] Transfer chickpeas to skilled and cook on medium heat for 10 minutes. Set aside.
-7) [t: 00:10:00] Fry the tofu in the same pan for about 10 minutes on each side.
+5) In a medium bowl, add the [#: chickpeas | chickpeas], salt, pepper, [#:
+   chili-powder | chili powder], and [#: garlic-powder | garlic powder]. Stir to combine.
+6) [&: 00:10:00] Transfer chickpeas to skillet and cook on medium heat for 10 minutes. Set aside.
+7) [&: 00:10:00] Fry the tofu in the same pan for about 10 minutes on each side.
 8) Slice tofu as you like.
-9) Combine with quinoa, greens, sweet potatoes, onions, chickpeas, carrots,
+9) Optional: Combine with quinoa, greens, sweet potatoes, onions, chickpeas, carrots,
    tofu, and avocado.
 ** Content
 :PROPERTIES:
@@ -316,37 +323,37 @@ CLOSED: [2019-09-10 Tue 19:18]
 :time: 01:00:00
 :END:
 ** Ingredients
-| Ingredient       | Quantity | Unit    |
-|------------------+----------+---------|
-| Tofu             |        1 | package |
-| Coconut oil      |        2 | tbsp    |
-| Cumin powder     |        1 | tsp     |
-| Coriander powder |        1 | tsp     |
-| Red Curry Paste  |        5 | tbsp    |
-| Baby potatoes    |    1+1/2 | cups    |
-| Carrots          |        2 |         |
-| Coconut milk     |       28 | oz      |
-| Water            |    1+1/2 | cups    |
-| Ground cinnamon  |      1/4 | tsp     |
-| Soy sauce        |        2 | tbsp    |
-| Maple syrup      |        2 | tbsp    |
-| Peanut butter    |        2 | tbsp    |
-| Lime juice       |        2 | tbsp    |
+| Ingredient       | Quantity | Unit    | Id               |
+|------------------+----------+---------+------------------|
+| Tofu             |        1 | package | tofu             |
+| Coconut oil      |        2 | tbsp    | oil-coconut      |
+| Cumin powder     |        1 | tsp     | cumin-powder     |
+| Coriander powder |        1 | tsp     | coriander-powder |
+| Red Curry Paste  |        5 | tbsp    | red-curry-paste  |
+| Baby potatoes    |    1+1/2 | cups    | potatoes-baby    |
+| Carrots          |        2 |         | carrots          |
+| Coconut milk     |       28 | oz      | milk-coconut     |
+| Water            |    1+1/2 | cups    | water            |
+| Ground cinnamon  |      1/4 | tsp     | ground-cinnamon  |
+| Soy sauce        |        2 | tbsp    | sauce-soy        |
+| Maple syrup      |        2 | tbsp    | maple-syrup      |
+| Peanut butter    |        2 | tbsp    | peanut-butter    |
+| Lime juice       |        2 | tbsp    | lime-juice       |
+| Rice/Grain       |          |         | rice             |
 ** Steps
 1) Press your tofu. You'll come back and cube it once pressed.
-2) Heat a large pot or dutch oven on medium heat. Once hot, add oil and shallot.
-3) [t: 00:02:00] Saute for 2 minutes. Stir frequently.
-4) [t: 00:02:00] Add cumin and coriander. Saute for 2 minutes, stirring frequently.
-5) [t: 00:01:00] Add red curry paste and stir for another minute.
-6) [t: 00:02:00] Add potatoes and carrots and stir to coat. Cook for 2 minutes.
-7) Add coconut milk, water, cinnamon, soysauce, maple syrup, and peanut butter.
-   Add your tofu or other protein now.
-8) [t: 00:10:00] Bring to a simmer and cook for 10-15 minutes uncovered. Don't
-   boil it. Simmer it.
-9) Near the end of the previous step, toss in your tofu and the lime. Cook for
-   another few minutes.
-10) [t: 00:05:00] Let stand for 10 minutes.
-11) Enjoy with a side of rice.
+2) Cook desired serving of rice as per package instructions
+3) Heat a large pot or dutch oven on medium heat. Once hot, add [#:
+   oil-coconut | oil] and shallot.
+4) [&: 00:02:00] Saute for 2 minutes. Stir frequently.
+5) [&: 00:02:00] Add [#: cumin-powder | cumin] and [#: coriander-powder | coriander]. Saute for 2 minutes, stirring frequently.
+6) [&: 00:01:00] Add [#: red-curry-paste | red curry paste] and stir for another minute.
+7) [&: 00:02:00] Add [#: potatoes-baby | potatoes] and [#: carrots | carrots] and stir to coat. Cook for 2 minutes.
+8) Add [#: milk-coconut | coconut milk], [#: water | water], [#: ground-cinnamon | cinnamon], [#: sauce-soy | soy-sauce], [#: maple-syrup | maple syrup], and [#: peanut-butter | peanut butter]. Add your tofu or other protein now.
+9) [&: 00:10:00] Bring to a simmer and cook for 10-15 minutes uncovered. Don't boil it. Simmer it.
+10) Near the end of the previous step, toss in your tofu and the [#: lime-juice | lime juice]. Cook for another few minutes.
+11) [&: 00:05:00] Let stand for 10 minutes.
+12) Enjoy with a side of rice.
 ** Content
 :PROPERTIES:
 :type: blurb
@@ -373,41 +380,41 @@ CLOSED: [2019-09-10 Tue 19:18]
 :timer: 00:45:00
 :END:
 ** Ingredients
-| Ingredient                                | Quantity | Unit |
-|-------------------------------------------+----------+------|
-| Cauliflower                               |        1 | head |
-| Water (for cauliflower rice)              |        3 | tbsp |
-| Coconut oil                               |        2 | tbsp |
-| Peanut or Almond Butter                   |        2 | tbsp |
-| ginger                                    |        1 | tbsp |
-| Maple syrup                               |        1 | tbsp |
-| Soy sauce (for the sauce)                 |        4 | tbsp |
-| Soy sauce (for the stir fry)              |        3 | tbsp |
-| Lime juice                                |        2 | tbsp |
-| Chili garlic sauce or sriracha            |      2-4 | tbsp |
-| Water                                     |        - | tbsp |
-| Green beans (trimmed and halved)          |    1+1/2 | cups |
-| Cabbage (thinly sliced)                   |        1 | cups |
-| Green onions (diced)                      |        1 | cups |
-| Bell Pepper (thin slices, lengthwise)     |        1 | -    |
-| Cashews                                   |      3/4 | cups |
-| A Blender or a grater for the cauliflower |          |      |
+| Ingredient                       | Quantity | Unit | Id                 | Group       |
+|----------------------------------+----------+------+--------------------+-------------|
+| Cauliflower                      |        1 | head | cauliflower        | cauliflower |
+| Water (for cauliflower rice)     |        3 | tbsp | water              | cauliflower |
+| Coconut oil                      |        1 | tsp  | oil-coconut        | sauce       |
+| Peanut or Almond Butter          |        2 | tbsp | almond-butter      | sauce       |
+| ginger                           |        1 | tbsp | ginger             | sauce       |
+| Maple syrup                      |        1 | tbsp | maple-syrup        | sauce       |
+| Soy sauce (for the sauce)        |        4 | tbsp | soy-sauce-1        | sauce       |
+| Lime juice                       |        2 | tbsp | lime-juice         | sauce       |
+| Chili garlic sauce or sriracha   |      2-4 | tbsp | chili-garlic-sauce | sauce       |
+| Water                            |      2-3 | tbsp | water              | sauce       |
+| Green beans (trimmed and halved) |    1+1/2 | cups | green-beans        | stir-fry    |
+| Cabbage (thinly sliced)          |        1 | cups | cabbage            | stir-fry    |
+| soy-sauce                        |        3 | tbsp | soy-sauce-2        | stir-fry    |
+| Green onions (diced)             |        1 | cups | onions-green       | stir-fry    |
+| Bell Pepper (sliced thinly)      |        1 |      | pepper-bell        | stir-fry    |
+| Cashews                          |      3/4 | cups | cashews            | stir-fry    |
+| A Blender                        |          |      |                    |             |
 ** Steps
 1) Wash the cauliflower. Chop it in a blender until you have small chunks (that
    look more like rice than cauliflower.)
 2) Create the sauce: add coconut oil, peanut butter, soy sauce lime juice, chili
    garlic sauce, fresh ginger, maple syrup, and water into a small bowl. Whisk
    to combine. Set aside.
-3) [t: 00:05:00] Heat a skillet over medium-low. Add cauliflower rice and water. Stir and
+3) [&: 00:05:00] Heat a skillet over medium-low. Add cauliflower rice and water. Stir and
    cover with a lid to steam. Cook for 4-6 minutes or until just tender. Remove
    and let some steam out.
-4) [t: 00:04:00] Heat another skillet (or pot) on medium heat. When hot, add coconut oil and
+4) [&: 00:04:00] Heat another skillet (or pot) on medium heat. When hot, add coconut oil and
    green beans. Season with 1/3 of the soy sauce used for the stirfry (1tbsp).
    Cover with lid and steam for about 4 minutes.
-5) [t: 00:03:00] Add bell peppers, green onion, cabbage, and remaining soy sauce (2tbsp).
+5) [&: 00:03:00] Add bell peppers, green onion, cabbage, and remaining soy sauce (2tbsp).
    Stir. Saute for 3-4 minutes.
 6) Add cashes and cauliflower rice and stir to combine.
-7) [t: 00:03:00] Add the sauce to the beans. Increase heat to medium-high. Cook for about
+7) [&: 00:03:00] Add the sauce to the beans. Increase heat to medium-high. Cook for about
    3 minutes until hot.
 ** Content
 :PROPERTIES:
@@ -415,8 +422,6 @@ CLOSED: [2019-09-10 Tue 19:18]
 :END:
 - Don't use too much soy-sauce. Just don't.
 * DONE Spicy Kale and Coconut Fried Rice
-:LOGBOOK:
-:END:
 :PROPERTIES:
 :day_made: [2019-09-17]
 :ease_of_making: 4/5
@@ -431,36 +436,33 @@ CLOSED: [2019-09-10 Tue 19:18]
 :time: 00:40:00
 :END:
 ** Ingredients
-| Ingredient                                        | Quantity | Unit  |
-|---------------------------------------------------+----------+-------|
-| coconut oil                                       |        2 | tbsp  |
-| eggs                                              |        2 | -     |
-| garlic (minced)                                   |        2 |       |
-| green onions (chopped)                            |        1 | bunch |
-| Chopped vegetables (peppers, brussel sprouts etc) |        1 | cups  |
-| Kale (ribs removed, chopped)                      |        1 | bunch |
-| Sea salt                                          |      1/4 | tsp   |
-| unsweetened coconut flakes or shreds              |      3/4 | cups  |
-| Rice (uncooked)                                   |        1 | cup   |
-| Soy sauce                                         |        2 | tsp   |
-| Sriracha                                          |        2 | tsp   |
-| Lime (halved)                                     |        1 |       |
-| Cilantro                                          |          |       |
+| Ingredient                                        | Quantity | Unit    | Id                 |
+|---------------------------------------------------+----------+---------+--------------------|
+| Coconut oil                                       |        2 | tbsp    | oil-coconut        |
+| Eggs                                              |        2 |         | eggs               |
+| Garlic (minced)                                   |        2 | cloves  | garlic             |
+| Green onions (chopped)                            |        1 | bunch   | onions-green       |
+| Chopped vegetables (peppers, brussel sprouts etc) |        1 | cups    | vegetables-chopped |
+| Kale (ribs removed, chopped)                      |        1 | bunch   | kale               |
+| Sea salt                                          |      1/4 | tsp     | salt-sea           |
+| Coconut flakes                                    |      3/4 | cups    | coconut-flakes     |
+| Rice                                              |        1 | cup     | rice               |
+| Soy sauce                                         |        2 | tsp     | sauce-soy          |
+| Sriracha                                          |        2 | tsp     | sriracha           |
+| Lime (halved)                                     |        1 |         | lime               |
+| Cilantro                                          |        1 | handful | cilantro           |
 ** Steps
-1) Cook the rice and set it aside to cool.
-2) Heat a large skillet on medium high heat. Add 1 teaspoon of coconut oil.
-3) Add eggs and stir frequently so they are sort of scrambled. Transfer to bowl
+1) Cook the [#: rice | rice] and set it aside to cool.
+2) Heat a large skillet on medium high heat. Add 1 teaspoon of [#: oil-coconut | coconut oil].
+3) Add [#: eggs | eggs] and stir frequently so they are sort of scrambled. Transfer to bowl
    when done and wipe the pan clean.
-4) Add a tablespoon of coconut oil to pan. Add garlic, green onions and
-   vegetables. Cook until fragrant (30 seconds).  Add the kale and salt . Cook
-   until wilted, about 1-2 minutes. Transfer to bowl with eggs.
+4) Add a tablespoon of coconut oil to pan. Add [#: garlic | garlic], [#: onions-green | green onions] and [#: vegetables-chopped | vegetables]. Cook until fragrant (30 seconds).  Add the [#: kale | kale] and [#: salt-sea | salt] . Cook until wilted, about 1-2 minutes. Transfer to bowl with eggs.
 5) Add 2 more tablespoons of coconut oil to the pan AGAIN. Add the coconut
    flakes, stir frequently until golden. Add the cooked rice and stir
-   occaisionally until hot, about 3 minutes
+   occaisionally until hot, about 3 minutes.
 6) Pour the contents of the bowl back into the pan, breaking up the scrambled
    egg with a spatula.
 7) Add Soy sauce, Sriracha, and half of the lime juice. Stir.
-8)
 ** Content
 :PROPERTIES:
 :type: dialogue
@@ -482,29 +484,34 @@ CLOSED: [2019-09-10 Tue 19:18]
 :time: 00:30:00
 :END:
 ** Ingredients
-| Ingredient                   | Quantity | Unit   |
-|------------------------------+----------+--------|
-| Greens: Spinach / Arugla etc |        4 | cups   |
-| Broccoli                     |        2 | cups   |
-| Potatoes (chopped)           |        1 | cups   |
-| Dill                         |        1 | sprig  |
-| Pears (sliced)               |        2 | --     |
-| Brie Cheeze                  |      4-6 | slices |
-| Cranberries                  |      1/3 | cups   |
-| Avocado                      |      1/2 | --     |
-| Pecans (chopped)             |      1/3 | cups   |
-| Olive oil                    |      1/2 | cups   |
-| Apple cider vinegar          |        2 | tsp    |
-| Rice wine vinegar            |      1/4 | cups   |
-| Shallots (minced)            |        1 | tbsp   |
-| Maple Syrup                  |        1 | tbsp   |
-| Pepper                       |        1 | pinch  |
+| Ingredient          | Quantity | Unit   | Id                | Group    |
+|---------------------+----------+--------+-------------------+----------|
+| Broccoli            |        2 | cups   | broc              | salad    |
+| Potatoes (chopped)  |        1 | cups   | potatoes          | salad    |
+| Dill                |        1 | sprig  | dill              | salad    |
+| Pears (sliced)      |        2 |        | pears             | salad    |
+| Brie cheese         |      4-6 | slices | cheese            | salad    |
+| Cranberries         |      1/3 | cups   | cran              | salad    |
+| Avocado             |      1/2 |        | avocado           | salad    |
+| Pecans (chopped)    |      1/3 | cups   | pecans            | salad    |
+| Olive oil           |      1/2 | cups   | oil-olive         | dressing |
+| Apple cider vinegar |        2 | tsp    | vinegar-apple     | dressing |
+| Rice wine vinegar   |      1/4 | cups   | vinegar-rice-wine | dressing |
+| Shallots (minced)   |        1 | tbsp   | shallots          | dressing |
+| Maple Syrup         |        1 | tbsp   | maple-syrup       | dressing |
+| Pepper              |        1 | pinch  | pepper            | dressing |
 ** Steps
-1) [t: 00:00:05] Preheat oven to 425. Add chopped potatoes and broccoli florets to bowl with olive oil and salt and pepper and dill. Put on a baking sheet on parchment paper. Bake for 10-12 minutes
-2) Prepare the dressing for the salad. Add the following to a container and whisk: Olive oil, Rice wine vinegar, shallots, maple syrup, ground pepper.
-3) Prepare the salad: Lightly apply the dressing to the greens Arrange pear slices and briece on plate.  Drizzle with dressing. Add greens, cranberries,
+1) Preheat oven to 425.
+2) Add chopped [#: potatoes | potatoes] and [#: broc | broccoli] florets to bowl with [#: oil-olive | olive oil] and salt and pepper and [#: dill | dill]. Stir to coat.
+3) [&:00:12:00] Put contents of bowl on a baking sheet on parchment paper. Bake for 10-12 minutes.
+4) Prepare the dressing for the salad. Add the following to a container and
+   whisk: [#: oil-olive | Olive oil], [#: vinegar-rice-wine | Rice wine
+   vinegar], [#: shallots | shallots], [#: maple-syrup | maple syrup], [#:
+   pepper | ground pepper].
+5) Prepare the salad: Lightly apply the dressing to the greens. Arrange pear
+   slices and brie on a plate. Drizzle with dressing. Add greens, cranberries,
    pecans, and extra slices of pear. Add a bit more dressing.
-4) Add the potatoes and broccoli as a side or mixed with the salad.
+6) Add the [#: potatoes | potatoes] and broccoli as a side or mixed with the salad.
 ** Content
 :PROPERTIES:
 :type: whisper
@@ -528,26 +535,27 @@ CLOSED: [2019-09-10 Tue 19:18]
 :time: 01:10:00
 :END:
 ** Ingredients
-| Ingredient                                 | Quantity | Unit |
-|--------------------------------------------+----------+------|
-| Sweet Potato (large / 600g)                |        1 | --   |
-| Nutritional Yeast or Parmesan (optional)   |      2-3 | tbsp |
-| Flour                                      |      1/3 | cups |
-| Salt                                       |      1/2 | tsp  |
-| Vegan butter or coconut oil                |        2 | tbsp |
-| Garlic                                     |        3 | --   |
-| Optional Nuts (pine or pecan, or whatever) |        4 | tbsp |
+| Ingredient                                 | Quantity | Unit  | Id           |
+|--------------------------------------------+----------+-------+--------------|
+| Sweet Potato (large / 600g)                |        1 |       | potato-sweet |
+| Nutritional Yeast or Parmesan (optional)   |      2-3 | tbsp  | parm         |
+| Flour                                      |      1/3 | cups  | flour        |
+| Salt                                       |      1/2 | tsp   | salt         |
+| Cherry tomatoes                            |      250 | grams | tomatoes     |
+| Vegan butter or coconut oil                |        2 | tbsp  | coco-oil     |
+| Garlic                                     |        3 | cloves | garlic       |
+| Optional Nuts (pine or pecan, or whatever) |        4 | tbsp  | nuts         |
 ** Steps
-1) [t: 00:50:00] Prick the sweet potato several times with a fork. Put it in the oven for 50-60 minutes at about 425 degrees.
-2) Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add salt. Add nutritional yeast if you want. Add the flour and knead gently. Don't over knead. Try to use as little flour as possible.
+1) [&: 00:50:00] Prick the [#: potato-sweet | sweet potato] several times with a fork. Put it in the oven for 50-60 minutes at about 425 degrees.
+2) Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add [#: salt | salt]. Add nutritional yeast or parmesan if you want. Add the [#: flour | flour] and knead gently. Don't over knead. Try to use as little flour as possible.
 3) Transfer the dough to a floured work surface. Form it in a flat ball and cut into quarters. Take a piece and form a long rope, rolling it into a long rope. Cut the rope into 2cm pieces.
 4) Create gnocchi "ridges" into the sweet potato pieces by rolling it along the tines of a fork (from the tip backward).
 5) Bring a pot of salted water to a boil. Add the gnocchi, cook until they float to the top of the water. Drain. Optional: toss with a little olive oil to prevent sticking.
-6) If you have more gnocchi than you need, now is the time to freeze the abundance.
-7) [t: 00:15:00] Put tomatoes onto a baking sheet with cloves of garlic. Drizzle  with olive oil. Season with salt and pepper. Roast in the oven at 400 for 15 minutes.
-8) Toast nuts in a small pan with additional oil. Set aside.
-9) Heat butter or coconut oil on medium. Add the gnocchi and roast until golden-brown and crispy.
-10) Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs if you like.
+6) If you have more gnocchi than you need, now is the time to freeze the abundance!
+7) [&: 00:15:00] Put [#: tomatoes | tomatoes] onto a baking sheet with cloves of garlic. Drizzle  with olive oil. Season with salt and pepper. Roast in the oven at 400 for 15 minutes.
+8) Toast [#: nuts | nuts] in a small pan with additional oil. Set aside.
+9) Heat [#: coco-oil | coconut oil] on medium. Add the gnocchi and roast until golden-brown and crispy.
+10) Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs.
 ** Content
 :PROPERTIES:
 :type: big-quote
@@ -568,30 +576,30 @@ CLOSED: [2019-09-10 Tue 19:18]
 :time: 00:30:00
 :END:
 ** Ingredients
-| Ingredient               | Quantity | Unit   |
-|--------------------------+----------+--------|
-| Brussel Sprouts (halved) |       16 | ounces |
-| Olive Oil                |        ~ | tbsp   |
-| Garlic                   |        4 | cloves |
-| White Wine               |      1/3 | cups   |
-| Cornstarch               |        4 | tbsp   |
-| Almond milk              |      3/4 | cups   |
-| Nutritional Yeast        |        4 | tbsp   |
-| Parmesean                |      1/4 | cups   |
-| Pasta                    |       10 | ounces |
-|                          |          |        |
+| Ingredient               | Quantity | Unit   | Id     |
+|--------------------------+----------+--------+--------|
+| Brussel Sprouts (halved) |       16 | ounces | brus   |
+| Olive Oil                |      1-2 | tbsp   | oil    |
+| Garlic                   |        4 | cloves | garlic |
+| White Wine               |      1/3 | cups   | wine   |
+| Cornstarch               |        4 | tbsp   | corn   |
+| Almond milk              |      3/4 | cups   | milk   |
+| Nutritional Yeast        |        4 | tbsp   | yeast  |
+| Parmesean                |      1/4 | cups   | parm   |
+| Pasta                    |       10 | ounces | pasta  |
+|                          |          |        |        |
 ** Steps
-1) Preheat oven to 400 F. Add brussel sprouts to baking sheet in a single layer. Drizzel with oil and season with salt and pepper. Arranger in a single layer.
+1) Preheat oven to 400F. Add [#: brus | brussel sprouts] to baking sheet in a single layer. Drizzel with [#: oil | oil] and season with salt and pepper. Arranger in a single layer.
 2) Bring a pot of water to a boil.
-3) Heat a skillet. Add 1-2 tbsp of oil. Add garlic. Saute for 3 minutes.
-4) [t:00:02:00] Add wine. Saute for 2-4 minutes.
-5) Add cornstarch and almond milk and whisk. It'll be clumpy.
-6) Move the mixture to a blender. Add nutritional yeast, salt + pepper,
-   parmesean cheese. Blend on high until cremay and smooth.
+3) Heat a skillet. Add 1-2 tbsp of oil. Add [#: garlic | garlic]. Saute for 3 minutes.
+4) [&:00:02:00] Add [#: wine | wine]. Saute for 2-4 minutes.
+5) Add [#: corn | cornstarch] and [#: milk | almond milk] and whisk. It'll be clumpy.
+6) Move the mixture to a blender. Add [#: yeast | nutritional yeast], salt + pepper,
+   [#: parm | parmesan cheese]. Blend on high until creamy and smooth.
 7) Transfer sauce back to skilled and warm over medium low heat. It should
    thicken, then lower the heat to low and simmer until the pasta is cooked. If
    it gets too thick, add almond milk to thin it out. Try not to let a film form overtop.
-8) [t:00:12:00] Add brussel sprouts to the oven for 12-15 minutes or umtil
+8) [&:00:12:00] Add brussel sprouts to the oven for 12-15 minutes or until
    golden brown.
 9) At the same time as the previous step, add pasta to boiling water and cook
    according to the package instructions.
@@ -617,32 +625,31 @@ CLOSED: [2019-09-25 Wed 14:42]
 :rating: 4/5
 :END:
 ** Ingredients
-| Ingredient                       | Quantity | Unit |
-|----------------------------------+----------+------|
-| Quinoa                           |      1/2 | cups |
-| Edamame                          |        1 | cups |
-| Nuts (almonds, pecans, whatever) |      1/3 | cups |
-| A Beet (peeled)                  |        1 | --   |
-| A Large carrot                   |        1 | --   |
-| Baby Spinach or Arugula          |        2 | cups |
-| Avocado (cubed)                  |        1 | --   |
-| Apple Cider Vinegar              |        3 | tbsp |
-| Lime Juice                       |        2 | tbsp |
-| Olive Oil                        |        2 | tbsp |
-| Maple Syrup                      |        2 | tbsp |
-| Dijon Mustard                    |        1 | tsp  |
-| Salt, Pepper                     |       -- | --   |
-|                                  |          |      |
+| Ingredient                       | Quantity | Unit | Id     | Group    |
+|----------------------------------+----------+------+--------+----------|
+| Quinoa                           |      1/2 | cups | quin   | salad    |
+| Edamame                          |        1 | cups | eda    | salad    |
+| Nuts (almonds, pecans, whatever) |      1/3 | cups | nuts   | salad    |
+| A Beet (peeled)                  |        1 |      | beet   | salad    |
+| A Large carrot                   |        1 |      | carrot | salad    |
+| Baby Spinach or Arugula          |        2 | cups | greens | salad    |
+| Avocado (cubed)                  |        1 |      | avo    | salad    |
+| Apple Cider Vinegar              |        3 | tbsp | vin    | dressing |
+| Lime Juice                       |        2 | tbsp | lime   | dressing |
+| Olive Oil                        |        2 | tbsp | oil    | dressing |
+| Maple Syrup                      |        2 | tbsp | syr    | dressing |
+| Dijon Mustard                    |        1 | tsp  | dij    | dressing |
+| Salt, Pepper                     |        1 | dash | salt   | dressing |
 ** Steps
-1) [t:00:15:00] Cook the quinoa: combine the quinoa with 1 cup of water. Bring to a boil,
+1) [&:00:15:00] Cook the [#: quin | quinoa]: combine the quinoa with 1 cup of water. Bring to a boil,
    reduce heat and simmer for 15 minutes.
-2) [t:00:05:00] Cook the edamame: bring a pot of water to boil, add the frozen edamame for 5
+2) [&:00:05:00] Cook the [#: eda | edamame]: bring a pot of water to boil, add the frozen edamame for 5
    minutes. Drain and set aside.
-3) [t:00:05:00] Toast the nuts in a pan over medium heat until they are fragrant. About 5 minutes.
-4) Prepare the beets/carrots: either chop finely or use a spiralizer to prepare
+3) [&:00:05:00] Toast the [#: nuts | nuts] in a pan over medium heat until they are fragrant. About 5 minutes.
+4) Prepare the [#: beets | beets] and [#: carrot | carrots]: either chop finely or use a spiralizer to prepare
    the vegetables.
-5) Prepare the vinaigrette: whisk together Apple cider vinegar, lime juice,
-   olive oil, maple syrup, dijon mustard, and salt and pepper.
+5) Prepare the vinaigrette: whisk together [#: vin | apple cider vinegar], [#: lime | lime juice],
+   [#: oil | olive oil], [#: syr |  maple syrup ], [#: dij | dijon mustard], and [#: salt | salt and pepper].
 6) Apply the dressing, not too much - if you have a lot of salad, portion it out
    and store undressed leftovers and save the dressing for leftovers.
 ** Content
@@ -663,32 +670,32 @@ CLOSED: [2019-10-06 Sun 12:50]
 :rating: 4/5
 :slug: kimchi-udon
 :serves: 2
-:time: 00:40:00
+:time: 00:30:00
 :END:
 ** Ingredients
-| Ingredient                                           | Quantity | Unit |
-|------------------------------------------------------+----------+------|
-| Butter, unsalted                                     |        5 | tbsp |
-| Kimchi (chopped)                                     |        1 | cups |
-| Kimchi (juice)                                       |      1/3 | cups |
-| Gochujang                                            |        2 | tbsp |
-| Vegetable Broth                                      |     1/2/ | cup  |
-| Udon Noodles                                         |        1 | lb   |
-| Toasted Sesame Seeds                                 |        1 | tbsp |
-| Salt                                                 |          | --   |
-| Egg yolks                                            |        4 | --   |
-| Scallions (white and pale green only, thinly sliced) |        3 | --   |
+| Ingredient                | Quantity | Unit  | Id           |
+|---------------------------+----------+-------+--------------|
+| Butter, unsalted          |        5 | tbsp  | butter       |
+| Kimchi (chopped)          |        1 | cups  | kimchi       |
+| Kimchi (juice)            |      1/3 | cups  | kimchi-juice |
+| Gochujang                 |        2 | tbsp  | gochu        |
+| Vegetable Broth           |     1/2/ | cup   | veg-broth    |
+| Udon Noodles              |        1 | lb    | udon         |
+| Toasted Sesame Seeds      |        1 | tbsp  | sesa         |
+| Salt                      |        1 | pinch | salt         |
+| Egg yolks                 |     2- 4 |       | yolks        |
+| Scallions (thinly sliced) |        3 |       | scall        |
 ** Steps
-1) Chop kimchi and collect kimchi juice.
-2) [t: 00:04:00] Heat 2 tbsp of butter on medium high. Add chopped kimchi and gochujang and
+1) Chop [#: kimchi | kimchi] and collect [#: kimchi-juice | kimchi juice].
+2) [&: 00:04:00] Heat 2 tbsp of butter on medium high. Add chopped kimchi and [#: gochu | gochujang] and
    cook, stirring until kimchi is softened and lightly caramelized, around 4 minutes.
-3) [t: 00:03:00] Add brows and kimchi juice and bring to a simmer. Cook until slightly reduce,
-   about 3 minutes
-4) Boil noodles according to package directions.
-5) [t: 00:02:00] Using tongs, transfer noodles to the skiller and add the remaining 3 tbsp of
+3) [&: 00:03:00] Add [#: veg-broth | broth] and kimchi juice and bring to a simmer. Cook until slightly reduced,
+   about 3 minutes.
+4) Boil [#: udon | noodles] according to package directions.
+5) [&: 00:02:00] Using tongs, transfer noodles to the skillet and add the remaining 3 tbsp of
    butter. Cook, tossing often, about 2 minutes.
 6) Season with salt if needed.
-7) Deviding into bowls, top with egg yolks, scallions and sesame seeds.
+7) Divide into bowls, top with egg yolks, [#: scall | scallions] and sesame seeds.
 ** Content
 :PROPERTIES:
 :type: whisper
@@ -710,24 +717,24 @@ CLOSED: [2019-10-06 Sun 12:50]
 :time: 00:30:00
 :END:
 ** Ingredients
-| Ingredient                 | Quantity | Unit     |
-|----------------------------+----------+----------|
-| Mirin                      | 1/4      | cups     |
-| Miso                       | 1/4      | cups     |
-| Rice Wine Vinegar          | 2        | tbsp     |
-| Ginger - peeled and grated | 2        | tsp      |
-| Asparagus                  | 2        | bunches  |
-| Lime wedges                | 4        | --       |
-| Scallions (Green onions)   | 1/4      | cups     |
-| Sesame Seeds               | --       | sprinkle |
-|                            |          |          |
+| Ingredient                 | Quantity | Unit     | Id     |
+|----------------------------+----------+----------+--------|
+| Mirin                      | 1/4      | cups     | mirin  |
+| Miso                       | 1/4      | cups     | miso   |
+| Rice Wine Vinegar          | 2        | tbsp     | rwv    |
+| Ginger - peeled and grated | 2        | tsp      | ginger |
+| Asparagus                  | 2        | bunches  | asp    |
+| Lime wedges                | 4        |          | lime   |
+| Scallions (Green onions)   | 1/4      | cups     | scall  |
+| Sesame Seeds               |          | sprinkle | seeds  |
+|                            |          |          |        |
 ** Steps
 1) Prepare a grill to heat.
-2) Whisk mirin, miso, vinegar, ginger, in a small bowl.
-3) Place asparagus in a container and pour miso mixture over. Toss to coat.
-4) Let things stew a few minutes. Cut the scallions.
-5) [t:00:04:00] Grill asparagus (or put it in a pan if you don't have a grill), turning occasionally until charred on all sides. About 4 minutes.
-6) Transfer to plate, squeeze lime juice and top with scallions and sesame seeds.
+2) Whisk [#: mirin |  mirin ], [#: miso | miso], [#: rwv | vinegar], [#: ginger | ginger], in a small bowl.
+3) Place [#: asp | asparagus] in a container and pour miso mixture over. Toss to coat.
+4) Let things stew a few minutes. Cut the [#: scall | scallions].
+5) [&:00:04:00] Grill asparagus (or put it in a pan if you don't have a grill), turning occasionally until charred on all sides. About 4 minutes.
+6) Transfer to plate, squeeze [#: lime | lime juice] and top with scallions and sesame seeds.
 ** Content
 :PROPERTIES:
 :type: whisper
@@ -752,23 +759,23 @@ CLOSED: [2019-10-06 Sun 12:50]
 :time: 00:40:00
 :END:
 ** Ingredients
-| Ingredient                  | Quantity | Unit |
-|-----------------------------+----------+------|
-| Quinoa                      | 1        | cups |
-| Water                       | 2        | cups |
-| Maple Syrup                 | 2~       | tbsp |
-| Pecans or Walnuts (chopped) | 1/4      | cups |
-| Cinnamon                    | 1 or 2   | tsp  |
-| Coconut oil                 | 2        | tbsp |
-| Fresh berries               | --       | --   |
-| Almond butter               | --       | --   |
+| Ingredient                  | Quantity | Unit | Id     |
+|-----------------------------+----------+------+--------|
+| Quinoa                      |        1 | cups | quin   |
+| Water                       |        2 | cups | water  |
+| Maple Syrup                 |        2 | tbsp | syr    |
+| Pecans or Walnuts (chopped) |      1/4 | cups | nuts   |
+| Cinnamon                    |   1 or 2 | tsp  | cin    |
+| Coconut oil                 |        2 | tbsp | oil    |
+| Fresh berries               |          |      | berr   |
+| Almond butter               |          |      | almbut |
 ** Steps
-1) [t:00:15:00] Make the quinoa: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes
-2) [t:00:04:00] Heat chopped nuts in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes.
-3) [t:00:00:15] Add coconut oil, cinnamon to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds.
-4) [t:00:00:02] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add maple syrup.
-5) Add the nut to the quinoa. Top with a sprinkle of cinnamon.
-6) Top with fresh berries and almond butter.
+1) [&:00:15:00] Make the [#: quin | quinoa]: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes
+2) [&:00:04:00] Heat chopped [#: nuts | nuts] in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes.
+3) [&:00:00:15] Add [#: oil | coconut oil], [#: cin | cinnamon] to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds.
+4) [&:00:00:02] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add [#: syr | maple syrup].
+5) Add the nuts to the quinoa. Top with a sprinkle of cinnamon.
+6) Top with [#: berr | fresh berries] and [#: almbut | almond butter].
 ** Content
 :PROPERTIES:
 :type: big-quote
@@ -790,22 +797,22 @@ CLOSED: [2019-10-06 Sun 12:50]
 :time: 00:20:00
 :END:
 ** Ingredients
-| Ingredient                | Quantity | Unit             |
-|---------------------------+----------+------------------|
-| Black beans               |        3 | Cans (15oz/each) |
-| Canned Corn               |        1 | cups             |
-| Bell Pepper (any colour)  |        1 | --               |
-| Cherry Tomatoes           |        1 | cups             |
-| Red Onion (diced)         |        1 | cups             |
-| Jalapeno (seeds optional) |        1 |                  |
-| Lime Zest                 |      1/2 | tsp              |
-| Lime juice                |        2 | tbsp             |
-| Olive oil                 |      1/4 | cups             |
-| White vinegar             |      1/4 | cups             |
-| Chili powder              |      1/2 | tsp              |
-| Cumin                     |      1/2 | tsp              |
-| Salt                      |      1/2 | tsp              |
-| Sliced Avocado (optional) |        1 | --               |
+| Ingredient                | Quantity | Unit             | Id         |
+|---------------------------+----------+------------------+------------|
+| Black beans               |        3 | Cans (15oz/each) | beans      |
+| Canned Corn               |        1 | cups             | corn       |
+| Bell Pepper (any colour)  |        1 |                  | pepper     |
+| Cherry Tomatoes           |        1 | cups             | tomatoes   |
+| Red Onion (diced)         |        1 | cups             | onion      |
+| Jalapeno (seeds optional) |        1 |                  | jalap      |
+| Lime Zest                 |      1/2 | tsp              | lime-zest  |
+| Lime juice                |        2 | tbsp             | lime-juice |
+| Olive oil                 |      1/4 | cups             | oil        |
+| White vinegar             |      1/4 | cups             | vin-wh     |
+| Chili powder              |      1/2 | tsp              | chil       |
+| Cumin                     |      1/2 | tsp              | cumin      |
+| Salt                      |      1/2 | tsp              | salt       |
+| Sliced Avocado (optional) |        1 |                  | avo        |
 ** Steps
 1) In a large serving bowl combine all the ingredients.
 2) Cover and chill. Leftovers should last 3 to 4 days.
@@ -824,71 +831,71 @@ CLOSED: [2019-10-06 Sun 12:50]
 :name: Thai-Spice Rice Bowls
 :original_recipe: https://cookieandkate.com/thai-spiced-rice-bowls-recipe/
 :rating: 3/5
-:slug: thai-rice-bowl
 :serves: 6
+:slug: thai-rice-bowl
 :time: 00:40:00
 :END:
 ** Ingredients
-| Ingredient             |  Quantity | Unit      |
-|------------------------+-----------+-----------|
-| Rice                   |         1 | cups      |
-| Olive oil              |         1 | tsp       |
-| Garlic                 |         4 | cloves    |
-| Ginger                 |         1 | thumb-tip |
-| Red curry paste        |         1 | tbsp      |
-| Soy sauce              |       1/4 | cups      |
-| Peanut butter          |       1/4 | cups      |
-| Vegetable broth        |         4 | cups      |
-| Coconut milk           | 1 (14 oz) | can       |
-| Honey                  |         2 | tbsp      |
-| Carrots (matchsticked) |         1 | cups      |
-| Cucumber               |       1/2 | --        |
-| Bell pepper (sliced)   |         1 | --        |
-| Peanuts                |       1/4 | cups      |
-| Green onions (sliced)  |         2 | --        |
-| Jalapeno               |         1 | --        |
-| Lime                   |         1 | --        |
+| Ingredient             |  Quantity | Unit      | Id       | Group |
+|------------------------+-----------+-----------+----------+-------|
+| Olive oil              |         1 | tsp       | oil      | broth |
+| Red curry paste        |         1 | tbsp      | rcp      | broth |
+| Soy sauce              |       1/4 | cups      | soysauce | broth |
+| Peanut butter          |       1/4 | cups      | pb       | broth |
+| Vegetable broth        |         4 | cups      | vegbroth | broth |
+| Honey                  |         2 | tbsp      | honey    | broth |
+| Coconut milk           | 1 (14 oz) | can       | coco     | broth |
+| Garlic                 |         4 | cloves    | garlic   | broth |
+| Ginger                 |         1 | thumb-tip | ginger   | broth |
+| Rice                   |         1 | cups      | rice     |       |
+| Carrots (matchsticked) |         1 | cups      | carrots  |       |
+| Cucumber               |       1/2 |           | cucu     |       |
+| Bell pepper (sliced)   |         1 |           | bell     |       |
+| Peanuts                |       1/4 | cups      | peanuts  |       |
+| Green onions (sliced)  |         2 |           | gonion   |       |
+| Jalapeno               |         1 |           | jalap    |       |
+| Lime                   |         1 |           | lime     |       |
 ** Steps
-1) Make the rice. Cook according to packaging.
-2) Prepare garnishes: matchstick the carrots, thinly slice the cucumber, slice the jalapeno into rings and chop the peanuts.
-3) Broth pt. 1: heat saucepan with oil. Add garlic and ginger when hot, for 30 seconds.
-4) Broth pt. 2: Add thai curry paste, soy sauce, peanut butter, vegetable broth, coconut milk and honey.
-5) [t:00:10:00] Broth pt. 3: Bring to boil, reduce heat, simmer for 10 minutes.
+1) Make the [#: rice | rice]. Cook according to packaging.
+2) Prepare garnishes: matchstick the [#:carrots | carrots], thinly slice the [#: cucu | cucumber], slice the [#: jalap | jalapeno] into rings and chop the [#: peanuts | peanuts].
+3) Broth pt. 1: heat saucepan with oil. Add [#: garlic | garlic] and [#: ginger | ginger] when hot, for 30 seconds.
+4) Broth pt. 2: Add [#: rcp | thai curry paste], [#: soysauce | soy sauce], [#: pb | peanut butter], [#: vegbroth | vegetable broth], [#: coco | coconut milk] and [#: honey | honey].
+5) [&:00:10:00] Broth pt. 3: Bring to boil, reduce heat, simmer for 10 minutes.
 6) Put rice in bowls, add broth, add diced vegetables as garnish. Enjoy!
 * TODO Grilled Tofu + Pineapple Salsa + Coconut Rice                            :needs_photos:
 :PROPERTIES:
-:slug: tofu-pineapple-rice
-:original_recipe: https://ohsheglows.com/2012/07/09/grilled-tofu-with-pineapple-salsa-and-coconut-rice/
-:time: 00:50:00
 :day_made: [2019-10-10]
+:ease_of_making: 3/5
+:imgs: 1.JPG,2.JPG,3.JPG
 :is_vegan: true
 :is_vegetarian: true
-:imgs: 1.JPG,2.JPG,3.JPG
 :name: Grilled Tofu + Pineapple Salsa + Coconut Rice
-:ease_of_making: 3/5
-:serves: 2-3
+:original_recipe: https://ohsheglows.com/2012/07/09/grilled-tofu-with-pineapple-salsa-and-coconut-rice/
 :rating: 3/5
+:serves: 2-3
+:slug: tofu-pineapple-rice
+:time: 00:50:00
 :END:
 ** Ingredients
-| Ingredient                | Quantity | Unit        | Group           | Id                |
-|---------------------------+----------+-------------+-----------------+-------------------|
-| Tofu (firm)               |        1 | package     | tofu            | tofu              |
-| Olive oil                 |       -- | --          | tofu            | olive_oil         |
-| salt                      |       -- | pinch       | tofu            | salt              |
-| Shredded Coconut          |      1/4 | cups        | coconut rice    | shredded_coconut  |
-| Brown rice                |        1 | cups        | coconut rice    | brown_rice        |
-| Coconut milk              |        1 | can (400ml) | coconut rice    | coconut_milk      |
-| Brown Sugar               |        2 | tsp         | coconut rice    | brown_sugar       |
-| Coconut oil               |        1 | tsp         | coconut rice    | coconut_oil       |
-| Pineapple (diced)         |    1+1/2 | cups        | pineapple salsa | pineapple         |
-| Red onion (diced)         |      1/4 | cups        | pineapple salsa | red_onion         |
-| Jalapenos (seeded, diced) |        1 | pepper      | pineapple salsa | jalapenos         |
-| Garlic (minced)           |        1 | clove       | pineapple salsa | garlic            |
-| Bell pepper               |        1 | --          | pineapple salsa | bell_pepper       |
-| Fresh lime juice          |        3 | tbsp        | pineapple salsa | lime_juice        |
-| Red pepper flakes         |        1 | dash        | pineapple salsa | red_pepper_flakes |
+| Ingredient                | Quantity | Unit        | Id                | Group           |
+|---------------------------+----------+-------------+-------------------+-----------------|
+| Tofu (firm)               |        1 | package     | tofu              | tofu            |
+| Olive oil                 |          |             | olive_oil         | tofu            |
+| salt                      |          | pinch       | salt              | tofu            |
+| Shredded Coconut          |      1/4 | cups        | shredded_coconut  | coconut rice    |
+| Brown rice                |        1 | cups        | brown_rice        | coconut rice    |
+| Coconut milk              |        1 | can (400ml) | coconut_milk      | coconut rice    |
+| Brown Sugar               |        2 | tsp         | brown_sugar       | coconut rice    |
+| Coconut oil               |        1 | tsp         | coconut_oil       | coconut rice    |
+| Pineapple (diced)         |    1+1/2 | cups        | pineapple         | pineapple salsa |
+| Red onion (diced)         |      1/4 | cups        | red_onion         | pineapple salsa |
+| Jalapenos (seeded, diced) |        1 | pepper      | jalapenos         | pineapple salsa |
+| Garlic (minced)           |        1 | clove       | garlic            | pineapple salsa |
+| Bell pepper               |        1 |             | bell_pepper       | pineapple salsa |
+| Fresh lime juice          |        3 | tbsp        | lime_juice        | pineapple salsa |
+| Red pepper flakes         |        1 | dash        | red_pepper_flakes | pineapple salsa |
 ** Steps
-1) [t:00:20:00] Press the tofu for about 20 minutes (put something heavy on it.)
+1) [&:00:20:00] Press the [#: tofu | tofu] for about 20 minutes (put something heavy on it.)
 2) Preheat your oven for the coconut rice. 300 degrees farenheiht. Toast it for
    8-12 minutes until golden brown.
 3) Go prep the salsa. Mix in bowl: diced pineapple, diced red onion, diced

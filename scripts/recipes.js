@@ -4,6 +4,7 @@ function Recipe() {
 
   this.getProps = (state) => state.currentRecipe.meta.properties
   this.getSlug = (state) => this.getProps(state).slug
+  this.getImg = (img) => `media/imgs/${img}`;
   this.getPhotos = (state) => {
     let imgs = this.getProps(state).imgs
     if (imgs == "false") {
@@ -17,25 +18,32 @@ function Recipe() {
   // Full Views ----------------------------------------------------------------
 
   this.viewSingle = (state) => {
-    let heroImg = `media/imgs/${this.getSlug(state)}-hero.jpg`;
+    let heroImg = this.getImg(this.getSlug(state) + "-hero.jpg")
     // TODO handle invalid reciple currentId; make a gotoview func
     return h("section", {}, [
       ui.hero(heroImg, () => this._viewMetaData(state)),
-      // ui.giantQuote("...I've made a tornado of dates."),
       this._viewContent(state),
       this._viewPhotos(state),
       h("div", { class: "recipeIngredients-Instructions" }, [
         ui.largeText("INGREDIENTS / INSTRUCTIONS"),
-        h("div", { class: "content-w", style: { flexDirection: "row", margin: "32px 0 32px" } }, [
+        h("div", { class: "content-xw", style: { flexDirection: "row", margin: "32px 0 32px" } }, [
           this._viewIngredients(state),
           this._viewInstructions(state),
         ])])])}
 
   this.viewAll = (state) => {
-    let rndRecipe = util.randomProperty(db.recipes);
-    let rndHero = `media/imgs/${rndRecipe.meta.properties.slug}-hero.jpg`;
+    let rndRecipe;
 
-    return h("section", { class: "rL" }, [
+    // Get the hero for the view All. Make it static if the timer is running.
+    if (state.timerRunning) {
+      rndRecipe = db.recipes[Object.keys(db.recipes)[3]]
+    } else {
+      rndRecipe = util.rndObjProp(db.recipes);
+    }
+
+    let rndHero = this.getImg(rndRecipe.meta.properties.slug + "-hero.jpg")
+
+    return h("section", { class: "rL"}, [
       ui.hero(rndHero, () => this._viewAllHero(rndRecipe)),
       h("div", { class: "content" }, [
 
@@ -71,15 +79,16 @@ function Recipe() {
    * Renders inside the recipeSingle view hero head.er
    */
   this._viewMetaData = (state) => {
-    let liClass = { class: "recipeMetaData" };
+    let liClass = { class: "recipeMetaDatum" };
     let { original_recipe, day_made, name, is_vegan, rating, serves, time } = state.currentRecipe.meta.properties;
     let mealType = is_vegan ? "Vegan" : "Vegetarian"
 
     return h("div", { class: "recipeProperties" }, [
       ui.navbar(),
-      h("div", { class: "content-w" }, [
-        ui.largeText(name),
-        h("ul", { class: "recipeMetaData" }, [
+
+      ui.largeText(name),
+
+      h("ul", { class: "recipeMetaData", style: {position: "absolute"} }, [
           h("li", liClass,
             h("a", { href: original_recipe, target: "_blank", class: "link-light" }, "Original Recipe")),
           h("li", liClass, mealType),
@@ -87,7 +96,8 @@ function Recipe() {
           h("li", liClass, `Time: ${time}`),
           h("li", liClass, `Rating: ${rating}`),
           h("li", liClass, day_made)
-        ])])]);
+        ])
+    ]);
   }
 
   this._viewContent = (state) => {
@@ -148,27 +158,32 @@ function Recipe() {
     }, [
       h("table", { class: "recipeIngredientTable", style: { width: "100%" } }, [
         h("thead", { class: "recipeIngredientHeadRow" },
-          h("tr", {}, [ingredients.keys.map(e => h("th", $tr, e))])
+          h("tr", {}, [ingredients.keys.map((e, index) => {
+            if (index < 3) return h("th", $tr, e)
+          })])
         ),
         h('tbody', { class: "recipeIngredientTableBody" }, [
           ingredients.data.map(e => {
             return h("tr", { class: "recipeIngredient" }, [
-              h("td", {}, e.Ingredient),
-              h("td", {}, e.Quantity),
-              h("td", {}, e.Unit)
+              h("td", {style: {height: "20px"}}, e.Ingredient),
+              h("td", {style: {height: "20px"}}, e.Quantity),
+              h("td", {style: {height: "20px"}}, e.Unit)
             ])
           })])])])}
 
     this._viewInstructions = (state) => {
       let steps = state.currentRecipe.instructions;
-      let $wrapper = { style: { marginLeft: "16px" } }
+      let $wrapper = { style: { marginLeft: "16px", flex: 2 } }
 
       return h("div", {...$wrapper, class: "recipeIngredients-Instructions-bg" }, [
         steps.map((s, index) => {
+					console.log(s);
           let stepClass =
             index == state.currentRecipeStep
               ? "recipeStep recipeStep--active"
               : "recipeStep";
+
+          // Timer ---
           let renderTimer = () => {
             if (s.timer) {
               let setTimerPayload = { time: util.strToSec(s.timer), step: s.f };
@@ -180,12 +195,32 @@ function Recipe() {
             }
           };
 
+          // Rendered ingredient step
+          // activates a modal with the ingredients quantity in it.
+          let renderStep = (f) => {
+            return f.map(c => {
+							let rejoinedVal = c.val === "," ? "" : " "
+
+              if (typeof(c.attr) === "undefined") {
+                return h("span", {}, c.val.trim() + rejoinedVal)
+              }
+
+              return h("span", {class: "recipeStepSingleIngredient", onClick: [$act.modalSet, {fn: ui.modalShowIngredient, val: c.attr, state}]}, c.val.trim() + rejoinedVal)
+            })
+          }
+
+
+          // Template ---
           return h("li",
-            { class: stepClass, onClick: [$act.updateCurrentRecipeStep, index] }, [
+            { class: stepClass, onClick: [$act.setRecipeStep, index] }, [
             h("div", { class: "recipeStep_Wrap" }, [
               h("div",
                 { class: "recipeStep_TextContent", style: { alignContent: "center" } },
-                (index + 1 + ". " + s.f)),
+                [
+                  h("span", {}, index + 1 + ". "),
+                  renderStep(s.f)
+                ]
+               ),
             ]),
             renderTimer()
           ])})])} // I miss lisp
