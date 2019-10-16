@@ -142,7 +142,7 @@ h1,h2,h3,h4,h5,h6 {
   align-items: center;
   margin: 0 auto;
   justify-content: center;
-  background: antiquewhite;
+  background: #faebd79e;
   padding: 84px 0;
 }
 
@@ -174,8 +174,8 @@ h1,h2,h3,h4,h5,h6 {
   align-self: flex-start;
   background: white;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
-  max-height: 550px;
-  overflow-y: scroll;
+  /* max-height: 550px; */
+  /* overflow-y: scroll; */
   padding: 16px;
 }
 
@@ -229,7 +229,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .recipeStep--active:before {
   content: "";
-  margin-right: -4px;
+  margin-right: -3px;
   background: var(--primary);
 }
 
@@ -251,7 +251,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .recipeStep_TextContent {
   padding: 0px 16px;
-  line-height: 32px;
+  line-height: 28px;
   font-size: 16px;
 }
 
