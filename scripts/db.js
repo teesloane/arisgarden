@@ -3107,7 +3107,7 @@ var db = {
           ]
         },
         {
-          "o": "Prepare the vinaigrette: whisk together [#: vin | apple cider vinegar], [#: lime | lime juice], [#: oil | olive oil], [#: syr |  maple syrup ], [#:dij | dijon mustard], and [#: salt | salt and pepper].",
+          "o": "Prepare the vinaigrette: whisk together [#: vin | apple cider vinegar], [#: lime | lime juice], [#: oil | olive oil], [#: syr |  maple syrup ], [#: dij | dijon mustard], and [#: salt | salt and pepper].",
           "f": [
             {
               "val": "Prepare the vinaigrette: whisk together"
@@ -3142,7 +3142,7 @@ var db = {
             },
             {
               "val": "dijon mustard",
-              "attr": "ij"
+              "attr": "dij"
             },
             {
               "val": ", and"

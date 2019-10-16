@@ -14,7 +14,14 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+}
 
+.content-xw {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .main {
@@ -296,6 +303,8 @@
   flex-direction: column;
   justify-content: center;
   padding: 32px;
+  min-width: 25%;
+  min-height: 35%;
 }
 
 .v_Modal--ingredientHeading {
@@ -305,7 +314,7 @@
 }
 
 .v_Modal--ingredientQuant {
-  font-size: 22px;
+  font-size: 38px;
   font-weight: bold;
   margin: 16px 0;
 }

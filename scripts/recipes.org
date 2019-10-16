@@ -649,7 +649,7 @@ CLOSED: [2019-09-25 Wed 14:42]
 4) Prepare the [#: beets | beets] and [#: carrot | carrots]: either chop finely or use a spiralizer to prepare
    the vegetables.
 5) Prepare the vinaigrette: whisk together [#: vin | apple cider vinegar], [#: lime | lime juice],
-   [#: oil | olive oil], [#: syr |  maple syrup ], [#:dij | dijon mustard], and [#: salt | salt and pepper].
+   [#: oil | olive oil], [#: syr |  maple syrup ], [#: dij | dijon mustard], and [#: salt | salt and pepper].
 6) Apply the dressing, not too much - if you have a lot of salad, portion it out
    and store undressed leftovers and save the dressing for leftovers.
 ** Content

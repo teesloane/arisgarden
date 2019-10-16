@@ -26,7 +26,7 @@ function Recipe() {
       this._viewPhotos(state),
       h("div", { class: "recipeIngredients-Instructions" }, [
         ui.largeText("INGREDIENTS / INSTRUCTIONS"),
-        h("div", { class: "content-w", style: { flexDirection: "row", margin: "32px 0 32px" } }, [
+        h("div", { class: "content-xw", style: { flexDirection: "row", margin: "32px 0 32px" } }, [
           this._viewIngredients(state),
           this._viewInstructions(state),
         ])])])}
@@ -159,21 +159,21 @@ function Recipe() {
       h("table", { class: "recipeIngredientTable", style: { width: "100%" } }, [
         h("thead", { class: "recipeIngredientHeadRow" },
           h("tr", {}, [ingredients.keys.map((e, index) => {
-						if (index < 3) return h("th", $tr, e)
-					})])
+            if (index < 3) return h("th", $tr, e)
+          })])
         ),
         h('tbody', { class: "recipeIngredientTableBody" }, [
           ingredients.data.map(e => {
             return h("tr", { class: "recipeIngredient" }, [
-              h("td", {style: {height: "40px"}}, e.Ingredient),
-              h("td", {style: {height: "40px"}}, e.Quantity),
-              h("td", {style: {height: "40px"}}, e.Unit)
+              h("td", {style: {height: "20px"}}, e.Ingredient),
+              h("td", {style: {height: "20px"}}, e.Quantity),
+              h("td", {style: {height: "20px"}}, e.Unit)
             ])
           })])])])}
 
     this._viewInstructions = (state) => {
       let steps = state.currentRecipe.instructions;
-      let $wrapper = { style: { marginLeft: "16px" } }
+      let $wrapper = { style: { marginLeft: "16px", flex: 2 } }
 
       return h("div", {...$wrapper, class: "recipeIngredients-Instructions-bg" }, [
         steps.map((s, index) => {
