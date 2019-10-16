@@ -4,6 +4,7 @@ function Recipe() {
 
   this.getProps = (state) => state.currentRecipe.meta.properties
   this.getSlug = (state) => this.getProps(state).slug
+  this.getImg = (img) => `media/imgs/${img}`;
   this.getPhotos = (state) => {
     let imgs = this.getProps(state).imgs
     if (imgs == "false") {
@@ -17,11 +18,10 @@ function Recipe() {
   // Full Views ----------------------------------------------------------------
 
   this.viewSingle = (state) => {
-    let heroImg = `media/imgs/${this.getSlug(state)}-hero.jpg`;
+    let heroImg = this.getImg(this.getSlug(state) + "-hero.jpg")
     // TODO handle invalid reciple currentId; make a gotoview func
     return h("section", {}, [
       ui.hero(heroImg, () => this._viewMetaData(state)),
-      // ui.giantQuote("...I've made a tornado of dates."),
       this._viewContent(state),
       this._viewPhotos(state),
       h("div", { class: "recipeIngredients-Instructions" }, [
@@ -32,10 +32,18 @@ function Recipe() {
         ])])])}
 
   this.viewAll = (state) => {
-    let rndRecipe = util.randomProperty(db.recipes);
-    let rndHero = `media/imgs/${rndRecipe.meta.properties.slug}-hero.jpg`;
+    let rndRecipe;
 
-    return h("section", { class: "rL" }, [
+    // Get the hero for the view All. Make it static if the timer is running.
+    if (state.timerRunning) {
+      rndRecipe = db.recipes[Object.keys(db.recipes)[3]]
+    } else {
+      rndRecipe = util.rndObjProp(db.recipes);
+    }
+
+    let rndHero = this.getImg(rndRecipe.meta.properties.slug + "-hero.jpg")
+
+    return h("section", { class: "rL"}, [
       ui.hero(rndHero, () => this._viewAllHero(rndRecipe)),
       h("div", { class: "content" }, [
 

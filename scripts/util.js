@@ -1,6 +1,6 @@
 function Util() {
   // get a random property from an object
-  this.randomProperty = function (obj) {
+  this.rndObjProp = function (obj) {
     var keys = Object.keys(obj)
     return obj[keys[ keys.length * Math.random() << 0]];
   };

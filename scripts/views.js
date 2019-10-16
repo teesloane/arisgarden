@@ -147,7 +147,7 @@ function UiFn() {
 
   this.modal = (state) => {
     if (state.currentModal) {
-      return h("section", {class: "v_Modal"}, [
+      return h("section", {class: "v_Modal", onClick: [$act.modalClose]}, [
         h("div", {
           class: "v_Modal--close_btn",
           onClick: [$act.modalClose]

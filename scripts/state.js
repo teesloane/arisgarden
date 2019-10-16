@@ -16,9 +16,7 @@ const $act = {
   // actions
   setRecipeStep: (s, i) => ({...s, currentRecipeStep: i}),
   modalClose:    (s, _) => ({...s, currentModal: null}),
-  modalSet:      (s, p) => {
-    return ({...s, currentModal: () => p.fn(s, p.val)})
-  },
+  modalSet:      (s, p) => {return ({...s, currentModal: () => p.fn(s, p.val)})},
 
 
   /* TIMER ------------------------------------------------------------------- */
