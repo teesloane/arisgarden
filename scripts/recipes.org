@@ -863,7 +863,8 @@ CLOSED: [2019-10-06 Sun 12:50]
 :END:
 - The original recipe instructs you to make your own pesto. I don't have the energy to find million dollar pine nuts right now! Too bad!
   I'm buying a can of pesto! Too bad for you recipe! You can't tell me what to do!
-* TODO Thai-Spice Rice Bowls                                                    :needs_photos:
+* DONE Thai-Spice Rice Bowls                                                    :needs_photos:
+CLOSED: [2019-10-16 Wed 23:14]
 :PROPERTIES:
 :day_made: [2019-10-07]
 :ease_of_making: 5/5
@@ -891,9 +892,9 @@ CLOSED: [2019-10-06 Sun 12:50]
 | Ginger                 |         1 | thumb-tip | ginger   | broth |
 | Rice                   |         1 | cups      | rice     |       |
 | Carrots (matchsticked) |         1 | cups      | carrots  |       |
+| Peanuts                |       1/4 | cups      | peanuts  |       |
 | Cucumber               |       1/2 |           | cucu     |       |
 | Bell pepper (sliced)   |         1 |           | bell     |       |
-| Peanuts                |       1/4 | cups      | peanuts  |       |
 | Green onions (sliced)  |         2 |           | gonion   |       |
 | Jalapeno               |         1 |           | jalap    |       |
 | Lime                   |         1 |           | lime     |       |
@@ -909,14 +910,15 @@ CLOSED: [2019-10-06 Sun 12:50]
 :type: big-quote
 :END:
 - Is it supposed to be so soupy?
-* TODO Grilled Tofu + Pineapple Salsa + Coconut Rice                            :needs_photos:
+* DONE Pineapple Salsa + Coconut Rice                            :needs_photos:
+CLOSED: [2019-10-16 Wed 23:15]
 :PROPERTIES:
 :day_made: [2019-10-10]
 :ease_of_making: 3/5
 :imgs: 1.JPG,2.JPG,3.JPG
 :is_vegan: true
 :is_vegetarian: true
-:name: Grilled Tofu + Pineapple Salsa + Coconut Rice
+:name: Pineapple Salsa + Coconut Rice
 :original_recipe: https://ohsheglows.com/2012/07/09/grilled-tofu-with-pineapple-salsa-and-coconut-rice/
 :rating: 3/5
 :serves: 2-3
@@ -926,9 +928,10 @@ CLOSED: [2019-10-06 Sun 12:50]
 ** Ingredients
 | Ingredient                | Quantity | Unit        | Id                | Group           |
 |---------------------------+----------+-------------+-------------------+-----------------|
-| Tofu (firm)               |        1 | package     | tofu              | tofu            |
 | Olive oil                 |          |             | olive_oil         | tofu            |
-| salt                      |          | pinch       | salt              | tofu            |
+| Bell pepper               |        1 |             | bell_pepper       | pineapple salsa |
+| Tofu (firm)               |        1 | package     | tofu              | tofu            |
+| Salt                      |          | pinch       | salt              | tofu            |
 | Shredded Coconut          |      1/4 | cups        | shredded_coconut  | coconut rice    |
 | Brown rice                |        1 | cups        | brown_rice        | coconut rice    |
 | Coconut milk              |        1 | can (400ml) | coconut_milk      | coconut rice    |
@@ -938,7 +941,6 @@ CLOSED: [2019-10-06 Sun 12:50]
 | Red onion (diced)         |      1/4 | cups        | red_onion         | pineapple salsa |
 | Jalapenos (seeded, diced) |        1 | pepper      | jalapenos         | pineapple salsa |
 | Garlic (minced)           |        1 | clove       | garlic            | pineapple salsa |
-| Bell pepper               |        1 |             | bell_pepper       | pineapple salsa |
 | Fresh lime juice          |        3 | tbsp        | lime_juice        | pineapple salsa |
 | Red pepper flakes         |        1 | dash        | red_pepper_flakes | pineapple salsa |
 ** Steps

@@ -4141,6 +4141,13 @@ var db = {
             "Group": ""
           },
           {
+            "Ingredient": "Peanuts",
+            "Quantity": "1/4",
+            "Unit": "cups",
+            "Id": "peanuts",
+            "Group": ""
+          },
+          {
             "Ingredient": "Cucumber",
             "Quantity": "1/2",
             "Unit": "",
@@ -4152,13 +4159,6 @@ var db = {
             "Quantity": "1",
             "Unit": "",
             "Id": "bell",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Peanuts",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "peanuts",
             "Group": ""
           },
           {
@@ -4343,7 +4343,7 @@ var db = {
           "imgs": "1.JPG,2.JPG,3.JPG",
           "is_vegan": "true",
           "is_vegetarian": "true",
-          "name": "Grilled Tofu + Pineapple Salsa + Coconut Rice",
+          "name": "Pineapple Salsa + Coconut Rice",
           "original_recipe": "https://ohsheglows.com/2012/07/09/grilled-tofu-with-pineapple-salsa-and-coconut-rice/",
           "rating": "3/5",
           "serves": "2-3",
@@ -4362,13 +4362,6 @@ var db = {
         ],
         "data": [
           {
-            "Ingredient": "Tofu (firm)",
-            "Quantity": "1",
-            "Unit": "package",
-            "Id": "tofu",
-            "Group": "tofu"
-          },
-          {
             "Ingredient": "Olive oil",
             "Quantity": "",
             "Unit": "",
@@ -4376,7 +4369,21 @@ var db = {
             "Group": "tofu"
           },
           {
-            "Ingredient": "salt",
+            "Ingredient": "Bell pepper",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "bell_pepper",
+            "Group": "pineapple salsa"
+          },
+          {
+            "Ingredient": "Tofu (firm)",
+            "Quantity": "1",
+            "Unit": "package",
+            "Id": "tofu",
+            "Group": "tofu"
+          },
+          {
+            "Ingredient": "Salt",
             "Quantity": "",
             "Unit": "pinch",
             "Id": "salt",
@@ -4443,13 +4450,6 @@ var db = {
             "Quantity": "1",
             "Unit": "clove",
             "Id": "garlic",
-            "Group": "pineapple salsa"
-          },
-          {
-            "Ingredient": "Bell pepper",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "bell_pepper",
             "Group": "pineapple salsa"
           },
           {
