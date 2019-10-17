@@ -24,7 +24,7 @@ function Recipe() {
       ui.hero(heroImg, () => this._viewMetaData(state)),
       this._viewContent(state),
       this._viewPhotos(state),
-      h("div", { class: "recipeIngredients-Instructions" }, [
+      h("div", { class: "rs_ingr-inst" }, [
         ui.largeText("INGREDIENTS / INSTRUCTIONS"),
         h("div", { class: "content-xw", style: { flexDirection: "row", margin: "32px 0 32px" } }, [
           this._viewIngredients(state),
@@ -48,13 +48,13 @@ function Recipe() {
       h("div", { class: "content" }, [
 
         // Recipe List
-        h("ul", { class: "rL_list" }, [
+        h("ul", { class: "rl_list" }, [
           Object.keys(db.recipes).map(k => {
             let r = db.recipes[k]
             let p = r.meta.properties;
             let link = "#/recipes/" + p.slug;
             return h("li", { class: "" }, [
-              h("a", { class: "rL_link", href: link }, p.name)
+              h("a", { class: "rl_link", href: link }, p.name)
             ])})])])])}
 
   // SUB VIEWS -----------------------------------------------------------------
@@ -64,13 +64,13 @@ function Recipe() {
    * Renders inside the view All recipes hero header
    */
   this._viewAllHero = (recipe) => {
-    let liAttr = { class: "rL_hero_li" }
+    let liAttr = { class: "rl_hero_li" }
     let p = recipe.meta.properties
 
     return h("div", {}, [
       ui.navbar(),
 
-      h("ul", { class: "rL_hero_data" }, [
+      h("ul", { class: "rl_hero_data" }, [
         h("li", liAttr, p.name),
         h("li", liAttr, p.day_made),
       ])])}
@@ -79,16 +79,16 @@ function Recipe() {
    * Renders inside the recipeSingle view hero head.er
    */
   this._viewMetaData = (state) => {
-    let liClass = { class: "recipeMetaDatum" };
+    let liClass = { class: "rs_metadatum" };
     let { original_recipe, day_made, name, is_vegan, rating, serves, time } = state.currentRecipe.meta.properties;
     let mealType = is_vegan ? "Vegan" : "Vegetarian"
 
-    return h("div", { class: "recipeProperties" }, [
+    return h("div", { class: "rs_props" }, [
       ui.navbar(),
 
       ui.largeText(name),
 
-      h("ul", { class: "recipeMetaData", style: {position: "absolute"} }, [
+      h("ul", { class: "rs_metadata", style: {position: "absolute"} }, [
           h("li", liClass,
             h("a", { href: original_recipe, target: "_blank", class: "link-light" }, "Original Recipe")),
           h("li", liClass, mealType),
@@ -135,10 +135,10 @@ function Recipe() {
     if (this.getPhotos(state) == false) {
       return h("span", {}, "")
     } else {
-      return h("section", { class: "recipePhotos" }, [
+      return h("section", { class: "rs_photos" }, [
         this.getPhotos(state).map(i => {
           let img = `media/imgs/${this.getSlug(state)}-${i}`;
-          let style = { class: "recipePhoto", style: { backgroundImage: `url(${img})` } }
+          let style = { class: "rs_photo", style: { backgroundImage: `url(${img})` } }
           return h("div", style, "")
         })])}}
 
@@ -154,17 +154,17 @@ function Recipe() {
 
     return h("div", {
       style: { marginRight: "16px" },
-      class: "recipeIngredients-Instructions-bg"
+      class: "rs_ingr-inst-bg"
     }, [
-      h("table", { class: "recipeIngredientTable", style: { width: "100%" } }, [
-        h("thead", { class: "recipeIngredientHeadRow" },
+      h("table", { class: "rs_ingr-Table", style: { width: "100%" } }, [
+        h("thead", { class: "rs_ingr-headrow" },
           h("tr", {}, [ingredients.keys.map((e, index) => {
             if (index < 3) return h("th", $tr, e)
           })])
         ),
-        h('tbody', { class: "recipeIngredientTableBody" }, [
+        h('tbody', { class: "rs_ingr-TableBody" }, [
           ingredients.data.map(e => {
-            return h("tr", { class: "recipeIngredient" }, [
+            return h("tr", { class: "rs_ingr" }, [
               h("td", {style: {height: "20px"}}, e.Ingredient),
               h("td", {style: {height: "20px"}}, e.Quantity),
               h("td", {style: {height: "20px"}}, e.Unit)
@@ -173,24 +173,24 @@ function Recipe() {
 
     this._viewInstructions = (state) => {
       let steps = state.currentRecipe.instructions;
-      let $wrapper = { style: { marginLeft: "16px", flex: 2 } }
+      let $wrapper = { style: { marginLeft: "16px", flex: 1.5 } }
 
-      return h("div", {...$wrapper, class: "recipeIngredients-Instructions-bg" }, [
+      return h("div", {...$wrapper, class: "rs_ingr-inst-bg" }, [
         steps.map((s, index) => {
 					console.log(s);
           let stepClass =
             index == state.currentRecipeStep
-              ? "recipeStep recipeStep--active"
-              : "recipeStep";
+              ? "rs_step rs_step--active"
+              : "rs_step";
 
           // Timer ---
           let renderTimer = () => {
             if (s.timer) {
               let setTimerPayload = { time: util.strToSec(s.timer), step: s.f };
               if (state.timerRunning == false) {
-                return h("div", { class: "recipeStepTimer", onClick: [$act.timerSet, setTimerPayload] }, ui.icon("watch.svg"));
+                return h("div", { class: "rs_stepTimer", onClick: [$act.timerSet, setTimerPayload] }, ui.icon("watch.svg"));
               } else if (state.timerRunning) {
-                return h("div", { class: "recipeStepTimer", style: { opacity: 0 } }, ui.icon("watch.svg"));
+                return h("div", { class: "rs_stepTimer", style: { opacity: 0 } }, ui.icon("watch.svg"));
               }
             }
           };
@@ -205,7 +205,7 @@ function Recipe() {
                 return h("span", {}, c.val.trim() + rejoinedVal)
               }
 
-              return h("span", {class: "recipeStepSingleIngredient", onClick: [$act.modalSet, {fn: ui.modalShowIngredient, val: c.attr, state}]}, c.val.trim() + rejoinedVal)
+              return h("span", {class: "rs_stepSingleIngredient", onClick: [$act.modalSet, {fn: ui.modalShowIngredient, val: c.attr, state}]}, c.val.trim() + rejoinedVal)
             })
           }
 
@@ -213,9 +213,9 @@ function Recipe() {
           // Template ---
           return h("li",
             { class: stepClass, onClick: [$act.setRecipeStep, index] }, [
-            h("div", { class: "recipeStep_Wrap" }, [
+            h("div", { class: "rs_step-wrap" }, [
               h("div",
-                { class: "recipeStep_TextContent", style: { alignContent: "center" } },
+                { class: "rs_step-textcontent", style: { alignContent: "center" } },
                 [
                   h("span", {}, index + 1 + ". "),
                   renderStep(s.f)

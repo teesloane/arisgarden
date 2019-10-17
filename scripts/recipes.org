@@ -56,7 +56,7 @@ CLOSED: [2019-09-01 Sun 15:24]
 | Ingredient                                         | Quantity | Unit  | Id               | Group |
 |----------------------------------------------------+----------+-------+------------------+-------|
 | Coconut oil                                        |        1 | tbsp  | oil-coconut      |       |
-| Diced begetables (Carrots, Potatoes, Broccoli etc) |        4 | cups  | vegetables-misc  |       |
+| Diced vegetables (Carrots, Potatoes, Broccoli etc) |        4 | cups  | vegetables-misc  |       |
 | Uncooked red lentils                               |      1/2 | cups  | lentils-red      |       |
 | Water                                              |     1/2+ | cups  | water            |       |
 | Diced tomato                                       |        1 | cups  | tomato-diced-can |       |
@@ -70,7 +70,8 @@ CLOSED: [2019-09-01 Sun 15:24]
 ** Steps
 1) Melt [#: oil-coconut | coconut oil] in a large pot
 2) Peel (if necessary) and dice vegetables into 1/2 inch pieces. Add to pot and stir.
-3) Add the rest of the ingredients.
+3) Add the rest of the ingredients (coconut milk, diced tomato, garlic powder,
+   minced onion, lentils.)
 4) Bring to a boil and the reduce heat to medium.
 5) [&: 00:18:00] Cook for 18-30 minutes. Stir frequently.
 6) Serve over rice. Optional: Garnish with cilantro and lime.
@@ -261,14 +262,17 @@ CLOSED: [2019-09-10 Tue 18:10]
 :is_vegetarian: true
 :imgs: 1.JPG,2.JPG,3.JPG
 :ease_of_making: 3/5
+:time: 00:50:00
 :rating: 5/5
 :END:
 ** Ingredients
 | Ingredient       | Quantity | Unit   | Id               | Group    |
 |------------------+----------+--------+------------------+----------|
-| Tofu             |        8 | oz     | tofu             |          |
+| Lemon            |        1 |        | lemon            |          |
 | Sweet Potato     |        1 |        | potato-sweet     |          |
+| Shredded Carrots |        1 |        | avocado          |          |
 | Onion            |        1 |        | onion            |          |
+| Tofu             |        8 | oz     | tofu             |          |
 | Garlic           |        2 | cloves | garlic           |          |
 | Olive Oil        |        3 | tbsp   | oil-olive        | Marinade |
 | Chickpeas        |        1 | cups   | chickpeas        |          |
@@ -277,14 +281,11 @@ CLOSED: [2019-09-10 Tue 18:10]
 | Chili powder     |        1 | tsp    | chili-powder     |          |
 | Garlic powder    |        1 | tsp    | garlic-powder    |          |
 | Quinoa           |    1+1/2 | cups   | quinoa           |          |
-| Shredded Carrots |      1/4 | cups   | carrots-shredded |          |
-| Avocado          |        1 |        | avocado          |          |
-| Lemon            |        1 |        | lemon            |          |
+| Avocado          |      1/4 | cups   | carrots-shredded |          |
 | Sesame Oil       |      1/2 | tsp    | oil-sesame       | Marinade |
 | Hot Sauce        |        1 | tsp    | sauce-hot        | Marinade |
 | Dried thyme      |        2 | tsp    | thyme            | Marinade |
 | Paprika          |        1 | tsp    | paprika          | Marinade |
-|                  |          |        |                  |          |
 ** Steps
 1) Make the marinade: combine [#: oil-olive | olive oil], [#: oil-sesame |
    seasame oil], [#: sauce-hot | hot sauce], [#: thyme | thyme], [#: paprika | paprika],
@@ -903,6 +904,11 @@ CLOSED: [2019-10-06 Sun 12:50]
 4) Broth pt. 2: Add [#: rcp | thai curry paste], [#: soysauce | soy sauce], [#: pb | peanut butter], [#: vegbroth | vegetable broth], [#: coco | coconut milk] and [#: honey | honey].
 5) [&:00:10:00] Broth pt. 3: Bring to boil, reduce heat, simmer for 10 minutes.
 6) Put rice in bowls, add broth, add diced vegetables as garnish. Enjoy!
+** Content
+:PROPERTIES:
+:type: big-quote
+:END:
+- Is it supposed to be so soupy?
 * TODO Grilled Tofu + Pineapple Salsa + Coconut Rice                            :needs_photos:
 :PROPERTIES:
 :day_made: [2019-10-10]
@@ -937,16 +943,17 @@ CLOSED: [2019-10-06 Sun 12:50]
 | Red pepper flakes         |        1 | dash        | red_pepper_flakes | pineapple salsa |
 ** Steps
 1) [&:00:20:00] Press the [#: tofu | tofu] for about 20 minutes (put something heavy on it.)
-2) Preheat your oven for the coconut rice. 300 degrees farenheiht. Toast it for
-   8-12 minutes until golden brown.
-3) Go prep the salsa. Mix in bowl: diced pineapple, diced red onion, diced
-   jalapenos, garlic clove, peppers, lime juice, red pepper flakes.
-4) Make the rice, but with the coconut milk (instead of water!). Mix the can
+2) [&:00:08:00] Preheat your oven for the coconut rice. 300F. Toast it for 8-12 minutes until golden brown.
+3) Go prep the salsa. Mix in bowl: diced [#: pineapple | pineapple], diced [#:
+   red_onion | red onion], diced
+   [#: jalapenos | jalapenos], [#: garlic | garlic], [#: bell_peppoer |
+   peppers], [#: lime_juice | lime juice], [#: red_pepper_flakes | red pepper flakes].
+4) [&:00:25:00] Make the rice, but with the [#: coconut_milk | coconut milk] (instead of water!). Mix the can
    with the rice, bring it to a boil and then cover with a lid for 20-25 minutes
    until it's tender.
-5) When rice is done, stir in some brown sugar and, optionally, coconut oil.
-6) Grill the tofu - use a bbq or pan and heat the tofu for about 5 minutes on
-   each side.
+5) When rice is done, stir in some [#: brown_sugar | brown sugar] and,
+   optionally, [#: coconut_oil | coconut oil].
+6) Grill the tofu - use a BBQ or pan and heat the tofu for about 5 minutes on each side.
 ** Content
 :PROPERTIES:
 :type: blurb

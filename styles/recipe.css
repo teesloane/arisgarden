@@ -1,0 +1,198 @@
+/* Recipes classeS: */
+/* rs = recipeSingle (single view) */
+/* rl = recipeList (list view) */
+
+
+
+/* -- Recipe Metadata -- */
+
+.rs_props {
+  align-self: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+.rs_metadata {
+  background: #222;
+  bottom: -32px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 16px 0;
+  width: 100%;
+}
+
+.rs_metadatum {
+  color: white;
+  display: flex;
+  font-style: oblique;
+}
+
+
+/* --- Ingredients + Instructions ---- */
+
+
+.rs_ingr-inst {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  background: #faebd79e;
+  padding: 84px 0;
+}
+
+
+.rs_ingr-inst-bg {
+  flex: 1;
+  height: 100%;
+  color: white;
+  margin-right: 8px;
+  align-self: flex-start;
+  background: white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+  /* max-height: 550px; */
+  /* overflow-y: scroll; */
+  padding: 16px;
+}
+
+
+
+.rs_ingr-headrow {
+  color: #333;
+  background: #fafafa;
+  height: 32px;
+  border-bottom: 2px solid white;
+  font-weight: 700;
+}
+
+.rs_ingr {
+  background: #fafafa;
+  color: #333;
+}
+
+.rs_ingr:nth-child(odd) {
+  background: white;
+}
+
+/* --- Steps --- */
+
+.rs_step {
+  align-items: center;
+  background: white;
+  color: #222;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  margin: 22px 0;
+}
+
+.rs_step:first-child {
+  margin-top: 12px;
+}
+
+.rs_stepSingleIngredient {
+  padding: 3px 2px 4px 6px;
+  margin-left: 4px;
+  margin-right: 5px;
+  border: 1px solid #333;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.rs_step--active {
+  border-left: 3px solid var(--primary);
+}
+
+.rs_step--active:before {
+  content: "";
+  margin-right: -3px;
+  background: var(--primary);
+}
+
+
+.rs_stepTimer {
+  transition: all 0.3s ease;
+  padding: 8px;
+  align-self: stretch;
+  justify-content: center;
+  display: flex;
+}
+
+.rs_step-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.rs_step-textcontent {
+  padding: 0px 16px;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+/* RecipeSingle Photos */
+
+.rs_photos {
+  display: flex;
+  overflow-x: scroll;
+  display: flex;
+  justify-content: space-around;
+  margin: 128px 0;
+  margin-top: 0;
+}
+
+.rs_photo {
+  width: 350px;
+  height: 200px;
+  margin: 0 12px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+
+/* RecipeList View: rL -------------------------------------------------------------*/
+
+.rL {
+}
+
+.rl_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 64px 0;
+}
+
+.rl_list li {
+  width: 50%;
+  padding: 8px 0;
+}
+
+.rl_link {
+  color: #333;
+  font-weight: bold;
+  /* padding: 24px 0; */
+}
+
+.rl_hero_data {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
+  padding: 32px;
+  letter-spacing: 4px;
+}
+
+.rl_hero_li {
+  padding: 4px 0;
+}

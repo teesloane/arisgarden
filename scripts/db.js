@@ -205,7 +205,7 @@ var db = {
             "Group": ""
           },
           {
-            "Ingredient": "Diced begetables (Carrots, Potatoes, Broccoli etc)",
+            "Ingredient": "Diced vegetables (Carrots, Potatoes, Broccoli etc)",
             "Quantity": "4",
             "Unit": "cups",
             "Id": "vegetables-misc",
@@ -308,10 +308,10 @@ var db = {
           ]
         },
         {
-          "o": "Add the rest of the ingredients.",
+          "o": "Add the rest of the ingredients (coconut milk, diced tomato, garlic powder, minced onion, lentils.)",
           "f": [
             {
-              "val": "Add the rest of the ingredients."
+              "val": "Add the rest of the ingredients (coconut milk, diced tomato, garlic powder, minced onion, lentils.)"
             }
           ]
         },
@@ -1128,6 +1128,7 @@ var db = {
           "is_vegetarian": "true",
           "imgs": "1.JPG,2.JPG,3.JPG",
           "ease_of_making": "3/5",
+          "time": "00:50:00",
           "rating": "5/5"
         },
         "logbook": []
@@ -1142,10 +1143,10 @@ var db = {
         ],
         "data": [
           {
-            "Ingredient": "Tofu",
-            "Quantity": "8",
-            "Unit": "oz",
-            "Id": "tofu",
+            "Ingredient": "Lemon",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "lemon",
             "Group": ""
           },
           {
@@ -1156,10 +1157,24 @@ var db = {
             "Group": ""
           },
           {
+            "Ingredient": "Shredded Carrots",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "avocado",
+            "Group": ""
+          },
+          {
             "Ingredient": "Onion",
             "Quantity": "1",
             "Unit": "",
             "Id": "onion",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Tofu",
+            "Quantity": "8",
+            "Unit": "oz",
+            "Id": "tofu",
             "Group": ""
           },
           {
@@ -1219,24 +1234,10 @@ var db = {
             "Group": ""
           },
           {
-            "Ingredient": "Shredded Carrots",
+            "Ingredient": "Avocado",
             "Quantity": "1/4",
             "Unit": "cups",
             "Id": "carrots-shredded",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Avocado",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "avocado",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Lemon",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "lemon",
             "Group": ""
           },
           {
@@ -1266,13 +1267,6 @@ var db = {
             "Unit": "tsp",
             "Id": "paprika",
             "Group": "Marinade"
-          },
-          {
-            "Ingredient": "",
-            "Quantity": "",
-            "Unit": "",
-            "Id": "",
-            "Group": ""
           }
         ]
       },
@@ -3888,6 +3882,161 @@ var db = {
         ]
       }
     },
+    "asparagus-spaghetti": {
+      "meta": {
+        "properties": {
+          "day_made": "",
+          "ease_of_making": "?/5",
+          "imgs": "1.JPG,2.JPG,3.JPG",
+          "is_vegan": "false",
+          "is_vegetarian": "true",
+          "name": "Asparagus Spaghetti + Egg",
+          "original_recipe": "https://www.easycheesyvegetarian.com/asparagus-spaghetti-fried-egg/",
+          "rating": "?/5",
+          "slug": "asparagus-spaghetti",
+          "serves": "2",
+          "time": "00:25:00"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id"
+        ],
+        "data": [
+          {
+            "Ingredient": "Spaghetti",
+            "Quantity": "200",
+            "Unit": "grams",
+            "Id": "spag"
+          },
+          {
+            "Ingredient": "Butter",
+            "Quantity": "1",
+            "Unit": "tbsp",
+            "Id": "but"
+          },
+          {
+            "Ingredient": "Garlic",
+            "Quantity": "2",
+            "Unit": "cloves",
+            "Id": "garlic"
+          },
+          {
+            "Ingredient": "Asparagus (cut to 1-inch pieces)",
+            "Quantity": "150",
+            "Unit": "grams",
+            "Id": "asparagus"
+          },
+          {
+            "Ingredient": "Salt/Pepper",
+            "Quantity": "1",
+            "Unit": "pinch",
+            "Id": "sandp"
+          },
+          {
+            "Ingredient": "Parmesan",
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "parm"
+          },
+          {
+            "Ingredient": "Pre-made pesto sauce",
+            "Quantity": "",
+            "Unit": "",
+            "Id": ""
+          },
+          {
+            "Ingredient": "Eggs",
+            "Quantity": "2",
+            "Unit": "",
+            "Id": "eggs"
+          },
+          {
+            "Ingredient": "",
+            "Quantity": "",
+            "Unit": "",
+            "Id": ""
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "[&:00:10:00] Boil spaghetti until al dente. Around 10 minutes.",
+          "f": [
+            {
+              "val": "Boil spaghetti until al dente. Around 10 minutes."
+            }
+          ],
+          "timer": "00:10:00"
+        },
+        {
+          "o": "[&:00:04:00] Melt [#: but | butter] in a frying pan and add [#: asparagus | asparagus]. Cook for a few minutes.",
+          "f": [
+            {
+              "val": "Melt"
+            },
+            {
+              "val": "butter",
+              "attr": "but"
+            },
+            {
+              "val": "in a frying pan and add"
+            },
+            {
+              "val": "asparagus",
+              "attr": "asparagus"
+            },
+            {
+              "val": ". Cook for a few minutes."
+            }
+          ],
+          "timer": "00:04:00"
+        },
+        {
+          "o": "Add the [#: garlic | garlic] and cook a little longer until the asparagus is tender with a bit of a crunch still. Season with salt and pepper.",
+          "f": [
+            {
+              "val": "Add the"
+            },
+            {
+              "val": "garlic",
+              "attr": "garlic"
+            },
+            {
+              "val": "and cook a little longer until the asparagus is tender with a bit of a crunch still. Season with salt and pepper."
+            }
+          ]
+        },
+        {
+          "o": "When the pasta is ready, drain and add the asparagus mixture and the pesto. Mix everything in and put a lit on to keep the heat in.",
+          "f": [
+            {
+              "val": "When the pasta is ready, drain and add the asparagus mixture and the pesto. Mix everything in and put a lit on to keep the heat in."
+            }
+          ]
+        },
+        {
+          "o": "Make two fried eggs. Plate the spaghetti and put the egg on top.",
+          "f": [
+            {
+              "val": "Make two fried eggs. Plate the spaghetti and put the egg on top."
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "blurb"
+        },
+        "value": [
+          "The original recipe instructs you to make your own pesto. I don't have the energy to find million dollar pine nuts right now! Too bad! I'm buying a can of pesto! Too bad for you recipe! You can't tell me what to do!"
+        ]
+      }
+    },
     "thai-rice-bowl": {
       "meta": {
         "properties": {
@@ -4178,7 +4327,12 @@ var db = {
         }
       ],
       "content": {
-        "props": null
+        "props": {
+          "type": "big-quote"
+        },
+        "value": [
+          "Is it supposed to be so soupy?"
+        ]
       }
     },
     "tofu-pineapple-rice": {
@@ -4332,42 +4486,114 @@ var db = {
           "timer": "00:20:00"
         },
         {
-          "o": "Preheat your oven for the coconut rice. 300 degrees farenheiht. Toast it for 8-12 minutes until golden brown.",
+          "o": "[&:00:08:00] Preheat your oven for the coconut rice. 300F. Toast it for 8-12 minutes until golden brown.",
           "f": [
             {
-              "val": "Preheat your oven for the coconut rice. 300 degrees farenheiht. Toast it for 8-12 minutes until golden brown."
+              "val": "Preheat your oven for the coconut rice. 300F. Toast it for 8-12 minutes until golden brown."
+            }
+          ],
+          "timer": "00:08:00"
+        },
+        {
+          "o": "Go prep the salsa. Mix in bowl: diced [#: pineapple | pineapple], diced [#: red_onion | red onion], diced [#: jalapenos | jalapenos], [#: garlic | garlic], [#: bell_peppoer | peppers], [#: lime_juice | lime juice], [#: red_pepper_flakes | red pepper flakes].",
+          "f": [
+            {
+              "val": "Go prep the salsa. Mix in bowl: diced"
+            },
+            {
+              "val": "pineapple",
+              "attr": "pineapple"
+            },
+            {
+              "val": ", diced"
+            },
+            {
+              "val": "red onion",
+              "attr": "red_onion"
+            },
+            {
+              "val": ", diced"
+            },
+            {
+              "val": "jalapenos",
+              "attr": "jalapenos"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "garlic",
+              "attr": "garlic"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "peppers",
+              "attr": "bell_peppoer"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "lime juice",
+              "attr": "lime_juice"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "red pepper flakes",
+              "attr": "red_pepper_flakes"
+            },
+            {
+              "val": "."
             }
           ]
         },
         {
-          "o": "Go prep the salsa. Mix in bowl: diced pineapple, diced red onion, diced jalapenos, garlic clove, peppers, lime juice, red pepper flakes.",
+          "o": "[&:00:25:00] Make the rice, but with the [#: coconut_milk | coconut milk] (instead of water!). Mix the can with the rice, bring it to a boil and then cover with a lid for 20-25 minutes until it's tender.",
           "f": [
             {
-              "val": "Go prep the salsa. Mix in bowl: diced pineapple, diced red onion, diced jalapenos, garlic clove, peppers, lime juice, red pepper flakes."
+              "val": "Make the rice, but with the"
+            },
+            {
+              "val": "coconut milk",
+              "attr": "coconut_milk"
+            },
+            {
+              "val": "(instead of water!). Mix the can with the rice, bring it to a boil and then cover with a lid for 20-25 minutes until it's tender."
+            }
+          ],
+          "timer": "00:25:00"
+        },
+        {
+          "o": "When rice is done, stir in some [#: brown_sugar | brown sugar] and, optionally, [#: coconut_oil | coconut oil].",
+          "f": [
+            {
+              "val": "When rice is done, stir in some"
+            },
+            {
+              "val": "brown sugar",
+              "attr": "brown_sugar"
+            },
+            {
+              "val": "and, optionally,"
+            },
+            {
+              "val": "coconut oil",
+              "attr": "coconut_oil"
+            },
+            {
+              "val": "."
             }
           ]
         },
         {
-          "o": "Make the rice, but with the coconut milk (instead of water!). Mix the can with the rice, bring it to a boil and then cover with a lid for 20-25 minutes until it's tender.",
+          "o": "Grill the tofu - use a BBQ or pan and heat the tofu for about 5 minutes on each side.",
           "f": [
             {
-              "val": "Make the rice, but with the coconut milk (instead of water!). Mix the can with the rice, bring it to a boil and then cover with a lid for 20-25 minutes until it's tender."
-            }
-          ]
-        },
-        {
-          "o": "When rice is done, stir in some brown sugar and, optionally, coconut oil.",
-          "f": [
-            {
-              "val": "When rice is done, stir in some brown sugar and, optionally, coconut oil."
-            }
-          ]
-        },
-        {
-          "o": "Grill the tofu - use a bbq or pan and heat the tofu for about 5 minutes on each side.",
-          "f": [
-            {
-              "val": "Grill the tofu - use a bbq or pan and heat the tofu for about 5 minutes on each side."
+              "val": "Grill the tofu - use a BBQ or pan and heat the tofu for about 5 minutes on each side."
             }
           ]
         }
