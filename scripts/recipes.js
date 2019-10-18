@@ -81,7 +81,8 @@ function Recipe() {
   this._viewMetaData = (state) => {
     let liClass = { class: "rs_metadatum" };
     let { original_recipe, day_made, name, is_vegan, rating, serves, time } = state.currentRecipe.meta.properties;
-    let mealType = is_vegan ? "Vegan" : "Vegetarian"
+    console.log(is_vegan);
+    let mealType = is_vegan === "true" ? "Vegan" : "Vegetarian"
 
     return h("div", { class: "rs_props" }, [
       ui.navbar(),

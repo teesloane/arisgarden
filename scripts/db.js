@@ -3886,13 +3886,13 @@ var db = {
       "meta": {
         "properties": {
           "day_made": "",
-          "ease_of_making": "?/5",
+          "ease_of_making": "5/5",
           "imgs": "1.JPG,2.JPG,3.JPG",
           "is_vegan": "false",
           "is_vegetarian": "true",
           "name": "Asparagus Spaghetti + Egg",
           "original_recipe": "https://www.easycheesyvegetarian.com/asparagus-spaghetti-fried-egg/",
-          "rating": "?/5",
+          "rating": "3.5/5",
           "slug": "asparagus-spaghetti",
           "serves": "2",
           "time": "00:25:00"
@@ -3944,19 +3944,13 @@ var db = {
             "Id": "parm"
           },
           {
-            "Ingredient": "Pre-made pesto sauce",
-            "Quantity": "",
-            "Unit": "",
-            "Id": ""
-          },
-          {
             "Ingredient": "Eggs",
             "Quantity": "2",
             "Unit": "",
             "Id": "eggs"
           },
           {
-            "Ingredient": "",
+            "Ingredient": "Pre-made pesto sauce",
             "Quantity": "",
             "Unit": "",
             "Id": ""
@@ -4033,7 +4027,7 @@ var db = {
           "type": "blurb"
         },
         "value": [
-          "The original recipe instructs you to make your own pesto. I don't have the energy to find million dollar pine nuts right now! Too bad! I'm buying a can of pesto! Too bad for you recipe! You can't tell me what to do!"
+          "The original recipe instructs you to make your own pesto. I don't have the energy to find million dollar pine nuts right now! Too bad! I'm buying a jar of pesto! Too bad for you recipe! You can't tell me what to do! .... Anyway. This was quick and easy to make, but make sure you use enough asparagus for variety. Maybe consider adding some chopped nuts."
         ]
       }
     },
