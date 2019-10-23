@@ -44,6 +44,11 @@ table {
   border-spacing: 0;
 }
 
+/* Env variables (experimental) --------------------------------- */
+/* env(--tablet, 768px) */
+
+
+
 /* Defaults -------------------------------------------------------------------*/
 
 :root {
