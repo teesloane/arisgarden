@@ -182,9 +182,6 @@
 
 /* RecipeList View: rL -------------------------------------------------------------*/
 
-.rL {
-}
-
 .rl_list {
   display: flex;
   flex-direction: row;
@@ -221,10 +218,9 @@
 
 
 @media(max-width: 900px) {
-
   .rs_ingr-inst          {padding: 32px 0;}
   .rs_ingr-instr-content {flex-direction: column; padding: 12px 0 16px 0;}
-  .rs_ingr               {flex: 1; height: 100%; margin: 16px; align-self: auto;}
+  .rs_ingr               {flex: 1; height: 100%; margin: 32px 16px; align-self: auto;}
 
   .rs_metadata {
     position: relative;
@@ -237,4 +233,10 @@
   .rs_metadatum {padding: 8px 0;}
   .rs_photos {flex-direction: column; margin: 0 16px 48px 16px; align-items: center;}
   .rs_photo {width: 80%; height: 40vh; margin-bottom: 32px;}
+
+
+  /* --- */
+
+  .rl_list    {flex-direction: column; flex-wrap: wrap; padding: 32px; margin: 0 auto; }
+  .rl_list li {width: 100%;}
 }
