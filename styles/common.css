@@ -323,3 +323,36 @@
 
 .pr1 {padding-right: 8px;}
 .pr4 {padding-right: 64px;}
+
+
+
+@media(max-width: 900px) {
+  .v_LargeText {
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-align: center;
+    align-self: center;
+  }
+
+
+  .v_GiantQuote { padding: 64px 0; justify-content: center; }
+
+  .v_giantQuoteText {
+    font-size: 32px;
+    line-height: 100%;
+    text-align: right;
+    font-weight: bold;
+    padding: 24px 48px;
+    border-right: 3px dotted orchid;
+    align-self: center;
+  }
+
+  .v_giantQuoteSym {
+    font-size: 120px;
+    padding: 32px;
+    align-self: center;
+  }
+
+
+}

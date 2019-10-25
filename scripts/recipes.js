@@ -26,7 +26,7 @@ function Recipe() {
       this._viewPhotos(state),
       h("div", { class: "rs_ingr-inst" }, [
         ui.largeText("INGREDIENTS / INSTRUCTIONS"),
-        h("div", { class: "content-xw", style: { flexDirection: "row", margin: "32px 0 32px" } }, [
+        h("div", { class: "rs_ingr-instr-content" }, [
           this._viewIngredients(state),
           this._viewInstructions(state),
         ])])])}
@@ -89,7 +89,7 @@ function Recipe() {
 
       ui.largeText(name),
 
-      h("ul", { class: "rs_metadata", style: {position: "absolute"} }, [
+      h("ul", { class: "rs_metadata"}, [
           h("li", liClass,
             h("a", { href: original_recipe, target: "_blank", class: "link-light" }, "Original Recipe")),
           h("li", liClass, mealType),
@@ -153,10 +153,7 @@ function Recipe() {
     let $tr = { style: { padding: "16px 8px" } };
 
 
-    return h("div", {
-      style: { marginRight: "16px" },
-      class: "rs_ingr-inst-bg"
-    }, [
+    return h("div", {class: "rs_ingr"}, [
       h("table", { class: "rs_ingr-Table", style: { width: "100%" } }, [
         h("thead", { class: "rs_ingr-headrow" },
           h("tr", {}, [ingredients.keys.map((e, index) => {
@@ -165,7 +162,7 @@ function Recipe() {
         ),
         h('tbody', { class: "rs_ingr-TableBody" }, [
           ingredients.data.map(e => {
-            return h("tr", { class: "rs_ingr" }, [
+            return h("tr", { class: "rs_ingr-tablerow" }, [
               h("td", {style: {height: "20px"}}, e.Ingredient),
               h("td", {style: {height: "20px"}}, e.Quantity),
               h("td", {style: {height: "20px"}}, e.Unit)
@@ -176,7 +173,7 @@ function Recipe() {
       let steps = state.currentRecipe.instructions;
       let $wrapper = { style: { marginLeft: "16px", flex: 1.5 } }
 
-      return h("div", {...$wrapper, class: "rs_ingr-inst-bg" }, [
+      return h("div", {...$wrapper, class: "rs_inst" }, [
         steps.map((s, index) => {
 					console.log(s);
           let stepClass =
