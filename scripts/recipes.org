@@ -294,7 +294,7 @@ CLOSED: [2019-09-10 Tue 18:10]
    30 minutes (up to a day).
 3) Preheat the oven to 400F (200C).
 4) [&: 00:20:00] Cut [#: potato-sweet | sweet potato] into cubes. Slice the [#:
-   onion | onion], dice [#:garlic | garlic]. Put it all on a
+   onion | onion], dice [#: garlic | garlic]. Put it all on a
    baking sheet. Drizzel with oil, season with salt and pepper. Bake for 20-25 min.
 5) In a medium bowl, add the [#: chickpeas | chickpeas], salt, pepper, [#:
    chili-powder | chili powder], and [#: garlic-powder | garlic powder]. Stir to combine.

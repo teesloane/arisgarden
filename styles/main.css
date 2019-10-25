@@ -55,6 +55,7 @@ table {
   --offwhite: #fdfdfd;
   --offblack: #333;
   --black: #000;
+  --modalBg: rgba(0, 0, 0, 0.75);
 
 }
 

@@ -91,7 +91,6 @@
   margin: 192px auto;
   display: flex;
   flex-direction: column;
-
 }
 
 .v_DialogueItem {
@@ -267,7 +266,7 @@
 .v_Modal {
   align-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.4);
+  background: var(--modalBg);
   color: white;
   display: flex;
   height: 100vh;
@@ -302,7 +301,7 @@
   justify-content: center;
   padding: 32px;
   min-width: 25%;
-  min-height: 35%;
+  min-height: 25%;
 }
 
 .v_Modal--ingredientHeading {
@@ -330,13 +329,22 @@
   .v_LargeText {
     margin: 0;
     letter-spacing: 2px;
-    font-size: 16px;
+    font-size: 24px;
     text-align: center;
     align-self: center;
   }
 
 
-  .v_GiantQuote { padding: 64px 0; justify-content: center; }
+
+  .v_Dialogue {
+    align-content: center;
+    max-width: 80%;
+    margin: 128px auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .v_GiantQuote { padding: 64px 0; justify-content: center; width: 90%; margin: 0 auto;}
 
   .v_giantQuoteText {
     font-size: 32px;
@@ -349,10 +357,39 @@
   }
 
   .v_giantQuoteSym {
-    font-size: 120px;
+    font-size: 60px;
     padding: 32px;
     align-self: center;
   }
+
+  .v_Whisper {
+    font-size: 18px;
+    max-width: 70%;
+    margin: 64px auto;
+    letter-spacing: 1px;
+    padding: 32px;
+    line-height: 2;
+    text-align: center;
+    border: 1px dotted grey;
+  }
+
+
+  .v_Modal--ingredient {
+    align-items: center;
+    background: var(--offwhite);
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.06);
+    color: var(--offblack);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+    min-width: 35%;
+    min-height: 25%;
+  }
+
+  .v_Navbar {position: absolute; padding: 0; width: 100%;}
+  .v_Navbar div {width: 100%; padding: 4px 0; justify-content: center;}
 
 
 }

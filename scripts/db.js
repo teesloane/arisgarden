@@ -1339,7 +1339,7 @@ var db = {
           ]
         },
         {
-          "o": "[&: 00:20:00] Cut [#: potato-sweet | sweet potato] into cubes. Slice the [#: onion | onion], dice [#:garlic | garlic]. Put it all on a baking sheet. Drizzel with oil, season with salt and pepper. Bake for 20-25 min.",
+          "o": "[&: 00:20:00] Cut [#: potato-sweet | sweet potato] into cubes. Slice the [#: onion | onion], dice [#: garlic | garlic]. Put it all on a baking sheet. Drizzel with oil, season with salt and pepper. Bake for 20-25 min.",
           "f": [
             {
               "val": "Cut"
@@ -1360,7 +1360,7 @@ var db = {
             },
             {
               "val": "garlic",
-              "attr": "arlic"
+              "attr": "garlic"
             },
             {
               "val": ". Put it all on a baking sheet. Drizzel with oil, season with salt and pepper. Bake for 20-25 min."
@@ -2918,8 +2918,8 @@ var db = {
           "original_recipe": "https://cookieandkate.com/raw-beet-salad-with-carrot-quinoa-spinach",
           "time": "00:50:00",
           "day_made": "[2019-09-24]",
-          "is_vegan": "?",
-          "is_vegetarian": "?",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
           "name": "Raw Beet Salad w/ Quinoa",
           "ease_of_making": "4/5",
           "imgs": "1.JPG,2.JPG,3.JPG,5.gif",
