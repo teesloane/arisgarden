@@ -22,12 +22,28 @@ const $act = {
   /* TIMER ------------------------------------------------------------------- */
 
   timerSet: (s, p) => {
-    return {
-    ...s,
-    timer: p.time,
-    timerRunning: true,
-    currentRecipeStepText: p.step.map(c => c.val).join(" ")
-  }},
+    let message = "Hi! In order to use the timer on this site, you must ensure that your computer does not go to sleep or you do not leave this page (otherwise the timer will not work!"
+    let rdata = {
+      ...s,
+      timer: p.time,
+      timerRunning: true,
+      currentRecipeStepText: p.step.map(c => c.val).join(" ")
+    }
+
+    if(!localStorage.getItem("hasConfirmedTimer")) {
+      let hasConfirmed = window.confirm(message);
+      if (hasConfirmed) {
+        localStorage.setItem("hasConfirmedTimer", "true")
+        return rdata
+      } else {
+        return {...s,}
+      }
+    } else {
+      return rdata
+    }
+
+
+  } ,
 
   timerCancel: s => ({ ...s, timer: null, timerRunning: false }),
 

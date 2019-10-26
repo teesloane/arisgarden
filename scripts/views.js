@@ -64,7 +64,6 @@ function UiFn() {
   this.timer = (state) => {
     let timeStr     = state.timer ? util.secToStr(state.timer) : "00:00:00";
     let centerStyle = { style: { alignSelf: "center", display: "flex" } };
-    console.log("state is ", state);
     let stepText    = state.currentRecipeStepText;
 
     let _class = state.timerRunning

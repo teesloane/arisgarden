@@ -81,7 +81,6 @@ function Recipe() {
   this._viewMetaData = (state) => {
     let liClass = { class: "rs_metadatum" };
     let { original_recipe, day_made, name, is_vegan, rating, serves, time } = state.currentRecipe.meta.properties;
-    console.log(is_vegan);
     let mealType = is_vegan === "true" ? "Vegan" : "Vegetarian"
 
     return h("div", { class: "rs_props" }, [
@@ -175,7 +174,6 @@ function Recipe() {
 
       return h("div", {...$wrapper, class: "rs_inst" }, [
         steps.map((s, index) => {
-					console.log(s);
           let stepClass =
             index == state.currentRecipeStep
               ? "rs_step rs_step--active"
