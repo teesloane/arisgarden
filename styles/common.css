@@ -35,9 +35,20 @@
   justify-content: center;
   position: relative;
   width: 100%;
+  transition: all 5s ease;
+  background-color: rgba(0, 0, 0, 0.3)
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.v_Hero-loading {
+  background-color: red
+}
+
+.v_Hero-loaded {
+  background-color: blue;
+
 }
 
 /* Giant Quote */

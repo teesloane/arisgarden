@@ -136,13 +136,50 @@ function UiFn() {
     return h("h1", { class: "v_Heading" }, t);
   }
 
-  this.hero = (bgImage, childFn) => {
-    let attrs = {
-      class: "v_Hero",
-      style: { backgroundImage: `url(${bgImage})` }
-    };
-    return h("section", attrs, childFn());
+  this.hero = (state, heroImgPath, childFn) => {
+    if (state.heroImg == null) {
+      let img = new Image();
+      img.onload = () => {dispatch($act.heroSetImg, img)}
+      img.src = heroImgPath;
+      let attrs = {
+        class: "v_Hero v_Hero-loading",
+        style: { backgroundColor: "black" }
+      };
+      return h("section", attrs, childFn());
+    } else {
+      
+      let attrs = {
+        class: "v_Hero v_Hero-loaded",
+        style: { backgroundImage: `url(${state.heroImg.src})`}
+      };
+      return h("section", attrs, childFn());
+    }
   }
+
+  // this.hero = (bgImage, childFn, loadedImg) => {
+  //   // console.log("bg image is", bgImage, loadedImg, "this is", this);
+  //   // console.log("DISPATCH IS", dispatch);
+  //   if (typeof(loadedImg) == "undefined") {
+  //     let img = new Image();
+  //     img.onload = () => {this.hero(bgImage, childFn, img)}
+  //     img.src = bgImage;
+
+  //     let attrs = {
+  //       class: "v_Hero",
+  //       style: { backgroundColor: "black" }
+  //     };
+  //     return h("section", attrs, childFn());
+
+  //   } else {
+  //           // dispatch("heroSetLoaded")
+  //     console.log("attempting render the other thing")
+  //     let attrs = {
+  //       class: "v_Hero",
+  //       style: {backgroundColor: "none", backgroundImage: `url(${loadedImg.src})` }
+  //     };
+  //     return h("section", attrs, childFn());
+  //   }
+  // }
 
   this.modal = (state) => {
     if (state.currentModal) {

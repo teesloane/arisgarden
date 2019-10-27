@@ -17,6 +17,9 @@ const $act = {
   setRecipeStep: (s, i) => ({...s, currentRecipeStep: i}),
   modalClose:    (s, _) => ({...s, currentModal: null}),
   modalSet:      (s, p) => {return ({...s, currentModal: () => p.fn(s, p.val)})},
+  heroSetImg: (s, p) => {
+    return ({...s, heroImg: p})
+  },
 
 
   /* TIMER ------------------------------------------------------------------- */
@@ -74,7 +77,8 @@ const $act = {
       route: hash,
       currentRoute: newRoute.view,
       currentRecipeStep: 0,
-      currentRecipe: db.recipes[newRoute.id] // not optimal?
+      currentRecipe: db.recipes[newRoute.id], // not optimal?
+  heroImg: null,
     })
     return (newState)
   },
@@ -87,6 +91,7 @@ var initState = {
   currentRecipeStepText: "",
   currentRoute: () => ui.loadingState(),
   currentModal: null,
+  heroImg: null,
   timer: null,
   timerRunning: false,
   route: "/"

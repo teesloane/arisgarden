@@ -19,6 +19,7 @@
       const { h, app } = hyperapp;
       window.h = h;
       window.app = app;
+      window.dispatch = null;
 
       const recipes = new Recipe();
       const v       = new View();
@@ -27,6 +28,7 @@
 
       app({
         init: initState,
+        middleware: (d) => (window.dispatch = d),
         view: state =>
           h("main", {}, [
             h("div", {class: "main"},
