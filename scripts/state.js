@@ -72,7 +72,7 @@ const $act = {
     let newState = ({
       ...state,
       route: hash,
-      currentRoute: () => ui.loadingState(),  // newRoute.view,
+      currentRoute: newRoute.view,
       currentRecipeStep: 0,
       currentRecipe: db.recipes[newRoute.id] // not optimal?
     })
