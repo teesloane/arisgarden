@@ -41,8 +41,6 @@ const $act = {
     } else {
       return rdata
     }
-
-
   } ,
 
   timerCancel: s => ({ ...s, timer: null, timerRunning: false }),
@@ -74,7 +72,7 @@ const $act = {
     let newState = ({
       ...state,
       route: hash,
-      currentRoute: newRoute.view,
+      currentRoute: () => ui.loadingState(),  // newRoute.view,
       currentRecipeStep: 0,
       currentRecipe: db.recipes[newRoute.id] // not optimal?
     })
@@ -87,7 +85,7 @@ var initState = {
   currentRecipe: db.recipes["shakshuka"],
   currentRecipeStep: 0,
   currentRecipeStepText: "",
-  currentRoute: () => h("div", {}, "loading state"),
+  currentRoute: () => ui.loadingState(),
   currentModal: null,
   timer: null,
   timerRunning: false,

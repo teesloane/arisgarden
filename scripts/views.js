@@ -183,4 +183,11 @@ function UiFn() {
         ui.icon("c_home.svg", {width: 48}),
         h("a", {class: "v_Navbar_text", href: "#/"}, "GO\u00DBT/FOOD")
       ])])}
+
+  this.loadingState = () => {
+    return h("main", {class: "v_LoadingState"}, [
+      h("div", {class: "spinner"}, "")
+    ])
+  }
+
 }
