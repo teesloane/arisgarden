@@ -181,7 +181,7 @@ function UiFn() {
     return h("nav", {class: "v_Navbar"}, [
       h("div", {style: {alignItems: "center", background: "#222"}}, [
         ui.icon("c_home.svg", {width: 48}),
-        h("a", {class: "v_Navbar_text", href: "#/"}, "GO\u00DBT/FOOD")
+        h("a", {class: "v_Navbar_text", href: "#/"}, "ARI'S GARDEN")
       ])])}
 
   this.loadingState = () => {

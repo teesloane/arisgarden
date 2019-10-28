@@ -1,6 +1,6 @@
-# GoutFood
+# Ari's Garden
 
-GoutFood is a site for collecting and displaying the journey of making and
+Ari's Garden is a site for collecting and displaying the journey of making and
 discovering food.
 
 
