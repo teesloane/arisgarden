@@ -21,7 +21,8 @@
 .rs_metadata {
   position: absolute;
   background: #222;
-  bottom: -32px;
+  /* bottom: -32px; */
+  bottom: 0;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;

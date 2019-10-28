@@ -136,22 +136,12 @@ function UiFn() {
     return h("h1", { class: "v_Heading" }, t);
   }
 
-  this.hero = (state, heroImgPath, childFn) => {
-    if (state.heroImg == null) {
-      let img = new Image();
-      img.onload = () => {dispatch($act.heroSetImg, img)}
-      img.src = heroImgPath;
-      let attrs = {
-        class: "v_Hero v_Hero-loading",
-      };
-      return h("section", attrs, childFn());
-    } else {
-      let attrs = {
-        class: "v_Hero v_Hero-loaded",
-        style: { backgroundImage: `url(${state.heroImg.src})`}
-      };
-      return h("section", attrs, childFn());
-    }
+  this.hero = (heroImgPath, childFn) => {
+    let attrs = {
+      class: "v_Hero v_Hero-loaded",
+      style: { backgroundImage: `url(${heroImgPath})`}
+    };
+    return h("section", attrs, childFn());
   }
 
   this.modal = (state) => {

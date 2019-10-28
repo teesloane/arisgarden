@@ -21,7 +21,7 @@ function Recipe() {
     let heroImg = this.getImg(this.getSlug(state) + "-hero.jpg")
     // TODO handle invalid reciple currentId; make a gotoview func
     return h("section", {}, [
-      ui.hero(state, heroImg, () => this._viewMetaData(state)),
+      ui.hero(heroImg, () => this._viewMetaData(state)),
       this._viewContent(state),
       this._viewPhotos(state),
       h("div", { class: "rs_ingr-inst" }, [
@@ -44,7 +44,7 @@ function Recipe() {
     let rndHero = this.getImg(rndRecipe.meta.properties.slug + "-hero.jpg")
 
     return h("section", { class: "rL"}, [
-      ui.hero(state, rndHero, () => this._viewAllHero(rndRecipe)),
+      ui.hero(rndHero, () => this._viewAllHero(rndRecipe)),
       h("div", { class: "content" }, [
 
         // Recipe List
