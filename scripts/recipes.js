@@ -20,8 +20,7 @@ function Recipe() {
   this.viewSingle = (state) => {
     try {
       var heroImg = this.getImg(this.getSlug(state) + "-hero.jpg")
-    }
-    catch {
+    } catch {
       return ui.fourOhFour()
     }
     // TODO handle invalid reciple currentId; make a gotoview func

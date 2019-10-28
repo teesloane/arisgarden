@@ -213,7 +213,7 @@ function UiFn() {
    */
   this.about = () => {
     return h("main", {}, [
-      ui.hero("media/imgs/bowl1-3.jpg", () => h("span", {}, "") ),
+      ui.hero("media/imgs/placeholder.png", () => h("span", {}, "") ),
       h("div", {class: "content"}, "About page")
     ])
   }
