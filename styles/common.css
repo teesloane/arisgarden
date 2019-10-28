@@ -238,6 +238,10 @@
   z-index: 1;
 }
 
+.v_Navbar_icon-text {
+  background: #222;
+}
+
 
 .v_Navbar div {
   display: flex;

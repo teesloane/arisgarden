@@ -3,6 +3,7 @@ function View() {
     "#/": recipes.viewAll,
     "#/recipes": recipes.viewAll,
     "#/recipes/:id": recipes.viewSingle,
+    "#/about": ui.about,
     "404": () => h("div", {}, "Not Found")
   }
 
@@ -24,6 +25,9 @@ function View() {
         break;
       case "#/":
         out.view = this.routes["#/"]
+        break;
+      case "#/about":
+        out.view = this.routes["#/about"]
         break;
       case "#/recipes":
         out.view = this.routes["#/recipes"]
@@ -179,14 +183,38 @@ function UiFn() {
 
   this.navbar = () => {
     return h("nav", {class: "v_Navbar"}, [
-      h("div", {style: {alignItems: "center", background: "#222"}}, [
+      h("div", {class: "v_Navbar_icon-text"}, [
         ui.icon("c_home.svg", {width: 48}),
-        h("a", {class: "v_Navbar_text", href: "#/"}, "ARI'S GARDEN")
-      ])])}
+        h("a", {class: "v_Navbar_text", href: "#/"}, "ARI'S GARDEN"),
+      ]),
+      h("span", {}, [
+        h("a", {class: "v_Navbar_text", href: "#/about"}, "ABOUT"),
+        // h("a", {class: "v_Navbar_text", href: "#/"}, "SUPPORT!"),
+      ])
+    ])}
 
   this.loadingState = () => {
     return h("main", {class: "v_LoadingState"}, [
       h("div", {class: "spinner"}, "")
+    ])
+  }
+
+
+  this.getImg = (img) => `media/imgs/${img}`;
+
+  this.fourOhFour = () => {
+    return h("div", {}, [
+      ui.hero(this.getImg("404.png"), () => h("span", {}, "")),
+    ])
+  }
+
+  /**
+   * Page: About
+   */
+  this.about = () => {
+    return h("main", {}, [
+      ui.hero("media/imgs/bowl1-3.jpg", () => h("span", {}, "") ),
+      h("div", {class: "content"}, "About page")
     ])
   }
 

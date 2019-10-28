@@ -18,7 +18,12 @@ function Recipe() {
   // Full Views ----------------------------------------------------------------
 
   this.viewSingle = (state) => {
-    let heroImg = this.getImg(this.getSlug(state) + "-hero.jpg")
+    try {
+      var heroImg = this.getImg(this.getSlug(state) + "-hero.jpg")
+    }
+    catch {
+      return ui.fourOhFour()
+    }
     // TODO handle invalid reciple currentId; make a gotoview func
     return h("section", {}, [
       ui.hero(heroImg, () => this._viewMetaData(state)),
