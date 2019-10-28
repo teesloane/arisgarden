@@ -138,7 +138,7 @@ function UiFn() {
 
   this.hero = (heroImgPath, childFn) => {
     let attrs = {
-      class: "v_Hero v_Hero-loaded",
+      class: "v_Hero",
       style: { backgroundImage: `url(${heroImgPath})`}
     };
     return h("section", attrs, childFn());

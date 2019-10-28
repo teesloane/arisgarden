@@ -32,6 +32,7 @@
         view: state =>
           h("main", {}, [
             h("div", {class: "main"},
+              ui.navbar(),
               ui.modal(state),
               state.currentRoute(state)),
               ui.timer(state)

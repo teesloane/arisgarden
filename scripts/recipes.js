@@ -68,8 +68,6 @@ function Recipe() {
     let p = recipe.meta.properties
 
     return h("div", {}, [
-      ui.navbar(),
-
       h("ul", { class: "rl_hero_data" }, [
         h("li", liAttr, p.name),
         h("li", liAttr, p.day_made),
@@ -84,8 +82,6 @@ function Recipe() {
     let mealType = is_vegan === "true" ? "Vegan" : "Vegetarian"
 
     return h("div", { class: "rs_props" }, [
-      ui.navbar(),
-
       ui.largeText(name),
 
       h("ul", { class: "rs_metadata"}, [
