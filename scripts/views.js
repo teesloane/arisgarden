@@ -212,9 +212,34 @@ function UiFn() {
    * Page: About
    */
   this.about = () => {
+    let $li = {style: {padding: "8px 0"}};
     return h("main", {}, [
       ui.hero("media/imgs/placeholder.png", () => h("span", {}, "") ),
-      h("div", {class: "content"}, "About page")
+      h("div", {class: "content", style: {padding: "48px 0"}}, [
+        h("h1", {}, "About"),
+        h("h3", {}, "About Ari"),
+        h("p", {}, "Ari is a racoon. He used to eat a lot of trash but over time he decided it was time to eat less trash and eat more healthy things. Nowadays, Ari is working to hard to get better at cooking, mostly with vegetables and no longer with meat. Ari eats vegetables that are orange, light yellow, green, lighter green, darker green, red, light red, beet red, and other colours too. He has yet to find a blue vegetable."),
+        h("h3", {}, "About Ari's Garden"),
+        h("p", {}, "Ari’s Garden is an online cookbook that Ari cultivates whenever he gets a chance to try a new meal—here he writes out the steps and ingredients for a meal, adds photos, and other useful things to make the process of preparing a meal easier. Here are some things you can do on Ari’s Garden:"),
+        h("ul", {}, [
+          h("li", $li, "Pick a recipe and quickly see what’s in it and what the steps to make it are."),
+          h("li", $li, [
+            h("div", {style: {display: "flex"}}, [
+              h("span", {}, "Set a timer for a particular step in a recipe—look for the watch icon:"),
+              h("span", {style: {paddingLeft: "4px"}}, this.icon("watch.svg")),
+            ])
+          ]),
+          h("li", $li, "Set the current step you are on so you don’t forget what you are doing (this happens to Ari sometimes)."),
+          h("li", $li, "And some other stuff."),
+        ]),
+        h("h4", {}, "There are a few pests that Ari does not like having in his garden:"),
+        h("ul", {}, [
+          h("li", $li, "No advertisements!"),
+          h("li", $li, "No tracking you or taking your personal data!"),
+        ]),
+        h("p", {}, "The recipes on Ari’s Garden come from all over the place. If you see your recipe on Ari’s Garden and are not ok with that, please let us know and Ari will give it the boot!"),
+        h("p", {}, `Ari’s Garden is an open source project. That means if you see something not working or you have suggestion to make, you can do that by going over to the Github Project and filing an issue or making a PR.`),
+      ])
     ])
   }
 

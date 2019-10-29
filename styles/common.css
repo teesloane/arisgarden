@@ -2,10 +2,11 @@
 
 .content {
   max-width: 868px;
+  padding: 16px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  line-height: 1.5rem;
 }
 
 .main {
@@ -253,7 +254,7 @@
   letter-spacing: 2px;
   background: #222;
   align-items: center;
-  color: #f1c40f;
+  color: var(--primary);
 }
 
 
@@ -388,6 +389,6 @@
     min-height: 25%;
   }
 
-  .v_Navbar {position: absolute; padding: 0; width: 100%;}
-  .v_Navbar div {width: 100%; padding: 4px 0; justify-content: center;}
+  .v_Navbar {position: absolute; padding: 0; background: #222; width: 100%}
+  .v_Navbar div {justify-content: center;}
 }

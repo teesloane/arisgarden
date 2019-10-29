@@ -28,8 +28,8 @@ body {
   line-height: 1;
 }
 ol, ul {
-  list-style: none;
-  /* margin-left: 16px; */
+  /* list-style: none; */
+  margin-left: 16px;
 }
 blockquote, q {
   quotes: none;
@@ -91,9 +91,13 @@ hr {
   background-color: white;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  margin: 0;
-}
+h1, h2, h3, h4, h5, h6 {margin: 16px 0;}
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.3rem; }
+h3 { font-size: 1.2rem; }
+h4 { font-size: 1.0rem; font-weight: bold }
+b { font-size: 1.2rem; }
+p  { margin: 16px 0; }
 
 
 /* RecipeSingle View---------------------------------------------------------------------*/
