@@ -29,6 +29,17 @@
 
 /* View Functions */
 
+.v_fourOhFour {
+  align-items: center;
+  display: flex;
+  font-family: arial;
+  font-size: 13px;
+  justify-content: center;
+  letter-spacing: 4px;
+  min-height: 400px;
+  text-transform: uppercase;
+}
+
 /* Image Hero */
 .v_Hero {
   height: 500px;

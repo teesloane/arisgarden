@@ -19,14 +19,13 @@
 }
 
 .rs_metadata {
-  position: absolute;
   background: #222;
-  /* bottom: -32px; */
   bottom: 0;
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
   padding: 16px 0;
+  position: absolute;
   width: 100%;
 }
 
@@ -40,12 +39,12 @@
 /* --- Ingredients + Instructions ---- */
 
 .rs_ingr-instr-content {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
   padding: 32px 0 0 0;
+  width: 100%;
 }
 
 
@@ -60,37 +59,37 @@
 }
 
 .rs_ingr {
-  flex: 1;
-  height: 100%;
   align-self: flex-start;
   background: white;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
-  padding: 16px;
-  margin: 0 16px;
+  flex: 1;
+  height: 100%;
   margin-right: 16px;
+  margin: 0 16px;
+  padding: 16px;
 }
 
 
 .rs_inst {
-  flex: 1;
-  height: 100%;
-  color: white;
-  margin-right: 8px;
   align-self: flex-start;
   background: white;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
-  padding: 16px;
+  color: white;
+  flex: 1;
+  height: 100%;
+  margin-right: 8px;
   margin: 0 16px
+  padding: 16px;
 }
 
 
 
 .rs_ingr-headrow {
-  color: #333;
   background: #fafafa;
-  height: 32px;
   border-bottom: 2px solid white;
+  color: #333;
   font-weight: 700;
+  height: 32px;
 }
 
 .rs_ingr-tablerow {
@@ -119,12 +118,12 @@
 }
 
 .rs_stepSingleIngredient {
-  padding: 3px 2px 4px 6px;
+  border-radius: 2px;
+  border: 1px solid #333;
+  cursor: pointer;
   margin-left: 4px;
   margin-right: 5px;
-  border: 1px solid #333;
-  border-radius: 2px;
-  cursor: pointer;
+  padding: 3px 2px 4px 6px;
 }
 
 .rs_step--active {
@@ -146,38 +145,38 @@
 }
 
 .rs_step-wrap {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
   flex: 1;
+  justify-content: space-between;
 }
 
 .rs_step-textcontent {
-  padding: 0px 16px;
-  line-height: 28px;
   font-size: 16px;
+  line-height: 28px;
+  padding: 0px 16px;
 }
 
 /* RecipeSingle Photos */
 
 .rs_photos {
   display: flex;
-  overflow-x: scroll;
   display: flex;
   justify-content: space-around;
-  max-width: 1440px;
-  margin: 128px auto;
   margin-top: 0;
+  margin: 128px auto;
+  max-width: 1440px;
+  overflow-x: scroll;
 }
 
 .rs_photo {
-  width: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
   height: 200px;
   margin: 0 12px;
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 16px;
-  border-radius: 8px;
+  width: 350px;
 }
 
 
@@ -189,6 +188,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 64px 0;
+  list-style-type: none;
 }
 
 .rl_list li {
@@ -203,12 +203,13 @@
 }
 
 .rl_hero_data {
-  position: absolute;
-  left: 0;
   bottom: 0;
   color: white;
-  padding: 32px;
+  left: 0;
   letter-spacing: 4px;
+  list-style-type: none;
+  padding: 32px;
+  position: absolute;
 }
 
 .rl_hero_li {
