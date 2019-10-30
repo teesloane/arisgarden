@@ -26,7 +26,6 @@ const $act = {
 
   timerSet: (s, p) => {
     let message = "Hi! In order to use the timer on this site, you must ensure that your computer does not go to sleep or you do not leave this page (otherwise the timer will not work!"
-    console.log("timerSet payload is", p, "timers is ", s.timers);
     let timers = s.timers.concat([p])
     let rdata = {
       ...s,
@@ -49,17 +48,9 @@ const $act = {
     }
   } ,
 
-  // timerCancel: s => ({ ...s, timer: null, timerRunning: false }),
-
   timerCancel: (s, p) => {
-    console.log(p);
-    let newTimers = s.timers.filter(t => {
-      return t.step[0].val !== p.step[0].val
-    })
-
+    let newTimers = s.timers.filter(t => {return t.step[0].val !== p.step[0].val})
     let timerRunning = newTimers.length === 0 ? false : true
-
-
     return ({...s, timers: newTimers, timerRunning})
   },
 
