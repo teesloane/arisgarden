@@ -25,7 +25,7 @@ const $act = {
   /* TIMER ------------------------------------------------------------------- */
 
   timerSet: (s, p) => {
-    let message = "Hi! In order to use the timer on this site, you must ensure that your computer does not go to sleep or you do not leave this page (otherwise the timer will not work!"
+    let message = "Hi! In order to use the timer on this site, you must ensure that your computer does not go to sleep or you do not leave this page (otherwise the timer will not work!)"
     let timers = s.timers.concat([p])
     let rdata = {
       ...s,
