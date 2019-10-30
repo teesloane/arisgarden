@@ -66,29 +66,29 @@ function UiFn() {
    * Displays the timer at the bottom
    */
   this.timer = (state) => {
-    let timeStr     = state.timer ? util.secToStr(state.timer) : "00:00:00";
-    let centerStyle = { style: { alignSelf: "center", display: "flex" } };
-    let stepText    = state.currentRecipeStepText;
-
     let _class = state.timerRunning
         ? "v_TimerFixed"
         : "v_TimerFixed v_TimerFixed_hidden";
 
-    let v_cancelTimer = () => {
+    let colour = ["#1abc9c", "#9b59b6", "#e67e22", "#2980b9", "#2c3e50", "#f1c40f"];
+
+    let v_cancelTimer = (timer) => {
       return h("span", {
         class: "v_TimerFixed_closeBtn",
-        onClick: [$act.timerCancel]
+        onClick: [$act.timerCancel, timer]
       }, this.icon("x-circle-wh.svg"));
     }
 
-    return h("div", { class: _class }, [
-      h("span", centerStyle, [
-        h("span", { class: "pr1" }, this.icon("watch-wh.svg")),
-        h("span", { class: "pr4", style: { alignSelf: "center" } }, `${timeStr}`)
-      ]),
-      h("span", { class: "v_TimerText" }, `${stepText}`),
-      v_cancelTimer()
-    ]);
+    return h("div", { class: _class },
+      state.timers.map((t, index) => {
+        let timeStr = t ? util.secToStr(t.time) : "00:00:00";
+
+        return h("div", {class: "v_TimerBlock", style: {backgroundColor: colour[index]}}, [
+          h("span", {class: "v_TimerText"}, timeStr),
+         v_cancelTimer(t)
+        ])
+      })
+    );
   }
 
   this.icon = (name, attrs) => {

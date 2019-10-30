@@ -26,10 +26,13 @@ const $act = {
 
   timerSet: (s, p) => {
     let message = "Hi! In order to use the timer on this site, you must ensure that your computer does not go to sleep or you do not leave this page (otherwise the timer will not work!"
+    console.log("timerSet payload is", p, "timers is ", s.timers);
+    let timers = s.timers.concat([p])
     let rdata = {
       ...s,
       timer: p.time,
       timerRunning: true,
+      timers,
       currentRecipeStepText: p.step.map(c => c.val).join(" ")
     }
 
@@ -46,21 +49,41 @@ const $act = {
     }
   } ,
 
-  timerCancel: s => ({ ...s, timer: null, timerRunning: false }),
+  // timerCancel: s => ({ ...s, timer: null, timerRunning: false }),
 
+  timerCancel: (s, p) => {
+    console.log(p);
+    let newTimers = s.timers.filter(t => {
+      return t.step[0].val !== p.step[0].val
+    })
+
+    let timerRunning = newTimers.length === 0 ? false : true
+
+
+    return ({...s, timers: newTimers, timerRunning})
+  },
+
+  /**
+   * Loop through all timers and count down each one.
+   * If any of them are at 0, ring the bell and remove it from the timer queue.
+   */
   timerCountDown: (s, t) => {
-    if (s.timer == 0) {
-      var audio = new Audio('./media/sounds/alarm.wav');
-      audio.play();
+    let newTimers = []
 
-      return {
-        ...s,
-        timer: null,
-        timerRunning: false,
-      };
-    } else {
-      return { ...s, timer: s.timer - 1 };
-    }
+    s.timers.forEach(t => {
+      if (t.time == 0) {
+        var audio = new Audio('./media/sounds/alarm.wav');
+        audio.play();
+      } else {
+        t.time -= 1
+        newTimers.push(t)
+      }
+    })
+    return {...s,
+       timer: s.timer - 1,
+       timers: newTimers,
+       timerRunning: newTimers.length === 0 ? false : true
+      }
   },
 
 
@@ -78,7 +101,7 @@ const $act = {
       currentRoute: newRoute.view,
       currentRecipeStep: 0,
       currentRecipe: db.recipes[newRoute.id], // not optimal?
-  heroImg: null,
+      heroImg: null,
     })
     return (newState)
   },
@@ -93,6 +116,7 @@ var initState = {
   currentModal: null,
   heroImg: null,
   timer: null,
+  timers: [],
   timerRunning: false,
   route: "/"
 };

@@ -75,10 +75,10 @@
   background: white;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
   color: white;
-  flex: 1;
+  flex: 1.5;
   height: 100%;
   margin-right: 8px;
-  margin: 0 16px
+  margin: 0 16px;
   padding: 16px;
 }
 

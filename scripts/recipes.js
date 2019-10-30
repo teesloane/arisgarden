@@ -23,7 +23,9 @@ function Recipe() {
     } catch {
       return ui.fourOhFour()
     }
+
     // TODO handle invalid reciple currentId; make a gotoview func
+
     return h("section", {}, [
       ui.hero(heroImg, () => this._viewMetaData(state)),
       this._viewContent(state),
@@ -170,9 +172,8 @@ function Recipe() {
 
     this._viewInstructions = (state) => {
       let steps = state.currentRecipe.instructions;
-      let $wrapper = { style: { marginLeft: "16px", flex: 1.5 } }
 
-      return h("div", {...$wrapper, class: "rs_inst" }, [
+      return h("div", {class: "rs_inst" }, [
         steps.map((s, index) => {
           let stepClass =
             index == state.currentRecipeStep
@@ -186,7 +187,8 @@ function Recipe() {
               if (state.timerRunning == false) {
                 return h("div", { class: "rs_stepTimer", onClick: [$act.timerSet, setTimerPayload] }, ui.icon("watch.svg"));
               } else if (state.timerRunning) {
-                return h("div", { class: "rs_stepTimer", style: { opacity: 0 } }, ui.icon("watch.svg"));
+                return h("div", { class: "rs_stepTimer", onClick: [$act.timerSet, setTimerPayload] }, ui.icon("watch.svg"));
+                // return h("div", { class: "rs_stepTimer", style: { opacity: 0 } }, ui.icon("watch.svg"));
               }
             }
           };

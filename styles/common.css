@@ -199,23 +199,10 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 24px 0;
-  background: #333;
+  padding: 4px 0;
   color: white;
-  justify-content: center;
-  align-content: center;
   display: flex;
-  transition: all 0.5s ease;
 }
-
-.v_TimerText {
-  align-self: center;
-  max-width: 60%;
-  overflow-x: scroll;
-  white-space: nowrap;
-  alignSelf: center;
-}
-
 
 .v_TimerFixed_hidden {
   position: fixed;
@@ -227,11 +214,42 @@
   justify-content: center;
   align-content: center;
   display: flex;
-  transition: all 0.5s ease;
 }
 
+.v_TimerBlock {
+  display: flex;
+  background: #333;
+  align-items: center;
+  padding: 8px;
+  margin: 12px;
+  border: 2px solid white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.v_TimerBlock:hover {
+  align-items: center;
+  background: #333;
+  border-radius: 5px;
+  border: 1px solid white;
+  display: flex;
+  margin: 12px;
+  opacity: 0.2;
+  padding: 8px;
+}
+
+.v_TimerText {
+  align-self: center;
+  overflow-x: scroll;
+  padding-right: 8px;
+  white-space: nowrap;
+  alignSelf: center;
+}
+
+
+
 .v_TimerFixed_closeBtn {
-  position: fixed;
+  /* position: fixed; */
   right: 24px;
   margin-top: 2px;
   cursor: pointer;
