@@ -241,7 +241,11 @@ function UiFn() {
           h("li", $li, "No tracking you or taking your personal data!"),
         ]),
         h("p", {}, "The recipes on Ari’s Garden come from all over the place. If you see your recipe on Ari’s Garden and are not ok with that, please let us know and Ari will give it the boot!"),
-        h("p", {}, `Ari’s Garden is an open source project. That means if you see something not working or you have suggestion to make, you can do that by going over to the Github Project and filing an issue or making a PR.`),
+        h("p", {}, [
+          h("span", {}, "Ari’s Garden is an open source project. That means if you see something not working or you have suggestion to make, you can do that by going over to the "),
+          h("a", {class: "ext-link", href: "https://github.com/theiceshelf/arisgarden"}, " Github Project"),
+          h("span", {}, " and filing an issue or making a PR."),
+        ])
       ])
     ])
   }

@@ -78,10 +78,14 @@ th, td {
 
 
 a {
-  /* color: #fefefe; */
   border-bottom: 1px solid dotted;
   text-decoration: none;
+  color: black;
 }
+
+.ext-link {padding-bottom: 2px;   border-bottom: 1px dotted grey;}
+.ext-link:after {content: "ˆ"; color: coral;}
+
 
 hr {
   border: none;
