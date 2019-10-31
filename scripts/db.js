@@ -1,19 +1,20 @@
 var db = {
   "recipes": {
-    "granola-bars": {
+    "breakfast-quinoa": {
       "meta": {
         "properties": {
-          "original_recipe": "https://minimalistbaker.com/healthy-5-ingredient-granola-bars/",
-          "slug": "granola-bars",
-          "name": "5 Ingredient Granola Bars",
-          "day_made": "[2019-09-01]",
-          "time": "00:25:00",
-          "serves": "10 bars",
-          "is_vegan": "true",
-          "is_vegetarian": "false",
+          "belongs_to": "breakfast",
+          "day_made": "[2019-10-03]",
           "ease_of_making": "5/5",
+          "imgs": "false",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "name": "Breakfast Quinoa",
+          "original_recipe": "https://cookieandkate.com/cinnamon-breakfast-quinoa-recipe/",
           "rating": "5/5",
-          "imgs": "1.JPG,2.JPG,1.gif"
+          "serves": "4",
+          "slug": "breakfast-quinoa",
+          "time": "00:40:00"
         },
         "logbook": []
       },
@@ -22,142 +23,158 @@ var db = {
           "Ingredient",
           "Quantity",
           "Unit",
-          "Id",
-          "Group"
+          "Id"
         ],
         "data": [
           {
-            "Ingredient": "Dates (Deglet noor or medjool)",
+            "Ingredient": "Quinoa",
             "Quantity": "1",
             "Unit": "cups",
-            "Id": "dates",
-            "Group": ""
+            "Id": "quin"
           },
           {
-            "Ingredient": "Maple Syrup (or: agava nectar, honey)",
+            "Ingredient": "Water",
+            "Quantity": "2",
+            "Unit": "cups",
+            "Id": "water"
+          },
+          {
+            "Ingredient": "Maple Syrup",
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "syr"
+          },
+          {
+            "Ingredient": "Pecans or Walnuts (chopped)",
             "Quantity": "1/4",
             "Unit": "cups",
-            "Id": "maple-syrup",
-            "Group": ""
+            "Id": "nuts"
           },
           {
-            "Ingredient": "Natural Peanut Butter",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "peanut-butter",
-            "Group": ""
+            "Ingredient": "Cinnamon",
+            "Quantity": "1 or 2",
+            "Unit": "tsp",
+            "Id": "cin"
           },
           {
-            "Ingredient": "Roasted, unsalted almonds",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "almonds",
-            "Group": ""
+            "Ingredient": "Coconut oil",
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "oil"
           },
           {
-            "Ingredient": "Rolled Oats",
-            "Quantity": "1+1/2",
-            "Unit": "cups",
-            "Id": "oats-rolled",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Parchment Paper",
+            "Ingredient": "Fresh berries",
             "Quantity": "",
             "Unit": "",
-            "Id": "parchment-paper",
-            "Group": ""
+            "Id": "berr"
           },
           {
-            "Ingredient": "8x8 Baking Pan",
+            "Ingredient": "Almond butter",
             "Quantity": "",
             "Unit": "",
-            "Id": "",
-            "Group": ""
+            "Id": "almbut"
           }
         ]
       },
       "instructions": [
         {
-          "o": "Chop [#: almonds | almonds] roughly. Put them in a bowl.",
+          "o": "[&:00:15:00] Make the [#: quin | quinoa]: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes",
           "f": [
             {
-              "val": "Chop"
+              "val": "Make the"
             },
             {
-              "val": "almonds",
-              "attr": "almonds"
+              "val": "quinoa",
+              "attr": "quin"
             },
             {
-              "val": "roughly. Put them in a bowl."
+              "val": ": Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes"
             }
-          ]
+          ],
+          "timer": "00:15:00"
         },
         {
-          "o": "Put [#: oats-rolled | oats] in the bowl.",
+          "o": "[&:00:04:00] Heat chopped [#: nuts | nuts] in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes.",
           "f": [
             {
-              "val": "Put"
+              "val": "Heat chopped"
             },
             {
-              "val": "oats",
-              "attr": "oats-rolled"
+              "val": "nuts",
+              "attr": "nuts"
             },
             {
-              "val": "in the bowl."
+              "val": "in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes."
             }
-          ]
+          ],
+          "timer": "00:04:00"
         },
         {
-          "o": "Blend [#: dates | dates] until dough-y. Put them in the bowl",
+          "o": "[&:00:00:15] Add [#: oil | coconut oil], [#: cin | cinnamon] to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds.",
           "f": [
             {
-              "val": "Blend"
+              "val": "Add"
             },
             {
-              "val": "dates",
-              "attr": "dates"
+              "val": "coconut oil",
+              "attr": "oil"
             },
             {
-              "val": "until dough-y. Put them in the bowl"
+              "val": ","
+            },
+            {
+              "val": "cinnamon",
+              "attr": "cin"
+            },
+            {
+              "val": "to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds."
             }
-          ]
+          ],
+          "timer": "00:00:15"
         },
         {
-          "o": "Put [#: maple-syrup | maple syrup] and [#: peanut-butter | peanut-butter] into a saucepan and heat on low. Stir to combine.",
+          "o": "[&:00:00:02] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add [#: syr | maple syrup].",
           "f": [
             {
-              "val": "Put"
+              "val": "Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add"
             },
             {
               "val": "maple syrup",
-              "attr": "maple-syrup"
+              "attr": "syr"
+            },
+            {
+              "val": "."
+            }
+          ],
+          "timer": "00:00:02"
+        },
+        {
+          "o": "Add the nuts to the quinoa. Top with a sprinkle of cinnamon.",
+          "f": [
+            {
+              "val": "Add the nuts to the quinoa. Top with a sprinkle of cinnamon."
+            }
+          ]
+        },
+        {
+          "o": "Top with [#: berr | fresh berries] and [#: almbut | almond butter].",
+          "f": [
+            {
+              "val": "Top with"
+            },
+            {
+              "val": "fresh berries",
+              "attr": "berr"
             },
             {
               "val": "and"
             },
             {
-              "val": "peanut-butter",
-              "attr": "peanut-butter"
+              "val": "almond butter",
+              "attr": "almbut"
             },
             {
-              "val": "into a saucepan and heat on low. Stir to combine."
-            }
-          ]
-        },
-        {
-          "o": "Pour mix into the bowl and stir to combine.",
-          "f": [
-            {
-              "val": "Pour mix into the bowl and stir to combine."
-            }
-          ]
-        },
-        {
-          "o": "Transfer to a baking dish (8 x 8) lined with parchment paper.",
-          "f": [
-            {
-              "val": "Transfer to a baking dish (8 x 8) lined with parchment paper."
+              "val": "."
             }
           ]
         }
@@ -167,7 +184,7 @@ var db = {
           "type": "big-quote"
         },
         "value": [
-          "I've made a tornado of dates."
+          "I NEED ALL THE ALMOND BUTTER."
         ]
       }
     },
@@ -184,7 +201,8 @@ var db = {
           "is_vegetarian": "true",
           "ease_of_making": "5/5",
           "rating": "5/5",
-          "imgs": "1.JPG,2.JPG,3.JPG"
+          "imgs": "1.JPG,2.JPG,3.JPG",
+          "belongs_to": "main"
         },
         "logbook": []
       },
@@ -350,312 +368,13 @@ var db = {
         ]
       }
     },
-    "marinated-tofu": {
-      "meta": {
-        "properties": {
-          "day_made": "[2019-09-02]",
-          "ease_of_making": "5/5",
-          "imgs": "false",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Easy Marinated Tofu",
-          "original_recipe": "https://simpleveganblog.com/easy-marinated-tofu/",
-          "rating": "4/5",
-          "slug": "marinated-tofu",
-          "serves": "2",
-          "time": "00:25:00"
-        },
-        "logbook": []
-      },
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Tofu",
-            "Quantity": "1",
-            "Unit": "brick",
-            "Id": "tofu",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Water",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "water",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Soy Sauce",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "sauce-soy",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Maple syrup",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "maple-syrup",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Apple cider vinegar",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "vinegar-apple-cider",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Garlic powder",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "powder-garlic",
-            "Group": ""
-          }
-        ]
-      },
-      "instructions": [
-        {
-          "o": "[&:00:20:00] Press the [#: tofu | tofu] for a while (around 20 minutes). Then dice/cube it.",
-          "f": [
-            {
-              "val": "Press the"
-            },
-            {
-              "val": "tofu",
-              "attr": "tofu"
-            },
-            {
-              "val": "for a while (around 20 minutes). Then dice/cube it."
-            }
-          ],
-          "timer": "00:20:00"
-        },
-        {
-          "o": "Mix the marinade ingredients in a bowl.",
-          "f": [
-            {
-              "val": "Mix the marinade ingredients in a bowl."
-            }
-          ]
-        },
-        {
-          "o": "[&:00:15:00] Put the tofu in the bowl and cover. Put it in the fridge for 15 min.",
-          "f": [
-            {
-              "val": "Put the tofu in the bowl and cover. Put it in the fridge for 15 min."
-            }
-          ],
-          "timer": "00:15:00"
-        },
-        {
-          "o": "Take the tofu out and pan fry until golden brown.",
-          "f": [
-            {
-              "val": "Take the tofu out and pan fry until golden brown."
-            }
-          ]
-        }
-      ],
-      "content": {
-        "props": {
-          "type": "whisper"
-        },
-        "value": [
-          "Well, they are using plants to press the tofu. Big hulking things, sitting on top of 'em. Not trees, mind you. Frankly, I'm not surprised. It's about time they threw that weight around."
-        ]
-      }
-    },
-    "candied-ginger": {
-      "meta": {
-        "properties": {
-          "original_recipe": "https://www.davidlebovitz.com/candied-ginger/",
-          "day_made": "[2019-09-02]",
-          "slug": "candied-ginger",
-          "name": "Candied Ginger",
-          "serves": "one jar! (roughly)",
-          "time": "04:00:00",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "ease_of_making": "2/5",
-          "rating": "4/5"
-        },
-        "logbook": []
-      },
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Ginger",
-            "Quantity": "1",
-            "Unit": "lbs",
-            "Id": "ginger",
-            "Group": ""
-          },
-          {
-            "Ingredient": "White Sugar",
-            "Quantity": "4",
-            "Unit": "cups",
-            "Id": "sugar-white",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Water",
-            "Quantity": "4",
-            "Unit": "cups",
-            "Id": "water",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Salt",
-            "Quantity": "1",
-            "Unit": "pinch",
-            "Id": "salt",
-            "Group": ""
-          }
-        ]
-      },
-      "instructions": [
-        {
-          "o": "Peel the [#: ginger | ginger].",
-          "f": [
-            {
-              "val": "Peel the"
-            },
-            {
-              "val": "ginger",
-              "attr": "ginger"
-            },
-            {
-              "val": "."
-            }
-          ]
-        },
-        {
-          "o": "Slice the ginger thinly.",
-          "f": [
-            {
-              "val": "Slice the ginger thinly."
-            }
-          ]
-        },
-        {
-          "o": "Put ginger into a pot, cover with water. Bring water to a boil.",
-          "f": [
-            {
-              "val": "Put ginger into a pot, cover with water. Bring water to a boil."
-            }
-          ]
-        },
-        {
-          "o": "[&:00:10:00] Reduce heat and simmer for 10 minutes.",
-          "f": [
-            {
-              "val": "Reduce heat and simmer for 10 minutes."
-            }
-          ],
-          "timer": "00:10:00"
-        },
-        {
-          "o": "Repeat the previous step.",
-          "f": [
-            {
-              "val": "Repeat the previous step."
-            }
-          ]
-        },
-        {
-          "o": "Mix the [#: sugar-white | sugar], [#: water | water], [#: salt | salt] and ginger slices in the pot. Cook until the temperature reaches 225F (106C). A candy thermometer is very helpful, but otherwise, you can estimate cooking for 40 to 60 min.",
-          "f": [
-            {
-              "val": "Mix the"
-            },
-            {
-              "val": "sugar",
-              "attr": "sugar-white"
-            },
-            {
-              "val": ","
-            },
-            {
-              "val": "water",
-              "attr": "water"
-            },
-            {
-              "val": ","
-            },
-            {
-              "val": "salt",
-              "attr": "salt"
-            },
-            {
-              "val": "and ginger slices in the pot. Cook until the temperature reaches 225F (106C). A candy thermometer is very helpful, but otherwise, you can estimate cooking for 40 to 60 min."
-            }
-          ]
-        },
-        {
-          "o": "[&:01:00:00] Remove from heat. Let stand for one hour.",
-          "f": [
-            {
-              "val": "Remove from heat. Let stand for one hour."
-            }
-          ],
-          "timer": "01:00:00"
-        },
-        {
-          "o": "Drain the ginger through a colander, catch the syrup.",
-          "f": [
-            {
-              "val": "Drain the ginger through a colander, catch the syrup."
-            }
-          ]
-        },
-        {
-          "o": "Toss drained ginger in sugar.",
-          "f": [
-            {
-              "val": "Toss drained ginger in sugar."
-            }
-          ]
-        },
-        {
-          "o": "Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they are somewhat dry.",
-          "f": [
-            {
-              "val": "Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they are somewhat dry."
-            }
-          ]
-        }
-      ],
-      "content": {
-        "props": {
-          "type": "dialogue"
-        },
-        "value": [
-          "I hope I don't ruin your pan.",
-          "That's ok. It's Chemistry."
-        ]
-      }
-    },
     "chickpea-shakshuka": {
       "meta": {
         "properties": {
           "original_recipe": "https://minimalistbaker.com/1-pot-chickpea-shakshuka/",
           "day_made": "[2019-09-03]",
           "name": "1 Pot Chickpea Shakshuka",
+          "belongs_to": "main",
           "slug": "chickpea-shakshuka",
           "is_vegan": "true",
           "time": "01:00:00",
@@ -933,6 +652,7 @@ var db = {
         "properties": {
           "original_recipe": "https://cookieandkate.com/lemon-collard-greens-pasta/",
           "day_made": "[2019-09-04]",
+          "belongs_to": "main",
           "slug": "collard-green-pasta",
           "is_vegan": "false",
           "is_vegetarian": "true",
@@ -1121,6 +841,7 @@ var db = {
         "properties": {
           "original_recipe": "https://tasty.co/recipe/protein-packed-buddha-bowl",
           "day_made": "[2019-09-08]",
+          "belongs_to": "main",
           "slug": "bowl1",
           "is_vegan": "true",
           "name": "Bowl #1",
@@ -1453,6 +1174,7 @@ var db = {
           "original_recipe": "https://minimalistbaker.com/easy-1-pot-massaman-curry/",
           "rating": "5/5",
           "serves": "2",
+          "belongs_to": "main",
           "slug": "massaman-curry",
           "time": "01:00:00"
         },
@@ -1774,6 +1496,7 @@ var db = {
           "original_recipe": "https://minimalistbaker.com/30-minute-cauliflower-rice-stir-fry/",
           "rating": "5/5",
           "serves": "2",
+          "belongs_to": "main",
           "slug": "cauliflower-rice-stir-fry",
           "timer": "00:45:00"
         },
@@ -1992,6 +1715,7 @@ var db = {
           "original_recipe": "https://cookieandkate.com/spicy-kale-and-coconut-fried-rice/",
           "rating": "5/5",
           "serves": "4",
+          "belongs_to": "main",
           "slug": "kale-coconut-rice",
           "time": "00:40:00"
         },
@@ -2209,262 +1933,6 @@ var db = {
         ]
       }
     },
-    "pear-brie-salad": {
-      "meta": {
-        "properties": {
-          "day_made": "[2019-09-19]",
-          "ease_of_making": "5/5",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "is_vegan": "false",
-          "is_vegetarian": "true",
-          "name": "Pear + Brie Salad",
-          "original_recipe": "https://www.theorganickitchen.org/pears-and-brie-salad-with-honey-champagne-vinaigrette/",
-          "rating": "5/5",
-          "serves": "2",
-          "slug": "pear-brie-salad",
-          "time": "00:30:00"
-        },
-        "logbook": []
-      },
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Broccoli",
-            "Quantity": "2",
-            "Unit": "cups",
-            "Id": "broc",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Potatoes (chopped)",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "potatoes",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Dill",
-            "Quantity": "1",
-            "Unit": "sprig",
-            "Id": "dill",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Pears (sliced)",
-            "Quantity": "2",
-            "Unit": "",
-            "Id": "pears",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Brie cheese",
-            "Quantity": "4-6",
-            "Unit": "slices",
-            "Id": "cheese",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Cranberries",
-            "Quantity": "1/3",
-            "Unit": "cups",
-            "Id": "cran",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Avocado",
-            "Quantity": "1/2",
-            "Unit": "",
-            "Id": "avocado",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Pecans (chopped)",
-            "Quantity": "1/3",
-            "Unit": "cups",
-            "Id": "pecans",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Olive oil",
-            "Quantity": "1/2",
-            "Unit": "cups",
-            "Id": "oil-olive",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Apple cider vinegar",
-            "Quantity": "2",
-            "Unit": "tsp",
-            "Id": "vinegar-apple",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Rice wine vinegar",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "vinegar-rice-wine",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Shallots (minced)",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "shallots",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Maple Syrup",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "maple-syrup",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Pepper",
-            "Quantity": "1",
-            "Unit": "pinch",
-            "Id": "pepper",
-            "Group": "dressing"
-          }
-        ]
-      },
-      "instructions": [
-        {
-          "o": "Preheat oven to 425.",
-          "f": [
-            {
-              "val": "Preheat oven to 425."
-            }
-          ]
-        },
-        {
-          "o": "Add chopped [#: potatoes | potatoes] and [#: broc | broccoli] florets to bowl with [#: oil-olive | olive oil] and salt and pepper and [#: dill | dill]. Stir to coat.",
-          "f": [
-            {
-              "val": "Add chopped"
-            },
-            {
-              "val": "potatoes",
-              "attr": "potatoes"
-            },
-            {
-              "val": "and"
-            },
-            {
-              "val": "broccoli",
-              "attr": "broc"
-            },
-            {
-              "val": "florets to bowl with"
-            },
-            {
-              "val": "olive oil",
-              "attr": "oil-olive"
-            },
-            {
-              "val": "and salt and pepper and"
-            },
-            {
-              "val": "dill",
-              "attr": "dill"
-            },
-            {
-              "val": ". Stir to coat."
-            }
-          ]
-        },
-        {
-          "o": "[&:00:12:00] Put contents of bowl on a baking sheet on parchment paper. Bake for 10-12 minutes.",
-          "f": [
-            {
-              "val": "Put contents of bowl on a baking sheet on parchment paper. Bake for 10-12 minutes."
-            }
-          ],
-          "timer": "00:12:00"
-        },
-        {
-          "o": "Prepare the dressing for the salad. Add the following to a container and whisk: [#: oil-olive | Olive oil], [#: vinegar-rice-wine | Rice wine vinegar], [#: shallots | shallots], [#: maple-syrup | maple syrup], [#: pepper | ground pepper].",
-          "f": [
-            {
-              "val": "Prepare the dressing for the salad. Add the following to a container and whisk:"
-            },
-            {
-              "val": "Olive oil",
-              "attr": "oil-olive"
-            },
-            {
-              "val": ","
-            },
-            {
-              "val": "Rice wine vinegar",
-              "attr": "vinegar-rice-wine"
-            },
-            {
-              "val": ","
-            },
-            {
-              "val": "shallots",
-              "attr": "shallots"
-            },
-            {
-              "val": ","
-            },
-            {
-              "val": "maple syrup",
-              "attr": "maple-syrup"
-            },
-            {
-              "val": ","
-            },
-            {
-              "val": "ground pepper",
-              "attr": "pepper"
-            },
-            {
-              "val": "."
-            }
-          ]
-        },
-        {
-          "o": "Prepare the salad: Lightly apply the dressing to the greens. Arrange pear slices and brie on a plate. Drizzle with dressing. Add greens, cranberries, pecans, and extra slices of pear. Add a bit more dressing.",
-          "f": [
-            {
-              "val": "Prepare the salad: Lightly apply the dressing to the greens. Arrange pear slices and brie on a plate. Drizzle with dressing. Add greens, cranberries, pecans, and extra slices of pear. Add a bit more dressing."
-            }
-          ]
-        },
-        {
-          "o": "Add the [#: potatoes | potatoes] and broccoli as a side or mixed with the salad.",
-          "f": [
-            {
-              "val": "Add the"
-            },
-            {
-              "val": "potatoes",
-              "attr": "potatoes"
-            },
-            {
-              "val": "and broccoli as a side or mixed with the salad."
-            }
-          ]
-        }
-      ],
-      "content": {
-        "props": {
-          "type": "whisper"
-        },
-        "value": [
-          "A voice echoes out from the darkness. \"You can put cheese on salad\". It sounds weird, but you didn't know this before. You can feel yourself becoming more cultured already."
-        ]
-      }
-    },
     "sweet-potato-gnocci": {
       "meta": {
         "properties": {
@@ -2476,6 +1944,7 @@ var db = {
           "name": "Sweet Potato Gnocchi",
           "original_recipe": "https://biancazapatka.com/en/vegan-sweet-potato-gnocchi/",
           "rating": "4/5",
+          "belongs_to": "main",
           "slug": "sweet-potato-gnocci",
           "serves": "2",
           "time": "01:10:00"
@@ -2683,9 +2152,10 @@ var db = {
           "imgs": "false",
           "is_vegan": "true",
           "is_vegetarian": "true",
-          "name": "Garlic and White Wine Pasta with Brussel Sprouts",
+          "name": "White Wine Pasta w/ Brussel Sprouts",
           "original_recipe": "https://minimalistbaker.com/vegan-garlic-alfredo-pasta/",
           "rating": "3/5",
+          "belongs_to": "main",
           "slug": "garlic-alfredo-pasta",
           "serves": "2",
           "time": "00:30:00"
@@ -2911,266 +2381,10 @@ var db = {
         ]
       }
     },
-    "salad-raw-beet": {
-      "meta": {
-        "properties": {
-          "slug": "salad-raw-beet",
-          "original_recipe": "https://cookieandkate.com/raw-beet-salad-with-carrot-quinoa-spinach",
-          "time": "00:50:00",
-          "day_made": "[2019-09-24]",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Raw Beet Salad w/ Quinoa",
-          "ease_of_making": "4/5",
-          "imgs": "1.JPG,2.JPG,3.JPG,5.gif",
-          "rating": "4/5"
-        },
-        "logbook": []
-      },
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Quinoa",
-            "Quantity": "1/2",
-            "Unit": "cups",
-            "Id": "quin",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Edamame",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "eda",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Nuts (almonds, pecans, whatever)",
-            "Quantity": "1/3",
-            "Unit": "cups",
-            "Id": "nuts",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "A Beet (peeled)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "beet",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "A Large carrot",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "carrot",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Baby Spinach or Arugula",
-            "Quantity": "2",
-            "Unit": "cups",
-            "Id": "greens",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Avocado (cubed)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "avo",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Apple Cider Vinegar",
-            "Quantity": "3",
-            "Unit": "tbsp",
-            "Id": "vin",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Lime Juice",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "lime",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Olive Oil",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "oil",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Maple Syrup",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "syr",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Dijon Mustard",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "dij",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Salt, Pepper",
-            "Quantity": "1",
-            "Unit": "dash",
-            "Id": "salt",
-            "Group": "dressing"
-          }
-        ]
-      },
-      "instructions": [
-        {
-          "o": "[&:00:15:00] Cook the [#: quin | quinoa]: combine the quinoa with 1 cup of water. Bring to a boil, reduce heat and simmer for 15 minutes.",
-          "f": [
-            {
-              "val": "Cook the"
-            },
-            {
-              "val": "quinoa",
-              "attr": "quin"
-            },
-            {
-              "val": ": combine the quinoa with 1 cup of water. Bring to a boil, reduce heat and simmer for 15 minutes."
-            }
-          ],
-          "timer": "00:15:00"
-        },
-        {
-          "o": "[&:00:05:00] Cook the [#: eda | edamame]: bring a pot of water to boil, add the frozen edamame for 5 minutes. Drain and set aside.",
-          "f": [
-            {
-              "val": "Cook the"
-            },
-            {
-              "val": "edamame",
-              "attr": "eda"
-            },
-            {
-              "val": ": bring a pot of water to boil, add the frozen edamame for 5 minutes. Drain and set aside."
-            }
-          ],
-          "timer": "00:05:00"
-        },
-        {
-          "o": "[&:00:05:00] Toast the [#: nuts | nuts] in a pan over medium heat until they are fragrant. About 5 minutes.",
-          "f": [
-            {
-              "val": "Toast the"
-            },
-            {
-              "val": "nuts",
-              "attr": "nuts"
-            },
-            {
-              "val": "in a pan over medium heat until they are fragrant. About 5 minutes."
-            }
-          ],
-          "timer": "00:05:00"
-        },
-        {
-          "o": "Prepare the [#: beets | beets] and [#: carrot | carrots]: either chop finely or use a spiralizer to prepare the vegetables.",
-          "f": [
-            {
-              "val": "Prepare the"
-            },
-            {
-              "val": "beets",
-              "attr": "beets"
-            },
-            {
-              "val": "and"
-            },
-            {
-              "val": "carrots",
-              "attr": "carrot"
-            },
-            {
-              "val": ": either chop finely or use a spiralizer to prepare the vegetables."
-            }
-          ]
-        },
-        {
-          "o": "Prepare the vinaigrette: whisk together [#: vin | apple cider vinegar], [#: lime | lime juice], [#: oil | olive oil], [#: syr |  maple syrup ], [#: dij | dijon mustard], and [#: salt | salt and pepper].",
-          "f": [
-            {
-              "val": "Prepare the vinaigrette: whisk together"
-            },
-            {
-              "val": "apple cider vinegar",
-              "attr": "vin"
-            },
-            {
-              "val": ","
-            },
-            {
-              "val": "lime juice",
-              "attr": "lime"
-            },
-            {
-              "val": ","
-            },
-            {
-              "val": "olive oil",
-              "attr": "oil"
-            },
-            {
-              "val": ","
-            },
-            {
-              "val": "maple syrup",
-              "attr": "syr"
-            },
-            {
-              "val": ","
-            },
-            {
-              "val": "dijon mustard",
-              "attr": "dij"
-            },
-            {
-              "val": ", and"
-            },
-            {
-              "val": "salt and pepper",
-              "attr": "salt"
-            },
-            {
-              "val": "."
-            }
-          ]
-        },
-        {
-          "o": "Apply the dressing, not too much - if you have a lot of salad, portion it out and store undressed leftovers and save the dressing for leftovers.",
-          "f": [
-            {
-              "val": "Apply the dressing, not too much - if you have a lot of salad, portion it out and store undressed leftovers and save the dressing for leftovers."
-            }
-          ]
-        }
-      ],
-      "content": {
-        "props": {
-          "type": "whisper"
-        },
-        "value": [
-          "You don't need a spiralizer for this, but it's helpful."
-        ]
-      }
-    },
     "kimchi-udon": {
       "meta": {
         "properties": {
+          "belongs_to": "main",
           "day_made": "[2019-09-30]",
           "ease_of_making": "4/5",
           "imgs": "1.JPG,2.JPG,3.JPG,4.JPG",
@@ -3179,8 +2393,8 @@ var db = {
           "name": "Kimchi Udon",
           "original_recipe": "https://www.bonappetit.com/recipe/kimchi-udon-with-scallions",
           "rating": "4/5",
-          "slug": "kimchi-udon",
           "serves": "2",
+          "slug": "kimchi-udon",
           "time": "00:30:00"
         },
         "logbook": []
@@ -3367,521 +2581,6 @@ var db = {
         ]
       }
     },
-    "miso-asparagus": {
-      "meta": {
-        "properties": {
-          "day_made": "[2019-10-01]",
-          "ease_of_making": "4/5",
-          "imgs": "1.JPG,2.JPG,3.gif",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Miso Asparagus",
-          "original_recipe": "https://www.bonappetit.com/recipe/ginger-miso-grilled-asparagus",
-          "rating": "2.5/5",
-          "slug": "miso-asparagus",
-          "serves": "2",
-          "time": "00:30:00"
-        },
-        "logbook": []
-      },
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id"
-        ],
-        "data": [
-          {
-            "Ingredient": "Mirin",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "mirin"
-          },
-          {
-            "Ingredient": "Miso",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "miso"
-          },
-          {
-            "Ingredient": "Rice Wine Vinegar",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "rwv"
-          },
-          {
-            "Ingredient": "Ginger - peeled and grated",
-            "Quantity": "2",
-            "Unit": "tsp",
-            "Id": "ginger"
-          },
-          {
-            "Ingredient": "Asparagus",
-            "Quantity": "2",
-            "Unit": "bunches",
-            "Id": "asp"
-          },
-          {
-            "Ingredient": "Lime wedges",
-            "Quantity": "4",
-            "Unit": "",
-            "Id": "lime"
-          },
-          {
-            "Ingredient": "Scallions (Green onions)",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "scall"
-          },
-          {
-            "Ingredient": "Sesame Seeds",
-            "Quantity": "",
-            "Unit": "sprinkle",
-            "Id": "seeds"
-          },
-          {
-            "Ingredient": "",
-            "Quantity": "",
-            "Unit": "",
-            "Id": ""
-          }
-        ]
-      },
-      "instructions": [
-        {
-          "o": "Prepare a grill to heat.",
-          "f": [
-            {
-              "val": "Prepare a grill to heat."
-            }
-          ]
-        },
-        {
-          "o": "Whisk [#: mirin |  mirin ], [#: miso | miso], [#: rwv | vinegar], [#: ginger | ginger], in a small bowl.",
-          "f": [
-            {
-              "val": "Whisk"
-            },
-            {
-              "val": "mirin",
-              "attr": "mirin"
-            },
-            {
-              "val": ","
-            },
-            {
-              "val": "miso",
-              "attr": "miso"
-            },
-            {
-              "val": ","
-            },
-            {
-              "val": "vinegar",
-              "attr": "rwv"
-            },
-            {
-              "val": ","
-            },
-            {
-              "val": "ginger",
-              "attr": "ginger"
-            },
-            {
-              "val": ", in a small bowl."
-            }
-          ]
-        },
-        {
-          "o": "Place [#: asp | asparagus] in a container and pour miso mixture over. Toss to coat.",
-          "f": [
-            {
-              "val": "Place"
-            },
-            {
-              "val": "asparagus",
-              "attr": "asp"
-            },
-            {
-              "val": "in a container and pour miso mixture over. Toss to coat."
-            }
-          ]
-        },
-        {
-          "o": "Let things stew a few minutes. Cut the [#: scall | scallions].",
-          "f": [
-            {
-              "val": "Let things stew a few minutes. Cut the"
-            },
-            {
-              "val": "scallions",
-              "attr": "scall"
-            },
-            {
-              "val": "."
-            }
-          ]
-        },
-        {
-          "o": "[&:00:04:00] Grill asparagus (or put it in a pan if you don't have a grill), turning occasionally until charred on all sides. About 4 minutes.",
-          "f": [
-            {
-              "val": "Grill asparagus (or put it in a pan if you don't have a grill), turning occasionally until charred on all sides. About 4 minutes."
-            }
-          ],
-          "timer": "00:04:00"
-        },
-        {
-          "o": "Transfer to plate, squeeze [#: lime | lime juice] and top with scallions and sesame seeds.",
-          "f": [
-            {
-              "val": "Transfer to plate, squeeze"
-            },
-            {
-              "val": "lime juice",
-              "attr": "lime"
-            },
-            {
-              "val": "and top with scallions and sesame seeds."
-            }
-          ]
-        }
-      ],
-      "content": {
-        "props": {
-          "type": "whisper"
-        },
-        "value": [
-          "This could probably be a good side but we don't think it turned out super well. We don't have a BBQ right now so we used a pan. This made the asparagus a bit limp. We also probably over-doused it in the miso sauce... if you were using a grill it would have more places to drip off."
-        ]
-      }
-    },
-    "breakfast-quinoa": {
-      "meta": {
-        "properties": {
-          "day_made": "[2019-10-03]",
-          "ease_of_making": "5/5",
-          "imgs": "false",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Breakfast Quinoa",
-          "original_recipe": "https://cookieandkate.com/cinnamon-breakfast-quinoa-recipe/",
-          "rating": "5/5",
-          "slug": "breakfast-quinoa",
-          "serves": "4",
-          "time": "00:40:00"
-        },
-        "logbook": []
-      },
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id"
-        ],
-        "data": [
-          {
-            "Ingredient": "Quinoa",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "quin"
-          },
-          {
-            "Ingredient": "Water",
-            "Quantity": "2",
-            "Unit": "cups",
-            "Id": "water"
-          },
-          {
-            "Ingredient": "Maple Syrup",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "syr"
-          },
-          {
-            "Ingredient": "Pecans or Walnuts (chopped)",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "nuts"
-          },
-          {
-            "Ingredient": "Cinnamon",
-            "Quantity": "1 or 2",
-            "Unit": "tsp",
-            "Id": "cin"
-          },
-          {
-            "Ingredient": "Coconut oil",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "oil"
-          },
-          {
-            "Ingredient": "Fresh berries",
-            "Quantity": "",
-            "Unit": "",
-            "Id": "berr"
-          },
-          {
-            "Ingredient": "Almond butter",
-            "Quantity": "",
-            "Unit": "",
-            "Id": "almbut"
-          }
-        ]
-      },
-      "instructions": [
-        {
-          "o": "[&:00:15:00] Make the [#: quin | quinoa]: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes",
-          "f": [
-            {
-              "val": "Make the"
-            },
-            {
-              "val": "quinoa",
-              "attr": "quin"
-            },
-            {
-              "val": ": Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes"
-            }
-          ],
-          "timer": "00:15:00"
-        },
-        {
-          "o": "[&:00:04:00] Heat chopped [#: nuts | nuts] in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes.",
-          "f": [
-            {
-              "val": "Heat chopped"
-            },
-            {
-              "val": "nuts",
-              "attr": "nuts"
-            },
-            {
-              "val": "in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes."
-            }
-          ],
-          "timer": "00:04:00"
-        },
-        {
-          "o": "[&:00:00:15] Add [#: oil | coconut oil], [#: cin | cinnamon] to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds.",
-          "f": [
-            {
-              "val": "Add"
-            },
-            {
-              "val": "coconut oil",
-              "attr": "oil"
-            },
-            {
-              "val": ","
-            },
-            {
-              "val": "cinnamon",
-              "attr": "cin"
-            },
-            {
-              "val": "to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds."
-            }
-          ],
-          "timer": "00:00:15"
-        },
-        {
-          "o": "[&:00:00:02] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add [#: syr | maple syrup].",
-          "f": [
-            {
-              "val": "Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add"
-            },
-            {
-              "val": "maple syrup",
-              "attr": "syr"
-            },
-            {
-              "val": "."
-            }
-          ],
-          "timer": "00:00:02"
-        },
-        {
-          "o": "Add the nuts to the quinoa. Top with a sprinkle of cinnamon.",
-          "f": [
-            {
-              "val": "Add the nuts to the quinoa. Top with a sprinkle of cinnamon."
-            }
-          ]
-        },
-        {
-          "o": "Top with [#: berr | fresh berries] and [#: almbut | almond butter].",
-          "f": [
-            {
-              "val": "Top with"
-            },
-            {
-              "val": "fresh berries",
-              "attr": "berr"
-            },
-            {
-              "val": "and"
-            },
-            {
-              "val": "almond butter",
-              "attr": "almbut"
-            },
-            {
-              "val": "."
-            }
-          ]
-        }
-      ],
-      "content": {
-        "props": {
-          "type": "big-quote"
-        },
-        "value": [
-          "I NEED ALL THE ALMOND BUTTER."
-        ]
-      }
-    },
-    "black-bean-salad": {
-      "meta": {
-        "properties": {
-          "day_made": "[2019-10-03]",
-          "ease_of_making": "5/5",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Black Bean Salad",
-          "original_recipe": "https://cookieandkate.com/black-bean-salad-recipe/",
-          "rating": "5/5",
-          "slug": "black-bean-salad",
-          "serves": "4",
-          "time": "00:20:00"
-        },
-        "logbook": []
-      },
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id"
-        ],
-        "data": [
-          {
-            "Ingredient": "Black beans",
-            "Quantity": "3",
-            "Unit": "Cans (15oz/each)",
-            "Id": "beans"
-          },
-          {
-            "Ingredient": "Canned Corn",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "corn"
-          },
-          {
-            "Ingredient": "Bell Pepper (any colour)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "pepper"
-          },
-          {
-            "Ingredient": "Cherry Tomatoes",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "tomatoes"
-          },
-          {
-            "Ingredient": "Red Onion (diced)",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "onion"
-          },
-          {
-            "Ingredient": "Jalapeno (seeds optional)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "jalap"
-          },
-          {
-            "Ingredient": "Lime Zest",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "lime-zest"
-          },
-          {
-            "Ingredient": "Lime juice",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "lime-juice"
-          },
-          {
-            "Ingredient": "Olive oil",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "oil"
-          },
-          {
-            "Ingredient": "White vinegar",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "vin-wh"
-          },
-          {
-            "Ingredient": "Chili powder",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "chil"
-          },
-          {
-            "Ingredient": "Cumin",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "cumin"
-          },
-          {
-            "Ingredient": "Salt",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "salt"
-          },
-          {
-            "Ingredient": "Sliced Avocado (optional)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "avo"
-          }
-        ]
-      },
-      "instructions": [
-        {
-          "o": "In a large serving bowl combine all the ingredients.",
-          "f": [
-            {
-              "val": "In a large serving bowl combine all the ingredients."
-            }
-          ]
-        },
-        {
-          "o": "Cover and chill. Leftovers should last 3 to 4 days.",
-          "f": [
-            {
-              "val": "Cover and chill. Leftovers should last 3 to 4 days."
-            }
-          ]
-        }
-      ],
-      "content": {
-        "props": {
-          "type": "blurb"
-        },
-        "value": [
-          "This has a lot of ingredients but very few steps. You'll basically end up just combing a bunch of stuff in a bowl  and then adding a dressing. We'd recommend not adding the dressing to the entire bowl if you plan on having leftovers, but adding the dressing every time you have the dish."
-        ]
-      }
-    },
     "asparagus-spaghetti": {
       "meta": {
         "properties": {
@@ -3893,6 +2592,7 @@ var db = {
           "name": "Asparagus Spaghetti + Egg",
           "original_recipe": "https://www.easycheesyvegetarian.com/asparagus-spaghetti-fried-egg/",
           "rating": "3.5/5",
+          "belongs_to": "main",
           "slug": "asparagus-spaghetti",
           "serves": "2",
           "time": "00:25:00"
@@ -4043,6 +2743,7 @@ var db = {
           "original_recipe": "https://cookieandkate.com/thai-spiced-rice-bowls-recipe/",
           "rating": "3/5",
           "serves": "6",
+          "belongs_to": "main",
           "slug": "thai-rice-bowl",
           "time": "00:40:00"
         },
@@ -4341,6 +3042,7 @@ var db = {
           "original_recipe": "https://ohsheglows.com/2012/07/09/grilled-tofu-with-pineapple-salsa-and-coconut-rice/",
           "rating": "3/5",
           "serves": "2-3",
+          "belongs_to": "main",
           "slug": "tofu-pineapple-rice",
           "time": "00:50:00"
         },
@@ -4598,6 +3300,1325 @@ var db = {
         },
         "value": [
           "This recipe has a lot going on at once. If you are good at multitasking it might go quickly. I wouldn't know. Anyway. We'd recommend pressing the tofu first and then starting the coconut rice, both of which take 20-25 minutes. Also, when you grill the tofu, don't cut it too thick. If the tofu is bland, you could use some BBQ sauce. You know what it is."
+        ]
+      }
+    },
+    "pear-brie-salad": {
+      "meta": {
+        "properties": {
+          "belongs_to": "salad",
+          "day_made": "[2019-09-19]",
+          "ease_of_making": "5/5",
+          "imgs": "1.JPG,2.JPG,3.JPG",
+          "is_vegan": "false",
+          "is_vegetarian": "true",
+          "name": "Pear + Brie Salad",
+          "original_recipe": "https://www.theorganickitchen.org/pears-and-brie-salad-with-honey-champagne-vinaigrette/",
+          "rating": "5/5",
+          "serves": "2",
+          "slug": "pear-brie-salad",
+          "time": "00:30:00"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id",
+          "Group"
+        ],
+        "data": [
+          {
+            "Ingredient": "Broccoli",
+            "Quantity": "2",
+            "Unit": "cups",
+            "Id": "broc",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Potatoes (chopped)",
+            "Quantity": "1",
+            "Unit": "cups",
+            "Id": "potatoes",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Dill",
+            "Quantity": "1",
+            "Unit": "sprig",
+            "Id": "dill",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Pears (sliced)",
+            "Quantity": "2",
+            "Unit": "",
+            "Id": "pears",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Brie cheese",
+            "Quantity": "4-6",
+            "Unit": "slices",
+            "Id": "cheese",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Cranberries",
+            "Quantity": "1/3",
+            "Unit": "cups",
+            "Id": "cran",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Avocado",
+            "Quantity": "1/2",
+            "Unit": "",
+            "Id": "avocado",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Pecans (chopped)",
+            "Quantity": "1/3",
+            "Unit": "cups",
+            "Id": "pecans",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Olive oil",
+            "Quantity": "1/2",
+            "Unit": "cups",
+            "Id": "oil-olive",
+            "Group": "dressing"
+          },
+          {
+            "Ingredient": "Apple cider vinegar",
+            "Quantity": "2",
+            "Unit": "tsp",
+            "Id": "vinegar-apple",
+            "Group": "dressing"
+          },
+          {
+            "Ingredient": "Rice wine vinegar",
+            "Quantity": "1/4",
+            "Unit": "cups",
+            "Id": "vinegar-rice-wine",
+            "Group": "dressing"
+          },
+          {
+            "Ingredient": "Shallots (minced)",
+            "Quantity": "1",
+            "Unit": "tbsp",
+            "Id": "shallots",
+            "Group": "dressing"
+          },
+          {
+            "Ingredient": "Maple Syrup",
+            "Quantity": "1",
+            "Unit": "tbsp",
+            "Id": "maple-syrup",
+            "Group": "dressing"
+          },
+          {
+            "Ingredient": "Pepper",
+            "Quantity": "1",
+            "Unit": "pinch",
+            "Id": "pepper",
+            "Group": "dressing"
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "Preheat oven to 425.",
+          "f": [
+            {
+              "val": "Preheat oven to 425."
+            }
+          ]
+        },
+        {
+          "o": "Add chopped [#: potatoes | potatoes] and [#: broc | broccoli] florets to bowl with [#: oil-olive | olive oil] and salt and pepper and [#: dill | dill]. Stir to coat.",
+          "f": [
+            {
+              "val": "Add chopped"
+            },
+            {
+              "val": "potatoes",
+              "attr": "potatoes"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "broccoli",
+              "attr": "broc"
+            },
+            {
+              "val": "florets to bowl with"
+            },
+            {
+              "val": "olive oil",
+              "attr": "oil-olive"
+            },
+            {
+              "val": "and salt and pepper and"
+            },
+            {
+              "val": "dill",
+              "attr": "dill"
+            },
+            {
+              "val": ". Stir to coat."
+            }
+          ]
+        },
+        {
+          "o": "[&:00:12:00] Put contents of bowl on a baking sheet on parchment paper. Bake for 10-12 minutes.",
+          "f": [
+            {
+              "val": "Put contents of bowl on a baking sheet on parchment paper. Bake for 10-12 minutes."
+            }
+          ],
+          "timer": "00:12:00"
+        },
+        {
+          "o": "Prepare the dressing for the salad. Add the following to a container and whisk: [#: oil-olive | Olive oil], [#: vinegar-rice-wine | Rice wine vinegar], [#: shallots | shallots], [#: maple-syrup | maple syrup], [#: pepper | ground pepper].",
+          "f": [
+            {
+              "val": "Prepare the dressing for the salad. Add the following to a container and whisk:"
+            },
+            {
+              "val": "Olive oil",
+              "attr": "oil-olive"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "Rice wine vinegar",
+              "attr": "vinegar-rice-wine"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "shallots",
+              "attr": "shallots"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "maple syrup",
+              "attr": "maple-syrup"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "ground pepper",
+              "attr": "pepper"
+            },
+            {
+              "val": "."
+            }
+          ]
+        },
+        {
+          "o": "Prepare the salad: Lightly apply the dressing to the greens. Arrange pear slices and brie on a plate. Drizzle with dressing. Add greens, cranberries, pecans, and extra slices of pear. Add a bit more dressing.",
+          "f": [
+            {
+              "val": "Prepare the salad: Lightly apply the dressing to the greens. Arrange pear slices and brie on a plate. Drizzle with dressing. Add greens, cranberries, pecans, and extra slices of pear. Add a bit more dressing."
+            }
+          ]
+        },
+        {
+          "o": "Add the [#: potatoes | potatoes] and broccoli as a side or mixed with the salad.",
+          "f": [
+            {
+              "val": "Add the"
+            },
+            {
+              "val": "potatoes",
+              "attr": "potatoes"
+            },
+            {
+              "val": "and broccoli as a side or mixed with the salad."
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "whisper"
+        },
+        "value": [
+          "A voice echoes out from the darkness. \"You can put cheese on salad\". It sounds weird, but you didn't know this before. You can feel yourself becoming more cultured already."
+        ]
+      }
+    },
+    "salad-raw-beet": {
+      "meta": {
+        "properties": {
+          "belongs_to": "salad",
+          "day_made": "[2019-09-24]",
+          "ease_of_making": "4/5",
+          "imgs": "1.JPG,2.JPG,3.JPG,5.gif",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "name": "Raw Beet Salad w/ Quinoa",
+          "original_recipe": "https://cookieandkate.com/raw-beet-salad-with-carrot-quinoa-spinach",
+          "rating": "4/5",
+          "slug": "salad-raw-beet",
+          "time": "00:50:00"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id",
+          "Group"
+        ],
+        "data": [
+          {
+            "Ingredient": "Quinoa",
+            "Quantity": "1/2",
+            "Unit": "cups",
+            "Id": "quin",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Edamame",
+            "Quantity": "1",
+            "Unit": "cups",
+            "Id": "eda",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Nuts (almonds, pecans, whatever)",
+            "Quantity": "1/3",
+            "Unit": "cups",
+            "Id": "nuts",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "A Beet (peeled)",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "beet",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "A Large carrot",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "carrot",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Baby Spinach or Arugula",
+            "Quantity": "2",
+            "Unit": "cups",
+            "Id": "greens",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Avocado (cubed)",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "avo",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Apple Cider Vinegar",
+            "Quantity": "3",
+            "Unit": "tbsp",
+            "Id": "vin",
+            "Group": "dressing"
+          },
+          {
+            "Ingredient": "Lime Juice",
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "lime",
+            "Group": "dressing"
+          },
+          {
+            "Ingredient": "Olive Oil",
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "oil",
+            "Group": "dressing"
+          },
+          {
+            "Ingredient": "Maple Syrup",
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "syr",
+            "Group": "dressing"
+          },
+          {
+            "Ingredient": "Dijon Mustard",
+            "Quantity": "1",
+            "Unit": "tsp",
+            "Id": "dij",
+            "Group": "dressing"
+          },
+          {
+            "Ingredient": "Salt, Pepper",
+            "Quantity": "1",
+            "Unit": "dash",
+            "Id": "salt",
+            "Group": "dressing"
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "[&:00:15:00] Cook the [#: quin | quinoa]: combine the quinoa with 1 cup of water. Bring to a boil, reduce heat and simmer for 15 minutes.",
+          "f": [
+            {
+              "val": "Cook the"
+            },
+            {
+              "val": "quinoa",
+              "attr": "quin"
+            },
+            {
+              "val": ": combine the quinoa with 1 cup of water. Bring to a boil, reduce heat and simmer for 15 minutes."
+            }
+          ],
+          "timer": "00:15:00"
+        },
+        {
+          "o": "[&:00:05:00] Cook the [#: eda | edamame]: bring a pot of water to boil, add the frozen edamame for 5 minutes. Drain and set aside.",
+          "f": [
+            {
+              "val": "Cook the"
+            },
+            {
+              "val": "edamame",
+              "attr": "eda"
+            },
+            {
+              "val": ": bring a pot of water to boil, add the frozen edamame for 5 minutes. Drain and set aside."
+            }
+          ],
+          "timer": "00:05:00"
+        },
+        {
+          "o": "[&:00:05:00] Toast the [#: nuts | nuts] in a pan over medium heat until they are fragrant. About 5 minutes.",
+          "f": [
+            {
+              "val": "Toast the"
+            },
+            {
+              "val": "nuts",
+              "attr": "nuts"
+            },
+            {
+              "val": "in a pan over medium heat until they are fragrant. About 5 minutes."
+            }
+          ],
+          "timer": "00:05:00"
+        },
+        {
+          "o": "Prepare the [#: beets | beets] and [#: carrot | carrots]: either chop finely or use a spiralizer to prepare the vegetables.",
+          "f": [
+            {
+              "val": "Prepare the"
+            },
+            {
+              "val": "beets",
+              "attr": "beets"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "carrots",
+              "attr": "carrot"
+            },
+            {
+              "val": ": either chop finely or use a spiralizer to prepare the vegetables."
+            }
+          ]
+        },
+        {
+          "o": "Prepare the vinaigrette: whisk together [#: vin | apple cider vinegar], [#: lime | lime juice], [#: oil | olive oil], [#: syr |  maple syrup ], [#: dij | dijon mustard], and [#: salt | salt and pepper].",
+          "f": [
+            {
+              "val": "Prepare the vinaigrette: whisk together"
+            },
+            {
+              "val": "apple cider vinegar",
+              "attr": "vin"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "lime juice",
+              "attr": "lime"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "olive oil",
+              "attr": "oil"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "maple syrup",
+              "attr": "syr"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "dijon mustard",
+              "attr": "dij"
+            },
+            {
+              "val": ", and"
+            },
+            {
+              "val": "salt and pepper",
+              "attr": "salt"
+            },
+            {
+              "val": "."
+            }
+          ]
+        },
+        {
+          "o": "Apply the dressing, not too much - if you have a lot of salad, portion it out and store undressed leftovers and save the dressing for leftovers.",
+          "f": [
+            {
+              "val": "Apply the dressing, not too much - if you have a lot of salad, portion it out and store undressed leftovers and save the dressing for leftovers."
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "whisper"
+        },
+        "value": [
+          "You don't need a spiralizer for this, but it's helpful."
+        ]
+      }
+    },
+    "black-bean-salad": {
+      "meta": {
+        "properties": {
+          "belongs_to": "salad",
+          "day_made": "[2019-10-03]",
+          "ease_of_making": "5/5",
+          "imgs": "1.JPG,2.JPG,3.JPG",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "name": "Black Bean Salad",
+          "original_recipe": "https://cookieandkate.com/black-bean-salad-recipe/",
+          "rating": "5/5",
+          "serves": "4",
+          "slug": "black-bean-salad",
+          "time": "00:20:00"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id"
+        ],
+        "data": [
+          {
+            "Ingredient": "Black beans",
+            "Quantity": "3",
+            "Unit": "Cans (15oz/each)",
+            "Id": "beans"
+          },
+          {
+            "Ingredient": "Canned Corn",
+            "Quantity": "1",
+            "Unit": "cups",
+            "Id": "corn"
+          },
+          {
+            "Ingredient": "Bell Pepper (any colour)",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "pepper"
+          },
+          {
+            "Ingredient": "Cherry Tomatoes",
+            "Quantity": "1",
+            "Unit": "cups",
+            "Id": "tomatoes"
+          },
+          {
+            "Ingredient": "Red Onion (diced)",
+            "Quantity": "1",
+            "Unit": "cups",
+            "Id": "onion"
+          },
+          {
+            "Ingredient": "Jalapeno (seeds optional)",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "jalap"
+          },
+          {
+            "Ingredient": "Lime Zest",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "lime-zest"
+          },
+          {
+            "Ingredient": "Lime juice",
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "lime-juice"
+          },
+          {
+            "Ingredient": "Olive oil",
+            "Quantity": "1/4",
+            "Unit": "cups",
+            "Id": "oil"
+          },
+          {
+            "Ingredient": "White vinegar",
+            "Quantity": "1/4",
+            "Unit": "cups",
+            "Id": "vin-wh"
+          },
+          {
+            "Ingredient": "Chili powder",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "chil"
+          },
+          {
+            "Ingredient": "Cumin",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "cumin"
+          },
+          {
+            "Ingredient": "Salt",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "salt"
+          },
+          {
+            "Ingredient": "Sliced Avocado (optional)",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "avo"
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "In a large serving bowl combine all the ingredients.",
+          "f": [
+            {
+              "val": "In a large serving bowl combine all the ingredients."
+            }
+          ]
+        },
+        {
+          "o": "Cover and chill. Leftovers should last 3 to 4 days.",
+          "f": [
+            {
+              "val": "Cover and chill. Leftovers should last 3 to 4 days."
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "blurb"
+        },
+        "value": [
+          "This has a lot of ingredients but very few steps. You'll basically end up just combing a bunch of stuff in a bowl  and then adding a dressing. We'd recommend not adding the dressing to the entire bowl if you plan on having leftovers, but adding the dressing every time you have the dish."
+        ]
+      }
+    },
+    "marinated-tofu": {
+      "meta": {
+        "properties": {
+          "belongs_to": "side",
+          "day_made": "[2019-09-02]",
+          "ease_of_making": "5/5",
+          "imgs": "false",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "name": "Easy Marinated Tofu",
+          "original_recipe": "https://simpleveganblog.com/easy-marinated-tofu/",
+          "rating": "4/5",
+          "serves": "2",
+          "slug": "marinated-tofu",
+          "time": "00:25:00"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id",
+          "Group"
+        ],
+        "data": [
+          {
+            "Ingredient": "Tofu",
+            "Quantity": "1",
+            "Unit": "brick",
+            "Id": "tofu",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Water",
+            "Quantity": "1/4",
+            "Unit": "cups",
+            "Id": "water",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Soy Sauce",
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "sauce-soy",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Maple syrup",
+            "Quantity": "1",
+            "Unit": "tbsp",
+            "Id": "maple-syrup",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Apple cider vinegar",
+            "Quantity": "1",
+            "Unit": "tbsp",
+            "Id": "vinegar-apple-cider",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Garlic powder",
+            "Quantity": "1",
+            "Unit": "tsp",
+            "Id": "powder-garlic",
+            "Group": ""
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "[&:00:20:00] Press the [#: tofu | tofu] for a while (around 20 minutes). Then dice/cube it.",
+          "f": [
+            {
+              "val": "Press the"
+            },
+            {
+              "val": "tofu",
+              "attr": "tofu"
+            },
+            {
+              "val": "for a while (around 20 minutes). Then dice/cube it."
+            }
+          ],
+          "timer": "00:20:00"
+        },
+        {
+          "o": "Mix the marinade ingredients in a bowl.",
+          "f": [
+            {
+              "val": "Mix the marinade ingredients in a bowl."
+            }
+          ]
+        },
+        {
+          "o": "[&:00:15:00] Put the tofu in the bowl and cover. Put it in the fridge for 15 min.",
+          "f": [
+            {
+              "val": "Put the tofu in the bowl and cover. Put it in the fridge for 15 min."
+            }
+          ],
+          "timer": "00:15:00"
+        },
+        {
+          "o": "Take the tofu out and pan fry until golden brown.",
+          "f": [
+            {
+              "val": "Take the tofu out and pan fry until golden brown."
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "whisper"
+        },
+        "value": [
+          "Well, they are using plants to press the tofu. Big hulking things, sitting on top of 'em. Not trees, mind you. Frankly, I'm not surprised. It's about time they threw that weight around."
+        ]
+      }
+    },
+    "miso-asparagus": {
+      "meta": {
+        "properties": {
+          "belongs_to": "side",
+          "day_made": "[2019-10-01]",
+          "ease_of_making": "4/5",
+          "imgs": "1.JPG,2.JPG,3.gif",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "name": "Miso Asparagus",
+          "original_recipe": "https://www.bonappetit.com/recipe/ginger-miso-grilled-asparagus",
+          "rating": "2.5/5",
+          "serves": "2",
+          "slug": "miso-asparagus",
+          "time": "00:30:00"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id"
+        ],
+        "data": [
+          {
+            "Ingredient": "Mirin",
+            "Quantity": "1/4",
+            "Unit": "cups",
+            "Id": "mirin"
+          },
+          {
+            "Ingredient": "Miso",
+            "Quantity": "1/4",
+            "Unit": "cups",
+            "Id": "miso"
+          },
+          {
+            "Ingredient": "Rice Wine Vinegar",
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "rwv"
+          },
+          {
+            "Ingredient": "Ginger - peeled and grated",
+            "Quantity": "2",
+            "Unit": "tsp",
+            "Id": "ginger"
+          },
+          {
+            "Ingredient": "Asparagus",
+            "Quantity": "2",
+            "Unit": "bunches",
+            "Id": "asp"
+          },
+          {
+            "Ingredient": "Lime wedges",
+            "Quantity": "4",
+            "Unit": "",
+            "Id": "lime"
+          },
+          {
+            "Ingredient": "Scallions (Green onions)",
+            "Quantity": "1/4",
+            "Unit": "cups",
+            "Id": "scall"
+          },
+          {
+            "Ingredient": "Sesame Seeds",
+            "Quantity": "",
+            "Unit": "sprinkle",
+            "Id": "seeds"
+          },
+          {
+            "Ingredient": "",
+            "Quantity": "",
+            "Unit": "",
+            "Id": ""
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "Prepare a grill to heat.",
+          "f": [
+            {
+              "val": "Prepare a grill to heat."
+            }
+          ]
+        },
+        {
+          "o": "Whisk [#: mirin |  mirin ], [#: miso | miso], [#: rwv | vinegar], [#: ginger | ginger], in a small bowl.",
+          "f": [
+            {
+              "val": "Whisk"
+            },
+            {
+              "val": "mirin",
+              "attr": "mirin"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "miso",
+              "attr": "miso"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "vinegar",
+              "attr": "rwv"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "ginger",
+              "attr": "ginger"
+            },
+            {
+              "val": ", in a small bowl."
+            }
+          ]
+        },
+        {
+          "o": "Place [#: asp | asparagus] in a container and pour miso mixture over. Toss to coat.",
+          "f": [
+            {
+              "val": "Place"
+            },
+            {
+              "val": "asparagus",
+              "attr": "asp"
+            },
+            {
+              "val": "in a container and pour miso mixture over. Toss to coat."
+            }
+          ]
+        },
+        {
+          "o": "Let things stew a few minutes. Cut the [#: scall | scallions].",
+          "f": [
+            {
+              "val": "Let things stew a few minutes. Cut the"
+            },
+            {
+              "val": "scallions",
+              "attr": "scall"
+            },
+            {
+              "val": "."
+            }
+          ]
+        },
+        {
+          "o": "[&:00:04:00] Grill asparagus (or put it in a pan if you don't have a grill), turning occasionally until charred on all sides. About 4 minutes.",
+          "f": [
+            {
+              "val": "Grill asparagus (or put it in a pan if you don't have a grill), turning occasionally until charred on all sides. About 4 minutes."
+            }
+          ],
+          "timer": "00:04:00"
+        },
+        {
+          "o": "Transfer to plate, squeeze [#: lime | lime juice] and top with scallions and sesame seeds.",
+          "f": [
+            {
+              "val": "Transfer to plate, squeeze"
+            },
+            {
+              "val": "lime juice",
+              "attr": "lime"
+            },
+            {
+              "val": "and top with scallions and sesame seeds."
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "whisper"
+        },
+        "value": [
+          "This could probably be a good side but we don't think it turned out super well. We don't have a BBQ right now so we used a pan. This made the asparagus a bit limp. We also probably over-doused it in the miso sauce... if you were using a grill it would have more places to drip off."
+        ]
+      }
+    },
+    "granola-bars": {
+      "meta": {
+        "properties": {
+          "original_recipe": "https://minimalistbaker.com/healthy-5-ingredient-granola-bars/",
+          "slug": "granola-bars",
+          "name": "5 Ingredient Granola Bars",
+          "day_made": "[2019-09-01]",
+          "time": "00:25:00",
+          "serves": "10 bars",
+          "is_vegan": "true",
+          "is_vegetarian": "false",
+          "ease_of_making": "5/5",
+          "rating": "5/5",
+          "imgs": "1.JPG,2.JPG,1.gif",
+          "belongs_to": "snack"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id",
+          "Group"
+        ],
+        "data": [
+          {
+            "Ingredient": "Dates (Deglet noor or medjool)",
+            "Quantity": "1",
+            "Unit": "cups",
+            "Id": "dates",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Maple Syrup (or: agava nectar, honey)",
+            "Quantity": "1/4",
+            "Unit": "cups",
+            "Id": "maple-syrup",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Natural Peanut Butter",
+            "Quantity": "1/4",
+            "Unit": "cups",
+            "Id": "peanut-butter",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Roasted, unsalted almonds",
+            "Quantity": "1",
+            "Unit": "cups",
+            "Id": "almonds",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Rolled Oats",
+            "Quantity": "1+1/2",
+            "Unit": "cups",
+            "Id": "oats-rolled",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Parchment Paper",
+            "Quantity": "",
+            "Unit": "",
+            "Id": "parchment-paper",
+            "Group": ""
+          },
+          {
+            "Ingredient": "8x8 Baking Pan",
+            "Quantity": "",
+            "Unit": "",
+            "Id": "",
+            "Group": ""
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "Chop [#: almonds | almonds] roughly. Put them in a bowl.",
+          "f": [
+            {
+              "val": "Chop"
+            },
+            {
+              "val": "almonds",
+              "attr": "almonds"
+            },
+            {
+              "val": "roughly. Put them in a bowl."
+            }
+          ]
+        },
+        {
+          "o": "Put [#: oats-rolled | oats] in the bowl.",
+          "f": [
+            {
+              "val": "Put"
+            },
+            {
+              "val": "oats",
+              "attr": "oats-rolled"
+            },
+            {
+              "val": "in the bowl."
+            }
+          ]
+        },
+        {
+          "o": "Blend [#: dates | dates] until dough-y. Put them in the bowl",
+          "f": [
+            {
+              "val": "Blend"
+            },
+            {
+              "val": "dates",
+              "attr": "dates"
+            },
+            {
+              "val": "until dough-y. Put them in the bowl"
+            }
+          ]
+        },
+        {
+          "o": "Put [#: maple-syrup | maple syrup] and [#: peanut-butter | peanut-butter] into a saucepan and heat on low. Stir to combine.",
+          "f": [
+            {
+              "val": "Put"
+            },
+            {
+              "val": "maple syrup",
+              "attr": "maple-syrup"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "peanut-butter",
+              "attr": "peanut-butter"
+            },
+            {
+              "val": "into a saucepan and heat on low. Stir to combine."
+            }
+          ]
+        },
+        {
+          "o": "Pour mix into the bowl and stir to combine.",
+          "f": [
+            {
+              "val": "Pour mix into the bowl and stir to combine."
+            }
+          ]
+        },
+        {
+          "o": "Transfer to a baking dish (8 x 8) lined with parchment paper.",
+          "f": [
+            {
+              "val": "Transfer to a baking dish (8 x 8) lined with parchment paper."
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "big-quote"
+        },
+        "value": [
+          "I've made a tornado of dates."
+        ]
+      }
+    },
+    "candied-ginger": {
+      "meta": {
+        "properties": {
+          "belongs_to": "sweet",
+          "day_made": "[2019-09-02]",
+          "ease_of_making": "2/5",
+          "imgs": "1.JPG,2.JPG,3.JPG",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "name": "Candied Ginger",
+          "original_recipe": "https://www.davidlebovitz.com/candied-ginger/",
+          "rating": "4/5",
+          "serves": "one jar! (roughly)",
+          "slug": "candied-ginger",
+          "time": "04:00:00"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id",
+          "Group"
+        ],
+        "data": [
+          {
+            "Ingredient": "Ginger",
+            "Quantity": "1",
+            "Unit": "lbs",
+            "Id": "ginger",
+            "Group": ""
+          },
+          {
+            "Ingredient": "White Sugar",
+            "Quantity": "4",
+            "Unit": "cups",
+            "Id": "sugar-white",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Water",
+            "Quantity": "4",
+            "Unit": "cups",
+            "Id": "water",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Salt",
+            "Quantity": "1",
+            "Unit": "pinch",
+            "Id": "salt",
+            "Group": ""
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "Peel the [#: ginger | ginger].",
+          "f": [
+            {
+              "val": "Peel the"
+            },
+            {
+              "val": "ginger",
+              "attr": "ginger"
+            },
+            {
+              "val": "."
+            }
+          ]
+        },
+        {
+          "o": "Slice the ginger thinly.",
+          "f": [
+            {
+              "val": "Slice the ginger thinly."
+            }
+          ]
+        },
+        {
+          "o": "Put ginger into a pot, cover with water. Bring water to a boil.",
+          "f": [
+            {
+              "val": "Put ginger into a pot, cover with water. Bring water to a boil."
+            }
+          ]
+        },
+        {
+          "o": "[&:00:10:00] Reduce heat and simmer for 10 minutes.",
+          "f": [
+            {
+              "val": "Reduce heat and simmer for 10 minutes."
+            }
+          ],
+          "timer": "00:10:00"
+        },
+        {
+          "o": "Repeat the previous step.",
+          "f": [
+            {
+              "val": "Repeat the previous step."
+            }
+          ]
+        },
+        {
+          "o": "Mix the [#: sugar-white | sugar], [#: water | water], [#: salt | salt] and ginger slices in the pot. Cook until the temperature reaches 225F (106C). A candy thermometer is very helpful, but otherwise, you can estimate cooking for 40 to 60 min.",
+          "f": [
+            {
+              "val": "Mix the"
+            },
+            {
+              "val": "sugar",
+              "attr": "sugar-white"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "water",
+              "attr": "water"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "salt",
+              "attr": "salt"
+            },
+            {
+              "val": "and ginger slices in the pot. Cook until the temperature reaches 225F (106C). A candy thermometer is very helpful, but otherwise, you can estimate cooking for 40 to 60 min."
+            }
+          ]
+        },
+        {
+          "o": "[&:01:00:00] Remove from heat. Let stand for one hour.",
+          "f": [
+            {
+              "val": "Remove from heat. Let stand for one hour."
+            }
+          ],
+          "timer": "01:00:00"
+        },
+        {
+          "o": "Drain the ginger through a colander, catch the syrup.",
+          "f": [
+            {
+              "val": "Drain the ginger through a colander, catch the syrup."
+            }
+          ]
+        },
+        {
+          "o": "Toss drained ginger in sugar.",
+          "f": [
+            {
+              "val": "Toss drained ginger in sugar."
+            }
+          ]
+        },
+        {
+          "o": "Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they are somewhat dry.",
+          "f": [
+            {
+              "val": "Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they are somewhat dry."
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "dialogue"
+        },
+        "value": [
+          "I hope I don't ruin your pan.",
+          "That's ok. It's Chemistry."
         ]
       }
     }

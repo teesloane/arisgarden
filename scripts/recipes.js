@@ -40,6 +40,14 @@ function Recipe() {
 
   this.viewAll = (state) => {
     let rndRecipe;
+    let sortedRecipes = Object.keys(db.recipes).reduce((acc, curr) => {
+      let recipe = db.recipes[curr]
+      let belongs_to = recipe.meta.properties.belongs_to
+      if (!(belongs_to in acc)) { acc[belongs_to] = [] }
+      acc[belongs_to] = acc[belongs_to].concat([recipe]);
+      return acc
+    }, {})
+
 
     // Get the hero for the view All. Make it static if the timer is running.
     if (state.timerRunning) {
@@ -52,18 +60,18 @@ function Recipe() {
 
     return h("section", { class: "rL" }, [
       ui.hero(rndHero, () => this._viewAllHero(rndRecipe)),
-      h("div", { class: "content" }, [
-
-        // Recipe List
-        h("ul", { class: "rl_list" }, [
-          Object.keys(db.recipes).map(k => {
-            let r = db.recipes[k]
-            let p = r.meta.properties;
+      h("div", { class: "rl_columns" }, [
+        Object.keys(sortedRecipes).map(group => {
+          return h("div", {}, [
+            h("h2", {class: "v_Heading-grey"}, group + "-ish"),
+            sortedRecipes[group].map(k => {
+            let p = k.meta.properties;
             let link = "#/recipes/" + p.slug;
             return h("li", { class: "" }, [
               h("a", { class: "rl_link", href: link }, p.name)
             ])
-          })])])])
+          })
+          ])})])])
   }
 
   // SUB VIEWS -----------------------------------------------------------------
@@ -191,8 +199,8 @@ function Recipe() {
         let renderTimer = () => {
           let colours = ["#16a085", "#9b59b6", "#e67e22", "#2980b9", "#2c3e50", "#f1c40f", "#e74c3c", "#95a5a6", "#2ecc71"];
           let newColour = state.timers.length === 0 ?
-              colours[0] :
-              colours.filter(c => state.timers.every(t => t.colour !== c))[0];
+            colours[0] :
+            colours.filter(c => state.timers.every(t => t.colour !== c))[0];
 
           if (s.timer) {
             let setTimerPayload = { time: util.strToSec(s.timer), step: s.f, colour: newColour };

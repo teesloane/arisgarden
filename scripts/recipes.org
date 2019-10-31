@@ -443,14 +443,14 @@ CLOSED: [2019-09-10 Tue 19:18]
 :type: big-quote
 :END:
 - This one is worth the extra prep time.
-* DONE Garlic and White Wine Pasta with Brussel Sprouts
+* DONE White Wine Pasta w// Brussel Sprouts
 :PROPERTIES:
 :day_made: [2019-09-23]
 :ease_of_making: 3/5
 :imgs: false
 :is_vegan: true
 :is_vegetarian: true
-:name: Garlic and White Wine Pasta with Brussel Sprouts
+:name: White Wine Pasta w/ Brussel Sprouts
 :original_recipe: https://minimalistbaker.com/vegan-garlic-alfredo-pasta/
 :rating: 3/5
 :belongs_to: main

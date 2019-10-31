@@ -216,6 +216,26 @@
   padding: 4px 0;
 }
 
+.rl_columns {
+  max-width: 993px;
+  padding: 48px;
+  margin: 0 auto;
+  line-height: 1.5rem;
+  columns: 2;
+  column-gap: 64px;
+}
+
+.rl_column-header {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 4px 8px;
+  font-size: 16px;
+  margin: 16px 0;
+  background: #efefef;
+  /* display: inline-flex; */
+  color: #333;
+}
+
 
 
 
@@ -241,4 +261,7 @@
 
   .rl_list    {flex-direction: column; flex-wrap: wrap; padding: 32px; margin: 0 auto; }
   .rl_list li {width: 100%;}
+
+  .rl_columns {columns: 1;}
+  .rl_column-header {}
 }

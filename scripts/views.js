@@ -139,6 +139,7 @@ function UiFn() {
     return h("h1", { class: "v_Heading" }, t);
   }
 
+
   this.hero = (heroImgPath, childFn) => {
     let attrs = {
       class: "v_Hero",
@@ -219,9 +220,9 @@ function UiFn() {
     return h("main", {}, [
       ui.hero("media/imgs/placeholder.png", () => h("span", {}, "") ),
       h("div", {class: "content", style: {padding: "48px"}}, [
-        h("h3", {}, "About Ari"),
+        h("h2", {class: "v_Heading-grey"}, "About Ari"),
         h("p", {}, "Ari is a racoon. He used to eat a lot of trash but over time he decided it was time to eat less trash and eat more healthy things. Nowadays, Ari is working to hard to get better at cooking, mostly with vegetables and no longer with meat. Ari eats vegetables that are orange, light yellow, green, lighter green, darker green, red, light red, beet red, and other colours too. He has yet to find a blue vegetable."),
-        h("h3", {}, "About Ari's Garden"),
+        h("h2", {class: "v_Heading-grey"}, "About Ari's Garden"),
         h("p", {}, "Ari’s Garden is an online cookbook that Ari cultivates whenever he gets a chance to try a new meal—here he writes out the steps and ingredients for a meal, adds photos, and other useful things to make the process of preparing a meal easier. Here are some things you can do on Ari’s Garden:"),
         h("ul", {}, [
           h("li", $li, "Pick a recipe and quickly see what’s in it and what the steps to make it are."),
