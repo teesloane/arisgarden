@@ -179,7 +179,6 @@ function Recipe() {
 
   this._viewInstructions = (state) => {
     let steps = state.currentRecipe.instructions;
-    console.log("STATE TIMERS IS", state.timers);
 
     return h("div", { class: "rs_inst" }, [
       steps.map((s, index) => {
