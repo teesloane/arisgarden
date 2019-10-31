@@ -35,7 +35,8 @@ function Recipe() {
         h("div", { class: "rs_ingr-instr-content" }, [
           this._viewIngredients(state),
           this._viewInstructions(state),
-        ])])])}
+        ])])])
+  }
 
   this.viewAll = (state) => {
     let rndRecipe;
@@ -49,7 +50,7 @@ function Recipe() {
 
     let rndHero = this.getImg(rndRecipe.meta.properties.slug + "-hero.jpg")
 
-    return h("section", { class: "rL"}, [
+    return h("section", { class: "rL" }, [
       ui.hero(rndHero, () => this._viewAllHero(rndRecipe)),
       h("div", { class: "content" }, [
 
@@ -61,7 +62,9 @@ function Recipe() {
             let link = "#/recipes/" + p.slug;
             return h("li", { class: "" }, [
               h("a", { class: "rl_link", href: link }, p.name)
-            ])})])])])}
+            ])
+          })])])])
+  }
 
   // SUB VIEWS -----------------------------------------------------------------
 
@@ -77,7 +80,8 @@ function Recipe() {
       h("ul", { class: "rl_hero_data" }, [
         h("li", liAttr, p.name),
         h("li", liAttr, p.day_made),
-      ])])}
+      ])])
+  }
 
   /**
    * Renders inside the recipeSingle view hero head.er
@@ -90,25 +94,25 @@ function Recipe() {
     return h("div", { class: "rs_props" }, [
       ui.largeText(name),
 
-      h("ul", { class: "rs_metadata"}, [
-          h("li", liClass,
-            h("a", { href: original_recipe, target: "_blank", class: "link-light" }, "Original Recipe")),
-          h("li", liClass, mealType),
-          h("li", liClass, `Serves: ${serves}`),
-          h("li", liClass, `Time: ${time}`),
-          h("li", liClass, `Rating: ${rating}`),
-          h("li", liClass, day_made)
-        ])
+      h("ul", { class: "rs_metadata" }, [
+        h("li", liClass,
+          h("a", { href: original_recipe, target: "_blank", class: "link-light" }, "Original Recipe")),
+        h("li", liClass, mealType),
+        h("li", liClass, `Serves: ${serves}`),
+        h("li", liClass, `Time: ${time}`),
+        h("li", liClass, `Rating: ${rating}`),
+        h("li", liClass, day_made)
+      ])
     ]);
   }
 
   this._viewContent = (state) => {
-    try{
+    try {
       let content = state.currentRecipe.content
       let contentType = content.props.type
       let val = content.value
 
-      switch(contentType) {
+      switch (contentType) {
         case "big-quote":
           return ui.giantQuote(val[0])
         case "whisper":
@@ -120,7 +124,7 @@ function Recipe() {
         case "blurb":
           return ui.blurb(val)
         default:
-      return ui.spacer(100)
+          return ui.spacer(100)
       }
     }
 
@@ -142,7 +146,9 @@ function Recipe() {
           let img = `media/imgs/${this.getSlug(state)}-${i}`;
           let style = { class: "rs_photo", style: { backgroundImage: `url(${img})` } }
           return h("div", style, "")
-        })])}}
+        })])
+    }
+  }
 
   /**
    * Creates a table to view the recipes ingredients
@@ -154,7 +160,7 @@ function Recipe() {
     let $tr = { style: { padding: "16px 8px" } };
 
 
-    return h("div", {class: "rs_ingr"}, [
+    return h("div", { class: "rs_ingr" }, [
       h("table", { class: "rs_ingr-Table", style: { width: "100%" } }, [
         h("thead", { class: "rs_ingr-headrow" },
           h("tr", {}, [ingredients.keys.map((e, index) => {
@@ -164,62 +170,66 @@ function Recipe() {
         h('tbody', { class: "rs_ingr-TableBody" }, [
           ingredients.data.map(e => {
             return h("tr", { class: "rs_ingr-tablerow" }, [
-              h("td", {style: {height: "20px"}}, e.Ingredient),
-              h("td", {style: {height: "20px"}}, e.Quantity),
-              h("td", {style: {height: "20px"}}, e.Unit)
+              h("td", { style: { height: "20px" } }, e.Ingredient),
+              h("td", { style: { height: "20px" } }, e.Quantity),
+              h("td", { style: { height: "20px" } }, e.Unit)
             ])
-          })])])])}
+          })])])])
+  }
 
-    this._viewInstructions = (state) => {
-      let steps = state.currentRecipe.instructions;
+  this._viewInstructions = (state) => {
+    let steps = state.currentRecipe.instructions;
+    console.log("STATE TIMERS IS", state.timers);
 
-      return h("div", {class: "rs_inst" }, [
-        steps.map((s, index) => {
-          let stepClass =
-            index == state.currentRecipeStep
-              ? "rs_step rs_step--active"
-              : "rs_step";
+    return h("div", { class: "rs_inst" }, [
+      steps.map((s, index) => {
+        let stepClass =
+          index == state.currentRecipeStep
+            ? "rs_step rs_step--active"
+            : "rs_step";
 
-          // Timer ---
-          let renderTimer = () => {
-            if (s.timer) {
-              let setTimerPayload = { time: util.strToSec(s.timer), step: s.f };
-              if (state.timerRunning == false) {
-                return h("div", { class: "rs_stepTimer", onClick: [$act.timerSet, setTimerPayload] }, ui.icon("watch.svg"));
-              } else if (state.timerRunning) {
-                return h("div", { class: "rs_stepTimer", onClick: [$act.timerSet, setTimerPayload] }, ui.icon("watch.svg"));
-                // return h("div", { class: "rs_stepTimer", style: { opacity: 0 } }, ui.icon("watch.svg"));
-              }
-            }
-          };
+        // Timer ---
+        let renderTimer = () => {
+          let colours = ["#16a085", "#9b59b6", "#e67e22", "#2980b9", "#2c3e50", "#f1c40f", "#e74c3c", "#95a5a6", "#2ecc71"];
+          let newColour = state.timers.length === 0 ?
+              colours[0] :
+              colours.filter(c => state.timers.every(t => t.colour !== c))[0];
 
-          // Rendered ingredient step
-          // activates a modal with the ingredients quantity in it.
-          let renderStep = (f) => {
-            return f.map(c => {
-							let rejoinedVal = c.val === "," ? "" : " "
-
-              if (typeof(c.attr) === "undefined") {
-                return h("span", {}, c.val.trim() + rejoinedVal)
-              }
-
-              return h("span", {class: "rs_stepSingleIngredient", onClick: [$act.modalSet, {fn: ui.modalShowIngredient, val: c.attr, state}]}, c.val.trim() + rejoinedVal)
-            })
+          if (s.timer) {
+            let setTimerPayload = { time: util.strToSec(s.timer), step: s.f, colour: newColour };
+            return h("div", { class: "rs_stepTimer", onClick: [$act.timerSet, setTimerPayload] }, ui.icon("watch.svg"));
           }
+        };
+
+        // Rendered ingredient step
+        // activates a modal with the ingredients quantity in it.
+        let renderStep = (f) => {
+          return f.map(c => {
+            let rejoinedVal = c.val === "," ? "" : " "
+
+            if (typeof (c.attr) === "undefined") {
+              return h("span", {}, c.val.trim() + rejoinedVal)
+            }
+
+            return h("span", { class: "rs_stepSingleIngredient", onClick: [$act.modalSet, { fn: ui.modalShowIngredient, val: c.attr, state }] }, c.val.trim() + rejoinedVal)
+          })
+        }
 
 
-          // Template ---
-          return h("li",
-            { class: stepClass, onClick: [$act.setRecipeStep, index] }, [
-            h("div", { class: "rs_step-wrap" }, [
-              h("div",
-                { class: "rs_step-textcontent", style: { alignContent: "center" } },
-                [
-                  h("span", {}, index + 1 + ". "),
-                  renderStep(s.f)
-                ]
-               ),
-            ]),
-            renderTimer()
-          ])})])} // I miss lisp
+        // Template ---
+        return h("li",
+          { class: stepClass, onClick: [$act.setRecipeStep, index] }, [
+          h("div", { class: "rs_step-wrap" }, [
+            h("div",
+              { class: "rs_step-textcontent", style: { alignContent: "center" } },
+              [
+                h("span", {}, index + 1 + ". "),
+                renderStep(s.f)
+              ]
+            ),
+          ]),
+          renderTimer()
+        ])
+      })])
+  } // I miss lisp
 }

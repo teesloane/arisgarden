@@ -70,7 +70,6 @@ function UiFn() {
         ? "v_TimerFixed"
         : "v_TimerFixed v_TimerFixed_hidden";
 
-    let colour = ["#1abc9c", "#9b59b6", "#e67e22", "#2980b9", "#2c3e50", "#f1c40f"];
 
     let v_cancelTimer = (timer) => {
       return h("span", {
@@ -83,7 +82,7 @@ function UiFn() {
       state.timers.map((t, index) => {
         let timeStr = t ? util.secToStr(t.time) : "00:00:00";
 
-        return h("div", {class: "v_TimerBlock", style: {backgroundColor: colour[index]}}, [
+        return h("div", {class: "v_TimerBlock", style: {backgroundColor: t.colour}}, [
           h("span", {class: "v_TimerText"}, timeStr),
          v_cancelTimer(t)
         ])
