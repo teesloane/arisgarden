@@ -133,7 +133,7 @@ var db = {
           "timer": "00:00:15"
         },
         {
-          "o": "[&:00:00:02] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add [#: syr | maple syrup].",
+          "o": "[&:00:01:00] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add [#: syr | maple syrup].",
           "f": [
             {
               "val": "Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add"
@@ -146,7 +146,7 @@ var db = {
               "val": "."
             }
           ],
-          "timer": "00:00:02"
+          "timer": "00:01:00"
         },
         {
           "o": "Add the nuts to the quinoa. Top with a sprinkle of cinnamon.",

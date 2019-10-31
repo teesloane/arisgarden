@@ -333,12 +333,14 @@
   padding: 32px;
   min-width: 25%;
   min-height: 25%;
+  margin: 24px;
 }
 
 .v_Modal--ingredientHeading {
   font-size: 28px;
   font-weight: bold;
   margin: 24px 0;
+  text-align: center;
 }
 
 .v_Modal--ingredientQuant {
