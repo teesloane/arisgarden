@@ -1,42 +1,45 @@
 #+TITLE: RECIPES
 #+RECIPE_COUNT: 20
-* DONE 5 ingredient granola bars
-CLOSED: [2019-09-01 Sun 13:41]
+#+CATEGORIES: '(breakfast salad main sweet snack soup side)
+* DONE Breakfast Quinoa
+CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
-:original_recipe: https://minimalistbaker.com/healthy-5-ingredient-granola-bars/
-:slug: granola-bars
-:name: 5 Ingredient Granola Bars
-:day_made: [2019-09-01]
-:time: 00:25:00
-:serves: 10 bars
-:is_vegan: true
-:is_vegetarian: false
+:belongs_to: breakfast
+:day_made: [2019-10-03]
 :ease_of_making: 5/5
+:imgs: false
+:is_vegan: true
+:is_vegetarian: true
+:name: Breakfast Quinoa
+:original_recipe: https://cookieandkate.com/cinnamon-breakfast-quinoa-recipe/
 :rating: 5/5
-:imgs: 1.JPG,2.JPG,1.gif
+:serves: 4
+:slug: breakfast-quinoa
+:time: 00:40:00
 :END:
 ** Ingredients
-| Ingredient                            | Quantity | Unit | Id              | Group |
-|---------------------------------------+----------+------+-----------------+-------|
-| Dates (Deglet noor or medjool)        | 1        | cups | dates           |       |
-| Maple Syrup (or: agava nectar, honey) | 1/4      | cups | maple-syrup     |       |
-| Natural Peanut Butter                 | 1/4      | cups | peanut-butter   |       |
-| Roasted, unsalted almonds             | 1        | cups | almonds         |       |
-| Rolled Oats                           | 1+1/2    | cups | oats-rolled     |       |
-| Parchment Paper                       |          |      | parchment-paper |       |
-| 8x8 Baking Pan                        |          |      |                 |       |
+| Ingredient                  | Quantity | Unit | Id     |
+|-----------------------------+----------+------+--------|
+| Quinoa                      |        1 | cups | quin   |
+| Water                       |        2 | cups | water  |
+| Maple Syrup                 |        2 | tbsp | syr    |
+| Pecans or Walnuts (chopped) |      1/4 | cups | nuts   |
+| Cinnamon                    |   1 or 2 | tsp  | cin    |
+| Coconut oil                 |        2 | tbsp | oil    |
+| Fresh berries               |          |      | berr   |
+| Almond butter               |          |      | almbut |
 ** Steps
-1) Chop [#: almonds | almonds] roughly. Put them in a bowl.
-2) Put [#: oats-rolled | oats] in the bowl.
-3) Blend [#: dates | dates] until dough-y. Put them in the bowl
-4) Put [#: maple-syrup | maple syrup] and [#: peanut-butter | peanut-butter] into a saucepan and heat on low. Stir to combine.
-5) Pour mix into the bowl and stir to combine.
-6) Transfer to a baking dish (8 x 8) lined with parchment paper.
+1) [&:00:15:00] Make the [#: quin | quinoa]: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes
+2) [&:00:04:00] Heat chopped [#: nuts | nuts] in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes.
+3) [&:00:00:15] Add [#: oil | coconut oil], [#: cin | cinnamon] to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds.
+4) [&:00:00:02] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add [#: syr | maple syrup].
+5) Add the nuts to the quinoa. Top with a sprinkle of cinnamon.
+6) Top with [#: berr | fresh berries] and [#: almbut | almond butter].
 ** Content
 :PROPERTIES:
 :type: big-quote
 :END:
-- I've made a tornado of dates.
+- I NEED ALL THE ALMOND BUTTER.
 * DONE 8 Minute Pantry Dahl
 CLOSED: [2019-09-01 Sun 15:24]
 :PROPERTIES:
@@ -51,6 +54,7 @@ CLOSED: [2019-09-01 Sun 15:24]
 :ease_of_making: 5/5
 :rating: 5/5
 :imgs: 1.JPG,2.JPG,3.JPG
+:belongs_to: main
 :END:
 ** Ingredients
 | Ingredient                                         | Quantity | Unit  | Id               | Group |
@@ -81,91 +85,13 @@ CLOSED: [2019-09-01 Sun 15:24]
 :END:
 - I know of a pantry--and while the light at the outset glows bright and warm--it recedes into such depths that no light can reach. Now there... there grows
   the great and unimaginable vegetables.
-* DONE Easy Marinated Tofu
-CLOSED: [2019-09-02 Mon 13:49]
-:PROPERTIES:
-:day_made: [2019-09-02]
-:ease_of_making: 5/5
-:imgs: false
-:is_vegan: true
-:is_vegetarian: true
-:name: Easy Marinated Tofu
-:original_recipe: https://simpleveganblog.com/easy-marinated-tofu/
-:rating: 4/5
-:slug: marinated-tofu
-:serves: 2
-:time: 00:25:00
-:END:
-** Ingredients
-| Ingredient          | Quantity | Unit  | Id                  | Group |
-|---------------------+----------+-------+---------------------+-------|
-| Tofu                |        1 | brick | tofu                |       |
-| Water               |      1/4 | cups  | water               |       |
-| Soy Sauce           |        2 | tbsp  | sauce-soy           |       |
-| Maple syrup         |        1 | tbsp  | maple-syrup         |       |
-| Apple cider vinegar |        1 | tbsp  | vinegar-apple-cider |       |
-| Garlic powder       |        1 | tsp   | powder-garlic       |       |
-** Steps
-1) [&:00:20:00] Press the [#: tofu | tofu] for a while (around 20 minutes). Then dice/cube it.
-2) Mix the marinade ingredients in a bowl.
-3) [&:00:15:00] Put the tofu in the bowl and cover. Put it in the fridge for 15 min.
-4) Take the tofu out and pan fry until golden brown.
-** Content
-:PROPERTIES:
-:type: whisper
-:END:
-- Well, they are using plants to press the tofu. Big hulking things, sitting
-  on top of 'em. Not trees, mind you. Frankly, I'm not surprised. It's about time they threw that weight around.
-* DONE Candied Ginger
-CLOSED: [2019-09-03 Tue 07:39]
-:PROPERTIES:
-:original_recipe: https://www.davidlebovitz.com/candied-ginger/
-:day_made: [2019-09-02]
-:slug: candied-ginger
-:name: Candied Ginger
-:serves: one jar! (roughly)
-:time: 04:00:00
-:is_vegan: true
-:is_vegetarian: true
-:imgs: 1.JPG,2.JPG,3.JPG
-:ease_of_making: 2/5
-:rating: 4/5
-:END:
-** Ingredients
-
-| Ingredient  | Quantity | Unit  | Id          | Group |
-|-------------+----------+-------+-------------+-------|
-| Ginger      |        1 | lbs   | ginger      |       |
-| White Sugar |        4 | cups  | sugar-white |       |
-| Water       |        4 | cups  | water       |       |
-| Salt        |        1 | pinch | salt        |       |
-** Steps
-
-1) Peel the [#: ginger | ginger].
-2) Slice the ginger thinly.
-3) Put ginger into a pot, cover with water. Bring water to a boil.
-4) [&:00:10:00] Reduce heat and simmer for 10 minutes.
-5) Repeat the previous step.
-6) Mix the [#: sugar-white | sugar], [#: water | water], [#: salt | salt] and
-   ginger slices in the pot. Cook until the temperature reaches 225F (106C). A
-   candy thermometer is very helpful, but otherwise, you can estimate cooking
-   for 40 to 60 min.
-7) [&:01:00:00] Remove from heat. Let stand for one hour.
-8) Drain the ginger through a colander, catch the syrup.
-9) Toss drained ginger in sugar.
-10) Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they are somewhat dry.
-** Content
-:PROPERTIES:
-:type: dialogue
-:END:
-- I hope I don't ruin your pan.
-- That's ok. It's Chemistry.
 * DONE 1 Pot Chickpea Shakshuka
 CLOSED: [2019-09-03 Tue 21:30]
 :PROPERTIES:
 :original_recipe: https://minimalistbaker.com/1-pot-chickpea-shakshuka/
 :day_made: [2019-09-03]
 :name: 1 Pot Chickpea Shakshuka
+:belongs_to: main
 :slug: chickpea-shakshuka
 :is_vegan: true
 :time: 01:00:00
@@ -211,6 +137,7 @@ CLOSED: [2019-09-04 Wed 18:13]
 :PROPERTIES:
 :original_recipe: https://cookieandkate.com/lemon-collard-greens-pasta/
 :day_made: [2019-09-04]
+:belongs_to: main
 :slug: collard-green-pasta
 :is_vegan: false
 :is_vegetarian: true
@@ -255,6 +182,7 @@ CLOSED: [2019-09-10 Tue 18:10]
 :PROPERTIES:
 :original_recipe: https://tasty.co/recipe/protein-packed-buddha-bowl
 :day_made: [2019-09-08]
+:belongs_to: main
 :slug: bowl1
 :is_vegan: true
 :name: Bowl #1
@@ -320,6 +248,7 @@ CLOSED: [2019-09-10 Tue 19:18]
 :original_recipe: https://minimalistbaker.com/easy-1-pot-massaman-curry/
 :rating: 5/5
 :serves: 2
+:belongs_to: main
 :slug: massaman-curry
 :time: 01:00:00
 :END:
@@ -377,6 +306,7 @@ CLOSED: [2019-09-10 Tue 19:18]
 :original_recipe: https://minimalistbaker.com/30-minute-cauliflower-rice-stir-fry/
 :rating: 5/5
 :serves: 2
+:belongs_to: main
 :slug: cauliflower-rice-stir-fry
 :timer: 00:45:00
 :END:
@@ -433,6 +363,7 @@ CLOSED: [2019-09-10 Tue 19:18]
 :original_recipe: https://cookieandkate.com/spicy-kale-and-coconut-fried-rice/
 :rating: 5/5
 :serves: 4
+:belongs_to: main
 :slug: kale-coconut-rice
 :time: 00:40:00
 :END:
@@ -470,8 +401,294 @@ CLOSED: [2019-09-10 Tue 19:18]
 :END:
 - Clap-Clap (!) You know what that means?
 - Dinner time!
+* DONE Sweet Potato Gnocchi
+:PROPERTIES:
+:day_made: [2019-09-22]
+:ease_of_making: 3/5
+:imgs: 1.JPG,2.JPG,4.gif
+:is_vegan: false
+:is_vegetarian: true
+:name: Sweet Potato Gnocchi
+:original_recipe: https://biancazapatka.com/en/vegan-sweet-potato-gnocchi/
+:rating: 4/5
+:belongs_to: main
+:slug: sweet-potato-gnocci
+:serves: 2
+:time: 01:10:00
+:END:
+** Ingredients
+| Ingredient                                 | Quantity | Unit   | Id           |
+|--------------------------------------------+----------+--------+--------------|
+| Sweet Potato (large / 600g)                |        1 |        | potato-sweet |
+| Nutritional Yeast or Parmesan (optional)   |      2-3 | tbsp   | parm         |
+| Flour                                      |      1/3 | cups   | flour        |
+| Salt                                       |      1/2 | tsp    | salt         |
+| Cherry tomatoes                            |      250 | grams  | tomatoes     |
+| Vegan butter or coconut oil                |        2 | tbsp   | coco-oil     |
+| Garlic                                     |        3 | cloves | garlic       |
+| Optional Nuts (pine or pecan, or whatever) |        4 | tbsp   | nuts         |
+** Steps
+1) [&: 00:50:00] Prick the [#: potato-sweet | sweet potato] several times with a fork. Put it in the oven for 50-60 minutes at about 425 degrees.
+2) Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add [#: salt | salt]. Add nutritional yeast or parmesan if you want. Add the [#: flour | flour] and knead gently. Don't over knead. Try to use as little flour as possible.
+3) Transfer the dough to a floured work surface. Form it in a flat ball and cut into quarters. Take a piece and form a long rope, rolling it into a long rope. Cut the rope into 2cm pieces.
+4) Create gnocchi "ridges" into the sweet potato pieces by rolling it along the tines of a fork (from the tip backward).
+5) Bring a pot of salted water to a boil. Add the gnocchi, cook until they float to the top of the water. Drain. Optional: toss with a little olive oil to prevent sticking.
+6) If you have more gnocchi than you need, now is the time to freeze the abundance!
+7) [&: 00:15:00] Put [#: tomatoes | tomatoes] onto a baking sheet with cloves of garlic. Drizzle  with olive oil. Season with salt and pepper. Roast in the oven at 400 for 15 minutes.
+8) Toast [#: nuts | nuts] in a small pan with additional oil. Set aside.
+9) Heat [#: coco-oil | coconut oil] on medium. Add the gnocchi and roast until golden-brown and crispy.
+10) Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs.
+** Content
+:PROPERTIES:
+:type: big-quote
+:END:
+- This one is worth the extra prep time.
+* DONE Garlic and White Wine Pasta with Brussel Sprouts
+:PROPERTIES:
+:day_made: [2019-09-23]
+:ease_of_making: 3/5
+:imgs: false
+:is_vegan: true
+:is_vegetarian: true
+:name: Garlic and White Wine Pasta with Brussel Sprouts
+:original_recipe: https://minimalistbaker.com/vegan-garlic-alfredo-pasta/
+:rating: 3/5
+:belongs_to: main
+:slug: garlic-alfredo-pasta
+:serves: 2
+:time: 00:30:00
+:END:
+** Ingredients
+| Ingredient               | Quantity | Unit   | Id     |
+|--------------------------+----------+--------+--------|
+| Brussel Sprouts (halved) |       16 | ounces | brus   |
+| Olive Oil                |      1-2 | tbsp   | oil    |
+| Garlic                   |        4 | cloves | garlic |
+| White Wine               |      1/3 | cups   | wine   |
+| Cornstarch               |        4 | tbsp   | corn   |
+| Almond milk              |      3/4 | cups   | milk   |
+| Nutritional Yeast        |        4 | tbsp   | yeast  |
+| Parmesean                |      1/4 | cups   | parm   |
+| Pasta                    |       10 | ounces | pasta  |
+|                          |          |        |        |
+** Steps
+1) Preheat oven to 400F. Add [#: brus | brussel sprouts] to baking sheet in a single layer. Drizzel with [#: oil | oil] and season with salt and pepper. Arranger in a single layer.
+2) Bring a pot of water to a boil.
+3) Heat a skillet. Add 1-2 tbsp of oil. Add [#: garlic | garlic]. Saute for 3 minutes.
+4) [&:00:02:00] Add [#: wine | wine]. Saute for 2-4 minutes.
+5) Add [#: corn | cornstarch] and [#: milk | almond milk] and whisk. It'll be clumpy.
+6) Move the mixture to a blender. Add [#: yeast | nutritional yeast], salt + pepper,
+   [#: parm | parmesan cheese]. Blend on high until creamy and smooth.
+7) Transfer sauce back to skilled and warm over medium low heat. It should
+   thicken, then lower the heat to low and simmer until the pasta is cooked. If
+   it gets too thick, add almond milk to thin it out. Try not to let a film form overtop.
+8) [&:00:12:00] Add brussel sprouts to the oven for 12-15 minutes or until
+   golden brown.
+9) At the same time as the previous step, add pasta to boiling water and cook
+   according to the package instructions.
+10) Once the pasta is cooked, drain the water and add directly to the sauce
+    along with the brussel sprouts. Season with more parmesean if you want.
+** Content
+:PROPERTIES:
+:type: big-quote
+:END:
+- I forgot to take photos for this one.
+* DONE Kimchi Udon
+CLOSED: [2019-10-06 Sun 12:50]
+:PROPERTIES:
+:belongs_to: main
+:day_made: [2019-09-30]
+:ease_of_making: 4/5
+:imgs: 1.JPG,2.JPG,3.JPG,4.JPG
+:is_vegan: false
+:is_vegetarian: true
+:name: Kimchi Udon
+:original_recipe: https://www.bonappetit.com/recipe/kimchi-udon-with-scallions
+:rating: 4/5
+:serves: 2
+:slug: kimchi-udon
+:time: 00:30:00
+:END:
+** Ingredients
+| Ingredient                | Quantity | Unit  | Id           |
+|---------------------------+----------+-------+--------------|
+| Butter, unsalted          |        5 | tbsp  | butter       |
+| Kimchi (chopped)          |        1 | cups  | kimchi       |
+| Kimchi (juice)            |      1/3 | cups  | kimchi-juice |
+| Gochujang                 |        2 | tbsp  | gochu        |
+| Vegetable Broth           |     1/2/ | cup   | veg-broth    |
+| Udon Noodles              |        1 | lb    | udon         |
+| Toasted Sesame Seeds      |        1 | tbsp  | sesa         |
+| Salt                      |        1 | pinch | salt         |
+| Egg yolks                 |     2- 4 |       | yolks        |
+| Scallions (thinly sliced) |        3 |       | scall        |
+** Steps
+1) Chop [#: kimchi | kimchi] and collect [#: kimchi-juice | kimchi juice].
+2) [&: 00:04:00] Heat 2 tbsp of butter on medium high. Add chopped kimchi and [#: gochu | gochujang] and
+   cook, stirring until kimchi is softened and lightly caramelized, around 4 minutes.
+3) [&: 00:03:00] Add [#: veg-broth | broth] and kimchi juice and bring to a simmer. Cook until slightly reduced,
+   about 3 minutes.
+4) Boil [#: udon | noodles] according to package directions.
+5) [&: 00:02:00] Using tongs, transfer noodles to the skillet and add the remaining 3 tbsp of
+   butter. Cook, tossing often, about 2 minutes.
+6) Season with salt if needed.
+7) Divide into bowls, top with egg yolks, [#: scall | scallions] and sesame seeds.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- You can remove an egg white by moving the egg from hand to hand.
+* DONE Asparagus Spaghetti with Egg
+CLOSED: [2019-10-31 Thu 19:34]
+:PROPERTIES:
+:day_made:
+:ease_of_making: 5/5
+:imgs: 1.JPG,2.JPG,3.JPG
+:is_vegan: false
+:is_vegetarian: true
+:name: Asparagus Spaghetti + Egg
+:original_recipe: https://www.easycheesyvegetarian.com/asparagus-spaghetti-fried-egg/
+:rating: 3.5/5
+:belongs_to: main
+:slug: asparagus-spaghetti
+:serves: 2
+:time: 00:25:00
+:END:
+** Ingredients
+| Ingredient                       | Quantity | Unit   | Id        |
+|----------------------------------+----------+--------+-----------|
+| Spaghetti                        |      200 | grams  | spag      |
+| Butter                           |        1 | tbsp   | but       |
+| Garlic                           |        2 | cloves | garlic    |
+| Asparagus (cut to 1-inch pieces) |      150 | grams  | asparagus |
+| Salt/Pepper                      |        1 | pinch  | sandp     |
+| Parmesan                         |        2 | tbsp   | parm      |
+| Eggs                             |        2 |        | eggs      |
+| Pre-made pesto sauce             |          |        |           |
+** Steps
+1) [&:00:10:00] Boil spaghetti until al dente. Around 10 minutes.
+2) [&:00:04:00] Melt [#: but | butter] in a frying pan and add [#: asparagus |
+   asparagus]. Cook for a few minutes.
+3) Add the [#: garlic | garlic] and cook a little longer until the asparagus is
+   tender with a bit of a crunch still. Season with salt and pepper.
+4) When the pasta is ready, drain and add the asparagus mixture and the pesto.
+   Mix everything in and put a lit on to keep the heat in.
+5) Make two fried eggs. Plate the spaghetti and put the egg on top.
+** Content
+:PROPERTIES:
+:type: blurb
+:END:
+- The original recipe instructs you to make your own pesto. I don't have the energy to find million dollar pine nuts right now! Too bad!
+  I'm buying a jar of pesto! Too bad for you recipe! You can't tell me what to
+  do! .... Anyway. This was quick and easy to make, but make sure you use enough
+  asparagus for variety. Maybe consider adding some chopped nuts.
+* DONE Thai-Spice Rice Bowls
+CLOSED: [2019-10-16 Wed 23:14]
+:PROPERTIES:
+:day_made: [2019-10-07]
+:ease_of_making: 5/5
+:imgs: 1.JPG,2.JPG,3.JPG
+:is_vegan: true
+:is_vegetarian: true
+:name: Thai-Spice Rice Bowls
+:original_recipe: https://cookieandkate.com/thai-spiced-rice-bowls-recipe/
+:rating: 3/5
+:serves: 6
+:belongs_to: main
+:slug: thai-rice-bowl
+:time: 00:40:00
+:END:
+** Ingredients
+| Ingredient             |  Quantity | Unit      | Id       | Group |
+|------------------------+-----------+-----------+----------+-------|
+| Olive oil              |         1 | tsp       | oil      | broth |
+| Red curry paste        |         1 | tbsp      | rcp      | broth |
+| Soy sauce              |       1/4 | cups      | soysauce | broth |
+| Peanut butter          |       1/4 | cups      | pb       | broth |
+| Vegetable broth        |         4 | cups      | vegbroth | broth |
+| Honey                  |         2 | tbsp      | honey    | broth |
+| Coconut milk           | 1 (14 oz) | can       | coco     | broth |
+| Garlic                 |         4 | cloves    | garlic   | broth |
+| Ginger                 |         1 | thumb-tip | ginger   | broth |
+| Rice                   |         1 | cups      | rice     |       |
+| Carrots (matchsticked) |         1 | cups      | carrots  |       |
+| Peanuts                |       1/4 | cups      | peanuts  |       |
+| Cucumber               |       1/2 |           | cucu     |       |
+| Bell pepper (sliced)   |         1 |           | bell     |       |
+| Green onions (sliced)  |         2 |           | gonion   |       |
+| Jalapeno               |         1 |           | jalap    |       |
+| Lime                   |         1 |           | lime     |       |
+** Steps
+1) Make the [#: rice | rice]. Cook according to packaging.
+2) Prepare garnishes: matchstick the [#:carrots | carrots], thinly slice the [#: cucu | cucumber], slice the [#: jalap | jalapeno] into rings and chop the [#: peanuts | peanuts].
+3) Broth pt. 1: heat saucepan with oil. Add [#: garlic | garlic] and [#: ginger | ginger] when hot, for 30 seconds.
+4) Broth pt. 2: Add [#: rcp | thai curry paste], [#: soysauce | soy sauce], [#: pb | peanut butter], [#: vegbroth | vegetable broth], [#: coco | coconut milk] and [#: honey | honey].
+5) [&:00:10:00] Broth pt. 3: Bring to boil, reduce heat, simmer for 10 minutes.
+6) Put rice in bowls, add broth, add diced vegetables as garnish. Enjoy!
+** Content
+:PROPERTIES:
+:type: big-quote
+:END:
+- Is it supposed to be so soupy?
+* DONE Pineapple Salsa + Coconut Rice
+CLOSED: [2019-10-16 Wed 23:15]
+:PROPERTIES:
+:day_made: [2019-10-10]
+:ease_of_making: 3/5
+:imgs: 1.JPG,2.JPG,3.JPG
+:is_vegan: true
+:is_vegetarian: true
+:name: Pineapple Salsa + Coconut Rice
+:original_recipe: https://ohsheglows.com/2012/07/09/grilled-tofu-with-pineapple-salsa-and-coconut-rice/
+:rating: 3/5
+:serves: 2-3
+:belongs_to: main
+:slug: tofu-pineapple-rice
+:time: 00:50:00
+:END:
+** Ingredients
+| Ingredient                | Quantity | Unit        | Id                | Group           |
+|---------------------------+----------+-------------+-------------------+-----------------|
+| Olive oil                 |          |             | olive_oil         | tofu            |
+| Bell pepper               |        1 |             | bell_pepper       | pineapple salsa |
+| Tofu (firm)               |        1 | package     | tofu              | tofu            |
+| Salt                      |          | pinch       | salt              | tofu            |
+| Shredded Coconut          |      1/4 | cups        | shredded_coconut  | coconut rice    |
+| Brown rice                |        1 | cups        | brown_rice        | coconut rice    |
+| Coconut milk              |        1 | can (400ml) | coconut_milk      | coconut rice    |
+| Brown Sugar               |        2 | tsp         | brown_sugar       | coconut rice    |
+| Coconut oil               |        1 | tsp         | coconut_oil       | coconut rice    |
+| Pineapple (diced)         |    1+1/2 | cups        | pineapple         | pineapple salsa |
+| Red onion (diced)         |      1/4 | cups        | red_onion         | pineapple salsa |
+| Jalapenos (seeded, diced) |        1 | pepper      | jalapenos         | pineapple salsa |
+| Garlic (minced)           |        1 | clove       | garlic            | pineapple salsa |
+| Fresh lime juice          |        3 | tbsp        | lime_juice        | pineapple salsa |
+| Red pepper flakes         |        1 | dash        | red_pepper_flakes | pineapple salsa |
+** Steps
+1) [&:00:20:00] Press the [#: tofu | tofu] for about 20 minutes (put something heavy on it.)
+2) [&:00:08:00] Preheat your oven for the coconut rice. 300F. Toast it for 8-12 minutes until golden brown.
+3) Go prep the salsa. Mix in bowl: diced [#: pineapple | pineapple], diced [#:
+   red_onion | red onion], diced
+   [#: jalapenos | jalapenos], [#: garlic | garlic], [#: bell_peppoer |
+   peppers], [#: lime_juice | lime juice], [#: red_pepper_flakes | red pepper flakes].
+4) [&:00:25:00] Make the rice, but with the [#: coconut_milk | coconut milk] (instead of water!). Mix the can
+   with the rice, bring it to a boil and then cover with a lid for 20-25 minutes
+   until it's tender.
+5) When rice is done, stir in some [#: brown_sugar | brown sugar] and,
+   optionally, [#: coconut_oil | coconut oil].
+6) Grill the tofu - use a BBQ or pan and heat the tofu for about 5 minutes on each side.
+** Content
+:PROPERTIES:
+:type: blurb
+:END:
+- This recipe has a lot going on at once. If you are good at multitasking it
+  might go quickly. I wouldn't know. Anyway. We'd recommend pressing the
+  tofu first and then starting the coconut rice, both of which take 20-25
+  minutes. Also, when you grill the tofu, don't cut it too thick. If the tofu is
+  bland, you could use some BBQ sauce. You know what it is.
 * DONE Pear And Brie Salad
 :PROPERTIES:
+:belongs_to: salad
 :day_made: [2019-09-19]
 :ease_of_making: 5/5
 :imgs: 1.JPG,2.JPG,3.JPG
@@ -521,109 +738,20 @@ CLOSED: [2019-09-10 Tue 19:18]
   "You can put cheese on salad".
   It sounds weird, but you didn't know this before.
   You can feel yourself becoming more cultured already.
-* DONE Sweet Potato Gnocchi
-:PROPERTIES:
-:day_made: [2019-09-22]
-:ease_of_making: 3/5
-:imgs: 1.JPG,2.JPG,4.gif
-:is_vegan: false
-:is_vegetarian: true
-:name: Sweet Potato Gnocchi
-:original_recipe: https://biancazapatka.com/en/vegan-sweet-potato-gnocchi/
-:rating: 4/5
-:slug: sweet-potato-gnocci
-:serves: 2
-:time: 01:10:00
-:END:
-** Ingredients
-| Ingredient                                 | Quantity | Unit   | Id           |
-|--------------------------------------------+----------+--------+--------------|
-| Sweet Potato (large / 600g)                |        1 |        | potato-sweet |
-| Nutritional Yeast or Parmesan (optional)   |      2-3 | tbsp   | parm         |
-| Flour                                      |      1/3 | cups   | flour        |
-| Salt                                       |      1/2 | tsp    | salt         |
-| Cherry tomatoes                            |      250 | grams  | tomatoes     |
-| Vegan butter or coconut oil                |        2 | tbsp   | coco-oil     |
-| Garlic                                     |        3 | cloves | garlic       |
-| Optional Nuts (pine or pecan, or whatever) |        4 | tbsp   | nuts         |
-** Steps
-1) [&: 00:50:00] Prick the [#: potato-sweet | sweet potato] several times with a fork. Put it in the oven for 50-60 minutes at about 425 degrees.
-2) Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add [#: salt | salt]. Add nutritional yeast or parmesan if you want. Add the [#: flour | flour] and knead gently. Don't over knead. Try to use as little flour as possible.
-3) Transfer the dough to a floured work surface. Form it in a flat ball and cut into quarters. Take a piece and form a long rope, rolling it into a long rope. Cut the rope into 2cm pieces.
-4) Create gnocchi "ridges" into the sweet potato pieces by rolling it along the tines of a fork (from the tip backward).
-5) Bring a pot of salted water to a boil. Add the gnocchi, cook until they float to the top of the water. Drain. Optional: toss with a little olive oil to prevent sticking.
-6) If you have more gnocchi than you need, now is the time to freeze the abundance!
-7) [&: 00:15:00] Put [#: tomatoes | tomatoes] onto a baking sheet with cloves of garlic. Drizzle  with olive oil. Season with salt and pepper. Roast in the oven at 400 for 15 minutes.
-8) Toast [#: nuts | nuts] in a small pan with additional oil. Set aside.
-9) Heat [#: coco-oil | coconut oil] on medium. Add the gnocchi and roast until golden-brown and crispy.
-10) Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs.
-** Content
-:PROPERTIES:
-:type: big-quote
-:END:
-- This one is worth the extra prep time.
-* DONE Garlic and White Wine Pasta with Brussel Sprouts
-:PROPERTIES:
-:day_made: [2019-09-23]
-:ease_of_making: 3/5
-:imgs: false
-:is_vegan: true
-:is_vegetarian: true
-:name: Garlic and White Wine Pasta with Brussel Sprouts
-:original_recipe: https://minimalistbaker.com/vegan-garlic-alfredo-pasta/
-:rating: 3/5
-:slug: garlic-alfredo-pasta
-:serves: 2
-:time: 00:30:00
-:END:
-** Ingredients
-| Ingredient               | Quantity | Unit   | Id     |
-|--------------------------+----------+--------+--------|
-| Brussel Sprouts (halved) |       16 | ounces | brus   |
-| Olive Oil                |      1-2 | tbsp   | oil    |
-| Garlic                   |        4 | cloves | garlic |
-| White Wine               |      1/3 | cups   | wine   |
-| Cornstarch               |        4 | tbsp   | corn   |
-| Almond milk              |      3/4 | cups   | milk   |
-| Nutritional Yeast        |        4 | tbsp   | yeast  |
-| Parmesean                |      1/4 | cups   | parm   |
-| Pasta                    |       10 | ounces | pasta  |
-|                          |          |        |        |
-** Steps
-1) Preheat oven to 400F. Add [#: brus | brussel sprouts] to baking sheet in a single layer. Drizzel with [#: oil | oil] and season with salt and pepper. Arranger in a single layer.
-2) Bring a pot of water to a boil.
-3) Heat a skillet. Add 1-2 tbsp of oil. Add [#: garlic | garlic]. Saute for 3 minutes.
-4) [&:00:02:00] Add [#: wine | wine]. Saute for 2-4 minutes.
-5) Add [#: corn | cornstarch] and [#: milk | almond milk] and whisk. It'll be clumpy.
-6) Move the mixture to a blender. Add [#: yeast | nutritional yeast], salt + pepper,
-   [#: parm | parmesan cheese]. Blend on high until creamy and smooth.
-7) Transfer sauce back to skilled and warm over medium low heat. It should
-   thicken, then lower the heat to low and simmer until the pasta is cooked. If
-   it gets too thick, add almond milk to thin it out. Try not to let a film form overtop.
-8) [&:00:12:00] Add brussel sprouts to the oven for 12-15 minutes or until
-   golden brown.
-9) At the same time as the previous step, add pasta to boiling water and cook
-   according to the package instructions.
-10) Once the pasta is cooked, drain the water and add directly to the sauce
-    along with the brussel sprouts. Season with more parmesean if you want.
-** Content
-:PROPERTIES:
-:type: big-quote
-:END:
-- I forgot to take photos for this one.
 * DONE Raw beet salad
 CLOSED: [2019-09-25 Wed 14:42]
 :PROPERTIES:
-:slug: salad-raw-beet
-:original_recipe: https://cookieandkate.com/raw-beet-salad-with-carrot-quinoa-spinach
-:time: 00:50:00
+:belongs_to: salad
 :day_made: [2019-09-24]
+:ease_of_making: 4/5
+:imgs: 1.JPG,2.JPG,3.JPG,5.gif
 :is_vegan: true
 :is_vegetarian: true
 :name:     Raw Beet Salad w/ Quinoa
-:ease_of_making: 4/5
-:imgs: 1.JPG,2.JPG,3.JPG,5.gif
+:original_recipe: https://cookieandkate.com/raw-beet-salad-with-carrot-quinoa-spinach
 :rating: 4/5
+:slug: salad-raw-beet
+:time: 00:50:00
 :END:
 ** Ingredients
 | Ingredient                       | Quantity | Unit | Id     | Group    |
@@ -658,53 +786,87 @@ CLOSED: [2019-09-25 Wed 14:42]
 :type: whisper
 :END:
 - You don't need a spiralizer for this, but it's helpful.
-* DONE Kimchi Udon
+* DONE Black Bean Salad
 CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
-:day_made: [2019-09-30]
-:ease_of_making: 4/5
-:imgs: 1.JPG,2.JPG,3.JPG,4.JPG
-:is_vegan: false
+:belongs_to: salad
+:day_made: [2019-10-03]
+:ease_of_making: 5/5
+:imgs: 1.JPG,2.JPG,3.JPG
+:is_vegan: true
 :is_vegetarian: true
-:name: Kimchi Udon
-:original_recipe: https://www.bonappetit.com/recipe/kimchi-udon-with-scallions
-:rating: 4/5
-:slug: kimchi-udon
-:serves: 2
-:time: 00:30:00
+:name: Black Bean Salad
+:original_recipe: https://cookieandkate.com/black-bean-salad-recipe/
+:rating: 5/5
+:serves: 4
+:slug: black-bean-salad
+:time: 00:20:00
 :END:
 ** Ingredients
-| Ingredient                | Quantity | Unit  | Id           |
-|---------------------------+----------+-------+--------------|
-| Butter, unsalted          |        5 | tbsp  | butter       |
-| Kimchi (chopped)          |        1 | cups  | kimchi       |
-| Kimchi (juice)            |      1/3 | cups  | kimchi-juice |
-| Gochujang                 |        2 | tbsp  | gochu        |
-| Vegetable Broth           |     1/2/ | cup   | veg-broth    |
-| Udon Noodles              |        1 | lb    | udon         |
-| Toasted Sesame Seeds      |        1 | tbsp  | sesa         |
-| Salt                      |        1 | pinch | salt         |
-| Egg yolks                 |     2- 4 |       | yolks        |
-| Scallions (thinly sliced) |        3 |       | scall        |
+| Ingredient                | Quantity | Unit             | Id         |
+|---------------------------+----------+------------------+------------|
+| Black beans               |        3 | Cans (15oz/each) | beans      |
+| Canned Corn               |        1 | cups             | corn       |
+| Bell Pepper (any colour)  |        1 |                  | pepper     |
+| Cherry Tomatoes           |        1 | cups             | tomatoes   |
+| Red Onion (diced)         |        1 | cups             | onion      |
+| Jalapeno (seeds optional) |        1 |                  | jalap      |
+| Lime Zest                 |      1/2 | tsp              | lime-zest  |
+| Lime juice                |        2 | tbsp             | lime-juice |
+| Olive oil                 |      1/4 | cups             | oil        |
+| White vinegar             |      1/4 | cups             | vin-wh     |
+| Chili powder              |      1/2 | tsp              | chil       |
+| Cumin                     |      1/2 | tsp              | cumin      |
+| Salt                      |      1/2 | tsp              | salt       |
+| Sliced Avocado (optional) |        1 |                  | avo        |
 ** Steps
-1) Chop [#: kimchi | kimchi] and collect [#: kimchi-juice | kimchi juice].
-2) [&: 00:04:00] Heat 2 tbsp of butter on medium high. Add chopped kimchi and [#: gochu | gochujang] and
-   cook, stirring until kimchi is softened and lightly caramelized, around 4 minutes.
-3) [&: 00:03:00] Add [#: veg-broth | broth] and kimchi juice and bring to a simmer. Cook until slightly reduced,
-   about 3 minutes.
-4) Boil [#: udon | noodles] according to package directions.
-5) [&: 00:02:00] Using tongs, transfer noodles to the skillet and add the remaining 3 tbsp of
-   butter. Cook, tossing often, about 2 minutes.
-6) Season with salt if needed.
-7) Divide into bowls, top with egg yolks, [#: scall | scallions] and sesame seeds.
+1) In a large serving bowl combine all the ingredients.
+2) Cover and chill. Leftovers should last 3 to 4 days.
+** Content
+:PROPERTIES:
+:type: blurb
+:END:
+- This has a lot of ingredients but very few steps. You'll basically end up just combing a bunch of stuff in a bowl  and then adding a dressing. We'd recommend not adding the dressing to the entire bowl if you plan on having leftovers, but adding the dressing every time you have the dish.
+* DONE Easy Marinated Tofu
+CLOSED: [2019-09-02 Mon 13:49]
+:PROPERTIES:
+:belongs_to: side
+:day_made: [2019-09-02]
+:ease_of_making: 5/5
+:imgs: false
+:is_vegan: true
+:is_vegetarian: true
+:name: Easy Marinated Tofu
+:original_recipe: https://simpleveganblog.com/easy-marinated-tofu/
+:rating: 4/5
+:serves: 2
+:slug: marinated-tofu
+:time: 00:25:00
+:END:
+** Ingredients
+| Ingredient          | Quantity | Unit  | Id                  | Group |
+|---------------------+----------+-------+---------------------+-------|
+| Tofu                |        1 | brick | tofu                |       |
+| Water               |      1/4 | cups  | water               |       |
+| Soy Sauce           |        2 | tbsp  | sauce-soy           |       |
+| Maple syrup         |        1 | tbsp  | maple-syrup         |       |
+| Apple cider vinegar |        1 | tbsp  | vinegar-apple-cider |       |
+| Garlic powder       |        1 | tsp   | powder-garlic       |       |
+** Steps
+1) [&:00:20:00] Press the [#: tofu | tofu] for a while (around 20 minutes). Then dice/cube it.
+2) Mix the marinade ingredients in a bowl.
+3) [&:00:15:00] Put the tofu in the bowl and cover. Put it in the fridge for 15 min.
+4) Take the tofu out and pan fry until golden brown.
 ** Content
 :PROPERTIES:
 :type: whisper
 :END:
-- You can remove an egg white by moving the egg from hand to hand.
+- Well, they are using plants to press the tofu. Big hulking things, sitting
+  on top of 'em. Not trees, mind you. Frankly, I'm not surprised. It's about time they threw that weight around.
 * DONE Miso Asparagus
 CLOSED: [2019-10-06 Sun 12:50]
 :PROPERTIES:
+:belongs_to: side
 :day_made: [2019-10-01]
 :ease_of_making: 4/5
 :imgs: 1.JPG,2.JPG,3.gif
@@ -713,8 +875,8 @@ CLOSED: [2019-10-06 Sun 12:50]
 :name: Miso Asparagus
 :original_recipe: https://www.bonappetit.com/recipe/ginger-miso-grilled-asparagus
 :rating: 2.5/5
-:slug: miso-asparagus
 :serves: 2
+:slug: miso-asparagus
 :time: 00:30:00
 :END:
 ** Ingredients
@@ -744,225 +906,86 @@ CLOSED: [2019-10-06 Sun 12:50]
   well. We don't have a BBQ right now so we used a pan. This made the asparagus
   a bit limp. We also probably over-doused it in the miso sauce... if you were
   using a grill it would have more places to drip off.
-* DONE Breakfast Quinoa 
-CLOSED: [2019-10-06 Sun 12:50]
+* DONE 5 ingredient granola bars
+CLOSED: [2019-09-01 Sun 13:41]
 :PROPERTIES:
-:day_made: [2019-10-03]
-:ease_of_making: 5/5
-:imgs: false
-:is_vegan: true
-:is_vegetarian: true
-:name: Breakfast Quinoa
-:original_recipe: https://cookieandkate.com/cinnamon-breakfast-quinoa-recipe/
-:rating: 5/5
-:slug: breakfast-quinoa
-:serves: 4
-:time: 00:40:00
-:END:
-** Ingredients
-| Ingredient                  | Quantity | Unit | Id     |
-|-----------------------------+----------+------+--------|
-| Quinoa                      |        1 | cups | quin   |
-| Water                       |        2 | cups | water  |
-| Maple Syrup                 |        2 | tbsp | syr    |
-| Pecans or Walnuts (chopped) |      1/4 | cups | nuts   |
-| Cinnamon                    |   1 or 2 | tsp  | cin    |
-| Coconut oil                 |        2 | tbsp | oil    |
-| Fresh berries               |          |      | berr   |
-| Almond butter               |          |      | almbut |
-** Steps
-1) [&:00:15:00] Make the [#: quin | quinoa]: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes
-2) [&:00:04:00] Heat chopped [#: nuts | nuts] in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes.
-3) [&:00:00:15] Add [#: oil | coconut oil], [#: cin | cinnamon] to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds.
-4) [&:00:00:02] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add [#: syr | maple syrup].
-5) Add the nuts to the quinoa. Top with a sprinkle of cinnamon.
-6) Top with [#: berr | fresh berries] and [#: almbut | almond butter].
-** Content
-:PROPERTIES:
-:type: big-quote
-:END:
-- I NEED ALL THE ALMOND BUTTER.
-* DONE Black Bean Salad
-CLOSED: [2019-10-06 Sun 12:50]
-:PROPERTIES:
-:day_made: [2019-10-03]
-:ease_of_making: 5/5
-:imgs: 1.JPG,2.JPG,3.JPG
-:is_vegan: true
-:is_vegetarian: true
-:name: Black Bean Salad
-:original_recipe: https://cookieandkate.com/black-bean-salad-recipe/
-:rating: 5/5
-:slug: black-bean-salad
-:serves: 4
-:time: 00:20:00
-:END:
-** Ingredients
-| Ingredient                | Quantity | Unit             | Id         |
-|---------------------------+----------+------------------+------------|
-| Black beans               |        3 | Cans (15oz/each) | beans      |
-| Canned Corn               |        1 | cups             | corn       |
-| Bell Pepper (any colour)  |        1 |                  | pepper     |
-| Cherry Tomatoes           |        1 | cups             | tomatoes   |
-| Red Onion (diced)         |        1 | cups             | onion      |
-| Jalapeno (seeds optional) |        1 |                  | jalap      |
-| Lime Zest                 |      1/2 | tsp              | lime-zest  |
-| Lime juice                |        2 | tbsp             | lime-juice |
-| Olive oil                 |      1/4 | cups             | oil        |
-| White vinegar             |      1/4 | cups             | vin-wh     |
-| Chili powder              |      1/2 | tsp              | chil       |
-| Cumin                     |      1/2 | tsp              | cumin      |
-| Salt                      |      1/2 | tsp              | salt       |
-| Sliced Avocado (optional) |        1 |                  | avo        |
-** Steps
-1) In a large serving bowl combine all the ingredients.
-2) Cover and chill. Leftovers should last 3 to 4 days.
-** Content
-:PROPERTIES:
-:type: blurb
-:END:
-- This has a lot of ingredients but very few steps. You'll basically end up just combing a bunch of stuff in a bowl  and then adding a dressing. We'd recommend not adding the dressing to the entire bowl if you plan on having leftovers, but adding the dressing every time you have the dish.
-* TODO Asparagus Spaghetti with Egg
-:PROPERTIES:
-:day_made:
-:ease_of_making: 5/5
-:imgs: 1.JPG,2.JPG,3.JPG
-:is_vegan: false
-:is_vegetarian: true
-:name: Asparagus Spaghetti + Egg
-:original_recipe: https://www.easycheesyvegetarian.com/asparagus-spaghetti-fried-egg/
-:rating: 3.5/5
-:slug: asparagus-spaghetti
-:serves: 2
+:original_recipe: https://minimalistbaker.com/healthy-5-ingredient-granola-bars/
+:slug: granola-bars
+:name: 5 Ingredient Granola Bars
+:day_made: [2019-09-01]
 :time: 00:25:00
-:END:
-** Ingredients
-| Ingredient                       | Quantity | Unit   | Id        |
-|----------------------------------+----------+--------+-----------|
-| Spaghetti                        |      200 | grams  | spag      |
-| Butter                           |        1 | tbsp   | but       |
-| Garlic                           |        2 | cloves | garlic    |
-| Asparagus (cut to 1-inch pieces) |      150 | grams  | asparagus |
-| Salt/Pepper                      |        1 | pinch  | sandp     |
-| Parmesan                         |        2 | tbsp   | parm      |
-| Eggs                             |        2 |        | eggs      |
-| Pre-made pesto sauce             |          |        |           |
-** Steps
-1) [&:00:10:00] Boil spaghetti until al dente. Around 10 minutes.
-2) [&:00:04:00] Melt [#: but | butter] in a frying pan and add [#: asparagus |
-   asparagus]. Cook for a few minutes.
-3) Add the [#: garlic | garlic] and cook a little longer until the asparagus is
-   tender with a bit of a crunch still. Season with salt and pepper.
-4) When the pasta is ready, drain and add the asparagus mixture and the pesto.
-   Mix everything in and put a lit on to keep the heat in.
-5) Make two fried eggs. Plate the spaghetti and put the egg on top.
-** Content
-:PROPERTIES:
-:type: blurb
-:END:
-- The original recipe instructs you to make your own pesto. I don't have the energy to find million dollar pine nuts right now! Too bad!
-  I'm buying a jar of pesto! Too bad for you recipe! You can't tell me what to
-  do! .... Anyway. This was quick and easy to make, but make sure you use enough
-  asparagus for variety. Maybe consider adding some chopped nuts.
-* DONE Thai-Spice Rice Bowls                                                    :needs_photos:
-CLOSED: [2019-10-16 Wed 23:14]
-:PROPERTIES:
-:day_made: [2019-10-07]
-:ease_of_making: 5/5
-:imgs: 1.JPG,2.JPG,3.JPG
+:serves: 10 bars
 :is_vegan: true
-:is_vegetarian: true
-:name: Thai-Spice Rice Bowls
-:original_recipe: https://cookieandkate.com/thai-spiced-rice-bowls-recipe/
-:rating: 3/5
-:serves: 6
-:slug: thai-rice-bowl
-:time: 00:40:00
+:is_vegetarian: false
+:ease_of_making: 5/5
+:rating: 5/5
+:imgs: 1.JPG,2.JPG,1.gif
+:belongs_to: snack
 :END:
 ** Ingredients
-| Ingredient             |  Quantity | Unit      | Id       | Group |
-|------------------------+-----------+-----------+----------+-------|
-| Olive oil              |         1 | tsp       | oil      | broth |
-| Red curry paste        |         1 | tbsp      | rcp      | broth |
-| Soy sauce              |       1/4 | cups      | soysauce | broth |
-| Peanut butter          |       1/4 | cups      | pb       | broth |
-| Vegetable broth        |         4 | cups      | vegbroth | broth |
-| Honey                  |         2 | tbsp      | honey    | broth |
-| Coconut milk           | 1 (14 oz) | can       | coco     | broth |
-| Garlic                 |         4 | cloves    | garlic   | broth |
-| Ginger                 |         1 | thumb-tip | ginger   | broth |
-| Rice                   |         1 | cups      | rice     |       |
-| Carrots (matchsticked) |         1 | cups      | carrots  |       |
-| Peanuts                |       1/4 | cups      | peanuts  |       |
-| Cucumber               |       1/2 |           | cucu     |       |
-| Bell pepper (sliced)   |         1 |           | bell     |       |
-| Green onions (sliced)  |         2 |           | gonion   |       |
-| Jalapeno               |         1 |           | jalap    |       |
-| Lime                   |         1 |           | lime     |       |
+| Ingredient                            | Quantity | Unit | Id              | Group |
+|---------------------------------------+----------+------+-----------------+-------|
+| Dates (Deglet noor or medjool)        | 1        | cups | dates           |       |
+| Maple Syrup (or: agava nectar, honey) | 1/4      | cups | maple-syrup     |       |
+| Natural Peanut Butter                 | 1/4      | cups | peanut-butter   |       |
+| Roasted, unsalted almonds             | 1        | cups | almonds         |       |
+| Rolled Oats                           | 1+1/2    | cups | oats-rolled     |       |
+| Parchment Paper                       |          |      | parchment-paper |       |
+| 8x8 Baking Pan                        |          |      |                 |       |
 ** Steps
-1) Make the [#: rice | rice]. Cook according to packaging.
-2) Prepare garnishes: matchstick the [#:carrots | carrots], thinly slice the [#: cucu | cucumber], slice the [#: jalap | jalapeno] into rings and chop the [#: peanuts | peanuts].
-3) Broth pt. 1: heat saucepan with oil. Add [#: garlic | garlic] and [#: ginger | ginger] when hot, for 30 seconds.
-4) Broth pt. 2: Add [#: rcp | thai curry paste], [#: soysauce | soy sauce], [#: pb | peanut butter], [#: vegbroth | vegetable broth], [#: coco | coconut milk] and [#: honey | honey].
-5) [&:00:10:00] Broth pt. 3: Bring to boil, reduce heat, simmer for 10 minutes.
-6) Put rice in bowls, add broth, add diced vegetables as garnish. Enjoy!
+1) Chop [#: almonds | almonds] roughly. Put them in a bowl.
+2) Put [#: oats-rolled | oats] in the bowl.
+3) Blend [#: dates | dates] until dough-y. Put them in the bowl
+4) Put [#: maple-syrup | maple syrup] and [#: peanut-butter | peanut-butter] into a saucepan and heat on low. Stir to combine.
+5) Pour mix into the bowl and stir to combine.
+6) Transfer to a baking dish (8 x 8) lined with parchment paper.
 ** Content
 :PROPERTIES:
 :type: big-quote
 :END:
-- Is it supposed to be so soupy?
-* DONE Pineapple Salsa + Coconut Rice                            :needs_photos:
-CLOSED: [2019-10-16 Wed 23:15]
+- I've made a tornado of dates.
+* DONE Candied Ginger
+CLOSED: [2019-09-03 Tue 07:39]
 :PROPERTIES:
-:day_made: [2019-10-10]
-:ease_of_making: 3/5
+:belongs_to: sweet
+:day_made: [2019-09-02]
+:ease_of_making: 2/5
 :imgs: 1.JPG,2.JPG,3.JPG
 :is_vegan: true
 :is_vegetarian: true
-:name: Pineapple Salsa + Coconut Rice
-:original_recipe: https://ohsheglows.com/2012/07/09/grilled-tofu-with-pineapple-salsa-and-coconut-rice/
-:rating: 3/5
-:serves: 2-3
-:slug: tofu-pineapple-rice
-:time: 00:50:00
+:name: Candied Ginger
+:original_recipe: https://www.davidlebovitz.com/candied-ginger/
+:rating: 4/5
+:serves: one jar! (roughly)
+:slug: candied-ginger
+:time: 04:00:00
 :END:
 ** Ingredients
-| Ingredient                | Quantity | Unit        | Id                | Group           |
-|---------------------------+----------+-------------+-------------------+-----------------|
-| Olive oil                 |          |             | olive_oil         | tofu            |
-| Bell pepper               |        1 |             | bell_pepper       | pineapple salsa |
-| Tofu (firm)               |        1 | package     | tofu              | tofu            |
-| Salt                      |          | pinch       | salt              | tofu            |
-| Shredded Coconut          |      1/4 | cups        | shredded_coconut  | coconut rice    |
-| Brown rice                |        1 | cups        | brown_rice        | coconut rice    |
-| Coconut milk              |        1 | can (400ml) | coconut_milk      | coconut rice    |
-| Brown Sugar               |        2 | tsp         | brown_sugar       | coconut rice    |
-| Coconut oil               |        1 | tsp         | coconut_oil       | coconut rice    |
-| Pineapple (diced)         |    1+1/2 | cups        | pineapple         | pineapple salsa |
-| Red onion (diced)         |      1/4 | cups        | red_onion         | pineapple salsa |
-| Jalapenos (seeded, diced) |        1 | pepper      | jalapenos         | pineapple salsa |
-| Garlic (minced)           |        1 | clove       | garlic            | pineapple salsa |
-| Fresh lime juice          |        3 | tbsp        | lime_juice        | pineapple salsa |
-| Red pepper flakes         |        1 | dash        | red_pepper_flakes | pineapple salsa |
+
+| Ingredient  | Quantity | Unit  | Id          | Group |
+|-------------+----------+-------+-------------+-------|
+| Ginger      |        1 | lbs   | ginger      |       |
+| White Sugar |        4 | cups  | sugar-white |       |
+| Water       |        4 | cups  | water       |       |
+| Salt        |        1 | pinch | salt        |       |
 ** Steps
-1) [&:00:20:00] Press the [#: tofu | tofu] for about 20 minutes (put something heavy on it.)
-2) [&:00:08:00] Preheat your oven for the coconut rice. 300F. Toast it for 8-12 minutes until golden brown.
-3) Go prep the salsa. Mix in bowl: diced [#: pineapple | pineapple], diced [#:
-   red_onion | red onion], diced
-   [#: jalapenos | jalapenos], [#: garlic | garlic], [#: bell_peppoer |
-   peppers], [#: lime_juice | lime juice], [#: red_pepper_flakes | red pepper flakes].
-4) [&:00:25:00] Make the rice, but with the [#: coconut_milk | coconut milk] (instead of water!). Mix the can
-   with the rice, bring it to a boil and then cover with a lid for 20-25 minutes
-   until it's tender.
-5) When rice is done, stir in some [#: brown_sugar | brown sugar] and,
-   optionally, [#: coconut_oil | coconut oil].
-6) Grill the tofu - use a BBQ or pan and heat the tofu for about 5 minutes on each side.
+
+1) Peel the [#: ginger | ginger].
+2) Slice the ginger thinly.
+3) Put ginger into a pot, cover with water. Bring water to a boil.
+4) [&:00:10:00] Reduce heat and simmer for 10 minutes.
+5) Repeat the previous step.
+6) Mix the [#: sugar-white | sugar], [#: water | water], [#: salt | salt] and
+   ginger slices in the pot. Cook until the temperature reaches 225F (106C). A
+   candy thermometer is very helpful, but otherwise, you can estimate cooking
+   for 40 to 60 min.
+7) [&:01:00:00] Remove from heat. Let stand for one hour.
+8) Drain the ginger through a colander, catch the syrup.
+9) Toss drained ginger in sugar.
+10) Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they are somewhat dry.
 ** Content
 :PROPERTIES:
-:type: blurb
+:type: dialogue
 :END:
-- This recipe has a lot going on at once. If you are good at multitasking it
-  might go quickly. I wouldn't know. Anyway. We'd recommend pressing the
-  tofu first and then starting the coconut rice, both of which take 20-25
-  minutes. Also, when you grill the tofu, don't cut it too thick. If the tofu is
-  bland, you could use some BBQ sauce. You know what it is.
+- I hope I don't ruin your pan.
+- That's ok. It's Chemistry.
