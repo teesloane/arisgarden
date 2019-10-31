@@ -62,7 +62,7 @@ function Recipe() {
       ui.hero(rndHero, () => this._viewAllHero(rndRecipe)),
       h("div", { class: "rl_columns" }, [
         Object.keys(sortedRecipes).map(group => {
-          return h("div", {}, [
+          return h("div", {class: "rl_list"}, [
             h("h2", {class: "v_Heading-grey"}, group + "-ish"),
             sortedRecipes[group].map(k => {
             let p = k.meta.properties;
@@ -86,8 +86,10 @@ function Recipe() {
 
     return h("div", {}, [
       h("ul", { class: "rl_hero_data" }, [
-        h("li", liAttr, p.name),
-        h("li", liAttr, p.day_made),
+        h("li", liAttr, [
+          h("span", liAttr, p.name + " "),
+          h("span", liAttr, p.day_made),
+        ])
       ])])
   }
 

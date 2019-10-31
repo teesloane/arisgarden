@@ -182,26 +182,11 @@
 
 /* RecipeList View: rL -------------------------------------------------------------*/
 
-.rl_list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 64px 0;
-  list-style-type: none;
-}
+.rl_list    {padding: 0; list-style-type: none;}
+.rl_list li {padding: 4px;}
+.rl_link    {color: #333; font-weight: bold;}
 
-.rl_list li {
-  width: 50%;
-  padding: 8px 0;
-}
-
-.rl_link {
-  color: #333;
-  font-weight: bold;
-  /* padding: 24px 0; */
-}
-
+.rl_hero_li {padding: 4px 0;}
 .rl_hero_data {
   bottom: 0;
   color: white;
@@ -212,9 +197,6 @@
   position: absolute;
 }
 
-.rl_hero_li {
-  padding: 4px 0;
-}
 
 .rl_columns {
   max-width: 993px;
@@ -258,10 +240,16 @@
 
 
   /* --- */
+  .rl_hero_data {display: none;}
 
-  .rl_list    {flex-direction: column; flex-wrap: wrap; padding: 32px; margin: 0 auto; }
-  .rl_list li {width: 100%;}
+  .rl_list li { /* truncate text on mobile */
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 500px;
+  }
 
-  .rl_columns {columns: 1;}
+  .rl_columns {columns: 1; padding: 32px 16px;}
   .rl_column-header {}
 }
