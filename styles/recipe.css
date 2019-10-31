@@ -42,7 +42,7 @@
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1440px;
   padding: 32px 0 0 0;
   width: 100%;
 }
@@ -54,29 +54,29 @@
   align-items: center;
   margin: 0 auto;
   justify-content: center;
-  background: #faebd79e;
+  background: #fafafafa;
   padding: 64px 0;
 }
 
 .rs_ingr {
   align-self: flex-start;
   background: white;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
   flex: 1;
   height: 100%;
   margin-right: 16px;
   margin: 0 16px;
   padding: 16px;
+  border: 1px solid lightgrey;
 }
 
 
 .rs_inst {
   align-self: flex-start;
   background: white;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
   color: white;
   flex: 1.5;
   height: 100%;
+  border: 1px solid lightgrey;
   margin-right: 8px;
   margin: 0 16px;
   padding: 16px;
@@ -231,10 +231,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    bottom: -128px;
+    bottom: -196px;
+    columns: 2;
+    display: block;
   }
 
-  .rs_metadatum {padding: 8px 0;}
+  .rs_metadatum {padding: 8px 0; display: block; text-align: center;}
   .rs_photos {flex-direction: column; margin: 0 16px 48px 16px; align-items: center;}
   .rs_photo {width: 80%; height: 40vh; margin-bottom: 32px;}
 

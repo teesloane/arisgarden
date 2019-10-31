@@ -428,15 +428,4 @@
   .v_Navbar {position: absolute; padding: 0; background: #222; width: 100%}
   .v_Navbar div {justify-content: center;}
 
-
-.v_Hero {
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 }
