@@ -102,7 +102,7 @@ function Recipe() {
     let mealType = is_vegan === "true" ? "Vegan" : "Vegetarian"
 
     return h("div", { class: "rs_props" }, [
-      ui.largeText(name),
+    h("h1", { class: "v_LargeText rs_recipe-name" }, name),
 
       h("ul", { class: "rs_metadata" }, [
         h("li", liClass,

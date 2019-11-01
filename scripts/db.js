@@ -3299,7 +3299,7 @@ var db = {
           "type": "blurb"
         },
         "value": [
-          "This recipe has a lot going on at once. If you are good at multitasking it might go quickly. I wouldn't know. Anyway. We'd recommend pressing the tofu first and then starting the coconut rice, both of which take 20-25 minutes. Also, when you grill the tofu, don't cut it too thick. If the tofu is bland, you could use some BBQ sauce. You know what it is."
+          "This recipe has a lot going on at once. If you are good at multitasking it might go quickly. I wouldn't know. Anyway. We'd recommend pressing the tofu first and then starting the coconut rice, both of which take 20-25 minutes. Also, when you grill the tofu, don't cut it too thick. If the tofu is bland, you could use some BBQ sauce."
         ]
       }
     },

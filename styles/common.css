@@ -82,6 +82,7 @@
   align-content: center;
   max-width: 600px;
   margin: 96px auto;
+  padding: 32px;
   font-size: 18px;
   line-height: 2;
   color: var(--offblack);
@@ -283,6 +284,7 @@
 .v_Navbar div {
   display: flex;
   padding-right: 12px;
+  height: 42px;
 }
 
 .v_Navbar_text {

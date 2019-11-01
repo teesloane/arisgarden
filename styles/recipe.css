@@ -230,14 +230,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    bottom: -196px;
+    bottom: -234px;
     columns: 2;
     display: block;
+    margin-bottom: 96px;
   }
 
   .rs_metadatum {padding: 8px 0; display: block; text-align: center;}
   .rs_photos {flex-direction: column; margin: 0 16px 48px 16px; align-items: center;}
   .rs_photo {width: 80%; height: 40vh; margin-bottom: 32px;}
+  .rs_recipe-name {position: absolute; bottom: 256px;}
 
 
   /* --- */
