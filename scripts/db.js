@@ -4630,7 +4630,7 @@ var db = {
           "day_made": "[2019-10-14]",
           "ease_of_making": "3/5",
           "imgs": "1.JPG,2.JPG,3.JPG",
-          "is_vegan": "true",
+          "is_vegan": "false",
           "is_vegetarian": "true",
           "name": "Pumpkin Chiffon Pie",
           "original_recipe": "-",
@@ -4760,14 +4760,7 @@ var db = {
             "Quantity": "",
             "Unit": "",
             "Id": "",
-            "Group": ""
-          },
-          {
-            "Ingredient": "",
-            "Quantity": "",
-            "Unit": "",
-            "Id": "",
-            "Group": ""
+            "Group": "Crust"
           }
         ]
       },
@@ -4961,7 +4954,7 @@ var db = {
           "type": "dialogue"
         },
         "value": [
-          "Come look at this. COME LOOK AT THIS BEAUTIFUL THING.",
+          "Come look at this. Look at this beautiful thing!",
           "We have like, 10 photos of people holding the pie."
         ]
       }
