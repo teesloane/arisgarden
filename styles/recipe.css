@@ -237,8 +237,8 @@
   }
 
   .rs_metadatum {padding: 8px 0; display: block; text-align: center;}
-  .rs_photos {flex-direction: column; margin: 0 16px 48px 16px; align-items: center;}
-  .rs_photo {width: 80%; height: 40vh; margin-bottom: 32px;}
+  .rs_photos {flex-direction: column; margin: 0 16px 8px 16px; align-items: center;}
+  .rs_photo {width: 80%; height: 30vh; margin-bottom: 32px;}
   .rs_recipe-name {position: absolute; bottom: 256px;}
   .rs_spacer {margin: 32px 0;}
 

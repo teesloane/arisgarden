@@ -49,7 +49,7 @@ table {
 /* Defaults -------------------------------------------------------------------*/
 
 :root {
-  --primary: rgb(199, 214, 199);
+  --primary: #6F9E67;
   --secondary: #27ae60;
   --darkblue: #34495e;
   --offwhite: #fdfdfd;
