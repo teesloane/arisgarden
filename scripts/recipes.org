@@ -1,5 +1,5 @@
 #+TITLE: RECIPES
-#+RECIPE_COUNT: 20
+#+RECIPE_COUNT: 21
 #+CATEGORIES: '(breakfast salad main sweet snack soup side)
 * DONE Breakfast Quinoa
 CLOSED: [2019-10-06 Sun 12:50]
@@ -990,3 +990,61 @@ CLOSED: [2019-09-03 Tue 07:39]
 :END:
 - I hope I don't ruin your pan.
 - That's ok. It's Chemistry.
+* DONE Pumpkin Chiffon Pie
+:PROPERTIES:
+:belongs_to: sweet
+:day_made: [2019-10-14]
+:ease_of_making: 3/5
+:imgs: 1.JPG,2.JPG,3.JPG
+:is_vegan: false
+:is_vegetarian: true
+:name: Pumpkin Chiffon Pie
+:original_recipe: -
+:rating: 4/5
+:serves: 1 pie
+:slug: pumpkin-chiffon-pie
+:time: 01:00:00
+:END:
+** Ingredients
+
+| Ingredient           | Quantity | Unit | Id       | Group           |
+|----------------------+----------+------+----------+-----------------|
+| Whipping cream       | 1        | cups | wc       | Creamy filling  |
+| Icing sugar          | 3/4      | cups | is       | Creamy filling  |
+| Vanilla              | 1/2      | tsp  | van      | Creamy filling  |
+| Cinnamon             | 1/2      | tsp  | cin      | Creamy filling  |
+| Plain Gelatin        | 1~       | tbsp | gelatin  | Pumpkin filling |
+| Cold Water           | 1/4      | cups | water    | Pumpkin filling |
+| Eggs                 | 3        |      | eggs     | Pumpkin filling |
+| White sugar          | 1/3      | cups | ws       | Pumpkin filling |
+| Cinnamon             | 1        | tsp  | cin2     | Pumpkin filling |
+| Ginger               | 1/4      | tsp  | ginger   | Pumpkin filling |
+| Salt                 | 1/2      | tsp  | salt     | Pumpkin filling |
+| Allspice             | 1/2      | tsp  | allspice | Pumpkin filling |
+| Canned pumpkin       | 1+1/4    | cups | pumpkin  | Pumpkin filling |
+| Milk                 | 1/2      | cups | milk     | Pumpkin filling |
+| Icing sugar          | 1/4      | cups | icsug    | Pumpkin filling |
+| Pre-made crust shell |          |      |          | Crust           |
+** Steps
+ 1) Prepare the pie shell based on its package instructions. They should outline how long to bake the shell without a filling but if not - bake for 8-10 minutes at 425c.
+ 2) Start with the pumpkin filling. Add the [#: gelatin | gelatin] to a bowl of cold water.
+ 3) Split the egg yolks and whites between 2 large bowls. Beat the yolks.
+ 4) Mix together the [#: ws | white sugar], [#: salt | salt] and spices, then mix that into the bowl with beaten yolks.
+ 5) Add in the [#: pumpkin | canned pumpkin] and [#: milk | milk], then mix some more.
+ 6) Add the mixture to a big pot and cook over moderate heat, stirring frequently until it boils.
+ 7) Let it boil for about a minute then remove from heat.
+ 8) Stir in the bowl of gelatin until its dissolved, then let the filling cool until it thickens a bit.
+ 9) With the bowl of egg whites, use a beater and slowly sift in the [#: icsug | icing sugar]. It should start to thicken and ideally look a bit like whipped cream.
+ 10) Add in the pumpkin mix, folding it into the egg white sugar mix.
+ 11) Next, prepare the cream filling by pouring the [#: wc | whipping cream] into a fresh bowl.
+ 12) Whip the cream til it thickens then sift in the icing sugar, and add [#:
+     van | vanilla] and [#: cin2 | cinnamon]. Keep this in the fridge until it’s needed.
+ 13) Fill the pie! Layer the 2 fillings starting with half of the pumpkin, then half of the cream, then the rest of the pumpkin.
+ 14) Put in the fridge for at least 2 hours.
+ 15) When you’re ready to eat, top it with the rest of the cream.
+** Content
+:PROPERTIES:
+:type: dialogue
+:END:
+- Come look at this. Look at this beautiful thing!
+- We have like, 10 photos of people holding the pie.

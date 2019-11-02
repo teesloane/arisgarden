@@ -4622,6 +4622,349 @@ var db = {
           "That's ok. It's Chemistry."
         ]
       }
+    },
+    "pumpkin-chiffon-pie": {
+      "meta": {
+        "properties": {
+          "belongs_to": "sweet",
+          "day_made": "[2019-10-14]",
+          "ease_of_making": "3/5",
+          "imgs": "1.JPG,2.JPG,3.JPG",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "name": "Pumpkin Chiffon Pie",
+          "original_recipe": "-",
+          "rating": "4/5",
+          "serves": "1 pie",
+          "slug": "pumpkin-chiffon-pie",
+          "time": "01:00:00"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id",
+          "Group"
+        ],
+        "data": [
+          {
+            "Ingredient": "Whipping cream",
+            "Quantity": "1",
+            "Unit": "cups",
+            "Id": "wc",
+            "Group": "Creamy filling"
+          },
+          {
+            "Ingredient": "Icing sugar",
+            "Quantity": "3/4",
+            "Unit": "cups",
+            "Id": "is",
+            "Group": "Creamy filling"
+          },
+          {
+            "Ingredient": "Vanilla",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "van",
+            "Group": "Creamy filling"
+          },
+          {
+            "Ingredient": "Cinnamon",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "cin",
+            "Group": "Creamy filling"
+          },
+          {
+            "Ingredient": "Plain Gelatin",
+            "Quantity": "1~",
+            "Unit": "tbsp",
+            "Id": "gelatin",
+            "Group": "Pumpkin filling"
+          },
+          {
+            "Ingredient": "Cold Water",
+            "Quantity": "1/4",
+            "Unit": "cups",
+            "Id": "water",
+            "Group": "Pumpkin filling"
+          },
+          {
+            "Ingredient": "Eggs",
+            "Quantity": "3",
+            "Unit": "",
+            "Id": "eggs",
+            "Group": "Pumpkin filling"
+          },
+          {
+            "Ingredient": "White sugar",
+            "Quantity": "1/3",
+            "Unit": "cups",
+            "Id": "ws",
+            "Group": "Pumpkin filling"
+          },
+          {
+            "Ingredient": "Cinnamon",
+            "Quantity": "1",
+            "Unit": "tsp",
+            "Id": "cin2",
+            "Group": "Pumpkin filling"
+          },
+          {
+            "Ingredient": "Ginger",
+            "Quantity": "1/4",
+            "Unit": "tsp",
+            "Id": "ginger",
+            "Group": "Pumpkin filling"
+          },
+          {
+            "Ingredient": "Salt",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "salt",
+            "Group": "Pumpkin filling"
+          },
+          {
+            "Ingredient": "Allspice",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "allspice",
+            "Group": "Pumpkin filling"
+          },
+          {
+            "Ingredient": "Canned pumpkin",
+            "Quantity": "1+1/4",
+            "Unit": "cups",
+            "Id": "pumpkin",
+            "Group": "Pumpkin filling"
+          },
+          {
+            "Ingredient": "Milk",
+            "Quantity": "1/2",
+            "Unit": "cups",
+            "Id": "milk",
+            "Group": "Pumpkin filling"
+          },
+          {
+            "Ingredient": "Icing sugar",
+            "Quantity": "1/4",
+            "Unit": "cups",
+            "Id": "icsug",
+            "Group": "Pumpkin filling"
+          },
+          {
+            "Ingredient": "Pre-made crust shell",
+            "Quantity": "",
+            "Unit": "",
+            "Id": "",
+            "Group": ""
+          },
+          {
+            "Ingredient": "",
+            "Quantity": "",
+            "Unit": "",
+            "Id": "",
+            "Group": ""
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "Prepare the pie shell based on its package instructions. They should outline how long to bake the shell without a filling but if not - bake for 8-10 minutes at 425c.",
+          "f": [
+            {
+              "val": "Prepare the pie shell based on its package instructions. They should outline how long to bake the shell without a filling but if not - bake for 8-10 minutes at 425c."
+            }
+          ]
+        },
+        {
+          "o": "Start with the pumpkin filling. Add the [#: gelatin | gelatin] to a bowl of cold water.",
+          "f": [
+            {
+              "val": "Start with the pumpkin filling. Add the"
+            },
+            {
+              "val": "gelatin",
+              "attr": "gelatin"
+            },
+            {
+              "val": "to a bowl of cold water."
+            }
+          ]
+        },
+        {
+          "o": "Split the egg yolks and whites between 2 large bowls. Beat the yolks.",
+          "f": [
+            {
+              "val": "Split the egg yolks and whites between 2 large bowls. Beat the yolks."
+            }
+          ]
+        },
+        {
+          "o": "Mix together the [#: ws | white sugar], [#: salt | salt] and spices, then mix that into the bowl with beaten yolks.",
+          "f": [
+            {
+              "val": "Mix together the"
+            },
+            {
+              "val": "white sugar",
+              "attr": "ws"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "salt",
+              "attr": "salt"
+            },
+            {
+              "val": "and spices, then mix that into the bowl with beaten yolks."
+            }
+          ]
+        },
+        {
+          "o": "Add in the [#: pumpkin | canned pumpkin] and [#: milk | milk], then mix some more.",
+          "f": [
+            {
+              "val": "Add in the"
+            },
+            {
+              "val": "canned pumpkin",
+              "attr": "pumpkin"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "milk",
+              "attr": "milk"
+            },
+            {
+              "val": ", then mix some more."
+            }
+          ]
+        },
+        {
+          "o": "Add the mixture to a big pot and cook over moderate heat, stirring frequently until it boils.",
+          "f": [
+            {
+              "val": "Add the mixture to a big pot and cook over moderate heat, stirring frequently until it boils."
+            }
+          ]
+        },
+        {
+          "o": "Let it boil for about a minute then remove from heat.",
+          "f": [
+            {
+              "val": "Let it boil for about a minute then remove from heat."
+            }
+          ]
+        },
+        {
+          "o": "Stir in the bowl of gelatin until its dissolved, then let the filling cool until it thickens a bit.",
+          "f": [
+            {
+              "val": "Stir in the bowl of gelatin until its dissolved, then let the filling cool until it thickens a bit."
+            }
+          ]
+        },
+        {
+          "o": "With the bowl of egg whites, use a beater and slowly sift in the [#: icsug | icing sugar]. It should start to thicken and ideally look a bit like whipped cream.",
+          "f": [
+            {
+              "val": "With the bowl of egg whites, use a beater and slowly sift in the"
+            },
+            {
+              "val": "icing sugar",
+              "attr": "icsug"
+            },
+            {
+              "val": ". It should start to thicken and ideally look a bit like whipped cream."
+            }
+          ]
+        },
+        {
+          "o": "Add in the pumpkin mix, folding it into the egg white sugar mix.",
+          "f": [
+            {
+              "val": "Add in the pumpkin mix, folding it into the egg white sugar mix."
+            }
+          ]
+        },
+        {
+          "o": "Next, prepare the cream filling by pouring the [#: wc | whipping cream] into a fresh bowl.",
+          "f": [
+            {
+              "val": "Next, prepare the cream filling by pouring the"
+            },
+            {
+              "val": "whipping cream",
+              "attr": "wc"
+            },
+            {
+              "val": "into a fresh bowl."
+            }
+          ]
+        },
+        {
+          "o": "Whip the cream til it thickens then sift in the icing sugar, and add [#: van | vanilla] and [#: cin2 | cinnamon]. Keep this in the fridge until it’s needed.",
+          "f": [
+            {
+              "val": "Whip the cream til it thickens then sift in the icing sugar, and add"
+            },
+            {
+              "val": "vanilla",
+              "attr": "van"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "cinnamon",
+              "attr": "cin2"
+            },
+            {
+              "val": ". Keep this in the fridge until it’s needed."
+            }
+          ]
+        },
+        {
+          "o": "Fill the pie! Layer the 2 fillings starting with half of the pumpkin, then half of the cream, then the rest of the pumpkin.",
+          "f": [
+            {
+              "val": "Fill the pie! Layer the 2 fillings starting with half of the pumpkin, then half of the cream, then the rest of the pumpkin."
+            }
+          ]
+        },
+        {
+          "o": "Put in the fridge for at least 2 hours.",
+          "f": [
+            {
+              "val": "Put in the fridge for at least 2 hours."
+            }
+          ]
+        },
+        {
+          "o": "When you’re ready to eat, top it with the rest of the cream.",
+          "f": [
+            {
+              "val": "When you’re ready to eat, top it with the rest of the cream."
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "dialogue"
+        },
+        "value": [
+          "Come look at this. COME LOOK AT THIS BEAUTIFUL THING.",
+          "We have like, 10 photos of people holding the pie."
+        ]
+      }
     }
   }
 }
