@@ -30,8 +30,9 @@ function Recipe() {
       ui.hero(heroImg, () => this._viewMetaData(state)),
       this._viewContent(state),
       this._viewPhotos(state),
+      h("div", {style: {marginTop: "8px"}}, ui.colourBand(4)),
       h("div", { class: "rs_ingr-inst" }, [
-        ui.largeText("INGREDIENTS / INSTRUCTIONS"),
+        h("div", {class: "rs_spacer"}, ui.largeText("INGREDIENTS / INSTRUCTIONS"),),
         h("div", { class: "rs_ingr-instr-content" }, [
           this._viewIngredients(state),
           this._viewInstructions(state),
@@ -199,7 +200,8 @@ function Recipe() {
 
         // Timer ---
         let renderTimer = () => {
-          let colours = ["#16a085", "#9b59b6", "#e67e22", "#2980b9", "#2c3e50", "#f1c40f", "#e74c3c", "#95a5a6", "#2ecc71"];
+          // let colours = ["#16a085", "#9b59b6", "#e67e22", "#2980b9", "#2c3e50", "#f1c40f", "#e74c3c", "#95a5a6", "#2ecc71"];
+          let colours = ["#cde4f7", "#ffd397", "#e2e0ed", "#f4bac0", "#c7d6c7" ]
           let newColour = state.timers.length === 0 ?
             colours[0] :
             colours.filter(c => state.timers.every(t => t.colour !== c))[0];

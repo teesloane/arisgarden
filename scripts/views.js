@@ -75,7 +75,7 @@ function UiFn() {
       return h("span", {
         class: "v_TimerFixed_closeBtn",
         onClick: [$act.timerCancel, timer]
-      }, this.icon("x-circle-wh.svg"));
+      }, this.icon("x-circle.svg"));
     }
 
     return h("div", { class: _class },
@@ -93,6 +93,14 @@ function UiFn() {
   this.icon = (name, attrs) => {
     return h("img", {...attrs, src: `media/icons/${name}` });
   }
+
+  this.colourBand = (size, mul) => {
+    return ["#cde4f7", "#ffd397", "#e2e0ed", "#f4bac0", "#c7d6c7" ].map((c, i) => {
+      let g = mul ? (size * i) * mul + "px" : size + "px"
+      return h("hr", {style: {margin: "8px auto", maxWidth: "100px", height: g, backgroundColor: c}})
+    })
+  }
+
 
   this.giantQuote = (t) => {
     return h("section", { class: "content" },

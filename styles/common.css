@@ -181,7 +181,8 @@
 .v_LargeText {
   text-transform: uppercase;
   padding: 16px;
-  margin: 0 0 32px 0;
+  /* margin: 0 0 32px 0; */
+  margin: 0;
   font-style: oblique;
   background: #222;
   color: white;
@@ -211,7 +212,8 @@
   bottom: 0;
   width: 100%;
   padding: 4px 0;
-  color: white;
+  /* color: white; */
+  color: #555;
   display: flex;
 }
 
@@ -229,25 +231,15 @@
 
 .v_TimerBlock {
   align-items: center;
-  background: #333;
-  border-radius: 5px;
-  border: 2px solid white;
+  background: #ababab;
+  border-radius: 2px;
+  border: 1px solid #555;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   display: flex;
   margin: 12px;
-  padding: 8px;
+  padding: 4px 8px;
 }
 
-.v_TimerBlock:hover {
-  align-items: center;
-  background: #333;
-  border-radius: 5px;
-  border: 2px solid white;
-  display: flex;
-  margin: 12px;
-  opacity: 0.2;
-  padding: 8px;
-}
 
 .v_TimerText {
   align-self: center;
