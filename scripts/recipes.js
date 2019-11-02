@@ -107,7 +107,7 @@ function Recipe() {
 
       h("ul", { class: "rs_metadata" }, [
         h("li", liClass,
-          h("a", { href: original_recipe, target: "_blank", class: "link-light" }, "Original Recipe")),
+          h("a", { href: original_recipe, target: "_blank", class: "ext-link-light" }, "Original Recipe")),
         h("li", liClass, mealType),
         h("li", liClass, `Serves: ${serves}`),
         h("li", liClass, `Time: ${time}`),

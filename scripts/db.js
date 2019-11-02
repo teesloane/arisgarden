@@ -3572,6 +3572,7 @@ var db = {
           "name": "Raw Beet Salad w/ Quinoa",
           "original_recipe": "https://cookieandkate.com/raw-beet-salad-with-carrot-quinoa-spinach",
           "rating": "4/5",
+          "serves": "2",
           "slug": "salad-raw-beet",
           "time": "00:50:00"
         },

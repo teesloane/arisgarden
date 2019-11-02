@@ -49,7 +49,7 @@ table {
 /* Defaults -------------------------------------------------------------------*/
 
 :root {
-  --primary: #27ae60;
+  --primary: rgb(199, 214, 199);
   --secondary: #27ae60;
   --darkblue: #34495e;
   --offwhite: #fdfdfd;
@@ -85,6 +85,8 @@ a {
 
 .ext-link {padding-bottom: 2px;   border-bottom: 1px dotted grey;}
 .ext-link:after {content: "ˆ"; color: coral;}
+.ext-link-light {color: white; padding-bottom: 2px; border-bottom: 1px dotted grey;}
+.ext-link-light:after {content: "ˆ"; color: coral;}
 
 
 hr {

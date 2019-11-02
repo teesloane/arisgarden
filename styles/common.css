@@ -20,11 +20,6 @@
 @keyframes         sk-scaleout {0% {-webkit-transform: scale(0); transform: scale(0);} 100% {-webkit-transform: scale(1.0); transform: scale(1.0); opacity: 0;}}
 
 
-.link-light {
-  color: white;
-  padding-bottom: 1px;
-  border-bottom: 1px dotted orange;
-}
 
 
 /* View Functions */
