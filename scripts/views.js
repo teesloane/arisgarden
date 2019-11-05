@@ -193,7 +193,7 @@ function UiFn() {
     return h("nav", {class: "v_Navbar"}, [
       h("div", {class: "v_Navbar_icon-text"}, [
         ui.icon("c_home.svg", {width: 48}),
-        h("a", {class: "v_Navbar_text", href: "#/"}, "ARI'S GARDEN"),
+        h("a", {class: "v_Navbar_text", style: {paddingLeft: "4px"}, href: "#/"}, "ARI'S GARDEN"),
       ]),
       h("span", {}, [
         h("a", {class: "v_Navbar_text", href: "#/about"}, "ABOUT"),
