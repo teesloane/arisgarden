@@ -105,10 +105,14 @@
 
 .v_DialogueItem-l {
   align-self: flex-start;
+  background: #ffd397;
+  color: var(--darkblue);
 }
 
 .v_DialogueItem-r {
   align-self: flex-end;
+  background: #c7d6c7;
+  color: var(--darkblue);
 }
 
 .v_DialogueItem-l:after {
@@ -119,7 +123,7 @@
   width: 0;
   height: 0;
   border: 10px solid transparent;
-  border-right-color: var(--darkblue);
+  border-right-color: #ffd397;
   border-left: 0;
   margin-top: -10px;
   margin-left: -10px;
@@ -134,7 +138,7 @@
   width: 0;
   height: 0;
   border: 10px solid transparent;
-  border-left-color: var(--darkblue);
+  border-left-color: #c7d6c7;
   border-right: 0;
   text-align: right;
   margin-top: -10px;
@@ -270,7 +274,7 @@
 
 .v_Navbar div {
   display: flex;
-  padding-right: 12px;
+  padding-right: 4px;
   height: 42px;
 }
 
