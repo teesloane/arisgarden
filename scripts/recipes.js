@@ -200,7 +200,6 @@ function Recipe() {
 
         // Timer ---
         let renderTimer = () => {
-          // let colours = ["#16a085", "#9b59b6", "#e67e22", "#2980b9", "#2c3e50", "#f1c40f", "#e74c3c", "#95a5a6", "#2ecc71"];
           let colours = ["#cde4f7", "#ffd397", "#e2e0ed", "#f4bac0", "#c7d6c7" ]
           let newColour = state.timers.length === 0 ?
             colours[0] :
