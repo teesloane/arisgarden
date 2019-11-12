@@ -4958,6 +4958,280 @@ var db = {
           "We have like, 10 photos of people holding the pie."
         ]
       }
+    },
+    "mediterranean-baked-sweet-potatoes": {
+      "meta": {
+        "properties": {
+          "original_recipe": "https://minimalistbaker.com/mediterranean-baked-sweet-potatoes/",
+          "slug": "mediterranean-baked-sweet-potatoes",
+          "day_made": "[2019-11-11]",
+          "name": "Mediterranean Baked Sweet Potatoes",
+          "serves": "2",
+          "time": "01:00:00",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "ease_of_making": "5/5",
+          "rating": "5/5",
+          "imgs": "1.JPG,2.JPG,3.JPG",
+          "belongs_to": "main"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id",
+          "Group"
+        ],
+        "data": [
+          {
+            "Ingredient": "Sweet Potato",
+            "Quantity": "2",
+            "Unit": "",
+            "Id": "sw",
+            "Group": "Main"
+          },
+          {
+            "Ingredient": "Chickpeas",
+            "Quantity": "15",
+            "Unit": "oz",
+            "Id": "chick",
+            "Group": "Main"
+          },
+          {
+            "Ingredient": "Olive Oil",
+            "Quantity": "1/2",
+            "Unit": "tbsp",
+            "Id": "oil",
+            "Group": "Main"
+          },
+          {
+            "Ingredient": "Cumin",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "cumin",
+            "Group": "Main"
+          },
+          {
+            "Ingredient": "Coriander",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "cor",
+            "Group": "Main"
+          },
+          {
+            "Ingredient": "Cinnamon",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "cin",
+            "Group": "Main"
+          },
+          {
+            "Ingredient": "Paprika",
+            "Quantity": "l",
+            "Unit": "tsp",
+            "Id": "pap",
+            "Group": "Main"
+          },
+          {
+            "Ingredient": "Hummus",
+            "Quantity": "1/4",
+            "Unit": "cup",
+            "Id": "hum",
+            "Group": "Garlic Herb Sauce"
+          },
+          {
+            "Ingredient": "Dried Dill",
+            "Quantity": "1",
+            "Unit": "tsp",
+            "Id": "dill",
+            "Group": "Garlic Herb Sauce"
+          },
+          {
+            "Ingredient": "Garlic",
+            "Quantity": "3",
+            "Unit": "cloves",
+            "Id": "garlic",
+            "Group": "Garlic Herb Sauce"
+          },
+          {
+            "Ingredient": "Lemon",
+            "Quantity": "1/2",
+            "Unit": "lemon",
+            "Id": "lem",
+            "Group": "Garlic Herb Sauce"
+          },
+          {
+            "Ingredient": "Water",
+            "Quantity": "",
+            "Unit": "splash",
+            "Id": "water",
+            "Group": "Garlic Herb Sauce"
+          },
+          {
+            "Ingredient": "Salt",
+            "Quantity": "",
+            "Unit": "pinch",
+            "Id": "salt",
+            "Group": "Garlic Herb Sauce"
+          },
+          {
+            "Ingredient": "Cherry Tomatoes",
+            "Quantity": "1/4",
+            "Unit": "cup",
+            "Id": "tomat",
+            "Group": "Toppings"
+          },
+          {
+            "Ingredient": "Chopped Cilantro",
+            "Quantity": "1/4",
+            "Unit": "cup",
+            "Id": "cil",
+            "Group": "Toppings"
+          },
+          {
+            "Ingredient": "Lemon Juice",
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "lemju",
+            "Group": "Toppings"
+          },
+          {
+            "Ingredient": "Chili Garlic Sauce",
+            "Quantity": "",
+            "Unit": "pinch",
+            "Id": "chilsauce",
+            "Group": "Toppings"
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "Preheat oven to 400 degrees. Line a large baking sheet with foil.",
+          "f": [
+            {
+              "val": "Preheat oven to 400 degrees. Line a large baking sheet with foil."
+            }
+          ]
+        },
+        {
+          "o": "Rinse potatoes and cut in half. Coat sweet potatoes with olive oil and put them face down on the foil.",
+          "f": [
+            {
+              "val": "Rinse potatoes and cut in half. Coat sweet potatoes with olive oil and put them face down on the foil."
+            }
+          ]
+        },
+        {
+          "o": "Drain [#: chick | chickpeas]. Toss in [#: oil | olive oil]. Add spices. 1/2 tsp of: cumin, coriander, cinnamon, smoked paprika.",
+          "f": [
+            {
+              "val": "Drain"
+            },
+            {
+              "val": "chickpeas",
+              "attr": "chick"
+            },
+            {
+              "val": ". Toss in"
+            },
+            {
+              "val": "olive oil",
+              "attr": "oil"
+            },
+            {
+              "val": ". Add spices. 1/2 tsp of: cumin, coriander, cinnamon, smoked paprika."
+            }
+          ]
+        },
+        {
+          "o": "[&:00:45:00] Put potato and chickpeas in the oven.",
+          "f": [
+            {
+              "val": "Put potato and chickpeas in the oven."
+            }
+          ],
+          "timer": "00:45:00"
+        },
+        {
+          "o": "Create the sauce while things are in the oven. Mix: [#: hum | hummus], [#: lem | lemon juice], [#: garlic | garlic], water and salt.",
+          "f": [
+            {
+              "val": "Create the sauce while things are in the oven. Mix:"
+            },
+            {
+              "val": "hummus",
+              "attr": "hum"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "lemon juice",
+              "attr": "lem"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "garlic",
+              "attr": "garlic"
+            },
+            {
+              "val": ", water and salt."
+            }
+          ]
+        },
+        {
+          "o": "Chop [#: tomat | tomatoes] and [#: cil | cilantro] and put in a bowl with [#: lemju | lemon juice]. Let it sit and marinade.",
+          "f": [
+            {
+              "val": "Chop"
+            },
+            {
+              "val": "tomatoes",
+              "attr": "tomat"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "cilantro",
+              "attr": "cil"
+            },
+            {
+              "val": "and put in a bowl with"
+            },
+            {
+              "val": "lemon juice",
+              "attr": "lemju"
+            },
+            {
+              "val": ". Let it sit and marinade."
+            }
+          ]
+        },
+        {
+          "o": "Serve up: take out potatoes, and mash them open a bit. Top with roasted chickpeas, sauce, and cilantro and tomatoes. Serve quickly!",
+          "f": [
+            {
+              "val": "Serve up: take out potatoes, and mash them open a bit. Top with roasted chickpeas, sauce, and cilantro and tomatoes. Serve quickly!"
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "haiku"
+        },
+        "value": [
+          "Searching through aisles",
+          "For dried dill and wondering",
+          "What dried dill looks like."
+        ]
+      }
     }
   }
 }

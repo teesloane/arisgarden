@@ -1,5 +1,5 @@
 #+TITLE: RECIPES
-#+RECIPE_COUNT: 21
+#+RECIPE_COUNT: 22
 #+CATEGORIES: '(breakfast salad main sweet snack soup side)
 * DONE Breakfast Quinoa
 CLOSED: [2019-10-06 Sun 12:50]
@@ -1048,3 +1048,58 @@ CLOSED: [2019-09-03 Tue 07:39]
 :END:
 - Come look at this. Look at this beautiful thing!
 - We have like, 10 photos of people holding the pie.
+* DONE Mediterranean Baked Sweet Potatoes
+:PROPERTIES:
+:original_recipe: https://minimalistbaker.com/mediterranean-baked-sweet-potatoes/
+:slug: mediterranean-baked-sweet-potatoes
+:day_made: [2019-11-11]
+:name: Mediterranean Baked Sweet Potatoes
+:serves: 2
+:time: 01:00:00
+:is_vegan: true
+:is_vegetarian: true
+:ease_of_making: 5/5
+:rating: 5/5
+:imgs: 1.JPG,2.JPG,3.JPG
+:belongs_to: main
+:END:
+** Ingredients
+| Ingredient         | Quantity | Unit   | Id        | Group             |
+|--------------------+----------+--------+-----------+-------------------|
+| Sweet Potato       | 2        |        | sw        | Main              |
+| Chickpeas          | 15       | oz     | chick     | Main              |
+| Olive Oil          | 1/2      | tbsp   | oil       | Main              |
+| Cumin              | 1/2      | tsp    | cumin     | Main              |
+| Coriander          | 1/2      | tsp    | cor       | Main              |
+| Cinnamon           | 1/2      | tsp    | cin       | Main              |
+| Paprika            | l        | tsp    | pap       | Main              |
+| Hummus             | 1/4      | cup    | hum       | Garlic Herb Sauce |
+| Dried Dill         | 1        | tsp    | dill      | Garlic Herb Sauce |
+| Garlic             | 3        | cloves | garlic    | Garlic Herb Sauce |
+| Lemon              | 1/2      | lemon  | lem       | Garlic Herb Sauce |
+| Water              |          | splash | water     | Garlic Herb Sauce |
+| Salt               |          | pinch  | salt      | Garlic Herb Sauce |
+| Cherry Tomatoes    | 1/4      | cup    | tomat     | Toppings          |
+| Chopped Cilantro   | 1/4      | cup    | cil       | Toppings          |
+| Lemon Juice        | 2        | tbsp   | lemju     | Toppings          |
+| Chili Garlic Sauce |          | pinch  | chilsauce | Toppings          |
+** Steps
+1) Preheat oven to 400 degrees. Line a large baking sheet with foil.
+2) Rinse potatoes and cut in half. Coat sweet potatoes with olive oil and put
+   them face down on the foil.
+3) Drain [#: chick | chickpeas]. Toss in [#: oil | olive oil]. Add spices. 1/2
+   tsp of: cumin, coriander, cinnamon, smoked paprika.
+4) [&:00:45:00] Put potato and chickpeas in the oven.
+5) Create the sauce while things are in the oven. Mix: [#: hum | hummus], [#: lem | lemon juice], [#:
+   garlic | garlic], water and salt.
+6) Chop [#: tomat | tomatoes] and [#: cil | cilantro] and put in a bowl with [#:
+   lemju | lemon juice]. Let it sit and marinade.
+7) Serve up: take out potatoes, and mash them open a bit. Top with roasted chickpeas,
+   sauce, and cilantro and tomatoes. Serve quickly!
+** Content
+:PROPERTIES:
+:type: haiku
+:END:
+- Searching through aisles
+- For dried dill and wondering
+- What dried dill looks like.
