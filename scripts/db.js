@@ -5156,7 +5156,7 @@ var db = {
           "timer": "00:45:00"
         },
         {
-          "o": "Create the sauce while things are in the oven. Mix: [#: hum | hummus], [#: lem | lemon juice], [#: garlic | garlic], water and salt.",
+          "o": "Create the sauce while things are in the oven. Mix: [#: hum | hummus], [#: lem | lemon juice], [#: garlic | garlic], [#: dill | dill] water and salt.",
           "f": [
             {
               "val": "Create the sauce while things are in the oven. Mix:"
@@ -5180,7 +5180,14 @@ var db = {
               "attr": "garlic"
             },
             {
-              "val": ", water and salt."
+              "val": ","
+            },
+            {
+              "val": "dill",
+              "attr": "dill"
+            },
+            {
+              "val": "water and salt."
             }
           ]
         },

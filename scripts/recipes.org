@@ -1091,7 +1091,7 @@ CLOSED: [2019-09-03 Tue 07:39]
    tsp of: cumin, coriander, cinnamon, smoked paprika.
 4) [&:00:45:00] Put potato and chickpeas in the oven.
 5) Create the sauce while things are in the oven. Mix: [#: hum | hummus], [#: lem | lemon juice], [#:
-   garlic | garlic], water and salt.
+   garlic | garlic], [#: dill | dill] water and salt.
 6) Chop [#: tomat | tomatoes] and [#: cil | cilantro] and put in a bowl with [#:
    lemju | lemon juice]. Let it sit and marinade.
 7) Serve up: take out potatoes, and mash them open a bit. Top with roasted chickpeas,
