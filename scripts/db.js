@@ -5239,6 +5239,442 @@ var db = {
           "What dried dill looks like."
         ]
       }
+    },
+    "chickpea-cauliflower-curry": {
+      "meta": {
+        "properties": {
+          "original_recipe": "https://minimalistbaker.com/1-pot-yellow-chickpea-cauliflower-curry/",
+          "slug": "chickpea-cauliflower-curry",
+          "day_made": "[2019-11-12]",
+          "name": "Chickpea Cauliflower Curry",
+          "serves": "2",
+          "time": "00:45:00",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "ease_of_making": "5/5",
+          "rating": "4/5",
+          "imgs": "1.JPG,2.JPG,3.JPG",
+          "belongs_to": "main"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id",
+          "Group"
+        ],
+        "data": [
+          {
+            "Ingredient": "Coconut oil",
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "coco",
+            "Group": "Curry"
+          },
+          {
+            "Ingredient": "Shallot",
+            "Quantity": "1/3",
+            "Unit": "cups",
+            "Id": "shal",
+            "Group": "Curry"
+          },
+          {
+            "Ingredient": "Garlic",
+            "Quantity": "4",
+            "Unit": "cloves",
+            "Id": "gar",
+            "Group": "Curry"
+          },
+          {
+            "Ingredient": "Ginger",
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "gin",
+            "Group": "Curry"
+          },
+          {
+            "Ingredient": "Jalapeno pepper",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "ja",
+            "Group": "Curry"
+          },
+          {
+            "Ingredient": "Curry paste",
+            "Quantity": "4",
+            "Unit": "tbsp",
+            "Id": "cur",
+            "Group": "Curry"
+          },
+          {
+            "Ingredient": "Coconut milk",
+            "Quantity": "2",
+            "Unit": "cups",
+            "Id": "comilk",
+            "Group": "Curry"
+          },
+          {
+            "Ingredient": "Turmeric",
+            "Quantity": "1",
+            "Unit": "tsp",
+            "Id": "tur",
+            "Group": "Curry"
+          },
+          {
+            "Ingredient": "Maple Syrup",
+            "Quantity": "1",
+            "Unit": "tbsp",
+            "Id": "mapsyr",
+            "Group": "Curry"
+          },
+          {
+            "Ingredient": "Soy Sauce",
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "soysauce",
+            "Group": "Curry"
+          },
+          {
+            "Ingredient": "Cauliflower",
+            "Quantity": "1",
+            "Unit": "cups",
+            "Id": "caul",
+            "Group": "Curry"
+          },
+          {
+            "Ingredient": "Chickpeas",
+            "Quantity": "1+1/4",
+            "Unit": "cups",
+            "Id": "chick",
+            "Group": "Curry"
+          },
+          {
+            "Ingredient": "Quinoa/Rice",
+            "Quantity": "1",
+            "Unit": "cups",
+            "Id": "quin",
+            "Group": "Base"
+          },
+          {
+            "Ingredient": "Avocado",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "",
+            "Group": "Toppings"
+          },
+          {
+            "Ingredient": "Red onion",
+            "Quantity": "1/2",
+            "Unit": "onion",
+            "Id": "",
+            "Group": "Toppings"
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "[&:00:03:00] Heat a large pot. Add [#: coco | Coconut oil]. Add [#: shal | shallot] [#: gar | garlic] and [#: gin | ginger] [#: ja | jalapeno pepper]. Sauté for 2-3 minutes.",
+          "f": [
+            {
+              "val": "Heat a large pot. Add"
+            },
+            {
+              "val": "Coconut oil",
+              "attr": "coco"
+            },
+            {
+              "val": ". Add"
+            },
+            {
+              "val": "shallot",
+              "attr": "shal"
+            },
+            {
+              "val": "garlic",
+              "attr": "gar"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "ginger",
+              "attr": "gin"
+            },
+            {
+              "val": "jalapeno pepper",
+              "attr": "ja"
+            },
+            {
+              "val": ". Sauté for 2-3 minutes."
+            }
+          ],
+          "timer": "00:03:00"
+        },
+        {
+          "o": "[&:00:02:00] Add [#: cur | curry paste]. Cook for 2 minutes.",
+          "f": [
+            {
+              "val": "Add"
+            },
+            {
+              "val": "curry paste",
+              "attr": "cur"
+            },
+            {
+              "val": ". Cook for 2 minutes."
+            }
+          ],
+          "timer": "00:02:00"
+        },
+        {
+          "o": "Add [#: comilk | coconut milk] [#: tur | turmeric] [#: mapsyr | maple syrup] [#: soysauce | Soy Sauce]  and stir. Bring to simmer over medium heat.",
+          "f": [
+            {
+              "val": "Add"
+            },
+            {
+              "val": "coconut milk",
+              "attr": "comilk"
+            },
+            {
+              "val": "turmeric",
+              "attr": "tur"
+            },
+            {
+              "val": "maple syrup",
+              "attr": "mapsyr"
+            },
+            {
+              "val": "Soy Sauce",
+              "attr": "soysauce"
+            },
+            {
+              "val": "and stir. Bring to simmer over medium heat."
+            }
+          ]
+        },
+        {
+          "o": "Once simmering, add [#: caul | cauliflower] and [#: chick | chickpeas].",
+          "f": [
+            {
+              "val": "Once simmering, add"
+            },
+            {
+              "val": "cauliflower",
+              "attr": "caul"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "chickpeas",
+              "attr": "chick"
+            },
+            {
+              "val": "."
+            }
+          ]
+        },
+        {
+          "o": "[&:00:10:00] Cover and cook for 10-15 minutes. Keep at a simmer.",
+          "f": [
+            {
+              "val": "Cover and cook for 10-15 minutes. Keep at a simmer."
+            }
+          ],
+          "timer": "00:10:00"
+        },
+        {
+          "o": "Make quinoa or rice according to package instructions.",
+          "f": [
+            {
+              "val": "Make quinoa or rice according to package instructions."
+            }
+          ]
+        },
+        {
+          "o": "Serve curry over quinoa. Top with slice avocado and red onion.",
+          "f": [
+            {
+              "val": "Serve curry over quinoa. Top with slice avocado and red onion."
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "whisper"
+        },
+        "value": [
+          "We danced to Junior Boys while we cooked this one."
+        ]
+      }
+    },
+    "overnight-oats": {
+      "meta": {
+        "properties": {
+          "original_recipe": "https://ohsheglows.com/2015/07/22/vegan-overnight-oats/",
+          "slug": "overnight-oats",
+          "day_made": "[2019-11-12]",
+          "name": "Overnight Oats",
+          "serves": "2",
+          "time": "00:10:00",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "ease_of_making": "5/5",
+          "rating": "5/5",
+          "imgs": "1.JPG,2.JPG,3.JPG",
+          "belongs_to": "breakfast"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id",
+          "Group"
+        ],
+        "data": [
+          {
+            "Ingredient": "Ripe / Spotty Bananas",
+            "Quantity": "2",
+            "Unit": "",
+            "Id": "ban",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Chia Seeds",
+            "Quantity": "4",
+            "Unit": "tbsp",
+            "Id": "chia",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Cinnamon",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "cin",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Almond Milk",
+            "Quantity": "1+1/2",
+            "Unit": "cups",
+            "Id": "almilk",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Oats",
+            "Quantity": "1",
+            "Unit": "cups",
+            "Id": "oats",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Vanilla Extract",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "van",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Fresh fruit",
+            "Quantity": "Optional",
+            "Unit": "",
+            "Id": "",
+            "Group": ""
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "In a bowl, mash [#: ban | bananas] until smooth. Stir in [#: chia | chia seeds] and [#: cin | cinnamon] to combine.",
+          "f": [
+            {
+              "val": "In a bowl, mash"
+            },
+            {
+              "val": "bananas",
+              "attr": "ban"
+            },
+            {
+              "val": "until smooth. Stir in"
+            },
+            {
+              "val": "chia seeds",
+              "attr": "chia"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "cinnamon",
+              "attr": "cin"
+            },
+            {
+              "val": "to combine."
+            }
+          ]
+        },
+        {
+          "o": "Stir in [#: oats | oats], [#: almilk | almond milk] and [#: van | vanilla extract] (optional).",
+          "f": [
+            {
+              "val": "Stir in"
+            },
+            {
+              "val": "oats",
+              "attr": "oats"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "almond milk",
+              "attr": "almilk"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "vanilla extract",
+              "attr": "van"
+            },
+            {
+              "val": "(optional)."
+            }
+          ]
+        },
+        {
+          "o": "Cover and refrigerate overnight.",
+          "f": [
+            {
+              "val": "Cover and refrigerate overnight."
+            }
+          ]
+        },
+        {
+          "o": "In the morning, stir the oats. Distribute into bowls and add fresh fruit.",
+          "f": [
+            {
+              "val": "In the morning, stir the oats. Distribute into bowls and add fresh fruit."
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "blurb"
+        },
+        "value": [
+          "This is a good one. It's easy to make and quick. You can easily double the recipes to make enough for multiple days. Make sure to get some fresh fruit to put on top for when you prepare it."
+        ]
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 #+TITLE: RECIPES
-#+RECIPE_COUNT: 22
+#+RECIPE_COUNT: 23
 #+CATEGORIES: '(breakfast salad main sweet snack soup side)
 * DONE Breakfast Quinoa
 CLOSED: [2019-10-06 Sun 12:50]
@@ -1103,3 +1103,87 @@ CLOSED: [2019-09-03 Tue 07:39]
 - Searching through aisles
 - For dried dill and wondering
 - What dried dill looks like.
+* DONE chickpea cauliflower curry
+:PROPERTIES:
+:original_recipe: https://minimalistbaker.com/1-pot-yellow-chickpea-cauliflower-curry/
+:slug: chickpea-cauliflower-curry
+:day_made: [2019-11-12]
+:name: Chickpea Cauliflower Curry
+:serves: 2
+:time: 00:45:00
+:is_vegan: true
+:is_vegetarian: true
+:ease_of_making: 5/5
+:rating: 4/5
+:imgs: 1.JPG,2.JPG,3.JPG
+:belongs_to: main
+:END:
+** Ingredients
+| Ingredient      | Quantity | Unit   | Id       | Group    |
+|-----------------+----------+--------+----------+----------|
+| Coconut oil     |        2 | tbsp   | coco     | Curry    |
+| Shallot         |      1/3 | cups   | shal     | Curry    |
+| Garlic          |        4 | cloves | gar      | Curry    |
+| Ginger          |        2 | tbsp   | gin      | Curry    |
+| Jalapeno pepper |        1 |        | ja       | Curry    |
+| Curry paste     |        4 | tbsp   | cur      | Curry    |
+| Coconut milk    |        2 | cups   | comilk   | Curry    |
+| Turmeric        |        1 | tsp    | tur      | Curry    |
+| Maple Syrup     |        1 | tbsp   | mapsyr   | Curry    |
+| Soy Sauce       |        2 | tbsp   | soysauce | Curry    |
+| Cauliflower     |        1 | cups   | caul     | Curry    |
+| Chickpeas       |    1+1/4 | cups   | chick    | Curry    |
+| Quinoa/Rice     |        1 | cups   | quin     | Base     |
+| Avocado         |        1 |        |          | Toppings |
+| Red onion       |      1/2 | onion  |          | Toppings |
+** Steps
+1) [&:00:03:00] Heat a large pot. Add [#: coco | Coconut oil]. Add [#: shal | shallot] [#:
+   gar | garlic] and [#: gin | ginger] [#: ja | jalapeno pepper]. Sauté for 2-3 minutes.
+2) [&:00:02:00] Add [#: cur | curry paste]. Cook for 2 minutes.
+3) Add [#: comilk | coconut milk] [#: tur | turmeric] [#: mapsyr | maple syrup] [#: soysauce | Soy Sauce]  and stir. Bring to simmer over medium heat.
+4) Once simmering, add [#: caul | cauliflower] and [#: chick | chickpeas].
+5) [&:00:10:00] Cover and cook for 10-15 minutes. Keep at a simmer.
+6) Make quinoa or rice according to package instructions.
+7) Serve curry over quinoa. Top with slice avocado and red onion.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- We danced to Junior Boys while we cooked this one.
+* DONE Overnight Oats
+:PROPERTIES:
+:original_recipe: https://ohsheglows.com/2015/07/22/vegan-overnight-oats/
+:slug: overnight-oats
+:day_made: [2019-11-12]
+:name: Overnight Oats
+:serves: 2
+:time: 00:10:00
+:is_vegan: true
+:is_vegetarian: true
+:ease_of_making: 5/5
+:rating: 5/5
+:imgs: 1.JPG,2.JPG,3.JPG
+:belongs_to: breakfast
+:END:
+** Ingredients
+| Ingredient            | Quantity | Unit | Id     | Group |
+|-----------------------+----------+------+--------+-------|
+| Ripe / Spotty Bananas | 2        |      | ban    |       |
+| Chia Seeds            | 4        | tbsp | chia   |       |
+| Cinnamon              | 1/2      | tsp  | cin    |       |
+| Almond Milk           | 1+1/2    | cups | almilk |       |
+| Oats                  | 1        | cups | oats   |       |
+| Vanilla Extract       | 1/2      | tsp  | van    |       |
+| Fresh fruit           | Optional |      |        |       |
+** Steps
+1) In a bowl, mash [#: ban | bananas] until smooth. Stir in [#: chia | chia
+   seeds] and [#: cin | cinnamon] to combine.
+2) Stir in [#: oats | oats], [#: almilk | almond milk] and [#: van | vanilla extract] (optional).
+3) Cover and refrigerate overnight.
+4) In the morning, stir the oats. Distribute into bowls and add fresh fruit.
+** Content
+:PROPERTIES:
+:type: blurb
+:END:
+- This is a good one. It's easy to make and quick. You can easily double the
+  recipes to make enough for multiple days. Make sure to get some fresh fruit to put on top for when you prepare it.
