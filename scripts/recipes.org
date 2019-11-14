@@ -1,5 +1,5 @@
 #+TITLE: RECIPES
-#+RECIPE_COUNT: 23
+#+RECIPE_COUNT: 24
 #+CATEGORIES: '(breakfast salad main sweet snack soup side)
 * DONE Breakfast Quinoa
 CLOSED: [2019-10-06 Sun 12:50]
@@ -1187,3 +1187,46 @@ CLOSED: [2019-09-03 Tue 07:39]
 :END:
 - This is a good one. It's easy to make and quick. You can easily double the
   recipes to make enough for multiple days. Make sure to get some fresh fruit to put on top for when you prepare it.
+* DONE Orange Orzo Salad
+:PROPERTIES:
+:original_recipe: https://ohsheglows.com/2015/07/22/vegan-overnight-oats/
+:slug: orange-orzo-salad
+:day_made: [2019-11-13]
+:name: Orange Orzo Salad
+:serves: 2
+:time: 00:30:00
+:is_vegan: false
+:is_vegetarian: true
+:ease_of_making: 4/5
+:rating: 5/5
+:imgs: 1.JPG,2.JPG,3.JPG
+:belongs_to: salad
+:END:
+** Ingredients
+| Ingredient             | Quantity | Unit    | Id     | Group    |
+|------------------------+----------+---------+--------+----------|
+| Orzo Pasta             | 1        | cups    | orzo   | Salad    |
+| Almonds                | 1/2      | cups    | al     | Salad    |
+| Chopped Parsley        | 1        | cups    | par    | Salad    |
+| Pitted Kalamata Olives | 1/2      | cups    | oli    | Salad    |
+| Chopped Green onion    | 1/2      | cups    | go     | Salad    |
+| Raisins                | 1/2      | cups    | rai    | Salad    |
+| Feta (optional)        | 1/2      | cups    | feta   | Salad    |
+| Orange Zest            | 1        | tsp     | zest   | Dressing |
+| Fresh Orange Juice     | 1-2      | oranges | orange | Dressing |
+| Olive oil              | 1/4      | cups    | oil    | Dressing |
+| White wine vinegar     | 2        | tbsp    | vin    | Dressing |
+| Minced Garlic          | 1        | clove   | gar    | Dressing |
+| Salt                   | 1/4      | tsp     | sel    | Dressing |
+** Steps
+1) Bring a large pot of water to poil. Cook the [#: orzo | orzo] according to package instructions. When draining, reserve 1/2 cup of pasta water. Run the orzo under cold water after draining.
+2) Toast the [#: al | almonds] for about 5 minutes until fragrant. Transfer to a cutting board and chop them.
+3) In a large bowl combine the [#: orzo | orzo], [#: al | almonds], [#: par | parsley] [#: ol | olives] [#: go | green onions] [#: rai | raisins] and [#: feta | feta] if you are using it.
+4) In a bowl prepare the dressing: combine [#: zest | orange zest] [#: orange | orange juice] [#: oil | olive oil] [#: vin | vinegar] [#: gar | garlic] and [#: sel | salt]. Add 1/4 cup of the pasta cooking water and whisk until
+   blended.
+5) [&:00:10:00] Pour the dressing on the salad and toss to combine. Leave for 10 minutes. Season with salt if necessary.
+** Content
+:PROPERTIES:
+:type: blurb
+:END:
+- Try to make sure you cut the parsley small enough so that you don't end up getting big leafs of it taking over the salad. Same with the green onions. Feel free to mix up the measurements for the almonds, raisins and feta to your taste.

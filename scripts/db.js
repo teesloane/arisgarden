@@ -5675,6 +5675,262 @@ var db = {
           "This is a good one. It's easy to make and quick. You can easily double the recipes to make enough for multiple days. Make sure to get some fresh fruit to put on top for when you prepare it."
         ]
       }
+    },
+    "orange-orzo-salad": {
+      "meta": {
+        "properties": {
+          "original_recipe": "https://ohsheglows.com/2015/07/22/vegan-overnight-oats/",
+          "slug": "orange-orzo-salad",
+          "day_made": "[2019-11-13]",
+          "name": "Orange Orzo Salad",
+          "serves": "2",
+          "time": "00:30:00",
+          "is_vegan": "false",
+          "is_vegetarian": "true",
+          "ease_of_making": "4/5",
+          "rating": "5/5",
+          "imgs": "1.JPG,2.JPG,3.JPG",
+          "belongs_to": "salad"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id",
+          "Group"
+        ],
+        "data": [
+          {
+            "Ingredient": "Orzo Pasta",
+            "Quantity": "1",
+            "Unit": "cups",
+            "Id": "orzo",
+            "Group": "Salad"
+          },
+          {
+            "Ingredient": "Almonds",
+            "Quantity": "1/2",
+            "Unit": "cups",
+            "Id": "al",
+            "Group": "Salad"
+          },
+          {
+            "Ingredient": "Chopped Parsley",
+            "Quantity": "1",
+            "Unit": "cups",
+            "Id": "par",
+            "Group": "Salad"
+          },
+          {
+            "Ingredient": "Pitted Kalamata Olives",
+            "Quantity": "1/2",
+            "Unit": "cups",
+            "Id": "oli",
+            "Group": "Salad"
+          },
+          {
+            "Ingredient": "Chopped Green onion",
+            "Quantity": "1/2",
+            "Unit": "cups",
+            "Id": "go",
+            "Group": "Salad"
+          },
+          {
+            "Ingredient": "Raisins",
+            "Quantity": "1/2",
+            "Unit": "cups",
+            "Id": "rai",
+            "Group": "Salad"
+          },
+          {
+            "Ingredient": "Feta (optional)",
+            "Quantity": "1/2",
+            "Unit": "cups",
+            "Id": "feta",
+            "Group": "Salad"
+          },
+          {
+            "Ingredient": "Orange Zest",
+            "Quantity": "1",
+            "Unit": "tsp",
+            "Id": "zest",
+            "Group": "Dressing"
+          },
+          {
+            "Ingredient": "Fresh Orange Juice",
+            "Quantity": "1-2",
+            "Unit": "oranges",
+            "Id": "orange",
+            "Group": "Dressing"
+          },
+          {
+            "Ingredient": "Olive oil",
+            "Quantity": "1/4",
+            "Unit": "cups",
+            "Id": "oil",
+            "Group": "Dressing"
+          },
+          {
+            "Ingredient": "White wine vinegar",
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "vin",
+            "Group": "Dressing"
+          },
+          {
+            "Ingredient": "Minced Garlic",
+            "Quantity": "1",
+            "Unit": "clove",
+            "Id": "gar",
+            "Group": "Dressing"
+          },
+          {
+            "Ingredient": "Salt",
+            "Quantity": "1/4",
+            "Unit": "tsp",
+            "Id": "sel",
+            "Group": "Dressing"
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "Bring a large pot of water to poil. Cook the [#: orzo | orzo] according to package instructions. When draining, reserve 1/2 cup of pasta water. Run the orzo under cold water after draining.",
+          "f": [
+            {
+              "val": "Bring a large pot of water to poil. Cook the"
+            },
+            {
+              "val": "orzo",
+              "attr": "orzo"
+            },
+            {
+              "val": "according to package instructions. When draining, reserve 1/2 cup of pasta water. Run the orzo under cold water after draining."
+            }
+          ]
+        },
+        {
+          "o": "Toast the [#: al | almonds] for about 5 minutes until fragrant. Transfer to a cutting board and chop them.",
+          "f": [
+            {
+              "val": "Toast the"
+            },
+            {
+              "val": "almonds",
+              "attr": "al"
+            },
+            {
+              "val": "for about 5 minutes until fragrant. Transfer to a cutting board and chop them."
+            }
+          ]
+        },
+        {
+          "o": "In a large bowl combine the [#: orzo | orzo], [#: al | almonds], [#: par | parsley] [#: ol | olives] [#: go | green onions] [#: rai | raisins] and [#: feta | feta] if you are using it.",
+          "f": [
+            {
+              "val": "In a large bowl combine the"
+            },
+            {
+              "val": "orzo",
+              "attr": "orzo"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "almonds",
+              "attr": "al"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "parsley",
+              "attr": "par"
+            },
+            {
+              "val": "olives",
+              "attr": "ol"
+            },
+            {
+              "val": "green onions",
+              "attr": "go"
+            },
+            {
+              "val": "raisins",
+              "attr": "rai"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "feta",
+              "attr": "feta"
+            },
+            {
+              "val": "if you are using it."
+            }
+          ]
+        },
+        {
+          "o": "In a bowl prepare the dressing: combine [#: zest | orange zest] [#: orange | orange juice] [#: oil | olive oil] [#: vin | vinegar] [#: gar | garlic] and [#: sel | salt]. Add 1/4 cup of the pasta cooking water and whisk until blended.",
+          "f": [
+            {
+              "val": "In a bowl prepare the dressing: combine"
+            },
+            {
+              "val": "orange zest",
+              "attr": "zest"
+            },
+            {
+              "val": "orange juice",
+              "attr": "orange"
+            },
+            {
+              "val": "olive oil",
+              "attr": "oil"
+            },
+            {
+              "val": "vinegar",
+              "attr": "vin"
+            },
+            {
+              "val": "garlic",
+              "attr": "gar"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "salt",
+              "attr": "sel"
+            },
+            {
+              "val": ". Add 1/4 cup of the pasta cooking water and whisk until blended."
+            }
+          ]
+        },
+        {
+          "o": "[&:00:10:00] Pour the dressing on the salad and toss to combine. Leave for 10 minutes. Season with salt if necessary.",
+          "f": [
+            {
+              "val": "Pour the dressing on the salad and toss to combine. Leave for 10 minutes. Season with salt if necessary."
+            }
+          ],
+          "timer": "00:10:00"
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "blurb"
+        },
+        "value": [
+          "Try to make sure you cut the parsley small enough so that you don't end up getting big leafs of it taking over the salad. Same with the green onions. Feel free to mix up the measurements for the almonds, raisins and feta to your taste."
+        ]
+      }
     }
   }
 }
