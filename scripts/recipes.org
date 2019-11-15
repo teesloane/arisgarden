@@ -1,5 +1,5 @@
 #+TITLE: RECIPES
-#+RECIPE_COUNT: 24
+#+RECIPE_COUNT: 28
 #+CATEGORIES: '(breakfast salad main sweet snack soup side)
 * DONE Breakfast Quinoa
 CLOSED: [2019-10-06 Sun 12:50]
@@ -85,8 +85,7 @@ CLOSED: [2019-09-01 Sun 15:24]
 :END:
 - I know of a pantry--and while the light at the outset glows bright and warm--it recedes into such depths that no light can reach. Now there... there grows
   the great and unimaginable vegetables.
-* DONE 1 Pot Chickpea Shakshuka
-CLOSED: [2019-09-03 Tue 21:30]
+* 1 Pot Chickpea Shakshuka
 :PROPERTIES:
 :original_recipe: https://minimalistbaker.com/1-pot-chickpea-shakshuka/
 :day_made: [2019-09-03]
@@ -132,8 +131,7 @@ CLOSED: [2019-09-03 Tue 21:30]
 :type: big-quote
 :END:
 - I will be forever de-shelling chickpeas.
-* DONE Lemony Collard Greens Pasta
-CLOSED: [2019-09-04 Wed 18:13]
+* Lemony Collard Greens Pasta
 :PROPERTIES:
 :original_recipe: https://cookieandkate.com/lemon-collard-greens-pasta/
 :day_made: [2019-09-04]
@@ -177,8 +175,7 @@ CLOSED: [2019-09-04 Wed 18:13]
 - Big leaflet of chard
 - Or, collars of collard greens
 - Friend of spaghetti.
-* DONE Bowl #1
-CLOSED: [2019-09-10 Tue 18:10]
+* Bowl #1
 :PROPERTIES:
 :original_recipe: https://tasty.co/recipe/protein-packed-buddha-bowl
 :day_made: [2019-09-08]
@@ -236,8 +233,7 @@ CLOSED: [2019-09-10 Tue 18:10]
 :type: big-quote
 :END:
 - Sit and be patient, like marinating tofu.
-* DONE Massaman Curry
-CLOSED: [2019-09-10 Tue 19:18]
+* Massaman Curry
 :PROPERTIES:
 :day_made: [2019-09-10]
 :ease_of_making: 5/5
@@ -295,7 +291,7 @@ CLOSED: [2019-09-10 Tue 19:18]
   thinking about those terms a lot. I rarely eat meat these days, and now my
   decision not to is becoming more intentional and political. So, I guess that
   comes with a bit of guilt. So yeah. Anyway. It was pretty good.
-* DONE Cauliflower Rice Stir Fry
+* Cauliflower Rice Stir Fry
 :PROPERTIES:
 :day_made: [2019-09-12]
 :ease_of_making: 5/5
@@ -352,7 +348,7 @@ CLOSED: [2019-09-10 Tue 19:18]
 :type: whisper
 :END:
 - Don't use too much soy-sauce. Just don't.
-* DONE Spicy Kale and Coconut Fried Rice
+* Spicy Kale and Coconut Fried Rice
 :PROPERTIES:
 :day_made: [2019-09-17]
 :ease_of_making: 4/5
@@ -401,7 +397,7 @@ CLOSED: [2019-09-10 Tue 19:18]
 :END:
 - Clap-Clap (!) You know what that means?
 - Dinner time!
-* DONE Sweet Potato Gnocchi
+* Sweet Potato Gnocchi
 :PROPERTIES:
 :day_made: [2019-09-22]
 :ease_of_making: 3/5
@@ -443,7 +439,7 @@ CLOSED: [2019-09-10 Tue 19:18]
 :type: big-quote
 :END:
 - This one is worth the extra prep time.
-* DONE White Wine Pasta w// Brussel Sprouts
+* White Wine Pasta w/ Brussel Sprouts
 :PROPERTIES:
 :day_made: [2019-09-23]
 :ease_of_making: 3/5
@@ -493,8 +489,7 @@ CLOSED: [2019-09-10 Tue 19:18]
 :type: big-quote
 :END:
 - I forgot to take photos for this one.
-* DONE Kimchi Udon
-CLOSED: [2019-10-06 Sun 12:50]
+* Kimchi Udon
 :PROPERTIES:
 :belongs_to: main
 :day_made: [2019-09-30]
@@ -538,8 +533,7 @@ CLOSED: [2019-10-06 Sun 12:50]
 :type: whisper
 :END:
 - You can remove an egg white by moving the egg from hand to hand.
-* DONE Asparagus Spaghetti with Egg
-CLOSED: [2019-10-31 Thu 19:34]
+* Asparagus Spaghetti with Egg
 :PROPERTIES:
 :day_made:
 :ease_of_making: 5/5
@@ -582,8 +576,7 @@ CLOSED: [2019-10-31 Thu 19:34]
   I'm buying a jar of pesto! Too bad for you recipe! You can't tell me what to
   do! .... Anyway. This was quick and easy to make, but make sure you use enough
   asparagus for variety. Maybe consider adding some chopped nuts.
-* DONE Thai-Spice Rice Bowls
-CLOSED: [2019-10-16 Wed 23:14]
+* Thai-Spice Rice Bowls
 :PROPERTIES:
 :day_made: [2019-10-07]
 :ease_of_making: 5/5
@@ -630,8 +623,7 @@ CLOSED: [2019-10-16 Wed 23:14]
 :type: big-quote
 :END:
 - Is it supposed to be so soupy?
-* DONE Pineapple Salsa + Coconut Rice
-CLOSED: [2019-10-16 Wed 23:15]
+* Pineapple Salsa + Coconut Rice
 :PROPERTIES:
 :day_made: [2019-10-10]
 :ease_of_making: 3/5
@@ -686,7 +678,7 @@ CLOSED: [2019-10-16 Wed 23:15]
   tofu first and then starting the coconut rice, both of which take 20-25
   minutes. Also, when you grill the tofu, don't cut it too thick. If the tofu is
   bland, you could use some BBQ sauce.
-* DONE Pear And Brie Salad
+* Pear And Brie Salad
 :PROPERTIES:
 :belongs_to: salad
 :day_made: [2019-09-19]
@@ -738,8 +730,7 @@ CLOSED: [2019-10-16 Wed 23:15]
   "You can put cheese on salad".
   It sounds weird, but you didn't know this before.
   You can feel yourself becoming more cultured already.
-* DONE Raw beet salad
-CLOSED: [2019-09-25 Wed 14:42]
+* Raw beet salad
 :PROPERTIES:
 :belongs_to: salad
 :day_made: [2019-09-24]
@@ -787,8 +778,7 @@ CLOSED: [2019-09-25 Wed 14:42]
 :type: whisper
 :END:
 - You don't need a spiralizer for this, but it's helpful.
-* DONE Black Bean Salad
-CLOSED: [2019-10-06 Sun 12:50]
+* Black Bean Salad
 :PROPERTIES:
 :belongs_to: salad
 :day_made: [2019-10-03]
@@ -828,8 +818,7 @@ CLOSED: [2019-10-06 Sun 12:50]
 :type: blurb
 :END:
 - This has a lot of ingredients but very few steps. You'll basically end up just combing a bunch of stuff in a bowl  and then adding a dressing. We'd recommend not adding the dressing to the entire bowl if you plan on having leftovers, but adding the dressing every time you have the dish.
-* DONE Easy Marinated Tofu
-CLOSED: [2019-09-02 Mon 13:49]
+* Easy Marinated Tofu
 :PROPERTIES:
 :belongs_to: side
 :day_made: [2019-09-02]
@@ -864,8 +853,7 @@ CLOSED: [2019-09-02 Mon 13:49]
 :END:
 - Well, they are using plants to press the tofu. Big hulking things, sitting
   on top of 'em. Not trees, mind you. Frankly, I'm not surprised. It's about time they threw that weight around.
-* DONE Miso Asparagus
-CLOSED: [2019-10-06 Sun 12:50]
+* Miso Asparagus
 :PROPERTIES:
 :belongs_to: side
 :day_made: [2019-10-01]
@@ -907,8 +895,7 @@ CLOSED: [2019-10-06 Sun 12:50]
   well. We don't have a BBQ right now so we used a pan. This made the asparagus
   a bit limp. We also probably over-doused it in the miso sauce... if you were
   using a grill it would have more places to drip off.
-* DONE 5 ingredient granola bars
-CLOSED: [2019-09-01 Sun 13:41]
+* 5 ingredient granola bars
 :PROPERTIES:
 :original_recipe: https://minimalistbaker.com/healthy-5-ingredient-granola-bars/
 :slug: granola-bars
@@ -945,8 +932,7 @@ CLOSED: [2019-09-01 Sun 13:41]
 :type: big-quote
 :END:
 - I've made a tornado of dates.
-* DONE Candied Ginger
-CLOSED: [2019-09-03 Tue 07:39]
+* Candied Ginger
 :PROPERTIES:
 :belongs_to: sweet
 :day_made: [2019-09-02]
@@ -990,7 +976,7 @@ CLOSED: [2019-09-03 Tue 07:39]
 :END:
 - I hope I don't ruin your pan.
 - That's ok. It's Chemistry.
-* DONE Pumpkin Chiffon Pie
+* Pumpkin Chiffon Pie
 :PROPERTIES:
 :belongs_to: sweet
 :day_made: [2019-10-14]
@@ -1048,7 +1034,7 @@ CLOSED: [2019-09-03 Tue 07:39]
 :END:
 - Come look at this. Look at this beautiful thing!
 - We have like, 10 photos of people holding the pie.
-* DONE Mediterranean Baked Sweet Potatoes
+* Mediterranean Baked Sweet Potatoes
 :PROPERTIES:
 :original_recipe: https://minimalistbaker.com/mediterranean-baked-sweet-potatoes/
 :slug: mediterranean-baked-sweet-potatoes
@@ -1103,7 +1089,7 @@ CLOSED: [2019-09-03 Tue 07:39]
 - Searching through aisles
 - For dried dill and wondering
 - What dried dill looks like.
-* DONE chickpea cauliflower curry
+* Chickpea cauliflower Curry
 :PROPERTIES:
 :original_recipe: https://minimalistbaker.com/1-pot-yellow-chickpea-cauliflower-curry/
 :slug: chickpea-cauliflower-curry
@@ -1150,7 +1136,7 @@ CLOSED: [2019-09-03 Tue 07:39]
 :type: whisper
 :END:
 - We danced to Junior Boys while we cooked this one.
-* DONE Overnight Oats
+* Overnight Oats
 :PROPERTIES:
 :original_recipe: https://ohsheglows.com/2015/07/22/vegan-overnight-oats/
 :slug: overnight-oats
@@ -1187,7 +1173,7 @@ CLOSED: [2019-09-03 Tue 07:39]
 :END:
 - This is a good one. It's easy to make and quick. You can easily double the
   recipes to make enough for multiple days. Make sure to get some fresh fruit to put on top for when you prepare it.
-* DONE Orange Orzo Salad
+* Orange Orzo Salad
 :PROPERTIES:
 :original_recipe: https://ohsheglows.com/2015/07/22/vegan-overnight-oats/
 :slug: orange-orzo-salad
@@ -1230,3 +1216,101 @@ CLOSED: [2019-09-03 Tue 07:39]
 :type: blurb
 :END:
 - Try to make sure you cut the parsley small enough so that you don't end up getting big leafs of it taking over the salad. Same with the green onions. Feel free to mix up the measurements for the almonds, raisins and feta to your taste.
+* Ratatouille
+:PROPERTIES:
+:original_recipe: https://cookieandkate.com/best-ratatouille-recipe/#tasty-recipes-34476
+:slug: ratatouille
+:day_made: [2019-11-14]
+:name: Ratatouille
+:serves: 4
+:time: 01:20:00
+:is_vegan: true
+:is_vegetarian: true
+:ease_of_making: 4/5
+:rating: 4/5
+:imgs: 1.JPG,2.gif,3.JPG
+:belongs_to: main
+:END:
+** Ingredients
+| Ingredient             | Quantity | Unit | Id     | Group |
+|------------------------+----------+------+--------+-------|
+| Large tomatoes         |        4 |      | tomat  |       |
+| Eggplant (cubed)       |        1 |      | egg    |       |
+| Bell pepper (diced)    |        1 |      | pep    |       |
+| Zucchini (cubed)       |        1 |      | zuk    |       |
+| Yellow Squash (cubed)  |        1 |      | ysqu   |       |
+| Olive oil              |        6 |      | oil    |       |
+| Salt                   |      1/4 | tsp  | salt   |       |
+| Yellow onion (chopped) |        1 |      | onion  |       |
+| Garlic (minced)        |        4 |      | gar    |       |
+| Basil  (chopped)       |      1/4 | cups | bas    |       |
+| Red pepper flakes      |      1/4 | tsp  | flakes |       |
+| Dried oregano          |      1/4 | tsp  | oreg   |       |
+| Ground pepper          |          |      |        |       |
+| Cheese grater/blender  |          |      |        |       |
+** Steps
+1) Preheat oven to 425F. Line two large baking sheets with parchment paper.
+2) Prepare tomatoes by coring them and grate them on a cheeze grater with large holes or blend them to a frothy pulp.
+3) Put [#: egg | cubed eggplant] on baking sheet in a single layer and coat with olive oil. Sprink with salt. Set aside.
+4) Put [#: zuk | zuchini] and [#: ysqu | yellow squash] on baking sheet. Add 1 tbsp of olive oil. Add 1/4 tsp of salt.
+5) [&:00:15:00] Put eggplant in middle rack and vegetable on top rack in the oven. Set timer for 15 minutes.
+6) [&:00:10:00]  Warm 2 tbsp of olive oil in a dutch oven over medium heat. Add [#: onion | yellow onion] and [#: salt | salt]. Cook, stirring occasionally, until onion is tender. About 8 to 10 minutes.
+7) Add [#: gar | garlic] to dutch oven, about 30 seconds until fragrant. Add [#: tomat | tomatoes ] and use a wooden spoon or spatula to stir. Reduce to gentle simmer.
+8) [&:00:10:00] When eggplant and friends are done in the oven, take them out, stir around, and put back in, this time switching the racks they are on. Bake for another 10 minutes then remove the eggplant and put it in the dutch oven mix.
+9) [&:00:05:00] Let the squash keep on baking in the oven. Then take it out and put it in the dutch oven for another five minutes.
+10) Remove the dutch oven from the heat. Stir in a teaspoon olive oil, [#: bas | chopped basil] and [#: flakes | Red pepper flakes]. Crumble [#: oreg | dried oregano] into the pot. Season with salt and pepper (if you feel like it).
+11) Serve it up! Put it in bowls, drizzle with olive oil. Let it cool. It should last a few days. Maybe add some bread as a side.
+** Content
+:PROPERTIES:
+:type: blurb
+:END:
+- We doubled this recipe and made it for six of us. It was a good meal, but
+  involved a fair bit of prep. A friend brought tortelinni and we used that
+  as a base and it mixed nicely. A side note: Yellow squash is basically yellow
+  zucchini (which we couldn't find). You can just use one or the other in the
+  recipe if you can only find one of the two.
+* Kimchi Avocado Egg on Toast
+:PROPERTIES:
+:belongs_to: breakfast
+:day_made: [2019-11-15]
+:ease_of_making: 5/5
+:imgs: 1.jpg,2.jpg
+:is_vegan: false
+:is_vegetarian: true
+:name: Kimchi Avocado Egg on Toast
+:original_recipe: #
+:rating: 3.5/5
+:serves: 1
+:slug: avo-kimchi-egg-toast
+:time: 00:15:00
+:END:
+** Ingredients
+| Ingredient        | Quantity | Unit    | Id     |
+|-------------------+----------+---------+--------|
+| Kimchi            |      1/4 | cups    | kim    |
+| Shallot           |        1 | shallot | shal   |
+| Garlic            |        1 | clove   | garlic |
+| Bread (sourdough) |        1 | slice   | bread  |
+| Avocado           |      1/2 |         | avo    |
+| Egg (poached)     |        1 |         | egg    |
+| Paprika           |      1/4 | tsp     | pap    |
+| Salt              |        1 | pinch   | salt   |
+** Steps
+1) Dice [#: shal | shallot], mince [#: garlic | garlic] and chop [#: kim | kimchi].
+2) Bring a pot of water to boil to poach your egg.
+3) [&:00:02:00] Melt butter in pan on medium until hot enough to sizzle a bit of
+   shallot. Put [#: shal | shallot] in for 2 minutes.
+4) [&:00:01:00] Add prepared garlic and sauté for another minute.
+5) [&:00:05:00] Add kimchi and sauté for about five minutes while you poach the egg.
+6) [&:00:04:00] Crack egg into boiling water and leave for 4 minutes. Keep an eye that it doesn't overflow.
+7) Toast the bread.
+8) Pull it all together: mush [#: avo | avocado] on top of bread. Add a sprinkle of salt. Add garlic,
+   shallot, kimchi mix on top of avocado. Add poached egg on top. Sprinkle with
+   [#: pap | paprika].
+** Content
+:PROPERTIES:
+:type: dialogue
+:END:
+- Have a bite of this.
+- No, I'm full.
+- (eyes watering) - Please.

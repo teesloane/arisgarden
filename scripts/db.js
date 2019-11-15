@@ -5931,6 +5931,505 @@ var db = {
           "Try to make sure you cut the parsley small enough so that you don't end up getting big leafs of it taking over the salad. Same with the green onions. Feel free to mix up the measurements for the almonds, raisins and feta to your taste."
         ]
       }
+    },
+    "ratatouille": {
+      "meta": {
+        "properties": {
+          "original_recipe": "https://cookieandkate.com/best-ratatouille-recipe/#tasty-recipes-34476",
+          "slug": "ratatouille",
+          "day_made": "[2019-11-14]",
+          "name": "Ratatouille",
+          "serves": "4",
+          "time": "01:20:00",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "ease_of_making": "4/5",
+          "rating": "4/5",
+          "imgs": "1.JPG,2.gif,3.JPG",
+          "belongs_to": "main"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id",
+          "Group"
+        ],
+        "data": [
+          {
+            "Ingredient": "Large tomatoes",
+            "Quantity": "4",
+            "Unit": "",
+            "Id": "tomat",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Eggplant (cubed)",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "egg",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Bell pepper (diced)",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "pep",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Zucchini (cubed)",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "zuk",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Yellow Squash (cubed)",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "ysqu",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Olive oil",
+            "Quantity": "6",
+            "Unit": "",
+            "Id": "oil",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Salt",
+            "Quantity": "1/4",
+            "Unit": "tsp",
+            "Id": "salt",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Yellow onion (chopped)",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "onion",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Garlic (minced)",
+            "Quantity": "4",
+            "Unit": "",
+            "Id": "gar",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Basil  (chopped)",
+            "Quantity": "1/4",
+            "Unit": "cups",
+            "Id": "bas",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Red pepper flakes",
+            "Quantity": "1/4",
+            "Unit": "tsp",
+            "Id": "flakes",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Dried oregano",
+            "Quantity": "1/4",
+            "Unit": "tsp",
+            "Id": "oreg",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Ground pepper",
+            "Quantity": "",
+            "Unit": "",
+            "Id": "",
+            "Group": ""
+          },
+          {
+            "Ingredient": "Cheese grater/blender",
+            "Quantity": "",
+            "Unit": "",
+            "Id": "",
+            "Group": ""
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "Preheat oven to 425F. Line two large baking sheets with parchment paper.",
+          "f": [
+            {
+              "val": "Preheat oven to 425F. Line two large baking sheets with parchment paper."
+            }
+          ]
+        },
+        {
+          "o": "Prepare tomatoes by coring them and grate them on a cheeze grater with large holes or blend them to a frothy pulp.",
+          "f": [
+            {
+              "val": "Prepare tomatoes by coring them and grate them on a cheeze grater with large holes or blend them to a frothy pulp."
+            }
+          ]
+        },
+        {
+          "o": "Put [#: egg | cubed eggplant] on baking sheet in a single layer and coat with olive oil. Sprink with salt. Set aside.",
+          "f": [
+            {
+              "val": "Put"
+            },
+            {
+              "val": "cubed eggplant",
+              "attr": "egg"
+            },
+            {
+              "val": "on baking sheet in a single layer and coat with olive oil. Sprink with salt. Set aside."
+            }
+          ]
+        },
+        {
+          "o": "Put [#: zuk | zuchini] and [#: ysqu | yellow squash] on baking sheet. Add 1 tbsp of olive oil. Add 1/4 tsp of salt.",
+          "f": [
+            {
+              "val": "Put"
+            },
+            {
+              "val": "zuchini",
+              "attr": "zuk"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "yellow squash",
+              "attr": "ysqu"
+            },
+            {
+              "val": "on baking sheet. Add 1 tbsp of olive oil. Add 1/4 tsp of salt."
+            }
+          ]
+        },
+        {
+          "o": "[&:00:15:00] Put eggplant in middle rack and vegetable on top rack in the oven. Set timer for 15 minutes.",
+          "f": [
+            {
+              "val": "Put eggplant in middle rack and vegetable on top rack in the oven. Set timer for 15 minutes."
+            }
+          ],
+          "timer": "00:15:00"
+        },
+        {
+          "o": "[&:00:10:00]  Warm 2 tbsp of olive oil in a dutch oven over medium heat. Add [#: onion | yellow onion] and [#: salt | salt]. Cook, stirring occasionally, until onion is tender. About 8 to 10 minutes.",
+          "f": [
+            {
+              "val": "Warm 2 tbsp of olive oil in a dutch oven over medium heat. Add"
+            },
+            {
+              "val": "yellow onion",
+              "attr": "onion"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "salt",
+              "attr": "salt"
+            },
+            {
+              "val": ". Cook, stirring occasionally, until onion is tender. About 8 to 10 minutes."
+            }
+          ],
+          "timer": "00:10:00"
+        },
+        {
+          "o": "Add [#: gar | garlic] to dutch oven, about 30 seconds until fragrant. Add [#: tomat | tomatoes ] and use a wooden spoon or spatula to stir. Reduce to gentle simmer.",
+          "f": [
+            {
+              "val": "Add"
+            },
+            {
+              "val": "garlic",
+              "attr": "gar"
+            },
+            {
+              "val": "to dutch oven, about 30 seconds until fragrant. Add"
+            },
+            {
+              "val": "tomatoes",
+              "attr": "tomat"
+            },
+            {
+              "val": "and use a wooden spoon or spatula to stir. Reduce to gentle simmer."
+            }
+          ]
+        },
+        {
+          "o": "[&:00:10:00] When eggplant and friends are done in the oven, take them out, stir around, and put back in, this time switching the racks they are on. Bake for another 10 minutes then remove the eggplant and put it in the dutch oven mix.",
+          "f": [
+            {
+              "val": "When eggplant and friends are done in the oven, take them out, stir around, and put back in, this time switching the racks they are on. Bake for another 10 minutes then remove the eggplant and put it in the dutch oven mix."
+            }
+          ],
+          "timer": "00:10:00"
+        },
+        {
+          "o": "[&:00:05:00] Let the squash keep on baking in the oven. Then take it out and put it in the dutch oven for another five minutes.",
+          "f": [
+            {
+              "val": "Let the squash keep on baking in the oven. Then take it out and put it in the dutch oven for another five minutes."
+            }
+          ],
+          "timer": "00:05:00"
+        },
+        {
+          "o": "Remove the dutch oven from the heat. Stir in a teaspoon olive oil, [#: bas | chopped basil] and [#: flakes | Red pepper flakes]. Crumble [#: oreg | dried oregano] into the pot. Season with salt and pepper (if you feel like it).",
+          "f": [
+            {
+              "val": "Remove the dutch oven from the heat. Stir in a teaspoon olive oil,"
+            },
+            {
+              "val": "chopped basil",
+              "attr": "bas"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "Red pepper flakes",
+              "attr": "flakes"
+            },
+            {
+              "val": ". Crumble"
+            },
+            {
+              "val": "dried oregano",
+              "attr": "oreg"
+            },
+            {
+              "val": "into the pot. Season with salt and pepper (if you feel like it)."
+            }
+          ]
+        },
+        {
+          "o": "Serve it up! Put it in bowls, drizzle with olive oil. Let it cool. It should last a few days. Maybe add some bread as a side.",
+          "f": [
+            {
+              "val": "Serve it up! Put it in bowls, drizzle with olive oil. Let it cool. It should last a few days. Maybe add some bread as a side."
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "blurb"
+        },
+        "value": [
+          "We doubled this recipe and made it for six of us. It was a good meal, but involved a fair bit of prep. A friend brought tortelinni and we used that as a base and it mixed nicely. A side note: Yellow squash is basically yellow zucchini (which we couldn't find). You can just use one or the other in the recipe if you can only find one of the two."
+        ]
+      }
+    },
+    "avo-kimchi-egg-toast": {
+      "meta": {
+        "properties": {
+          "belongs_to": "breakfast",
+          "day_made": "[2019-11-15]",
+          "ease_of_making": "5/5",
+          "imgs": "1.jpg,2.jpg",
+          "is_vegan": "false",
+          "is_vegetarian": "true",
+          "name": "Kimchi Avocado Egg on Toast",
+          "original_recipe": "#",
+          "rating": "3.5/5",
+          "serves": "1",
+          "slug": "avo-kimchi-egg-toast",
+          "time": "00:15:00"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id"
+        ],
+        "data": [
+          {
+            "Ingredient": "Kimchi",
+            "Quantity": "1/4",
+            "Unit": "cups",
+            "Id": "kim"
+          },
+          {
+            "Ingredient": "Shallot",
+            "Quantity": "1",
+            "Unit": "shallot",
+            "Id": "shal"
+          },
+          {
+            "Ingredient": "Garlic",
+            "Quantity": "1",
+            "Unit": "clove",
+            "Id": "garlic"
+          },
+          {
+            "Ingredient": "Bread (sourdough)",
+            "Quantity": "1",
+            "Unit": "slice",
+            "Id": "bread"
+          },
+          {
+            "Ingredient": "Avocado",
+            "Quantity": "1/2",
+            "Unit": "",
+            "Id": "avo"
+          },
+          {
+            "Ingredient": "Egg (poached)",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "egg"
+          },
+          {
+            "Ingredient": "Paprika",
+            "Quantity": "1/4",
+            "Unit": "tsp",
+            "Id": "pap"
+          },
+          {
+            "Ingredient": "Salt",
+            "Quantity": "1",
+            "Unit": "pinch",
+            "Id": "salt"
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "Dice [#: shal | shallot], mince [#: garlic | garlic] and chop [#: kim | kimchi].",
+          "f": [
+            {
+              "val": "Dice"
+            },
+            {
+              "val": "shallot",
+              "attr": "shal"
+            },
+            {
+              "val": ", mince"
+            },
+            {
+              "val": "garlic",
+              "attr": "garlic"
+            },
+            {
+              "val": "and chop"
+            },
+            {
+              "val": "kimchi",
+              "attr": "kim"
+            },
+            {
+              "val": "."
+            }
+          ]
+        },
+        {
+          "o": "Bring a pot of water to boil to poach your egg.",
+          "f": [
+            {
+              "val": "Bring a pot of water to boil to poach your egg."
+            }
+          ]
+        },
+        {
+          "o": "[&:00:02:00] Melt butter in pan on medium until hot enough to sizzle a bit of shallot. Put [#: shal | shallot] in for 2 minutes.",
+          "f": [
+            {
+              "val": "Melt butter in pan on medium until hot enough to sizzle a bit of shallot. Put"
+            },
+            {
+              "val": "shallot",
+              "attr": "shal"
+            },
+            {
+              "val": "in for 2 minutes."
+            }
+          ],
+          "timer": "00:02:00"
+        },
+        {
+          "o": "[&:00:01:00] Add prepared garlic and sauté for another minute.",
+          "f": [
+            {
+              "val": "Add prepared garlic and sauté for another minute."
+            }
+          ],
+          "timer": "00:01:00"
+        },
+        {
+          "o": "[&:00:05:00] Add kimchi and sauté for about five minutes while you poach the egg.",
+          "f": [
+            {
+              "val": "Add kimchi and sauté for about five minutes while you poach the egg."
+            }
+          ],
+          "timer": "00:05:00"
+        },
+        {
+          "o": "[&:00:04:00] Crack egg into boiling water and leave for 4 minutes. Keep an eye that it doesn't overflow.",
+          "f": [
+            {
+              "val": "Crack egg into boiling water and leave for 4 minutes. Keep an eye that it doesn't overflow."
+            }
+          ],
+          "timer": "00:04:00"
+        },
+        {
+          "o": "Toast the bread.",
+          "f": [
+            {
+              "val": "Toast the bread."
+            }
+          ]
+        },
+        {
+          "o": "Pull it all together: mush [#: avo | avocado] on top of bread. Add a sprinkle of salt. Add garlic, shallot, kimchi mix on top of avocado. Add poached egg on top. Sprinkle with [#: pap | paprika].",
+          "f": [
+            {
+              "val": "Pull it all together: mush"
+            },
+            {
+              "val": "avocado",
+              "attr": "avo"
+            },
+            {
+              "val": "on top of bread. Add a sprinkle of salt. Add garlic, shallot, kimchi mix on top of avocado. Add poached egg on top. Sprinkle with"
+            },
+            {
+              "val": "paprika",
+              "attr": "pap"
+            },
+            {
+              "val": "."
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "dialogue"
+        },
+        "value": [
+          "Have a bite of this.",
+          "No, I'm full.",
+          "(eyes watering) - Please."
+        ]
+      }
     }
   }
 }
