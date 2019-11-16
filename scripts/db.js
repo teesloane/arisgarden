@@ -6430,6 +6430,191 @@ var db = {
           "(eyes watering) - Please."
         ]
       }
+    },
+    "tofu-kimchi-stew": {
+      "meta": {
+        "properties": {
+          "belongs_to": "main",
+          "day_made": "[2019-11-15]",
+          "ease_of_making": "5/5",
+          "imgs": "1.jpg,2.jpg,3.jpg",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "name": "Tofu Kimchi Stew",
+          "original_recipe": "https://www.bonappetit.com/recipe/tofu-and-kimchi-stew",
+          "rating": "3/5",
+          "serves": "1",
+          "slug": "tofu-kimchi-stew",
+          "tags": "easy, quick, korean, stew, spicey",
+          "time": "00:25:00"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id"
+        ],
+        "data": [
+          {
+            "Ingredient": "Olive oil",
+            "Quantity": "",
+            "Unit": "",
+            "Id": ""
+          },
+          {
+            "Ingredient": "Green onions",
+            "Quantity": "6",
+            "Unit": "",
+            "Id": "go"
+          },
+          {
+            "Ingredient": "Garlic",
+            "Quantity": "4",
+            "Unit": "cloves",
+            "Id": "gar"
+          },
+          {
+            "Ingredient": "Ginger",
+            "Quantity": "1",
+            "Unit": "1-inch piece",
+            "Id": "ging"
+          },
+          {
+            "Ingredient": "Vegetable broth",
+            "Quantity": "4",
+            "Unit": "cups",
+            "Id": "vegbro"
+          },
+          {
+            "Ingredient": "Gochujang",
+            "Quantity": "3",
+            "Unit": "tbsp",
+            "Id": "gochu"
+          },
+          {
+            "Ingredient": "Soy sauce",
+            "Quantity": "3",
+            "Unit": "tbsp",
+            "Id": "soy"
+          },
+          {
+            "Ingredient": "Daikon (or Radish)",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "sliced"
+          },
+          {
+            "Ingredient": "Kimchi",
+            "Quantity": "1/2",
+            "Unit": "cups",
+            "Id": ""
+          },
+          {
+            "Ingredient": "Silken Tofu",
+            "Quantity": "1/2",
+            "Unit": "block",
+            "Id": "silk"
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "Heat oil in large saucepan on high.",
+          "f": [
+            {
+              "val": "Heat oil in large saucepan on high."
+            }
+          ]
+        },
+        {
+          "o": "[&:00:03:00] Cook white and pale-green parts of green onions. Save the green ends. Add in the [#: gar | garlic] and [#: ging | ginger]. Stir often, about 3 minutes",
+          "f": [
+            {
+              "val": "Cook white and pale-green parts of green onions. Save the green ends. Add in the"
+            },
+            {
+              "val": "garlic",
+              "attr": "gar"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "ginger",
+              "attr": "ging"
+            },
+            {
+              "val": ". Stir often, about 3 minutes"
+            }
+          ],
+          "timer": "00:03:00"
+        },
+        {
+          "o": "Add [#: vegbro | broth]. Whisk in [#: go | gochujang] and [#: soy | soy sauce].",
+          "f": [
+            {
+              "val": "Add"
+            },
+            {
+              "val": "broth",
+              "attr": "vegbro"
+            },
+            {
+              "val": ". Whisk in"
+            },
+            {
+              "val": "gochujang",
+              "attr": "go"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "soy sauce",
+              "attr": "soy"
+            },
+            {
+              "val": "."
+            }
+          ]
+        },
+        {
+          "o": "[&:00:15:00] Add daikon (or radish if you don't have daikon). Simmer for 15-20 minutes.",
+          "f": [
+            {
+              "val": "Add daikon (or radish if you don't have daikon). Simmer for 15-20 minutes."
+            }
+          ],
+          "timer": "00:15:00"
+        },
+        {
+          "o": "Add kimchi and tofu. Simmer until tofu is heated through.",
+          "f": [
+            {
+              "val": "Add kimchi and tofu. Simmer until tofu is heated through."
+            }
+          ]
+        },
+        {
+          "o": "Divide among bowls, add thinly sliced green onion on top.",
+          "f": [
+            {
+              "val": "Divide among bowls, add thinly sliced green onion on top."
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "blurb"
+        },
+        "value": [
+          "This is quick and easy to make. We couldn't find Daikon so we used radish, which seemed to work just fine. We only used 2 tbsp of gochujang and it was plenty spicey for us."
+        ]
+      }
     }
   }
 }
