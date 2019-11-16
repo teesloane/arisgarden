@@ -6442,8 +6442,8 @@ var db = {
           "is_vegetarian": "true",
           "name": "Tofu Kimchi Stew",
           "original_recipe": "https://www.bonappetit.com/recipe/tofu-and-kimchi-stew",
-          "rating": "3/5",
-          "serves": "1",
+          "rating": "3.5/5",
+          "serves": "2",
           "slug": "tofu-kimchi-stew",
           "tags": "easy, quick, korean, stew, spicey",
           "time": "00:25:00"
