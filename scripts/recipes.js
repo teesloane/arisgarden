@@ -173,7 +173,7 @@ function Recipe() {
     let $btn = (i) => ({class: "rs_ingr-quant-button", width: 16, onClick: [$act.changeQuant, i]})
 
     let render_quantity_th = () => {
-      return h("th", {style: {display: "flex", padding: "16px 8px"}}, [
+      return h("th", {style: {display: "flex", padding: "16px 8px", marginLeft: "-48px"}}, [
         ui.icon("minus.svg", $btn(-1)),
         h("span", {style: {padding: "0 8px"}}, [
           h("span", {}, "Quantity"),

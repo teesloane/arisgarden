@@ -1494,7 +1494,7 @@ var db = {
           "is_vegetarian": "true",
           "name": "Cauliflower Rice Stir Fry",
           "original_recipe": "https://minimalistbaker.com/30-minute-cauliflower-rice-stir-fry/",
-          "rating": "5/5",
+          "rating": "3/5",
           "serves": "2",
           "belongs_to": "main",
           "slug": "cauliflower-rice-stir-fry",
