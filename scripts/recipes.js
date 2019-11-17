@@ -169,23 +169,56 @@ function Recipe() {
   this._viewIngredients = (state) => {
     let ingredients = state.currentRecipe.ingredients;
     let $tr = { style: { padding: "16px 8px" } };
+    let $td = { style: { height: "20px" } };
+    let $btn = (i) => ({class: "rs_ingr-quant-button", width: 16, onClick: [$act.changeQuant, i]})
 
+    let render_quantity_th = () => {
+      return h("th", {style: {display: "flex", padding: "16px 8px"}}, [
+        ui.icon("minus.svg", $btn(-1)),
+        h("span", {style: {padding: "0 8px"}}, [
+          h("span", {}, "Quantity"),
+          h("sup", {class: "rs_ingr-quant-sup"}, state.recipeQuantMult + "x")
+        ]),
+        ui.icon("plus.svg", $btn(1)),
+      ])
+
+    }
 
     return h("div", { class: "rs_ingr" }, [
       h("table", { class: "rs_ingr-Table", style: { width: "100%" } }, [
         h("thead", { class: "rs_ingr-headrow" },
-          h("tr", {}, [ingredients.keys.map((e, index) => {
-            if (index < 3) return h("th", $tr, e)
-          })])
+          h("th", $tr, "Ingredient"),
+          render_quantity_th(),
+          h("th", $tr, "Unit")
         ),
         h('tbody', { class: "rs_ingr-TableBody" }, [
           ingredients.data.map(e => {
             return h("tr", { class: "rs_ingr-tablerow" }, [
-              h("td", { style: { height: "20px" } }, e.Ingredient),
-              h("td", { style: { height: "20px" } }, e.Quantity),
-              h("td", { style: { height: "20px" } }, e.Unit)
+              h("td", $td, e.Ingredient),
+              // h("td", $td, e.Quantity),
+              this._renderQuantity(e.Quantity, state.recipeQuantMult),
+              h("td", $td, e.Unit)
             ])
           })])])])
+  }
+
+  /**
+   * If a user doubles &c., multiply quantity for each ingredient.
+   */
+  this._renderQuantity = (quant, mult) => {
+    if(quant[1] === "/") {
+      let numerator = quant[0];
+      let numeratorMultd = numerator * mult;
+      let denominator = quant[2];
+
+      if (numeratorMultd >= denominator) {
+        let factored = numeratorMultd / denominator
+        let rounded = Math.round(factored * 10) / 10
+        return h("td", {}, rounded)
+      }
+      return h("td", {}, (quant[0] * mult) + "/" + quant[2])
+    }
+    return h("td", {}, quant * mult || "")
   }
 
   this._viewInstructions = (state) => {

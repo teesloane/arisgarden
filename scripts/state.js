@@ -12,14 +12,19 @@ const $fx = {
   // }
 }
 
+
+// actions
 const $act = {
-  // actions
   setRecipeStep: (s, i) => ({...s, currentRecipeStep: i}),
   modalClose:    (s, _) => ({...s, currentModal: null}),
   modalSet:      (s, p) => {return ({...s, currentModal: () => p.fn(s, p.val)})},
-  heroSetImg: (s, p) => {
-    return ({...s, heroImg: p})
-  },
+  heroSetImg:    (s, p) => {return ({...s, heroImg: p})},
+
+  changeQuant:   (s, p) => {
+    if (s.recipeQuantMult == 1 && p === -1) {
+      return ({...s})
+    }
+    return({...s, recipeQuantMult: s.recipeQuantMult + p })},
 
 
   /* TIMER ------------------------------------------------------------------- */
@@ -92,6 +97,7 @@ const $act = {
       currentRoute: newRoute.view,
       currentRecipeStep: 0,
       currentRecipe: db.recipes[newRoute.id], // not optimal?
+      recipeQuantMult: 1,
       heroImg: null,
     })
     return (newState)
@@ -103,6 +109,7 @@ var initState = {
   currentRecipe: db.recipes["shakshuka"],
   currentRecipeStep: 0,
   currentRecipeStepText: "",
+  recipeQuantMult: 1,
   currentRoute: () => ui.loadingState(),
   currentModal: null,
   heroImg: null,

@@ -68,6 +68,16 @@
   padding: 16px;
 }
 
+.rs_ingr-quant-sup {
+  color: grey;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.rs_ingr-quant-button {
+  cursor: pointer;
+}
+
 .rs_inst {
   align-self: flex-start;
   background: white;
