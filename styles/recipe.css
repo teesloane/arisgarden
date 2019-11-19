@@ -197,13 +197,19 @@
 
 .rl_hero_li {padding: 4px 0;}
 .rl_hero_data {
+  background: rgba(0, 0, 0, 0.6);
   bottom: 0;
-  color: white;
   left: 0;
-  letter-spacing: 4px;
-  list-style-type: none;
-  padding: 32px;
   position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;;
+  align-items: center;
+}
+
+.rl_hero_data img {
+  width: 45%;
 }
 
 

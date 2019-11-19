@@ -156,6 +156,7 @@ function UiFn() {
     return h("section", attrs, childFn());
   }
 
+
   this.modal = (state) => {
     if (state.currentModal) {
       return h("section", {class: "v_Modal", onClick: [$act.modalClose]}, [
@@ -226,7 +227,7 @@ function UiFn() {
   this.about = () => {
     let $li = {style: {padding: "8px 0"}};
     return h("main", {}, [
-      ui.hero("media/imgs/placeholder.png", () => h("span", {}, "") ),
+      ui.hero("media/imgs/_aris_about.png", () => h("span", {}, "") ),
       h("div", {class: "content", style: {padding: "48px"}}, [
         h("h2", {class: "v_Heading-grey"}, "About Ari"),
         h("p", {}, "Ari is a racoon. He used to eat a lot of trash but over time he decided it was time to eat less trash and eat more healthy things. Nowadays, Ari is working to hard to get better at cooking, mostly with vegetables and no longer with meat. Ari eats vegetables that are orange, light yellow, green, lighter green, darker green, red, light red, beet red, and other colours too. He has yet to find a blue vegetable."),

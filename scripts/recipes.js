@@ -86,12 +86,10 @@ function Recipe() {
     let p = recipe.meta.properties
 
     return h("div", {}, [
-      h("ul", { class: "rl_hero_data" }, [
-        h("li", liAttr, [
-          h("span", liAttr, p.name + " "),
-          h("span", liAttr, p.day_made),
-        ])
-      ])])
+      h("div", { class: "rl_hero_data" }, [
+        h("img", {src: "media/imgs/_aris_garden.png"})
+      ])
+    ])
   }
 
   /**
