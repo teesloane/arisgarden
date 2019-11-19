@@ -63,7 +63,7 @@ function Recipe() {
     return h("section", { class: "rL" }, [
       ui.hero(rndHero, () => this._viewAllHero(rndRecipe)),
       h("div", { class: "rl_columns" }, [
-        h("input", {type: "text", onInput: $act.setFilter, value: state.recipeSearch }),
+        // h("input", {type: "text", onInput: $act.setFilter, value: state.recipeSearch }),
         Object.keys(sortedRecipes).map(group => {
           return h("div", {class: "rl_list"}, [
             h("h2", {class: "v_Heading-grey"}, group + "-ish"),
