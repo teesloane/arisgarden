@@ -26,6 +26,9 @@ const $act = {
     }
     return({...s, recipeQuantMult: s.recipeQuantMult + p })},
 
+  setFilter: (state, event) => ({...state, recipeSearch: event.target.value}),
+
+
 
   /* TIMER ------------------------------------------------------------------- */
 
@@ -110,6 +113,7 @@ var initState = {
   currentRecipeStep: 0,
   currentRecipeStepText: "",
   recipeQuantMult: 1,
+  recipeSearch: "",
   currentRoute: () => ui.loadingState(),
   currentModal: null,
   heroImg: null,

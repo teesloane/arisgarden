@@ -51,7 +51,8 @@ function Recipe() {
 
 
     // Get the hero for the view All. Make it static if the timer is running.
-    if (state.timerRunning) {
+    // FIXME -- should be randon only on page load.
+    if (state.timerRunning || state.recipeSearch !== "") {
       rndRecipe = db.recipes[Object.keys(db.recipes)[3]]
     } else {
       rndRecipe = util.rndObjProp(db.recipes);
@@ -62,6 +63,7 @@ function Recipe() {
     return h("section", { class: "rL" }, [
       ui.hero(rndHero, () => this._viewAllHero(rndRecipe)),
       h("div", { class: "rl_columns" }, [
+        h("input", {type: "text", onInput: $act.setFilter, value: state.recipeSearch }),
         Object.keys(sortedRecipes).map(group => {
           return h("div", {class: "rl_list"}, [
             h("h2", {class: "v_Heading-grey"}, group + "-ish"),
