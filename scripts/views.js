@@ -148,15 +148,6 @@ function UiFn() {
   }
 
 
-  // this.hero = (heroImgPath, childFn) => {
-  //   let attrs = {
-  //     class: "v_Hero",
-  //     style: { backgroundImage: `url(${heroImgPath})`}
-  //   };
-  //   return h("section", attrs, childFn());
-  // }
-
-  // /** *
   this.hero = (state, heroImgPath, childFn) => {
     if (state.heroImg == null) {
       let attrs  = {class: "v_Hero v_Hero-loading",};
@@ -173,7 +164,6 @@ function UiFn() {
       return h("section", attrs, childFn());
     }
   }
-  // */
 
 
   this.modal = (state) => {
