@@ -4,7 +4,7 @@ function View() {
     "#/recipes": recipes.viewAll,
     "#/recipes/:id": recipes.viewSingle,
     "#/about": ui.about,
-    "404": () => ui.fourOhFour()
+    "404": ui.fourOhFour
   }
 
 
@@ -148,13 +148,32 @@ function UiFn() {
   }
 
 
-  this.hero = (heroImgPath, childFn) => {
-    let attrs = {
-      class: "v_Hero",
-      style: { backgroundImage: `url(${heroImgPath})`}
-    };
-    return h("section", attrs, childFn());
+  // this.hero = (heroImgPath, childFn) => {
+  //   let attrs = {
+  //     class: "v_Hero",
+  //     style: { backgroundImage: `url(${heroImgPath})`}
+  //   };
+  //   return h("section", attrs, childFn());
+  // }
+
+  // /** *
+  this.hero = (state, heroImgPath, childFn) => {
+    if (state.heroImg == null) {
+      let attrs  = {class: "v_Hero v_Hero-loading",};
+      let img    = new Image();
+      img.onload = () => {dispatch($act.heroSetImg, img)}
+      img.src    = heroImgPath;
+
+      return h("section", attrs, childFn());
+    } else {
+      let attrs = {
+        class: "v_Hero v_Hero-loaded",
+        style: { backgroundImage: `url(${state.heroImg.src})`}
+      };
+      return h("section", attrs, childFn());
+    }
   }
+  // */
 
 
   this.modal = (state) => {
@@ -211,10 +230,10 @@ function UiFn() {
 
   this.getImg = (img) => `media/imgs/${img}`;
 
-  this.fourOhFour = () => {
+  this.fourOhFour = (state) => {
 
     return h("div", {}, [
-      ui.hero(this.getImg("404.png"), () => h("span", {}, "")),
+      ui.hero(state, this.getImg("404.png"), () => h("span", {}, "")),
       h("div", {class: "v_fourOhFour"}, [
         h("h1", {style: {fontSize: "14px"}}, "Page not found!")
       ])
@@ -224,10 +243,10 @@ function UiFn() {
   /**
    * Page: About
    */
-  this.about = () => {
+  this.about = (state) => {
     let $li = {style: {padding: "8px 0"}};
     return h("main", {}, [
-      ui.hero("media/imgs/_aris_about.png", () => h("span", {}, "") ),
+      ui.hero(state, "media/imgs/_aris_about.png", () => h("span", {}, "") ),
       h("div", {class: "content", style: {padding: "48px"}}, [
         h("h2", {class: "v_Heading-grey"}, "About Ari"),
         h("p", {}, "Ari is a racoon. He used to eat a lot of trash but over time he decided it was time to eat less trash and eat more healthy things. Nowadays, Ari is working to hard to get better at cooking, mostly with vegetables and no longer with meat. Ari eats vegetables that are orange, light yellow, green, lighter green, darker green, red, light red, beet red, and other colours too. He has yet to find a blue vegetable."),

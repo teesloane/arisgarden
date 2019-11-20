@@ -27,7 +27,7 @@ function Recipe() {
     // TODO handle invalid reciple currentId; make a gotoview func
 
     return h("section", {}, [
-      ui.hero(heroImg, () => this._viewMetaData(state)),
+      ui.hero(state, heroImg, () => this._viewMetaData(state)),
       this._viewContent(state),
       this._viewPhotos(state),
       h("div", {style: {marginTop: "8px"}}, ui.colourBand(4)),
@@ -39,9 +39,22 @@ function Recipe() {
         ])])])
   }
 
+  /**
+   * Convert the db's recipes into a list of clickable links
+   * - Has to do some reducing and filtering first.
+   * - Provides a searchbar.
+   */
   this.viewAll = (state) => {
-    let rndRecipe;
-    let sortedRecipes = Object.keys(db.recipes).reduce((acc, curr) => {
+    let search       = state.recipeSearch
+    let rndRecipe    = util.rndObjProp(db.recipes);
+    let rndHero      = this.getImg(rndRecipe.meta.properties.slug + "-hero.jpg")
+    let $isSearching = search !== "" ? "rl_columns searching" : "rl_columns"
+
+    let filteredRecipes = Object.keys(db.recipes).filter(k => {
+      return db.recipes[k].meta.properties.name.toLowerCase().includes(search.toLowerCase())
+    }).reduce((res, key) => (res[key] = db.recipes[key], res), {})
+
+    let sortedRecipes = Object.keys(filteredRecipes).reduce((acc, curr) => {
       let recipe = db.recipes[curr]
       let belongs_to = recipe.meta.properties.belongs_to
       if (!(belongs_to in acc)) { acc[belongs_to] = [] }
@@ -50,20 +63,13 @@ function Recipe() {
     }, {})
 
 
-    // Get the hero for the view All. Make it static if the timer is running.
-    // FIXME -- should be randon only on page load.
-    if (state.timerRunning || state.recipeSearch !== "") {
-      rndRecipe = db.recipes[Object.keys(db.recipes)[3]]
-    } else {
-      rndRecipe = util.rndObjProp(db.recipes);
-    }
-
-    let rndHero = this.getImg(rndRecipe.meta.properties.slug + "-hero.jpg")
-
     return h("section", { class: "rL" }, [
-      ui.hero(rndHero, () => this._viewAllHero(rndRecipe)),
-      h("div", { class: "rl_columns" }, [
-        // h("input", {type: "text", onInput: $act.setFilter, value: state.recipeSearch }),
+      ui.hero(state, rndHero, () => this._viewAllHero(rndRecipe)),
+      h("input", {class: "rl_search",
+                  placeholder: "🔎 Search recipes . . .",
+                  type: "text",
+                  onInput: $act.setFilter, value: search }),
+      h("div", { class: $isSearching }, [
         Object.keys(sortedRecipes).map(group => {
           return h("div", {class: "rl_list"}, [
             h("h2", {class: "v_Heading-grey"}, group + "-ish"),
@@ -72,10 +78,7 @@ function Recipe() {
             let link = "#/recipes/" + p.slug;
             return h("li", { class: "" }, [
               h("a", { class: "rl_link", href: link }, p.name)
-            ])
-          })
-          ])})])])
-  }
+            ])})])})])])}
 
   // SUB VIEWS -----------------------------------------------------------------
 
