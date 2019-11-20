@@ -112,6 +112,7 @@ var initState = {
   currentRecipe: db.recipes["shakshuka"],
   currentRecipeStep: 0,
   currentRecipeStepText: "",
+  currentHero: null,
   recipeQuantMult: 1,
   recipeSearch: "",
   currentRoute: () => ui.loadingState(),
