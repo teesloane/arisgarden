@@ -215,11 +215,28 @@
 
 .rl_columns {
   max-width: 993px;
-  padding: 48px;
+  padding: 16px 0 32px 0;
   margin: 0 auto;
   line-height: 1.5rem;
   columns: 2;
   column-gap: 64px;
+}
+
+.rl_columns.searching {
+  columns: 1;
+}
+
+.rl_search {
+  width: 100%;
+  max-width: 993px;
+  display: flex;
+  padding: 16px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  /* border-bottom: 1px dashed #777; */
+  padding: 8px 48px;
+  margin: 16px auto 0px;
 }
 
 .rl_column-header {

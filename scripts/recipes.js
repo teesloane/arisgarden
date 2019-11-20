@@ -39,9 +39,14 @@ function Recipe() {
         ])])])
   }
 
-  this.viewAll = (state) => {
+  this.viewAll = ({recipeSearch, timerRunning}) => {
     let rndRecipe;
-    let sortedRecipes = Object.keys(db.recipes).reduce((acc, curr) => {
+    let isSearchingClass = recipeSearch !== "" ? "rl_columns searching" : "rl_columns"
+    let filteredRecipes = Object.keys(db.recipes).filter(k => {
+      return db.recipes[k].meta.properties.name.toLowerCase().includes(recipeSearch.toLowerCase())
+    }).reduce((res, key) => (res[key] = db.recipes[key], res), {})
+
+    let sortedRecipes = Object.keys(filteredRecipes).reduce((acc, curr) => {
       let recipe = db.recipes[curr]
       let belongs_to = recipe.meta.properties.belongs_to
       if (!(belongs_to in acc)) { acc[belongs_to] = [] }
@@ -52,7 +57,7 @@ function Recipe() {
 
     // Get the hero for the view All. Make it static if the timer is running.
     // FIXME -- should be randon only on page load.
-    if (state.timerRunning || state.recipeSearch !== "") {
+    if (timerRunning || recipeSearch !== "") {
       rndRecipe = db.recipes[Object.keys(db.recipes)[3]]
     } else {
       rndRecipe = util.rndObjProp(db.recipes);
@@ -62,8 +67,11 @@ function Recipe() {
 
     return h("section", { class: "rL" }, [
       ui.hero(rndHero, () => this._viewAllHero(rndRecipe)),
-      h("div", { class: "rl_columns" }, [
-        // h("input", {type: "text", onInput: $act.setFilter, value: state.recipeSearch }),
+      h("input", {class: "rl_search",
+                  placeholder: "Search recipes . . .",
+                  type: "text",
+                  onInput: $act.setFilter, value: recipeSearch }),
+      h("div", { class: isSearchingClass }, [
         Object.keys(sortedRecipes).map(group => {
           return h("div", {class: "rl_list"}, [
             h("h2", {class: "v_Heading-grey"}, group + "-ish"),
