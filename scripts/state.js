@@ -2,16 +2,6 @@
  * Booting point for all state related things.
  */
 
-const $fx = {
-  // Example effect (no longer used)
-  // tempModal: (dispatch, props) => {
-  //   setTimeout(() => {
-  //     dispatch($act.modalClose)
-  //   }, props.delay)
-  //   return
-  // }
-}
-
 
 // actions
 const $act = {
@@ -102,6 +92,7 @@ const $act = {
       currentRecipe: db.recipes[newRoute.id], // not optimal?
       recipeQuantMult: 1,
       heroImg: null,
+      recipeSearch: "",
     })
     return (newState)
   },
