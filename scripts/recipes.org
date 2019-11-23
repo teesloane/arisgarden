@@ -63,8 +63,8 @@
 | Water                                              |     1/2+ | cups  | water            |       |
 | Diced tomato                                       |        1 | cups  | tomato-diced-can |       |
 | Coconut milk                                       |        1 | cups  | milk-coconut     |       |
-| Garlic powder                                      |    1+1/2 | tbsp  | powder-garlic    |       |
-| Minced onion                                       |    1+1/2 | tbsp  | onion-minced     |       |
+| Garlic powder                                      |    1+1/2 | tsp   | powder-garlic    |       |
+| Minced onion                                       |    1+1/2 | tsp   | onion-minced     |       |
 | Curry powder                                       |        1 | tbsp  | powder-curry     |       |
 | Sea salt                                           |        1 | tsp   | salt-sea         |       |
 | Pepper                                             |        1 | pinch | pepper           |       |

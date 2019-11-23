@@ -87,7 +87,6 @@ function Recipe() {
    * Renders inside the view All recipes hero header
    */
   this._viewAllHero = (recipe) => {
-    let liAttr = { class: "rl_hero_li" }
     let p = recipe.meta.properties
 
     return h("div", {}, [
@@ -105,6 +104,7 @@ function Recipe() {
     let { original_recipe, day_made, name, is_vegan, rating, serves, time } = state.currentRecipe.meta.properties;
     let mealType = is_vegan === "true" ? "Vegan" : "Vegetarian"
 
+      console.log("original recipe is ", original_recipe)
     return h("div", { class: "rs_props" }, [
     h("h1", { class: "v_LargeText rs_recipe-name" }, name),
 
