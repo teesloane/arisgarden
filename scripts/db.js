@@ -326,10 +326,49 @@ var db = {
           ]
         },
         {
-          "o": "Add the rest of the ingredients (coconut milk, diced tomato, garlic powder, minced onion, lentils.)",
+          "o": "Add the rest of the ingredients ([#: milk-coconut | coconut milk], [#: tomato-diced-can | diced tomato], [#: powder-garlic | garlic powder], [#: onion-minced | minced onion], [#: powder-curry | curry powder] [#: lentils-red | lentils].)",
           "f": [
             {
-              "val": "Add the rest of the ingredients (coconut milk, diced tomato, garlic powder, minced onion, lentils.)"
+              "val": "Add the rest of the ingredients ("
+            },
+            {
+              "val": "coconut milk",
+              "attr": "milk-coconut"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "diced tomato",
+              "attr": "tomato-diced-can"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "garlic powder",
+              "attr": "powder-garlic"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "minced onion",
+              "attr": "onion-minced"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "curry powder",
+              "attr": "powder-curry"
+            },
+            {
+              "val": "lentils",
+              "attr": "lentils-red"
+            },
+            {
+              "val": ".)"
             }
           ]
         },

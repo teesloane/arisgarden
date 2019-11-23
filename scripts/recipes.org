@@ -1,8 +1,7 @@
 #+TITLE: RECIPES
 #+RECIPE_COUNT: 28
 #+CATEGORIES: '(breakfast salad main sweet snack soup side)
-* DONE Breakfast Quinoa
-CLOSED: [2019-10-06 Sun 12:50]
+* Breakfast Quinoa
 :PROPERTIES:
 :belongs_to: breakfast
 :day_made: [2019-10-03]
@@ -40,8 +39,7 @@ CLOSED: [2019-10-06 Sun 12:50]
 :type: big-quote
 :END:
 - I NEED ALL THE ALMOND BUTTER.
-* DONE 8 Minute Pantry Dahl
-CLOSED: [2019-09-01 Sun 15:24]
+* 8 Minute Pantry Dahl
 :PROPERTIES:
 :original_recipe: https://ohsheglows.com/2017/07/21/8-minute-pantry-dal-two-ways/
 :slug: pantry-dahl
@@ -74,8 +72,9 @@ CLOSED: [2019-09-01 Sun 15:24]
 ** Steps
 1) Melt [#: oil-coconut | coconut oil] in a large pot
 2) Peel (if necessary) and dice vegetables into 1/2 inch pieces. Add to pot and stir.
-3) Add the rest of the ingredients (coconut milk, diced tomato, garlic powder,
-   minced onion, lentils.)
+3) Add the rest of the ingredients ([#: milk-coconut | coconut milk], [#:
+   tomato-diced-can | diced tomato], [#: powder-garlic | garlic powder],
+   [#: onion-minced | minced onion], [#: powder-curry | curry powder] [#: lentils-red | lentils].)
 4) Bring to a boil and the reduce heat to medium.
 5) [&: 00:18:00] Cook for 18-30 minutes. Stir frequently.
 6) Serve over rice. Optional: Garnish with cilantro and lime.
