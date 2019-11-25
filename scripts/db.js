@@ -260,14 +260,14 @@ var db = {
           {
             "Ingredient": "Garlic powder",
             "Quantity": "1+1/2",
-            "Unit": "tbsp",
+            "Unit": "tsp",
             "Id": "powder-garlic",
             "Group": ""
           },
           {
             "Ingredient": "Minced onion",
             "Quantity": "1+1/2",
-            "Unit": "tbsp",
+            "Unit": "tsp",
             "Id": "onion-minced",
             "Group": ""
           },
@@ -6652,6 +6652,245 @@ var db = {
         },
         "value": [
           "This is quick and easy to make. We couldn't find Daikon so we used radish, which seemed to work just fine. We only used 2 tbsp of gochujang and it was plenty spicey for us."
+        ]
+      }
+    },
+    "lime-rice-noodles": {
+      "meta": {
+        "properties": {
+          "belongs_to": "main",
+          "day_made": "[2019-11-22]",
+          "ease_of_making": "?/5",
+          "imgs": "1.jpg,2.gif,3.jpg",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "name": "Lime-Rice Noodles with Tofu",
+          "original_recipe": "https://www.delish.com/cooking/recipe-ideas/a29215487/cilantro-lime-noodles-with-shrimp-recipe/",
+          "rating": "?/5",
+          "serves": "4",
+          "slug": "lime-rice-noodles",
+          "tags": "creamy, acidy",
+          "time": "00:35:00"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id"
+        ],
+        "data": [
+          {
+            "Ingredient": "Tofu (firm)",
+            "Quantity": "1",
+            "Unit": "package",
+            "Id": "tofu"
+          },
+          {
+            "Ingredient": "Garlic (minced)",
+            "Quantity": "2",
+            "Unit": "cloves",
+            "Id": "garlic"
+          },
+          {
+            "Ingredient": "Ginger (minced)",
+            "Quantity": "1",
+            "Unit": "inch-piece",
+            "Id": "ginger"
+          },
+          {
+            "Ingredient": "Bell pepper (sliced)",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "bellpep"
+          },
+          {
+            "Ingredient": "Green onions (chopped)",
+            "Quantity": "2",
+            "Unit": "",
+            "Id": "greenonion"
+          },
+          {
+            "Ingredient": "Coconut milk",
+            "Quantity": "1",
+            "Unit": "can (14oz)",
+            "Id": "cocomilk"
+          },
+          {
+            "Ingredient": "Soy sauce",
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "soy"
+          },
+          {
+            "Ingredient": "Brown sugar",
+            "Quantity": "2",
+            "Unit": "tsp (packed)",
+            "Id": "sugar"
+          },
+          {
+            "Ingredient": "Rice stir-fry noodles",
+            "Quantity": "12",
+            "Unit": "oz",
+            "Id": "rice-noodles"
+          },
+          {
+            "Ingredient": "Lime juice",
+            "Quantity": "3",
+            "Unit": "tbsp",
+            "Id": "lime"
+          },
+          {
+            "Ingredient": "Chili garlic sauce",
+            "Quantity": "1",
+            "Unit": "tbsp",
+            "Id": "cgs"
+          },
+          {
+            "Ingredient": "Cilantro",
+            "Quantity": "1/3",
+            "Unit": "cups",
+            "Id": "cilantro"
+          },
+          {
+            "Ingredient": "Kosher Salt",
+            "Quantity": "",
+            "Unit": "",
+            "Id": ""
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "Press tofu to remove water. Cube, and marinate.",
+          "f": [
+            {
+              "val": "Press tofu to remove water. Cube, and marinate."
+            }
+          ]
+        },
+        {
+          "o": "Boil the [#: rice-noodles | rice noodles] according to the package instructors.",
+          "f": [
+            {
+              "val": "Boil the"
+            },
+            {
+              "val": "rice noodles",
+              "attr": "rice-noodles"
+            },
+            {
+              "val": "according to the package instructors."
+            }
+          ]
+        },
+        {
+          "o": "[&:00:02:00] In a skillet, heat a tablespoon of oil and add the bell pepper. Heat for about 2 minutes.",
+          "f": [
+            {
+              "val": "In a skillet, heat a tablespoon of oil and add the bell pepper. Heat for about 2 minutes."
+            }
+          ],
+          "timer": "00:02:00"
+        },
+        {
+          "o": "[&:00:01:00] Add [#: greenonion | green onion] and [#: ginger | ginger] and cook for a minute while stirring.",
+          "f": [
+            {
+              "val": "Add"
+            },
+            {
+              "val": "green onion",
+              "attr": "greenonion"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "ginger",
+              "attr": "ginger"
+            },
+            {
+              "val": "and cook for a minute while stirring."
+            }
+          ],
+          "timer": "00:01:00"
+        },
+        {
+          "o": "Add [#: cocomilk | coconut milk], [#: soy | soy sauce], [#: sugar  | brown sugar] and stir to combine. Bring to a boil and add cooked rice noodles and tofu. Toss over medium-high heat until sauce thickens.",
+          "f": [
+            {
+              "val": "Add"
+            },
+            {
+              "val": "coconut milk",
+              "attr": "cocomilk"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "soy sauce",
+              "attr": "soy"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "brown sugar",
+              "attr": "sugar"
+            },
+            {
+              "val": "and stir to combine. Bring to a boil and add cooked rice noodles and tofu. Toss over medium-high heat until sauce thickens."
+            }
+          ]
+        },
+        {
+          "o": "Remove from heat and stir in [#: lime | lime juice], [#: cgs | chili-garlic sauce] and [#: cilantro | cilantro]. Season with salt.",
+          "f": [
+            {
+              "val": "Remove from heat and stir in"
+            },
+            {
+              "val": "lime juice",
+              "attr": "lime"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "chili-garlic sauce",
+              "attr": "cgs"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "cilantro",
+              "attr": "cilantro"
+            },
+            {
+              "val": ". Season with salt."
+            }
+          ]
+        },
+        {
+          "o": "Top with extra cilantro before serving.",
+          "f": [
+            {
+              "val": "Top with extra cilantro before serving."
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "whisper"
+        },
+        "value": [
+          "It's like an alfredo sauce, but it's not. (/¯◡ ‿ ◡)/¯ ~ ┻━┻"
         ]
       }
     }
