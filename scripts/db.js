@@ -238,35 +238,35 @@ var db = {
           },
           {
             "Ingredient": "Water",
-            "Quantity": "1/2+",
+            "Quantity": "1/2",
             "Unit": "cups",
             "Id": "water",
             "Group": ""
           },
           {
-            "Ingredient": "Diced tomato",
-            "Quantity": "1",
-            "Unit": "cups",
+            "Ingredient": "Diced tomato (1 can or fresh)",
+            "Quantity": "14",
+            "Unit": "oz",
             "Id": "tomato-diced-can",
             "Group": ""
           },
           {
-            "Ingredient": "Coconut milk",
-            "Quantity": "1",
-            "Unit": "cups",
+            "Ingredient": "Coconut milk (1 can)",
+            "Quantity": "14",
+            "Unit": "oz",
             "Id": "milk-coconut",
             "Group": ""
           },
           {
             "Ingredient": "Garlic powder",
-            "Quantity": "1+1/2",
+            "Quantity": "1.5",
             "Unit": "tsp",
             "Id": "powder-garlic",
             "Group": ""
           },
           {
             "Ingredient": "Minced onion",
-            "Quantity": "1+1/2",
+            "Quantity": "1.5",
             "Unit": "tsp",
             "Id": "onion-minced",
             "Group": ""
