@@ -200,7 +200,7 @@ var db = {
           "is_vegan": "true",
           "is_vegetarian": "true",
           "ease_of_making": "5/5",
-          "rating": "5/5",
+          "rating": "4/5",
           "imgs": "1.JPG,2.JPG,3.JPG",
           "belongs_to": "main"
         },
