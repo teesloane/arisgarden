@@ -65,10 +65,12 @@ function Recipe() {
 
     return h("section", { class: "rL" }, [
       ui.hero(state, rndHero, () => this._viewAllHero(rndRecipe)),
-      h("input", {class: "rl_search",
-                  placeholder: "🔎 Search recipes . . .",
-                  type: "text",
-                  onInput: $act.setFilter, value: search }),
+      h("div", {style: {overflowX: "hidden"}}, [
+        h("input", {class: "rl_search",
+                    placeholder: "🔎 Search recipes . . .",
+                    type: "text",
+                    onInput: $act.setFilter, value: search }),
+      ]),
       h("div", { class: $isSearching }, [
         Object.keys(sortedRecipes).map(group => {
           return h("div", {class: "rl_list"}, [

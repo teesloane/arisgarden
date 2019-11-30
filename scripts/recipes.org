@@ -50,7 +50,7 @@
 :is_vegan: true
 :is_vegetarian: true
 :ease_of_making: 5/5
-:rating: 5/5
+:rating: 4/5
 :imgs: 1.JPG,2.JPG,3.JPG
 :belongs_to: main
 :END:
@@ -60,11 +60,11 @@
 | Coconut oil                                        |        1 | tbsp  | oil-coconut      |       |
 | Diced vegetables (Carrots, Potatoes, Broccoli etc) |        4 | cups  | vegetables-misc  |       |
 | Uncooked red lentils                               |      1/2 | cups  | lentils-red      |       |
-| Water                                              |     1/2+ | cups  | water            |       |
-| Diced tomato                                       |        1 | cups  | tomato-diced-can |       |
-| Coconut milk                                       |        1 | cups  | milk-coconut     |       |
-| Garlic powder                                      |    1+1/2 | tsp   | powder-garlic    |       |
-| Minced onion                                       |    1+1/2 | tsp   | onion-minced     |       |
+| Water                                              |      1/2 | cups  | water            |       |
+| Diced tomato (1 can or fresh)                      |       14 | oz    | tomato-diced-can |       |
+| Coconut milk (1 can)                               |       14 | oz    | milk-coconut     |       |
+| Garlic powder                                      |      1.5 | tsp   | powder-garlic    |       |
+| Minced onion                                       |      1.5 | tsp   | onion-minced     |       |
 | Curry powder                                       |        1 | tbsp  | powder-curry     |       |
 | Sea salt                                           |        1 | tsp   | salt-sea         |       |
 | Pepper                                             |        1 | pinch | pepper           |       |
