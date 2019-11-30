@@ -6893,6 +6893,240 @@ var db = {
           "It's like an alfredo sauce, but it's not. (/¯◡ ‿ ◡)/¯ ~ ┻━┻"
         ]
       }
+    },
+    "pasta-pesto-salad": {
+      "meta": {
+        "properties": {
+          "belongs_to": "main",
+          "day_made": "[2019-11-29]",
+          "ease_of_making": "4/5",
+          "imgs": "1.jpg,2.jpg,3.jpg",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "name": "Pesto Pasta Salad",
+          "original_recipe": "https://cookieandkate.com/pesto-pasta-salad-recipe/#tasty-recipes-24184",
+          "rating": "4.5/5",
+          "serves": "4",
+          "slug": "pasta-pesto-salad",
+          "tags": "pesto",
+          "time": "00:30:00"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id",
+          "Group"
+        ],
+        "data": [
+          {
+            "Ingredient": "Pasta (whole grain)",
+            "Quantity": "1",
+            "Unit": "lb",
+            "Id": "pasta",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Cherry Tomatoes",
+            "Quantity": "1",
+            "Unit": "pint",
+            "Id": "tomat",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Spinach or arugula)",
+            "Quantity": "3",
+            "Unit": "handfuls",
+            "Id": "greens",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Kalamata olives",
+            "Quantity": "1/2",
+            "Unit": "cups",
+            "Id": "olives",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Feta cheese (optional)",
+            "Quantity": "2",
+            "Unit": "handfuls",
+            "Id": "cheese",
+            "Group": "salad"
+          },
+          {
+            "Ingredient": "Pepitas",
+            "Quantity": "1/2",
+            "Unit": "cups",
+            "Id": "pep",
+            "Group": "pesto"
+          },
+          {
+            "Ingredient": "Basil leaves (packed)",
+            "Quantity": "1/2",
+            "Unit": "cups",
+            "Id": "basil",
+            "Group": "pesto"
+          },
+          {
+            "Ingredient": "Parsley leaves (packed)",
+            "Quantity": "1/2",
+            "Unit": "cups",
+            "Id": "parsley",
+            "Group": "pesto"
+          },
+          {
+            "Ingredient": "Lemon Juice",
+            "Quantity": "2",
+            "Unit": "lemons",
+            "Id": "lemons",
+            "Group": "pesto"
+          },
+          {
+            "Ingredient": "Garlic (chopped)",
+            "Quantity": "1",
+            "Unit": "clove",
+            "Id": "garlic",
+            "Group": "pesto"
+          },
+          {
+            "Ingredient": "Salt",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "sel",
+            "Group": "pesto"
+          },
+          {
+            "Ingredient": "Olive oil",
+            "Quantity": "1/3",
+            "Unit": "cups",
+            "Id": "oil",
+            "Group": "pesto"
+          },
+          {
+            "Ingredient": "Food Processor / Blender",
+            "Quantity": "",
+            "Unit": "",
+            "Id": "",
+            "Group": ""
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "Bring a large pot of salted water to a boil.",
+          "f": [
+            {
+              "val": "Bring a large pot of salted water to a boil."
+            }
+          ]
+        },
+        {
+          "o": "Cook the pasta al dente (according to package instructions.) When it's done, drain and keep 1/2 cup of the pasta water. Rinse the pasta under cool water. Transfer to a large bowl.",
+          "f": [
+            {
+              "val": "Cook the pasta al dente (according to package instructions.) When it's done, drain and keep 1/2 cup of the pasta water. Rinse the pasta under cool water. Transfer to a large bowl."
+            }
+          ]
+        },
+        {
+          "o": "[&: 00:05:00]Toast the [#: pep | pepitas] in a skillet. Stir often until they make little popping noises. When finished, set aside half of the pepitas into a bow as a topper.",
+          "f": [
+            {
+              "val": "Toast the"
+            },
+            {
+              "val": "pepitas",
+              "attr": "pep"
+            },
+            {
+              "val": "in a skillet. Stir often until they make little popping noises. When finished, set aside half of the pepitas into a bow as a topper."
+            }
+          ],
+          "timer": "00:05:00"
+        },
+        {
+          "o": "Put other half of pepitas, [#: basil | basil], [#: lemons | lemon juice] [#: garlic | garlic] and [#: sel | salt] into a food processor or blender. Blend, adding [#:oil | olive oil]  to the mixture intermittently.",
+          "f": [
+            {
+              "val": "Put other half of pepitas,"
+            },
+            {
+              "val": "basil",
+              "attr": "basil"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "lemon juice",
+              "attr": "lemons"
+            },
+            {
+              "val": "garlic",
+              "attr": "garlic"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "salt",
+              "attr": "sel"
+            },
+            {
+              "val": "into a food processor or blender. Blend, adding"
+            },
+            {
+              "val": "olive oil",
+              "attr": "il"
+            },
+            {
+              "val": "to the mixture intermittently."
+            }
+          ]
+        },
+        {
+          "o": "Assemble the pasta: pour pesto over pasta and toss to combine. Add a bit of pasta water if necessary. Then add the [#: tomat | cherry tomatoes], [#: greens | spinach or arugula], the remaining pepitas and anything else you might like (olives, feta, etc)",
+          "f": [
+            {
+              "val": "Assemble the pasta: pour pesto over pasta and toss to combine. Add a bit of pasta water if necessary. Then add the"
+            },
+            {
+              "val": "cherry tomatoes",
+              "attr": "tomat"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "spinach or arugula",
+              "attr": "greens"
+            },
+            {
+              "val": ", the remaining pepitas and anything else you might like (olives, feta, etc)"
+            }
+          ]
+        },
+        {
+          "o": "Toss it all to combine! Season with a bit of salt and pepper! Go party with your new salad!",
+          "f": [
+            {
+              "val": "Toss it all to combine! Season with a bit of salt and pepper! Go party with your new salad!"
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "big-quote"
+        },
+        "value": [
+          "Don't forget to save your pasta water!"
+        ]
+      }
     }
   }
 }

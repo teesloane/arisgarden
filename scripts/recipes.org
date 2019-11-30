@@ -1404,3 +1404,47 @@
 :type: whisper
 :END:
 - It's like an alfredo sauce, but it's not. (/¯◡ ‿ ◡)/¯ ~ ┻━┻
+* Pesto Pasta Salad
+:PROPERTIES:
+:belongs_to: main
+:day_made: [2019-11-29]
+:ease_of_making: 4/5
+:imgs: 1.jpg,2.jpg,3.jpg
+:is_vegan: true
+:is_vegetarian: true
+:name: Pesto Pasta Salad
+:original_recipe: https://cookieandkate.com/pesto-pasta-salad-recipe/#tasty-recipes-24184
+:rating: 4.5/5
+:serves: 4
+:slug: pasta-pesto-salad
+:tags: pesto
+:time: 00:30:00
+:END:
+** Ingredients
+| Ingredient               | Quantity | Unit     | Id      | Group |
+|--------------------------+----------+----------+---------+-------|
+| Pasta (whole grain)      | 1        | lb       | pasta   | salad |
+| Cherry Tomatoes          | 1        | pint     | tomat   | salad |
+| Spinach or arugula)      | 3        | handfuls | greens  | salad |
+| Kalamata olives          | 1/2      | cups     | olives  | salad |
+| Feta cheese (optional)   | 2        | handfuls | cheese  | salad |
+| Pepitas                  | 1/2      | cups     | pep     | pesto |
+| Basil leaves (packed)    | 1/2      | cups     | basil   | pesto |
+| Parsley leaves (packed)  | 1/2      | cups     | parsley | pesto |
+| Lemon Juice              | 2        | lemons   | lemons  | pesto |
+| Garlic (chopped)         | 1        | clove    | garlic  | pesto |
+| Salt                     | 1/2      | tsp      | sel     | pesto |
+| Olive oil                | 1/3      | cups     | oil     | pesto |
+| Food Processor / Blender |          |          |         |       |
+** Steps
+1) Bring a large pot of salted water to a boil.
+2) Cook the pasta al dente (according to package instructions.) When it's done, drain and keep 1/2 cup of the pasta water. Rinse the pasta under cool water. Transfer to a large bowl.
+3) [&: 00:05:00]Toast the [#: pep | pepitas] in a skillet. Stir often until they make little popping noises. When finished, set aside half of the pepitas into a bow as a topper.
+4) Put other half of pepitas, [#: basil | basil], [#: lemons | lemon juice] [#: garlic | garlic] and [#: sel | salt] into a food processor or blender. Blend, adding [#:oil | olive oil]  to the mixture intermittently.
+5) Assemble the pasta: pour pesto over pasta and toss to combine. Add a bit of pasta water if necessary. Then add the [#: tomat | cherry tomatoes], [#: greens | spinach or arugula], the remaining pepitas and anything else you might like (olives, feta, etc)
+6) Toss it all to combine! Season with a bit of salt and pepper! Go party with your new salad!
+** Content
+:PROPERTIES:
+:type: big-quote
+:END:
+- Don't forget to save your pasta water!
