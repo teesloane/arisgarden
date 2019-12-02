@@ -192,20 +192,16 @@
 ** Ingredients
 | Ingredient       | Quantity | Unit   | Id               | Group    |
 |------------------+----------+--------+------------------+----------|
-| Lemon            |        1 |        | lemon            |          |
 | Sweet Potato     |        1 |        | potato-sweet     |          |
 | Shredded Carrots |        1 |        | avocado          |          |
 | Onion            |        1 |        | onion            |          |
 | Tofu             |        8 | oz     | tofu             |          |
 | Garlic           |        2 | cloves | garlic           |          |
-| Olive Oil        |        3 | tbsp   | oil-olive        | Marinade |
 | Chickpeas        |        1 | cups   | chickpeas        |          |
-| Salt             |        1 | tsp    | salt             | Marinade |
 | Pepper           |      1/2 | tsp    | pepper           |          |
 | Chili powder     |        1 | tsp    | chili-powder     |          |
 | Garlic powder    |        1 | tsp    | garlic-powder    |          |
 | Quinoa           |    1+1/2 | cups   | quinoa           |          |
-| Avocado          |      1/4 | cups   | carrots-shredded |          |
 | Sesame Oil       |      1/2 | tsp    | oil-sesame       | Marinade |
 | Hot Sauce        |        1 | tsp    | sauce-hot        | Marinade |
 | Dried thyme      |        2 | tsp    | thyme            | Marinade |
@@ -225,8 +221,8 @@
 6) [&: 00:10:00] Transfer chickpeas to skillet and cook on medium heat for 10 minutes. Set aside.
 7) [&: 00:10:00] Fry the tofu in the same pan for about 10 minutes on each side.
 8) Slice tofu as you like.
-9) Optional: Combine with quinoa, greens, sweet potatoes, onions, chickpeas, carrots,
-   tofu, and avocado.
+9) Combine tofu and sweet potato with quinoa chickpeas, carrots, and
+   avocado, etc.
 ** Content
 :PROPERTIES:
 :type: big-quote

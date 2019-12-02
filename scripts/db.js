@@ -903,13 +903,6 @@ var db = {
         ],
         "data": [
           {
-            "Ingredient": "Lemon",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "lemon",
-            "Group": ""
-          },
-          {
             "Ingredient": "Sweet Potato",
             "Quantity": "1",
             "Unit": "",
@@ -945,25 +938,11 @@ var db = {
             "Group": ""
           },
           {
-            "Ingredient": "Olive Oil",
-            "Quantity": "3",
-            "Unit": "tbsp",
-            "Id": "oil-olive",
-            "Group": "Marinade"
-          },
-          {
             "Ingredient": "Chickpeas",
             "Quantity": "1",
             "Unit": "cups",
             "Id": "chickpeas",
             "Group": ""
-          },
-          {
-            "Ingredient": "Salt",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "salt",
-            "Group": "Marinade"
           },
           {
             "Ingredient": "Pepper",
@@ -991,13 +970,6 @@ var db = {
             "Quantity": "1+1/2",
             "Unit": "cups",
             "Id": "quinoa",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Avocado",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "carrots-shredded",
             "Group": ""
           },
           {
@@ -1184,10 +1156,10 @@ var db = {
           ]
         },
         {
-          "o": "Optional: Combine with quinoa, greens, sweet potatoes, onions, chickpeas, carrots, tofu, and avocado.",
+          "o": "Combine tofu and sweet potato with quinoa chickpeas, carrots, and avocado, etc.",
           "f": [
             {
-              "val": "Optional: Combine with quinoa, greens, sweet potatoes, onions, chickpeas, carrots, tofu, and avocado."
+              "val": "Combine tofu and sweet potato with quinoa chickpeas, carrots, and avocado, etc."
             }
           ]
         }
