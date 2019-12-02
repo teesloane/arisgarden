@@ -2,3 +2,6 @@
 .idea
 *.log
 tmp/
+
+
+elm-stuff
