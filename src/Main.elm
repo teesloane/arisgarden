@@ -81,13 +81,16 @@ view : Model -> Browser.Document Msg
 view model =
   { title = "URL Interceptor"
   , body =
-      [ text "The current URL is: "
+      [
+       viewHero
+       , text "The current URL is: "
       , b [] [ text (Url.toString model.url) ]
       , ul []
           [ viewLink "/"
           , viewLink "/about"
           , router model.url
           ]
+
       ]
   }
 
@@ -97,3 +100,13 @@ viewLink path =
   li [] [ a [ href path ] [ text path ] ]
 
 
+
+
+-- VIEWS VIEWS VIEWS
+
+viewHero =
+    section [class "viewHero"
+            , style "background-image" "url('./media/imgs/kimchi-udon-2.JPG')"
+            ]
+
+        [text "hi"]

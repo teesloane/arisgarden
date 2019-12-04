@@ -4,4 +4,8 @@
 tmp/
 
 
+node_modules
+src/node_modules
+.cache
+src/dist
 elm-stuff
