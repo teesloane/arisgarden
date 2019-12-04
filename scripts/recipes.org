@@ -1400,6 +1400,50 @@
 :type: whisper
 :END:
 - It's like an alfredo sauce, but it's not. (/¯◡ ‿ ◡)/¯ ~ ┻━┻
+* Carrot Apple Ginger Soup
+:PROPERTIES:
+:belongs_to: side
+:day_made: [2019-12-01]
+:ease_of_making: 5/5
+:imgs: 1.jpg,2.jpg,3.jpg
+:is_vegan: true
+:is_vegetarian: true
+:name: Carrot Apple Ginger Soup
+:original_recipe: https://ohsheglows.com/2011/05/03/carrot-apple-ginger-soup/
+:rating: 4/5
+:serves: 4
+:slug: carrot-apple-ginger-soup
+:tags: soup
+:time: 00:45:00
+:END:
+** Ingredients
+| Ingredient        | Quantity | Unit | Id      |
+|-------------------+----------+------+---------|
+| Olive Oil         |        1 | tbsp | oil     |
+| Onion             |        1 |      | onion   |
+| Ginger (grated)   |        2 | tbsp | ging    |
+| Garlic (minced)   |        2 |      | garlic  |
+| Apple             |        1 |      | apple   |
+| Carrots           |      1.5 | lbs  | carrots |
+| Vegetable Broth   |        4 | cups | broth   |
+| Kosher Salt       |          |      | salt    |
+| Immersion blender |          |      |         |
+|                   |          |      |         |
+** Steps
+1) In a large pot, heat [#: oil | olive-oil] over low-medium heat.
+2) [&:00:05:00] Add chopped onion and cook for 5 minutes.
+3) [&:00:03:00] Add minced [#: garlic | garlic] and [#: ging | ginger] for a few more minutes.
+4) [&:00:03:00] Add chopped carrots and apples. Cook for a few more minutes
+5) [&:00:02:00] Add vegetable broth, stir, and bring to a boil. Reduce to low-medium heat and
+   simmer for 20 minutes or carrots are tender.
+6) Using your immersion blender, gently blend the soup until it is creamy.
+7) Add salt and pepper to taste. 
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- If you want to play "the floor is lava," but don't have any lava, this soup
+  will do in a pinch.
 * Pesto Pasta Salad
 :PROPERTIES:
 :belongs_to: main

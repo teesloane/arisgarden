@@ -6866,6 +6866,187 @@ var db = {
         ]
       }
     },
+    "carrot-apple-ginger-soup": {
+      "meta": {
+        "properties": {
+          "belongs_to": "side",
+          "day_made": "[2019-12-01]",
+          "ease_of_making": "5/5",
+          "imgs": "1.jpg,2.jpg,3.jpg",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "name": "Carrot Apple Ginger Soup",
+          "original_recipe": "https://ohsheglows.com/2011/05/03/carrot-apple-ginger-soup/",
+          "rating": "4/5",
+          "serves": "4",
+          "slug": "carrot-apple-ginger-soup",
+          "tags": "soup",
+          "time": "00:45:00"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id"
+        ],
+        "data": [
+          {
+            "Ingredient": "Olive Oil",
+            "Quantity": "1",
+            "Unit": "tbsp",
+            "Id": "oil"
+          },
+          {
+            "Ingredient": "Onion",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "onion"
+          },
+          {
+            "Ingredient": "Ginger (grated)",
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "ging"
+          },
+          {
+            "Ingredient": "Garlic (minced)",
+            "Quantity": "2",
+            "Unit": "",
+            "Id": "garlic"
+          },
+          {
+            "Ingredient": "Apple",
+            "Quantity": "1",
+            "Unit": "",
+            "Id": "apple"
+          },
+          {
+            "Ingredient": "Carrots",
+            "Quantity": "1.5",
+            "Unit": "lbs",
+            "Id": "carrots"
+          },
+          {
+            "Ingredient": "Vegetable Broth",
+            "Quantity": "4",
+            "Unit": "cups",
+            "Id": "broth"
+          },
+          {
+            "Ingredient": "Kosher Salt",
+            "Quantity": "",
+            "Unit": "",
+            "Id": "salt"
+          },
+          {
+            "Ingredient": "Immersion blender",
+            "Quantity": "",
+            "Unit": "",
+            "Id": ""
+          },
+          {
+            "Ingredient": "",
+            "Quantity": "",
+            "Unit": "",
+            "Id": ""
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "In a large pot, heat [#: oil | olive-oil] over low-medium heat.",
+          "f": [
+            {
+              "val": "In a large pot, heat"
+            },
+            {
+              "val": "olive-oil",
+              "attr": "oil"
+            },
+            {
+              "val": "over low-medium heat."
+            }
+          ]
+        },
+        {
+          "o": "[&:00:05:00] Add chopped onion and cook for 5 minutes.",
+          "f": [
+            {
+              "val": "Add chopped onion and cook for 5 minutes."
+            }
+          ],
+          "timer": "00:05:00"
+        },
+        {
+          "o": "[&:00:03:00] Add minced [#: garlic | garlic] and [#: ging | ginger] for a few more minutes.",
+          "f": [
+            {
+              "val": "Add minced"
+            },
+            {
+              "val": "garlic",
+              "attr": "garlic"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "ginger",
+              "attr": "ging"
+            },
+            {
+              "val": "for a few more minutes."
+            }
+          ],
+          "timer": "00:03:00"
+        },
+        {
+          "o": "[&:00:03:00] Add chopped carrots and apples. Cook for a few more minutes",
+          "f": [
+            {
+              "val": "Add chopped carrots and apples. Cook for a few more minutes"
+            }
+          ],
+          "timer": "00:03:00"
+        },
+        {
+          "o": "[&:00:02:00] Add vegetable broth, stir, and bring to a boil. Reduce to low-medium heat and simmer for 20 minutes or carrots are tender.",
+          "f": [
+            {
+              "val": "Add vegetable broth, stir, and bring to a boil. Reduce to low-medium heat and simmer for 20 minutes or carrots are tender."
+            }
+          ],
+          "timer": "00:02:00"
+        },
+        {
+          "o": "Using your immersion blender, gently blend the soup until it is creamy.",
+          "f": [
+            {
+              "val": "Using your immersion blender, gently blend the soup until it is creamy."
+            }
+          ]
+        },
+        {
+          "o": "Add salt and pepper to taste. ",
+          "f": [
+            {
+              "val": "Add salt and pepper to taste. "
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "whisper"
+        },
+        "value": [
+          "If you want to play \"the floor is lava,\" but don't have any lava, this soup will do in a pinch."
+        ]
+      }
+    },
     "pasta-pesto-salad": {
       "meta": {
         "properties": {
