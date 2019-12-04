@@ -7047,6 +7047,264 @@ var db = {
         ]
       }
     },
+    "carrot-lentil-salad": {
+      "meta": {
+        "properties": {
+          "belongs_to": "side",
+          "day_made": "[2019-12-03]",
+          "ease_of_making": "4/5",
+          "imgs": "1.jpg,2.jpg,3.jpg",
+          "is_vegan": "true",
+          "is_vegetarian": "true",
+          "name": "Carrot Lentil Salad",
+          "original_recipe": "https://www.occasionallyeggs.com/spicy-roasted-carrots-with-tahini-lentil-salad/#mv-creation-114-jtr",
+          "rating": "4/5",
+          "serves": "2",
+          "slug": "carrot-lentil-salad",
+          "tags": "salad, lentils",
+          "time": "00:40:00"
+        },
+        "logbook": []
+      },
+      "ingredients": {
+        "keys": [
+          "Ingredient",
+          "Quantity",
+          "Unit",
+          "Id"
+        ],
+        "data": [
+          {
+            "Ingredient": "Carrots (halved lengthwise)",
+            "Quantity": "7-8",
+            "Unit": "",
+            "Id": "carrots"
+          },
+          {
+            "Ingredient": "Green Lentils",
+            "Quantity": "3/4",
+            "Unit": "cups",
+            "Id": "lentils"
+          },
+          {
+            "Ingredient": "Olive Oil (carrots)",
+            "Quantity": "1",
+            "Unit": "tsp",
+            "Id": "oil"
+          },
+          {
+            "Ingredient": "Sea Salt",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "salt"
+          },
+          {
+            "Ingredient": "Pepper",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "pepper"
+          },
+          {
+            "Ingredient": "Red chili flakes",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "flakes"
+          },
+          {
+            "Ingredient": "Cumin",
+            "Quantity": "1/2",
+            "Unit": "tsp",
+            "Id": "cumin"
+          },
+          {
+            "Ingredient": "Baby Spinach",
+            "Quantity": "1/2",
+            "Unit": "cups",
+            "Id": "spinach"
+          },
+          {
+            "Ingredient": "Olive oil (viniagrette)",
+            "Quantity": "3",
+            "Unit": "tbsp",
+            "Id": "oil2"
+          },
+          {
+            "Ingredient": "Balsamic Vinegar",
+            "Quantity": "2",
+            "Unit": "tbsp",
+            "Id": "vin"
+          },
+          {
+            "Ingredient": "Tahini",
+            "Quantity": "1",
+            "Unit": "tbsp",
+            "Id": "tahin"
+          },
+          {
+            "Ingredient": "Dijon Mustard",
+            "Quantity": "1",
+            "Unit": "tsp",
+            "Id": "mus"
+          },
+          {
+            "Ingredient": "Maple Syrup",
+            "Quantity": "1/4",
+            "Unit": "tsp",
+            "Id": "syru"
+          },
+          {
+            "Ingredient": "Sea Salt",
+            "Quantity": "1/4",
+            "Unit": "tsp",
+            "Id": "sea"
+          },
+          {
+            "Ingredient": "Garlic (minced)",
+            "Quantity": "1",
+            "Unit": "clove",
+            "Id": "garlic"
+          },
+          {
+            "Ingredient": "Pomegranate (optional)",
+            "Quantity": "1/2",
+            "Unit": "cups",
+            "Id": "pom"
+          }
+        ]
+      },
+      "instructions": [
+        {
+          "o": "Preheat the oven to 375F.",
+          "f": [
+            {
+              "val": "Preheat the oven to 375F."
+            }
+          ]
+        },
+        {
+          "o": "[&:00:20:00] Rinse lentils and place in a pot covered by water. Bring to a boil, then reduce and simmer for 20-25 minutes. Strain and sprinkle with salt.",
+          "f": [
+            {
+              "val": "Rinse lentils and place in a pot covered by water. Bring to a boil, then reduce and simmer for 20-25 minutes. Strain and sprinkle with salt."
+            }
+          ],
+          "timer": "00:20:00"
+        },
+        {
+          "o": "Prepare carrots. Put 'em in a bowl and add [#: oil | olive oil ] and spices: [#: salt | sea salt] [#: pepper | pepper] [#: flakes | red pepper flakes] and [#: cumin | cumin].",
+          "f": [
+            {
+              "val": "Prepare carrots. Put 'em in a bowl and add"
+            },
+            {
+              "val": "olive oil",
+              "attr": "oil"
+            },
+            {
+              "val": "and spices:"
+            },
+            {
+              "val": "sea salt",
+              "attr": "salt"
+            },
+            {
+              "val": "pepper",
+              "attr": "pepper"
+            },
+            {
+              "val": "red pepper flakes",
+              "attr": "flakes"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "cumin",
+              "attr": "cumin"
+            },
+            {
+              "val": "."
+            }
+          ]
+        },
+        {
+          "o": "[&:00:15:00] Put carrots on a baking sheet and into the oven for about 15 minutes (or until they are tender).",
+          "f": [
+            {
+              "val": "Put carrots on a baking sheet and into the oven for about 15 minutes (or until they are tender)."
+            }
+          ],
+          "timer": "00:15:00"
+        },
+        {
+          "o": "Create the vinaigrette: mix [#: oil2 | olive oil], [#: vin | balsamic vinegar] [#: tahin | tahini] [#: syru | syrup] [#: garlic | garlic] and [#: sea | salt].",
+          "f": [
+            {
+              "val": "Create the vinaigrette: mix"
+            },
+            {
+              "val": "olive oil",
+              "attr": "oil2"
+            },
+            {
+              "val": ","
+            },
+            {
+              "val": "balsamic vinegar",
+              "attr": "vin"
+            },
+            {
+              "val": "tahini",
+              "attr": "tahin"
+            },
+            {
+              "val": "syrup",
+              "attr": "syru"
+            },
+            {
+              "val": "garlic",
+              "attr": "garlic"
+            },
+            {
+              "val": "and"
+            },
+            {
+              "val": "salt",
+              "attr": "sea"
+            },
+            {
+              "val": "."
+            }
+          ]
+        },
+        {
+          "o": "Serve: Place spinach into bowls and top with lentils and carrots. Drizzel dressing. Top with [#: pom | pomegrenate] or whatever else suits.",
+          "f": [
+            {
+              "val": "Serve: Place spinach into bowls and top with lentils and carrots. Drizzel dressing. Top with"
+            },
+            {
+              "val": "pomegrenate",
+              "attr": "pom"
+            },
+            {
+              "val": "or whatever else suits."
+            }
+          ]
+        }
+      ],
+      "content": {
+        "props": {
+          "type": "haiku"
+        },
+        "value": [
+          "Don't use red lentils instead of green.",
+          "They will turn to mush.",
+          "In our time of most dire need; our darkest hour",
+          "We were saved by a can of green lentils."
+        ]
+      }
+    },
     "pasta-pesto-salad": {
       "meta": {
         "properties": {
