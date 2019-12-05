@@ -1,3 +1,18 @@
+var y = {
+  original_recipe: "https://tasty.co/recipe/protein-packed-buddha-bowl",
+  day_made: "[2019-09-08]",
+  belongs_to: "main",
+  slug: "bowl1",
+  is_vegan: "true",
+  name: "Bowl #1",
+  serves: "2",
+  is_vegetarian: "true",
+  imgs: "1.JPG,2.JPG,3.JPG",
+  ease_of_making: "3/5",
+  time: "00:50:00",
+  rating: "5/5"
+};
+
 var x = {
   meta: {
     properties: {
