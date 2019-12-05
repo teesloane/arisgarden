@@ -28,8 +28,6 @@ main =
 
 
 -- MODEL
---
---
 
 
 type alias Flags =

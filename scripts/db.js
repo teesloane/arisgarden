@@ -1,23 +1,18 @@
 var db = {
   "recipes": {
     "breakfast-quinoa": {
-      "meta": {
-        "properties": {
-          "belongs_to": "breakfast",
-          "day_made": "[2019-10-03]",
-          "ease_of_making": "5/5",
-          "imgs": "false",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Breakfast Quinoa",
-          "original_recipe": "https://cookieandkate.com/cinnamon-breakfast-quinoa-recipe/",
-          "rating": "5/5",
-          "serves": "4",
-          "slug": "breakfast-quinoa",
-          "time": "00:40:00"
-        },
-        "logbook": []
-      },
+      "belongs_to": "breakfast",
+      "day_made": "[2019-10-03]",
+      "ease_of_making": "5/5",
+      "imgs": "false",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "name": "Breakfast Quinoa",
+      "original_recipe": "https://cookieandkate.com/cinnamon-breakfast-quinoa-recipe/",
+      "rating": "5/5",
+      "serves": "4",
+      "slug": "breakfast-quinoa",
+      "time": "00:40:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -189,23 +184,18 @@ var db = {
       }
     },
     "pantry-dahl": {
-      "meta": {
-        "properties": {
-          "original_recipe": "https://ohsheglows.com/2017/07/21/8-minute-pantry-dal-two-ways/",
-          "slug": "pantry-dahl",
-          "day_made": "[2019-09-01]",
-          "name": "Pantry Dahl",
-          "serves": "4",
-          "time": "00:40:00",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "ease_of_making": "5/5",
-          "rating": "4/5",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "belongs_to": "main"
-        },
-        "logbook": []
-      },
+      "original_recipe": "https://ohsheglows.com/2017/07/21/8-minute-pantry-dal-two-ways/",
+      "slug": "pantry-dahl",
+      "day_made": "[2019-09-01]",
+      "name": "Pantry Dahl",
+      "serves": "4",
+      "time": "00:40:00",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "ease_of_making": "5/5",
+      "rating": "4/5",
+      "imgs": "1.JPG,2.JPG,3.JPG",
+      "belongs_to": "main",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -408,23 +398,18 @@ var db = {
       }
     },
     "chickpea-shakshuka": {
-      "meta": {
-        "properties": {
-          "original_recipe": "https://minimalistbaker.com/1-pot-chickpea-shakshuka/",
-          "day_made": "[2019-09-03]",
-          "name": "1 Pot Chickpea Shakshuka",
-          "belongs_to": "main",
-          "slug": "chickpea-shakshuka",
-          "is_vegan": "true",
-          "time": "01:00:00",
-          "is_vegetarian": "true",
-          "serves": "3",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "ease_of_making": "5/5",
-          "rating": "4/5"
-        },
-        "logbook": []
-      },
+      "original_recipe": "https://minimalistbaker.com/1-pot-chickpea-shakshuka/",
+      "day_made": "[2019-09-03]",
+      "name": "1 Pot Chickpea Shakshuka",
+      "belongs_to": "main",
+      "slug": "chickpea-shakshuka",
+      "is_vegan": "true",
+      "time": "01:00:00",
+      "is_vegetarian": "true",
+      "serves": "3",
+      "imgs": "1.JPG,2.JPG,3.JPG",
+      "ease_of_making": "5/5",
+      "rating": "4/5",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -687,23 +672,18 @@ var db = {
       }
     },
     "collard-green-pasta": {
-      "meta": {
-        "properties": {
-          "original_recipe": "https://cookieandkate.com/lemon-collard-greens-pasta/",
-          "day_made": "[2019-09-04]",
-          "belongs_to": "main",
-          "slug": "collard-green-pasta",
-          "is_vegan": "false",
-          "is_vegetarian": "true",
-          "time": "00:25:00",
-          "serves": "2",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "name": "Leafy Spaghetti",
-          "ease_of_making": "5/5",
-          "rating": "5/5"
-        },
-        "logbook": []
-      },
+      "original_recipe": "https://cookieandkate.com/lemon-collard-greens-pasta/",
+      "day_made": "[2019-09-04]",
+      "belongs_to": "main",
+      "slug": "collard-green-pasta",
+      "is_vegan": "false",
+      "is_vegetarian": "true",
+      "time": "00:25:00",
+      "serves": "2",
+      "imgs": "1.JPG,2.JPG,3.JPG",
+      "name": "Leafy Spaghetti",
+      "ease_of_making": "5/5",
+      "rating": "5/5",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -876,23 +856,18 @@ var db = {
       }
     },
     "bowl1": {
-      "meta": {
-        "properties": {
-          "original_recipe": "https://tasty.co/recipe/protein-packed-buddha-bowl",
-          "day_made": "[2019-09-08]",
-          "belongs_to": "main",
-          "slug": "bowl1",
-          "is_vegan": "true",
-          "name": "Bowl #1",
-          "serves": "2",
-          "is_vegetarian": "true",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "ease_of_making": "3/5",
-          "time": "00:50:00",
-          "rating": "5/5"
-        },
-        "logbook": []
-      },
+      "original_recipe": "https://tasty.co/recipe/protein-packed-buddha-bowl",
+      "day_made": "[2019-09-08]",
+      "belongs_to": "main",
+      "slug": "bowl1",
+      "is_vegan": "true",
+      "name": "Bowl #1",
+      "serves": "2",
+      "is_vegetarian": "true",
+      "imgs": "1.JPG,2.JPG,3.JPG",
+      "ease_of_making": "3/5",
+      "time": "00:50:00",
+      "rating": "5/5",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -1174,23 +1149,18 @@ var db = {
       }
     },
     "massaman-curry": {
-      "meta": {
-        "properties": {
-          "day_made": "[2019-09-10]",
-          "ease_of_making": "5/5",
-          "imgs": "false",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Massaman Curry",
-          "original_recipe": "https://minimalistbaker.com/easy-1-pot-massaman-curry/",
-          "rating": "5/5",
-          "serves": "2",
-          "belongs_to": "main",
-          "slug": "massaman-curry",
-          "time": "01:00:00"
-        },
-        "logbook": []
-      },
+      "day_made": "[2019-09-10]",
+      "ease_of_making": "5/5",
+      "imgs": "false",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "name": "Massaman Curry",
+      "original_recipe": "https://minimalistbaker.com/easy-1-pot-massaman-curry/",
+      "rating": "5/5",
+      "serves": "2",
+      "belongs_to": "main",
+      "slug": "massaman-curry",
+      "time": "01:00:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -1496,23 +1466,18 @@ var db = {
       }
     },
     "cauliflower-rice-stir-fry": {
-      "meta": {
-        "properties": {
-          "day_made": "[2019-09-12]",
-          "ease_of_making": "5/5",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Cauliflower Rice Stir Fry",
-          "original_recipe": "https://minimalistbaker.com/30-minute-cauliflower-rice-stir-fry/",
-          "rating": "3/5",
-          "serves": "2",
-          "belongs_to": "main",
-          "slug": "cauliflower-rice-stir-fry",
-          "timer": "00:45:00"
-        },
-        "logbook": []
-      },
+      "day_made": "[2019-09-12]",
+      "ease_of_making": "5/5",
+      "imgs": "1.JPG,2.JPG,3.JPG",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "name": "Cauliflower Rice Stir Fry",
+      "original_recipe": "https://minimalistbaker.com/30-minute-cauliflower-rice-stir-fry/",
+      "rating": "3/5",
+      "serves": "2",
+      "belongs_to": "main",
+      "slug": "cauliflower-rice-stir-fry",
+      "timer": "00:45:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -1715,23 +1680,18 @@ var db = {
       }
     },
     "kale-coconut-rice": {
-      "meta": {
-        "properties": {
-          "day_made": "[2019-09-17]",
-          "ease_of_making": "4/5",
-          "imgs": "1.JPG,2.JPG,3.gif",
-          "is_vegan": "false",
-          "is_vegetarian": "true",
-          "name": "Kale And Coconut Rice",
-          "original_recipe": "https://cookieandkate.com/spicy-kale-and-coconut-fried-rice/",
-          "rating": "5/5",
-          "serves": "4",
-          "belongs_to": "main",
-          "slug": "kale-coconut-rice",
-          "time": "00:40:00"
-        },
-        "logbook": []
-      },
+      "day_made": "[2019-09-17]",
+      "ease_of_making": "4/5",
+      "imgs": "1.JPG,2.JPG,3.gif",
+      "is_vegan": "false",
+      "is_vegetarian": "true",
+      "name": "Kale And Coconut Rice",
+      "original_recipe": "https://cookieandkate.com/spicy-kale-and-coconut-fried-rice/",
+      "rating": "5/5",
+      "serves": "4",
+      "belongs_to": "main",
+      "slug": "kale-coconut-rice",
+      "time": "00:40:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -1945,23 +1905,18 @@ var db = {
       }
     },
     "sweet-potato-gnocci": {
-      "meta": {
-        "properties": {
-          "day_made": "[2019-09-22]",
-          "ease_of_making": "3/5",
-          "imgs": "1.JPG,2.JPG,4.gif",
-          "is_vegan": "false",
-          "is_vegetarian": "true",
-          "name": "Sweet Potato Gnocchi",
-          "original_recipe": "https://biancazapatka.com/en/vegan-sweet-potato-gnocchi/",
-          "rating": "4/5",
-          "belongs_to": "main",
-          "slug": "sweet-potato-gnocci",
-          "serves": "2",
-          "time": "01:10:00"
-        },
-        "logbook": []
-      },
+      "day_made": "[2019-09-22]",
+      "ease_of_making": "3/5",
+      "imgs": "1.JPG,2.JPG,4.gif",
+      "is_vegan": "false",
+      "is_vegetarian": "true",
+      "name": "Sweet Potato Gnocchi",
+      "original_recipe": "https://biancazapatka.com/en/vegan-sweet-potato-gnocchi/",
+      "rating": "4/5",
+      "belongs_to": "main",
+      "slug": "sweet-potato-gnocci",
+      "serves": "2",
+      "time": "01:10:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -2156,23 +2111,18 @@ var db = {
       }
     },
     "garlic-alfredo-pasta": {
-      "meta": {
-        "properties": {
-          "day_made": "[2019-09-23]",
-          "ease_of_making": "3/5",
-          "imgs": "false",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "White Wine Pasta w/ Brussel Sprouts",
-          "original_recipe": "https://minimalistbaker.com/vegan-garlic-alfredo-pasta/",
-          "rating": "3/5",
-          "belongs_to": "main",
-          "slug": "garlic-alfredo-pasta",
-          "serves": "2",
-          "time": "00:30:00"
-        },
-        "logbook": []
-      },
+      "day_made": "[2019-09-23]",
+      "ease_of_making": "3/5",
+      "imgs": "false",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "name": "White Wine Pasta w/ Brussel Sprouts",
+      "original_recipe": "https://minimalistbaker.com/vegan-garlic-alfredo-pasta/",
+      "rating": "3/5",
+      "belongs_to": "main",
+      "slug": "garlic-alfredo-pasta",
+      "serves": "2",
+      "time": "00:30:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -2393,23 +2343,18 @@ var db = {
       }
     },
     "kimchi-udon": {
-      "meta": {
-        "properties": {
-          "belongs_to": "main",
-          "day_made": "[2019-09-30]",
-          "ease_of_making": "4/5",
-          "imgs": "1.JPG,2.JPG,3.JPG,4.JPG",
-          "is_vegan": "false",
-          "is_vegetarian": "true",
-          "name": "Kimchi Udon",
-          "original_recipe": "https://www.bonappetit.com/recipe/kimchi-udon-with-scallions",
-          "rating": "4/5",
-          "serves": "2",
-          "slug": "kimchi-udon",
-          "time": "00:30:00"
-        },
-        "logbook": []
-      },
+      "belongs_to": "main",
+      "day_made": "[2019-09-30]",
+      "ease_of_making": "4/5",
+      "imgs": "1.JPG,2.JPG,3.JPG,4.JPG",
+      "is_vegan": "false",
+      "is_vegetarian": "true",
+      "name": "Kimchi Udon",
+      "original_recipe": "https://www.bonappetit.com/recipe/kimchi-udon-with-scallions",
+      "rating": "4/5",
+      "serves": "2",
+      "slug": "kimchi-udon",
+      "time": "00:30:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -2593,23 +2538,18 @@ var db = {
       }
     },
     "asparagus-spaghetti": {
-      "meta": {
-        "properties": {
-          "day_made": "",
-          "ease_of_making": "5/5",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "is_vegan": "false",
-          "is_vegetarian": "true",
-          "name": "Asparagus Spaghetti + Egg",
-          "original_recipe": "https://www.easycheesyvegetarian.com/asparagus-spaghetti-fried-egg/",
-          "rating": "3.5/5",
-          "belongs_to": "main",
-          "slug": "asparagus-spaghetti",
-          "serves": "2",
-          "time": "00:25:00"
-        },
-        "logbook": []
-      },
+      "day_made": "",
+      "ease_of_making": "5/5",
+      "imgs": "1.JPG,2.JPG,3.JPG",
+      "is_vegan": "false",
+      "is_vegetarian": "true",
+      "name": "Asparagus Spaghetti + Egg",
+      "original_recipe": "https://www.easycheesyvegetarian.com/asparagus-spaghetti-fried-egg/",
+      "rating": "3.5/5",
+      "belongs_to": "main",
+      "slug": "asparagus-spaghetti",
+      "serves": "2",
+      "time": "00:25:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -2743,23 +2683,18 @@ var db = {
       }
     },
     "thai-rice-bowl": {
-      "meta": {
-        "properties": {
-          "day_made": "[2019-10-07]",
-          "ease_of_making": "5/5",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Thai-Spice Rice Bowls",
-          "original_recipe": "https://cookieandkate.com/thai-spiced-rice-bowls-recipe/",
-          "rating": "3/5",
-          "serves": "6",
-          "belongs_to": "main",
-          "slug": "thai-rice-bowl",
-          "time": "00:40:00"
-        },
-        "logbook": []
-      },
+      "day_made": "[2019-10-07]",
+      "ease_of_making": "5/5",
+      "imgs": "1.JPG,2.JPG,3.JPG",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "name": "Thai-Spice Rice Bowls",
+      "original_recipe": "https://cookieandkate.com/thai-spiced-rice-bowls-recipe/",
+      "rating": "3/5",
+      "serves": "6",
+      "belongs_to": "main",
+      "slug": "thai-rice-bowl",
+      "time": "00:40:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -3042,23 +2977,18 @@ var db = {
       }
     },
     "tofu-pineapple-rice": {
-      "meta": {
-        "properties": {
-          "day_made": "[2019-10-10]",
-          "ease_of_making": "3/5",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Pineapple Salsa + Coconut Rice",
-          "original_recipe": "https://ohsheglows.com/2012/07/09/grilled-tofu-with-pineapple-salsa-and-coconut-rice/",
-          "rating": "3/5",
-          "serves": "2-3",
-          "belongs_to": "main",
-          "slug": "tofu-pineapple-rice",
-          "time": "00:50:00"
-        },
-        "logbook": []
-      },
+      "day_made": "[2019-10-10]",
+      "ease_of_making": "3/5",
+      "imgs": "1.JPG,2.JPG,3.JPG",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "name": "Pineapple Salsa + Coconut Rice",
+      "original_recipe": "https://ohsheglows.com/2012/07/09/grilled-tofu-with-pineapple-salsa-and-coconut-rice/",
+      "rating": "3/5",
+      "serves": "2-3",
+      "belongs_to": "main",
+      "slug": "tofu-pineapple-rice",
+      "time": "00:50:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -3315,23 +3245,18 @@ var db = {
       }
     },
     "pear-brie-salad": {
-      "meta": {
-        "properties": {
-          "belongs_to": "salad",
-          "day_made": "[2019-09-19]",
-          "ease_of_making": "5/5",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "is_vegan": "false",
-          "is_vegetarian": "true",
-          "name": "Pear + Brie Salad",
-          "original_recipe": "https://www.theorganickitchen.org/pears-and-brie-salad-with-honey-champagne-vinaigrette/",
-          "rating": "5/5",
-          "serves": "2",
-          "slug": "pear-brie-salad",
-          "time": "00:30:00"
-        },
-        "logbook": []
-      },
+      "belongs_to": "salad",
+      "day_made": "[2019-09-19]",
+      "ease_of_making": "5/5",
+      "imgs": "1.JPG,2.JPG,3.JPG",
+      "is_vegan": "false",
+      "is_vegetarian": "true",
+      "name": "Pear + Brie Salad",
+      "original_recipe": "https://www.theorganickitchen.org/pears-and-brie-salad-with-honey-champagne-vinaigrette/",
+      "rating": "5/5",
+      "serves": "2",
+      "slug": "pear-brie-salad",
+      "time": "00:30:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -3572,23 +3497,18 @@ var db = {
       }
     },
     "salad-raw-beet": {
-      "meta": {
-        "properties": {
-          "belongs_to": "salad",
-          "day_made": "[2019-09-24]",
-          "ease_of_making": "4/5",
-          "imgs": "1.JPG,2.JPG,3.JPG,5.gif",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Raw Beet Salad w/ Quinoa",
-          "original_recipe": "https://cookieandkate.com/raw-beet-salad-with-carrot-quinoa-spinach",
-          "rating": "4/5",
-          "serves": "2",
-          "slug": "salad-raw-beet",
-          "time": "00:50:00"
-        },
-        "logbook": []
-      },
+      "belongs_to": "salad",
+      "day_made": "[2019-09-24]",
+      "ease_of_making": "4/5",
+      "imgs": "1.JPG,2.JPG,3.JPG,5.gif",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "name": "Raw Beet Salad w/ Quinoa",
+      "original_recipe": "https://cookieandkate.com/raw-beet-salad-with-carrot-quinoa-spinach",
+      "rating": "4/5",
+      "serves": "2",
+      "slug": "salad-raw-beet",
+      "time": "00:50:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -3831,23 +3751,18 @@ var db = {
       }
     },
     "black-bean-salad": {
-      "meta": {
-        "properties": {
-          "belongs_to": "salad",
-          "day_made": "[2019-10-03]",
-          "ease_of_making": "5/5",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Black Bean Salad",
-          "original_recipe": "https://cookieandkate.com/black-bean-salad-recipe/",
-          "rating": "5/5",
-          "serves": "4",
-          "slug": "black-bean-salad",
-          "time": "00:20:00"
-        },
-        "logbook": []
-      },
+      "belongs_to": "salad",
+      "day_made": "[2019-10-03]",
+      "ease_of_making": "5/5",
+      "imgs": "1.JPG,2.JPG,3.JPG",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "name": "Black Bean Salad",
+      "original_recipe": "https://cookieandkate.com/black-bean-salad-recipe/",
+      "rating": "5/5",
+      "serves": "4",
+      "slug": "black-bean-salad",
+      "time": "00:20:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -3970,23 +3885,18 @@ var db = {
       }
     },
     "marinated-tofu": {
-      "meta": {
-        "properties": {
-          "belongs_to": "side",
-          "day_made": "[2019-09-02]",
-          "ease_of_making": "5/5",
-          "imgs": "false",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Easy Marinated Tofu",
-          "original_recipe": "https://simpleveganblog.com/easy-marinated-tofu/",
-          "rating": "4/5",
-          "serves": "2",
-          "slug": "marinated-tofu",
-          "time": "00:25:00"
-        },
-        "logbook": []
-      },
+      "belongs_to": "side",
+      "day_made": "[2019-09-02]",
+      "ease_of_making": "5/5",
+      "imgs": "false",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "name": "Easy Marinated Tofu",
+      "original_recipe": "https://simpleveganblog.com/easy-marinated-tofu/",
+      "rating": "4/5",
+      "serves": "2",
+      "slug": "marinated-tofu",
+      "time": "00:25:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -4093,23 +4003,18 @@ var db = {
       }
     },
     "miso-asparagus": {
-      "meta": {
-        "properties": {
-          "belongs_to": "side",
-          "day_made": "[2019-10-01]",
-          "ease_of_making": "4/5",
-          "imgs": "1.JPG,2.JPG,3.gif",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Miso Asparagus",
-          "original_recipe": "https://www.bonappetit.com/recipe/ginger-miso-grilled-asparagus",
-          "rating": "2.5/5",
-          "serves": "2",
-          "slug": "miso-asparagus",
-          "time": "00:30:00"
-        },
-        "logbook": []
-      },
+      "belongs_to": "side",
+      "day_made": "[2019-10-01]",
+      "ease_of_making": "4/5",
+      "imgs": "1.JPG,2.JPG,3.gif",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "name": "Miso Asparagus",
+      "original_recipe": "https://www.bonappetit.com/recipe/ginger-miso-grilled-asparagus",
+      "rating": "2.5/5",
+      "serves": "2",
+      "slug": "miso-asparagus",
+      "time": "00:30:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -4284,23 +4189,18 @@ var db = {
       }
     },
     "granola-bars": {
-      "meta": {
-        "properties": {
-          "original_recipe": "https://minimalistbaker.com/healthy-5-ingredient-granola-bars/",
-          "slug": "granola-bars",
-          "name": "5 Ingredient Granola Bars",
-          "day_made": "[2019-09-01]",
-          "time": "00:25:00",
-          "serves": "10 bars",
-          "is_vegan": "true",
-          "is_vegetarian": "false",
-          "ease_of_making": "5/5",
-          "rating": "5/5",
-          "imgs": "1.JPG,2.JPG,1.gif",
-          "belongs_to": "snack"
-        },
-        "logbook": []
-      },
+      "original_recipe": "https://minimalistbaker.com/healthy-5-ingredient-granola-bars/",
+      "slug": "granola-bars",
+      "name": "5 Ingredient Granola Bars",
+      "day_made": "[2019-09-01]",
+      "time": "00:25:00",
+      "serves": "10 bars",
+      "is_vegan": "true",
+      "is_vegetarian": "false",
+      "ease_of_making": "5/5",
+      "rating": "5/5",
+      "imgs": "1.JPG,2.JPG,1.gif",
+      "belongs_to": "snack",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -4456,23 +4356,18 @@ var db = {
       }
     },
     "candied-ginger": {
-      "meta": {
-        "properties": {
-          "belongs_to": "sweet",
-          "day_made": "[2019-09-02]",
-          "ease_of_making": "2/5",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Candied Ginger",
-          "original_recipe": "https://www.davidlebovitz.com/candied-ginger/",
-          "rating": "4/5",
-          "serves": "one jar! (roughly)",
-          "slug": "candied-ginger",
-          "time": "04:00:00"
-        },
-        "logbook": []
-      },
+      "belongs_to": "sweet",
+      "day_made": "[2019-09-02]",
+      "ease_of_making": "2/5",
+      "imgs": "1.JPG,2.JPG,3.JPG",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "name": "Candied Ginger",
+      "original_recipe": "https://www.davidlebovitz.com/candied-ginger/",
+      "rating": "4/5",
+      "serves": "one jar! (roughly)",
+      "slug": "candied-ginger",
+      "time": "04:00:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -4635,23 +4530,18 @@ var db = {
       }
     },
     "pumpkin-chiffon-pie": {
-      "meta": {
-        "properties": {
-          "belongs_to": "sweet",
-          "day_made": "[2019-10-14]",
-          "ease_of_making": "3/5",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "is_vegan": "false",
-          "is_vegetarian": "true",
-          "name": "Pumpkin Chiffon Pie",
-          "original_recipe": "-",
-          "rating": "4/5",
-          "serves": "1 pie",
-          "slug": "pumpkin-chiffon-pie",
-          "time": "01:00:00"
-        },
-        "logbook": []
-      },
+      "belongs_to": "sweet",
+      "day_made": "[2019-10-14]",
+      "ease_of_making": "3/5",
+      "imgs": "1.JPG,2.JPG,3.JPG",
+      "is_vegan": "false",
+      "is_vegetarian": "true",
+      "name": "Pumpkin Chiffon Pie",
+      "original_recipe": "-",
+      "rating": "4/5",
+      "serves": "1 pie",
+      "slug": "pumpkin-chiffon-pie",
+      "time": "01:00:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -4971,23 +4861,18 @@ var db = {
       }
     },
     "mediterranean-baked-sweet-potatoes": {
-      "meta": {
-        "properties": {
-          "original_recipe": "https://minimalistbaker.com/mediterranean-baked-sweet-potatoes/",
-          "slug": "mediterranean-baked-sweet-potatoes",
-          "day_made": "[2019-11-11]",
-          "name": "Mediterranean Baked Sweet Potatoes",
-          "serves": "2",
-          "time": "01:00:00",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "ease_of_making": "5/5",
-          "rating": "5/5",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "belongs_to": "main"
-        },
-        "logbook": []
-      },
+      "original_recipe": "https://minimalistbaker.com/mediterranean-baked-sweet-potatoes/",
+      "slug": "mediterranean-baked-sweet-potatoes",
+      "day_made": "[2019-11-11]",
+      "name": "Mediterranean Baked Sweet Potatoes",
+      "serves": "2",
+      "time": "01:00:00",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "ease_of_making": "5/5",
+      "rating": "5/5",
+      "imgs": "1.JPG,2.JPG,3.JPG",
+      "belongs_to": "main",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -5252,23 +5137,18 @@ var db = {
       }
     },
     "chickpea-cauliflower-curry": {
-      "meta": {
-        "properties": {
-          "original_recipe": "https://minimalistbaker.com/1-pot-yellow-chickpea-cauliflower-curry/",
-          "slug": "chickpea-cauliflower-curry",
-          "day_made": "[2019-11-12]",
-          "name": "Chickpea Cauliflower Curry",
-          "serves": "2",
-          "time": "00:45:00",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "ease_of_making": "5/5",
-          "rating": "4/5",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "belongs_to": "main"
-        },
-        "logbook": []
-      },
+      "original_recipe": "https://minimalistbaker.com/1-pot-yellow-chickpea-cauliflower-curry/",
+      "slug": "chickpea-cauliflower-curry",
+      "day_made": "[2019-11-12]",
+      "name": "Chickpea Cauliflower Curry",
+      "serves": "2",
+      "time": "00:45:00",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "ease_of_making": "5/5",
+      "rating": "4/5",
+      "imgs": "1.JPG,2.JPG,3.JPG",
+      "belongs_to": "main",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -5525,23 +5405,18 @@ var db = {
       }
     },
     "overnight-oats": {
-      "meta": {
-        "properties": {
-          "original_recipe": "https://ohsheglows.com/2015/07/22/vegan-overnight-oats/",
-          "slug": "overnight-oats",
-          "day_made": "[2019-11-12]",
-          "name": "Overnight Oats",
-          "serves": "2",
-          "time": "00:10:00",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "ease_of_making": "5/5",
-          "rating": "5/5",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "belongs_to": "breakfast"
-        },
-        "logbook": []
-      },
+      "original_recipe": "https://ohsheglows.com/2015/07/22/vegan-overnight-oats/",
+      "slug": "overnight-oats",
+      "day_made": "[2019-11-12]",
+      "name": "Overnight Oats",
+      "serves": "2",
+      "time": "00:10:00",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "ease_of_making": "5/5",
+      "rating": "5/5",
+      "imgs": "1.JPG,2.JPG,3.JPG",
+      "belongs_to": "breakfast",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -5688,23 +5563,18 @@ var db = {
       }
     },
     "orange-orzo-salad": {
-      "meta": {
-        "properties": {
-          "original_recipe": "https://ohsheglows.com/2015/07/22/vegan-overnight-oats/",
-          "slug": "orange-orzo-salad",
-          "day_made": "[2019-11-13]",
-          "name": "Orange Orzo Salad",
-          "serves": "2",
-          "time": "00:30:00",
-          "is_vegan": "false",
-          "is_vegetarian": "true",
-          "ease_of_making": "4/5",
-          "rating": "5/5",
-          "imgs": "1.JPG,2.JPG,3.JPG",
-          "belongs_to": "salad"
-        },
-        "logbook": []
-      },
+      "original_recipe": "https://ohsheglows.com/2015/07/22/vegan-overnight-oats/",
+      "slug": "orange-orzo-salad",
+      "day_made": "[2019-11-13]",
+      "name": "Orange Orzo Salad",
+      "serves": "2",
+      "time": "00:30:00",
+      "is_vegan": "false",
+      "is_vegetarian": "true",
+      "ease_of_making": "4/5",
+      "rating": "5/5",
+      "imgs": "1.JPG,2.JPG,3.JPG",
+      "belongs_to": "salad",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -5944,23 +5814,18 @@ var db = {
       }
     },
     "ratatouille": {
-      "meta": {
-        "properties": {
-          "original_recipe": "https://cookieandkate.com/best-ratatouille-recipe/#tasty-recipes-34476",
-          "slug": "ratatouille",
-          "day_made": "[2019-11-14]",
-          "name": "Ratatouille",
-          "serves": "4",
-          "time": "01:20:00",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "ease_of_making": "4/5",
-          "rating": "4/5",
-          "imgs": "1.JPG,2.gif,3.JPG",
-          "belongs_to": "main"
-        },
-        "logbook": []
-      },
+      "original_recipe": "https://cookieandkate.com/best-ratatouille-recipe/#tasty-recipes-34476",
+      "slug": "ratatouille",
+      "day_made": "[2019-11-14]",
+      "name": "Ratatouille",
+      "serves": "4",
+      "time": "01:20:00",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "ease_of_making": "4/5",
+      "rating": "4/5",
+      "imgs": "1.JPG,2.gif,3.JPG",
+      "belongs_to": "main",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -6244,23 +6109,18 @@ var db = {
       }
     },
     "avo-kimchi-egg-toast": {
-      "meta": {
-        "properties": {
-          "belongs_to": "breakfast",
-          "day_made": "[2019-11-15]",
-          "ease_of_making": "5/5",
-          "imgs": "1.jpg,2.jpg",
-          "is_vegan": "false",
-          "is_vegetarian": "true",
-          "name": "Kimchi Avocado Egg on Toast",
-          "original_recipe": "#",
-          "rating": "3.5/5",
-          "serves": "1",
-          "slug": "avo-kimchi-egg-toast",
-          "time": "00:15:00"
-        },
-        "logbook": []
-      },
+      "belongs_to": "breakfast",
+      "day_made": "[2019-11-15]",
+      "ease_of_making": "5/5",
+      "imgs": "1.jpg,2.jpg",
+      "is_vegan": "false",
+      "is_vegetarian": "true",
+      "name": "Kimchi Avocado Egg on Toast",
+      "original_recipe": "#",
+      "rating": "3.5/5",
+      "serves": "1",
+      "slug": "avo-kimchi-egg-toast",
+      "time": "00:15:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -6443,24 +6303,19 @@ var db = {
       }
     },
     "tofu-kimchi-stew": {
-      "meta": {
-        "properties": {
-          "belongs_to": "main",
-          "day_made": "[2019-11-15]",
-          "ease_of_making": "5/5",
-          "imgs": "1.jpg,2.jpg,3.jpg",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Tofu Kimchi Stew",
-          "original_recipe": "https://www.bonappetit.com/recipe/tofu-and-kimchi-stew",
-          "rating": "3.5/5",
-          "serves": "2",
-          "slug": "tofu-kimchi-stew",
-          "tags": "easy, quick, korean, stew, spicey",
-          "time": "00:25:00"
-        },
-        "logbook": []
-      },
+      "belongs_to": "main",
+      "day_made": "[2019-11-15]",
+      "ease_of_making": "5/5",
+      "imgs": "1.jpg,2.jpg,3.jpg",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "name": "Tofu Kimchi Stew",
+      "original_recipe": "https://www.bonappetit.com/recipe/tofu-and-kimchi-stew",
+      "rating": "3.5/5",
+      "serves": "2",
+      "slug": "tofu-kimchi-stew",
+      "tags": "easy, quick, korean, stew, spicey",
+      "time": "00:25:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -6628,24 +6483,19 @@ var db = {
       }
     },
     "lime-rice-noodles": {
-      "meta": {
-        "properties": {
-          "belongs_to": "main",
-          "day_made": "[2019-11-22]",
-          "ease_of_making": "?/5",
-          "imgs": "1.jpg,2.gif,3.jpg",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Lime-Rice Noodles with Tofu",
-          "original_recipe": "https://www.delish.com/cooking/recipe-ideas/a29215487/cilantro-lime-noodles-with-shrimp-recipe/",
-          "rating": "?/5",
-          "serves": "4",
-          "slug": "lime-rice-noodles",
-          "tags": "creamy, acidy",
-          "time": "00:35:00"
-        },
-        "logbook": []
-      },
+      "belongs_to": "main",
+      "day_made": "[2019-11-22]",
+      "ease_of_making": "?/5",
+      "imgs": "1.jpg,2.gif,3.jpg",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "name": "Lime-Rice Noodles with Tofu",
+      "original_recipe": "https://www.delish.com/cooking/recipe-ideas/a29215487/cilantro-lime-noodles-with-shrimp-recipe/",
+      "rating": "?/5",
+      "serves": "4",
+      "slug": "lime-rice-noodles",
+      "tags": "creamy, acidy",
+      "time": "00:35:00",
       "ingredients": {
         "keys": [
           "Ingredient",
@@ -6867,24 +6717,19 @@ var db = {
       }
     },
     "pasta-pesto-salad": {
-      "meta": {
-        "properties": {
-          "belongs_to": "main",
-          "day_made": "[2019-11-29]",
-          "ease_of_making": "4/5",
-          "imgs": "1.jpg,2.jpg,3.jpg",
-          "is_vegan": "true",
-          "is_vegetarian": "true",
-          "name": "Pesto Pasta Salad",
-          "original_recipe": "https://cookieandkate.com/pesto-pasta-salad-recipe/#tasty-recipes-24184",
-          "rating": "4.5/5",
-          "serves": "4",
-          "slug": "pasta-pesto-salad",
-          "tags": "pesto",
-          "time": "00:30:00"
-        },
-        "logbook": []
-      },
+      "belongs_to": "main",
+      "day_made": "[2019-11-29]",
+      "ease_of_making": "4/5",
+      "imgs": "1.jpg,2.jpg,3.jpg",
+      "is_vegan": "true",
+      "is_vegetarian": "true",
+      "name": "Pesto Pasta Salad",
+      "original_recipe": "https://cookieandkate.com/pesto-pasta-salad-recipe/#tasty-recipes-24184",
+      "rating": "4.5/5",
+      "serves": "4",
+      "slug": "pasta-pesto-salad",
+      "tags": "pesto",
+      "time": "00:30:00",
       "ingredients": {
         "keys": [
           "Ingredient",

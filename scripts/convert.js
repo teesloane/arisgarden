@@ -3,6 +3,10 @@ const { parse } = require("/usr/local/lib/node_modules/orga");
 var fs = require("fs");
 var db = null;
 
+/**
+ * Open the recipes.org file and iterate over it, parsing the fields
+ *
+ */
 fs.readFile("recipes.org", "utf8", function(_, data) {
   db = parse(data);
   let recipes = db.children;
@@ -12,9 +16,13 @@ fs.readFile("recipes.org", "utf8", function(_, data) {
 
   recipes.forEach(r => {
     let _r = getRecipe(r);
-    let key = _r.meta.properties.slug; output.recipes[key] = _r;});
-    let stringify = "var db = " + JSON.stringify(output, null, 2);
-    fs.writeFile("./db.js", stringify, function(err) {if (err) {
+    let key = _r.slug;
+    output.recipes[key] = _r;
+  });
+
+  let stringify = "var db = " + JSON.stringify(output, null, 2);
+  fs.writeFile("./db.js", stringify, function(err) {
+    if (err) {
       return console.log(err);
     }
     console.log("The file was saved!");
@@ -22,11 +30,10 @@ fs.readFile("recipes.org", "utf8", function(_, data) {
 });
 
 function getRecipe(heading) {
+  let props = getProperties(heading);
+  console.log("props are ", props);
   return {
-    meta: {
-      properties: getProperties(heading),
-      logbook: []
-    },
+    ...getProperties(heading),
     ingredients: getIngredients(heading),
     instructions: getInstructions(heading),
     content: getContent(heading)
@@ -41,22 +48,23 @@ function getIngredients(n) {
 
 function getContent(n) {
   try {
-    let contentParent = n.children[3].children
-    let contentProps = contentParent[0].children[1]
-    let content = contentParent[1]
+    let contentParent = n.children[3].children;
+    let contentProps = contentParent[0].children[1];
+    let content = contentParent[1];
 
-    let parsedProps = parseProperties(contentProps.value)
-    let parsedContent = parseListShallow(content.children)
+    let parsedProps = parseProperties(contentProps.value);
+    let parsedContent = parseListShallow(content.children);
     return {
       props: parsedProps,
       value: parsedContent
-    }
+    };
+  } catch {
+    console.log(
+      "Missing value / problem with:",
+      n.children[0].children[0].value
+    );
+    return { props: null };
   }
-  catch {
-    console.log("Missing value / problem with:", n.children[0].children[0].value)
-    return {props: null}
-  }
-
 }
 
 // Returns a recipes instructions
@@ -91,7 +99,6 @@ function templateParser(str) {
   let splitStr = str.split(newRE).filter(Boolean);
 
   splitStr.forEach(s => {
-
     switch (s[0]) {
       case "&":
         out["timer"] = s.slice(2, 11).trim(); // parse the timestring.
@@ -99,17 +106,16 @@ function templateParser(str) {
 
       // Parse # to assign meta data (for linking)
       case "#":
-        let split = s.split("|")
-        let tagId = split[0].slice(3).trim()
-        let tagContent = split[1].trim()
-        out["f"].push({val: tagContent, attr: tagId })
-        return out
+        let split = s.split("|");
+        let tagId = split[0].slice(3).trim();
+        let tagContent = split[1].trim();
+        out["f"].push({ val: tagContent, attr: tagId });
+        return out;
 
       default:
-        out["f"].push({val: s})
+        out["f"].push({ val: s });
     }
-  })
-
+  });
 
   return out;
 }
@@ -164,14 +170,6 @@ function getProperties(h) {
   return parseProperties(props.value);
 }
 
-function getLogbook(h) {
-  let headlineChildren = h.children[0].children; // gets type "headline", which containers drawers.
-  let logbook = headlineChildren.find(f => {
-    return f.type == "drawer" && f.name === "LOGBOOK";
-  });
-  return logbook;
-}
-
 /**
  *
  * Currently not available in orga-js.
@@ -198,11 +196,6 @@ function parseProperties(p) {
   return o;
 }
 
-// current not available in orga-js
-function parseLogbook() {}
-
-
-
 /**
  * Parses a one-level-deep list:
  *
@@ -218,6 +211,6 @@ function parseLogbook() {}
  */
 function parseListShallow(listItems) {
   return listItems.map(li => {
-    return li.children[0].value
-  })
+    return li.children[0].value;
+  });
 }

@@ -4,11 +4,10 @@
 * Breakfast Quinoa
 :PROPERTIES:
 :belongs_to: breakfast
-:day_made: [2019-10-03]
+:date_made: [2019-10-03]
 :ease_of_making: 5/5
 :imgs: false
-:is_vegan: true
-:is_vegetarian: true
+:meal_type: vegan
 :name: Breakfast Quinoa
 :original_recipe: https://cookieandkate.com/cinnamon-breakfast-quinoa-recipe/
 :rating: 5/5
@@ -41,18 +40,17 @@
 - I NEED ALL THE ALMOND BUTTER.
 * 8 Minute Pantry Dahl
 :PROPERTIES:
-:original_recipe: https://ohsheglows.com/2017/07/21/8-minute-pantry-dal-two-ways/
-:slug: pantry-dahl
-:day_made: [2019-09-01]
-:name: Pantry Dahl
-:serves: 4
-:time: 00:40:00
-:is_vegan: true
-:is_vegetarian: true
-:ease_of_making: 5/5
-:rating: 4/5
-:imgs: 1.JPG,2.JPG,3.JPG
 :belongs_to: main
+:date_made: [2019-09-01]
+:ease_of_making: 5/5
+:imgs: 1.JPG, 2.JPG, 3.JPG
+:meal_type: vegan
+:name: Pantry Dahl
+:original_recipe: https://ohsheglows.com/2017/07/21/8-minute-pantry-dal-two-ways/
+:rating: 4/5
+:serves: 4
+:slug: pantry-dahl
+:time: 00:40:00
 :END:
 ** Ingredients
 | Ingredient                                         | Quantity | Unit  | Id               | Group |
@@ -86,18 +84,17 @@
   the great and unimaginable vegetables.
 * 1 Pot Chickpea Shakshuka
 :PROPERTIES:
-:original_recipe: https://minimalistbaker.com/1-pot-chickpea-shakshuka/
-:day_made: [2019-09-03]
-:name: 1 Pot Chickpea Shakshuka
 :belongs_to: main
-:slug: chickpea-shakshuka
-:is_vegan: true
-:time: 01:00:00
-:is_vegetarian: true
-:serves: 3
-:imgs: 1.JPG,2.JPG,3.JPG
+:date_made: [2019-09-03]
 :ease_of_making: 5/5
+:imgs: 1.JPG, 2.JPG, 3.JPG
+:meal_type: vegan
+:name: 1 Pot Chickpea Shakshuka
+:original_recipe: https://minimalistbaker.com/1-pot-chickpea-shakshuka/
 :rating: 4/5
+:serves: 3
+:slug: chickpea-shakshuka
+:time: 01:00:00
 :END:
 ** Ingredients
 | Ingredient                | Quantity | Unit   | Id              | Group |
@@ -132,18 +129,17 @@
 - I will be forever de-shelling chickpeas.
 * Lemony Collard Greens Pasta
 :PROPERTIES:
-:original_recipe: https://cookieandkate.com/lemon-collard-greens-pasta/
-:day_made: [2019-09-04]
 :belongs_to: main
-:slug: collard-green-pasta
-:is_vegan: false
-:is_vegetarian: true
-:time: 00:25:00
-:serves: 2
-:imgs: 1.JPG,2.JPG,3.JPG
-:name: Leafy Spaghetti
+:date_made: [2019-09-04]
 :ease_of_making: 5/5
+:imgs: 1.JPG, 2.JPG, 3.JPG
+:meal_type: "vegetarian"
+:name: Leafy Spaghetti
+:original_recipe: https://cookieandkate.com/lemon-collard-greens-pasta/
 :rating: 5/5
+:serves: 2
+:slug: collard-green-pasta
+:time: 00:25:00
 :END:
 ** Ingredients
 | Ingredient        | Quantity | Unit    | Id                |
@@ -176,18 +172,17 @@
 - Friend of spaghetti.
 * Bowl #1
 :PROPERTIES:
-:original_recipe: https://tasty.co/recipe/protein-packed-buddha-bowl
-:day_made: [2019-09-08]
 :belongs_to: main
-:slug: bowl1
-:is_vegan: true
-:name: Bowl #1
-:serves: 2
-:is_vegetarian: true
-:imgs: 1.JPG,2.JPG,3.JPG
+:date_made: [2019-09-08]
 :ease_of_making: 3/5
-:time: 00:50:00
+:imgs: 1.JPG, 2.JPG, 3.JPG
+:meal_type: vegan
+:name: Bowl #1
+:original_recipe: https://tasty.co/recipe/protein-packed-buddha-bowl
 :rating: 5/5
+:serves: 2
+:slug: bowl1
+:time: 00:50:00
 :END:
 ** Ingredients
 | Ingredient       | Quantity | Unit   | Id               | Group    |
@@ -230,16 +225,15 @@
 - Sit and be patient, like marinating tofu.
 * Massaman Curry
 :PROPERTIES:
-:day_made: [2019-09-10]
+:belongs_to: main
+:date_made: [2019-09-10]
 :ease_of_making: 5/5
 :imgs: false
-:is_vegan: true
-:is_vegetarian: true
+:meal_type: vegan
 :name: Massaman Curry
 :original_recipe: https://minimalistbaker.com/easy-1-pot-massaman-curry/
 :rating: 5/5
 :serves: 2
-:belongs_to: main
 :slug: massaman-curry
 :time: 01:00:00
 :END:
@@ -288,11 +282,10 @@
   comes with a bit of guilt. So yeah. Anyway. It was pretty good.
 * Cauliflower Rice Stir Fry
 :PROPERTIES:
-:day_made: [2019-09-12]
+:date_made: [2019-09-12]
 :ease_of_making: 5/5
-:imgs: 1.JPG,2.JPG,3.JPG
-:is_vegan: true
-:is_vegetarian: true
+:imgs: 1.JPG, 2.JPG, 3.JPG
+:meal_type: vegan
 :name: Cauliflower Rice Stir Fry
 :original_recipe: https://minimalistbaker.com/30-minute-cauliflower-rice-stir-fry/
 :rating: 3/5
@@ -345,11 +338,10 @@
 - Don't use too much soy-sauce. Just don't.
 * Spicy Kale and Coconut Fried Rice
 :PROPERTIES:
-:day_made: [2019-09-17]
+:date_made: [2019-09-17]
 :ease_of_making: 4/5
 :imgs: 1.JPG,2.JPG,3.gif
-:is_vegan: false
-:is_vegetarian: true
+:meal_type: vegetarian
 :name: Kale And Coconut Rice
 :original_recipe: https://cookieandkate.com/spicy-kale-and-coconut-fried-rice/
 :rating: 5/5
@@ -394,11 +386,10 @@
 - Dinner time!
 * Sweet Potato Gnocchi
 :PROPERTIES:
-:day_made: [2019-09-22]
+:date_made: [2019-09-22]
 :ease_of_making: 3/5
 :imgs: 1.JPG,2.JPG,4.gif
-:is_vegan: false
-:is_vegetarian: true
+:meal_type: vegetarian
 :name: Sweet Potato Gnocchi
 :original_recipe: https://biancazapatka.com/en/vegan-sweet-potato-gnocchi/
 :rating: 4/5
@@ -436,11 +427,10 @@
 - This one is worth the extra prep time.
 * White Wine Pasta w/ Brussel Sprouts
 :PROPERTIES:
-:day_made: [2019-09-23]
+:date_made: [2019-09-23]
 :ease_of_making: 3/5
 :imgs: false
-:is_vegan: true
-:is_vegetarian: true
+:meal_type: vegan
 :name: White Wine Pasta w/ Brussel Sprouts
 :original_recipe: https://minimalistbaker.com/vegan-garlic-alfredo-pasta/
 :rating: 3/5
@@ -487,11 +477,10 @@
 * Kimchi Udon
 :PROPERTIES:
 :belongs_to: main
-:day_made: [2019-09-30]
+:date_made: [2019-09-30]
 :ease_of_making: 4/5
-:imgs: 1.JPG,2.JPG,3.JPG,4.JPG
-:is_vegan: false
-:is_vegetarian: true
+:imgs: 1.JPG, 2.JPG, 3.JPG, 4.JPG
+:meal_type: vegetarian
 :name: Kimchi Udon
 :original_recipe: https://www.bonappetit.com/recipe/kimchi-udon-with-scallions
 :rating: 4/5
@@ -530,11 +519,10 @@
 - You can remove an egg white by moving the egg from hand to hand.
 * Asparagus Spaghetti with Egg
 :PROPERTIES:
-:day_made:
+:date_made:
 :ease_of_making: 5/5
-:imgs: 1.JPG,2.JPG,3.JPG
-:is_vegan: false
-:is_vegetarian: true
+:imgs: 1.JPG, 2.JPG, 3.JPG
+:meal_type: vegetarian
 :name: Asparagus Spaghetti + Egg
 :original_recipe: https://www.easycheesyvegetarian.com/asparagus-spaghetti-fried-egg/
 :rating: 3.5/5
@@ -573,11 +561,10 @@
   asparagus for variety. Maybe consider adding some chopped nuts.
 * Thai-Spice Rice Bowls
 :PROPERTIES:
-:day_made: [2019-10-07]
+:date_made: [2019-10-07]
 :ease_of_making: 5/5
-:imgs: 1.JPG,2.JPG,3.JPG
-:is_vegan: true
-:is_vegetarian: true
+:imgs: 1.JPG, 2.JPG, 3.JPG
+:meal_type vegan
 :name: Thai-Spice Rice Bowls
 :original_recipe: https://cookieandkate.com/thai-spiced-rice-bowls-recipe/
 :rating: 3/5
@@ -620,11 +607,10 @@
 - Is it supposed to be so soupy?
 * Pineapple Salsa + Coconut Rice
 :PROPERTIES:
-:day_made: [2019-10-10]
+:date_made: [2019-10-10]
 :ease_of_making: 3/5
-:imgs: 1.JPG,2.JPG,3.JPG
-:is_vegan: true
-:is_vegetarian: true
+:imgs: 1.JPG, 2.JPG, 3.JPG
+:meal_type: vegan
 :name: Pineapple Salsa + Coconut Rice
 :original_recipe: https://ohsheglows.com/2012/07/09/grilled-tofu-with-pineapple-salsa-and-coconut-rice/
 :rating: 3/5
@@ -676,11 +662,10 @@
 * Pear And Brie Salad
 :PROPERTIES:
 :belongs_to: salad
-:day_made: [2019-09-19]
+:date_made: [2019-09-19]
 :ease_of_making: 5/5
-:imgs: 1.JPG,2.JPG,3.JPG
-:is_vegan: false
-:is_vegetarian: true
+:imgs: 1.JPG, 2.JPG, 3.JPG
+:meal_type: vegetarian
 :name: Pear + Brie Salad
 :original_recipe: https://www.theorganickitchen.org/pears-and-brie-salad-with-honey-champagne-vinaigrette/
 :rating: 5/5
@@ -728,11 +713,10 @@
 * Raw beet salad
 :PROPERTIES:
 :belongs_to: salad
-:day_made: [2019-09-24]
+:date_made: [2019-09-24]
 :ease_of_making: 4/5
-:imgs: 1.JPG,2.JPG,3.JPG,5.gif
-:is_vegan: true
-:is_vegetarian: true
+:imgs: 1.JPG, 2.JPG, 3.JPG, 5.gif
+:meal_type: vegan
 :name:     Raw Beet Salad w/ Quinoa
 :original_recipe: https://cookieandkate.com/raw-beet-salad-with-carrot-quinoa-spinach
 :rating: 4/5
@@ -776,11 +760,10 @@
 * Black Bean Salad
 :PROPERTIES:
 :belongs_to: salad
-:day_made: [2019-10-03]
+:date_made: [2019-10-03]
 :ease_of_making: 5/5
-:imgs: 1.JPG,2.JPG,3.JPG
-:is_vegan: true
-:is_vegetarian: true
+:imgs: 1.JPG, 2.JPG, 3.JPG
+:meal_type: vegan
 :name: Black Bean Salad
 :original_recipe: https://cookieandkate.com/black-bean-salad-recipe/
 :rating: 5/5
@@ -816,11 +799,10 @@
 * Easy Marinated Tofu
 :PROPERTIES:
 :belongs_to: side
-:day_made: [2019-09-02]
+:date_made: [2019-09-02]
 :ease_of_making: 5/5
 :imgs: false
-:is_vegan: true
-:is_vegetarian: true
+:meal_type: vegan
 :name: Easy Marinated Tofu
 :original_recipe: https://simpleveganblog.com/easy-marinated-tofu/
 :rating: 4/5
@@ -851,11 +833,10 @@
 * Miso Asparagus
 :PROPERTIES:
 :belongs_to: side
-:day_made: [2019-10-01]
+:date_made: [2019-10-01]
 :ease_of_making: 4/5
 :imgs: 1.JPG,2.JPG,3.gif
-:is_vegan: true
-:is_vegetarian: true
+:meal_type: vegan
 :name: Miso Asparagus
 :original_recipe: https://www.bonappetit.com/recipe/ginger-miso-grilled-asparagus
 :rating: 2.5/5
@@ -892,18 +873,17 @@
   using a grill it would have more places to drip off.
 * 5 ingredient granola bars
 :PROPERTIES:
-:original_recipe: https://minimalistbaker.com/healthy-5-ingredient-granola-bars/
-:slug: granola-bars
-:name: 5 Ingredient Granola Bars
-:day_made: [2019-09-01]
-:time: 00:25:00
-:serves: 10 bars
-:is_vegan: true
-:is_vegetarian: false
-:ease_of_making: 5/5
-:rating: 5/5
-:imgs: 1.JPG,2.JPG,1.gif
 :belongs_to: snack
+:date_made: [2019-09-01]
+:ease_of_making: 5/5
+:imgs: 1.JPG,2.JPG,1.gif
+:meal_type: vegan
+:name: 5 Ingredient Granola Bars
+:original_recipe: https://minimalistbaker.com/healthy-5-ingredient-granola-bars/
+:rating: 5/5
+:serves: 10 bars
+:slug: granola-bars
+:time: 00:25:00
 :END:
 ** Ingredients
 | Ingredient                            | Quantity | Unit | Id              | Group |
@@ -930,12 +910,11 @@
 * Candied Ginger
 :PROPERTIES:
 :belongs_to: sweet
-:day_made: [2019-09-02]
+:date_made: [2019-09-02]
 :ease_of_making: 2/5
-:imgs: 1.JPG,2.JPG,3.JPG
-:is_vegan: true
-:is_vegetarian: true
+:imgs: 1.JPG, 2.JPG, 3.JPG
 :name: Candied Ginger
+:meal_type: vegan
 :original_recipe: https://www.davidlebovitz.com/candied-ginger/
 :rating: 4/5
 :serves: one jar! (roughly)
@@ -974,11 +953,10 @@
 * Pumpkin Chiffon Pie
 :PROPERTIES:
 :belongs_to: sweet
-:day_made: [2019-10-14]
+:date_made: [2019-10-14]
 :ease_of_making: 3/5
-:imgs: 1.JPG,2.JPG,3.JPG
-:is_vegan: false
-:is_vegetarian: true
+:imgs: 1.JPG, 2.JPG, 3.JPG
+:meal_type: vegetarian
 :name: Pumpkin Chiffon Pie
 :original_recipe: -
 :rating: 4/5
@@ -1031,18 +1009,17 @@
 - We have like, 10 photos of people holding the pie.
 * Mediterranean Baked Sweet Potatoes
 :PROPERTIES:
-:original_recipe: https://minimalistbaker.com/mediterranean-baked-sweet-potatoes/
-:slug: mediterranean-baked-sweet-potatoes
-:day_made: [2019-11-11]
-:name: Mediterranean Baked Sweet Potatoes
-:serves: 2
-:time: 01:00:00
-:is_vegan: true
-:is_vegetarian: true
-:ease_of_making: 5/5
-:rating: 5/5
-:imgs: 1.JPG,2.JPG,3.JPG
 :belongs_to: main
+:date_made: [2019-11-11]
+:ease_of_making: 5/5
+:imgs: 1.JPG, 2.JPG, 3.JPG
+:meal_type: vegan
+:name: Mediterranean Baked Sweet Potatoes
+:original_recipe: https://minimalistbaker.com/mediterranean-baked-sweet-potatoes/
+:rating: 5/5
+:serves: 2
+:slug: mediterranean-baked-sweet-potatoes
+:time: 01:00:00
 :END:
 ** Ingredients
 | Ingredient         | Quantity | Unit   | Id        | Group             |
@@ -1086,18 +1063,17 @@
 - What dried dill looks like.
 * Chickpea cauliflower Curry
 :PROPERTIES:
-:original_recipe: https://minimalistbaker.com/1-pot-yellow-chickpea-cauliflower-curry/
-:slug: chickpea-cauliflower-curry
-:day_made: [2019-11-12]
-:name: Chickpea Cauliflower Curry
-:serves: 2
-:time: 00:45:00
-:is_vegan: true
-:is_vegetarian: true
-:ease_of_making: 5/5
-:rating: 4/5
-:imgs: 1.JPG,2.JPG,3.JPG
 :belongs_to: main
+:date_made: [2019-11-12]
+:ease_of_making: 5/5
+:imgs: 1.JPG, 2.JPG, 3.JPG
+:meal_type: vegan
+:name: Chickpea Cauliflower Curry
+:original_recipe: https://minimalistbaker.com/1-pot-yellow-chickpea-cauliflower-curry/
+:rating: 4/5
+:serves: 2
+:slug: chickpea-cauliflower-curry
+:time: 00:45:00
 :END:
 ** Ingredients
 | Ingredient      | Quantity | Unit   | Id       | Group    |
@@ -1133,18 +1109,17 @@
 - We danced to Junior Boys while we cooked this one.
 * Overnight Oats
 :PROPERTIES:
-:original_recipe: https://ohsheglows.com/2015/07/22/vegan-overnight-oats/
-:slug: overnight-oats
-:day_made: [2019-11-12]
-:name: Overnight Oats
-:serves: 2
-:time: 00:10:00
-:is_vegan: true
-:is_vegetarian: true
-:ease_of_making: 5/5
-:rating: 5/5
-:imgs: 1.JPG,2.JPG,3.JPG
 :belongs_to: breakfast
+:date_made: [2019-11-12]
+:ease_of_making: 5/5
+:imgs: 1.JPG, 2.JPG, 3.JPG
+:meal_type: vegan
+:name: Overnight Oats
+:original_recipe: https://ohsheglows.com/2015/07/22/vegan-overnight-oats/
+:rating: 5/5
+:serves: 2
+:slug: overnight-oats
+:time: 00:10:00
 :END:
 ** Ingredients
 | Ingredient            | Quantity | Unit | Id     | Group |
@@ -1170,18 +1145,17 @@
   recipes to make enough for multiple days. Make sure to get some fresh fruit to put on top for when you prepare it.
 * Orange Orzo Salad
 :PROPERTIES:
-:original_recipe: https://ohsheglows.com/2015/07/22/vegan-overnight-oats/
-:slug: orange-orzo-salad
-:day_made: [2019-11-13]
-:name: Orange Orzo Salad
-:serves: 2
-:time: 00:30:00
-:is_vegan: false
-:is_vegetarian: true
-:ease_of_making: 4/5
-:rating: 5/5
-:imgs: 1.JPG,2.JPG,3.JPG
 :belongs_to: salad
+:date_made: [2019-11-13]
+:ease_of_making: 4/5
+:imgs: 1.JPG, 2.JPG, 3.JPG
+:meal_type: vegetarian
+:name: Orange Orzo Salad
+:original_recipe: https://ohsheglows.com/2015/07/22/vegan-overnight-oats/
+:rating: 5/5
+:serves: 2
+:slug: orange-orzo-salad
+:time: 00:30:00
 :END:
 ** Ingredients
 | Ingredient             | Quantity | Unit    | Id     | Group    |
@@ -1213,18 +1187,17 @@
 - Try to make sure you cut the parsley small enough so that you don't end up getting big leafs of it taking over the salad. Same with the green onions. Feel free to mix up the measurements for the almonds, raisins and feta to your taste.
 * Ratatouille
 :PROPERTIES:
-:original_recipe: https://cookieandkate.com/best-ratatouille-recipe/#tasty-recipes-34476
-:slug: ratatouille
-:day_made: [2019-11-14]
-:name: Ratatouille
-:serves: 4
-:time: 01:20:00
-:is_vegan: true
-:is_vegetarian: true
-:ease_of_making: 4/5
-:rating: 4/5
-:imgs: 1.JPG,2.gif,3.JPG
 :belongs_to: main
+:date_made: [2019-11-14]
+:ease_of_making: 4/5
+:imgs: 1.JPG, 2.gif, 3.JPG
+:meal_type: vegan
+:name: Ratatouille
+:original_recipe: https://cookieandkate.com/best-ratatouille-recipe/#tasty-recipes-34476
+:rating: 4/5
+:serves: 4
+:slug: ratatouille
+:time: 01:20:00
 :END:
 ** Ingredients
 | Ingredient             | Quantity | Unit | Id     | Group |
@@ -1267,13 +1240,12 @@
 * Kimchi Avocado Egg on Toast
 :PROPERTIES:
 :belongs_to: breakfast
-:day_made: [2019-11-15]
+:date_made: [2019-11-15]
 :ease_of_making: 5/5
-:imgs: 1.jpg,2.jpg
-:is_vegan: false
-:is_vegetarian: true
+:imgs: 1.jpg, 2.jpg
+:meal_type: vegetarian
 :name: Kimchi Avocado Egg on Toast
-:original_recipe: #
+:original_recipe: ?
 :rating: 3.5/5
 :serves: 1
 :slug: avo-kimchi-egg-toast
@@ -1312,11 +1284,10 @@
 * Tofu Kimchi Stew
 :PROPERTIES:
 :belongs_to: main
-:day_made: [2019-11-15]
+:date_made: [2019-11-15]
 :ease_of_making: 5/5
-:imgs: 1.jpg,2.jpg,3.jpg
-:is_vegan: true
-:is_vegetarian: true
+:imgs: 1.jpg, 2.jpg, 3.jpg
+:meal_type: vegan
 :name: Tofu Kimchi Stew
 :original_recipe: https://www.bonappetit.com/recipe/tofu-and-kimchi-stew
 :rating: 3.5/5
@@ -1357,11 +1328,10 @@
 * Lime Rice Noodles with Tofu
 :PROPERTIES:
 :belongs_to: main
-:day_made: [2019-11-22]
+:date_made: [2019-11-22]
 :ease_of_making: ?/5
-:imgs: 1.jpg,2.gif,3.jpg
-:is_vegan: true
-:is_vegetarian: true
+:imgs: 1.jpg, 2.gif, 3.jpg
+:meal_type: vegan
 :name: Lime-Rice Noodles with Tofu
 :original_recipe: https://www.delish.com/cooking/recipe-ideas/a29215487/cilantro-lime-noodles-with-shrimp-recipe/
 :rating: ?/5
@@ -1403,17 +1373,15 @@
 * Pesto Pasta Salad
 :PROPERTIES:
 :belongs_to: main
-:day_made: [2019-11-29]
+:date_made: [2019-11-29]
 :ease_of_making: 4/5
-:imgs: 1.jpg,2.jpg,3.jpg
-:is_vegan: true
-:is_vegetarian: true
+:imgs: 1.jpg, 2.jpg, 3.jpg
+:meal_type: vegan
 :name: Pesto Pasta Salad
 :original_recipe: https://cookieandkate.com/pesto-pasta-salad-recipe/#tasty-recipes-24184
 :rating: 4.5/5
 :serves: 4
 :slug: pasta-pesto-salad
-:tags: pesto
 :time: 00:30:00
 :END:
 ** Ingredients
