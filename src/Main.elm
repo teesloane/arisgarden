@@ -4,9 +4,10 @@ import Browser
 import Browser.Navigation as Nav
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Json.Decode as Decode exposing (Decoder, float, int, nullable, string)
+import Json.Decode.Pipeline as Pipe exposing (hardcoded, optional, required)
 import Pages.Router exposing (..)
 import Url
-import Json.Decode
 
 
 
@@ -30,10 +31,11 @@ main =
 --
 --
 
-type alias Flags =   
-    {
-        recipes: Json.Decode.Value
+
+type alias Flags =
+    { recipes : Decode.Value
     }
+
 
 type alias Ingredient =
     { name : String
@@ -63,15 +65,29 @@ type alias Recipe =
     }
 
 
+
+-- recipeDecoder : Decoder Recipe
+-- recipeDecoder =
+--     Decode.succeed Recipe
+--         |> Pipe.required "belongs_to" string
+--         |> Pipe.required "date_made" string
+--         |> Pipe.required "ease_of_making" int
+--         |> Pipe.required "imgs"
+--         |> Pipe.required "ease_of_making" int
+--         |> Pipe.required "ease_of_making" int
+--         |> Pipe.required "ease_of_making" int
+
+
 type alias Model =
     { key : Nav.Key
     , url : Url.Url
-    }                
+    , flags : Flags
+    }
 
 
 init : Flags -> Url.Url -> Nav.Key -> ( Model, Cmd Msg )
 init flags url key =
-    ( Model key url, Cmd.none )
+    ( Model key url flags, Cmd.none )
 
 
 
@@ -109,6 +125,7 @@ subscriptions _ =
     Sub.none
 
 
+
 -- VIEW
 
 
@@ -131,12 +148,13 @@ view model =
 viewLink : String -> Html msg
 viewLink path =
     let
-        x = "hi"
+        x =
+            "hi"
+
         -- x =
         --     Recipe "jo" "tues" 100 [ "hi", "20" ] "Vegetarian" 10 "orig recipe" 3 "slug" "twenty min"
-
         y =
-            Debug.log "Recipe is " 
+            Debug.log "Recipe is "
     in
     li [] [ a [ href path ] [ text path ] ]
 
