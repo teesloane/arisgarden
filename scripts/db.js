@@ -2,75 +2,66 @@ var db = {
   "recipes": {
     "breakfast-quinoa": {
       "belongs_to": "breakfast",
-      "day_made": "[2019-10-03]",
+      "date_made": "[2019-10-03]",
       "ease_of_making": "5/5",
       "imgs": "false",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
+      "meal_type": "vegan",
       "name": "Breakfast Quinoa",
       "original_recipe": "https://cookieandkate.com/cinnamon-breakfast-quinoa-recipe/",
       "rating": "5/5",
       "serves": "4",
       "slug": "breakfast-quinoa",
       "time": "00:40:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id"
-        ],
-        "data": [
-          {
-            "Ingredient": "Quinoa",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "quin"
-          },
-          {
-            "Ingredient": "Water",
-            "Quantity": "2",
-            "Unit": "cups",
-            "Id": "water"
-          },
-          {
-            "Ingredient": "Maple Syrup",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "syr"
-          },
-          {
-            "Ingredient": "Pecans or Walnuts (chopped)",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "nuts"
-          },
-          {
-            "Ingredient": "Cinnamon",
-            "Quantity": "1 or 2",
-            "Unit": "tsp",
-            "Id": "cin"
-          },
-          {
-            "Ingredient": "Coconut oil",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "oil"
-          },
-          {
-            "Ingredient": "Fresh berries",
-            "Quantity": "",
-            "Unit": "",
-            "Id": "berr"
-          },
-          {
-            "Ingredient": "Almond butter",
-            "Quantity": "",
-            "Unit": "",
-            "Id": "almbut"
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Quinoa",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "quin"
+        },
+        {
+          "Ingredient": "Water",
+          "Quantity": "2",
+          "Unit": "cups",
+          "Id": "water"
+        },
+        {
+          "Ingredient": "Maple Syrup",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "syr"
+        },
+        {
+          "Ingredient": "Pecans or Walnuts (chopped)",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "nuts"
+        },
+        {
+          "Ingredient": "Cinnamon",
+          "Quantity": "1 or 2",
+          "Unit": "tsp",
+          "Id": "cin"
+        },
+        {
+          "Ingredient": "Coconut oil",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "oil"
+        },
+        {
+          "Ingredient": "Fresh berries",
+          "Quantity": "",
+          "Unit": "",
+          "Id": "berr"
+        },
+        {
+          "Ingredient": "Almond butter",
+          "Quantity": "",
+          "Unit": "",
+          "Id": "almbut"
+        }
+      ],
       "instructions": [
         {
           "o": "[&:00:15:00] Make the [#: quin | quinoa]: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes",
@@ -184,113 +175,103 @@ var db = {
       }
     },
     "pantry-dahl": {
-      "original_recipe": "https://ohsheglows.com/2017/07/21/8-minute-pantry-dal-two-ways/",
-      "slug": "pantry-dahl",
-      "day_made": "[2019-09-01]",
-      "name": "Pantry Dahl",
-      "serves": "4",
-      "time": "00:40:00",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
-      "ease_of_making": "5/5",
-      "rating": "4/5",
-      "imgs": "1.JPG,2.JPG,3.JPG",
       "belongs_to": "main",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Coconut oil",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "oil-coconut",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Diced vegetables (Carrots, Potatoes, Broccoli etc)",
-            "Quantity": "4",
-            "Unit": "cups",
-            "Id": "vegetables-misc",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Uncooked red lentils",
-            "Quantity": "1/2",
-            "Unit": "cups",
-            "Id": "lentils-red",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Water",
-            "Quantity": "1/2",
-            "Unit": "cups",
-            "Id": "water",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Diced tomato (1 can or fresh)",
-            "Quantity": "14",
-            "Unit": "oz",
-            "Id": "tomato-diced-can",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Coconut milk (1 can)",
-            "Quantity": "14",
-            "Unit": "oz",
-            "Id": "milk-coconut",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Garlic powder",
-            "Quantity": "1.5",
-            "Unit": "tsp",
-            "Id": "powder-garlic",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Minced onion",
-            "Quantity": "1.5",
-            "Unit": "tsp",
-            "Id": "onion-minced",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Curry powder",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "powder-curry",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Sea salt",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "salt-sea",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Pepper",
-            "Quantity": "1",
-            "Unit": "pinch",
-            "Id": "pepper",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Rice or Grain for Base",
-            "Quantity": "",
-            "Unit": "",
-            "Id": "rice",
-            "Group": ""
-          }
-        ]
-      },
+      "date_made": "[2019-09-01]",
+      "ease_of_making": "5/5",
+      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "meal_type": "vegan",
+      "name": "Pantry Dahl",
+      "original_recipe": "https://ohsheglows.com/2017/07/21/8-minute-pantry-dal-two-ways/",
+      "rating": "4/5",
+      "serves": "4",
+      "slug": "pantry-dahl",
+      "time": "00:40:00",
+      "ingredients": [
+        {
+          "Ingredient": "Coconut oil",
+          "Quantity": "1",
+          "Unit": "tbsp",
+          "Id": "oil-coconut",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Diced vegetables (Carrots, Potatoes, Broccoli etc)",
+          "Quantity": "4",
+          "Unit": "cups",
+          "Id": "vegetables-misc",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Uncooked red lentils",
+          "Quantity": "1/2",
+          "Unit": "cups",
+          "Id": "lentils-red",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Water",
+          "Quantity": "1/2",
+          "Unit": "cups",
+          "Id": "water",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Diced tomato (1 can or fresh)",
+          "Quantity": "14",
+          "Unit": "oz",
+          "Id": "tomato-diced-can",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Coconut milk (1 can)",
+          "Quantity": "14",
+          "Unit": "oz",
+          "Id": "milk-coconut",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Garlic powder",
+          "Quantity": "1.5",
+          "Unit": "tsp",
+          "Id": "powder-garlic",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Minced onion",
+          "Quantity": "1.5",
+          "Unit": "tsp",
+          "Id": "onion-minced",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Curry powder",
+          "Quantity": "1",
+          "Unit": "tbsp",
+          "Id": "powder-curry",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Sea salt",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "salt-sea",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Pepper",
+          "Quantity": "1",
+          "Unit": "pinch",
+          "Id": "pepper",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Rice or Grain for Base",
+          "Quantity": "",
+          "Unit": "",
+          "Id": "rice",
+          "Group": ""
+        }
+      ],
       "instructions": [
         {
           "o": "Melt [#: oil-coconut | coconut oil] in a large pot",
@@ -398,127 +379,117 @@ var db = {
       }
     },
     "chickpea-shakshuka": {
-      "original_recipe": "https://minimalistbaker.com/1-pot-chickpea-shakshuka/",
-      "day_made": "[2019-09-03]",
-      "name": "1 Pot Chickpea Shakshuka",
       "belongs_to": "main",
-      "slug": "chickpea-shakshuka",
-      "is_vegan": "true",
-      "time": "01:00:00",
-      "is_vegetarian": "true",
-      "serves": "3",
-      "imgs": "1.JPG,2.JPG,3.JPG",
+      "date_made": "[2019-09-03]",
       "ease_of_making": "5/5",
+      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "meal_type": "vegan",
+      "name": "1 Pot Chickpea Shakshuka",
+      "original_recipe": "https://minimalistbaker.com/1-pot-chickpea-shakshuka/",
       "rating": "4/5",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Olive Oil",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "oil-olive",
-            "Group": ""
-          },
-          {
-            "Ingredient": "White onion (or: shallot)",
-            "Quantity": "1/2/",
-            "Unit": "cups",
-            "Id": "onion-white",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Garlic",
-            "Quantity": "3",
-            "Unit": "cloves",
-            "Id": "garlic",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Bell Pepper (chopped)",
-            "Quantity": "1/2/",
-            "Unit": "cups",
-            "Id": "pepper-bell",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Diced tomatoes",
-            "Quantity": "28",
-            "Unit": "oz",
-            "Id": "tomato-diced",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Tomato paste",
-            "Quantity": "3",
-            "Unit": "tbsp",
-            "Id": "tomato-paste",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Olives",
-            "Quantity": "5",
-            "Unit": "",
-            "Id": "olives",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Maple syrup",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "maple-syrup",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Ground cumin",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "cumin-ground",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Paprika",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "paprika",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Chili powder",
-            "Quantity": "2",
-            "Unit": "tsp",
-            "Id": "chili-powder",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Ground cinnamon",
-            "Quantity": "1/4",
-            "Unit": "tsp",
-            "Id": "cinnamon-ground",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Chickpeas",
-            "Quantity": "24",
-            "Unit": "oz",
-            "Id": "chickpeas",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Sea Salt",
-            "Quantity": "1",
-            "Unit": "pinch",
-            "Id": "salt-sea",
-            "Group": ""
-          }
-        ]
-      },
+      "serves": "3",
+      "slug": "chickpea-shakshuka",
+      "time": "01:00:00",
+      "ingredients": [
+        {
+          "Ingredient": "Olive Oil",
+          "Quantity": "1",
+          "Unit": "tbsp",
+          "Id": "oil-olive",
+          "Group": ""
+        },
+        {
+          "Ingredient": "White onion (or: shallot)",
+          "Quantity": "1/2/",
+          "Unit": "cups",
+          "Id": "onion-white",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Garlic",
+          "Quantity": "3",
+          "Unit": "cloves",
+          "Id": "garlic",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Bell Pepper (chopped)",
+          "Quantity": "1/2/",
+          "Unit": "cups",
+          "Id": "pepper-bell",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Diced tomatoes",
+          "Quantity": "28",
+          "Unit": "oz",
+          "Id": "tomato-diced",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Tomato paste",
+          "Quantity": "3",
+          "Unit": "tbsp",
+          "Id": "tomato-paste",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Olives",
+          "Quantity": "5",
+          "Unit": "",
+          "Id": "olives",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Maple syrup",
+          "Quantity": "1",
+          "Unit": "tbsp",
+          "Id": "maple-syrup",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Ground cumin",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "cumin-ground",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Paprika",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "paprika",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Chili powder",
+          "Quantity": "2",
+          "Unit": "tsp",
+          "Id": "chili-powder",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Ground cinnamon",
+          "Quantity": "1/4",
+          "Unit": "tsp",
+          "Id": "cinnamon-ground",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Chickpeas",
+          "Quantity": "24",
+          "Unit": "oz",
+          "Id": "chickpeas",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Sea Salt",
+          "Quantity": "1",
+          "Unit": "pinch",
+          "Id": "salt-sea",
+          "Group": ""
+        }
+      ],
       "instructions": [
         {
           "o": "Heat a large metal or cast iron skilled on medium heat.",
@@ -672,76 +643,67 @@ var db = {
       }
     },
     "collard-green-pasta": {
-      "original_recipe": "https://cookieandkate.com/lemon-collard-greens-pasta/",
-      "day_made": "[2019-09-04]",
       "belongs_to": "main",
-      "slug": "collard-green-pasta",
-      "is_vegan": "false",
-      "is_vegetarian": "true",
-      "time": "00:25:00",
-      "serves": "2",
-      "imgs": "1.JPG,2.JPG,3.JPG",
-      "name": "Leafy Spaghetti",
+      "date_made": "[2019-09-04]",
       "ease_of_making": "5/5",
+      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "meal_type": "\"vegetarian\"",
+      "name": "Leafy Spaghetti",
+      "original_recipe": "https://cookieandkate.com/lemon-collard-greens-pasta/",
       "rating": "5/5",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id"
-        ],
-        "data": [
-          {
-            "Ingredient": "Swiss Chard",
-            "Quantity": "10",
-            "Unit": "leaves",
-            "Id": "swiss-chard"
-          },
-          {
-            "Ingredient": "Spaghetti",
-            "Quantity": "1/3",
-            "Unit": "package",
-            "Id": "spaghetti"
-          },
-          {
-            "Ingredient": "Chopped Nuts",
-            "Quantity": "3",
-            "Unit": "tbsp",
-            "Id": "nuts"
-          },
-          {
-            "Ingredient": "Olive Oil",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "oil-olive"
-          },
-          {
-            "Ingredient": "Garlic",
-            "Quantity": "2",
-            "Unit": "cloves",
-            "Id": "garlic"
-          },
-          {
-            "Ingredient": "Red Pepper Flakes",
-            "Quantity": "1",
-            "Unit": "pinch",
-            "Id": "red-pepper-flakes"
-          },
-          {
-            "Ingredient": "Parmesan Cheese",
-            "Quantity": "1",
-            "Unit": "ounce",
-            "Id": "cheese-parmesan"
-          },
-          {
-            "Ingredient": "Lemon",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "lemon"
-          }
-        ]
-      },
+      "serves": "2",
+      "slug": "collard-green-pasta",
+      "time": "00:25:00",
+      "ingredients": [
+        {
+          "Ingredient": "Swiss Chard",
+          "Quantity": "10",
+          "Unit": "leaves",
+          "Id": "swiss-chard"
+        },
+        {
+          "Ingredient": "Spaghetti",
+          "Quantity": "1/3",
+          "Unit": "package",
+          "Id": "spaghetti"
+        },
+        {
+          "Ingredient": "Chopped Nuts",
+          "Quantity": "3",
+          "Unit": "tbsp",
+          "Id": "nuts"
+        },
+        {
+          "Ingredient": "Olive Oil",
+          "Quantity": "1",
+          "Unit": "tbsp",
+          "Id": "oil-olive"
+        },
+        {
+          "Ingredient": "Garlic",
+          "Quantity": "2",
+          "Unit": "cloves",
+          "Id": "garlic"
+        },
+        {
+          "Ingredient": "Red Pepper Flakes",
+          "Quantity": "1",
+          "Unit": "pinch",
+          "Id": "red-pepper-flakes"
+        },
+        {
+          "Ingredient": "Parmesan Cheese",
+          "Quantity": "1",
+          "Unit": "ounce",
+          "Id": "cheese-parmesan"
+        },
+        {
+          "Ingredient": "Lemon",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "lemon"
+        }
+      ],
       "instructions": [
         {
           "o": "Bring a pot of salted water to boil. Cook the [#: spaghetti | pasta].",
@@ -856,127 +818,117 @@ var db = {
       }
     },
     "bowl1": {
-      "original_recipe": "https://tasty.co/recipe/protein-packed-buddha-bowl",
-      "day_made": "[2019-09-08]",
       "belongs_to": "main",
-      "slug": "bowl1",
-      "is_vegan": "true",
-      "name": "Bowl #1",
-      "serves": "2",
-      "is_vegetarian": "true",
-      "imgs": "1.JPG,2.JPG,3.JPG",
+      "date_made": "[2019-09-08]",
       "ease_of_making": "3/5",
-      "time": "00:50:00",
+      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "meal_type": "vegan",
+      "name": "Bowl #1",
+      "original_recipe": "https://tasty.co/recipe/protein-packed-buddha-bowl",
       "rating": "5/5",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Sweet Potato",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "potato-sweet",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Shredded Carrots",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "avocado",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Onion",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "onion",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Tofu",
-            "Quantity": "8",
-            "Unit": "oz",
-            "Id": "tofu",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Garlic",
-            "Quantity": "2",
-            "Unit": "cloves",
-            "Id": "garlic",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Chickpeas",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "chickpeas",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Pepper",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "pepper",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Chili powder",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "chili-powder",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Garlic powder",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "garlic-powder",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Quinoa",
-            "Quantity": "1+1/2",
-            "Unit": "cups",
-            "Id": "quinoa",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Sesame Oil",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "oil-sesame",
-            "Group": "Marinade"
-          },
-          {
-            "Ingredient": "Hot Sauce",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "sauce-hot",
-            "Group": "Marinade"
-          },
-          {
-            "Ingredient": "Dried thyme",
-            "Quantity": "2",
-            "Unit": "tsp",
-            "Id": "thyme",
-            "Group": "Marinade"
-          },
-          {
-            "Ingredient": "Paprika",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "paprika",
-            "Group": "Marinade"
-          }
-        ]
-      },
+      "serves": "2",
+      "slug": "bowl1",
+      "time": "00:50:00",
+      "ingredients": [
+        {
+          "Ingredient": "Sweet Potato",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "potato-sweet",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Shredded Carrots",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "avocado",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Onion",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "onion",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Tofu",
+          "Quantity": "8",
+          "Unit": "oz",
+          "Id": "tofu",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Garlic",
+          "Quantity": "2",
+          "Unit": "cloves",
+          "Id": "garlic",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Chickpeas",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "chickpeas",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Pepper",
+          "Quantity": "1/2",
+          "Unit": "tsp",
+          "Id": "pepper",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Chili powder",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "chili-powder",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Garlic powder",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "garlic-powder",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Quinoa",
+          "Quantity": "1+1/2",
+          "Unit": "cups",
+          "Id": "quinoa",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Sesame Oil",
+          "Quantity": "1/2",
+          "Unit": "tsp",
+          "Id": "oil-sesame",
+          "Group": "Marinade"
+        },
+        {
+          "Ingredient": "Hot Sauce",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "sauce-hot",
+          "Group": "Marinade"
+        },
+        {
+          "Ingredient": "Dried thyme",
+          "Quantity": "2",
+          "Unit": "tsp",
+          "Id": "thyme",
+          "Group": "Marinade"
+        },
+        {
+          "Ingredient": "Paprika",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "paprika",
+          "Group": "Marinade"
+        }
+      ],
       "instructions": [
         {
           "o": "Make the marinade: combine [#: oil-olive | olive oil], [#: oil-sesame | seasame oil], [#: sauce-hot | hot sauce], [#: thyme | thyme], [#: paprika | paprika], and [#: salt | salt]. Set aside.",
@@ -1149,118 +1101,109 @@ var db = {
       }
     },
     "massaman-curry": {
-      "day_made": "[2019-09-10]",
+      "belongs_to": "main",
+      "date_made": "[2019-09-10]",
       "ease_of_making": "5/5",
       "imgs": "false",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
+      "meal_type": "vegan",
       "name": "Massaman Curry",
       "original_recipe": "https://minimalistbaker.com/easy-1-pot-massaman-curry/",
       "rating": "5/5",
       "serves": "2",
-      "belongs_to": "main",
       "slug": "massaman-curry",
       "time": "01:00:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id"
-        ],
-        "data": [
-          {
-            "Ingredient": "Tofu",
-            "Quantity": "1",
-            "Unit": "package",
-            "Id": "tofu"
-          },
-          {
-            "Ingredient": "Coconut oil",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "oil-coconut"
-          },
-          {
-            "Ingredient": "Cumin powder",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "cumin-powder"
-          },
-          {
-            "Ingredient": "Coriander powder",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "coriander-powder"
-          },
-          {
-            "Ingredient": "Red Curry Paste",
-            "Quantity": "5",
-            "Unit": "tbsp",
-            "Id": "red-curry-paste"
-          },
-          {
-            "Ingredient": "Baby potatoes",
-            "Quantity": "1+1/2",
-            "Unit": "cups",
-            "Id": "potatoes-baby"
-          },
-          {
-            "Ingredient": "Carrots",
-            "Quantity": "2",
-            "Unit": "",
-            "Id": "carrots"
-          },
-          {
-            "Ingredient": "Coconut milk",
-            "Quantity": "28",
-            "Unit": "oz",
-            "Id": "milk-coconut"
-          },
-          {
-            "Ingredient": "Water",
-            "Quantity": "1+1/2",
-            "Unit": "cups",
-            "Id": "water"
-          },
-          {
-            "Ingredient": "Ground cinnamon",
-            "Quantity": "1/4",
-            "Unit": "tsp",
-            "Id": "ground-cinnamon"
-          },
-          {
-            "Ingredient": "Soy sauce",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "sauce-soy"
-          },
-          {
-            "Ingredient": "Maple syrup",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "maple-syrup"
-          },
-          {
-            "Ingredient": "Peanut butter",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "peanut-butter"
-          },
-          {
-            "Ingredient": "Lime juice",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "lime-juice"
-          },
-          {
-            "Ingredient": "Rice/Grain",
-            "Quantity": "",
-            "Unit": "",
-            "Id": "rice"
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Tofu",
+          "Quantity": "1",
+          "Unit": "package",
+          "Id": "tofu"
+        },
+        {
+          "Ingredient": "Coconut oil",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "oil-coconut"
+        },
+        {
+          "Ingredient": "Cumin powder",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "cumin-powder"
+        },
+        {
+          "Ingredient": "Coriander powder",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "coriander-powder"
+        },
+        {
+          "Ingredient": "Red Curry Paste",
+          "Quantity": "5",
+          "Unit": "tbsp",
+          "Id": "red-curry-paste"
+        },
+        {
+          "Ingredient": "Baby potatoes",
+          "Quantity": "1+1/2",
+          "Unit": "cups",
+          "Id": "potatoes-baby"
+        },
+        {
+          "Ingredient": "Carrots",
+          "Quantity": "2",
+          "Unit": "",
+          "Id": "carrots"
+        },
+        {
+          "Ingredient": "Coconut milk",
+          "Quantity": "28",
+          "Unit": "oz",
+          "Id": "milk-coconut"
+        },
+        {
+          "Ingredient": "Water",
+          "Quantity": "1+1/2",
+          "Unit": "cups",
+          "Id": "water"
+        },
+        {
+          "Ingredient": "Ground cinnamon",
+          "Quantity": "1/4",
+          "Unit": "tsp",
+          "Id": "ground-cinnamon"
+        },
+        {
+          "Ingredient": "Soy sauce",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "sauce-soy"
+        },
+        {
+          "Ingredient": "Maple syrup",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "maple-syrup"
+        },
+        {
+          "Ingredient": "Peanut butter",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "peanut-butter"
+        },
+        {
+          "Ingredient": "Lime juice",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "lime-juice"
+        },
+        {
+          "Ingredient": "Rice/Grain",
+          "Quantity": "",
+          "Unit": "",
+          "Id": "rice"
+        }
+      ],
       "instructions": [
         {
           "o": "Press your tofu. You'll come back and cube it once pressed.",
@@ -1466,11 +1409,10 @@ var db = {
       }
     },
     "cauliflower-rice-stir-fry": {
-      "day_made": "[2019-09-12]",
+      "date_made": "[2019-09-12]",
       "ease_of_making": "5/5",
-      "imgs": "1.JPG,2.JPG,3.JPG",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
+      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "meal_type": "vegan",
       "name": "Cauliflower Rice Stir Fry",
       "original_recipe": "https://minimalistbaker.com/30-minute-cauliflower-rice-stir-fry/",
       "rating": "3/5",
@@ -1478,136 +1420,127 @@ var db = {
       "belongs_to": "main",
       "slug": "cauliflower-rice-stir-fry",
       "timer": "00:45:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Cauliflower",
-            "Quantity": "1",
-            "Unit": "head",
-            "Id": "cauliflower",
-            "Group": "cauliflower"
-          },
-          {
-            "Ingredient": "Water (for cauliflower rice)",
-            "Quantity": "3",
-            "Unit": "tbsp",
-            "Id": "water",
-            "Group": "cauliflower"
-          },
-          {
-            "Ingredient": "Coconut oil",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "oil-coconut",
-            "Group": "sauce"
-          },
-          {
-            "Ingredient": "Peanut or Almond Butter",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "almond-butter",
-            "Group": "sauce"
-          },
-          {
-            "Ingredient": "ginger",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "ginger",
-            "Group": "sauce"
-          },
-          {
-            "Ingredient": "Maple syrup",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "maple-syrup",
-            "Group": "sauce"
-          },
-          {
-            "Ingredient": "Soy sauce (for the sauce)",
-            "Quantity": "4",
-            "Unit": "tbsp",
-            "Id": "soy-sauce-1",
-            "Group": "sauce"
-          },
-          {
-            "Ingredient": "Lime juice",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "lime-juice",
-            "Group": "sauce"
-          },
-          {
-            "Ingredient": "Chili garlic sauce or sriracha",
-            "Quantity": "2-4",
-            "Unit": "tbsp",
-            "Id": "chili-garlic-sauce",
-            "Group": "sauce"
-          },
-          {
-            "Ingredient": "Water",
-            "Quantity": "2-3",
-            "Unit": "tbsp",
-            "Id": "water",
-            "Group": "sauce"
-          },
-          {
-            "Ingredient": "Green beans (trimmed and halved)",
-            "Quantity": "1+1/2",
-            "Unit": "cups",
-            "Id": "green-beans",
-            "Group": "stir-fry"
-          },
-          {
-            "Ingredient": "Cabbage (thinly sliced)",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "cabbage",
-            "Group": "stir-fry"
-          },
-          {
-            "Ingredient": "soy-sauce",
-            "Quantity": "3",
-            "Unit": "tbsp",
-            "Id": "soy-sauce-2",
-            "Group": "stir-fry"
-          },
-          {
-            "Ingredient": "Green onions (diced)",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "onions-green",
-            "Group": "stir-fry"
-          },
-          {
-            "Ingredient": "Bell Pepper (sliced thinly)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "pepper-bell",
-            "Group": "stir-fry"
-          },
-          {
-            "Ingredient": "Cashews",
-            "Quantity": "3/4",
-            "Unit": "cups",
-            "Id": "cashews",
-            "Group": "stir-fry"
-          },
-          {
-            "Ingredient": "A Blender",
-            "Quantity": "",
-            "Unit": "",
-            "Id": "",
-            "Group": ""
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Cauliflower",
+          "Quantity": "1",
+          "Unit": "head",
+          "Id": "cauliflower",
+          "Group": "cauliflower"
+        },
+        {
+          "Ingredient": "Water (for cauliflower rice)",
+          "Quantity": "3",
+          "Unit": "tbsp",
+          "Id": "water",
+          "Group": "cauliflower"
+        },
+        {
+          "Ingredient": "Coconut oil",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "oil-coconut",
+          "Group": "sauce"
+        },
+        {
+          "Ingredient": "Peanut or Almond Butter",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "almond-butter",
+          "Group": "sauce"
+        },
+        {
+          "Ingredient": "ginger",
+          "Quantity": "1",
+          "Unit": "tbsp",
+          "Id": "ginger",
+          "Group": "sauce"
+        },
+        {
+          "Ingredient": "Maple syrup",
+          "Quantity": "1",
+          "Unit": "tbsp",
+          "Id": "maple-syrup",
+          "Group": "sauce"
+        },
+        {
+          "Ingredient": "Soy sauce (for the sauce)",
+          "Quantity": "4",
+          "Unit": "tbsp",
+          "Id": "soy-sauce-1",
+          "Group": "sauce"
+        },
+        {
+          "Ingredient": "Lime juice",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "lime-juice",
+          "Group": "sauce"
+        },
+        {
+          "Ingredient": "Chili garlic sauce or sriracha",
+          "Quantity": "2-4",
+          "Unit": "tbsp",
+          "Id": "chili-garlic-sauce",
+          "Group": "sauce"
+        },
+        {
+          "Ingredient": "Water",
+          "Quantity": "2-3",
+          "Unit": "tbsp",
+          "Id": "water",
+          "Group": "sauce"
+        },
+        {
+          "Ingredient": "Green beans (trimmed and halved)",
+          "Quantity": "1+1/2",
+          "Unit": "cups",
+          "Id": "green-beans",
+          "Group": "stir-fry"
+        },
+        {
+          "Ingredient": "Cabbage (thinly sliced)",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "cabbage",
+          "Group": "stir-fry"
+        },
+        {
+          "Ingredient": "soy-sauce",
+          "Quantity": "3",
+          "Unit": "tbsp",
+          "Id": "soy-sauce-2",
+          "Group": "stir-fry"
+        },
+        {
+          "Ingredient": "Green onions (diced)",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "onions-green",
+          "Group": "stir-fry"
+        },
+        {
+          "Ingredient": "Bell Pepper (sliced thinly)",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "pepper-bell",
+          "Group": "stir-fry"
+        },
+        {
+          "Ingredient": "Cashews",
+          "Quantity": "3/4",
+          "Unit": "cups",
+          "Id": "cashews",
+          "Group": "stir-fry"
+        },
+        {
+          "Ingredient": "A Blender",
+          "Quantity": "",
+          "Unit": "",
+          "Id": "",
+          "Group": ""
+        }
+      ],
       "instructions": [
         {
           "o": "Wash the cauliflower. Chop it in a blender until you have small chunks (that look more like rice than cauliflower.)",
@@ -1680,11 +1613,10 @@ var db = {
       }
     },
     "kale-coconut-rice": {
-      "day_made": "[2019-09-17]",
+      "date_made": "[2019-09-17]",
       "ease_of_making": "4/5",
       "imgs": "1.JPG,2.JPG,3.gif",
-      "is_vegan": "false",
-      "is_vegetarian": "true",
+      "meal_type": "vegetarian",
       "name": "Kale And Coconut Rice",
       "original_recipe": "https://cookieandkate.com/spicy-kale-and-coconut-fried-rice/",
       "rating": "5/5",
@@ -1692,94 +1624,86 @@ var db = {
       "belongs_to": "main",
       "slug": "kale-coconut-rice",
       "time": "00:40:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id"
-        ],
-        "data": [
-          {
-            "Ingredient": "Coconut oil",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "oil-coconut"
-          },
-          {
-            "Ingredient": "Eggs",
-            "Quantity": "2",
-            "Unit": "",
-            "Id": "eggs"
-          },
-          {
-            "Ingredient": "Garlic (minced)",
-            "Quantity": "2",
-            "Unit": "cloves",
-            "Id": "garlic"
-          },
-          {
-            "Ingredient": "Green onions (chopped)",
-            "Quantity": "1",
-            "Unit": "bunch",
-            "Id": "onions-green"
-          },
-          {
-            "Ingredient": "Chopped vegetables (peppers, brussel sprouts etc)",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "vegetables-chopped"
-          },
-          {
-            "Ingredient": "Kale (ribs removed, chopped)",
-            "Quantity": "1",
-            "Unit": "bunch",
-            "Id": "kale"
-          },
-          {
-            "Ingredient": "Sea salt",
-            "Quantity": "1/4",
-            "Unit": "tsp",
-            "Id": "salt-sea"
-          },
-          {
-            "Ingredient": "Coconut flakes",
-            "Quantity": "3/4",
-            "Unit": "cups",
-            "Id": "coconut-flakes"
-          },
-          {
-            "Ingredient": "Rice",
-            "Quantity": "1",
-            "Unit": "cup",
-            "Id": "rice"
-          },
-          {
-            "Ingredient": "Soy sauce",
-            "Quantity": "2",
-            "Unit": "tsp",
-            "Id": "sauce-soy"
-          },
-          {
-            "Ingredient": "Sriracha",
-            "Quantity": "2",
-            "Unit": "tsp",
-            "Id": "sriracha"
-          },
-          {
-            "Ingredient": "Lime (halved)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "lime"
-          },
-          {
-            "Ingredient": "Cilantro",
-            "Quantity": "1",
-            "Unit": "handful",
-            "Id": "cilantro"
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Coconut oil",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "oil-coconut"
+        },
+        {
+          "Ingredient": "Eggs",
+          "Quantity": "2",
+          "Unit": "",
+          "Id": "eggs"
+        },
+        {
+          "Ingredient": "Garlic (minced)",
+          "Quantity": "2",
+          "Unit": "cloves",
+          "Id": "garlic"
+        },
+        {
+          "Ingredient": "Green onions (chopped)",
+          "Quantity": "1",
+          "Unit": "bunch",
+          "Id": "onions-green"
+        },
+        {
+          "Ingredient": "Chopped vegetables (peppers, brussel sprouts etc)",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "vegetables-chopped"
+        },
+        {
+          "Ingredient": "Kale (ribs removed, chopped)",
+          "Quantity": "1",
+          "Unit": "bunch",
+          "Id": "kale"
+        },
+        {
+          "Ingredient": "Sea salt",
+          "Quantity": "1/4",
+          "Unit": "tsp",
+          "Id": "salt-sea"
+        },
+        {
+          "Ingredient": "Coconut flakes",
+          "Quantity": "3/4",
+          "Unit": "cups",
+          "Id": "coconut-flakes"
+        },
+        {
+          "Ingredient": "Rice",
+          "Quantity": "1",
+          "Unit": "cup",
+          "Id": "rice"
+        },
+        {
+          "Ingredient": "Soy sauce",
+          "Quantity": "2",
+          "Unit": "tsp",
+          "Id": "sauce-soy"
+        },
+        {
+          "Ingredient": "Sriracha",
+          "Quantity": "2",
+          "Unit": "tsp",
+          "Id": "sriracha"
+        },
+        {
+          "Ingredient": "Lime (halved)",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "lime"
+        },
+        {
+          "Ingredient": "Cilantro",
+          "Quantity": "1",
+          "Unit": "handful",
+          "Id": "cilantro"
+        }
+      ],
       "instructions": [
         {
           "o": "Cook the [#: rice | rice] and set it aside to cool.",
@@ -1905,11 +1829,10 @@ var db = {
       }
     },
     "sweet-potato-gnocci": {
-      "day_made": "[2019-09-22]",
+      "date_made": "[2019-09-22]",
       "ease_of_making": "3/5",
       "imgs": "1.JPG,2.JPG,4.gif",
-      "is_vegan": "false",
-      "is_vegetarian": "true",
+      "meal_type": "vegetarian",
       "name": "Sweet Potato Gnocchi",
       "original_recipe": "https://biancazapatka.com/en/vegan-sweet-potato-gnocchi/",
       "rating": "4/5",
@@ -1917,64 +1840,56 @@ var db = {
       "slug": "sweet-potato-gnocci",
       "serves": "2",
       "time": "01:10:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id"
-        ],
-        "data": [
-          {
-            "Ingredient": "Sweet Potato (large / 600g)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "potato-sweet"
-          },
-          {
-            "Ingredient": "Nutritional Yeast or Parmesan (optional)",
-            "Quantity": "2-3",
-            "Unit": "tbsp",
-            "Id": "parm"
-          },
-          {
-            "Ingredient": "Flour",
-            "Quantity": "1/3",
-            "Unit": "cups",
-            "Id": "flour"
-          },
-          {
-            "Ingredient": "Salt",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "salt"
-          },
-          {
-            "Ingredient": "Cherry tomatoes",
-            "Quantity": "250",
-            "Unit": "grams",
-            "Id": "tomatoes"
-          },
-          {
-            "Ingredient": "Vegan butter or coconut oil",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "coco-oil"
-          },
-          {
-            "Ingredient": "Garlic",
-            "Quantity": "3",
-            "Unit": "cloves",
-            "Id": "garlic"
-          },
-          {
-            "Ingredient": "Optional Nuts (pine or pecan, or whatever)",
-            "Quantity": "4",
-            "Unit": "tbsp",
-            "Id": "nuts"
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Sweet Potato (large / 600g)",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "potato-sweet"
+        },
+        {
+          "Ingredient": "Nutritional Yeast or Parmesan (optional)",
+          "Quantity": "2-3",
+          "Unit": "tbsp",
+          "Id": "parm"
+        },
+        {
+          "Ingredient": "Flour",
+          "Quantity": "1/3",
+          "Unit": "cups",
+          "Id": "flour"
+        },
+        {
+          "Ingredient": "Salt",
+          "Quantity": "1/2",
+          "Unit": "tsp",
+          "Id": "salt"
+        },
+        {
+          "Ingredient": "Cherry tomatoes",
+          "Quantity": "250",
+          "Unit": "grams",
+          "Id": "tomatoes"
+        },
+        {
+          "Ingredient": "Vegan butter or coconut oil",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "coco-oil"
+        },
+        {
+          "Ingredient": "Garlic",
+          "Quantity": "3",
+          "Unit": "cloves",
+          "Id": "garlic"
+        },
+        {
+          "Ingredient": "Optional Nuts (pine or pecan, or whatever)",
+          "Quantity": "4",
+          "Unit": "tbsp",
+          "Id": "nuts"
+        }
+      ],
       "instructions": [
         {
           "o": "[&: 00:50:00] Prick the [#: potato-sweet | sweet potato] several times with a fork. Put it in the oven for 50-60 minutes at about 425 degrees.",
@@ -2111,11 +2026,10 @@ var db = {
       }
     },
     "garlic-alfredo-pasta": {
-      "day_made": "[2019-09-23]",
+      "date_made": "[2019-09-23]",
       "ease_of_making": "3/5",
       "imgs": "false",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
+      "meal_type": "vegan",
       "name": "White Wine Pasta w/ Brussel Sprouts",
       "original_recipe": "https://minimalistbaker.com/vegan-garlic-alfredo-pasta/",
       "rating": "3/5",
@@ -2123,76 +2037,68 @@ var db = {
       "slug": "garlic-alfredo-pasta",
       "serves": "2",
       "time": "00:30:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id"
-        ],
-        "data": [
-          {
-            "Ingredient": "Brussel Sprouts (halved)",
-            "Quantity": "16",
-            "Unit": "ounces",
-            "Id": "brus"
-          },
-          {
-            "Ingredient": "Olive Oil",
-            "Quantity": "1-2",
-            "Unit": "tbsp",
-            "Id": "oil"
-          },
-          {
-            "Ingredient": "Garlic",
-            "Quantity": "4",
-            "Unit": "cloves",
-            "Id": "garlic"
-          },
-          {
-            "Ingredient": "White Wine",
-            "Quantity": "1/3",
-            "Unit": "cups",
-            "Id": "wine"
-          },
-          {
-            "Ingredient": "Cornstarch",
-            "Quantity": "4",
-            "Unit": "tbsp",
-            "Id": "corn"
-          },
-          {
-            "Ingredient": "Almond milk",
-            "Quantity": "3/4",
-            "Unit": "cups",
-            "Id": "milk"
-          },
-          {
-            "Ingredient": "Nutritional Yeast",
-            "Quantity": "4",
-            "Unit": "tbsp",
-            "Id": "yeast"
-          },
-          {
-            "Ingredient": "Parmesean",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "parm"
-          },
-          {
-            "Ingredient": "Pasta",
-            "Quantity": "10",
-            "Unit": "ounces",
-            "Id": "pasta"
-          },
-          {
-            "Ingredient": "",
-            "Quantity": "",
-            "Unit": "",
-            "Id": ""
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Brussel Sprouts (halved)",
+          "Quantity": "16",
+          "Unit": "ounces",
+          "Id": "brus"
+        },
+        {
+          "Ingredient": "Olive Oil",
+          "Quantity": "1-2",
+          "Unit": "tbsp",
+          "Id": "oil"
+        },
+        {
+          "Ingredient": "Garlic",
+          "Quantity": "4",
+          "Unit": "cloves",
+          "Id": "garlic"
+        },
+        {
+          "Ingredient": "White Wine",
+          "Quantity": "1/3",
+          "Unit": "cups",
+          "Id": "wine"
+        },
+        {
+          "Ingredient": "Cornstarch",
+          "Quantity": "4",
+          "Unit": "tbsp",
+          "Id": "corn"
+        },
+        {
+          "Ingredient": "Almond milk",
+          "Quantity": "3/4",
+          "Unit": "cups",
+          "Id": "milk"
+        },
+        {
+          "Ingredient": "Nutritional Yeast",
+          "Quantity": "4",
+          "Unit": "tbsp",
+          "Id": "yeast"
+        },
+        {
+          "Ingredient": "Parmesean",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "parm"
+        },
+        {
+          "Ingredient": "Pasta",
+          "Quantity": "10",
+          "Unit": "ounces",
+          "Id": "pasta"
+        },
+        {
+          "Ingredient": "",
+          "Quantity": "",
+          "Unit": "",
+          "Id": ""
+        }
+      ],
       "instructions": [
         {
           "o": "Preheat oven to 400F. Add [#: brus | brussel sprouts] to baking sheet in a single layer. Drizzel with [#: oil | oil] and season with salt and pepper. Arranger in a single layer.",
@@ -2344,87 +2250,78 @@ var db = {
     },
     "kimchi-udon": {
       "belongs_to": "main",
-      "day_made": "[2019-09-30]",
+      "date_made": "[2019-09-30]",
       "ease_of_making": "4/5",
-      "imgs": "1.JPG,2.JPG,3.JPG,4.JPG",
-      "is_vegan": "false",
-      "is_vegetarian": "true",
+      "imgs": "1.JPG, 2.JPG, 3.JPG, 4.JPG",
+      "meal_type": "vegetarian",
       "name": "Kimchi Udon",
       "original_recipe": "https://www.bonappetit.com/recipe/kimchi-udon-with-scallions",
       "rating": "4/5",
       "serves": "2",
       "slug": "kimchi-udon",
       "time": "00:30:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id"
-        ],
-        "data": [
-          {
-            "Ingredient": "Butter, unsalted",
-            "Quantity": "5",
-            "Unit": "tbsp",
-            "Id": "butter"
-          },
-          {
-            "Ingredient": "Kimchi (chopped)",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "kimchi"
-          },
-          {
-            "Ingredient": "Kimchi (juice)",
-            "Quantity": "1/3",
-            "Unit": "cups",
-            "Id": "kimchi-juice"
-          },
-          {
-            "Ingredient": "Gochujang",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "gochu"
-          },
-          {
-            "Ingredient": "Vegetable Broth",
-            "Quantity": "1/2/",
-            "Unit": "cup",
-            "Id": "veg-broth"
-          },
-          {
-            "Ingredient": "Udon Noodles",
-            "Quantity": "1",
-            "Unit": "lb",
-            "Id": "udon"
-          },
-          {
-            "Ingredient": "Toasted Sesame Seeds",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "sesa"
-          },
-          {
-            "Ingredient": "Salt",
-            "Quantity": "1",
-            "Unit": "pinch",
-            "Id": "salt"
-          },
-          {
-            "Ingredient": "Egg yolks",
-            "Quantity": "2- 4",
-            "Unit": "",
-            "Id": "yolks"
-          },
-          {
-            "Ingredient": "Scallions (thinly sliced)",
-            "Quantity": "3",
-            "Unit": "",
-            "Id": "scall"
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Butter, unsalted",
+          "Quantity": "5",
+          "Unit": "tbsp",
+          "Id": "butter"
+        },
+        {
+          "Ingredient": "Kimchi (chopped)",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "kimchi"
+        },
+        {
+          "Ingredient": "Kimchi (juice)",
+          "Quantity": "1/3",
+          "Unit": "cups",
+          "Id": "kimchi-juice"
+        },
+        {
+          "Ingredient": "Gochujang",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "gochu"
+        },
+        {
+          "Ingredient": "Vegetable Broth",
+          "Quantity": "1/2/",
+          "Unit": "cup",
+          "Id": "veg-broth"
+        },
+        {
+          "Ingredient": "Udon Noodles",
+          "Quantity": "1",
+          "Unit": "lb",
+          "Id": "udon"
+        },
+        {
+          "Ingredient": "Toasted Sesame Seeds",
+          "Quantity": "1",
+          "Unit": "tbsp",
+          "Id": "sesa"
+        },
+        {
+          "Ingredient": "Salt",
+          "Quantity": "1",
+          "Unit": "pinch",
+          "Id": "salt"
+        },
+        {
+          "Ingredient": "Egg yolks",
+          "Quantity": "2- 4",
+          "Unit": "",
+          "Id": "yolks"
+        },
+        {
+          "Ingredient": "Scallions (thinly sliced)",
+          "Quantity": "3",
+          "Unit": "",
+          "Id": "scall"
+        }
+      ],
       "instructions": [
         {
           "o": "Chop [#: kimchi | kimchi] and collect [#: kimchi-juice | kimchi juice].",
@@ -2538,11 +2435,10 @@ var db = {
       }
     },
     "asparagus-spaghetti": {
-      "day_made": "",
+      "date_made": "",
       "ease_of_making": "5/5",
-      "imgs": "1.JPG,2.JPG,3.JPG",
-      "is_vegan": "false",
-      "is_vegetarian": "true",
+      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "meal_type": "vegetarian",
       "name": "Asparagus Spaghetti + Egg",
       "original_recipe": "https://www.easycheesyvegetarian.com/asparagus-spaghetti-fried-egg/",
       "rating": "3.5/5",
@@ -2550,64 +2446,56 @@ var db = {
       "slug": "asparagus-spaghetti",
       "serves": "2",
       "time": "00:25:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id"
-        ],
-        "data": [
-          {
-            "Ingredient": "Spaghetti",
-            "Quantity": "200",
-            "Unit": "grams",
-            "Id": "spag"
-          },
-          {
-            "Ingredient": "Butter",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "but"
-          },
-          {
-            "Ingredient": "Garlic",
-            "Quantity": "2",
-            "Unit": "cloves",
-            "Id": "garlic"
-          },
-          {
-            "Ingredient": "Asparagus (cut to 1-inch pieces)",
-            "Quantity": "150",
-            "Unit": "grams",
-            "Id": "asparagus"
-          },
-          {
-            "Ingredient": "Salt/Pepper",
-            "Quantity": "1",
-            "Unit": "pinch",
-            "Id": "sandp"
-          },
-          {
-            "Ingredient": "Parmesan",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "parm"
-          },
-          {
-            "Ingredient": "Eggs",
-            "Quantity": "2",
-            "Unit": "",
-            "Id": "eggs"
-          },
-          {
-            "Ingredient": "Pre-made pesto sauce",
-            "Quantity": "",
-            "Unit": "",
-            "Id": ""
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Spaghetti",
+          "Quantity": "200",
+          "Unit": "grams",
+          "Id": "spag"
+        },
+        {
+          "Ingredient": "Butter",
+          "Quantity": "1",
+          "Unit": "tbsp",
+          "Id": "but"
+        },
+        {
+          "Ingredient": "Garlic",
+          "Quantity": "2",
+          "Unit": "cloves",
+          "Id": "garlic"
+        },
+        {
+          "Ingredient": "Asparagus (cut to 1-inch pieces)",
+          "Quantity": "150",
+          "Unit": "grams",
+          "Id": "asparagus"
+        },
+        {
+          "Ingredient": "Salt/Pepper",
+          "Quantity": "1",
+          "Unit": "pinch",
+          "Id": "sandp"
+        },
+        {
+          "Ingredient": "Parmesan",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "parm"
+        },
+        {
+          "Ingredient": "Eggs",
+          "Quantity": "2",
+          "Unit": "",
+          "Id": "eggs"
+        },
+        {
+          "Ingredient": "Pre-made pesto sauce",
+          "Quantity": "",
+          "Unit": "",
+          "Id": ""
+        }
+      ],
       "instructions": [
         {
           "o": "[&:00:10:00] Boil spaghetti until al dente. Around 10 minutes.",
@@ -2683,11 +2571,10 @@ var db = {
       }
     },
     "thai-rice-bowl": {
-      "day_made": "[2019-10-07]",
+      "date_made": "[2019-10-07]",
       "ease_of_making": "5/5",
-      "imgs": "1.JPG,2.JPG,3.JPG",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
+      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "meal_type vegan": ":meal_type vegan",
       "name": "Thai-Spice Rice Bowls",
       "original_recipe": "https://cookieandkate.com/thai-spiced-rice-bowls-recipe/",
       "rating": "3/5",
@@ -2695,136 +2582,127 @@ var db = {
       "belongs_to": "main",
       "slug": "thai-rice-bowl",
       "time": "00:40:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Olive oil",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "oil",
-            "Group": "broth"
-          },
-          {
-            "Ingredient": "Red curry paste",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "rcp",
-            "Group": "broth"
-          },
-          {
-            "Ingredient": "Soy sauce",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "soysauce",
-            "Group": "broth"
-          },
-          {
-            "Ingredient": "Peanut butter",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "pb",
-            "Group": "broth"
-          },
-          {
-            "Ingredient": "Vegetable broth",
-            "Quantity": "4",
-            "Unit": "cups",
-            "Id": "vegbroth",
-            "Group": "broth"
-          },
-          {
-            "Ingredient": "Honey",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "honey",
-            "Group": "broth"
-          },
-          {
-            "Ingredient": "Coconut milk",
-            "Quantity": "1 (14 oz)",
-            "Unit": "can",
-            "Id": "coco",
-            "Group": "broth"
-          },
-          {
-            "Ingredient": "Garlic",
-            "Quantity": "4",
-            "Unit": "cloves",
-            "Id": "garlic",
-            "Group": "broth"
-          },
-          {
-            "Ingredient": "Ginger",
-            "Quantity": "1",
-            "Unit": "thumb-tip",
-            "Id": "ginger",
-            "Group": "broth"
-          },
-          {
-            "Ingredient": "Rice",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "rice",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Carrots (matchsticked)",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "carrots",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Peanuts",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "peanuts",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Cucumber",
-            "Quantity": "1/2",
-            "Unit": "",
-            "Id": "cucu",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Bell pepper (sliced)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "bell",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Green onions (sliced)",
-            "Quantity": "2",
-            "Unit": "",
-            "Id": "gonion",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Jalapeno",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "jalap",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Lime",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "lime",
-            "Group": ""
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Olive oil",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "oil",
+          "Group": "broth"
+        },
+        {
+          "Ingredient": "Red curry paste",
+          "Quantity": "1",
+          "Unit": "tbsp",
+          "Id": "rcp",
+          "Group": "broth"
+        },
+        {
+          "Ingredient": "Soy sauce",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "soysauce",
+          "Group": "broth"
+        },
+        {
+          "Ingredient": "Peanut butter",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "pb",
+          "Group": "broth"
+        },
+        {
+          "Ingredient": "Vegetable broth",
+          "Quantity": "4",
+          "Unit": "cups",
+          "Id": "vegbroth",
+          "Group": "broth"
+        },
+        {
+          "Ingredient": "Honey",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "honey",
+          "Group": "broth"
+        },
+        {
+          "Ingredient": "Coconut milk",
+          "Quantity": "1 (14 oz)",
+          "Unit": "can",
+          "Id": "coco",
+          "Group": "broth"
+        },
+        {
+          "Ingredient": "Garlic",
+          "Quantity": "4",
+          "Unit": "cloves",
+          "Id": "garlic",
+          "Group": "broth"
+        },
+        {
+          "Ingredient": "Ginger",
+          "Quantity": "1",
+          "Unit": "thumb-tip",
+          "Id": "ginger",
+          "Group": "broth"
+        },
+        {
+          "Ingredient": "Rice",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "rice",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Carrots (matchsticked)",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "carrots",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Peanuts",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "peanuts",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Cucumber",
+          "Quantity": "1/2",
+          "Unit": "",
+          "Id": "cucu",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Bell pepper (sliced)",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "bell",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Green onions (sliced)",
+          "Quantity": "2",
+          "Unit": "",
+          "Id": "gonion",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Jalapeno",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "jalap",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Lime",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "lime",
+          "Group": ""
+        }
+      ],
       "instructions": [
         {
           "o": "Make the [#: rice | rice]. Cook according to packaging.",
@@ -2977,11 +2855,10 @@ var db = {
       }
     },
     "tofu-pineapple-rice": {
-      "day_made": "[2019-10-10]",
+      "date_made": "[2019-10-10]",
       "ease_of_making": "3/5",
-      "imgs": "1.JPG,2.JPG,3.JPG",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
+      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "meal_type": "vegan",
       "name": "Pineapple Salsa + Coconut Rice",
       "original_recipe": "https://ohsheglows.com/2012/07/09/grilled-tofu-with-pineapple-salsa-and-coconut-rice/",
       "rating": "3/5",
@@ -2989,122 +2866,113 @@ var db = {
       "belongs_to": "main",
       "slug": "tofu-pineapple-rice",
       "time": "00:50:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Olive oil",
-            "Quantity": "",
-            "Unit": "",
-            "Id": "olive_oil",
-            "Group": "tofu"
-          },
-          {
-            "Ingredient": "Bell pepper",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "bell_pepper",
-            "Group": "pineapple salsa"
-          },
-          {
-            "Ingredient": "Tofu (firm)",
-            "Quantity": "1",
-            "Unit": "package",
-            "Id": "tofu",
-            "Group": "tofu"
-          },
-          {
-            "Ingredient": "Salt",
-            "Quantity": "",
-            "Unit": "pinch",
-            "Id": "salt",
-            "Group": "tofu"
-          },
-          {
-            "Ingredient": "Shredded Coconut",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "shredded_coconut",
-            "Group": "coconut rice"
-          },
-          {
-            "Ingredient": "Brown rice",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "brown_rice",
-            "Group": "coconut rice"
-          },
-          {
-            "Ingredient": "Coconut milk",
-            "Quantity": "1",
-            "Unit": "can (400ml)",
-            "Id": "coconut_milk",
-            "Group": "coconut rice"
-          },
-          {
-            "Ingredient": "Brown Sugar",
-            "Quantity": "2",
-            "Unit": "tsp",
-            "Id": "brown_sugar",
-            "Group": "coconut rice"
-          },
-          {
-            "Ingredient": "Coconut oil",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "coconut_oil",
-            "Group": "coconut rice"
-          },
-          {
-            "Ingredient": "Pineapple (diced)",
-            "Quantity": "1+1/2",
-            "Unit": "cups",
-            "Id": "pineapple",
-            "Group": "pineapple salsa"
-          },
-          {
-            "Ingredient": "Red onion (diced)",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "red_onion",
-            "Group": "pineapple salsa"
-          },
-          {
-            "Ingredient": "Jalapenos (seeded, diced)",
-            "Quantity": "1",
-            "Unit": "pepper",
-            "Id": "jalapenos",
-            "Group": "pineapple salsa"
-          },
-          {
-            "Ingredient": "Garlic (minced)",
-            "Quantity": "1",
-            "Unit": "clove",
-            "Id": "garlic",
-            "Group": "pineapple salsa"
-          },
-          {
-            "Ingredient": "Fresh lime juice",
-            "Quantity": "3",
-            "Unit": "tbsp",
-            "Id": "lime_juice",
-            "Group": "pineapple salsa"
-          },
-          {
-            "Ingredient": "Red pepper flakes",
-            "Quantity": "1",
-            "Unit": "dash",
-            "Id": "red_pepper_flakes",
-            "Group": "pineapple salsa"
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Olive oil",
+          "Quantity": "",
+          "Unit": "",
+          "Id": "olive_oil",
+          "Group": "tofu"
+        },
+        {
+          "Ingredient": "Bell pepper",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "bell_pepper",
+          "Group": "pineapple salsa"
+        },
+        {
+          "Ingredient": "Tofu (firm)",
+          "Quantity": "1",
+          "Unit": "package",
+          "Id": "tofu",
+          "Group": "tofu"
+        },
+        {
+          "Ingredient": "Salt",
+          "Quantity": "",
+          "Unit": "pinch",
+          "Id": "salt",
+          "Group": "tofu"
+        },
+        {
+          "Ingredient": "Shredded Coconut",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "shredded_coconut",
+          "Group": "coconut rice"
+        },
+        {
+          "Ingredient": "Brown rice",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "brown_rice",
+          "Group": "coconut rice"
+        },
+        {
+          "Ingredient": "Coconut milk",
+          "Quantity": "1",
+          "Unit": "can (400ml)",
+          "Id": "coconut_milk",
+          "Group": "coconut rice"
+        },
+        {
+          "Ingredient": "Brown Sugar",
+          "Quantity": "2",
+          "Unit": "tsp",
+          "Id": "brown_sugar",
+          "Group": "coconut rice"
+        },
+        {
+          "Ingredient": "Coconut oil",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "coconut_oil",
+          "Group": "coconut rice"
+        },
+        {
+          "Ingredient": "Pineapple (diced)",
+          "Quantity": "1+1/2",
+          "Unit": "cups",
+          "Id": "pineapple",
+          "Group": "pineapple salsa"
+        },
+        {
+          "Ingredient": "Red onion (diced)",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "red_onion",
+          "Group": "pineapple salsa"
+        },
+        {
+          "Ingredient": "Jalapenos (seeded, diced)",
+          "Quantity": "1",
+          "Unit": "pepper",
+          "Id": "jalapenos",
+          "Group": "pineapple salsa"
+        },
+        {
+          "Ingredient": "Garlic (minced)",
+          "Quantity": "1",
+          "Unit": "clove",
+          "Id": "garlic",
+          "Group": "pineapple salsa"
+        },
+        {
+          "Ingredient": "Fresh lime juice",
+          "Quantity": "3",
+          "Unit": "tbsp",
+          "Id": "lime_juice",
+          "Group": "pineapple salsa"
+        },
+        {
+          "Ingredient": "Red pepper flakes",
+          "Quantity": "1",
+          "Unit": "dash",
+          "Id": "red_pepper_flakes",
+          "Group": "pineapple salsa"
+        }
+      ],
       "instructions": [
         {
           "o": "[&:00:20:00] Press the [#: tofu | tofu] for about 20 minutes (put something heavy on it.)",
@@ -3246,126 +3114,116 @@ var db = {
     },
     "pear-brie-salad": {
       "belongs_to": "salad",
-      "day_made": "[2019-09-19]",
+      "date_made": "[2019-09-19]",
       "ease_of_making": "5/5",
-      "imgs": "1.JPG,2.JPG,3.JPG",
-      "is_vegan": "false",
-      "is_vegetarian": "true",
+      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "meal_type": "vegetarian",
       "name": "Pear + Brie Salad",
       "original_recipe": "https://www.theorganickitchen.org/pears-and-brie-salad-with-honey-champagne-vinaigrette/",
       "rating": "5/5",
       "serves": "2",
       "slug": "pear-brie-salad",
       "time": "00:30:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Broccoli",
-            "Quantity": "2",
-            "Unit": "cups",
-            "Id": "broc",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Potatoes (chopped)",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "potatoes",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Dill",
-            "Quantity": "1",
-            "Unit": "sprig",
-            "Id": "dill",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Pears (sliced)",
-            "Quantity": "2",
-            "Unit": "",
-            "Id": "pears",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Brie cheese",
-            "Quantity": "4-6",
-            "Unit": "slices",
-            "Id": "cheese",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Cranberries",
-            "Quantity": "1/3",
-            "Unit": "cups",
-            "Id": "cran",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Avocado",
-            "Quantity": "1/2",
-            "Unit": "",
-            "Id": "avocado",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Pecans (chopped)",
-            "Quantity": "1/3",
-            "Unit": "cups",
-            "Id": "pecans",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Olive oil",
-            "Quantity": "1/2",
-            "Unit": "cups",
-            "Id": "oil-olive",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Apple cider vinegar",
-            "Quantity": "2",
-            "Unit": "tsp",
-            "Id": "vinegar-apple",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Rice wine vinegar",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "vinegar-rice-wine",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Shallots (minced)",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "shallots",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Maple Syrup",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "maple-syrup",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Pepper",
-            "Quantity": "1",
-            "Unit": "pinch",
-            "Id": "pepper",
-            "Group": "dressing"
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Broccoli",
+          "Quantity": "2",
+          "Unit": "cups",
+          "Id": "broc",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Potatoes (chopped)",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "potatoes",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Dill",
+          "Quantity": "1",
+          "Unit": "sprig",
+          "Id": "dill",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Pears (sliced)",
+          "Quantity": "2",
+          "Unit": "",
+          "Id": "pears",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Brie cheese",
+          "Quantity": "4-6",
+          "Unit": "slices",
+          "Id": "cheese",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Cranberries",
+          "Quantity": "1/3",
+          "Unit": "cups",
+          "Id": "cran",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Avocado",
+          "Quantity": "1/2",
+          "Unit": "",
+          "Id": "avocado",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Pecans (chopped)",
+          "Quantity": "1/3",
+          "Unit": "cups",
+          "Id": "pecans",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Olive oil",
+          "Quantity": "1/2",
+          "Unit": "cups",
+          "Id": "oil-olive",
+          "Group": "dressing"
+        },
+        {
+          "Ingredient": "Apple cider vinegar",
+          "Quantity": "2",
+          "Unit": "tsp",
+          "Id": "vinegar-apple",
+          "Group": "dressing"
+        },
+        {
+          "Ingredient": "Rice wine vinegar",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "vinegar-rice-wine",
+          "Group": "dressing"
+        },
+        {
+          "Ingredient": "Shallots (minced)",
+          "Quantity": "1",
+          "Unit": "tbsp",
+          "Id": "shallots",
+          "Group": "dressing"
+        },
+        {
+          "Ingredient": "Maple Syrup",
+          "Quantity": "1",
+          "Unit": "tbsp",
+          "Id": "maple-syrup",
+          "Group": "dressing"
+        },
+        {
+          "Ingredient": "Pepper",
+          "Quantity": "1",
+          "Unit": "pinch",
+          "Id": "pepper",
+          "Group": "dressing"
+        }
+      ],
       "instructions": [
         {
           "o": "Preheat oven to 425.",
@@ -3498,119 +3356,109 @@ var db = {
     },
     "salad-raw-beet": {
       "belongs_to": "salad",
-      "day_made": "[2019-09-24]",
+      "date_made": "[2019-09-24]",
       "ease_of_making": "4/5",
-      "imgs": "1.JPG,2.JPG,3.JPG,5.gif",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
+      "imgs": "1.JPG, 2.JPG, 3.JPG, 5.gif",
+      "meal_type": "vegan",
       "name": "Raw Beet Salad w/ Quinoa",
       "original_recipe": "https://cookieandkate.com/raw-beet-salad-with-carrot-quinoa-spinach",
       "rating": "4/5",
       "serves": "2",
       "slug": "salad-raw-beet",
       "time": "00:50:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Quinoa",
-            "Quantity": "1/2",
-            "Unit": "cups",
-            "Id": "quin",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Edamame",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "eda",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Nuts (almonds, pecans, whatever)",
-            "Quantity": "1/3",
-            "Unit": "cups",
-            "Id": "nuts",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "A Beet (peeled)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "beet",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "A Large carrot",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "carrot",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Baby Spinach or Arugula",
-            "Quantity": "2",
-            "Unit": "cups",
-            "Id": "greens",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Avocado (cubed)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "avo",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Apple Cider Vinegar",
-            "Quantity": "3",
-            "Unit": "tbsp",
-            "Id": "vin",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Lime Juice",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "lime",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Olive Oil",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "oil",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Maple Syrup",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "syr",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Dijon Mustard",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "dij",
-            "Group": "dressing"
-          },
-          {
-            "Ingredient": "Salt, Pepper",
-            "Quantity": "1",
-            "Unit": "dash",
-            "Id": "salt",
-            "Group": "dressing"
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Quinoa",
+          "Quantity": "1/2",
+          "Unit": "cups",
+          "Id": "quin",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Edamame",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "eda",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Nuts (almonds, pecans, whatever)",
+          "Quantity": "1/3",
+          "Unit": "cups",
+          "Id": "nuts",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "A Beet (peeled)",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "beet",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "A Large carrot",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "carrot",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Baby Spinach or Arugula",
+          "Quantity": "2",
+          "Unit": "cups",
+          "Id": "greens",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Avocado (cubed)",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "avo",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Apple Cider Vinegar",
+          "Quantity": "3",
+          "Unit": "tbsp",
+          "Id": "vin",
+          "Group": "dressing"
+        },
+        {
+          "Ingredient": "Lime Juice",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "lime",
+          "Group": "dressing"
+        },
+        {
+          "Ingredient": "Olive Oil",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "oil",
+          "Group": "dressing"
+        },
+        {
+          "Ingredient": "Maple Syrup",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "syr",
+          "Group": "dressing"
+        },
+        {
+          "Ingredient": "Dijon Mustard",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "dij",
+          "Group": "dressing"
+        },
+        {
+          "Ingredient": "Salt, Pepper",
+          "Quantity": "1",
+          "Unit": "dash",
+          "Id": "salt",
+          "Group": "dressing"
+        }
+      ],
       "instructions": [
         {
           "o": "[&:00:15:00] Cook the [#: quin | quinoa]: combine the quinoa with 1 cup of water. Bring to a boil, reduce heat and simmer for 15 minutes.",
@@ -3752,111 +3600,102 @@ var db = {
     },
     "black-bean-salad": {
       "belongs_to": "salad",
-      "day_made": "[2019-10-03]",
+      "date_made": "[2019-10-03]",
       "ease_of_making": "5/5",
-      "imgs": "1.JPG,2.JPG,3.JPG",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
+      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "meal_type": "vegan",
       "name": "Black Bean Salad",
       "original_recipe": "https://cookieandkate.com/black-bean-salad-recipe/",
       "rating": "5/5",
       "serves": "4",
       "slug": "black-bean-salad",
       "time": "00:20:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id"
-        ],
-        "data": [
-          {
-            "Ingredient": "Black beans",
-            "Quantity": "3",
-            "Unit": "Cans (15oz/each)",
-            "Id": "beans"
-          },
-          {
-            "Ingredient": "Canned Corn",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "corn"
-          },
-          {
-            "Ingredient": "Bell Pepper (any colour)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "pepper"
-          },
-          {
-            "Ingredient": "Cherry Tomatoes",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "tomatoes"
-          },
-          {
-            "Ingredient": "Red Onion (diced)",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "onion"
-          },
-          {
-            "Ingredient": "Jalapeno (seeds optional)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "jalap"
-          },
-          {
-            "Ingredient": "Lime Zest",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "lime-zest"
-          },
-          {
-            "Ingredient": "Lime juice",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "lime-juice"
-          },
-          {
-            "Ingredient": "Olive oil",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "oil"
-          },
-          {
-            "Ingredient": "White vinegar",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "vin-wh"
-          },
-          {
-            "Ingredient": "Chili powder",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "chil"
-          },
-          {
-            "Ingredient": "Cumin",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "cumin"
-          },
-          {
-            "Ingredient": "Salt",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "salt"
-          },
-          {
-            "Ingredient": "Sliced Avocado (optional)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "avo"
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Black beans",
+          "Quantity": "3",
+          "Unit": "Cans (15oz/each)",
+          "Id": "beans"
+        },
+        {
+          "Ingredient": "Canned Corn",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "corn"
+        },
+        {
+          "Ingredient": "Bell Pepper (any colour)",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "pepper"
+        },
+        {
+          "Ingredient": "Cherry Tomatoes",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "tomatoes"
+        },
+        {
+          "Ingredient": "Red Onion (diced)",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "onion"
+        },
+        {
+          "Ingredient": "Jalapeno (seeds optional)",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "jalap"
+        },
+        {
+          "Ingredient": "Lime Zest",
+          "Quantity": "1/2",
+          "Unit": "tsp",
+          "Id": "lime-zest"
+        },
+        {
+          "Ingredient": "Lime juice",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "lime-juice"
+        },
+        {
+          "Ingredient": "Olive oil",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "oil"
+        },
+        {
+          "Ingredient": "White vinegar",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "vin-wh"
+        },
+        {
+          "Ingredient": "Chili powder",
+          "Quantity": "1/2",
+          "Unit": "tsp",
+          "Id": "chil"
+        },
+        {
+          "Ingredient": "Cumin",
+          "Quantity": "1/2",
+          "Unit": "tsp",
+          "Id": "cumin"
+        },
+        {
+          "Ingredient": "Salt",
+          "Quantity": "1/2",
+          "Unit": "tsp",
+          "Id": "salt"
+        },
+        {
+          "Ingredient": "Sliced Avocado (optional)",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "avo"
+        }
+      ],
       "instructions": [
         {
           "o": "In a large serving bowl combine all the ingredients.",
@@ -3886,70 +3725,60 @@ var db = {
     },
     "marinated-tofu": {
       "belongs_to": "side",
-      "day_made": "[2019-09-02]",
+      "date_made": "[2019-09-02]",
       "ease_of_making": "5/5",
       "imgs": "false",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
+      "meal_type": "vegan",
       "name": "Easy Marinated Tofu",
       "original_recipe": "https://simpleveganblog.com/easy-marinated-tofu/",
       "rating": "4/5",
       "serves": "2",
       "slug": "marinated-tofu",
       "time": "00:25:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Tofu",
-            "Quantity": "1",
-            "Unit": "brick",
-            "Id": "tofu",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Water",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "water",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Soy Sauce",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "sauce-soy",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Maple syrup",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "maple-syrup",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Apple cider vinegar",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "vinegar-apple-cider",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Garlic powder",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "powder-garlic",
-            "Group": ""
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Tofu",
+          "Quantity": "1",
+          "Unit": "brick",
+          "Id": "tofu",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Water",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "water",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Soy Sauce",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "sauce-soy",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Maple syrup",
+          "Quantity": "1",
+          "Unit": "tbsp",
+          "Id": "maple-syrup",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Apple cider vinegar",
+          "Quantity": "1",
+          "Unit": "tbsp",
+          "Id": "vinegar-apple-cider",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Garlic powder",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "powder-garlic",
+          "Group": ""
+        }
+      ],
       "instructions": [
         {
           "o": "[&:00:20:00] Press the [#: tofu | tofu] for a while (around 20 minutes). Then dice/cube it.",
@@ -4004,81 +3833,72 @@ var db = {
     },
     "miso-asparagus": {
       "belongs_to": "side",
-      "day_made": "[2019-10-01]",
+      "date_made": "[2019-10-01]",
       "ease_of_making": "4/5",
       "imgs": "1.JPG,2.JPG,3.gif",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
+      "meal_type": "vegan",
       "name": "Miso Asparagus",
       "original_recipe": "https://www.bonappetit.com/recipe/ginger-miso-grilled-asparagus",
       "rating": "2.5/5",
       "serves": "2",
       "slug": "miso-asparagus",
       "time": "00:30:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id"
-        ],
-        "data": [
-          {
-            "Ingredient": "Mirin",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "mirin"
-          },
-          {
-            "Ingredient": "Miso",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "miso"
-          },
-          {
-            "Ingredient": "Rice Wine Vinegar",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "rwv"
-          },
-          {
-            "Ingredient": "Ginger - peeled and grated",
-            "Quantity": "2",
-            "Unit": "tsp",
-            "Id": "ginger"
-          },
-          {
-            "Ingredient": "Asparagus",
-            "Quantity": "2",
-            "Unit": "bunches",
-            "Id": "asp"
-          },
-          {
-            "Ingredient": "Lime wedges",
-            "Quantity": "4",
-            "Unit": "",
-            "Id": "lime"
-          },
-          {
-            "Ingredient": "Scallions (Green onions)",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "scall"
-          },
-          {
-            "Ingredient": "Sesame Seeds",
-            "Quantity": "",
-            "Unit": "sprinkle",
-            "Id": "seeds"
-          },
-          {
-            "Ingredient": "",
-            "Quantity": "",
-            "Unit": "",
-            "Id": ""
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Mirin",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "mirin"
+        },
+        {
+          "Ingredient": "Miso",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "miso"
+        },
+        {
+          "Ingredient": "Rice Wine Vinegar",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "rwv"
+        },
+        {
+          "Ingredient": "Ginger - peeled and grated",
+          "Quantity": "2",
+          "Unit": "tsp",
+          "Id": "ginger"
+        },
+        {
+          "Ingredient": "Asparagus",
+          "Quantity": "2",
+          "Unit": "bunches",
+          "Id": "asp"
+        },
+        {
+          "Ingredient": "Lime wedges",
+          "Quantity": "4",
+          "Unit": "",
+          "Id": "lime"
+        },
+        {
+          "Ingredient": "Scallions (Green onions)",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "scall"
+        },
+        {
+          "Ingredient": "Sesame Seeds",
+          "Quantity": "",
+          "Unit": "sprinkle",
+          "Id": "seeds"
+        },
+        {
+          "Ingredient": "",
+          "Quantity": "",
+          "Unit": "",
+          "Id": ""
+        }
+      ],
       "instructions": [
         {
           "o": "Prepare a grill to heat.",
@@ -4189,78 +4009,68 @@ var db = {
       }
     },
     "granola-bars": {
-      "original_recipe": "https://minimalistbaker.com/healthy-5-ingredient-granola-bars/",
-      "slug": "granola-bars",
-      "name": "5 Ingredient Granola Bars",
-      "day_made": "[2019-09-01]",
-      "time": "00:25:00",
-      "serves": "10 bars",
-      "is_vegan": "true",
-      "is_vegetarian": "false",
-      "ease_of_making": "5/5",
-      "rating": "5/5",
-      "imgs": "1.JPG,2.JPG,1.gif",
       "belongs_to": "snack",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Dates (Deglet noor or medjool)",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "dates",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Maple Syrup (or: agava nectar, honey)",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "maple-syrup",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Natural Peanut Butter",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "peanut-butter",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Roasted, unsalted almonds",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "almonds",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Rolled Oats",
-            "Quantity": "1+1/2",
-            "Unit": "cups",
-            "Id": "oats-rolled",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Parchment Paper",
-            "Quantity": "",
-            "Unit": "",
-            "Id": "parchment-paper",
-            "Group": ""
-          },
-          {
-            "Ingredient": "8x8 Baking Pan",
-            "Quantity": "",
-            "Unit": "",
-            "Id": "",
-            "Group": ""
-          }
-        ]
-      },
+      "date_made": "[2019-09-01]",
+      "ease_of_making": "5/5",
+      "imgs": "1.JPG,2.JPG,1.gif",
+      "meal_type": "vegan",
+      "name": "5 Ingredient Granola Bars",
+      "original_recipe": "https://minimalistbaker.com/healthy-5-ingredient-granola-bars/",
+      "rating": "5/5",
+      "serves": "10 bars",
+      "slug": "granola-bars",
+      "time": "00:25:00",
+      "ingredients": [
+        {
+          "Ingredient": "Dates (Deglet noor or medjool)",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "dates",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Maple Syrup (or: agava nectar, honey)",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "maple-syrup",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Natural Peanut Butter",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "peanut-butter",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Roasted, unsalted almonds",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "almonds",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Rolled Oats",
+          "Quantity": "1+1/2",
+          "Unit": "cups",
+          "Id": "oats-rolled",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Parchment Paper",
+          "Quantity": "",
+          "Unit": "",
+          "Id": "parchment-paper",
+          "Group": ""
+        },
+        {
+          "Ingredient": "8x8 Baking Pan",
+          "Quantity": "",
+          "Unit": "",
+          "Id": "",
+          "Group": ""
+        }
+      ],
       "instructions": [
         {
           "o": "Chop [#: almonds | almonds] roughly. Put them in a bowl.",
@@ -4357,56 +4167,46 @@ var db = {
     },
     "candied-ginger": {
       "belongs_to": "sweet",
-      "day_made": "[2019-09-02]",
+      "date_made": "[2019-09-02]",
       "ease_of_making": "2/5",
-      "imgs": "1.JPG,2.JPG,3.JPG",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
+      "imgs": "1.JPG, 2.JPG, 3.JPG",
       "name": "Candied Ginger",
+      "meal_type": "vegan",
       "original_recipe": "https://www.davidlebovitz.com/candied-ginger/",
       "rating": "4/5",
       "serves": "one jar! (roughly)",
       "slug": "candied-ginger",
       "time": "04:00:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Ginger",
-            "Quantity": "1",
-            "Unit": "lbs",
-            "Id": "ginger",
-            "Group": ""
-          },
-          {
-            "Ingredient": "White Sugar",
-            "Quantity": "4",
-            "Unit": "cups",
-            "Id": "sugar-white",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Water",
-            "Quantity": "4",
-            "Unit": "cups",
-            "Id": "water",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Salt",
-            "Quantity": "1",
-            "Unit": "pinch",
-            "Id": "salt",
-            "Group": ""
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Ginger",
+          "Quantity": "1",
+          "Unit": "lbs",
+          "Id": "ginger",
+          "Group": ""
+        },
+        {
+          "Ingredient": "White Sugar",
+          "Quantity": "4",
+          "Unit": "cups",
+          "Id": "sugar-white",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Water",
+          "Quantity": "4",
+          "Unit": "cups",
+          "Id": "water",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Salt",
+          "Quantity": "1",
+          "Unit": "pinch",
+          "Id": "salt",
+          "Group": ""
+        }
+      ],
       "instructions": [
         {
           "o": "Peel the [#: ginger | ginger].",
@@ -4531,140 +4331,130 @@ var db = {
     },
     "pumpkin-chiffon-pie": {
       "belongs_to": "sweet",
-      "day_made": "[2019-10-14]",
+      "date_made": "[2019-10-14]",
       "ease_of_making": "3/5",
-      "imgs": "1.JPG,2.JPG,3.JPG",
-      "is_vegan": "false",
-      "is_vegetarian": "true",
+      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "meal_type": "vegetarian",
       "name": "Pumpkin Chiffon Pie",
       "original_recipe": "-",
       "rating": "4/5",
       "serves": "1 pie",
       "slug": "pumpkin-chiffon-pie",
       "time": "01:00:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Whipping cream",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "wc",
-            "Group": "Creamy filling"
-          },
-          {
-            "Ingredient": "Icing sugar",
-            "Quantity": "3/4",
-            "Unit": "cups",
-            "Id": "is",
-            "Group": "Creamy filling"
-          },
-          {
-            "Ingredient": "Vanilla",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "van",
-            "Group": "Creamy filling"
-          },
-          {
-            "Ingredient": "Cinnamon",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "cin",
-            "Group": "Creamy filling"
-          },
-          {
-            "Ingredient": "Plain Gelatin",
-            "Quantity": "1~",
-            "Unit": "tbsp",
-            "Id": "gelatin",
-            "Group": "Pumpkin filling"
-          },
-          {
-            "Ingredient": "Cold Water",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "water",
-            "Group": "Pumpkin filling"
-          },
-          {
-            "Ingredient": "Eggs",
-            "Quantity": "3",
-            "Unit": "",
-            "Id": "eggs",
-            "Group": "Pumpkin filling"
-          },
-          {
-            "Ingredient": "White sugar",
-            "Quantity": "1/3",
-            "Unit": "cups",
-            "Id": "ws",
-            "Group": "Pumpkin filling"
-          },
-          {
-            "Ingredient": "Cinnamon",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "cin2",
-            "Group": "Pumpkin filling"
-          },
-          {
-            "Ingredient": "Ginger",
-            "Quantity": "1/4",
-            "Unit": "tsp",
-            "Id": "ginger",
-            "Group": "Pumpkin filling"
-          },
-          {
-            "Ingredient": "Salt",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "salt",
-            "Group": "Pumpkin filling"
-          },
-          {
-            "Ingredient": "Allspice",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "allspice",
-            "Group": "Pumpkin filling"
-          },
-          {
-            "Ingredient": "Canned pumpkin",
-            "Quantity": "1+1/4",
-            "Unit": "cups",
-            "Id": "pumpkin",
-            "Group": "Pumpkin filling"
-          },
-          {
-            "Ingredient": "Milk",
-            "Quantity": "1/2",
-            "Unit": "cups",
-            "Id": "milk",
-            "Group": "Pumpkin filling"
-          },
-          {
-            "Ingredient": "Icing sugar",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "icsug",
-            "Group": "Pumpkin filling"
-          },
-          {
-            "Ingredient": "Pre-made crust shell",
-            "Quantity": "",
-            "Unit": "",
-            "Id": "",
-            "Group": "Crust"
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Whipping cream",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "wc",
+          "Group": "Creamy filling"
+        },
+        {
+          "Ingredient": "Icing sugar",
+          "Quantity": "3/4",
+          "Unit": "cups",
+          "Id": "is",
+          "Group": "Creamy filling"
+        },
+        {
+          "Ingredient": "Vanilla",
+          "Quantity": "1/2",
+          "Unit": "tsp",
+          "Id": "van",
+          "Group": "Creamy filling"
+        },
+        {
+          "Ingredient": "Cinnamon",
+          "Quantity": "1/2",
+          "Unit": "tsp",
+          "Id": "cin",
+          "Group": "Creamy filling"
+        },
+        {
+          "Ingredient": "Plain Gelatin",
+          "Quantity": "1~",
+          "Unit": "tbsp",
+          "Id": "gelatin",
+          "Group": "Pumpkin filling"
+        },
+        {
+          "Ingredient": "Cold Water",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "water",
+          "Group": "Pumpkin filling"
+        },
+        {
+          "Ingredient": "Eggs",
+          "Quantity": "3",
+          "Unit": "",
+          "Id": "eggs",
+          "Group": "Pumpkin filling"
+        },
+        {
+          "Ingredient": "White sugar",
+          "Quantity": "1/3",
+          "Unit": "cups",
+          "Id": "ws",
+          "Group": "Pumpkin filling"
+        },
+        {
+          "Ingredient": "Cinnamon",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "cin2",
+          "Group": "Pumpkin filling"
+        },
+        {
+          "Ingredient": "Ginger",
+          "Quantity": "1/4",
+          "Unit": "tsp",
+          "Id": "ginger",
+          "Group": "Pumpkin filling"
+        },
+        {
+          "Ingredient": "Salt",
+          "Quantity": "1/2",
+          "Unit": "tsp",
+          "Id": "salt",
+          "Group": "Pumpkin filling"
+        },
+        {
+          "Ingredient": "Allspice",
+          "Quantity": "1/2",
+          "Unit": "tsp",
+          "Id": "allspice",
+          "Group": "Pumpkin filling"
+        },
+        {
+          "Ingredient": "Canned pumpkin",
+          "Quantity": "1+1/4",
+          "Unit": "cups",
+          "Id": "pumpkin",
+          "Group": "Pumpkin filling"
+        },
+        {
+          "Ingredient": "Milk",
+          "Quantity": "1/2",
+          "Unit": "cups",
+          "Id": "milk",
+          "Group": "Pumpkin filling"
+        },
+        {
+          "Ingredient": "Icing sugar",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "icsug",
+          "Group": "Pumpkin filling"
+        },
+        {
+          "Ingredient": "Pre-made crust shell",
+          "Quantity": "",
+          "Unit": "",
+          "Id": "",
+          "Group": "Crust"
+        }
+      ],
       "instructions": [
         {
           "o": "Prepare the pie shell based on its package instructions. They should outline how long to bake the shell without a filling but if not - bake for 8-10 minutes at 425c.",
@@ -4861,148 +4651,138 @@ var db = {
       }
     },
     "mediterranean-baked-sweet-potatoes": {
-      "original_recipe": "https://minimalistbaker.com/mediterranean-baked-sweet-potatoes/",
-      "slug": "mediterranean-baked-sweet-potatoes",
-      "day_made": "[2019-11-11]",
-      "name": "Mediterranean Baked Sweet Potatoes",
-      "serves": "2",
-      "time": "01:00:00",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
-      "ease_of_making": "5/5",
-      "rating": "5/5",
-      "imgs": "1.JPG,2.JPG,3.JPG",
       "belongs_to": "main",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Sweet Potato",
-            "Quantity": "2",
-            "Unit": "",
-            "Id": "sw",
-            "Group": "Main"
-          },
-          {
-            "Ingredient": "Chickpeas",
-            "Quantity": "15",
-            "Unit": "oz",
-            "Id": "chick",
-            "Group": "Main"
-          },
-          {
-            "Ingredient": "Olive Oil",
-            "Quantity": "1/2",
-            "Unit": "tbsp",
-            "Id": "oil",
-            "Group": "Main"
-          },
-          {
-            "Ingredient": "Cumin",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "cumin",
-            "Group": "Main"
-          },
-          {
-            "Ingredient": "Coriander",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "cor",
-            "Group": "Main"
-          },
-          {
-            "Ingredient": "Cinnamon",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "cin",
-            "Group": "Main"
-          },
-          {
-            "Ingredient": "Paprika",
-            "Quantity": "l",
-            "Unit": "tsp",
-            "Id": "pap",
-            "Group": "Main"
-          },
-          {
-            "Ingredient": "Hummus",
-            "Quantity": "1/4",
-            "Unit": "cup",
-            "Id": "hum",
-            "Group": "Garlic Herb Sauce"
-          },
-          {
-            "Ingredient": "Dried Dill",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "dill",
-            "Group": "Garlic Herb Sauce"
-          },
-          {
-            "Ingredient": "Garlic",
-            "Quantity": "3",
-            "Unit": "cloves",
-            "Id": "garlic",
-            "Group": "Garlic Herb Sauce"
-          },
-          {
-            "Ingredient": "Lemon",
-            "Quantity": "1/2",
-            "Unit": "lemon",
-            "Id": "lem",
-            "Group": "Garlic Herb Sauce"
-          },
-          {
-            "Ingredient": "Water",
-            "Quantity": "",
-            "Unit": "splash",
-            "Id": "water",
-            "Group": "Garlic Herb Sauce"
-          },
-          {
-            "Ingredient": "Salt",
-            "Quantity": "",
-            "Unit": "pinch",
-            "Id": "salt",
-            "Group": "Garlic Herb Sauce"
-          },
-          {
-            "Ingredient": "Cherry Tomatoes",
-            "Quantity": "1/4",
-            "Unit": "cup",
-            "Id": "tomat",
-            "Group": "Toppings"
-          },
-          {
-            "Ingredient": "Chopped Cilantro",
-            "Quantity": "1/4",
-            "Unit": "cup",
-            "Id": "cil",
-            "Group": "Toppings"
-          },
-          {
-            "Ingredient": "Lemon Juice",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "lemju",
-            "Group": "Toppings"
-          },
-          {
-            "Ingredient": "Chili Garlic Sauce",
-            "Quantity": "",
-            "Unit": "pinch",
-            "Id": "chilsauce",
-            "Group": "Toppings"
-          }
-        ]
-      },
+      "date_made": "[2019-11-11]",
+      "ease_of_making": "5/5",
+      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "meal_type": "vegan",
+      "name": "Mediterranean Baked Sweet Potatoes",
+      "original_recipe": "https://minimalistbaker.com/mediterranean-baked-sweet-potatoes/",
+      "rating": "5/5",
+      "serves": "2",
+      "slug": "mediterranean-baked-sweet-potatoes",
+      "time": "01:00:00",
+      "ingredients": [
+        {
+          "Ingredient": "Sweet Potato",
+          "Quantity": "2",
+          "Unit": "",
+          "Id": "sw",
+          "Group": "Main"
+        },
+        {
+          "Ingredient": "Chickpeas",
+          "Quantity": "15",
+          "Unit": "oz",
+          "Id": "chick",
+          "Group": "Main"
+        },
+        {
+          "Ingredient": "Olive Oil",
+          "Quantity": "1/2",
+          "Unit": "tbsp",
+          "Id": "oil",
+          "Group": "Main"
+        },
+        {
+          "Ingredient": "Cumin",
+          "Quantity": "1/2",
+          "Unit": "tsp",
+          "Id": "cumin",
+          "Group": "Main"
+        },
+        {
+          "Ingredient": "Coriander",
+          "Quantity": "1/2",
+          "Unit": "tsp",
+          "Id": "cor",
+          "Group": "Main"
+        },
+        {
+          "Ingredient": "Cinnamon",
+          "Quantity": "1/2",
+          "Unit": "tsp",
+          "Id": "cin",
+          "Group": "Main"
+        },
+        {
+          "Ingredient": "Paprika",
+          "Quantity": "l",
+          "Unit": "tsp",
+          "Id": "pap",
+          "Group": "Main"
+        },
+        {
+          "Ingredient": "Hummus",
+          "Quantity": "1/4",
+          "Unit": "cup",
+          "Id": "hum",
+          "Group": "Garlic Herb Sauce"
+        },
+        {
+          "Ingredient": "Dried Dill",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "dill",
+          "Group": "Garlic Herb Sauce"
+        },
+        {
+          "Ingredient": "Garlic",
+          "Quantity": "3",
+          "Unit": "cloves",
+          "Id": "garlic",
+          "Group": "Garlic Herb Sauce"
+        },
+        {
+          "Ingredient": "Lemon",
+          "Quantity": "1/2",
+          "Unit": "lemon",
+          "Id": "lem",
+          "Group": "Garlic Herb Sauce"
+        },
+        {
+          "Ingredient": "Water",
+          "Quantity": "",
+          "Unit": "splash",
+          "Id": "water",
+          "Group": "Garlic Herb Sauce"
+        },
+        {
+          "Ingredient": "Salt",
+          "Quantity": "",
+          "Unit": "pinch",
+          "Id": "salt",
+          "Group": "Garlic Herb Sauce"
+        },
+        {
+          "Ingredient": "Cherry Tomatoes",
+          "Quantity": "1/4",
+          "Unit": "cup",
+          "Id": "tomat",
+          "Group": "Toppings"
+        },
+        {
+          "Ingredient": "Chopped Cilantro",
+          "Quantity": "1/4",
+          "Unit": "cup",
+          "Id": "cil",
+          "Group": "Toppings"
+        },
+        {
+          "Ingredient": "Lemon Juice",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "lemju",
+          "Group": "Toppings"
+        },
+        {
+          "Ingredient": "Chili Garlic Sauce",
+          "Quantity": "",
+          "Unit": "pinch",
+          "Id": "chilsauce",
+          "Group": "Toppings"
+        }
+      ],
       "instructions": [
         {
           "o": "Preheat oven to 400 degrees. Line a large baking sheet with foil.",
@@ -5137,134 +4917,124 @@ var db = {
       }
     },
     "chickpea-cauliflower-curry": {
-      "original_recipe": "https://minimalistbaker.com/1-pot-yellow-chickpea-cauliflower-curry/",
-      "slug": "chickpea-cauliflower-curry",
-      "day_made": "[2019-11-12]",
-      "name": "Chickpea Cauliflower Curry",
-      "serves": "2",
-      "time": "00:45:00",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
-      "ease_of_making": "5/5",
-      "rating": "4/5",
-      "imgs": "1.JPG,2.JPG,3.JPG",
       "belongs_to": "main",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Coconut oil",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "coco",
-            "Group": "Curry"
-          },
-          {
-            "Ingredient": "Shallot",
-            "Quantity": "1/3",
-            "Unit": "cups",
-            "Id": "shal",
-            "Group": "Curry"
-          },
-          {
-            "Ingredient": "Garlic",
-            "Quantity": "4",
-            "Unit": "cloves",
-            "Id": "gar",
-            "Group": "Curry"
-          },
-          {
-            "Ingredient": "Ginger",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "gin",
-            "Group": "Curry"
-          },
-          {
-            "Ingredient": "Jalapeno pepper",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "ja",
-            "Group": "Curry"
-          },
-          {
-            "Ingredient": "Curry paste",
-            "Quantity": "4",
-            "Unit": "tbsp",
-            "Id": "cur",
-            "Group": "Curry"
-          },
-          {
-            "Ingredient": "Coconut milk",
-            "Quantity": "2",
-            "Unit": "cups",
-            "Id": "comilk",
-            "Group": "Curry"
-          },
-          {
-            "Ingredient": "Turmeric",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "tur",
-            "Group": "Curry"
-          },
-          {
-            "Ingredient": "Maple Syrup",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "mapsyr",
-            "Group": "Curry"
-          },
-          {
-            "Ingredient": "Soy Sauce",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "soysauce",
-            "Group": "Curry"
-          },
-          {
-            "Ingredient": "Cauliflower",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "caul",
-            "Group": "Curry"
-          },
-          {
-            "Ingredient": "Chickpeas",
-            "Quantity": "1+1/4",
-            "Unit": "cups",
-            "Id": "chick",
-            "Group": "Curry"
-          },
-          {
-            "Ingredient": "Quinoa/Rice",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "quin",
-            "Group": "Base"
-          },
-          {
-            "Ingredient": "Avocado",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "",
-            "Group": "Toppings"
-          },
-          {
-            "Ingredient": "Red onion",
-            "Quantity": "1/2",
-            "Unit": "onion",
-            "Id": "",
-            "Group": "Toppings"
-          }
-        ]
-      },
+      "date_made": "[2019-11-12]",
+      "ease_of_making": "5/5",
+      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "meal_type": "vegan",
+      "name": "Chickpea Cauliflower Curry",
+      "original_recipe": "https://minimalistbaker.com/1-pot-yellow-chickpea-cauliflower-curry/",
+      "rating": "4/5",
+      "serves": "2",
+      "slug": "chickpea-cauliflower-curry",
+      "time": "00:45:00",
+      "ingredients": [
+        {
+          "Ingredient": "Coconut oil",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "coco",
+          "Group": "Curry"
+        },
+        {
+          "Ingredient": "Shallot",
+          "Quantity": "1/3",
+          "Unit": "cups",
+          "Id": "shal",
+          "Group": "Curry"
+        },
+        {
+          "Ingredient": "Garlic",
+          "Quantity": "4",
+          "Unit": "cloves",
+          "Id": "gar",
+          "Group": "Curry"
+        },
+        {
+          "Ingredient": "Ginger",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "gin",
+          "Group": "Curry"
+        },
+        {
+          "Ingredient": "Jalapeno pepper",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "ja",
+          "Group": "Curry"
+        },
+        {
+          "Ingredient": "Curry paste",
+          "Quantity": "4",
+          "Unit": "tbsp",
+          "Id": "cur",
+          "Group": "Curry"
+        },
+        {
+          "Ingredient": "Coconut milk",
+          "Quantity": "2",
+          "Unit": "cups",
+          "Id": "comilk",
+          "Group": "Curry"
+        },
+        {
+          "Ingredient": "Turmeric",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "tur",
+          "Group": "Curry"
+        },
+        {
+          "Ingredient": "Maple Syrup",
+          "Quantity": "1",
+          "Unit": "tbsp",
+          "Id": "mapsyr",
+          "Group": "Curry"
+        },
+        {
+          "Ingredient": "Soy Sauce",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "soysauce",
+          "Group": "Curry"
+        },
+        {
+          "Ingredient": "Cauliflower",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "caul",
+          "Group": "Curry"
+        },
+        {
+          "Ingredient": "Chickpeas",
+          "Quantity": "1+1/4",
+          "Unit": "cups",
+          "Id": "chick",
+          "Group": "Curry"
+        },
+        {
+          "Ingredient": "Quinoa/Rice",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "quin",
+          "Group": "Base"
+        },
+        {
+          "Ingredient": "Avocado",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "",
+          "Group": "Toppings"
+        },
+        {
+          "Ingredient": "Red onion",
+          "Quantity": "1/2",
+          "Unit": "onion",
+          "Id": "",
+          "Group": "Toppings"
+        }
+      ],
       "instructions": [
         {
           "o": "[&:00:03:00] Heat a large pot. Add [#: coco | Coconut oil]. Add [#: shal | shallot] [#: gar | garlic] and [#: gin | ginger] [#: ja | jalapeno pepper]. Sauté for 2-3 minutes.",
@@ -5405,78 +5175,68 @@ var db = {
       }
     },
     "overnight-oats": {
-      "original_recipe": "https://ohsheglows.com/2015/07/22/vegan-overnight-oats/",
-      "slug": "overnight-oats",
-      "day_made": "[2019-11-12]",
-      "name": "Overnight Oats",
-      "serves": "2",
-      "time": "00:10:00",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
-      "ease_of_making": "5/5",
-      "rating": "5/5",
-      "imgs": "1.JPG,2.JPG,3.JPG",
       "belongs_to": "breakfast",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Ripe / Spotty Bananas",
-            "Quantity": "2",
-            "Unit": "",
-            "Id": "ban",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Chia Seeds",
-            "Quantity": "4",
-            "Unit": "tbsp",
-            "Id": "chia",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Cinnamon",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "cin",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Almond Milk",
-            "Quantity": "1+1/2",
-            "Unit": "cups",
-            "Id": "almilk",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Oats",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "oats",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Vanilla Extract",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "van",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Fresh fruit",
-            "Quantity": "Optional",
-            "Unit": "",
-            "Id": "",
-            "Group": ""
-          }
-        ]
-      },
+      "date_made": "[2019-11-12]",
+      "ease_of_making": "5/5",
+      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "meal_type": "vegan",
+      "name": "Overnight Oats",
+      "original_recipe": "https://ohsheglows.com/2015/07/22/vegan-overnight-oats/",
+      "rating": "5/5",
+      "serves": "2",
+      "slug": "overnight-oats",
+      "time": "00:10:00",
+      "ingredients": [
+        {
+          "Ingredient": "Ripe / Spotty Bananas",
+          "Quantity": "2",
+          "Unit": "",
+          "Id": "ban",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Chia Seeds",
+          "Quantity": "4",
+          "Unit": "tbsp",
+          "Id": "chia",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Cinnamon",
+          "Quantity": "1/2",
+          "Unit": "tsp",
+          "Id": "cin",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Almond Milk",
+          "Quantity": "1+1/2",
+          "Unit": "cups",
+          "Id": "almilk",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Oats",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "oats",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Vanilla Extract",
+          "Quantity": "1/2",
+          "Unit": "tsp",
+          "Id": "van",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Fresh fruit",
+          "Quantity": "Optional",
+          "Unit": "",
+          "Id": "",
+          "Group": ""
+        }
+      ],
       "instructions": [
         {
           "o": "In a bowl, mash [#: ban | bananas] until smooth. Stir in [#: chia | chia seeds] and [#: cin | cinnamon] to combine.",
@@ -5563,120 +5323,110 @@ var db = {
       }
     },
     "orange-orzo-salad": {
-      "original_recipe": "https://ohsheglows.com/2015/07/22/vegan-overnight-oats/",
-      "slug": "orange-orzo-salad",
-      "day_made": "[2019-11-13]",
-      "name": "Orange Orzo Salad",
-      "serves": "2",
-      "time": "00:30:00",
-      "is_vegan": "false",
-      "is_vegetarian": "true",
-      "ease_of_making": "4/5",
-      "rating": "5/5",
-      "imgs": "1.JPG,2.JPG,3.JPG",
       "belongs_to": "salad",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Orzo Pasta",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "orzo",
-            "Group": "Salad"
-          },
-          {
-            "Ingredient": "Almonds",
-            "Quantity": "1/2",
-            "Unit": "cups",
-            "Id": "al",
-            "Group": "Salad"
-          },
-          {
-            "Ingredient": "Chopped Parsley",
-            "Quantity": "1",
-            "Unit": "cups",
-            "Id": "par",
-            "Group": "Salad"
-          },
-          {
-            "Ingredient": "Pitted Kalamata Olives",
-            "Quantity": "1/2",
-            "Unit": "cups",
-            "Id": "oli",
-            "Group": "Salad"
-          },
-          {
-            "Ingredient": "Chopped Green onion",
-            "Quantity": "1/2",
-            "Unit": "cups",
-            "Id": "go",
-            "Group": "Salad"
-          },
-          {
-            "Ingredient": "Raisins",
-            "Quantity": "1/2",
-            "Unit": "cups",
-            "Id": "rai",
-            "Group": "Salad"
-          },
-          {
-            "Ingredient": "Feta (optional)",
-            "Quantity": "1/2",
-            "Unit": "cups",
-            "Id": "feta",
-            "Group": "Salad"
-          },
-          {
-            "Ingredient": "Orange Zest",
-            "Quantity": "1",
-            "Unit": "tsp",
-            "Id": "zest",
-            "Group": "Dressing"
-          },
-          {
-            "Ingredient": "Fresh Orange Juice",
-            "Quantity": "1-2",
-            "Unit": "oranges",
-            "Id": "orange",
-            "Group": "Dressing"
-          },
-          {
-            "Ingredient": "Olive oil",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "oil",
-            "Group": "Dressing"
-          },
-          {
-            "Ingredient": "White wine vinegar",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "vin",
-            "Group": "Dressing"
-          },
-          {
-            "Ingredient": "Minced Garlic",
-            "Quantity": "1",
-            "Unit": "clove",
-            "Id": "gar",
-            "Group": "Dressing"
-          },
-          {
-            "Ingredient": "Salt",
-            "Quantity": "1/4",
-            "Unit": "tsp",
-            "Id": "sel",
-            "Group": "Dressing"
-          }
-        ]
-      },
+      "date_made": "[2019-11-13]",
+      "ease_of_making": "4/5",
+      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "meal_type": "vegetarian",
+      "name": "Orange Orzo Salad",
+      "original_recipe": "https://ohsheglows.com/2015/07/22/vegan-overnight-oats/",
+      "rating": "5/5",
+      "serves": "2",
+      "slug": "orange-orzo-salad",
+      "time": "00:30:00",
+      "ingredients": [
+        {
+          "Ingredient": "Orzo Pasta",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "orzo",
+          "Group": "Salad"
+        },
+        {
+          "Ingredient": "Almonds",
+          "Quantity": "1/2",
+          "Unit": "cups",
+          "Id": "al",
+          "Group": "Salad"
+        },
+        {
+          "Ingredient": "Chopped Parsley",
+          "Quantity": "1",
+          "Unit": "cups",
+          "Id": "par",
+          "Group": "Salad"
+        },
+        {
+          "Ingredient": "Pitted Kalamata Olives",
+          "Quantity": "1/2",
+          "Unit": "cups",
+          "Id": "oli",
+          "Group": "Salad"
+        },
+        {
+          "Ingredient": "Chopped Green onion",
+          "Quantity": "1/2",
+          "Unit": "cups",
+          "Id": "go",
+          "Group": "Salad"
+        },
+        {
+          "Ingredient": "Raisins",
+          "Quantity": "1/2",
+          "Unit": "cups",
+          "Id": "rai",
+          "Group": "Salad"
+        },
+        {
+          "Ingredient": "Feta (optional)",
+          "Quantity": "1/2",
+          "Unit": "cups",
+          "Id": "feta",
+          "Group": "Salad"
+        },
+        {
+          "Ingredient": "Orange Zest",
+          "Quantity": "1",
+          "Unit": "tsp",
+          "Id": "zest",
+          "Group": "Dressing"
+        },
+        {
+          "Ingredient": "Fresh Orange Juice",
+          "Quantity": "1-2",
+          "Unit": "oranges",
+          "Id": "orange",
+          "Group": "Dressing"
+        },
+        {
+          "Ingredient": "Olive oil",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "oil",
+          "Group": "Dressing"
+        },
+        {
+          "Ingredient": "White wine vinegar",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "vin",
+          "Group": "Dressing"
+        },
+        {
+          "Ingredient": "Minced Garlic",
+          "Quantity": "1",
+          "Unit": "clove",
+          "Id": "gar",
+          "Group": "Dressing"
+        },
+        {
+          "Ingredient": "Salt",
+          "Quantity": "1/4",
+          "Unit": "tsp",
+          "Id": "sel",
+          "Group": "Dressing"
+        }
+      ],
       "instructions": [
         {
           "o": "Bring a large pot of water to poil. Cook the [#: orzo | orzo] according to package instructions. When draining, reserve 1/2 cup of pasta water. Run the orzo under cold water after draining.",
@@ -5814,127 +5564,117 @@ var db = {
       }
     },
     "ratatouille": {
-      "original_recipe": "https://cookieandkate.com/best-ratatouille-recipe/#tasty-recipes-34476",
-      "slug": "ratatouille",
-      "day_made": "[2019-11-14]",
-      "name": "Ratatouille",
-      "serves": "4",
-      "time": "01:20:00",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
-      "ease_of_making": "4/5",
-      "rating": "4/5",
-      "imgs": "1.JPG,2.gif,3.JPG",
       "belongs_to": "main",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Large tomatoes",
-            "Quantity": "4",
-            "Unit": "",
-            "Id": "tomat",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Eggplant (cubed)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "egg",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Bell pepper (diced)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "pep",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Zucchini (cubed)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "zuk",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Yellow Squash (cubed)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "ysqu",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Olive oil",
-            "Quantity": "6",
-            "Unit": "",
-            "Id": "oil",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Salt",
-            "Quantity": "1/4",
-            "Unit": "tsp",
-            "Id": "salt",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Yellow onion (chopped)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "onion",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Garlic (minced)",
-            "Quantity": "4",
-            "Unit": "",
-            "Id": "gar",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Basil  (chopped)",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "bas",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Red pepper flakes",
-            "Quantity": "1/4",
-            "Unit": "tsp",
-            "Id": "flakes",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Dried oregano",
-            "Quantity": "1/4",
-            "Unit": "tsp",
-            "Id": "oreg",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Ground pepper",
-            "Quantity": "",
-            "Unit": "",
-            "Id": "",
-            "Group": ""
-          },
-          {
-            "Ingredient": "Cheese grater/blender",
-            "Quantity": "",
-            "Unit": "",
-            "Id": "",
-            "Group": ""
-          }
-        ]
-      },
+      "date_made": "[2019-11-14]",
+      "ease_of_making": "4/5",
+      "imgs": "1.JPG, 2.gif, 3.JPG",
+      "meal_type": "vegan",
+      "name": "Ratatouille",
+      "original_recipe": "https://cookieandkate.com/best-ratatouille-recipe/#tasty-recipes-34476",
+      "rating": "4/5",
+      "serves": "4",
+      "slug": "ratatouille",
+      "time": "01:20:00",
+      "ingredients": [
+        {
+          "Ingredient": "Large tomatoes",
+          "Quantity": "4",
+          "Unit": "",
+          "Id": "tomat",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Eggplant (cubed)",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "egg",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Bell pepper (diced)",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "pep",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Zucchini (cubed)",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "zuk",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Yellow Squash (cubed)",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "ysqu",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Olive oil",
+          "Quantity": "6",
+          "Unit": "",
+          "Id": "oil",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Salt",
+          "Quantity": "1/4",
+          "Unit": "tsp",
+          "Id": "salt",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Yellow onion (chopped)",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "onion",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Garlic (minced)",
+          "Quantity": "4",
+          "Unit": "",
+          "Id": "gar",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Basil  (chopped)",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "bas",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Red pepper flakes",
+          "Quantity": "1/4",
+          "Unit": "tsp",
+          "Id": "flakes",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Dried oregano",
+          "Quantity": "1/4",
+          "Unit": "tsp",
+          "Id": "oreg",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Ground pepper",
+          "Quantity": "",
+          "Unit": "",
+          "Id": "",
+          "Group": ""
+        },
+        {
+          "Ingredient": "Cheese grater/blender",
+          "Quantity": "",
+          "Unit": "",
+          "Id": "",
+          "Group": ""
+        }
+      ],
       "instructions": [
         {
           "o": "Preheat oven to 425F. Line two large baking sheets with parchment paper.",
@@ -6110,75 +5850,66 @@ var db = {
     },
     "avo-kimchi-egg-toast": {
       "belongs_to": "breakfast",
-      "day_made": "[2019-11-15]",
+      "date_made": "[2019-11-15]",
       "ease_of_making": "5/5",
-      "imgs": "1.jpg,2.jpg",
-      "is_vegan": "false",
-      "is_vegetarian": "true",
+      "imgs": "1.jpg, 2.jpg",
+      "meal_type": "vegetarian",
       "name": "Kimchi Avocado Egg on Toast",
-      "original_recipe": "#",
+      "original_recipe": "?",
       "rating": "3.5/5",
       "serves": "1",
       "slug": "avo-kimchi-egg-toast",
       "time": "00:15:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id"
-        ],
-        "data": [
-          {
-            "Ingredient": "Kimchi",
-            "Quantity": "1/4",
-            "Unit": "cups",
-            "Id": "kim"
-          },
-          {
-            "Ingredient": "Shallot",
-            "Quantity": "1",
-            "Unit": "shallot",
-            "Id": "shal"
-          },
-          {
-            "Ingredient": "Garlic",
-            "Quantity": "1",
-            "Unit": "clove",
-            "Id": "garlic"
-          },
-          {
-            "Ingredient": "Bread (sourdough)",
-            "Quantity": "1",
-            "Unit": "slice",
-            "Id": "bread"
-          },
-          {
-            "Ingredient": "Avocado",
-            "Quantity": "1/2",
-            "Unit": "",
-            "Id": "avo"
-          },
-          {
-            "Ingredient": "Egg (poached)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "egg"
-          },
-          {
-            "Ingredient": "Paprika",
-            "Quantity": "1/4",
-            "Unit": "tsp",
-            "Id": "pap"
-          },
-          {
-            "Ingredient": "Salt",
-            "Quantity": "1",
-            "Unit": "pinch",
-            "Id": "salt"
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Kimchi",
+          "Quantity": "1/4",
+          "Unit": "cups",
+          "Id": "kim"
+        },
+        {
+          "Ingredient": "Shallot",
+          "Quantity": "1",
+          "Unit": "shallot",
+          "Id": "shal"
+        },
+        {
+          "Ingredient": "Garlic",
+          "Quantity": "1",
+          "Unit": "clove",
+          "Id": "garlic"
+        },
+        {
+          "Ingredient": "Bread (sourdough)",
+          "Quantity": "1",
+          "Unit": "slice",
+          "Id": "bread"
+        },
+        {
+          "Ingredient": "Avocado",
+          "Quantity": "1/2",
+          "Unit": "",
+          "Id": "avo"
+        },
+        {
+          "Ingredient": "Egg (poached)",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "egg"
+        },
+        {
+          "Ingredient": "Paprika",
+          "Quantity": "1/4",
+          "Unit": "tsp",
+          "Id": "pap"
+        },
+        {
+          "Ingredient": "Salt",
+          "Quantity": "1",
+          "Unit": "pinch",
+          "Id": "salt"
+        }
+      ],
       "instructions": [
         {
           "o": "Dice [#: shal | shallot], mince [#: garlic | garlic] and chop [#: kim | kimchi].",
@@ -6304,11 +6035,10 @@ var db = {
     },
     "tofu-kimchi-stew": {
       "belongs_to": "main",
-      "day_made": "[2019-11-15]",
+      "date_made": "[2019-11-15]",
       "ease_of_making": "5/5",
-      "imgs": "1.jpg,2.jpg,3.jpg",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
+      "imgs": "1.jpg, 2.jpg, 3.jpg",
+      "meal_type": "vegan",
       "name": "Tofu Kimchi Stew",
       "original_recipe": "https://www.bonappetit.com/recipe/tofu-and-kimchi-stew",
       "rating": "3.5/5",
@@ -6316,76 +6046,68 @@ var db = {
       "slug": "tofu-kimchi-stew",
       "tags": "easy, quick, korean, stew, spicey",
       "time": "00:25:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id"
-        ],
-        "data": [
-          {
-            "Ingredient": "Olive oil",
-            "Quantity": "",
-            "Unit": "",
-            "Id": ""
-          },
-          {
-            "Ingredient": "Green onions",
-            "Quantity": "6",
-            "Unit": "",
-            "Id": "go"
-          },
-          {
-            "Ingredient": "Garlic",
-            "Quantity": "4",
-            "Unit": "cloves",
-            "Id": "gar"
-          },
-          {
-            "Ingredient": "Ginger",
-            "Quantity": "1",
-            "Unit": "1-inch piece",
-            "Id": "ging"
-          },
-          {
-            "Ingredient": "Vegetable broth",
-            "Quantity": "4",
-            "Unit": "cups",
-            "Id": "vegbro"
-          },
-          {
-            "Ingredient": "Gochujang",
-            "Quantity": "3",
-            "Unit": "tbsp",
-            "Id": "gochu"
-          },
-          {
-            "Ingredient": "Soy sauce",
-            "Quantity": "3",
-            "Unit": "tbsp",
-            "Id": "soy"
-          },
-          {
-            "Ingredient": "Daikon (or Radish)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "sliced"
-          },
-          {
-            "Ingredient": "Kimchi",
-            "Quantity": "1/2",
-            "Unit": "cups",
-            "Id": ""
-          },
-          {
-            "Ingredient": "Silken Tofu",
-            "Quantity": "1/2",
-            "Unit": "block",
-            "Id": "silk"
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Olive oil",
+          "Quantity": "",
+          "Unit": "",
+          "Id": ""
+        },
+        {
+          "Ingredient": "Green onions",
+          "Quantity": "6",
+          "Unit": "",
+          "Id": "go"
+        },
+        {
+          "Ingredient": "Garlic",
+          "Quantity": "4",
+          "Unit": "cloves",
+          "Id": "gar"
+        },
+        {
+          "Ingredient": "Ginger",
+          "Quantity": "1",
+          "Unit": "1-inch piece",
+          "Id": "ging"
+        },
+        {
+          "Ingredient": "Vegetable broth",
+          "Quantity": "4",
+          "Unit": "cups",
+          "Id": "vegbro"
+        },
+        {
+          "Ingredient": "Gochujang",
+          "Quantity": "3",
+          "Unit": "tbsp",
+          "Id": "gochu"
+        },
+        {
+          "Ingredient": "Soy sauce",
+          "Quantity": "3",
+          "Unit": "tbsp",
+          "Id": "soy"
+        },
+        {
+          "Ingredient": "Daikon (or Radish)",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "sliced"
+        },
+        {
+          "Ingredient": "Kimchi",
+          "Quantity": "1/2",
+          "Unit": "cups",
+          "Id": ""
+        },
+        {
+          "Ingredient": "Silken Tofu",
+          "Quantity": "1/2",
+          "Unit": "block",
+          "Id": "silk"
+        }
+      ],
       "instructions": [
         {
           "o": "Heat oil in large saucepan on high.",
@@ -6484,11 +6206,10 @@ var db = {
     },
     "lime-rice-noodles": {
       "belongs_to": "main",
-      "day_made": "[2019-11-22]",
+      "date_made": "[2019-11-22]",
       "ease_of_making": "?/5",
-      "imgs": "1.jpg,2.gif,3.jpg",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
+      "imgs": "1.jpg, 2.gif, 3.jpg",
+      "meal_type": "vegan",
       "name": "Lime-Rice Noodles with Tofu",
       "original_recipe": "https://www.delish.com/cooking/recipe-ideas/a29215487/cilantro-lime-noodles-with-shrimp-recipe/",
       "rating": "?/5",
@@ -6496,94 +6217,86 @@ var db = {
       "slug": "lime-rice-noodles",
       "tags": "creamy, acidy",
       "time": "00:35:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id"
-        ],
-        "data": [
-          {
-            "Ingredient": "Tofu (firm)",
-            "Quantity": "1",
-            "Unit": "package",
-            "Id": "tofu"
-          },
-          {
-            "Ingredient": "Garlic (minced)",
-            "Quantity": "2",
-            "Unit": "cloves",
-            "Id": "garlic"
-          },
-          {
-            "Ingredient": "Ginger (minced)",
-            "Quantity": "1",
-            "Unit": "inch-piece",
-            "Id": "ginger"
-          },
-          {
-            "Ingredient": "Bell pepper (sliced)",
-            "Quantity": "1",
-            "Unit": "",
-            "Id": "bellpep"
-          },
-          {
-            "Ingredient": "Green onions (chopped)",
-            "Quantity": "2",
-            "Unit": "",
-            "Id": "greenonion"
-          },
-          {
-            "Ingredient": "Coconut milk",
-            "Quantity": "1",
-            "Unit": "can (14oz)",
-            "Id": "cocomilk"
-          },
-          {
-            "Ingredient": "Soy sauce",
-            "Quantity": "2",
-            "Unit": "tbsp",
-            "Id": "soy"
-          },
-          {
-            "Ingredient": "Brown sugar",
-            "Quantity": "2",
-            "Unit": "tsp (packed)",
-            "Id": "sugar"
-          },
-          {
-            "Ingredient": "Rice stir-fry noodles",
-            "Quantity": "12",
-            "Unit": "oz",
-            "Id": "rice-noodles"
-          },
-          {
-            "Ingredient": "Lime juice",
-            "Quantity": "3",
-            "Unit": "tbsp",
-            "Id": "lime"
-          },
-          {
-            "Ingredient": "Chili garlic sauce",
-            "Quantity": "1",
-            "Unit": "tbsp",
-            "Id": "cgs"
-          },
-          {
-            "Ingredient": "Cilantro",
-            "Quantity": "1/3",
-            "Unit": "cups",
-            "Id": "cilantro"
-          },
-          {
-            "Ingredient": "Kosher Salt",
-            "Quantity": "",
-            "Unit": "",
-            "Id": ""
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Tofu (firm)",
+          "Quantity": "1",
+          "Unit": "package",
+          "Id": "tofu"
+        },
+        {
+          "Ingredient": "Garlic (minced)",
+          "Quantity": "2",
+          "Unit": "cloves",
+          "Id": "garlic"
+        },
+        {
+          "Ingredient": "Ginger (minced)",
+          "Quantity": "1",
+          "Unit": "inch-piece",
+          "Id": "ginger"
+        },
+        {
+          "Ingredient": "Bell pepper (sliced)",
+          "Quantity": "1",
+          "Unit": "",
+          "Id": "bellpep"
+        },
+        {
+          "Ingredient": "Green onions (chopped)",
+          "Quantity": "2",
+          "Unit": "",
+          "Id": "greenonion"
+        },
+        {
+          "Ingredient": "Coconut milk",
+          "Quantity": "1",
+          "Unit": "can (14oz)",
+          "Id": "cocomilk"
+        },
+        {
+          "Ingredient": "Soy sauce",
+          "Quantity": "2",
+          "Unit": "tbsp",
+          "Id": "soy"
+        },
+        {
+          "Ingredient": "Brown sugar",
+          "Quantity": "2",
+          "Unit": "tsp (packed)",
+          "Id": "sugar"
+        },
+        {
+          "Ingredient": "Rice stir-fry noodles",
+          "Quantity": "12",
+          "Unit": "oz",
+          "Id": "rice-noodles"
+        },
+        {
+          "Ingredient": "Lime juice",
+          "Quantity": "3",
+          "Unit": "tbsp",
+          "Id": "lime"
+        },
+        {
+          "Ingredient": "Chili garlic sauce",
+          "Quantity": "1",
+          "Unit": "tbsp",
+          "Id": "cgs"
+        },
+        {
+          "Ingredient": "Cilantro",
+          "Quantity": "1/3",
+          "Unit": "cups",
+          "Id": "cilantro"
+        },
+        {
+          "Ingredient": "Kosher Salt",
+          "Quantity": "",
+          "Unit": "",
+          "Id": ""
+        }
+      ],
       "instructions": [
         {
           "o": "Press tofu to remove water. Cube, and marinate.",
@@ -6718,120 +6431,109 @@ var db = {
     },
     "pasta-pesto-salad": {
       "belongs_to": "main",
-      "day_made": "[2019-11-29]",
+      "date_made": "[2019-11-29]",
       "ease_of_making": "4/5",
-      "imgs": "1.jpg,2.jpg,3.jpg",
-      "is_vegan": "true",
-      "is_vegetarian": "true",
+      "imgs": "1.jpg, 2.jpg, 3.jpg",
+      "meal_type": "vegan",
       "name": "Pesto Pasta Salad",
       "original_recipe": "https://cookieandkate.com/pesto-pasta-salad-recipe/#tasty-recipes-24184",
       "rating": "4.5/5",
       "serves": "4",
       "slug": "pasta-pesto-salad",
-      "tags": "pesto",
       "time": "00:30:00",
-      "ingredients": {
-        "keys": [
-          "Ingredient",
-          "Quantity",
-          "Unit",
-          "Id",
-          "Group"
-        ],
-        "data": [
-          {
-            "Ingredient": "Pasta (whole grain)",
-            "Quantity": "1",
-            "Unit": "lb",
-            "Id": "pasta",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Cherry Tomatoes",
-            "Quantity": "1",
-            "Unit": "pint",
-            "Id": "tomat",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Spinach or arugula)",
-            "Quantity": "3",
-            "Unit": "handfuls",
-            "Id": "greens",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Kalamata olives",
-            "Quantity": "1/2",
-            "Unit": "cups",
-            "Id": "olives",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Feta cheese (optional)",
-            "Quantity": "2",
-            "Unit": "handfuls",
-            "Id": "cheese",
-            "Group": "salad"
-          },
-          {
-            "Ingredient": "Pepitas",
-            "Quantity": "1/2",
-            "Unit": "cups",
-            "Id": "pep",
-            "Group": "pesto"
-          },
-          {
-            "Ingredient": "Basil leaves (packed)",
-            "Quantity": "1/2",
-            "Unit": "cups",
-            "Id": "basil",
-            "Group": "pesto"
-          },
-          {
-            "Ingredient": "Parsley leaves (packed)",
-            "Quantity": "1/2",
-            "Unit": "cups",
-            "Id": "parsley",
-            "Group": "pesto"
-          },
-          {
-            "Ingredient": "Lemon Juice",
-            "Quantity": "2",
-            "Unit": "lemons",
-            "Id": "lemons",
-            "Group": "pesto"
-          },
-          {
-            "Ingredient": "Garlic (chopped)",
-            "Quantity": "1",
-            "Unit": "clove",
-            "Id": "garlic",
-            "Group": "pesto"
-          },
-          {
-            "Ingredient": "Salt",
-            "Quantity": "1/2",
-            "Unit": "tsp",
-            "Id": "sel",
-            "Group": "pesto"
-          },
-          {
-            "Ingredient": "Olive oil",
-            "Quantity": "1/3",
-            "Unit": "cups",
-            "Id": "oil",
-            "Group": "pesto"
-          },
-          {
-            "Ingredient": "Food Processor / Blender",
-            "Quantity": "",
-            "Unit": "",
-            "Id": "",
-            "Group": ""
-          }
-        ]
-      },
+      "ingredients": [
+        {
+          "Ingredient": "Pasta (whole grain)",
+          "Quantity": "1",
+          "Unit": "lb",
+          "Id": "pasta",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Cherry Tomatoes",
+          "Quantity": "1",
+          "Unit": "pint",
+          "Id": "tomat",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Spinach or arugula)",
+          "Quantity": "3",
+          "Unit": "handfuls",
+          "Id": "greens",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Kalamata olives",
+          "Quantity": "1/2",
+          "Unit": "cups",
+          "Id": "olives",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Feta cheese (optional)",
+          "Quantity": "2",
+          "Unit": "handfuls",
+          "Id": "cheese",
+          "Group": "salad"
+        },
+        {
+          "Ingredient": "Pepitas",
+          "Quantity": "1/2",
+          "Unit": "cups",
+          "Id": "pep",
+          "Group": "pesto"
+        },
+        {
+          "Ingredient": "Basil leaves (packed)",
+          "Quantity": "1/2",
+          "Unit": "cups",
+          "Id": "basil",
+          "Group": "pesto"
+        },
+        {
+          "Ingredient": "Parsley leaves (packed)",
+          "Quantity": "1/2",
+          "Unit": "cups",
+          "Id": "parsley",
+          "Group": "pesto"
+        },
+        {
+          "Ingredient": "Lemon Juice",
+          "Quantity": "2",
+          "Unit": "lemons",
+          "Id": "lemons",
+          "Group": "pesto"
+        },
+        {
+          "Ingredient": "Garlic (chopped)",
+          "Quantity": "1",
+          "Unit": "clove",
+          "Id": "garlic",
+          "Group": "pesto"
+        },
+        {
+          "Ingredient": "Salt",
+          "Quantity": "1/2",
+          "Unit": "tsp",
+          "Id": "sel",
+          "Group": "pesto"
+        },
+        {
+          "Ingredient": "Olive oil",
+          "Quantity": "1/3",
+          "Unit": "cups",
+          "Id": "oil",
+          "Group": "pesto"
+        },
+        {
+          "Ingredient": "Food Processor / Blender",
+          "Quantity": "",
+          "Unit": "",
+          "Id": "",
+          "Group": ""
+        }
+      ],
       "instructions": [
         {
           "o": "Bring a large pot of salted water to a boil.",

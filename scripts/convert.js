@@ -30,8 +30,6 @@ fs.readFile("recipes.org", "utf8", function(_, data) {
 });
 
 function getRecipe(heading) {
-  let props = getProperties(heading);
-  console.log("props are ", props);
   return {
     ...getProperties(heading),
     ingredients: getIngredients(heading),
@@ -43,7 +41,7 @@ function getRecipe(heading) {
 function getIngredients(n) {
   let recipe = n; // ?
   let ingredients = tableParser(recipe.children[1].children[1].children);
-  return ingredients;
+  return ingredients.data;
 }
 
 function getContent(n) {
