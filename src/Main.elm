@@ -31,15 +31,15 @@ main =
 
 
 type alias Flags =
-    { recipes : Decode.Value
+    { recipes : List Recipe
     }
 
 
 type alias Ingredient =
-    { name : String
-    , quantity : Int
-    , global_id : String
-    , group : String
+    { ingredient : String
+    , quantity : String
+    , unit : String
+    , id : String
     }
 
 
@@ -50,16 +50,16 @@ type alias Instruction =
 type alias Recipe =
     { belongs_to : String -- "main" | "salad" etc
     , date_made : String
-    , ease_of_making : Int
-    , imgs : List String
+    , ease_of_making : String
+    , imgs : Maybe ( List String )
     , meal_type : String -- "Vegetarian | Vegan etc"
-    , rating : Int
+    , rating : String
     , original_recipe : String
-    , serves : Int
+    , serves : String
     , slug : String
     , time : String
-
-    -- , ingredients : List Ingredient
+    , ingredients : List Ingredient
+                    , instructions: List Instruction
     }
 
 
@@ -79,13 +79,13 @@ type alias Recipe =
 type alias Model =
     { key : Nav.Key
     , url : Url.Url
-    , flags : Flags
+    , recipes : List Recipe -- Just recipes from flags
     }
 
 
 init : Flags -> Url.Url -> Nav.Key -> ( Model, Cmd Msg )
 init flags url key =
-    ( Model key url flags, Cmd.none )
+    ( Model key url flags.recipes,  Cmd.none )
 
 
 
