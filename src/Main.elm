@@ -44,7 +44,11 @@ type alias Ingredient =
 
 
 type alias Instruction =
-    String
+    {
+    original: String
+    }
+
+-- type alias Content =
 
 
 type alias Recipe =
@@ -59,7 +63,7 @@ type alias Recipe =
     , slug : String
     , time : String
     , ingredients : List Ingredient
-                    , instructions: List Instruction
+    , instructions: List Instruction
     }
 
 

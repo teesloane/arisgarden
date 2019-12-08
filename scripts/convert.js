@@ -20,7 +20,7 @@ fs.readFile("recipes.org", "utf8", function(_, data) {
     output.recipes[key] = _r;
   });
 
-  let stringify = "var db = " + JSON.stringify(output, null, 2);
+  let stringify = "export var db = " + JSON.stringify(output, null, 2);
   fs.writeFile("./db.js", stringify, function(err) {
     if (err) {
       return console.log(err);
@@ -34,7 +34,7 @@ function getRecipe(heading) {
     ...getProperties(heading),
     ingredients: getIngredients(heading),
     instructions: getInstructions(heading),
-    content: getContent(heading)
+    // content: getContent(heading) // FIXME: add back in
   };
 }
 
@@ -93,27 +93,30 @@ function templateParser(str) {
   // let ogRE = /\[(.*?)\]/;
   // let bracketRE = /[^[\]]+(?=])/;
   let newRE = /\s*\[([^\]]*)]\s*/;
-  let out = { o: ogstr, f: [] };
+  let out = { original: ogstr};
   let splitStr = str.split(newRE).filter(Boolean);
 
-  splitStr.forEach(s => {
-    switch (s[0]) {
-      case "&":
-        out["timer"] = s.slice(2, 11).trim(); // parse the timestring.
-        return out;
+  // splitStr.forEach(s => {
+  //   switch (s[0]) {
+  //     case "&":
+  //       out["timer"] = s.slice(2, 11).trim(); // parse the timestring.
+  //       return out;
 
-      // Parse # to assign meta data (for linking)
-      case "#":
-        let split = s.split("|");
-        let tagId = split[0].slice(3).trim();
-        let tagContent = split[1].trim();
-        out["f"].push({ val: tagContent, attr: tagId });
-        return out;
+  //     // Parse # to assign meta data (for linking)
+  //     // NOTE: disable and reimplement this to be easier.
+  //     case "#":
+  //       let split = s.split("|");
+  //       let tagId = split[0].slice(3).trim();
+  //       let tagContent = split[1].trim();
+  //       out["parsed"].push({ val: tagContent, attr: tagId });
+  //       return out;
 
-      default:
-        out["f"].push({ val: s });
-    }
-  });
+  //     default:
+  //       return out
+  //       // out["parsed"].push({ val: s });
+  //       // out["parsed"].push({ val: s });
+  //   }
+  // });
 
   return out;
 }
@@ -146,7 +149,7 @@ function tableParser(tableChildren) {
         let datNew = {};
         // fill the object with cell data
         curr.children.forEach((c, idx) => {
-          let currKey = acc["keys"][idx];
+          let currKey = acc["keys"][idx].toLowerCase();
           datNew[currKey] = c.children[0].value;
         });
         acc["data"].push(datNew);
