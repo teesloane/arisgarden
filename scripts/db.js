@@ -4,7 +4,7 @@ export var db = {
       "belongs_to": "breakfast",
       "date_made": "[2019-10-03]",
       "ease_of_making": "5/5",
-      "imgs": "[]",
+      "imgs": [],
       "meal_type": "vegan",
       "name": "Breakfast Quinoa",
       "original_recipe": "https://cookieandkate.com/cinnamon-breakfast-quinoa-recipe/",
@@ -87,7 +87,11 @@ export var db = {
       "belongs_to": "main",
       "date_made": "[2019-09-01]",
       "ease_of_making": "5/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG"
+      ],
       "meal_type": "vegan",
       "name": "Pantry Dahl",
       "original_recipe": "https://ohsheglows.com/2017/07/21/8-minute-pantry-dal-two-ways/",
@@ -206,7 +210,11 @@ export var db = {
       "belongs_to": "main",
       "date_made": "[2019-09-03]",
       "ease_of_making": "5/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG"
+      ],
       "meal_type": "vegan",
       "name": "1 Pot Chickpea Shakshuka",
       "original_recipe": "https://minimalistbaker.com/1-pot-chickpea-shakshuka/",
@@ -336,7 +344,11 @@ export var db = {
       "belongs_to": "main",
       "date_made": "[2019-09-04]",
       "ease_of_making": "5/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG"
+      ],
       "meal_type": "\"vegetarian\"",
       "name": "Leafy Spaghetti",
       "original_recipe": "https://cookieandkate.com/lemon-collard-greens-pasta/",
@@ -425,7 +437,11 @@ export var db = {
       "belongs_to": "main",
       "date_made": "[2019-09-08]",
       "ease_of_making": "3/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG"
+      ],
       "meal_type": "vegan",
       "name": "Bowl #1",
       "original_recipe": "https://tasty.co/recipe/protein-packed-buddha-bowl",
@@ -567,7 +583,7 @@ export var db = {
       "belongs_to": "main",
       "date_made": "[2019-09-10]",
       "ease_of_making": "5/5",
-      "imgs": "false",
+      "imgs": [],
       "meal_type": "vegan",
       "name": "Massaman Curry",
       "original_recipe": "https://minimalistbaker.com/easy-1-pot-massaman-curry/",
@@ -709,7 +725,11 @@ export var db = {
     "cauliflower-rice-stir-fry": {
       "date_made": "[2019-09-12]",
       "ease_of_making": "5/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG"
+      ],
       "meal_type": "vegan",
       "name": "Cauliflower Rice Stir Fry",
       "original_recipe": "https://minimalistbaker.com/30-minute-cauliflower-rice-stir-fry/",
@@ -717,7 +737,7 @@ export var db = {
       "serves": "2",
       "belongs_to": "main",
       "slug": "cauliflower-rice-stir-fry",
-      "timer": "00:45:00",
+      "time": "00:45:00",
       "ingredients": [
         {
           "ingredient": "Cauliflower",
@@ -866,7 +886,11 @@ export var db = {
     "kale-coconut-rice": {
       "date_made": "[2019-09-17]",
       "ease_of_making": "4/5",
-      "imgs": "1.JPG,2.JPG,3.gif",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.gif"
+      ],
       "meal_type": "vegetarian",
       "name": "Kale And Coconut Rice",
       "original_recipe": "https://cookieandkate.com/spicy-kale-and-coconut-fried-rice/",
@@ -982,7 +1006,11 @@ export var db = {
     "sweet-potato-gnocci": {
       "date_made": "[2019-09-22]",
       "ease_of_making": "3/5",
-      "imgs": "1.JPG,2.JPG,4.gif",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "4.gif"
+      ],
       "meal_type": "vegetarian",
       "name": "Sweet Potato Gnocchi",
       "original_recipe": "https://biancazapatka.com/en/vegan-sweet-potato-gnocchi/",
@@ -1077,7 +1105,7 @@ export var db = {
     "garlic-alfredo-pasta": {
       "date_made": "[2019-09-23]",
       "ease_of_making": "3/5",
-      "imgs": "false",
+      "imgs": [],
       "meal_type": "vegan",
       "name": "White Wine Pasta w/ Brussel Sprouts",
       "original_recipe": "https://minimalistbaker.com/vegan-garlic-alfredo-pasta/",
@@ -1185,7 +1213,12 @@ export var db = {
       "belongs_to": "main",
       "date_made": "[2019-09-30]",
       "ease_of_making": "4/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG, 4.JPG",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG",
+        "4.JPG"
+      ],
       "meal_type": "vegetarian",
       "name": "Kimchi Udon",
       "original_recipe": "https://www.bonappetit.com/recipe/kimchi-udon-with-scallions",
@@ -1282,7 +1315,11 @@ export var db = {
     "asparagus-spaghetti": {
       "date_made": "",
       "ease_of_making": "5/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG"
+      ],
       "meal_type": "vegetarian",
       "name": "Asparagus Spaghetti + Egg",
       "original_recipe": "https://www.easycheesyvegetarian.com/asparagus-spaghetti-fried-egg/",
@@ -1362,8 +1399,12 @@ export var db = {
     "thai-rice-bowl": {
       "date_made": "[2019-10-07]",
       "ease_of_making": "5/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG",
-      "meal_type vegan": ":meal_type vegan",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG"
+      ],
+      "meal_type": "vegan",
       "name": "Thai-Spice Rice Bowls",
       "original_recipe": "https://cookieandkate.com/thai-spiced-rice-bowls-recipe/",
       "rating": "3/5",
@@ -1516,7 +1557,11 @@ export var db = {
     "tofu-pineapple-rice": {
       "date_made": "[2019-10-10]",
       "ease_of_making": "3/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG"
+      ],
       "meal_type": "vegan",
       "name": "Pineapple Salsa + Coconut Rice",
       "original_recipe": "https://ohsheglows.com/2012/07/09/grilled-tofu-with-pineapple-salsa-and-coconut-rice/",
@@ -1657,7 +1702,11 @@ export var db = {
       "belongs_to": "salad",
       "date_made": "[2019-09-19]",
       "ease_of_making": "5/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG"
+      ],
       "meal_type": "vegetarian",
       "name": "Pear + Brie Salad",
       "original_recipe": "https://www.theorganickitchen.org/pears-and-brie-salad-with-honey-champagne-vinaigrette/",
@@ -1790,7 +1839,12 @@ export var db = {
       "belongs_to": "salad",
       "date_made": "[2019-09-24]",
       "ease_of_making": "4/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG, 5.gif",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG",
+        "5.gif"
+      ],
       "meal_type": "vegan",
       "name": "Raw Beet Salad w/ Quinoa",
       "original_recipe": "https://cookieandkate.com/raw-beet-salad-with-carrot-quinoa-spinach",
@@ -1916,7 +1970,11 @@ export var db = {
       "belongs_to": "salad",
       "date_made": "[2019-10-03]",
       "ease_of_making": "5/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG"
+      ],
       "meal_type": "vegan",
       "name": "Black Bean Salad",
       "original_recipe": "https://cookieandkate.com/black-bean-salad-recipe/",
@@ -2023,7 +2081,9 @@ export var db = {
       "belongs_to": "side",
       "date_made": "[2019-09-02]",
       "ease_of_making": "5/5",
-      "imgs": "false",
+      "imgs": [
+        "false"
+      ],
       "meal_type": "vegan",
       "name": "Easy Marinated Tofu",
       "original_recipe": "https://simpleveganblog.com/easy-marinated-tofu/",
@@ -2094,7 +2154,11 @@ export var db = {
       "belongs_to": "side",
       "date_made": "[2019-10-01]",
       "ease_of_making": "4/5",
-      "imgs": "1.JPG,2.JPG,3.gif",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.gif"
+      ],
       "meal_type": "vegan",
       "name": "Miso Asparagus",
       "original_recipe": "https://www.bonappetit.com/recipe/ginger-miso-grilled-asparagus",
@@ -2183,7 +2247,11 @@ export var db = {
       "belongs_to": "snack",
       "date_made": "[2019-09-01]",
       "ease_of_making": "5/5",
-      "imgs": "1.JPG,2.JPG,1.gif",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "1.gif"
+      ],
       "meal_type": "vegan",
       "name": "5 Ingredient Granola Bars",
       "original_recipe": "https://minimalistbaker.com/healthy-5-ingredient-granola-bars/",
@@ -2267,7 +2335,11 @@ export var db = {
       "belongs_to": "sweet",
       "date_made": "[2019-09-02]",
       "ease_of_making": "2/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG"
+      ],
       "name": "Candied Ginger",
       "meal_type": "vegan",
       "original_recipe": "https://www.davidlebovitz.com/candied-ginger/",
@@ -2342,7 +2414,11 @@ export var db = {
       "belongs_to": "sweet",
       "date_made": "[2019-10-14]",
       "ease_of_making": "3/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG"
+      ],
       "meal_type": "vegetarian",
       "name": "Pumpkin Chiffon Pie",
       "original_recipe": "-",
@@ -2516,7 +2592,11 @@ export var db = {
       "belongs_to": "main",
       "date_made": "[2019-11-11]",
       "ease_of_making": "5/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG"
+      ],
       "meal_type": "vegan",
       "name": "Mediterranean Baked Sweet Potatoes",
       "original_recipe": "https://minimalistbaker.com/mediterranean-baked-sweet-potatoes/",
@@ -2673,7 +2753,11 @@ export var db = {
       "belongs_to": "main",
       "date_made": "[2019-11-12]",
       "ease_of_making": "5/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG"
+      ],
       "meal_type": "vegan",
       "name": "Chickpea Cauliflower Curry",
       "original_recipe": "https://minimalistbaker.com/1-pot-yellow-chickpea-cauliflower-curry/",
@@ -2816,7 +2900,11 @@ export var db = {
       "belongs_to": "breakfast",
       "date_made": "[2019-11-12]",
       "ease_of_making": "5/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG"
+      ],
       "meal_type": "vegan",
       "name": "Overnight Oats",
       "original_recipe": "https://ohsheglows.com/2015/07/22/vegan-overnight-oats/",
@@ -2894,7 +2982,11 @@ export var db = {
       "belongs_to": "salad",
       "date_made": "[2019-11-13]",
       "ease_of_making": "4/5",
-      "imgs": "1.JPG, 2.JPG, 3.JPG",
+      "imgs": [
+        "1.JPG",
+        "2.JPG",
+        "3.JPG"
+      ],
       "meal_type": "vegetarian",
       "name": "Orange Orzo Salad",
       "original_recipe": "https://ohsheglows.com/2015/07/22/vegan-overnight-oats/",
@@ -3017,7 +3109,11 @@ export var db = {
       "belongs_to": "main",
       "date_made": "[2019-11-14]",
       "ease_of_making": "4/5",
-      "imgs": "1.JPG, 2.gif, 3.JPG",
+      "imgs": [
+        "1.JPG",
+        "2.gif",
+        "3.JPG"
+      ],
       "meal_type": "vegan",
       "name": "Ratatouille",
       "original_recipe": "https://cookieandkate.com/best-ratatouille-recipe/#tasty-recipes-34476",
@@ -3165,7 +3261,10 @@ export var db = {
       "belongs_to": "breakfast",
       "date_made": "[2019-11-15]",
       "ease_of_making": "5/5",
-      "imgs": "1.jpg, 2.jpg",
+      "imgs": [
+        "1.jpg",
+        "2.jpg"
+      ],
       "meal_type": "vegetarian",
       "name": "Kimchi Avocado Egg on Toast",
       "original_recipe": "?",
@@ -3254,7 +3353,11 @@ export var db = {
       "belongs_to": "main",
       "date_made": "[2019-11-15]",
       "ease_of_making": "5/5",
-      "imgs": "1.jpg, 2.jpg, 3.jpg",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
       "meal_type": "vegan",
       "name": "Tofu Kimchi Stew",
       "original_recipe": "https://www.bonappetit.com/recipe/tofu-and-kimchi-stew",
@@ -3350,7 +3453,11 @@ export var db = {
       "belongs_to": "main",
       "date_made": "[2019-11-22]",
       "ease_of_making": "?/5",
-      "imgs": "1.jpg, 2.gif, 3.jpg",
+      "imgs": [
+        "1.jpg",
+        "2.gif",
+        "3.jpg"
+      ],
       "meal_type": "vegan",
       "name": "Lime-Rice Noodles with Tofu",
       "original_recipe": "https://www.delish.com/cooking/recipe-ideas/a29215487/cilantro-lime-noodles-with-shrimp-recipe/",
@@ -3467,7 +3574,11 @@ export var db = {
       "belongs_to": "main",
       "date_made": "[2019-11-29]",
       "ease_of_making": "4/5",
-      "imgs": "1.jpg, 2.jpg, 3.jpg",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
       "meal_type": "vegan",
       "name": "Pesto Pasta Salad",
       "original_recipe": "https://cookieandkate.com/pesto-pasta-salad-recipe/#tasty-recipes-24184",

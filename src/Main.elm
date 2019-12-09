@@ -1,12 +1,16 @@
 module Main exposing (..)
 
+-- import Json.Decode.Pipeline as Pipe exposing (hardcoded, optional, required)
+
 import Browser
 import Browser.Navigation as Nav
+import Debug as Debug
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Json.Decode as Decode exposing (Decoder, float, int, nullable, string)
-import Json.Decode.Pipeline as Pipe exposing (hardcoded, optional, required)
+import Json.Decode.Pipeline as JP
 import Pages.Router exposing (..)
+import Dict exposing (Dict)
 import Url
 
 
@@ -31,7 +35,7 @@ main =
 
 
 type alias Flags =
-    { recipes : List Recipe
+    { recipes : Decode.Value
     }
 
 
@@ -44,18 +48,31 @@ type alias Ingredient =
 
 
 type alias Instruction =
-    {
-    original: String
+    { original : String
     }
 
+
+
 -- type alias Content =
+
+
+demoIngredient =
+    { ingredient = "", quantity = "", unit = "", id = "" }
+
+
+demoInstruction =
+    Instruction ""
+
+
+demoRecipe =
+    Recipe "." "." "." [ "." ] "." "." "." "." "." "." [ demoIngredient ] [ demoInstruction ]
 
 
 type alias Recipe =
     { belongs_to : String -- "main" | "salad" etc
     , date_made : String
     , ease_of_making : String
-    , imgs : Maybe ( List String )
+    , imgs : List String
     , meal_type : String -- "Vegetarian | Vegan etc"
     , rating : String
     , original_recipe : String
@@ -63,33 +80,79 @@ type alias Recipe =
     , slug : String
     , time : String
     , ingredients : List Ingredient
-    , instructions: List Instruction
+    , instructions : List Instruction
     }
 
 
 
--- recipeDecoder : Decoder Recipe
--- recipeDecoder =
---     Decode.succeed Recipe
---         |> Pipe.required "belongs_to" string
---         |> Pipe.required "date_made" string
---         |> Pipe.required "ease_of_making" int
---         |> Pipe.required "imgs"
---         |> Pipe.required "ease_of_making" int
---         |> Pipe.required "ease_of_making" int
---         |> Pipe.required "ease_of_making" int
+-- recipeInstructionDecoder: Decoder Instruction
+
+
+recipeInstructionDecoder =
+    Decode.succeed Instruction
+        |> JP.required "original" string
+
+
+
+-- recipeIngredientDecoder: Decoder Ingredient
+
+
+recipeIngredientDecoder =
+    Decode.succeed Ingredient
+        |> JP.required "ingredient" string
+        |> JP.required "quantity" string
+        |> JP.required "unit" string
+        |> JP.required "id" string
+
+
+recipesDecoder =
+    Decode.dict recipeDecoder
+
+
+recipeDecoder : Decoder Recipe
+recipeDecoder =
+    Decode.succeed Recipe
+        |> JP.required "belongs_to" string
+        |> JP.required "date_made" string
+        |> JP.required "ease_of_making" string
+        |> JP.required "imgs" (Decode.list string)
+        |> JP.required "meal_type" string
+        |> JP.required "rating" string
+        |> JP.required "original_recipe" string
+        |> JP.required "serves" string
+        |> JP.required "slug" string
+        |> JP.required "time" string
+        |> JP.required "ingredients" (Decode.list recipeIngredientDecoder)
+        |> JP.required "instructions" (Decode.list recipeInstructionDecoder)
 
 
 type alias Model =
     { key : Nav.Key
     , url : Url.Url
-    , recipes : List Recipe -- Just recipes from flags
+    , recipes : Dict String Recipe -- Just recipes from flags
     }
 
 
-init : Flags -> Url.Url -> Nav.Key -> ( Model, Cmd Msg )
+
+-- init : Flags -> Url.Url -> Nav.Key -> ( Model, Cmd Msg )
+-- init flags url key =
+--     ( Model key url flags.recipes,  Cmd.none )
+--
+
+
 init flags url key =
-    ( Model key url flags.recipes,  Cmd.none )
+    case Decode.decodeValue recipesDecoder flags.recipes of
+        Ok recipes ->
+            ( Model key url recipes, Cmd.none )
+
+        Err err ->
+            -- ( Model key url err,  Cmd.none )
+            let
+                y = Dict.fromList [("dummyRecipe", demoRecipe)]
+                b = Debug.log "y is " y
+                c = Debug.log "error is" err
+            in
+            ( Model key url y, Cmd.none )
 
 
 
@@ -149,15 +212,6 @@ view model =
 
 viewLink : String -> Html msg
 viewLink path =
-    let
-        x =
-            "hi"
-
-        -- x =
-        --     Recipe "jo" "tues" 100 [ "hi", "20" ] "Vegetarian" 10 "orig recipe" 3 "slug" "twenty min"
-        y =
-            Debug.log "Recipe is "
-    in
     li [] [ a [ href path ] [ text path ] ]
 
 

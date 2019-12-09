@@ -6,6 +6,6 @@ console.log("dbb is", db);
 Elm.Main.init({
   node: document.querySelector("main"),
   flags: {
-    recipes: [db.recipes["breakfast-quinoa"]]
+    recipes: db.recipes // [db.recipes["breakfast-quinoa"]]
   }
 });

@@ -30,8 +30,12 @@ fs.readFile("recipes.org", "utf8", function(_, data) {
 });
 
 function getRecipe(heading) {
+  let properties = getProperties(heading)
+  // console.log(JSON.parse(properties.imgs), "--", typeof(properties.imgs));
+  properties.imgs = JSON.parse(properties.imgs)
+
   return {
-    ...getProperties(heading),
+    ...properties,
     ingredients: getIngredients(heading),
     instructions: getInstructions(heading),
     // content: getContent(heading) // FIXME: add back in
