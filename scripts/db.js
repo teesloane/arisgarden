@@ -349,7 +349,7 @@ export var db = {
         "2.JPG",
         "3.JPG"
       ],
-      "meal_type": "\"vegetarian\"",
+      "meal_type": "vegetarian",
       "name": "Leafy Spaghetti",
       "original_recipe": "https://cookieandkate.com/lemon-collard-greens-pasta/",
       "rating": "5/5",

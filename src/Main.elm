@@ -1,16 +1,14 @@
 module Main exposing (..)
 
--- import Json.Decode.Pipeline as Pipe exposing (hardcoded, optional, required)
-
 import Browser
 import Browser.Navigation as Nav
 import Debug as Debug
+import Dict exposing (Dict)
 import Html exposing (..)
 import Html.Attributes exposing (..)
-import Json.Decode as Decode exposing (Decoder, float, int, nullable, string)
+import Json.Decode as Decode exposing (Decoder)
 import Json.Decode.Pipeline as JP
 import Pages.Router exposing (..)
-import Dict exposing (Dict)
 import Url
 
 
@@ -34,6 +32,11 @@ main =
 -- MODEL
 
 
+type MealType
+    = Vegetarian
+    | Vegan
+
+
 type alias Flags =
     { recipes : Decode.Value
     }
@@ -52,10 +55,6 @@ type alias Instruction =
     }
 
 
-
--- type alias Content =
-
-
 demoIngredient =
     { ingredient = "", quantity = "", unit = "", id = "" }
 
@@ -65,7 +64,7 @@ demoInstruction =
 
 
 demoRecipe =
-    Recipe "." "." "." [ "." ] "." "." "." "." "." "." [ demoIngredient ] [ demoInstruction ]
+    Recipe "." "." "." [ "." ] Vegan "." "." "." "." "." [ demoIngredient ] [ demoInstruction ]
 
 
 type alias Recipe =
@@ -73,7 +72,7 @@ type alias Recipe =
     , date_made : String
     , ease_of_making : String
     , imgs : List String
-    , meal_type : String -- "Vegetarian | Vegan etc"
+    , meal_type : MealType
     , rating : String
     , original_recipe : String
     , serves : String
@@ -84,44 +83,52 @@ type alias Recipe =
     }
 
 
-
--- recipeInstructionDecoder: Decoder Instruction
-
-
 recipeInstructionDecoder =
     Decode.succeed Instruction
-        |> JP.required "original" string
-
-
-
--- recipeIngredientDecoder: Decoder Ingredient
+        |> JP.required "original" Decode.string
 
 
 recipeIngredientDecoder =
     Decode.succeed Ingredient
-        |> JP.required "ingredient" string
-        |> JP.required "quantity" string
-        |> JP.required "unit" string
-        |> JP.required "id" string
+        |> JP.required "ingredient" Decode.string
+        |> JP.required "quantity" Decode.string
+        |> JP.required "unit" Decode.string
+        |> JP.required "id" Decode.string
 
 
 recipesDecoder =
     Decode.dict recipeDecoder
 
 
+recipeMealTypeDecoder =
+    Decode.string
+        |> Decode.andThen
+            (\s ->
+                case s of
+                    "vegetarian" ->
+                        Decode.succeed Vegetarian
+
+                    "vegan" ->
+                        Decode.succeed Vegan
+
+                    _ ->
+                        Decode.fail ("Unrecognized mealtype " ++ s)
+            )
+
+
 recipeDecoder : Decoder Recipe
 recipeDecoder =
     Decode.succeed Recipe
-        |> JP.required "belongs_to" string
-        |> JP.required "date_made" string
-        |> JP.required "ease_of_making" string
-        |> JP.required "imgs" (Decode.list string)
-        |> JP.required "meal_type" string
-        |> JP.required "rating" string
-        |> JP.required "original_recipe" string
-        |> JP.required "serves" string
-        |> JP.required "slug" string
-        |> JP.required "time" string
+        |> JP.required "belongs_to" Decode.string
+        |> JP.required "date_made" Decode.string
+        |> JP.required "ease_of_making" Decode.string
+        |> JP.required "imgs" (Decode.list Decode.string)
+        |> JP.required "meal_type" recipeMealTypeDecoder
+        |> JP.required "rating" Decode.string
+        |> JP.required "original_recipe" Decode.string
+        |> JP.required "serves" Decode.string
+        |> JP.required "slug" Decode.string
+        |> JP.required "time" Decode.string
         |> JP.required "ingredients" (Decode.list recipeIngredientDecoder)
         |> JP.required "instructions" (Decode.list recipeInstructionDecoder)
 
@@ -133,13 +140,6 @@ type alias Model =
     }
 
 
-
--- init : Flags -> Url.Url -> Nav.Key -> ( Model, Cmd Msg )
--- init flags url key =
---     ( Model key url flags.recipes,  Cmd.none )
---
-
-
 init flags url key =
     case Decode.decodeValue recipesDecoder flags.recipes of
         Ok recipes ->
@@ -148,9 +148,15 @@ init flags url key =
         Err err ->
             -- ( Model key url err,  Cmd.none )
             let
-                y = Dict.fromList [("dummyRecipe", demoRecipe)]
-                b = Debug.log "y is " y
-                c = Debug.log "error is" err
+                y =
+                    Dict.fromList [ ( "dummyRecipe", demoRecipe ) ]
+
+                -- FIXME - This is not how you should handle a missing/failing decoded recipe
+                b =
+                    Debug.log "y is " y
+
+                c =
+                    Debug.log "error is" err
             in
             ( Model key url y, Cmd.none )
 
@@ -206,6 +212,7 @@ view model =
             , viewLink "/about"
             , router model.url
             ]
+        , viewRecipes model
         ]
     }
 
@@ -213,6 +220,14 @@ view model =
 viewLink : String -> Html msg
 viewLink path =
     li [] [ a [ href path ] [ text path ] ]
+
+
+viewRecipes model =
+    let
+        buildThing recipe =
+            li [] [ text recipe.slug ]
+    in
+    ul [] (List.map buildThing (Dict.values model.recipes))
 
 
 

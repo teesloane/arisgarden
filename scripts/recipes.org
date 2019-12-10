@@ -133,7 +133,7 @@
 :date_made: [2019-09-04]
 :ease_of_making: 5/5
 :imgs: ["1.JPG", "2.JPG", "3.JPG"]
-:meal_type: "vegetarian"
+:meal_type: vegetarian
 :name: Leafy Spaghetti
 :original_recipe: https://cookieandkate.com/lemon-collard-greens-pasta/
 :rating: 5/5
