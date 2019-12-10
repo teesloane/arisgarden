@@ -205,29 +205,20 @@ view model =
     { title = "URL Interceptor"
     , body =
         [ viewHero
-        , text "The current URL is: "
-        , b [] [ text (Url.toString model.url) ]
+        , p [] [ text ("url is " ++ (Url.toString model.url)) ]
         , ul []
             [ viewLink "/"
             , viewLink "/about"
-            , router model.url
+            , router model
             ]
-        , viewRecipes model
         ]
     }
+
 
 
 viewLink : String -> Html msg
 viewLink path =
     li [] [ a [ href path ] [ text path ] ]
-
-
-viewRecipes model =
-    let
-        buildThing recipe =
-            li [] [ text recipe.slug ]
-    in
-    ul [] (List.map buildThing (Dict.values model.recipes))
 
 
 

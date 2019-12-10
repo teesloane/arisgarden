@@ -3,8 +3,8 @@ module Pages.Router exposing (..)
 import Debug
 import Html exposing (p, text)
 import Html.Attributes exposing (..)
-import Pages.Home exposing (home)
-import Url.Parser as Parser exposing (Parser, oneOf, s)
+import Pages.Recipe as Recipe
+import Url.Parser as Parser exposing (Parser, (</>), string, oneOf, s)
 
 
 
@@ -14,6 +14,7 @@ import Url.Parser as Parser exposing (Parser, oneOf, s)
 type Route
     = Home
     | About
+    | RecipeSingle String
 
 
 
@@ -24,6 +25,7 @@ parser : Parser (Route -> a) a
 parser =
     oneOf
         [ Parser.map Home Parser.top
+        , Parser.map RecipeSingle (s "recipe" </> string)
         , Parser.map About (s "about")
         ]
 
@@ -33,13 +35,19 @@ parser =
 -- returns a view based on the results
 
 
-router url =
-    case Parser.parse parser url of
+router model =
+    case Parser.parse parser model.url of
         Nothing ->
             p [] [text "404"]
 
         Just Home ->
-            home
+            Recipe.viewList model
+
+        Just (RecipeSingle "hi") -> -- FIXME: how do I parse the url?
+            Recipe.viewSingle model
+
+        Just (RecipeSingle _) -> -- FIXME - this makes "recipe/_"  go to viewList :/
+            Recipe.viewList model
 
         Just About ->
-            p [] [text "About page found"]
+            p [] [text "About Page"]
