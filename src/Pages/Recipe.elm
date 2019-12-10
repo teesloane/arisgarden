@@ -8,9 +8,11 @@ import Json.Decode as Decode exposing (Decoder)
 import Json.Decode.Pipeline as JP
 
 
-type MealType
-    = Vegetarian
-    | Vegan
+
+-- TYPES --
+
+
+type MealType = Vegetarian | Vegan
 
 
 type alias Flags =
@@ -31,18 +33,6 @@ type alias Instruction =
     }
 
 
-demoIngredient =
-    { ingredient = "", quantity = "", unit = "", id = "" }
-
-
-demoInstruction =
-    Instruction ""
-
-
-demoRecipe =
-    Recipe "." "." "." [ "." ] Vegan "." "." "." "." "." [ demoIngredient ] [ demoInstruction ]
-
-
 type alias Recipe =
     { belongs_to : String -- "main" | "salad" etc
     , date_made : String
@@ -59,12 +49,16 @@ type alias Recipe =
     }
 
 
-recipeInstructionDecoder =
+
+-- DECODERS --
+
+
+decodeInstruction =
     Decode.succeed Instruction
         |> JP.required "original" Decode.string
 
 
-recipeIngredientDecoder =
+decoderIngredient =
     Decode.succeed Ingredient
         |> JP.required "ingredient" Decode.string
         |> JP.required "quantity" Decode.string
@@ -73,10 +67,10 @@ recipeIngredientDecoder =
 
 
 recipesDecoder =
-    Decode.dict recipeDecoder
+    Decode.dict decodeRecipe
 
 
-recipeMealTypeDecoder =
+decodeMealType =
     Decode.string
         |> Decode.andThen
             (\s ->
@@ -92,37 +86,55 @@ recipeMealTypeDecoder =
             )
 
 
-recipeDecoder : Decoder Recipe
-recipeDecoder =
+decodeRecipe : Decoder Recipe
+decodeRecipe =
     Decode.succeed Recipe
         |> JP.required "belongs_to" Decode.string
         |> JP.required "date_made" Decode.string
         |> JP.required "ease_of_making" Decode.string
         |> JP.required "imgs" (Decode.list Decode.string)
-        |> JP.required "meal_type" recipeMealTypeDecoder
+        |> JP.required "meal_type" decodeMealType
         |> JP.required "rating" Decode.string
         |> JP.required "original_recipe" Decode.string
         |> JP.required "serves" Decode.string
         |> JP.required "slug" Decode.string
         |> JP.required "time" Decode.string
-        |> JP.required "ingredients" (Decode.list recipeIngredientDecoder)
-        |> JP.required "instructions" (Decode.list recipeInstructionDecoder)
+        |> JP.required "ingredients" (Decode.list decoderIngredient)
+        |> JP.required "instructions" (Decode.list decodeInstruction)
 
+
+-- VIEWS --
 
 viewSingle model recipe =
-    case Dict.get recipe model.recipes of
-        Just thing ->
-            div [] [ text ("recipe found" ++ thing.time) ]
+    unwrapRecipes
+        model
+        (\recipes ->
+            case Dict.get recipe recipes of
+                Just thing ->
+                    div [] [ text ("recipe found" ++ thing.time) ]
 
-        Nothing ->
-            div [] [ text "RECIPE NOT FOUND! 404." ]
+                Nothing ->
+                    div [] [ text "RECIPE NOT FOUND! 404." ]
+        )
 
 
 viewList model =
-    let
-        rList recipe =
-            li [] [ text recipe.slug ]
-    in
-    section [ class "RecipeList" ]
-        [ ul [ class "columns" ] (List.map rList (Dict.values model.recipes))
-        ]
+    unwrapRecipes model
+        (\recipes ->
+            let
+                rList recipe =
+                    li [] [ text recipe.slug ]
+            in
+            section [ class "RecipeList" ]
+                [ ul [ class "columns" ] (List.map rList (Dict.values recipes))
+                ]
+        )
+
+
+unwrapRecipes model fn =
+    case model.recipes of
+        Nothing ->
+            div [] [ text "The recipes did not load. Go print a Debug.log in `init`" ]
+
+        Just recipes ->
+            fn recipes

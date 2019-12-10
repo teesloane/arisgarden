@@ -8,8 +8,8 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 import Json.Decode as Decode exposing (Decoder)
 import Json.Decode.Pipeline as JP
+import Pages.Recipe as Recipe exposing (Flags, Recipe)
 import Pages.Router exposing (..)
-import Pages.Recipe as Recipe exposing (Recipe, Flags)
 import Url
 
 
@@ -33,33 +33,24 @@ main =
 -- MODEL
 
 
-
 type alias Model =
     { key : Nav.Key
     , url : Url.Url
-    , recipes : Dict String Recipe -- Just recipes from flags
+    , recipes : Maybe (Dict String Recipe) -- Just recipes from flags
     }
 
 
 init flags url key =
     case Decode.decodeValue Recipe.recipesDecoder flags.recipes of
         Ok recipes ->
-            ( Model key url recipes, Cmd.none )
+            ( Model key url (Just recipes), Cmd.none )
 
         Err err ->
-            -- ( Model key url err,  Cmd.none )
             let
-                y =
-                    Dict.fromList [ ( "dummyRecipe", Recipe.demoRecipe ) ]
-
-                -- FIXME - This is not how you should handle a missing/failing decoded recipe
-                b =
-                    Debug.log "y is " y
-
                 c =
                     Debug.log "error is" err
             in
-            ( Model key url y, Cmd.none )
+            ( Model key url Nothing, Cmd.none )
 
 
 
@@ -106,7 +97,7 @@ view model =
     { title = "URL Interceptor"
     , body =
         [ viewHero
-        , p [] [ text ("url is " ++ (Url.toString model.url)) ]
+        , p [] [ text ("url is " ++ Url.toString model.url) ]
         , ul []
             [ viewLink "/"
             , viewLink "/about"
@@ -114,7 +105,6 @@ view model =
             ]
         ]
     }
-
 
 
 viewLink : String -> Html msg
@@ -131,4 +121,4 @@ viewHero =
         [ class "viewHero"
         , style "background-image" "url('./media/imgs/kimchi-udon-2.JPG')"
         ]
-        [ text "hi" ]
+        []

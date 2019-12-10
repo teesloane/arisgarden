@@ -45,11 +45,8 @@ router model =
         Just Home ->
             Recipe.viewList model
 
-        Just (RecipeSingle recipe) -> -- FIXME: how do I parse the url?
+        Just (RecipeSingle recipe) ->
             Recipe.viewSingle model recipe
-
-        -- Just (RecipeSingle _) -> -- FIXME - this makes "recipe/_"  go to viewList :/
-        --     Recipe.viewList model
 
         Just About ->
             p [] [text "About Page"]
