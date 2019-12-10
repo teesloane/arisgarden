@@ -36,18 +36,20 @@ parser =
 
 
 router model =
-    case Parser.parse parser model.url of
+    let x = Debug.log "thing is" (Parser.parse parser model.url)
+    in
+        case Parser.parse parser model.url of
         Nothing ->
             p [] [text "404"]
 
         Just Home ->
             Recipe.viewList model
 
-        Just (RecipeSingle "hi") -> -- FIXME: how do I parse the url?
-            Recipe.viewSingle model
+        Just (RecipeSingle recipe) -> -- FIXME: how do I parse the url?
+            Recipe.viewSingle model recipe
 
-        Just (RecipeSingle _) -> -- FIXME - this makes "recipe/_"  go to viewList :/
-            Recipe.viewList model
+        -- Just (RecipeSingle _) -> -- FIXME - this makes "recipe/_"  go to viewList :/
+        --     Recipe.viewList model
 
         Just About ->
             p [] [text "About Page"]
