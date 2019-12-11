@@ -2,7 +2,6 @@ module Main exposing (..)
 
 import Browser
 import Browser.Navigation as Nav
-import Debug as Debug
 import Dict exposing (Dict)
 import Html exposing (..)
 import Html.Attributes exposing (..)
@@ -46,10 +45,6 @@ init flags url key =
             ( Model key url (Just recipes), Cmd.none )
 
         Err err ->
-            let
-                c =
-                    Debug.log "error is" err
-            in
             ( Model key url Nothing, Cmd.none )
 
 
@@ -94,14 +89,9 @@ subscriptions _ =
 
 view : Model -> Browser.Document Msg
 view model =
-    { title = "URL Interceptor"
+    { title = "Ari's Garden"
     , body =
-        [ p [] [ text ("url is " ++ Url.toString model.url) ]
-        , ul []
-            [ viewLink "/"
-            , viewLink "/about"
-            , router model
-            ]
+        [ router model
         ]
     }
 

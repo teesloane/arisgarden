@@ -4,7 +4,7 @@ import Debug
 import Html exposing (p, text)
 import Html.Attributes exposing (..)
 import Pages.Recipe as Recipe
-import Url.Parser as Parser exposing (Parser, (</>), string, oneOf, s)
+import Url.Parser as Parser exposing ((</>), Parser, oneOf, s, string)
 
 
 
@@ -36,11 +36,9 @@ parser =
 
 
 router model =
-    let x = Debug.log "thing is" (Parser.parse parser model.url)
-    in
-        case Parser.parse parser model.url of
+    case Parser.parse parser model.url of
         Nothing ->
-            p [] [text "404"]
+            p [] [ text "404" ]
 
         Just Home ->
             Recipe.viewList model
@@ -49,4 +47,4 @@ router model =
             Recipe.viewSingle model recipe
 
         Just About ->
-            p [] [text "About Page"]
+            p [] [ text "About Page" ]

@@ -142,8 +142,10 @@ unwrapRecipes model fn =
             fn recipes
 
 viewHero slug =
+    let url = "url(/imgs/" ++ slug ++ "-hero.JPG)"
+    in
     section
         [ class "viewHero"
-        , style "background-image" "url('media/imgs/kimchi-udon-2.JPG')"
+        , style "background-image" url
         ]
         []

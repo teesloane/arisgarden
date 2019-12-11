@@ -1,7 +1,7 @@
-import { Elm } from "./Main.elm";
-import {db} from '../scripts/db.js'
+require("./styles/main.scss");
 
-console.log("dbb is", db);
+const db = require("./scripts/db.js");
+const { Elm } = require("./Main");
 
 Elm.Main.init({
   node: document.querySelector("main"),
