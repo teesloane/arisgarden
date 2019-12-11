@@ -6,6 +6,8 @@ const merge = require("webpack-merge");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
+
 // to extract the css as a separate file
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -129,20 +131,8 @@ if (MODE === "development") {
 if (MODE === "production") {
   module.exports = merge(common, {
     optimization: {
-      minimizer: [
-        // new ClosurePlugin(
-        //   { mode: "STANDARD" },
-        //   {
-        //     // compiler flags here
-        //     //
-        //     // for debugging help, try these:
-        //     //
-        //     // formatting: 'PRETTY_PRINT',
-        //     // debug: true
-        //     // renaming: false
-        //   }
-        // )
-      ]
+      minimize: true,
+      minimizer: [new TerserPlugin()]
     },
     plugins: [
       // Delete everything from output-path (/dist) and report to user

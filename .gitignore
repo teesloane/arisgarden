@@ -8,4 +8,5 @@ node_modules
 src/node_modules
 .cache
 src/dist
+dist
 elm-stuff
