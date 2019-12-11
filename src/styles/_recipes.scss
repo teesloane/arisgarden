@@ -17,3 +17,64 @@
     }
   }
 }
+
+.RecipeSingle {
+  .photos {
+    display: flex;
+    margin: 24px 16px;
+    align-items: center;
+  }
+
+  .photo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    margin: 0 12px;
+    padding: 16px;
+    width: 350px;
+  }
+
+  .instruction-ingredients {
+    display: flex;
+  }
+
+  .instr-ingr-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 64px;
+    line-height: 2;
+    font-family: serif;
+    font-size: 18px;
+  }
+
+  .separator {
+    width: 2px;
+    background: #efefef;
+    height: 80px;
+    align-self: center;
+  }
+
+  .instructions {
+    // list-style-type: number;
+    flex: 1;
+  }
+
+  .ingredients {
+    flex: 1;
+  }
+  .ingredient {
+    display: flex;
+
+    .quant-unit {
+      display: flex;
+    }
+    .quant {
+      padding-right: 4px;
+    }
+    .name {
+      flex: 1;
+    }
+  }
+}

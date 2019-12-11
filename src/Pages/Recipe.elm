@@ -1,17 +1,20 @@
 module Pages.Recipe exposing (..)
 
-import Debug
 import Dict
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Json.Decode as Decode exposing (Decoder)
 import Json.Decode.Pipeline as JP
+import Ui as Ui
+
 
 
 -- TYPES --
 
 
-type MealType = Vegetarian | Vegan
+type MealType
+    = Vegetarian
+    | Vegan
 
 
 type alias Flags =
@@ -48,24 +51,25 @@ type alias Recipe =
     , instructions : List Instruction
     }
 
-             
+
 
 -- DECODERS --
 
 
-decodeInstruction: Decoder Instruction
+decodeInstruction : Decoder Instruction
 decodeInstruction =
     Decode.succeed Instruction
         |> JP.required "original" Decode.string
 
 
-decoderIngredient: Decoder Ingredient
+decoderIngredient : Decoder Ingredient
 decoderIngredient =
     Decode.succeed Ingredient
         |> JP.required "ingredient" Decode.string
         |> JP.required "quantity" Decode.string
         |> JP.required "unit" Decode.string
         |> JP.required "id" Decode.string
+
 
 recipesDecoder : Decoder (Dict.Dict String Recipe)
 recipesDecoder =
@@ -107,35 +111,8 @@ decodeRecipe =
         |> JP.required "instructions" (Decode.list decodeInstruction)
 
 
+
 -- VIEWS --
-
-viewSingle model recipeName =
-    unwrapRecipes
-        model
-        (\recipes ->
-            case Dict.get recipeName recipes of
-                Just recipe ->
-                    section [] [
-                         viewHero recipe,
-                         div [] [ text ("recipe found" ++ recipe.time) ]
-                        ]
-
-                Nothing ->
-                    div [] [ text "RECIPE NOT FOUND! 404." ]
-        )
-
-
-viewList model =
-    unwrapRecipes model
-        (\recipes ->
-            let
-                rList recipe =
-                    li [] [ a [href ("recipe/" ++ recipe.slug)] [text recipe.name ]]
-            in
-            section [ class "RecipeList" ]
-                [ ul [ class "columns" ] (List.map rList (Dict.values recipes))
-                ]
-        )   
 
 
 unwrapRecipes model fn =
@@ -146,11 +123,114 @@ unwrapRecipes model fn =
         Just recipes ->
             fn recipes
 
+
 viewHero recipe =
-    let url = "url(/imgs/" ++ recipe.slug ++ "-hero.JPG)"
+    let
+        url =
+            "url(/imgs/" ++ recipe.slug ++ "-hero.JPG)"
     in
     section
         [ class "viewHero"
         , style "background-image" url
         ]
-        [text "yo sick"]
+        []
+
+
+
+-- Page: RecipeList ------------------------------------------------------------
+
+
+viewList model =
+    unwrapRecipes model
+        (\recipes ->
+            let
+                rList recipe =
+                    li [] [ a [ href ("recipe/" ++ recipe.slug) ] [ text recipe.name ] ]
+            in
+            section [ class "RecipeList" ]
+                [ ul [ class "columns" ] (List.map rList (Dict.values recipes))
+                ]
+        )
+
+
+
+{-
+   *
+   * Page: RecipeSingle -----------------------------------------------------------
+   *
+-}
+
+
+viewImages : Recipe -> Html msg
+viewImages recipe =
+    let
+        mapImgs i =
+            div
+                [ class "photo"
+                , style "background-image" ("url(/imgs/" ++ recipe.slug ++ "-" ++ i)
+                ]
+                []
+    in
+    section [ class "photos" ] (List.map mapImgs recipe.imgs)
+
+
+viewInstructions : Recipe -> Html msg
+viewInstructions recipe =
+    let
+        mapInstructions i =
+            li [ class "instruction" ] [ text i.original ]
+    in
+    section [ class "instr-ingr-section", style "flex" "2" ]
+        [ Ui.sectionHeading "Instructions"
+        , div [ class "instructions" ]
+            [ ul [] (List.map mapInstructions recipe.instructions)
+            ]
+        ]
+
+
+viewIngredients : Recipe -> Html msg
+viewIngredients recipe =
+    let
+        mapIngr i =
+            div [ class "ingredient" ]
+                [ div [ class "name" ] [ text i.ingredient ]
+                , div [ class "quant-unit" ]
+                    [ div [ class "quant" ] [ text i.quantity ]
+                    , div [ class "unit" ] [ text i.unit ]
+                    ]
+                ]
+    in
+    section [ class "instr-ingr-section" ]
+        [ Ui.sectionHeading "Ingredients"
+        , div [ class "ingredients" ]
+            [ ul [ class "instructions-list" ] (List.map mapIngr recipe.ingredients)
+            ]
+        ]
+
+
+viewSingle model recipeName =
+    let
+        viewIngrAndInstr recipe =
+            div [ class "instruction-ingredients" ]
+                [ viewInstructions recipe
+                , div [ class "separator" ] []
+                , viewIngredients recipe
+                ]
+    in
+    unwrapRecipes
+        model
+        (\recipes ->
+            case Dict.get recipeName recipes of
+                Just recipe ->
+                    section [ class "RecipeSingle" ]
+                        [ viewHero recipe
+                        , section [ class "container" ]
+                            [ viewIngrAndInstr recipe
+                            , viewImages recipe
+                            ]
+                        ]
+
+                Nothing ->
+                    -- FIXME: Add a 404 redirect.
+                    div [] [ text "RECIPE NOT FOUND! 404." ]
+        )

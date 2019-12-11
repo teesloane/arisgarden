@@ -43,8 +43,8 @@ router model =
         Just Home ->
             Recipe.viewList model
 
-        Just (RecipeSingle recipe) ->
-            Recipe.viewSingle model recipe
+        Just (RecipeSingle recipeName) ->
+            Recipe.viewSingle model recipeName
 
         Just About ->
             p [] [ text "About Page" ]

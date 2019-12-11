@@ -181,7 +181,7 @@
 :original_recipe: https://tasty.co/recipe/protein-packed-buddha-bowl
 :rating: 5/5
 :serves: 2
-:slug: bowl1
+:slug: bowl-1
 :time: 00:50:00
 :END:
 ** Ingredients

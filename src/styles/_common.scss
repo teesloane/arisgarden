@@ -1,0 +1,41 @@
+.container {
+  max-width: 1200px;
+  padding: 16px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+}
+
+/* FIXME: scss-ify & move elsewhere */
+.ext-link {
+  padding-bottom: 2px;
+  border-bottom: 1px dotted grey;
+}
+.ext-link:after {
+  content: "ˆ";
+  color: coral;
+}
+.ext-link-light {
+  color: white;
+  padding-bottom: 2px;
+  border-bottom: 1px dotted grey;
+}
+.ext-link-light:after {
+  content: "ˆ";
+  color: coral;
+}
+
+/* Common Components */
+
+.viewHero {
+  min-height: 448px;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
