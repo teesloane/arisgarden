@@ -1,0 +1,19 @@
+.RecipeList {
+  .columns {
+    column-gap: 64px;
+    columns: 2;
+    line-height: 1.5rem;
+    margin: 0 auto;
+    max-width: 993px;
+    padding: 0px 0 32px 0;
+  }
+
+  ul {
+    list-style-type: none;
+    li {
+      padding: 4px;
+      color: #333;
+      font-weight: bold;
+    }
+  }
+}

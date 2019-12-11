@@ -1,19 +1,33 @@
 @import "reset";
 @import "recipes";
 
+/* FIXME: scss-ify & move elsewhere */
+.ext-link {
+  padding-bottom: 2px;
+  border-bottom: 1px dotted grey;
+}
+.ext-link:after {
+  content: "ˆ";
+  color: coral;
+}
+.ext-link-light {
+  color: white;
+  padding-bottom: 2px;
+  border-bottom: 1px dotted grey;
+}
+.ext-link-light:after {
+  content: "ˆ";
+  color: coral;
+}
 
-/*
-/* All Recipes
-*/
-.RecipeList {
-
-  .columns {
-    column-gap: 64px;
-    columns: 2;
-    line-height: 1.5rem;
-    margin: 0 auto;
-    max-width: 993px;
-    padding: 0px 0 32px 0;
-  }
-
+.viewHero {
+  min-height: 448px;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }

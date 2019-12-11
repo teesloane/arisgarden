@@ -38,6 +38,7 @@ type alias Recipe =
     , ease_of_making : String
     , imgs : List String
     , meal_type : MealType
+    , name : String
     , rating : String
     , original_recipe : String
     , serves : String
@@ -52,11 +53,13 @@ type alias Recipe =
 -- DECODERS --
 
 
+decodeInstruction: Decoder Instruction
 decodeInstruction =
     Decode.succeed Instruction
         |> JP.required "original" Decode.string
 
 
+decoderIngredient: Decoder Ingredient
 decoderIngredient =
     Decode.succeed Ingredient
         |> JP.required "ingredient" Decode.string
@@ -64,11 +67,12 @@ decoderIngredient =
         |> JP.required "unit" Decode.string
         |> JP.required "id" Decode.string
 
-
+recipesDecoder : Decoder (Dict.Dict String Recipe)
 recipesDecoder =
     Decode.dict decodeRecipe
 
 
+decodeMealType : Decoder MealType
 decodeMealType =
     Decode.string
         |> Decode.andThen
@@ -93,6 +97,7 @@ decodeRecipe =
         |> JP.required "ease_of_making" Decode.string
         |> JP.required "imgs" (Decode.list Decode.string)
         |> JP.required "meal_type" decodeMealType
+        |> JP.required "name" Decode.string
         |> JP.required "rating" Decode.string
         |> JP.required "original_recipe" Decode.string
         |> JP.required "serves" Decode.string
@@ -111,7 +116,7 @@ viewSingle model recipeName =
             case Dict.get recipeName recipes of
                 Just recipe ->
                     section [] [
-                         viewHero recipe.slug,
+                         viewHero recipe,
                          div [] [ text ("recipe found" ++ recipe.time) ]
                         ]
 
@@ -125,12 +130,12 @@ viewList model =
         (\recipes ->
             let
                 rList recipe =
-                    li [] [ a [href ("recipe/" ++ recipe.slug)] [text recipe.slug ]]
+                    li [] [ a [href ("recipe/" ++ recipe.slug)] [text recipe.name ]]
             in
             section [ class "RecipeList" ]
                 [ ul [ class "columns" ] (List.map rList (Dict.values recipes))
                 ]
-        )
+        )   
 
 
 unwrapRecipes model fn =
@@ -141,11 +146,11 @@ unwrapRecipes model fn =
         Just recipes ->
             fn recipes
 
-viewHero slug =
-    let url = "url(/imgs/" ++ slug ++ "-hero.JPG)"
+viewHero recipe =
+    let url = "url(/imgs/" ++ recipe.slug ++ "-hero.JPG)"
     in
     section
         [ class "viewHero"
         , style "background-image" url
         ]
-        []
+        [text "yo sick"]
