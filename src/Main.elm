@@ -96,8 +96,7 @@ view : Model -> Browser.Document Msg
 view model =
     { title = "URL Interceptor"
     , body =
-        [ viewHero
-        , p [] [ text ("url is " ++ Url.toString model.url) ]
+        [ p [] [ text ("url is " ++ Url.toString model.url) ]
         , ul []
             [ viewLink "/"
             , viewLink "/about"
@@ -114,11 +113,3 @@ viewLink path =
 
 
 -- VIEWS VIEWS VIEWS
-
-
-viewHero =
-    section
-        [ class "viewHero"
-        , style "background-image" "url('./media/imgs/kimchi-udon-2.JPG')"
-        ]
-        []

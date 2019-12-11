@@ -8,7 +8,6 @@ import Json.Decode as Decode exposing (Decoder)
 import Json.Decode.Pipeline as JP
 
 
-
 -- TYPES --
 
 
@@ -48,7 +47,7 @@ type alias Recipe =
     , instructions : List Instruction
     }
 
-
+             
 
 -- DECODERS --
 
@@ -105,13 +104,16 @@ decodeRecipe =
 
 -- VIEWS --
 
-viewSingle model recipe =
+viewSingle model recipeName =
     unwrapRecipes
         model
         (\recipes ->
-            case Dict.get recipe recipes of
-                Just thing ->
-                    div [] [ text ("recipe found" ++ thing.time) ]
+            case Dict.get recipeName recipes of
+                Just recipe ->
+                    section [] [
+                         viewHero recipe.slug,
+                         div [] [ text ("recipe found" ++ recipe.time) ]
+                        ]
 
                 Nothing ->
                     div [] [ text "RECIPE NOT FOUND! 404." ]
@@ -123,7 +125,7 @@ viewList model =
         (\recipes ->
             let
                 rList recipe =
-                    li [] [ text recipe.slug ]
+                    li [] [ a [href ("recipe/" ++ recipe.slug)] [text recipe.slug ]]
             in
             section [ class "RecipeList" ]
                 [ ul [ class "columns" ] (List.map rList (Dict.values recipes))
@@ -138,3 +140,10 @@ unwrapRecipes model fn =
 
         Just recipes ->
             fn recipes
+
+viewHero slug =
+    section
+        [ class "viewHero"
+        , style "background-image" "url('media/imgs/kimchi-udon-2.JPG')"
+        ]
+        []
