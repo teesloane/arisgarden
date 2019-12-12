@@ -176,7 +176,7 @@ viewImages recipe =
     section [ class "photos" ] (List.map mapImgs recipe.imgs)
 
 
--- viewInstructions : Recipe -> Int -> Html msg
+viewInstructions : Recipe -> Int -> Html Msg
 viewInstructions recipe activeStep =
     let
         mapInstructions index el =

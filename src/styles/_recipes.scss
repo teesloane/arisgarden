@@ -43,7 +43,7 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding: 64px 48px;
+    padding: 24px 48px;
     line-height: 1.5;
     font-family: serif;
     font-size: 18px;
@@ -58,6 +58,7 @@
 
   .instructions {
     flex: 1;
+    padding-top: 24px;
   }
 
   .instruction {
@@ -73,6 +74,7 @@
   }
 
   .ingredients {
+    padding-top: 24px;
     flex: 1;
   }
 

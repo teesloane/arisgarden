@@ -38,24 +38,17 @@ type alias Model =
     , url : Url.Url
     , recipes : Maybe (Dict String Recipe) -- Just recipes from flags
     , currentStep : Int
+    , currentRecipe : Maybe String
     }
 
 
 init flags url key =
     case Decode.decodeValue Recipe.recipesDecoder flags.recipes of
         Ok recipes ->
-            ( Model key url (Just recipes) 0, Cmd.none )
+            ( Model key url (Just recipes) 0 Nothing, Cmd.none )
 
         Err err ->
-            ( Model key url Nothing 0, Cmd.none )
-
-
-
--- UPDATE
--- type Msg
---     = LinkClicked Browser.UrlRequest
---     | UrlChanged Url.Url
---     | SetCurrentStep Int
+            ( Model key url Nothing 0 Nothing, Cmd.none )
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -70,9 +63,7 @@ update msg model =
                     ( model, Nav.load href )
 
         UrlChanged url ->
-            ( { model | url = url, currentStep = 0 }
-            , Cmd.none
-            )
+            ( { model | url = url, currentStep = 0 }, Cmd.none )
 
         SetCurrentStep index ->
             ( { model | currentStep = index }, Cmd.none )
@@ -103,7 +94,3 @@ view model =
 viewLink : String -> Html msg
 viewLink path =
     li [] [ a [ href path ] [ text path ] ]
-
-
-
--- VIEWS VIEWS VIEWS
