@@ -30,6 +30,10 @@ parser =
         ]
 
 
+getRoute url =
+    Parser.parse parser url
+
+
 
 -- `router` looks at an incoming url against the parser
 -- returns a view based on the results
@@ -38,13 +42,13 @@ parser =
 router model =
     case Parser.parse parser model.url of
         Nothing ->
-            p [] [ text "404" ]
+            ( p [] [ text "404" ], "404" )
 
         Just Home ->
-            Recipe.viewList model
+            ( Recipe.viewList model, "Home" )
 
         Just (RecipeSingle recipeName) ->
-            Recipe.viewSingle model recipeName
+            ( Recipe.viewSingle model recipeName, Recipe.nameFromSlug model.recipes recipeName )
 
         Just About ->
-            p [] [ text "About Page" ]
+            ( p [] [ text "About Page" ], "About" )

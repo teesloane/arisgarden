@@ -36,7 +36,7 @@ main =
 type alias Model =
     { key : Nav.Key
     , url : Url.Url
-    , recipes : Maybe (Dict String Recipe) -- Just recipes from flags
+    , recipes : Maybe (Dict String Recipe)
     , currentStep : Int
     , currentRecipe : Maybe String
     }
@@ -84,13 +84,8 @@ subscriptions _ =
 
 view : Model -> Browser.Document Msg
 view model =
-    { title = "Ari's Garden"
-    , body =
-        [ router model
-        ]
-    }
-
-
-viewLink : String -> Html msg
-viewLink path =
-    li [] [ a [ href path ] [ text path ] ]
+    let
+        ( route, routeName ) =
+            router model
+    in
+    { title = "Ari's Garden — " ++ routeName, body = [ route ] }

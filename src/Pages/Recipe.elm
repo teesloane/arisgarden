@@ -1,13 +1,16 @@
 module Pages.Recipe exposing (..)
 
+-- import Parser exposing (..)
+
 import Dict
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onClick)
 import Json.Decode as Decode exposing (Decoder)
 import Json.Decode.Pipeline as JP
-import Update exposing (Msg(..))
+import Parser exposing ((|.), (|=), Parser, float, spaces, succeed, symbol)
 import Ui as Ui
+import Update exposing (Msg(..))
 
 
 
@@ -52,6 +55,52 @@ type alias Recipe =
     , ingredients : List Ingredient
     , instructions : List Instruction
     }
+
+
+
+-- Getters
+
+
+nameFromSlug recipes slug =
+    case recipes of
+        Just recipesUnwrapped ->
+            case Dict.get slug recipesUnwrapped of
+                Just recipe ->
+                    recipe.name
+
+                Nothing ->
+                    ""
+
+        Nothing ->
+            ""
+
+
+type alias ParsedInstruction =
+    { timer : Float
+    }
+
+
+
+-- timer : Parser Strin
+-- timer : Parser String
+
+
+timer =
+    succeed ParsedInstruction
+        |. spaces
+        |= float
+
+
+parseInstruction : String -> Html msg
+parseInstruction instruction =
+    let
+        res =
+            "hi"
+
+        y =
+            Debug.log "parser result is" (Parser.run timer "     3.324 hi ")
+    in
+    div [] [ text ("attempted parse result: " ++ res) ]
 
 
 
@@ -181,12 +230,24 @@ viewInstructions recipe activeStep =
     let
         mapInstructions index el =
             let
-                activeClass = if activeStep == index then "instruction active" else "instruction"
-                stepText = [text ((String.fromInt <| (1 + index)) ++ ". " ++ el.original)]
+                activeClass =
+                    if activeStep == index then
+                        "instruction active"
+
+                    else
+                        "instruction"
+
+                stepText =
+                    div []
+                        [ div [] [ text ((String.fromInt <| (1 + index)) ++ ". " ++ el.original) ]
+                        , parseInstruction el.original
+                        ]
+
+                -- [ text ((String.fromInt <| (1 + index)) ++ ". " ++ el.original) ]
             in
-            div [ class activeClass, onClick (SetCurrentStep index) ] stepText
+            div [ class activeClass, onClick (SetCurrentStep index) ] [ stepText ]
     in
-    section [ class "instr-ingr-section", style "flex" "2"]
+    section [ class "instr-ingr-section", style "flex" "2" ]
         [ Ui.sectionHeading "Instructions"
         , div [ class "instructions" ]
             [ div [] (List.indexedMap mapInstructions recipe.instructions)
