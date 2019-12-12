@@ -3,8 +3,10 @@ module Pages.Recipe exposing (..)
 import Dict
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Html.Events exposing (onClick)
 import Json.Decode as Decode exposing (Decoder)
 import Json.Decode.Pipeline as JP
+import Update exposing (Msg(..))
 import Ui as Ui
 
 
@@ -174,16 +176,20 @@ viewImages recipe =
     section [ class "photos" ] (List.map mapImgs recipe.imgs)
 
 
-viewInstructions : Recipe -> Html msg
-viewInstructions recipe =
+-- viewInstructions : Recipe -> Int -> Html msg
+viewInstructions recipe activeStep =
     let
-        mapInstructions i =
-            li [ class "instruction" ] [ text i.original ]
+        mapInstructions index el =
+            let
+                activeClass = if activeStep == index then "instruction active" else "instruction"
+                stepText = [text ((String.fromInt <| (1 + index)) ++ ". " ++ el.original)]
+            in
+            div [ class activeClass, onClick (SetCurrentStep index) ] stepText
     in
-    section [ class "instr-ingr-section", style "flex" "2" ]
+    section [ class "instr-ingr-section", style "flex" "2"]
         [ Ui.sectionHeading "Instructions"
         , div [ class "instructions" ]
-            [ ul [] (List.map mapInstructions recipe.instructions)
+            [ div [] (List.indexedMap mapInstructions recipe.instructions)
             ]
         ]
 
@@ -203,7 +209,7 @@ viewIngredients recipe =
     section [ class "instr-ingr-section" ]
         [ Ui.sectionHeading "Ingredients"
         , div [ class "ingredients" ]
-            [ ul [ class "instructions-list" ] (List.map mapIngr recipe.ingredients)
+            [ div [ class "instructions-list" ] (List.map mapIngr recipe.ingredients)
             ]
         ]
 
@@ -212,7 +218,7 @@ viewSingle model recipeName =
     let
         viewIngrAndInstr recipe =
             div [ class "instruction-ingredients" ]
-                [ viewInstructions recipe
+                [ viewInstructions recipe model.currentStep
                 , div [ class "separator" ] []
                 , viewIngredients recipe
                 ]

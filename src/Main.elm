@@ -9,6 +9,7 @@ import Json.Decode as Decode exposing (Decoder)
 import Json.Decode.Pipeline as JP
 import Pages.Recipe as Recipe exposing (Flags, Recipe)
 import Pages.Router exposing (..)
+import Update exposing (Msg(..))
 import Url
 
 
@@ -36,25 +37,25 @@ type alias Model =
     { key : Nav.Key
     , url : Url.Url
     , recipes : Maybe (Dict String Recipe) -- Just recipes from flags
+    , currentStep : Int
     }
 
 
 init flags url key =
     case Decode.decodeValue Recipe.recipesDecoder flags.recipes of
         Ok recipes ->
-            ( Model key url (Just recipes), Cmd.none )
+            ( Model key url (Just recipes) 0, Cmd.none )
 
         Err err ->
-            ( Model key url Nothing, Cmd.none )
+            ( Model key url Nothing 0, Cmd.none )
 
 
 
 -- UPDATE
-
-
-type Msg
-    = LinkClicked Browser.UrlRequest
-    | UrlChanged Url.Url
+-- type Msg
+--     = LinkClicked Browser.UrlRequest
+--     | UrlChanged Url.Url
+--     | SetCurrentStep Int
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -69,9 +70,12 @@ update msg model =
                     ( model, Nav.load href )
 
         UrlChanged url ->
-            ( { model | url = url }
+            ( { model | url = url, currentStep = 0 }
             , Cmd.none
             )
+
+        SetCurrentStep index ->
+            ( { model | currentStep = index }, Cmd.none )
 
 
 

@@ -43,8 +43,8 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding: 64px;
-    line-height: 2;
+    padding: 64px 48px;
+    line-height: 1.5;
     font-family: serif;
     font-size: 18px;
   }
@@ -57,15 +57,34 @@
   }
 
   .instructions {
-    // list-style-type: number;
     flex: 1;
+  }
+
+  .instruction {
+    list-style-type: decimal;
+    margin-bottom: 16px;
+    padding-left: 12px;
+    border-left: 2px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+
+    &.active {
+      border-left: 2px solid $primary;
+    }
   }
 
   .ingredients {
     flex: 1;
   }
+
+  $border-col: #efefef;
   .ingredient {
     display: flex;
+    padding: 8px 12px;
+    &:nth-child(odd) {
+      background: #fafafa;
+      border-top: 1px solid $border-col;
+      border-bottom: 1px solid $border-col;
+    }
 
     .quant-unit {
       display: flex;
@@ -73,8 +92,10 @@
     .quant {
       padding-right: 4px;
     }
+
     .name {
       flex: 1;
+      padding-right: 4px;
     }
   }
 }
