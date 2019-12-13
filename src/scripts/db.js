@@ -327,13 +327,13 @@ module.exports = {
           "original": "Heat a large metal or cast iron skilled on medium heat."
         },
         {
-          "original": "[&: 00:04:00] When hot, add [#: oil-olive | olive oil ], [#: onion-white | onion], [#: pepper-bell | bell pepper] and [#: garlic | garlic]. Saute for 4-5 minutes, stirring frequently."
+          "original": "[&:00:04:00] When hot, add [#: oil-olive | olive oil ], [#: onion-white | onion], [#: pepper-bell | bell pepper] and [#: garlic | garlic]. Saute for 4-5 minutes, stirring frequently."
         },
         {
           "original": "Add [#: tomato-diced | diced tomatoes], [#: tomato-paste | tomato paste], [#: maple-syrup | maple syrup], [#: salt-sea | sea salt], [#: paprika | paprika], [#: cumin-ground | cumin], [#: chili-powder | chili powder], [#: cinnamon-ground | cinnamon]. Stir."
         },
         {
-          "original": "[&: 00:03:00] Bring to a simmer. Cook for 2-3 minutes."
+          "original": "[&:00:03:00] Bring to a simmer. Cook for 2-3 minutes."
         },
         {
           "original": "[&: 00:15:00] Add [#: chickpeas | chickpeas] and [#: olives | olives]. Reduce heat to medium-low for 15-20 minutes."

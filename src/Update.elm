@@ -8,3 +8,4 @@ type Msg
     = LinkClicked Browser.UrlRequest
     | UrlChanged Url.Url
     | SetCurrentStep Int
+    | AddTimer String

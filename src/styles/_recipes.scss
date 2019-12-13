@@ -37,6 +37,8 @@
 
   .instruction-ingredients {
     display: flex;
+    font-size: 15px;
+    padding: 5% 0;
   }
 
   .instr-ingr-section {
@@ -45,14 +47,13 @@
     flex-direction: column;
     padding: 24px 48px;
     line-height: 1.6;
-    font-family: serif;
-    font-size: 16px;
+    font-family: Arial;
   }
 
   .separator {
     width: 2px;
     background: #efefef;
-    height: 80px;
+    height: 180px;
     align-self: center;
   }
 
@@ -63,7 +64,7 @@
 
   .instruction {
     list-style-type: decimal;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     padding-left: 12px;
     border-left: 2px solid rgba(0, 0, 0, 0);
     cursor: pointer;
@@ -85,6 +86,10 @@
     &:nth-child(odd) {
       background: #fafafa;
       border-top: 1px solid $border-col;
+      border-bottom: 1px solid $border-col;
+    }
+
+    &:last-child {
       border-bottom: 1px solid $border-col;
     }
 

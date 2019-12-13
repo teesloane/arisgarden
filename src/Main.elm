@@ -39,16 +39,17 @@ type alias Model =
     , recipes : Maybe (Dict String Recipe)
     , currentStep : Int
     , currentRecipe : Maybe String
+    , timer : String
     }
 
 
 init flags url key =
     case Decode.decodeValue Recipe.recipesDecoder flags.recipes of
         Ok recipes ->
-            ( Model key url (Just recipes) 0 Nothing, Cmd.none )
+            ( Model key url (Just recipes) 0 Nothing "", Cmd.none )
 
         Err err ->
-            ( Model key url Nothing 0 Nothing, Cmd.none )
+            ( Model key url Nothing 0 Nothing "", Cmd.none )
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -67,6 +68,13 @@ update msg model =
 
         SetCurrentStep index ->
             ( { model | currentStep = index }, Cmd.none )
+
+        AddTimer timer ->
+            let
+                x =
+                    Debug.log "ADD TIMER UPDATE CALLED" timer
+            in
+            ( { model | timer = timer }, Cmd.none )
 
 
 

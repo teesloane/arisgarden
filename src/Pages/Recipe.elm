@@ -87,15 +87,25 @@ type alias InstructionChunk =
     }
 
 
+{-| Parses the timer that MAY exist at the beginning of an instruction string
+
+[&: 00:05:00] Cook the onions for 5 minutes.
+^-----------^-------------------------------
+
+-}
 parseTimer =
-    getChompedString <|
+    (getChompedString <|
         oneOf
             [ succeed ()
+                |. spaces
                 |. chompIf (\c -> c == '[')
                 |. chompWhile (\c -> c /= ']')
                 |. chompIf (\c -> c == ']')
             , succeed ()
             ]
+    )
+        |> andThen
+            (\timer -> succeed timer)
 
 
 parseChunk =
@@ -105,34 +115,62 @@ parseChunk =
 parseChunkHelp revStmts =
     oneOf
         [ succeed (\stmt -> Loop (stmt :: revStmts))
-            |= parseNormalText
+            |= parseIngredientChunk
         , succeed (\stmt -> Loop (stmt :: revStmts))
-            |= parseChunks3
+            |= parseUntilIngredient
+        , succeed (\stmt -> Loop (stmt :: revStmts))
+            |= parseUntilPeriod
         , succeed ()
             |> Parser.map (\_ -> Done (List.reverse revStmts))
         ]
 
 
-
--- for normal pieces of text
-
-
-parseNormalText =
+{-| Parses an instruction string until it reaches an ingredient:
+Get a bowl and chop [#: c | celery ] into ....
+--------------------^-------------------------
+-}
+parseUntilIngredient =
     succeed InstructionChunk
         |= succeed ""
-        -- sets Id to empty string.
-        |= (getChompedString <| chompIf (\c -> c /= '['))
+        |= (getChompedString <| chompUntil "[")
+        |. chompIf (\c -> c == '[')
 
 
+{-| Parses an instruction string until it reaches an ingredient:
+Mix the soup until it warms evenly through.
+------------------------------------------^-----
 
---        |= (getChompedString <| chompWhile (\c -> c /= '[')) -- THIS FAILS
---        |= (getChompedString <| chompUntil "[") -- THIS FAILS TOO
--- for ingredient items that reference a quantity.
+This is necessary for parsing normal strings after all ingreidents
+have been parsed by `parseIngredientChunk` or for steps that
+don't have any ingredients that need to be parsed in the first place.
 
-
-parseChunks3 =
+-}
+parseUntilPeriod =
     succeed InstructionChunk
-        |. symbol "[#:"
+        |= succeed ""
+        |= (getChompedString <| chompUntil ".")
+        |. chompIf (\c -> c == '.')
+        |> andThen (\res -> succeed <| { res | val = String.append res.val "." })
+
+
+{-| Parses an ingredient from the instruction string
+Get a bowl and chop [#: c | celery ] into ....
+------------------- ^==============^ ------
+
+creates an InstructionChunk of {id: "c", val: "celery"}
+
+andThen, in the case that the original string has excess space in the markup:
+
+...and chop [#:...c |... celery ] ...)
+...------------^^^---^^^-------------
+
+trim any excess whitespace around the id and the val
+{id: " c ", val: " celery "} -> {id: "c", val: "celery"}
+
+-}
+parseIngredientChunk =
+    succeed InstructionChunk
+        |. symbol "#:"
         |. spaces
         |= (getChompedString <| chompUntil " ")
         |. spaces
@@ -140,8 +178,12 @@ parseChunks3 =
         |. spaces
         |= (getChompedString <| chompUntil "]")
         |. symbol "]"
+        |> andThen
+            (\res -> succeed <| { res | val = String.trim res.val, id = String.trim res.id })
 
 
+{-| Groups parsers together to result in creating an InstructionParsed type.
+-}
 parseEverything =
     succeed InstructionParsed
         |= parseTimer
@@ -152,7 +194,10 @@ runParser str =
     Parser.run parseEverything str
 
 
-mapChunksToHtml parsedInstructions =
+{-| Turn the instruction parser results into HTML.
+-}
+mapInstructionsToView : Result (List DeadEnd) InstructionParsed -> List (Html msg)
+mapInstructionsToView parsedInstructions =
     let
         make i =
             if String.isEmpty i.id then
@@ -307,7 +352,7 @@ viewInstructions recipe activeStep =
                     div []
                         [ div []
                             [ span [] [ text ((String.fromInt <| (1 + index)) ++ ". ") ]
-                            , span [] (mapChunksToHtml <| runParser el.original)
+                            , span [] (mapInstructionsToView <| runParser el.original)
                             ]
                         ]
 
@@ -315,7 +360,7 @@ viewInstructions recipe activeStep =
             in
             div [ class activeClass, onClick (SetCurrentStep index) ] [ stepText ]
     in
-    section [ class "instr-ingr-section", style "flex" "2" ]
+    section [ class "instr-ingr-section", style "flex" "1.5" ]
         [ Ui.sectionHeading "Instructions"
         , div [ class "instructions" ]
             [ div [] (List.indexedMap mapInstructions recipe.instructions)
