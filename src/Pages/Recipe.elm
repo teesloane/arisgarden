@@ -8,7 +8,7 @@ import Html.Attributes exposing (..)
 import Html.Events exposing (onClick)
 import Json.Decode as Decode exposing (Decoder)
 import Json.Decode.Pipeline as JP
-import Parser exposing ((|.), (|=), Parser, float, spaces, succeed, symbol)
+import Parser exposing (..)
 import Ui as Ui
 import Update exposing (Msg(..))
 
@@ -75,32 +75,98 @@ nameFromSlug recipes slug =
             ""
 
 
-type alias ParsedInstruction =
-    { timer : Float
+type alias InstructionParsed =
+    { timer : String
+    , chunks : List InstructionChunk
     }
 
 
+type alias InstructionChunk =
+    { id : String
+    , val : String
+    }
 
--- timer : Parser Strin
--- timer : Parser String
+
+parseTimer =
+    getChompedString <|
+        oneOf
+            [ succeed ()
+                |. chompIf (\c -> c == '[')
+                |. chompWhile (\c -> c /= ']')
+                |. chompIf (\c -> c == ']')
+            , succeed ()
+            ]
 
 
-timer =
-    succeed ParsedInstruction
+parseChunk =
+    Parser.loop [] parseChunkHelp
+
+
+parseChunkHelp revStmts =
+    oneOf
+        [ succeed (\stmt -> Loop (stmt :: revStmts))
+            |= parseNormalText
+        , succeed (\stmt -> Loop (stmt :: revStmts))
+            |= parseChunks3
+        , succeed ()
+            |> Parser.map (\_ -> Done (List.reverse revStmts))
+        ]
+
+
+
+-- for normal pieces of text
+
+
+parseNormalText =
+    succeed InstructionChunk
+        |= succeed ""
+        -- sets Id to empty string.
+        |= (getChompedString <| chompIf (\c -> c /= '['))
+
+
+
+--        |= (getChompedString <| chompWhile (\c -> c /= '[')) -- THIS FAILS
+--        |= (getChompedString <| chompUntil "[") -- THIS FAILS TOO
+-- for ingredient items that reference a quantity.
+
+
+parseChunks3 =
+    succeed InstructionChunk
+        |. symbol "[#:"
         |. spaces
-        |= float
+        |= (getChompedString <| chompUntil " ")
+        |. spaces
+        |. symbol "|"
+        |. spaces
+        |= (getChompedString <| chompUntil "]")
+        |. symbol "]"
 
 
-parseInstruction : String -> Html msg
-parseInstruction instruction =
+parseEverything =
+    succeed InstructionParsed
+        |= parseTimer
+        |= parseChunk
+
+
+runParser str =
+    Parser.run parseEverything str
+
+
+mapChunksToHtml parsedInstructions =
     let
-        res =
-            "hi"
+        make i =
+            if String.isEmpty i.id then
+                span [] [ text i.val ]
 
-        y =
-            Debug.log "parser result is" (Parser.run timer "     3.324 hi ")
+            else
+                span [ style "font-weight" "bold" ] [ text i.val ]
     in
-    div [] [ text ("attempted parse result: " ++ res) ]
+    case parsedInstructions of
+        Ok c ->
+            List.map make c.chunks
+
+        Err _ ->
+            [ div [] [ text "failure" ] ]
 
 
 
@@ -239,8 +305,10 @@ viewInstructions recipe activeStep =
 
                 stepText =
                     div []
-                        [ div [] [ text ((String.fromInt <| (1 + index)) ++ ". " ++ el.original) ]
-                        , parseInstruction el.original
+                        [ div []
+                            [ span [] [ text ((String.fromInt <| (1 + index)) ++ ". ") ]
+                            , span [] (mapChunksToHtml <| runParser el.original)
+                            ]
                         ]
 
                 -- [ text ((String.fromInt <| (1 + index)) ++ ". " ++ el.original) ]

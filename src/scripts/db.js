@@ -2214,12 +2214,6 @@ module.exports = {
           "quantity": "",
           "unit": "sprinkle",
           "id": "seeds"
-        },
-        {
-          "ingredient": "",
-          "quantity": "",
-          "unit": "",
-          "id": ""
         }
       ],
       "instructions": [
