@@ -9,7 +9,7 @@ import Json.Decode as Decode exposing (Decoder)
 import Json.Decode.Pipeline as JP
 import Pages.Recipe as Recipe exposing (Flags, Recipe)
 import Pages.Router exposing (..)
-import Update exposing (Msg(..))
+import Update exposing (Msg(..), Timer)
 import Url
 
 
@@ -39,17 +39,17 @@ type alias Model =
     , recipes : Maybe (Dict String Recipe)
     , currentStep : Int
     , currentRecipe : Maybe String
-    , timer : String
+    , timers : List Timer
     }
 
 
 init flags url key =
     case Decode.decodeValue Recipe.recipesDecoder flags.recipes of
         Ok recipes ->
-            ( Model key url (Just recipes) 0 Nothing "", Cmd.none )
+            ( Model key url (Just recipes) 0 Nothing [ Timer "" "" ], Cmd.none )
 
         Err err ->
-            ( Model key url Nothing 0 Nothing "", Cmd.none )
+            ( Model key url Nothing 0 Nothing [ Timer "" "" ], Cmd.none )
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -74,7 +74,7 @@ update msg model =
                 x =
                     Debug.log "ADD TIMER UPDATE CALLED" timer
             in
-            ( { model | timer = timer }, Cmd.none )
+            ( { model | timers = model.timers ++ [ timer ] }, Cmd.none )
 
 
 

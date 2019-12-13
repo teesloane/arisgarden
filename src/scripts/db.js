@@ -1086,7 +1086,7 @@ module.exports = {
           "original": "Bring a pot of salted water to a boil. Add the gnocchi, cook until they float to the top of the water. Drain. Optional: toss with a little olive oil to prevent sticking."
         },
         {
-          "original": "If you have more gnocchi than you need, now is the time to freeze the abundance!"
+          "original": "If you have more gnocchi than you need, now is the time to freeze the abundance."
         },
         {
           "original": "[&: 00:15:00] Put [#: tomatoes | tomatoes] onto a baking sheet with cloves of garlic. Drizzle  with olive oil. Season with salt and pepper. Roast in the oven at 400 for 15 minutes."
@@ -1187,7 +1187,7 @@ module.exports = {
           "original": "Heat a skillet. Add 1-2 tbsp of oil. Add [#: garlic | garlic]. Saute for 3 minutes."
         },
         {
-          "original": "[&:00:02:00] Add [#: wine | wine]. Saute for 2-4 minutes."
+          "original": "[&: Saute | 00:02:00] Add [#: wine | wine]. Saute for 2-4 minutes."
         },
         {
           "original": "Add [#: corn | cornstarch] and [#: milk | almond milk] and whisk. It'll be clumpy."
@@ -1199,7 +1199,7 @@ module.exports = {
           "original": "Transfer sauce back to skilled and warm over medium low heat. It should thicken, then lower the heat to low and simmer until the pasta is cooked. If it gets too thick, add almond milk to thin it out. Try not to let a film form overtop."
         },
         {
-          "original": "[&:00:12:00] Add brussel sprouts to the oven for 12-15 minutes or until golden brown."
+          "original": "[&: Brussel Sprouts | 00:12:00] Add brussel sprouts to the oven for 12-15 minutes or until golden brown."
         },
         {
           "original": "At the same time as the previous step, add pasta to boiling water and cook according to the package instructions."

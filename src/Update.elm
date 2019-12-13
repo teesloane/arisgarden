@@ -8,4 +8,10 @@ type Msg
     = LinkClicked Browser.UrlRequest
     | UrlChanged Url.Url
     | SetCurrentStep Int
-    | AddTimer String
+    | AddTimer Timer
+
+
+type alias Timer =
+    { step : String
+    , time : String
+    }

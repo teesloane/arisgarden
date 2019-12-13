@@ -10,7 +10,7 @@ import Json.Decode as Decode exposing (Decoder)
 import Json.Decode.Pipeline as JP
 import Parser exposing (..)
 import Ui as Ui
-import Update exposing (Msg(..))
+import Update exposing (Msg(..), Timer)
 
 
 
@@ -55,8 +55,7 @@ type alias Recipe =
     , ingredients : List Ingredient
     , instructions : List Instruction
     }
-
-
+                                                                                                           
 
 -- Getters
 
@@ -75,8 +74,10 @@ nameFromSlug recipes slug =
             ""
 
 
+-- PARSER --
+
 type alias InstructionParsed =
-    { timer : String
+    { timer : Timer
     , chunks : List InstructionChunk
     }
 
@@ -94,18 +95,21 @@ type alias InstructionChunk =
 
 -}
 parseTimer =
-    (getChompedString <|
-        oneOf
-            [ succeed ()
-                |. spaces
-                |. chompIf (\c -> c == '[')
-                |. chompWhile (\c -> c /= ']')
-                |. chompIf (\c -> c == ']')
-            , succeed ()
-            ]
-    )
-        |> andThen
-            (\timer -> succeed timer)
+    oneOf
+        [ succeed Timer
+            |. spaces
+            |. symbol "[&:"
+            |. spaces
+            |= (getChompedString <| chompUntil "|")
+            |. symbol "|"
+            |. spaces
+            |= (getChompedString <| chompUntil "]")
+            |. symbol "]"
+            |> andThen (\res -> succeed <| { res | time = String.trim res.time, step = String.trim res.step })
+        , succeed Timer
+            |= succeed ""
+            |= succeed ""
+        ]
 
 
 parseChunk =
@@ -193,28 +197,7 @@ parseEverything =
 runParser str =
     Parser.run parseEverything str
 
-
-{-| Turn the instruction parser results into HTML.
--}
-mapInstructionsToView : Result (List DeadEnd) InstructionParsed -> List (Html msg)
-mapInstructionsToView parsedInstructions =
-    let
-        make i =
-            if String.isEmpty i.id then
-                span [] [ text i.val ]
-
-            else
-                span [ style "font-weight" "bold" ] [ text i.val ]
-    in
-    case parsedInstructions of
-        Ok c ->
-            List.map make c.chunks
-
-        Err _ ->
-            [ div [] [ text "failure" ] ]
-
-
-
+                                                                                                           
 -- DECODERS --
 
 
@@ -273,7 +256,6 @@ decodeRecipe =
         |> JP.required "instructions" (Decode.list decodeInstruction)
 
 
-
 -- VIEWS --
 
 
@@ -297,8 +279,7 @@ viewHero recipe =
         ]
         []
 
-
-
+                                                                                                           
 -- Page: RecipeList ------------------------------------------------------------
 
 
@@ -316,11 +297,8 @@ viewList model =
 
 
 
-{-
-   *
-   * Page: RecipeSingle -----------------------------------------------------------
-   *
--}
+
+-- Page: RecipeSingle -----------------------------------------------------------
 
 
 viewImages : Recipe -> Html msg
@@ -336,33 +314,77 @@ viewImages recipe =
     section [ class "photos" ] (List.map mapImgs recipe.imgs)
 
 
-viewInstructions : Recipe -> Int -> Html Msg
-viewInstructions recipe activeStep =
+
+-- FIXME: remove inline styles
+
+
+{-| viewInstructions does a few things:
+    - Parse and display a recipe's instructions.                                                           
+    - Handle rendering the timer and active step.                                                              
+    - Handle creation of timers.
+|-}
+viewInstructions : Recipe -> (List Timer) -> Int -> Html Msg                                               
+viewInstructions recipe timers activeStep =                                                                
     let
-        mapInstructions index el =
+        -- FIXME: abstract buildClass functionality into a single function.                                
+        buildClass idx =
+            if activeStep == idx then
+                "instruction active"
+
+            else
+                "instruction"
+                        
+        buildInstructions parsedInstructions =
             let
-                activeClass =
-                    if activeStep == index then
-                        "instruction active"
+                -- only show timer if it's not in use
+                -- loop through timers and check if current chunk is in there.
+                -- FIXME rename :"chunk"
+                makeTimer chunk =
+                    if (not (List.member chunk.timer timers)) then
+                        div                
+                            [ class "timer"
+                            , onClick (AddTimer chunk.timer)
+                            ] [text "T"]
+                    else 
+                        div [class "timer-null"] []
+
+                makeInstruction i =
+                    if String.isEmpty i.id then
+                        span [] [ text i.val ]
 
                     else
-                        "instruction"
+                        span [ style "font-weight" "bold" ] [ text i.val ]
+            in
+            case parsedInstructions of
+                Ok c ->
+                    div [ class "instruction-and-timer" ]
+                        [ div [ class "instruction-compiled" ] (List.map makeInstruction c.chunks)
+                        , makeTimer c
+                        ]
+
+                Err _ ->
+                    div [] [ text <| Debug.toString parsedInstructions ]
+
+        mapInstructions index el =
+            let
+                stepNum =
+                    (String.fromInt <| (1 + index)) ++ ". "
 
                 stepText =
                     div []
-                        [ div []
-                            [ span [] [ text ((String.fromInt <| (1 + index)) ++ ". ") ]
-                            , span [] (mapInstructionsToView <| runParser el.original)
+                        [ div [ style "display" "flex" ]
+                            [ span
+                                [ class "instruction-num" ]
+                                [ text stepNum ]
+                            , buildInstructions <| runParser el.original
                             ]
                         ]
-
-                -- [ text ((String.fromInt <| (1 + index)) ++ ". " ++ el.original) ]
             in
-            div [ class activeClass, onClick (SetCurrentStep index) ] [ stepText ]
+            div [ class (buildClass index), onClick (SetCurrentStep index) ] [ stepText ]
     in
     section [ class "instr-ingr-section", style "flex" "1.5" ]
         [ Ui.sectionHeading "Instructions"
-        , div [ class "instructions" ]
+        , div [ class "instructions-group" ]
             [ div [] (List.indexedMap mapInstructions recipe.instructions)
             ]
         ]
@@ -392,7 +414,7 @@ viewSingle model recipeName =
     let
         viewIngrAndInstr recipe =
             div [ class "instruction-ingredients" ]
-                [ viewInstructions recipe model.currentStep
+                [ viewInstructions recipe model.timers model.currentStep                                   
                 , div [ class "separator" ] []
                 , viewIngredients recipe
                 ]

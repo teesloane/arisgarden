@@ -57,26 +57,58 @@
     align-self: center;
   }
 
-  .instructions {
+  .instructions-group {
     flex: 1;
     padding-top: 24px;
   }
 
+  .instruction-compiled {
+    padding-right: 12px;
+    flex: 1;
+  }
+
   .instruction {
-    list-style-type: decimal;
     margin-bottom: 24px;
     padding-left: 12px;
-    border-left: 2px solid rgba(0, 0, 0, 0);
+    padding-right: 16px;
+    border-left: 3px solid rgba(0, 0, 0, 0);
     cursor: pointer;
 
     &.active {
-      border-left: 2px solid $primary;
+      border-left: 3px solid $primary;
     }
+  }
+
+  .instruction-num {
+    display: flex;
+    padding-right: 4px;
+  }
+
+  .instruction-and-timer {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
   }
 
   .ingredients {
     padding-top: 24px;
     flex: 1;
+  }
+
+  .timer {
+    align-items: center;
+    align-self: center;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    font-size: 12px;
+    height: 24px;
+    justify-content: center;
+    width: 24px;
+  }
+
+  .timer-null {
+    display: none;
   }
 
   $border-col: #efefef;
