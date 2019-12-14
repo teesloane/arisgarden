@@ -35,6 +35,8 @@
     width: 350px;
   }
 
+  // -- &:INSTRUCTIONS/INGREDIENTS -------------------------------------
+
   .instruction-ingredients {
     display: flex;
     font-size: 15px;
@@ -95,22 +97,6 @@
     flex: 1;
   }
 
-  .timer {
-    align-items: center;
-    align-self: center;
-    border-radius: 50%;
-    border: 2px solid black;
-    display: flex;
-    font-size: 12px;
-    height: 24px;
-    justify-content: center;
-    width: 24px;
-  }
-
-  .timer-null {
-    display: none;
-  }
-
   $border-col: #efefef;
   .ingredient {
     display: flex;
@@ -136,5 +122,38 @@
       flex: 1;
       padding-right: 4px;
     }
+  }
+
+  // -- &:TIMER ---------------------------------------------------
+
+  .timer-icon {
+    align-items: center;
+    align-self: center;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    font-size: 12px;
+    height: 24px;
+    justify-content: center;
+    width: 24px;
+  }
+
+  .timer-null {
+    display: none;
+  }
+
+  .timers {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    margin: 16px;
+  }
+
+  .timer {
+    background: #333;
+    color: white;
+    margin: 0 12px;
+    padding: 4px 16px;
   }
 }

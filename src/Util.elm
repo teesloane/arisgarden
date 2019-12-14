@@ -1,20 +1,28 @@
 module Util exposing (..)
 
+{-| Fn: "00:20:45" -> 1245
+TODO: I'm not sure if there is a better way to get access to the index of
+a list in Elm. The original JS function looked like this:
 
+.. this.strToSec = function(str) {
+.... var a = str.split(":");
+.... return +a[0] \* 60 \* 60 + +a[1] \* 60 + +a[2];
+.. },
+
+Also, I wish elmFmt would let this comment stick above the actual function. ಠ\_ಠ
+
+-}
+
+
+strToSec : String -> Int
 strToSec str =
     let
-        x =
-            String.split ":" str
-
-        y =
-            Debug.log "X is " x
-
-        intIt s =
+        strToInt s =
             String.toInt s |> Maybe.withDefault 0
 
-        z =
+        sumInts =
             List.indexedMap
-                (\num index ->
+                (\index num ->
                     case index of
                         0 ->
                             num * 60 * 60
@@ -28,9 +36,32 @@ strToSec str =
                         _ ->
                             num
                 )
-                (List.map intIt x)
-
-        z2 =
-            Debug.log "z is " z
+                (List.map strToInt (String.split ":" str))
+                |> List.sum
     in
-    "hello"
+    sumInts
+
+
+intToSec : Int -> String
+intToSec totalSeconds =
+    let
+        strFmt num =
+            if num < 10 then
+                "0" ++ String.fromInt num
+
+            else
+                String.fromInt num
+
+        totalSecondsFloat =
+            toFloat totalSeconds
+
+        hours =
+            truncate <| totalSecondsFloat / 3600
+
+        minutes =
+            truncate <| (totalSecondsFloat - toFloat hours * 3600) / 60
+
+        seconds =
+            truncate <| totalSecondsFloat - (toFloat hours * 3600) - (toFloat minutes * 60)
+    in
+    strFmt hours ++ ":" ++ strFmt minutes ++ ":" ++ strFmt seconds

@@ -1,7 +1,5 @@
 module Pages.Recipe exposing (..)
 
--- import Parser exposing (..)
-
 import Dict
 import Html exposing (..)
 import Html.Attributes exposing (..)
@@ -93,6 +91,7 @@ type alias InstructionChunk =
 
 
 {-| Parses the timer that MAY exist at the beginning of an instruction string
+There are some hacks here because I still don't entirely understand parsing. (see timerType)
 
 [&: 00:05:00] Cook the onions for 5 minutes.
 ^-----------^-------------------------------
@@ -109,10 +108,19 @@ parseTimer =
             |. spaces
             |= (getChompedString <| chompUntil "]")
             |. symbol "]"
-            |> andThen (\res -> succeed <| { res | time = String.trim res.time, step = String.trim res.step })
+            |= succeed 0
+            |> andThen
+                (\res ->
+                    succeed <|
+                        { res
+                            | step = String.trim res.step
+                            , time = Util.strToSec res.timeString
+                        }
+                )
         , succeed Timer
             |= succeed ""
             |= succeed ""
+            |= succeed 0
         ]
 
 
@@ -286,6 +294,22 @@ viewHero recipe =
         []
 
 
+viewTimers model =
+    let
+        filteredTimers =
+            List.filter (\t -> t.time /= 0) model.timers
+
+        timerText t =
+            t.step ++ " " ++ Util.intToSec t.time
+
+        mappedTimers =
+            List.map
+                (\t -> div [ class "timer" ] [ text <| timerText t ])
+                filteredTimers
+    in
+    div [ class "timers" ] mappedTimers
+
+
 
 -- Page: RecipeList ------------------------------------------------------------
 
@@ -351,10 +375,10 @@ viewInstructions recipe timers activeStep =
                 makeTimer chunk =
                     if not (List.member chunk.timer timers) then
                         div
-                            [ class "timer"
+                            [ class "timer-icon"
                             , onClick (AddTimer chunk.timer)
                             ]
-                            [ text ("T: " ++ Util.strToSec chunk.timer.time) ]
+                            [ text "T: " ]
 
                     else
                         div [ class "timer-null" ] []
@@ -428,6 +452,7 @@ viewSingle model recipeName =
                 [ viewInstructions recipe model.timers model.currentStep
                 , div [ class "separator" ] []
                 , viewIngredients recipe
+                , viewTimers model
                 ]
     in
     unwrapRecipes

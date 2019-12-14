@@ -1187,7 +1187,7 @@ module.exports = {
           "original": "Heat a skillet. Add 1-2 tbsp of oil. Add [#: garlic | garlic]. Saute for 3 minutes."
         },
         {
-          "original": "[&: Saute | 00:02:00] Add [#: wine | wine]. Saute for 2-4 minutes."
+          "original": "[&: Saute | 13:02:12] Add [#: wine | wine]. Saute for 2-4 minutes."
         },
         {
           "original": "Add [#: corn | cornstarch] and [#: milk | almond milk] and whisk. It'll be clumpy."

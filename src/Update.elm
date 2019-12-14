@@ -13,5 +13,6 @@ type Msg
 
 type alias Timer =
     { step : String
-    , time : String
+    , timeString : String
+    , time : Int
     }

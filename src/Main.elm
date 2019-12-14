@@ -46,10 +46,10 @@ type alias Model =
 init flags url key =
     case Decode.decodeValue Recipe.recipesDecoder flags.recipes of
         Ok recipes ->
-            ( Model key url (Just recipes) 0 Nothing [ Timer "" "" ], Cmd.none )
+            ( Model key url (Just recipes) 0 Nothing [ Timer "" "" 0 ], Cmd.none )
 
         Err err ->
-            ( Model key url Nothing 0 Nothing [ Timer "" "" ], Cmd.none )
+            ( Model key url Nothing 0 Nothing [ Timer "" "" 0 ], Cmd.none )
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
