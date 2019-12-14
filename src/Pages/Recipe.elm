@@ -11,6 +11,7 @@ import Json.Decode.Pipeline as JP
 import Parser exposing (..)
 import Ui as Ui
 import Update exposing (Msg(..), Timer)
+import Util
 
 
 
@@ -55,7 +56,8 @@ type alias Recipe =
     , ingredients : List Ingredient
     , instructions : List Instruction
     }
-                                                                                                           
+
+
 
 -- Getters
 
@@ -74,7 +76,9 @@ nameFromSlug recipes slug =
             ""
 
 
+
 -- PARSER --
+
 
 type alias InstructionParsed =
     { timer : Timer
@@ -197,7 +201,8 @@ parseEverything =
 runParser str =
     Parser.run parseEverything str
 
-                                                                                                           
+
+
 -- DECODERS --
 
 
@@ -256,6 +261,7 @@ decodeRecipe =
         |> JP.required "instructions" (Decode.list decodeInstruction)
 
 
+
 -- VIEWS --
 
 
@@ -279,7 +285,8 @@ viewHero recipe =
         ]
         []
 
-                                                                                                           
+
+
 -- Page: RecipeList ------------------------------------------------------------
 
 
@@ -294,7 +301,6 @@ viewList model =
                 [ ul [ class "columns" ] (List.map rList (Dict.values recipes))
                 ]
         )
-
 
 
 
@@ -319,34 +325,39 @@ viewImages recipe =
 
 
 {-| viewInstructions does a few things:
-    - Parse and display a recipe's instructions.                                                           
-    - Handle rendering the timer and active step.                                                              
-    - Handle creation of timers.
-|-}
-viewInstructions : Recipe -> (List Timer) -> Int -> Html Msg                                               
-viewInstructions recipe timers activeStep =                                                                
+
+  - Parse and display a recipe's instructions.
+  - Handle rendering the timer and active step.
+  - Handle creation of timers.
+    |
+
+-}
+viewInstructions : Recipe -> List Timer -> Int -> Html Msg
+viewInstructions recipe timers activeStep =
     let
-        -- FIXME: abstract buildClass functionality into a single function.                                
+        -- FIXME: abstract buildClass functionality into a single function.
         buildClass idx =
             if activeStep == idx then
                 "instruction active"
 
             else
                 "instruction"
-                        
+
         buildInstructions parsedInstructions =
             let
                 -- only show timer if it's not in use
                 -- loop through timers and check if current chunk is in there.
                 -- FIXME rename :"chunk"
                 makeTimer chunk =
-                    if (not (List.member chunk.timer timers)) then
-                        div                
+                    if not (List.member chunk.timer timers) then
+                        div
                             [ class "timer"
                             , onClick (AddTimer chunk.timer)
-                            ] [text "T"]
-                    else 
-                        div [class "timer-null"] []
+                            ]
+                            [ text ("T: " ++ Util.strToSec chunk.timer.time) ]
+
+                    else
+                        div [ class "timer-null" ] []
 
                 makeInstruction i =
                     if String.isEmpty i.id then
@@ -414,7 +425,7 @@ viewSingle model recipeName =
     let
         viewIngrAndInstr recipe =
             div [ class "instruction-ingredients" ]
-                [ viewInstructions recipe model.timers model.currentStep                                   
+                [ viewInstructions recipe model.timers model.currentStep
                 , div [ class "separator" ] []
                 , viewIngredients recipe
                 ]
