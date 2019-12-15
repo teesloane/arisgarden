@@ -55,8 +55,7 @@ type alias Recipe =
     , instructions : List Instruction
     }
 
-
-
+        
 -- Getters
 
 
@@ -72,7 +71,6 @@ nameFromSlug recipes slug =
 
         Nothing ->
             ""
-
 
 
 -- PARSER --
@@ -294,18 +292,21 @@ viewHero recipe =
         []
 
 
+{-| displays timers in the bottom left of the screen.
+-}
 viewTimers model =
     let
         filteredTimers =
             List.filter (\t -> t.time > 0) model.timers
 
-        timerText t =
-            t.step ++ " " ++ Util.intToSec t.time
+        timerMarkup t =
+            div [ class "timer" ]
+                [ div [ class "time-string" ] [ text (t.step ++ " " ++ Util.intToSec t.time) ]
+                , div [ class "close-btn", onClick (TimerDelete t) ] [ text "×" ]
+                ]
 
         mappedTimers =
-            List.map
-                (\t -> div [ class "timer" ] [ text <| timerText t ])
-                filteredTimers
+            List.map timerMarkup filteredTimers
     in
     div [ class "timers" ] mappedTimers
 
@@ -344,41 +345,28 @@ viewImages recipe =
     section [ class "photos" ] (List.map mapImgs recipe.imgs)
 
 
-
--- FIXME: remove inline styles
-
-
 {-| viewInstructions does a few things:
 
   - Parse and display a recipe's instructions.
   - Handle rendering the timer and active step.
   - Handle creation of timers.
-    |
+  - FIXME: abstract buildClass functionality into a single function.
+  - FIXME: rename :"chunk"
+  - FIXME: remove inline styles
+  - FIXME: don't nest let blocks if possible.
 
 -}
 viewInstructions : Recipe -> List Timer -> Int -> Html Msg
 viewInstructions recipe timers activeStep =
     let
-        -- FIXME: abstract buildClass functionality into a single function.
-        buildClass idx =
-            if activeStep == idx then
-                "instruction active"
-
-            else
-                "instruction"
+        timerExists chunk =
+            not <| List.any (\n -> n.step == chunk.timer.step) timers
 
         buildInstructions parsedInstructions =
             let
-                -- only show timer if it's not in use
-                -- loop through timers and check if current chunk is in there.
-                -- FIXME rename :"chunk"
                 makeTimer chunk =
-                    if not (List.member chunk.timer timers) then
-                        div
-                            [ class "timer-icon"
-                            , onClick (AddTimer chunk.timer)
-                            ]
-                            [ text "T: " ]
+                    if timerExists chunk then
+                        div [ class "timer-icon", onClick (TimerAdd chunk.timer) ] []
 
                     else
                         div [ class "timer-null" ] []
@@ -408,14 +396,16 @@ viewInstructions recipe timers activeStep =
                 stepText =
                     div []
                         [ div [ style "display" "flex" ]
-                            [ span
-                                [ class "instruction-num" ]
-                                [ text stepNum ]
+                            [ span [ class "instruction-num" ] [ text stepNum ]
                             , buildInstructions <| runParser el.original
                             ]
                         ]
             in
-            div [ class (buildClass index), onClick (SetCurrentStep index) ] [ stepText ]
+            div
+                [ class <| Util.tern (activeStep == index) "instruction active" "instruction"
+                , onClick (SetCurrentStep index)
+                ]
+                [ stepText ]
     in
     section [ class "instr-ingr-section", style "flex" "1.5" ]
         [ Ui.sectionHeading "Instructions"

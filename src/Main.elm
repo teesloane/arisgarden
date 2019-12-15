@@ -12,6 +12,7 @@ import Pages.Router exposing (..)
 import Time
 import Update exposing (Msg(..), Timer)
 import Url
+import Util
 
 
 
@@ -70,25 +71,19 @@ update msg model =
         SetCurrentStep index ->
             ( { model | currentStep = index }, Cmd.none )
 
-        AddTimer timer ->
+        TimerAdd timer ->
             ( { model | timers = model.timers ++ [ timer ] }, Cmd.none )
 
-        TimerDec _ ->
-            -- FIXME: clean this mess.
-            let
-                u_timers =
-                    List.map
-                        (\t ->
-                            { t
-                                | time =
-                                    if t.time > 0 then
-                                        t.time - 1
+        TimerDelete timer ->
+            ( { model | timers = List.filter (\t -> t.step /= timer.step) model.timers }, Cmd.none )
 
-                                    else
-                                        t.time
-                            }
-                        )
-                        model.timers
+        TimerDec _ ->
+            let
+                timeDec t =
+                    Util.tern (t.time > 0) (t.time - 1) t.time
+
+                u_timers =
+                    List.map (\t -> { t | time = timeDec t }) model.timers
             in
             ( { model | timers = u_timers }, Cmd.none )
 

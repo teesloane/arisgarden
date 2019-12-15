@@ -1,10 +1,14 @@
+body {
+  font-family: "Plex-Serif";
+  line-height: 1.4;
+}
+
 .container {
   max-width: 1200px;
   padding: 16px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  line-height: 1.5rem;
 }
 
 /* FIXME: scss-ify & move elsewhere */

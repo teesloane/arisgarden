@@ -65,3 +65,11 @@ intToSec totalSeconds =
             truncate <| totalSecondsFloat - (toFloat hours * 3600) - (toFloat minutes * 60)
     in
     strFmt hours ++ ":" ++ strFmt minutes ++ ":" ++ strFmt seconds
+
+
+tern test a b =
+    if test then
+        a
+
+    else
+        b

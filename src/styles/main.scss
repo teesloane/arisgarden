@@ -3,3 +3,8 @@
 @import "recipes";
 @import "common";
 @import "ui";
+
+@font-face {
+  font-family: $primary-serif;
+  src: url("/_plex-serif.otf"), url("/_plex-serif.otf") format("opentype");
+}
