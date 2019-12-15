@@ -9,6 +9,7 @@ import Json.Decode as Decode exposing (Decoder)
 import Json.Decode.Pipeline as JP
 import Pages.Recipe as Recipe exposing (Flags, Recipe)
 import Pages.Router exposing (..)
+import Time
 import Update exposing (Msg(..), Timer)
 import Url
 
@@ -70,20 +71,46 @@ update msg model =
             ( { model | currentStep = index }, Cmd.none )
 
         AddTimer timer ->
-            let
-                x =
-                    Debug.log "ADD TIMER UPDATE CALLED" timer
-            in
             ( { model | timers = model.timers ++ [ timer ] }, Cmd.none )
+
+        TimerDec _ ->
+            -- FIXME: clean this mess.
+            let
+                u_timers =
+                    List.map
+                        (\t ->
+                            { t
+                                | time =
+                                    if t.time > 0 then
+                                        t.time - 1
+
+                                    else
+                                        t.time
+                            }
+                        )
+                        model.timers
+            in
+            ( { model | timers = u_timers }, Cmd.none )
 
 
 
 -- SUBSCRIPTIONS
+--
+-- loop through timers and check if any times are > 0
+
+
+timersRunning model =
+    List.any (\t -> t.time > 0) model.timers
 
 
 subscriptions : Model -> Sub Msg
-subscriptions _ =
-    Sub.none
+subscriptions model =
+    case timersRunning model of
+        True ->
+            Time.every 1000 TimerDec
+
+        False ->
+            Sub.none
 
 
 

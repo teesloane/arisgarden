@@ -297,7 +297,7 @@ viewHero recipe =
 viewTimers model =
     let
         filteredTimers =
-            List.filter (\t -> t.time /= 0) model.timers
+            List.filter (\t -> t.time > 0) model.timers
 
         timerText t =
             t.step ++ " " ++ Util.intToSec t.time
