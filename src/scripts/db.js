@@ -583,7 +583,10 @@ module.exports = {
       "belongs_to": "main",
       "date_made": "[2019-09-10]",
       "ease_of_making": "5/5",
-      "imgs": [],
+      "imgs": [
+        "1.JPG",
+        "2.JPG"
+      ],
       "meal_type": "vegan",
       "name": "Massaman Curry",
       "original_recipe": "https://minimalistbaker.com/easy-1-pot-massaman-curry/",
@@ -1220,7 +1223,6 @@ module.exports = {
       "date_made": "[2019-09-30]",
       "ease_of_making": "4/5",
       "imgs": [
-        "1.JPG",
         "2.JPG",
         "3.JPG",
         "4.JPG"
