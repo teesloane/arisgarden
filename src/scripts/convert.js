@@ -112,7 +112,7 @@ function templateParser(str) {
   //       let split = s.split("|");
   //       let tagId = split[0].slice(3).trim();
   //       let tagContent = split[1].trim();
-  //       out["parsed"].push({ val: tagContent, attr: tagId });
+  //       out["parsed"].push({ val: tagC, attr: tagId });
   //       return out;
 
   //     default:

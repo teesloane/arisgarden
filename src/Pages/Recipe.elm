@@ -301,7 +301,7 @@ viewTimers model =
 
         timerMarkup t =
             div [ class "timer" ]
-                [ div [ class "time-string" ] [ text (t.step ++ " " ++ Util.intToSec t.time) ]
+                [ div [ class "time-string" ] [ text (t.step ++ ": " ++ Util.intToSec t.time) ]
                 , div [ class "close-btn", onClick (TimerDelete t) ] [ text "×" ]
                 ]
 

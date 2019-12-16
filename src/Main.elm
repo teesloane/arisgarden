@@ -45,6 +45,10 @@ type alias Model =
     }
 
 
+
+-- FIXME: remove need for "pseudo-maybe timer"
+
+
 init flags url key =
     case Decode.decodeValue Recipe.recipesDecoder flags.recipes of
         Ok recipes ->
@@ -66,7 +70,7 @@ update msg model =
                     ( model, Nav.load href )
 
         UrlChanged url ->
-            ( { model | url = url, currentStep = 0 }, Cmd.none )
+            ( { model | url = url, currentStep = 0, timers = [ Timer "" "" 0 ] }, Cmd.none )
 
         SetCurrentStep index ->
             ( { model | currentStep = index }, Cmd.none )

@@ -22,6 +22,7 @@
     display: flex;
     margin: 24px 16px;
     align-items: center;
+    justify-content: space-around;
   }
 
   .photo {
@@ -38,7 +39,6 @@
 
   .instruction-ingredients {
     display: flex;
-    font-size: 15px;
     padding: 5% 0;
   }
 
@@ -69,9 +69,9 @@
   .instruction {
     margin-bottom: 24px;
     padding-left: 12px;
-    padding-right: 16px;
     border-left: 3px solid rgba(0, 0, 0, 0);
     cursor: pointer;
+    min-height: 26px;
 
     &.active {
       border-left: 3px solid $primary;
