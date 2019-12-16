@@ -1,8 +1,28 @@
+@import "_vars";
+
+// -- RESET --------------------------------------------------------------------
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol,  ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; /* vertical-align: baseline; */} /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;} body {line-height: 1;} ol, ul {/* list-style: none; */ margin-left: 16px;} blockquote, q {quotes: none;} blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;} table {border-collapse: collapse; border-spacing: 0;} body, html {padding: 0; margin: 0; font-weight: 400; height: 100%; display: flex; flex-direction: column;} html { height: 100%; overflow:auto; } body { height: 100%; } th, td {text-align: left; padding: 8px;} a {border-bottom: 1px solid dotted; text-decoration: none; color: black;} hr {border: none; width: 100%; height: 2px; width: 100%; background-color: white;}
+
+
+// -- Defaults -----------------------------------------------------------------
+
 body {
   font-family: "Plex-Serif";
   line-height: 1.4;
   font-size: 16px;
 }
+
+h1, h2, h3, h4, h5, h6 {margin: 16px 0;}
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.3rem; }
+h3 { font-size: 1.2rem; }
+h4 { font-size: 1.0rem; font-weight: bold }
+b  { font-size: 1.2rem; }
+p  { margin: 16px 0; }
+
+
+// -- Common Classes -----------------------------------------------------------
 
 .container {
   max-width: 1200px;
@@ -12,26 +32,21 @@ body {
   flex-direction: column;
 }
 
-/* FIXME: scss-ify & move elsewhere */
 .ext-link {
   padding-bottom: 2px;
   border-bottom: 1px dotted grey;
-}
-.ext-link:after {
-  content: "ˆ";
-  color: coral;
-}
-.ext-link-light {
-  color: white;
-  padding-bottom: 2px;
-  border-bottom: 1px dotted grey;
-}
-.ext-link-light:after {
-  content: "ˆ";
-  color: coral;
-}
 
-/* Common Components */
+  &:after {
+    content: "ˆ";
+    color: coral;
+  }
+
+  &.light {
+    color: white;
+    padding-bottom: 2px;
+    border-bottom: 1px dotted grey;
+  }
+}
 
 .viewHero {
   min-height: 448px;
@@ -43,4 +58,14 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+// Elm Ui Classes --------------------------------------------------------------
+
+.section_heading {
+  color: $off-black;
+  font-family: $primary-serif;
+  font-size: 1.8em;
+  text-align: center;
+  margin: 32px 0;
 }
