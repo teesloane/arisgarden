@@ -47,7 +47,6 @@
       align-content: center;
       max-width: 600px;
       margin: 0px auto;
-      padding: 32px;
       font-size: 18px;
       line-height: 2;
       color: var(--offblack);
@@ -176,7 +175,7 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding: 24px 48px;
+    padding: 0px 48px;
   }
 
   .separator {

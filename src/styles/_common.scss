@@ -26,7 +26,7 @@ p  { margin: 16px 0; }
 
 .container {
   max-width: 1200px;
-  padding: 16px;
+  padding: 0 16px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -58,6 +58,7 @@ p  { margin: 16px 0; }
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: $section-bottom;
 }
 
 // Elm Ui Classes --------------------------------------------------------------
@@ -67,7 +68,7 @@ p  { margin: 16px 0; }
   font-family: $primary-serif;
   font-size: 1.8em;
   text-align: center;
-  margin: 32px 0;
+  margin-bottom: $section-bottom / 2;
 }
 
 .delta-hr {
@@ -91,3 +92,7 @@ p  { margin: 16px 0; }
 
 
 // Modular CSS -----------------------------------------------------------------
+//
+.bold {
+  font-weight: bold;
+}
