@@ -20,7 +20,7 @@
 .RecipeSingle {
   .photos {
     display: flex;
-    margin: 0px 16px 128px;
+    margin: 0px 16px $section-bottom;
     align-items: center;
     justify-content: space-around;
   }
@@ -38,7 +38,7 @@
   // -- &:COMMENTARY --------------------------------------------------
 
   .commentary {
-    margin-bottom: 192px;
+    margin-bottom: $section-bottom;
 
     .blurb {
       display: flex;
@@ -169,7 +169,7 @@
 
   .instruction-ingredients {
     display: flex;
-    padding: 128px 0;
+    margin-bottom: $section-bottom;
   }
 
   .instr-ingr-section {
