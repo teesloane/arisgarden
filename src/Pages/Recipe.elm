@@ -360,9 +360,7 @@ viewImages recipe =
   - Parse and display a recipe's instructions.
   - Handle rendering the timer and active step.
   - Handle creation of timers.
-  - FIXME: abstract buildClass functionality into a single function.
   - FIXME: rename :"chunk"
-  - FIXME: remove inline styles
   - FIXME: don't nest let blocks if possible.
 
 -}
@@ -386,7 +384,7 @@ viewInstructions recipe timers activeStep =
                         span [] [ text i.val ]
 
                     else
-                        span [ style "font-weight" "bold" ] [ text i.val ]
+                        span [ class "bold " ] [ text i.val ]
             in
             case parsedInstructions of
                 Ok c ->
