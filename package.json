@@ -24,6 +24,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.5",
     "css-loader": "^3.2.0",
+    "cz-conventional-changelog": "^3.0.2",
     "elm": "^0.19.1-2",
     "elm-analyse": "^0.16.5",
     "elm-hot-webpack-loader": "^1.1.5",
@@ -45,5 +46,10 @@
   },
   "dependencies": {
     "purecss": "^1.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
