@@ -20,7 +20,7 @@
 .RecipeSingle {
   .photos {
     display: flex;
-    margin: 24px 16px;
+    margin: 0px 16px 128px;
     align-items: center;
     justify-content: space-around;
   }
@@ -35,11 +35,141 @@
     width: 350px;
   }
 
+  // -- &:COMMENTARY --------------------------------------------------
+
+  .commentary {
+    margin-bottom: 192px;
+
+    .blurb {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      max-width: 600px;
+      margin: 0px auto;
+      padding: 32px;
+      font-size: 18px;
+      line-height: 2;
+      color: var(--offblack);
+    }
+
+    .dialogue {
+      align-content: center;
+      max-width: 500px;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: column;
+
+      .item {
+        padding: 24px;
+        margin: 12px 0;
+        font-size: 20px;
+        position: relative;
+        border-radius: 0.4em;
+        display: inline-flex;
+
+        &:nth-child(odd) {
+          align-self: flex-start;
+          background: #ffd397;
+          color: #333;
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-right-color: #ffd397;
+            border-left: 0;
+            margin-top: -10px;
+            margin-left: -10px;
+          }
+        }
+
+        &:nth-child(even) {
+          align-self: flex-end;
+          background: #c7d6c7;
+          color: #333;
+
+          &:after {
+            content: "";
+            position: absolute;
+            align-self: flex-end;
+            right: 0;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-left-color: #c7d6c7;
+            border-right: 0;
+            text-align: right;
+            margin-top: -10px;
+            margin-right: -10px;
+          }
+        }
+      }
+    }
+
+    .whisper {
+      font-size: 15px;
+      font-style: italic;
+      font-weight: 100;
+      max-width: 470px;
+      display: table;
+      margin: 0 auto;
+      letter-spacing: 1px;
+      padding: 32px;
+      line-height: 2;
+      text-align: center;
+      border: 1px dotted grey;
+    }
+
+    .big-quote {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      max-width: 600px;
+      margin: 0px auto;
+      font-size: 18px;
+      line-height: 2;
+      color: #444;
+
+      .item {
+        font-size: 72px;
+        line-height: 120%;
+        text-align: center;
+      }
+    }
+
+    .haiku {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      margin: 0px auto;
+
+      .item {
+        padding: 24px;
+        margin: 12px 0;
+        font-size: 20px;
+        font-weight: 100;
+        font-style: italic;
+        text-align: center;
+        color: #888;
+      }
+    }
+
+    .dialogue {
+    }
+  }
+
   // -- &:INSTRUCTIONS/INGREDIENTS -------------------------------------
 
   .instruction-ingredients {
     display: flex;
-    padding: 5% 0;
+    padding: 128px 0;
   }
 
   .instr-ingr-section {

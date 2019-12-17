@@ -69,3 +69,22 @@ p  { margin: 16px 0; }
   text-align: center;
   margin: 32px 0;
 }
+
+.delta-hr {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin: 0 0 96px;
+  color: #777;
+
+  .delta {
+    padding: 32px;
+  }
+
+  .border {
+    display: flex;
+    flex: 1;
+    height: 1px;
+    background: #777;
+  }
+}

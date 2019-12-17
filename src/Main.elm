@@ -55,6 +55,10 @@ init flags url key =
             ( Model key url (Just recipes) 0 Nothing [ Timer "" "" 0 ], Cmd.none )
 
         Err err ->
+            let
+                x =
+                    Debug.log "err is" err
+            in
             ( Model key url Nothing 0 Nothing [ Timer "" "" 0 ], Cmd.none )
 
 

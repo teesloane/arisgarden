@@ -81,7 +81,13 @@ module.exports = {
         {
           "original": "Top with [#: berr | fresh berries] and [#: almbut | almond butter]."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "big-quote",
+        "val": [
+          "I NEED ALL THE ALMOND BUTTER."
+        ]
+      }
     },
     "pantry-dahl": {
       "belongs_to": "main",
@@ -204,7 +210,13 @@ module.exports = {
         {
           "original": "Serve over rice. Optional: Garnish with cilantro and lime."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "I know of a pantry--and while the light at the outset glows bright and warm--it recedes into such depths that no light can reach. Now there... there grows the great and unimaginable vegetables."
+        ]
+      }
     },
     "chickpea-shakshuka": {
       "belongs_to": "main",
@@ -338,7 +350,13 @@ module.exports = {
         {
           "original": "[&: 5. Cook it up! | 00:15:00] Add [#: chickpeas | chickpeas] and [#: olives | olives]. Reduce heat to medium-low for 15-20 minutes."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "big-quote",
+        "val": [
+          "I will be forever de-shelling chickpeas."
+        ]
+      }
     },
     "collard-green-pasta": {
       "belongs_to": "main",
@@ -431,7 +449,15 @@ module.exports = {
         {
           "original": "Divide onto plates, top with nuts and parmesan shavings. Add two big lemon wedges per person."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "haiku",
+        "val": [
+          "Big leaflet of chard",
+          "Or, collars of collard greens",
+          "Friend of spaghetti."
+        ]
+      }
     },
     "bowl-1": {
       "belongs_to": "main",
@@ -577,7 +603,13 @@ module.exports = {
         {
           "original": "Combine tofu and sweet potato with quinoa chickpeas, carrots, and avocado, etc."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "big-quote",
+        "val": [
+          "Sit and be patient, like marinating tofu."
+        ]
+      }
     },
     "massaman-curry": {
       "belongs_to": "main",
@@ -729,7 +761,13 @@ module.exports = {
         {
           "original": "Enjoy with a side of rice."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "blurb",
+        "val": [
+          "We made this quite a while ago. In fact, I can't really remember much about it since then, except that we used shrimp, and now I feel bad about that because the original recipe posts it up as vegan. I shouldn't feel bad, but I'm also making a concerted effort that these recipes be vegetarian or vegan. I've been thinking about those terms a lot. I rarely eat meat these days, and now my decision not to is becoming more intentional and political. So, I guess that comes with a bit of guilt. So yeah. Anyway. It was pretty good."
+        ]
+      }
     },
     "cauliflower-rice-stir-fry": {
       "date_made": "[2019-09-12]",
@@ -890,7 +928,13 @@ module.exports = {
         {
           "original": "[&: Step 7. | 00:03:00] Add the sauce to the beans. Increase heat to medium-high. Cook for about 3 minutes until hot."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "Don't use too much soy-sauce. Just don't."
+        ]
+      }
     },
     "kale-coconut-rice": {
       "date_made": "[2019-09-17]",
@@ -1010,7 +1054,14 @@ module.exports = {
         {
           "original": "Add Soy sauce, Sriracha, and half of the lime juice. Stir."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "dialogue",
+        "val": [
+          "Clap-Clap (!) You know what that means?",
+          "Dinner time!"
+        ]
+      }
     },
     "sweet-potato-gnocci": {
       "date_made": "[2019-09-22]",
@@ -1109,7 +1160,13 @@ module.exports = {
         {
           "original": "Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "big-quote",
+        "val": [
+          "This one is worth the extra prep time."
+        ]
+      }
     },
     "garlic-alfredo-pasta": {
       "date_made": "[2019-09-23]",
@@ -1216,7 +1273,13 @@ module.exports = {
         {
           "original": "Once the pasta is cooked, drain the water and add directly to the sauce along with the brussel sprouts. Season with more parmesean if you want."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "big-quote",
+        "val": [
+          "I forgot to take photos for this one."
+        ]
+      }
     },
     "kimchi-udon": {
       "belongs_to": "main",
@@ -1318,7 +1381,13 @@ module.exports = {
         {
           "original": "Divide into bowls, top with egg yolks, [#: scall | scallions] and sesame seeds."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "You can remove an egg white by moving the egg from hand to hand."
+        ]
+      }
     },
     "asparagus-spaghetti": {
       "date_made": "",
@@ -1402,7 +1471,13 @@ module.exports = {
         {
           "original": "Make two fried eggs. Plate the spaghetti and put the egg on top."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "blurb",
+        "val": [
+          "The original recipe instructs you to make your own pesto. I don't have the energy to find million dollar pine nuts right now! Too bad! I'm buying a jar of pesto! Too bad for you recipe! You can't tell me what to do! .... Anyway. This was quick and easy to make, but make sure you use enough asparagus for variety. Maybe consider adding some chopped nuts."
+        ]
+      }
     },
     "thai-rice-bowl": {
       "date_made": "[2019-10-07]",
@@ -1560,7 +1635,13 @@ module.exports = {
         {
           "original": "Put rice in bowls, add broth, add diced vegetables as garnish. Enjoy!"
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "big-quote",
+        "val": [
+          "Is it supposed to be so soupy?"
+        ]
+      }
     },
     "tofu-pineapple-rice": {
       "date_made": "[2019-10-10]",
@@ -1704,7 +1785,13 @@ module.exports = {
         {
           "original": "Grill the tofu - use a BBQ or pan and heat the tofu for about 5 minutes on each side."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "blurb",
+        "val": [
+          "This recipe has a lot going on at once. If you are good at multitasking it might go quickly. I wouldn't know. Anyway. We'd recommend pressing the tofu first and then starting the coconut rice, both of which take 20-25 minutes. Also, when you grill the tofu, don't cut it too thick. If the tofu is bland, you could use some BBQ sauce."
+        ]
+      }
     },
     "pear-brie-salad": {
       "belongs_to": "salad",
@@ -1841,7 +1928,13 @@ module.exports = {
         {
           "original": "Add the [#: potatoes | potatoes] and broccoli as a side or mixed with the salad."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "A voice echoes out from the darkness. \"You can put cheese on salad\". It sounds weird, but you didn't know this before. You can feel yourself becoming more cultured already."
+        ]
+      }
     },
     "salad-raw-beet": {
       "belongs_to": "salad",
@@ -1972,7 +2065,13 @@ module.exports = {
         {
           "original": "Apply the dressing, not too much - if you have a lot of salad, portion it out and store undressed leftovers and save the dressing for leftovers."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "You don't need a spiralizer for this, but it's helpful."
+        ]
+      }
     },
     "black-bean-salad": {
       "belongs_to": "salad",
@@ -2083,15 +2182,19 @@ module.exports = {
         {
           "original": "Cover and chill. Leftovers should last 3 to 4 days."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "blurb",
+        "val": [
+          "This has a lot of ingredients but very few steps. You'll basically end up just combing a bunch of stuff in a bowl  and then adding a dressing. We'd recommend not adding the dressing to the entire bowl if you plan on having leftovers, but adding the dressing every time you have the dish."
+        ]
+      }
     },
     "marinated-tofu": {
       "belongs_to": "side",
       "date_made": "[2019-09-02]",
       "ease_of_making": "5/5",
-      "imgs": [
-        "false"
-      ],
+      "imgs": [],
       "meal_type": "vegan",
       "name": "Easy Marinated Tofu",
       "original_recipe": "https://simpleveganblog.com/easy-marinated-tofu/",
@@ -2156,7 +2259,13 @@ module.exports = {
         {
           "original": "Take the tofu out and pan fry until golden brown."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "Well, they are using plants to press the tofu. Big hulking things, sitting on top of 'em. Not trees, mind you. Frankly, I'm not surprised. It's about time they threw that weight around."
+        ]
+      }
     },
     "miso-asparagus": {
       "belongs_to": "side",
@@ -2243,7 +2352,13 @@ module.exports = {
         {
           "original": "Transfer to plate, squeeze [#: lime | lime juice] and top with scallions and sesame seeds."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "This could probably be a good side but we don't think it turned out super well. We don't have a BBQ right now so we used a pan. This made the asparagus a bit limp. We also probably over-doused it in the miso sauce... if you were using a grill it would have more places to drip off."
+        ]
+      }
     },
     "granola-bars": {
       "belongs_to": "snack",
@@ -2331,7 +2446,13 @@ module.exports = {
         {
           "original": "Transfer to a baking dish (8 x 8) lined with parchment paper."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "big-quote",
+        "val": [
+          "I've made a tornado of dates."
+        ]
+      }
     },
     "candied-ginger": {
       "belongs_to": "sweet",
@@ -2410,7 +2531,14 @@ module.exports = {
         {
           "original": "Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they are somewhat dry."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "dialogue",
+        "val": [
+          "I hope I don't ruin your pan.",
+          "That's ok. It's Chemistry."
+        ]
+      }
     },
     "pumpkin-chiffon-pie": {
       "belongs_to": "sweet",
@@ -2588,7 +2716,14 @@ module.exports = {
         {
           "original": "When you're ready to eat, top it with the rest of the cream."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "dialogue",
+        "val": [
+          "Come look at this. Look at this beautiful thing!",
+          "We have like, 10 photos of people holding the pie."
+        ]
+      }
     },
     "mediterranean-baked-sweet-potatoes": {
       "belongs_to": "main",
@@ -2749,7 +2884,15 @@ module.exports = {
         {
           "original": "Serve up: take out potatoes, and mash them open a bit. Top with roasted chickpeas, sauce, and cilantro and tomatoes. Serve quickly!"
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "haiku",
+        "val": [
+          "Searching through aisles",
+          "For dried dill and wondering",
+          "What dried dill looks like."
+        ]
+      }
     },
     "chickpea-cauliflower-curry": {
       "belongs_to": "main",
@@ -2896,7 +3039,13 @@ module.exports = {
         {
           "original": "Serve curry over quinoa. Top with slice avocado and red onion."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "We danced to Junior Boys while we cooked this one."
+        ]
+      }
     },
     "overnight-oats": {
       "belongs_to": "breakfast",
@@ -2978,7 +3127,13 @@ module.exports = {
         {
           "original": "In the morning, stir the oats. Distribute into bowls and add fresh fruit."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "blurb",
+        "val": [
+          "This is a good one. It's easy to make and quick. You can easily double the recipes to make enough for multiple days. Make sure to get some fresh fruit to put on top for when you prepare it."
+        ]
+      }
     },
     "orange-orzo-salad": {
       "belongs_to": "salad",
@@ -3105,7 +3260,13 @@ module.exports = {
         {
           "original": "[&: Let stand | 00:10:00] Pour the dressing on the salad and toss to combine. Leave for 10 minutes. Season with salt if necessary."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "blurb",
+        "val": [
+          "Try to make sure you cut the parsley small enough so that you don't end up getting big leafs of it taking over the salad. Same with the green onions. Feel free to mix up the measurements for the almonds, raisins and feta to your taste."
+        ]
+      }
     },
     "ratatouille": {
       "belongs_to": "main",
@@ -3257,7 +3418,13 @@ module.exports = {
         {
           "original": "Serve it up! Put it in bowls, drizzle with olive oil. Let it cool. It should last a few days. Maybe add some bread as a side."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "blurb",
+        "val": [
+          "We doubled this recipe and made it for six of us. It was a good meal, but involved a fair bit of prep. A friend brought tortelinni and we used that as a base and it mixed nicely. A side note: Yellow squash is basically yellow zucchini (which we couldn't find). You can just use one or the other in the recipe if you can only find one of the two."
+        ]
+      }
     },
     "avo-kimchi-egg-toast": {
       "belongs_to": "breakfast",
@@ -3349,7 +3516,15 @@ module.exports = {
         {
           "original": "Pull it all together: mush [#: avo | avocado] on top of bread. Add a sprinkle of salt. Add garlic, shallot, kimchi mix on top of avocado. Add poached egg on top. Sprinkle with [#: pap | paprika]."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "dialogue",
+        "val": [
+          "Have a bite of this.",
+          "No, I'm full.",
+          "(eyes watering) - Please."
+        ]
+      }
     },
     "tofu-kimchi-stew": {
       "belongs_to": "main",
@@ -3449,7 +3624,13 @@ module.exports = {
         {
           "original": "Divide among bowls, add thinly sliced green onion on top."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "blurb",
+        "val": [
+          "This is quick and easy to make. We couldn't find Daikon so we used radish, which seemed to work just fine. We only used 2 tbsp of gochujang and it was plenty spicey for us."
+        ]
+      }
     },
     "lime-rice-noodles": {
       "belongs_to": "main",
@@ -3570,7 +3751,13 @@ module.exports = {
         {
           "original": "Top with extra cilantro before serving."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "It's like an alfredo sauce, but it's not. (/¯◡ ‿ ◡)/¯ ~ ┻━┻"
+        ]
+      }
     },
     "pasta-pesto-salad": {
       "belongs_to": "main",
@@ -3700,7 +3887,13 @@ module.exports = {
         {
           "original": "Toss it all to combine! Season with a bit of salt and pepper."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "big-quote",
+        "val": [
+          "Don't forget to save your pasta water!"
+        ]
+      }
     },
     "bowl-2": {
       "belongs_to": "main",
@@ -3874,7 +4067,13 @@ module.exports = {
         {
           "original": "Prepare your bowl: add rice first, then a handful of the shredded cabbage, then salsa, then tofu, then drizzel with peanut sauce."
         }
-      ]
+      ],
+      "commentary": {
+        "kind": "blurb",
+        "val": [
+          "I wouldn't recommend putting your  FAVOURITE PLANT on top of the tofu to press it, because when it INEVITABLY FALLS OVER AND SPILLS SOIL EVERYWHERE, YOU WILL BE SAD. And your plant will probably be sad too. I'm so sorry my precious beauty star."
+        ]
+      }
     }
   }
 }

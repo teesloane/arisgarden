@@ -34,14 +34,24 @@ type alias Ingredient =
     }
 
 
+
+-- FIXME: Instruction doesn't need to be an alias
+
+
 type alias Instruction =
     { original : String
     }
 
 
+type alias Commentary =
+    { kind : String
+    , val : List String
+    }
+
+
 type alias Recipe =
-    { belongs_to : String -- "main" | "salad" etc
-    , date_made : String
+    { belongs_to : String -- "main" | "salad" etc -- FIXME: make this a union type.
+    , date_made : String -- FIXME: real dates please.
     , ease_of_making : String
     , imgs : List String
     , meal_type : MealType
@@ -53,9 +63,11 @@ type alias Recipe =
     , time : String
     , ingredients : List Ingredient
     , instructions : List Instruction
+    , commentary : Commentary
     }
 
-        
+
+
 -- Getters
 
 
@@ -71,6 +83,7 @@ nameFromSlug recipes slug =
 
         Nothing ->
             ""
+
 
 
 -- PARSER --
@@ -232,6 +245,13 @@ recipesDecoder =
     Decode.dict decodeRecipe
 
 
+decodeCommentary : Decoder Commentary
+decodeCommentary =
+    Decode.succeed Commentary
+        |> JP.required "kind" Decode.string
+        |> JP.required "val" (Decode.list Decode.string)
+
+
 decodeMealType : Decoder MealType
 decodeMealType =
     Decode.string
@@ -265,6 +285,7 @@ decodeRecipe =
         |> JP.required "time" Decode.string
         |> JP.required "ingredients" (Decode.list decoderIngredient)
         |> JP.required "instructions" (Decode.list decodeInstruction)
+        |> JP.required "commentary" decodeCommentary
 
 
 
@@ -342,7 +363,11 @@ viewImages recipe =
                 ]
                 []
     in
-    section [ class "photos" ] (List.map mapImgs recipe.imgs)
+    if List.length recipe.imgs > 0 then
+        section [ class "photos" ] (List.map mapImgs recipe.imgs)
+
+    else
+        div [] []
 
 
 {-| viewInstructions does a few things:
@@ -455,6 +480,7 @@ viewSingle model recipeName =
                         , section [ class "container" ]
                             [ viewIngrAndInstr recipe
                             , viewImages recipe
+                            , viewCommentary recipe.commentary
                             ]
                         ]
 
@@ -462,3 +488,47 @@ viewSingle model recipeName =
                     -- FIXME: Add a 404 redirect.
                     div [] [ text "RECIPE NOT FOUND! 404." ]
         )
+
+
+{-| Handles rendering the "Commentary" of a recipe
+-}
+viewCommentary commentary =
+    let
+        { kind, val } =
+            commentary
+
+        mappedVal =
+            List.map (\c -> div [ class "item" ] [ text c ]) val
+
+        separator =
+            case kind of
+                "whisper" ->
+                    "፨"
+
+                "big-quote" ->
+                    "“"
+
+                "haiku" ->
+                    "&"
+
+                "blurb" ->
+                    "⌂"
+
+                "dialogue" ->
+                    "⍥"
+
+                _ ->
+                    "&"
+    in
+    section [ class "commentary" ]
+        [ viewHr separator
+        , div [ class kind ] mappedVal
+        ]
+
+
+viewHr char =
+    div [ class "delta-hr" ]
+        [ div [ class "border" ] []
+        , div [ class "delta" ] [ text char ]
+        , div [ class "border" ] []
+        ]

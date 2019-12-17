@@ -790,7 +790,7 @@
 :belongs_to: side
 :date_made: [2019-09-02]
 :ease_of_making: 5/5
-:imgs: ["false"]
+:imgs: []
 :meal_type: vegan
 :name: Easy Marinated Tofu
 :original_recipe: https://simpleveganblog.com/easy-marinated-tofu/

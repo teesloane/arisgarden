@@ -37,8 +37,8 @@ function getRecipe(heading) {
   return {
     ...properties,
     ingredients: getIngredients(heading),
-    instructions: getInstructions(heading)
-    // content: getContent(heading) // FIXME: add back in
+    instructions: getInstructions(heading),
+    commentary: getContent(heading)
   };
 }
 
@@ -56,10 +56,7 @@ function getContent(n) {
 
     let parsedProps = parseProperties(contentProps.value);
     let parsedContent = parseListShallow(content.children);
-    return {
-      props: parsedProps,
-      value: parsedContent
-    };
+    return { kind: parsedProps.type, val: parsedContent };
   } catch {
     console.log(
       "Missing value / problem with:",
@@ -92,6 +89,7 @@ function getInstructions(n) {
 //
 // 5) [t: 00:18:00] Cook for 18-30 minutes. Stir frequently.
 // Will return timer data for an inline timer.
+// FIXME: remove! handled in elm now.
 function templateParser(str) {
   let ogstr = str;
   // let ogRE = /\[(.*?)\]/;
