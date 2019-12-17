@@ -63,24 +63,12 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "[&:1. Make quinoa | 00:15:00] Make the [#: quin | quinoa]: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes"
-        },
-        {
-          "original": "[&:2. Heat nuts | 00:04:00] Heat chopped [#: nuts | nuts] in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes."
-        },
-        {
-          "original": "[&:3. Oil and spices | 00:00:15] Add [#: oil | coconut oil], [#: cin | cinnamon] to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds."
-        },
-        {
-          "original": "[&:4. Add Quinoa | 00:01:00] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add [#: syr | maple syrup]."
-        },
-        {
-          "original": "Add the nuts to the quinoa. Top with a sprinkle of cinnamon."
-        },
-        {
-          "original": "Top with [#: berr | fresh berries] and [#: almbut | almond butter]."
-        }
+        "[&:1. Make quinoa | 00:15:00] Make the [#: quin | quinoa]: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes",
+        "[&:2. Heat nuts | 00:04:00] Heat chopped [#: nuts | nuts] in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes.",
+        "[&:3. Oil and spices | 00:00:15] Add [#: oil | coconut oil], [#: cin | cinnamon] to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds.",
+        "[&:4. Add Quinoa | 00:01:00] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add [#: syr | maple syrup].",
+        "Add the nuts to the quinoa. Top with a sprinkle of cinnamon.",
+        "Top with [#: berr | fresh berries] and [#: almbut | almond butter]."
       ],
       "commentary": {
         "kind": "big-quote",
@@ -192,24 +180,12 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Melt [#: oil-coconut | coconut oil] in a large pot."
-        },
-        {
-          "original": "Peel (if necessary) and dice vegetables into 1/2 inch pieces. Add to pot and stir."
-        },
-        {
-          "original": "Add the rest of the ingredients ([#: milk-coconut | coconut milk], [#: tomato-diced-can | diced tomato], [#: powder-garlic | garlic powder], [#: onion-minced | minced onion], [#: powder-curry | curry powder] [#: lentils-red | lentils])."
-        },
-        {
-          "original": "Bring to a boil and the reduce heat to medium."
-        },
-        {
-          "original": "[&: 5. Cook it all up | 00:18:00] Cook for 18-30 minutes. Stir and taste frequently. Remove from heat when vegetables are tender."
-        },
-        {
-          "original": "Serve over rice. Optional: Garnish with cilantro and lime."
-        }
+        "Melt [#: oil-coconut | coconut oil] in a large pot.",
+        "Peel (if necessary) and dice vegetables into 1/2 inch pieces. Add to pot and stir.",
+        "Add the rest of the ingredients ([#: milk-coconut | coconut milk], [#: tomato-diced-can | diced tomato], [#: powder-garlic | garlic powder], [#: onion-minced | minced onion], [#: powder-curry | curry powder] [#: lentils-red | lentils]).",
+        "Bring to a boil and the reduce heat to medium.",
+        "[&: 5. Cook it all up | 00:18:00] Cook for 18-30 minutes. Stir and taste frequently. Remove from heat when vegetables are tender.",
+        "Serve over rice. Optional: Garnish with cilantro and lime."
       ],
       "commentary": {
         "kind": "whisper",
@@ -335,21 +311,11 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Heat a large metal or cast iron skilled on medium heat."
-        },
-        {
-          "original": "[&: 2. Sauté vegetables | 00:04:00] When hot, add [#: oil-olive | olive oil ], [#: onion-white | onion], [#: pepper-bell | bell pepper] and [#: garlic | garlic]. Saute for 4-5 minutes, stirring frequently."
-        },
-        {
-          "original": "Add [#: tomato-diced | diced tomatoes], [#: tomato-paste | tomato paste], [#: maple-syrup | maple syrup], [#: salt-sea | sea salt], [#: paprika | paprika], [#: cumin-ground | cumin], [#: chili-powder | chili powder], [#: cinnamon-ground | cinnamon]. Stir."
-        },
-        {
-          "original": "[&: 4. Simmer and Cook | 00:03:00] Bring to a simmer. Cook for 2-3 minutes."
-        },
-        {
-          "original": "[&: 5. Cook it up! | 00:15:00] Add [#: chickpeas | chickpeas] and [#: olives | olives]. Reduce heat to medium-low for 15-20 minutes."
-        }
+        "Heat a large metal or cast iron skilled on medium heat.",
+        "[&: 2. Sauté vegetables | 00:04:00] When hot, add [#: oil-olive | olive oil ], [#: onion-white | onion], [#: pepper-bell | bell pepper] and [#: garlic | garlic]. Saute for 4-5 minutes, stirring frequently.",
+        "Add [#: tomato-diced | diced tomatoes], [#: tomato-paste | tomato paste], [#: maple-syrup | maple syrup], [#: salt-sea | sea salt], [#: paprika | paprika], [#: cumin-ground | cumin], [#: chili-powder | chili powder], [#: cinnamon-ground | cinnamon]. Stir.",
+        "[&: 4. Simmer and Cook | 00:03:00] Bring to a simmer. Cook for 2-3 minutes.",
+        "[&: 5. Cook it up! | 00:15:00] Add [#: chickpeas | chickpeas] and [#: olives | olives]. Reduce heat to medium-low for 15-20 minutes."
       ],
       "commentary": {
         "kind": "big-quote",
@@ -425,30 +391,14 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Bring a pot of salted water to boil. Cook the [#: spaghetti | pasta]."
-        },
-        {
-          "original": "Drain the pasta, reserving a bit of cooking water. Set aside."
-        },
-        {
-          "original": "Cut out the \"rib\" of the swiss chard. Roll up the leaves like a cigar. Slice across the role, as thinly as possible."
-        },
-        {
-          "original": "Heat a skillet on medium heat. Toast the [#: nuts | nuts] until fragrant. Set aside."
-        },
-        {
-          "original": "Using the same skillet, heat the [#: oil-olive | olive oil]. When hot, put in the [#: garlic | garlic] and [#: red-pepper-flakes | red pepper flakes]."
-        },
-        {
-          "original": "[&: 6. Add swiss-chard | 00:03:00] After a bit, toss in the swiss-chard. Sprinkle with salt. Stir often, about three minutes."
-        },
-        {
-          "original": "Scoop chard into pasta pot and toss with oil. Add pasta water if necessary."
-        },
-        {
-          "original": "Divide onto plates, top with nuts and parmesan shavings. Add two big lemon wedges per person."
-        }
+        "Bring a pot of salted water to boil. Cook the [#: spaghetti | pasta].",
+        "Drain the pasta, reserving a bit of cooking water. Set aside.",
+        "Cut out the \"rib\" of the swiss chard. Roll up the leaves like a cigar. Slice across the role, as thinly as possible.",
+        "Heat a skillet on medium heat. Toast the [#: nuts | nuts] until fragrant. Set aside.",
+        "Using the same skillet, heat the [#: oil-olive | olive oil]. When hot, put in the [#: garlic | garlic] and [#: red-pepper-flakes | red pepper flakes].",
+        "[&: 6. Add swiss-chard | 00:03:00] After a bit, toss in the swiss-chard. Sprinkle with salt. Stir often, about three minutes.",
+        "Scoop chard into pasta pot and toss with oil. Add pasta water if necessary.",
+        "Divide onto plates, top with nuts and parmesan shavings. Add two big lemon wedges per person."
       ],
       "commentary": {
         "kind": "haiku",
@@ -576,33 +526,15 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Make the marinade: combine [#: oil-olive | olive oil], [#: oil-sesame | seasame oil], [#: sauce-hot | hot sauce], [#: thyme | thyme], [#: paprika | paprika], and [#: salt | salt]. Set aside."
-        },
-        {
-          "original": "[&: Marinate Tofu | 00:30:00] Add marinade and tofu to a container and marinate for at least 30 minutes (up to a day)."
-        },
-        {
-          "original": "Preheat the oven to 400F (200C)."
-        },
-        {
-          "original": "[&: Bake potatoes | 00:20:00] Cut [#: potato-sweet | sweet potato] into cubes. Slice the [#: onion | onion], dice [#: garlic | garlic]. Put it all on a baking sheet. Drizzel with oil, season with salt and pepper. Bake for 20-25 min."
-        },
-        {
-          "original": "In a medium bowl, add the [#: chickpeas | chickpeas], salt, pepper, [#: chili-powder | chili powder], and [#: garlic-powder | garlic powder]. Stir to combine."
-        },
-        {
-          "original": "[&: Cook chickpeas | 00:10:00] Transfer chickpeas to skillet and cook on medium heat for 10 minutes. Set aside."
-        },
-        {
-          "original": "[&: Fry Tofu | 00:10:00] Fry the tofu in the same pan for about 10 minutes on each side."
-        },
-        {
-          "original": "Slice tofu as you like."
-        },
-        {
-          "original": "Combine tofu and sweet potato with quinoa chickpeas, carrots, and avocado, etc."
-        }
+        "Make the marinade: combine [#: oil-olive | olive oil], [#: oil-sesame | seasame oil], [#: sauce-hot | hot sauce], [#: thyme | thyme], [#: paprika | paprika], and [#: salt | salt]. Set aside.",
+        "[&: Marinate Tofu | 00:30:00] Add marinade and tofu to a container and marinate for at least 30 minutes (up to a day).",
+        "Preheat the oven to 400F (200C).",
+        "[&: Bake potatoes | 00:20:00] Cut [#: potato-sweet | sweet potato] into cubes. Slice the [#: onion | onion], dice [#: garlic | garlic]. Put it all on a baking sheet. Drizzel with oil, season with salt and pepper. Bake for 20-25 min.",
+        "In a medium bowl, add the [#: chickpeas | chickpeas], salt, pepper, [#: chili-powder | chili powder], and [#: garlic-powder | garlic powder]. Stir to combine.",
+        "[&: Cook chickpeas | 00:10:00] Transfer chickpeas to skillet and cook on medium heat for 10 minutes. Set aside.",
+        "[&: Fry Tofu | 00:10:00] Fry the tofu in the same pan for about 10 minutes on each side.",
+        "Slice tofu as you like.",
+        "Combine tofu and sweet potato with quinoa chickpeas, carrots, and avocado, etc."
       ],
       "commentary": {
         "kind": "big-quote",
@@ -725,42 +657,18 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Press your tofu. You'll come back and cube it once pressed."
-        },
-        {
-          "original": "Cook desired serving of rice as per package instructions."
-        },
-        {
-          "original": "Heat a large pot or dutch oven on medium heat. Once hot, add [#: oil-coconut | oil] and [#: shallots | shallots]."
-        },
-        {
-          "original": "[&: 4. Sauté shallots | 00:02:00] Sauté for 2 minutes. Stir frequently."
-        },
-        {
-          "original": "[&: 5. Add spices | 00:02:00] Add [#: cumin-powder | cumin] and [#: coriander-powder | coriander]. Saute for 2 minutes, stirring frequently."
-        },
-        {
-          "original": "[&: 6. Add curry paste | 00:01:00] Add [#: red-curry-paste | red curry paste] and stir for another minute."
-        },
-        {
-          "original": "[&: 7. Add carrots / potatoes | 00:02:00] Add [#: potatoes-baby | potatoes] and [#: carrots | carrots] and stir to coat. Cook for 2 minutes."
-        },
-        {
-          "original": "Add [#: milk-coconut | coconut milk], [#: water | water], [#: ground-cinnamon | cinnamon], [#: sauce-soy | soy-sauce], [#: maple-syrup | maple syrup], and [#: peanut-butter | peanut butter]. Add your tofu or other protein now."
-        },
-        {
-          "original": "[&: 9. Simmer | 00:10:00] Bring to a simmer and cook for 10-15 minutes uncovered. Don't boil it. Simmer it."
-        },
-        {
-          "original": "Near the end of the previous step, toss in your tofu and the [#: lime-juice | lime juice]. Cook for another few minutes."
-        },
-        {
-          "original": "[&: Let stand | 00:10:00] Let stand for 10 minutes."
-        },
-        {
-          "original": "Enjoy with a side of rice."
-        }
+        "Press your tofu. You'll come back and cube it once pressed.",
+        "Cook desired serving of rice as per package instructions.",
+        "Heat a large pot or dutch oven on medium heat. Once hot, add [#: oil-coconut | oil] and [#: shallots | shallots].",
+        "[&: 4. Sauté shallots | 00:02:00] Sauté for 2 minutes. Stir frequently.",
+        "[&: 5. Add spices | 00:02:00] Add [#: cumin-powder | cumin] and [#: coriander-powder | coriander]. Saute for 2 minutes, stirring frequently.",
+        "[&: 6. Add curry paste | 00:01:00] Add [#: red-curry-paste | red curry paste] and stir for another minute.",
+        "[&: 7. Add carrots / potatoes | 00:02:00] Add [#: potatoes-baby | potatoes] and [#: carrots | carrots] and stir to coat. Cook for 2 minutes.",
+        "Add [#: milk-coconut | coconut milk], [#: water | water], [#: ground-cinnamon | cinnamon], [#: sauce-soy | soy-sauce], [#: maple-syrup | maple syrup], and [#: peanut-butter | peanut butter]. Add your tofu or other protein now.",
+        "[&: 9. Simmer | 00:10:00] Bring to a simmer and cook for 10-15 minutes uncovered. Don't boil it. Simmer it.",
+        "Near the end of the previous step, toss in your tofu and the [#: lime-juice | lime juice]. Cook for another few minutes.",
+        "[&: Let stand | 00:10:00] Let stand for 10 minutes.",
+        "Enjoy with a side of rice."
       ],
       "commentary": {
         "kind": "blurb",
@@ -907,27 +815,13 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Wash the cauliflower. Chop it in a blender until you have small chunks (that look more like rice than cauliflower.)"
-        },
-        {
-          "original": "Create the sauce: add coconut oil, peanut butter, soy sauce lime juice, chili garlic sauce, fresh ginger, maple syrup, and water into a small bowl. Whisk to combine. Set aside."
-        },
-        {
-          "original": "[&: Step 3 | 00:05:00] Heat a skillet over medium-low. Add cauliflower rice and water. Stir and cover with a lid to steam. Cook for 4-6 minutes or until just tender. Remove and let some steam out."
-        },
-        {
-          "original": "[&: Step 4. | 00:04:00] Heat another skillet (or pot) on medium heat. When hot, add coconut oil and green beans. Season with 1/3 of the soy sauce used for the stirfry  tbsp). Cover with lid and steam for about 4 minutes."
-        },
-        {
-          "original": "[&: Step 5 | 00:03:00] Add bell peppers, green onion, cabbage, and remaining soy sauce (2tbsp). Stir. Saute for 3-4 minutes."
-        },
-        {
-          "original": "Add cashes and cauliflower rice and stir to combine."
-        },
-        {
-          "original": "[&: Step 7. | 00:03:00] Add the sauce to the beans. Increase heat to medium-high. Cook for about 3 minutes until hot."
-        }
+        "Wash the cauliflower. Chop it in a blender until you have small chunks (that look more like rice than cauliflower.)",
+        "Create the sauce: add coconut oil, peanut butter, soy sauce lime juice, chili garlic sauce, fresh ginger, maple syrup, and water into a small bowl. Whisk to combine. Set aside.",
+        "[&: Step 3 | 00:05:00] Heat a skillet over medium-low. Add cauliflower rice and water. Stir and cover with a lid to steam. Cook for 4-6 minutes or until just tender. Remove and let some steam out.",
+        "[&: Step 4. | 00:04:00] Heat another skillet (or pot) on medium heat. When hot, add coconut oil and green beans. Season with 1/3 of the soy sauce used for the stirfry  tbsp). Cover with lid and steam for about 4 minutes.",
+        "[&: Step 5 | 00:03:00] Add bell peppers, green onion, cabbage, and remaining soy sauce (2tbsp). Stir. Saute for 3-4 minutes.",
+        "Add cashes and cauliflower rice and stir to combine.",
+        "[&: Step 7. | 00:03:00] Add the sauce to the beans. Increase heat to medium-high. Cook for about 3 minutes until hot."
       ],
       "commentary": {
         "kind": "whisper",
@@ -1033,27 +927,13 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Cook the [#: rice | rice] and set it aside to cool."
-        },
-        {
-          "original": "Heat a large skillet on medium high heat. Add 1 teaspoon of [#: oil-coconut | coconut oil]."
-        },
-        {
-          "original": "Add [#: eggs | eggs] and stir frequently so they are sort of scrambled. Transfer to bowl when done and wipe the pan clean."
-        },
-        {
-          "original": "Add a tablespoon of coconut oil to pan. Add [#: garlic | garlic], [#: onions-green | green onions] and [#: vegetables-chopped | vegetables]. Cook until fragrant (30 seconds).  Add the [#: kale | kale] and [#: salt-sea | salt] . Cook until wilted, about 1-2 minutes. Transfer to bowl with eggs."
-        },
-        {
-          "original": "Add 2 more tablespoons of coconut oil to the pan AGAIN. Add the coconut flakes, stir frequently until golden. Add the cooked rice and stir occaisionally until hot, about 3 minutes."
-        },
-        {
-          "original": "Pour the contents of the bowl back into the pan, breaking up the scrambled egg with a spatula."
-        },
-        {
-          "original": "Add Soy sauce, Sriracha, and half of the lime juice. Stir."
-        }
+        "Cook the [#: rice | rice] and set it aside to cool.",
+        "Heat a large skillet on medium high heat. Add 1 teaspoon of [#: oil-coconut | coconut oil].",
+        "Add [#: eggs | eggs] and stir frequently so they are sort of scrambled. Transfer to bowl when done and wipe the pan clean.",
+        "Add a tablespoon of coconut oil to pan. Add [#: garlic | garlic], [#: onions-green | green onions] and [#: vegetables-chopped | vegetables]. Cook until fragrant (30 seconds).  Add the [#: kale | kale] and [#: salt-sea | salt] . Cook until wilted, about 1-2 minutes. Transfer to bowl with eggs.",
+        "Add 2 more tablespoons of coconut oil to the pan AGAIN. Add the coconut flakes, stir frequently until golden. Add the cooked rice and stir occaisionally until hot, about 3 minutes.",
+        "Pour the contents of the bowl back into the pan, breaking up the scrambled egg with a spatula.",
+        "Add Soy sauce, Sriracha, and half of the lime juice. Stir."
       ],
       "commentary": {
         "kind": "dialogue",
@@ -1130,36 +1010,16 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "[&: Bake sweet potato | 00:50:00] Prick the [#: potato-sweet | sweet potato] several times with a fork. Put it in the oven for 50-60 minutes at about 425 degrees."
-        },
-        {
-          "original": "Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add [#: salt | salt]. Add nutritional yeast or parmesan if you want. Add the [#: flour | flour] and knead gently. Don't over knead. Try to use as little flour as possible."
-        },
-        {
-          "original": "Transfer the dough to a floured work surface. Form it in a flat ball and cut into quarters. Take a piece and form a long rope, rolling it into a long rope. Cut the rope into 2cm pieces."
-        },
-        {
-          "original": "Create gnocchi \"ridges\" into the sweet potato pieces by rolling it along the tines of a fork (from the tip backward)."
-        },
-        {
-          "original": "Bring a pot of salted water to a boil. Add the gnocchi, cook until they float to the top of the water. Drain. Optional: toss with a little olive oil to prevent sticking."
-        },
-        {
-          "original": "If you have more gnocchi than you need, now is the time to freeze the abundance."
-        },
-        {
-          "original": "[&: 7. Roast tomato | 00:15:00] Put [#: tomatoes | tomatoes] onto a baking sheet with cloves of garlic. Drizzle  with olive oil. Season with salt and pepper. Roast in the oven at 400 for 15 minutes."
-        },
-        {
-          "original": "Toast [#: nuts | nuts] in a small pan with additional oil. Set aside."
-        },
-        {
-          "original": "Heat [#: coco-oil | coconut oil] on medium. Add the gnocchi and roast until golden-brown and crispy."
-        },
-        {
-          "original": "Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs."
-        }
+        "[&: Bake sweet potato | 00:50:00] Prick the [#: potato-sweet | sweet potato] several times with a fork. Put it in the oven for 50-60 minutes at about 425 degrees.",
+        "Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add [#: salt | salt]. Add nutritional yeast or parmesan if you want. Add the [#: flour | flour] and knead gently. Don't over knead. Try to use as little flour as possible.",
+        "Transfer the dough to a floured work surface. Form it in a flat ball and cut into quarters. Take a piece and form a long rope, rolling it into a long rope. Cut the rope into 2cm pieces.",
+        "Create gnocchi \"ridges\" into the sweet potato pieces by rolling it along the tines of a fork (from the tip backward).",
+        "Bring a pot of salted water to a boil. Add the gnocchi, cook until they float to the top of the water. Drain. Optional: toss with a little olive oil to prevent sticking.",
+        "If you have more gnocchi than you need, now is the time to freeze the abundance.",
+        "[&: 7. Roast tomato | 00:15:00] Put [#: tomatoes | tomatoes] onto a baking sheet with cloves of garlic. Drizzle  with olive oil. Season with salt and pepper. Roast in the oven at 400 for 15 minutes.",
+        "Toast [#: nuts | nuts] in a small pan with additional oil. Set aside.",
+        "Heat [#: coco-oil | coconut oil] on medium. Add the gnocchi and roast until golden-brown and crispy.",
+        "Serve Gnocchi with roasted tomatoes and nuts and sprinkle with cheese or fresh chooped herbs."
       ],
       "commentary": {
         "kind": "big-quote",
@@ -1243,36 +1103,16 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Preheat oven to 400F. Add [#: brus | brussel sprouts] to baking sheet in a single layer. Drizzel with [#: oil | oil] and season with salt and pepper. Arranger in a single layer."
-        },
-        {
-          "original": "Bring a pot of water to a boil."
-        },
-        {
-          "original": "Heat a skillet. Add 1-2 tbsp of oil. Add [#: garlic | garlic]. Saute for 3 minutes."
-        },
-        {
-          "original": "[&: Saute | 13:02:12] Add [#: wine | wine]. Saute for 2-4 minutes."
-        },
-        {
-          "original": "Add [#: corn | cornstarch] and [#: milk | almond milk] and whisk. It'll be clumpy."
-        },
-        {
-          "original": "Move the mixture to a blender. Add [#: yeast | nutritional yeast], salt + pepper, [#: parm | parmesan cheese]. Blend on high until creamy and smooth."
-        },
-        {
-          "original": "Transfer sauce back to skilled and warm over medium low heat. It should thicken, then lower the heat to low and simmer until the pasta is cooked. If it gets too thick, add almond milk to thin it out. Try not to let a film form overtop."
-        },
-        {
-          "original": "[&: Brussel Sprouts | 00:12:00] Add brussel sprouts to the oven for 12-15 minutes or until golden brown."
-        },
-        {
-          "original": "At the same time as the previous step, add pasta to boiling water and cook according to the package instructions."
-        },
-        {
-          "original": "Once the pasta is cooked, drain the water and add directly to the sauce along with the brussel sprouts. Season with more parmesean if you want."
-        }
+        "Preheat oven to 400F. Add [#: brus | brussel sprouts] to baking sheet in a single layer. Drizzel with [#: oil | oil] and season with salt and pepper. Arranger in a single layer.",
+        "Bring a pot of water to a boil.",
+        "Heat a skillet. Add 1-2 tbsp of oil. Add [#: garlic | garlic]. Saute for 3 minutes.",
+        "[&: Saute | 13:02:12] Add [#: wine | wine]. Saute for 2-4 minutes.",
+        "Add [#: corn | cornstarch] and [#: milk | almond milk] and whisk. It'll be clumpy.",
+        "Move the mixture to a blender. Add [#: yeast | nutritional yeast], salt + pepper, [#: parm | parmesan cheese]. Blend on high until creamy and smooth.",
+        "Transfer sauce back to skilled and warm over medium low heat. It should thicken, then lower the heat to low and simmer until the pasta is cooked. If it gets too thick, add almond milk to thin it out. Try not to let a film form overtop.",
+        "[&: Brussel Sprouts | 00:12:00] Add brussel sprouts to the oven for 12-15 minutes or until golden brown.",
+        "At the same time as the previous step, add pasta to boiling water and cook according to the package instructions.",
+        "Once the pasta is cooked, drain the water and add directly to the sauce along with the brussel sprouts. Season with more parmesean if you want."
       ],
       "commentary": {
         "kind": "big-quote",
@@ -1360,27 +1200,13 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Chop [#: kimchi | kimchi] and collect [#: kimchi-juice | kimchi juice]."
-        },
-        {
-          "original": "[&: 2. Butter + Kimchi |  00:04:00] Heat 2 tbsp of butter on medium high. Add chopped kimchi and [#: gochu | gochujang] and cook, stirring until kimchi is softened and lightly caramelized, around 4 minutes."
-        },
-        {
-          "original": "[&: 3. Simmer |  00:03:00] Add [#: veg-broth | broth] and kimchi juice and bring to a simmer. Cook until slightly reduced, about 3 minutes."
-        },
-        {
-          "original": "Boil [#: udon | noodles] according to package directions."
-        },
-        {
-          "original": "[&: 5. Noodles |  00:02:00] Using tongs, transfer noodles to the skillet and add the remaining 3 tbsp of butter. Cook, tossing often, about 2 minutes."
-        },
-        {
-          "original": "Season with salt if needed."
-        },
-        {
-          "original": "Divide into bowls, top with egg yolks, [#: scall | scallions] and sesame seeds."
-        }
+        "Chop [#: kimchi | kimchi] and collect [#: kimchi-juice | kimchi juice].",
+        "[&: 2. Butter + Kimchi |  00:04:00] Heat 2 tbsp of butter on medium high. Add chopped kimchi and [#: gochu | gochujang] and cook, stirring until kimchi is softened and lightly caramelized, around 4 minutes.",
+        "[&: 3. Simmer |  00:03:00] Add [#: veg-broth | broth] and kimchi juice and bring to a simmer. Cook until slightly reduced, about 3 minutes.",
+        "Boil [#: udon | noodles] according to package directions.",
+        "[&: 5. Noodles |  00:02:00] Using tongs, transfer noodles to the skillet and add the remaining 3 tbsp of butter. Cook, tossing often, about 2 minutes.",
+        "Season with salt if needed.",
+        "Divide into bowls, top with egg yolks, [#: scall | scallions] and sesame seeds."
       ],
       "commentary": {
         "kind": "whisper",
@@ -1456,21 +1282,11 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "[&: Boil spaghetti | 00:10:00] Boil spaghetti until al dente. Around 10 minutes."
-        },
-        {
-          "original": "[&: Fry asparagus | 00:04:00] Melt [#: but | butter] in a frying pan and add [#: asparagus | asparagus]. Cook for a few minutes."
-        },
-        {
-          "original": "Add the [#: garlic | garlic] and cook a little longer until the asparagus is tender with a bit of a crunch still. Season with salt and pepper."
-        },
-        {
-          "original": "When the pasta is ready, drain and add the asparagus mixture and the pesto. Mix everything in and put a lit on to keep the heat in."
-        },
-        {
-          "original": "Make two fried eggs. Plate the spaghetti and put the egg on top."
-        }
+        "[&: Boil spaghetti | 00:10:00] Boil spaghetti until al dente. Around 10 minutes.",
+        "[&: Fry asparagus | 00:04:00] Melt [#: but | butter] in a frying pan and add [#: asparagus | asparagus]. Cook for a few minutes.",
+        "Add the [#: garlic | garlic] and cook a little longer until the asparagus is tender with a bit of a crunch still. Season with salt and pepper.",
+        "When the pasta is ready, drain and add the asparagus mixture and the pesto. Mix everything in and put a lit on to keep the heat in.",
+        "Make two fried eggs. Plate the spaghetti and put the egg on top."
       ],
       "commentary": {
         "kind": "blurb",
@@ -1617,24 +1433,12 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Make the [#: rice | rice]. Cook according to packaging."
-        },
-        {
-          "original": "Prepare garnishes: matchstick the [#:carrots | carrots], thinly slice the [#: cucu | cucumber], slice the [#: jalap | jalapeno] into rings and chop the [#: peanuts | peanuts]."
-        },
-        {
-          "original": "Broth pt. 1: heat saucepan with oil. Add [#: garlic | garlic] and [#: ginger | ginger] when hot, for 30 seconds."
-        },
-        {
-          "original": "Broth pt. 2: Add [#: rcp | thai curry paste], [#: soysauce | soy sauce], [#: pb | peanut butter], [#: vegbroth | vegetable broth], [#: coco | coconut milk] and [#: honey | honey]."
-        },
-        {
-          "original": "[&: 5. Boil and simmer | 00:10:00] Broth pt. 3: Bring to boil, reduce heat, simmer for 10 minutes."
-        },
-        {
-          "original": "Put rice in bowls, add broth, add diced vegetables as garnish. Enjoy!"
-        }
+        "Make the [#: rice | rice]. Cook according to packaging.",
+        "Prepare garnishes: matchstick the [#:carrots | carrots], thinly slice the [#: cucu | cucumber], slice the [#: jalap | jalapeno] into rings and chop the [#: peanuts | peanuts].",
+        "Broth pt. 1: heat saucepan with oil. Add [#: garlic | garlic] and [#: ginger | ginger] when hot, for 30 seconds.",
+        "Broth pt. 2: Add [#: rcp | thai curry paste], [#: soysauce | soy sauce], [#: pb | peanut butter], [#: vegbroth | vegetable broth], [#: coco | coconut milk] and [#: honey | honey].",
+        "[&: 5. Boil and simmer | 00:10:00] Broth pt. 3: Bring to boil, reduce heat, simmer for 10 minutes.",
+        "Put rice in bowls, add broth, add diced vegetables as garnish. Enjoy!"
       ],
       "commentary": {
         "kind": "big-quote",
@@ -1767,24 +1571,12 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "[&: 1. Press tofu | 00:20:00] Press the [#: tofu | tofu] for about 20 minutes (put something heavy on it)."
-        },
-        {
-          "original": "[&: 2. Toast coconut | 00:08:00] Preheat oven to 300F. Toast [#: shredded_coconut | coconut] for 8-12 minutes until golden brown."
-        },
-        {
-          "original": "Go prep the salsa. Mix in bowl: diced [#: pineapple | pineapple], diced [#: red_onion | red onion], diced [#: jalapenos | jalapenos], [#: garlic | garlic], [#: bell_peppoer | peppers], [#: lime_juice | lime juice], [#: red_pepper_flakes | red pepper flakes]."
-        },
-        {
-          "original": "[&: 4. Make rice | 00:25:00] Make the rice, but with the [#: coconut_milk | coconut milk] (instead of water!). Mix the can with the rice, bring it to a boil and then cover with a lid for 20-25 minutes until it's tender."
-        },
-        {
-          "original": "When rice is done, stir in some [#: brown_sugar | brown sugar] and, optionally, [#: coconut_oil | coconut oil]."
-        },
-        {
-          "original": "Grill the tofu - use a BBQ or pan and heat the tofu for about 5 minutes on each side."
-        }
+        "[&: 1. Press tofu | 00:20:00] Press the [#: tofu | tofu] for about 20 minutes (put something heavy on it).",
+        "[&: 2. Toast coconut | 00:08:00] Preheat oven to 300F. Toast [#: shredded_coconut | coconut] for 8-12 minutes until golden brown.",
+        "Go prep the salsa. Mix in bowl: diced [#: pineapple | pineapple], diced [#: red_onion | red onion], diced [#: jalapenos | jalapenos], [#: garlic | garlic], [#: bell_peppoer | peppers], [#: lime_juice | lime juice], [#: red_pepper_flakes | red pepper flakes].",
+        "[&: 4. Make rice | 00:25:00] Make the rice, but with the [#: coconut_milk | coconut milk] (instead of water!). Mix the can with the rice, bring it to a boil and then cover with a lid for 20-25 minutes until it's tender.",
+        "When rice is done, stir in some [#: brown_sugar | brown sugar] and, optionally, [#: coconut_oil | coconut oil].",
+        "Grill the tofu - use a BBQ or pan and heat the tofu for about 5 minutes on each side."
       ],
       "commentary": {
         "kind": "blurb",
@@ -1910,24 +1702,12 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Preheat oven to 425."
-        },
-        {
-          "original": "Add chopped [#: potatoes | potatoes] and [#: broc | broccoli] florets to bowl with [#: oil-olive | olive oil] and salt and pepper and [#: dill | dill]. Stir to coat."
-        },
-        {
-          "original": "[&: Bake | 00:12:00] Put contents of bowl on a baking sheet on parchment paper. Bake for 10-12 minutes."
-        },
-        {
-          "original": "Prepare the dressing for the salad. Add the following to a container and whisk: [#: oil-olive | Olive oil], [#: vinegar-rice-wine | Rice wine vinegar], [#: shallots | shallots], [#: maple-syrup | maple syrup], [#: pepper | ground pepper]."
-        },
-        {
-          "original": "Prepare the salad: Lightly apply the dressing to the greens. Arrange pear slices and brie on a plate. Drizzle with dressing. Add greens, cranberries, pecans, and extra slices of pear. Add a bit more dressing."
-        },
-        {
-          "original": "Add the [#: potatoes | potatoes] and broccoli as a side or mixed with the salad."
-        }
+        "Preheat oven to 425.",
+        "Add chopped [#: potatoes | potatoes] and [#: broc | broccoli] florets to bowl with [#: oil-olive | olive oil] and salt and pepper and [#: dill | dill]. Stir to coat.",
+        "[&: Bake | 00:12:00] Put contents of bowl on a baking sheet on parchment paper. Bake for 10-12 minutes.",
+        "Prepare the dressing for the salad. Add the following to a container and whisk: [#: oil-olive | Olive oil], [#: vinegar-rice-wine | Rice wine vinegar], [#: shallots | shallots], [#: maple-syrup | maple syrup], [#: pepper | ground pepper].",
+        "Prepare the salad: Lightly apply the dressing to the greens. Arrange pear slices and brie on a plate. Drizzle with dressing. Add greens, cranberries, pecans, and extra slices of pear. Add a bit more dressing.",
+        "Add the [#: potatoes | potatoes] and broccoli as a side or mixed with the salad."
       ],
       "commentary": {
         "kind": "whisper",
@@ -2047,24 +1827,12 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "[& Cook quinoa | :00:15:00] Cook the [#: quin | quinoa]: combine the quinoa with 1 cup of water. Bring to a boil, reduce heat and simmer for 15 minutes."
-        },
-        {
-          "original": "[&: Boil edamame | 00:05:00] Cook the [#: eda | edamame]: bring a pot of water to boil, add the frozen edamame for 5 minutes. Drain and set aside."
-        },
-        {
-          "original": "[&: Toast nuts | 00:05:00] Toast the [#: nuts | nuts] in a pan over medium heat until they are fragrant. About 5 minutes."
-        },
-        {
-          "original": "Prepare the [#: beets | beets] and [#: carrot | carrots]: either chop finely or use a spiralizer to prepare the vegetables."
-        },
-        {
-          "original": "Prepare the vinaigrette: whisk together [#: vin | apple cider vinegar], [#: lime | lime juice], [#: oil | olive oil], [#: syr |  maple syrup ], [#: dij | dijon mustard], and [#: salt | salt and pepper]."
-        },
-        {
-          "original": "Apply the dressing, not too much - if you have a lot of salad, portion it out and store undressed leftovers and save the dressing for leftovers."
-        }
+        "[& Cook quinoa | :00:15:00] Cook the [#: quin | quinoa]: combine the quinoa with 1 cup of water. Bring to a boil, reduce heat and simmer for 15 minutes.",
+        "[&: Boil edamame | 00:05:00] Cook the [#: eda | edamame]: bring a pot of water to boil, add the frozen edamame for 5 minutes. Drain and set aside.",
+        "[&: Toast nuts | 00:05:00] Toast the [#: nuts | nuts] in a pan over medium heat until they are fragrant. About 5 minutes.",
+        "Prepare the [#: beets | beets] and [#: carrot | carrots]: either chop finely or use a spiralizer to prepare the vegetables.",
+        "Prepare the vinaigrette: whisk together [#: vin | apple cider vinegar], [#: lime | lime juice], [#: oil | olive oil], [#: syr |  maple syrup ], [#: dij | dijon mustard], and [#: salt | salt and pepper].",
+        "Apply the dressing, not too much - if you have a lot of salad, portion it out and store undressed leftovers and save the dressing for leftovers."
       ],
       "commentary": {
         "kind": "whisper",
@@ -2176,12 +1944,8 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "In a large serving bowl combine all the ingredients."
-        },
-        {
-          "original": "Cover and chill. Leftovers should last 3 to 4 days."
-        }
+        "In a large serving bowl combine all the ingredients.",
+        "Cover and chill. Leftovers should last 3 to 4 days."
       ],
       "commentary": {
         "kind": "blurb",
@@ -2247,18 +2011,10 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "[&: Press tofu | 00:20:00] Press the [#: tofu | tofu] for a while (around 20 minutes). Then dice/cube it."
-        },
-        {
-          "original": "Mix the marinade ingredients in a bowl."
-        },
-        {
-          "original": "[&: Marinade | 00:15:00] Put the tofu in the bowl and cover. Put it in the fridge for 15 min."
-        },
-        {
-          "original": "Take the tofu out and pan fry until golden brown."
-        }
+        "[&: Press tofu | 00:20:00] Press the [#: tofu | tofu] for a while (around 20 minutes). Then dice/cube it.",
+        "Mix the marinade ingredients in a bowl.",
+        "[&: Marinade | 00:15:00] Put the tofu in the bowl and cover. Put it in the fridge for 15 min.",
+        "Take the tofu out and pan fry until golden brown."
       ],
       "commentary": {
         "kind": "whisper",
@@ -2334,24 +2090,12 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Prepare a grill to heat."
-        },
-        {
-          "original": "Whisk [#: mirin |  mirin ], [#: miso | miso], [#: rwv | vinegar], [#: ginger | ginger], in a small bowl."
-        },
-        {
-          "original": "Place [#: asp | asparagus] in a container and pour miso mixture over. Toss to coat."
-        },
-        {
-          "original": "Let things stew a few minutes. Cut the [#: scall | scallions]."
-        },
-        {
-          "original": "[&: Grill Asparagus | 00:04:00] Grill asparagus (or put it in a pan if you don't have a grill), turning occasionally until charred on all sides. About 4 minutes."
-        },
-        {
-          "original": "Transfer to plate, squeeze [#: lime | lime juice] and top with scallions and sesame seeds."
-        }
+        "Prepare a grill to heat.",
+        "Whisk [#: mirin |  mirin ], [#: miso | miso], [#: rwv | vinegar], [#: ginger | ginger], in a small bowl.",
+        "Place [#: asp | asparagus] in a container and pour miso mixture over. Toss to coat.",
+        "Let things stew a few minutes. Cut the [#: scall | scallions].",
+        "[&: Grill Asparagus | 00:04:00] Grill asparagus (or put it in a pan if you don't have a grill), turning occasionally until charred on all sides. About 4 minutes.",
+        "Transfer to plate, squeeze [#: lime | lime juice] and top with scallions and sesame seeds."
       ],
       "commentary": {
         "kind": "whisper",
@@ -2428,24 +2172,12 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Chop [#: almonds | almonds] roughly. Put them in a bowl."
-        },
-        {
-          "original": "Put [#: oats-rolled | oats] in the bowl."
-        },
-        {
-          "original": "Blend [#: dates | dates] until dough-y. Put them in the bowl"
-        },
-        {
-          "original": "Put [#: maple-syrup | maple syrup] and [#: peanut-butter | peanut-butter] into a saucepan and heat on low. Stir to combine."
-        },
-        {
-          "original": "Pour mix into the bowl and stir to combine."
-        },
-        {
-          "original": "Transfer to a baking dish (8 x 8) lined with parchment paper."
-        }
+        "Chop [#: almonds | almonds] roughly. Put them in a bowl.",
+        "Put [#: oats-rolled | oats] in the bowl.",
+        "Blend [#: dates | dates] until dough-y. Put them in the bowl",
+        "Put [#: maple-syrup | maple syrup] and [#: peanut-butter | peanut-butter] into a saucepan and heat on low. Stir to combine.",
+        "Pour mix into the bowl and stir to combine.",
+        "Transfer to a baking dish (8 x 8) lined with parchment paper."
       ],
       "commentary": {
         "kind": "big-quote",
@@ -2501,36 +2233,16 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Peel the [#: ginger | ginger]."
-        },
-        {
-          "original": "Slice the ginger thinly."
-        },
-        {
-          "original": "Put ginger into a pot, cover with water. Bring water to a boil."
-        },
-        {
-          "original": "[&: 4. Simmer | 00:10:00] Reduce heat and simmer for 10 minutes."
-        },
-        {
-          "original": "Repeat the previous step."
-        },
-        {
-          "original": "Mix the [#: sugar-white | sugar], [#: water | water], [#: salt | salt] and ginger slices in the pot. Cook until the temperature reaches 225F (106C). A candy thermometer is very helpful, but otherwise, you can estimate cooking for 40 to 60 min."
-        },
-        {
-          "original": "[&: 7. Let stand | 01:00:00] Remove from heat. Let stand for one hour."
-        },
-        {
-          "original": "Drain the ginger through a colander, catch the syrup."
-        },
-        {
-          "original": "Toss drained ginger in sugar."
-        },
-        {
-          "original": "Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they are somewhat dry."
-        }
+        "Peel the [#: ginger | ginger].",
+        "Slice the ginger thinly.",
+        "Put ginger into a pot, cover with water. Bring water to a boil.",
+        "[&: 4. Simmer | 00:10:00] Reduce heat and simmer for 10 minutes.",
+        "Repeat the previous step.",
+        "Mix the [#: sugar-white | sugar], [#: water | water], [#: salt | salt] and ginger slices in the pot. Cook until the temperature reaches 225F (106C). A candy thermometer is very helpful, but otherwise, you can estimate cooking for 40 to 60 min.",
+        "[&: 7. Let stand | 01:00:00] Remove from heat. Let stand for one hour.",
+        "Drain the ginger through a colander, catch the syrup.",
+        "Toss drained ginger in sugar.",
+        "Shake off excess sugar, and spread the ginger slices on a baking sheet or cooling rack until they are somewhat dry."
       ],
       "commentary": {
         "kind": "dialogue",
@@ -2671,51 +2383,21 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "[&: Bake pie shell | 00:08:00] Prepare the pie shell based on its package instructions. They should outline how long to bake the shell without a filling but if not - bake for 8-10 minutes at 425c."
-        },
-        {
-          "original": "Start with the pumpkin filling. Add the [#: gelatin | gelatin] to a bowl of cold water."
-        },
-        {
-          "original": "Split the egg yolks and whites between 2 large bowls. Beat the yolks."
-        },
-        {
-          "original": "Mix together the [#: ws | white sugar], [#: salt | salt] and spices, then mix that into the bowl with beaten yolks."
-        },
-        {
-          "original": "Add in the [#: pumpkin | canned pumpkin] and [#: milk | milk], then mix some more."
-        },
-        {
-          "original": "Add the mixture to a big pot and cook over moderate heat, stirring frequently until it boils."
-        },
-        {
-          "original": "Let it boil for about a minute then remove from heat."
-        },
-        {
-          "original": "Stir in the bowl of gelatin until its dissolved, then let the filling cool until it thickens a bit."
-        },
-        {
-          "original": "With the bowl of egg whites, use a beater and slowly sift in the [#: icsug | icing sugar]. It should start to thicken and ideally look a bit like whipped cream."
-        },
-        {
-          "original": "Add in the pumpkin mix, folding it into the egg white sugar mix."
-        },
-        {
-          "original": "Next, prepare the cream filling by pouring the [#: wc | whipping cream] into a fresh bowl."
-        },
-        {
-          "original": "Whip the cream til it thickens then sift in the icing sugar, and add [#: van | vanilla] and [#: cin2 | cinnamon]. Keep this in the fridge until it's needed."
-        },
-        {
-          "original": "Fill the pie! Layer the 2 fillings starting with half of the pumpkin, then half of the cream, then the rest of the pumpkin."
-        },
-        {
-          "original": "[&: Put in fridge | 02:00:00] Put in the fridge for at least 2 hours."
-        },
-        {
-          "original": "When you're ready to eat, top it with the rest of the cream."
-        }
+        "[&: Bake pie shell | 00:08:00] Prepare the pie shell based on its package instructions. They should outline how long to bake the shell without a filling but if not - bake for 8-10 minutes at 425c.",
+        "Start with the pumpkin filling. Add the [#: gelatin | gelatin] to a bowl of cold water.",
+        "Split the egg yolks and whites between 2 large bowls. Beat the yolks.",
+        "Mix together the [#: ws | white sugar], [#: salt | salt] and spices, then mix that into the bowl with beaten yolks.",
+        "Add in the [#: pumpkin | canned pumpkin] and [#: milk | milk], then mix some more.",
+        "Add the mixture to a big pot and cook over moderate heat, stirring frequently until it boils.",
+        "Let it boil for about a minute then remove from heat.",
+        "Stir in the bowl of gelatin until its dissolved, then let the filling cool until it thickens a bit.",
+        "With the bowl of egg whites, use a beater and slowly sift in the [#: icsug | icing sugar]. It should start to thicken and ideally look a bit like whipped cream.",
+        "Add in the pumpkin mix, folding it into the egg white sugar mix.",
+        "Next, prepare the cream filling by pouring the [#: wc | whipping cream] into a fresh bowl.",
+        "Whip the cream til it thickens then sift in the icing sugar, and add [#: van | vanilla] and [#: cin2 | cinnamon]. Keep this in the fridge until it's needed.",
+        "Fill the pie! Layer the 2 fillings starting with half of the pumpkin, then half of the cream, then the rest of the pumpkin.",
+        "[&: Put in fridge | 02:00:00] Put in the fridge for at least 2 hours.",
+        "When you're ready to eat, top it with the rest of the cream."
       ],
       "commentary": {
         "kind": "dialogue",
@@ -2863,27 +2545,13 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Preheat oven to 400 degrees. Line a large baking sheet with foil."
-        },
-        {
-          "original": "Rinse potatoes and cut in half. Coat sweet potatoes with olive oil and put them face down on the foil."
-        },
-        {
-          "original": "Drain [#: chick | chickpeas]. Toss in [#: oil | olive oil]. Add spices. 1/2 tsp of: cumin, coriander, cinnamon, smoked paprika."
-        },
-        {
-          "original": "[&: Roast potatoes and chickpeas | 00:45:00] Put potato and chickpeas in the oven."
-        },
-        {
-          "original": "Create the sauce while things are in the oven. Mix: [#: hum | hummus], [#: lem | lemon juice], [#: garlic | garlic], [#: dill | dill] water and salt."
-        },
-        {
-          "original": "Chop [#: tomat | tomatoes] and [#: cil | cilantro] and put in a bowl with [#: lemju | lemon juice]. Let it sit and marinade."
-        },
-        {
-          "original": "Serve up: take out potatoes, and mash them open a bit. Top with roasted chickpeas, sauce, and cilantro and tomatoes. Serve quickly!"
-        }
+        "Preheat oven to 400 degrees. Line a large baking sheet with foil.",
+        "Rinse potatoes and cut in half. Coat sweet potatoes with olive oil and put them face down on the foil.",
+        "Drain [#: chick | chickpeas]. Toss in [#: oil | olive oil]. Add spices. 1/2 tsp of: cumin, coriander, cinnamon, smoked paprika.",
+        "[&: Roast potatoes and chickpeas | 00:45:00] Put potato and chickpeas in the oven.",
+        "Create the sauce while things are in the oven. Mix: [#: hum | hummus], [#: lem | lemon juice], [#: garlic | garlic], [#: dill | dill] water and salt.",
+        "Chop [#: tomat | tomatoes] and [#: cil | cilantro] and put in a bowl with [#: lemju | lemon juice]. Let it sit and marinade.",
+        "Serve up: take out potatoes, and mash them open a bit. Top with roasted chickpeas, sauce, and cilantro and tomatoes. Serve quickly!"
       ],
       "commentary": {
         "kind": "haiku",
@@ -3018,27 +2686,13 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "[&: Sauté | 00:03:00] Heat a large pot. Add [#: coco | Coconut oil]. Add [#: shal | shallot] [#: gar | garlic] and [#: gin | ginger] [#: ja | jalapeno pepper]. Sauté for 2-3 minutes."
-        },
-        {
-          "original": "[&: 2. Curry paste | 00:02:00] Add [#: cur | curry paste]. Cook for 2 minutes."
-        },
-        {
-          "original": "Add [#: comilk | coconut milk] [#: tur | turmeric] [#: mapsyr | maple syrup] [#: soysauce | Soy Sauce]  and stir. Bring to simmer over medium heat."
-        },
-        {
-          "original": "Once simmering, add [#: caul | cauliflower] and [#: chick | chickpeas]."
-        },
-        {
-          "original": "[&: 5. Cook | 00:10:00] Cover and cook for 10-15 minutes. Keep at a simmer."
-        },
-        {
-          "original": "Make quinoa or rice according to package instructions."
-        },
-        {
-          "original": "Serve curry over quinoa. Top with slice avocado and red onion."
-        }
+        "[&: Sauté | 00:03:00] Heat a large pot. Add [#: coco | Coconut oil]. Add [#: shal | shallot] [#: gar | garlic] and [#: gin | ginger] [#: ja | jalapeno pepper]. Sauté for 2-3 minutes.",
+        "[&: 2. Curry paste | 00:02:00] Add [#: cur | curry paste]. Cook for 2 minutes.",
+        "Add [#: comilk | coconut milk] [#: tur | turmeric] [#: mapsyr | maple syrup] [#: soysauce | Soy Sauce]  and stir. Bring to simmer over medium heat.",
+        "Once simmering, add [#: caul | cauliflower] and [#: chick | chickpeas].",
+        "[&: 5. Cook | 00:10:00] Cover and cook for 10-15 minutes. Keep at a simmer.",
+        "Make quinoa or rice according to package instructions.",
+        "Serve curry over quinoa. Top with slice avocado and red onion."
       ],
       "commentary": {
         "kind": "whisper",
@@ -3115,18 +2769,10 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "In a bowl, mash [#: ban | bananas] until smooth. Stir in [#: chia | chia seeds] and [#: cin | cinnamon] to combine."
-        },
-        {
-          "original": "Stir in [#: oats | oats], [#: almilk | almond milk] and [#: van | vanilla extract] (optional)."
-        },
-        {
-          "original": "Cover and refrigerate overnight."
-        },
-        {
-          "original": "In the morning, stir the oats. Distribute into bowls and add fresh fruit."
-        }
+        "In a bowl, mash [#: ban | bananas] until smooth. Stir in [#: chia | chia seeds] and [#: cin | cinnamon] to combine.",
+        "Stir in [#: oats | oats], [#: almilk | almond milk] and [#: van | vanilla extract] (optional).",
+        "Cover and refrigerate overnight.",
+        "In the morning, stir the oats. Distribute into bowls and add fresh fruit."
       ],
       "commentary": {
         "kind": "blurb",
@@ -3245,21 +2891,11 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Bring a large pot of water to poil. Cook the [#: orzo | orzo] according to package instructions. When draining, reserve 1/2 cup of pasta water. Run the orzo under cold water after draining."
-        },
-        {
-          "original": "Toast the [#: al | almonds] for about 5 minutes until fragrant. Transfer to a cutting board and chop them."
-        },
-        {
-          "original": "In a large bowl combine the [#: orzo | orzo], [#: al | almonds], [#: par | parsley] [#: ol | olives] [#: go | green onions] [#: rai | raisins] and [#: feta | feta] if you are using it."
-        },
-        {
-          "original": "In a bowl prepare the dressing: combine [#: zest | orange zest] [#: orange | orange juice] [#: oil | olive oil] [#: vin | vinegar] [#: gar | garlic] and [#: sel | salt]. Add 1/4 cup of the pasta cooking water and whisk until blended."
-        },
-        {
-          "original": "[&: Let stand | 00:10:00] Pour the dressing on the salad and toss to combine. Leave for 10 minutes. Season with salt if necessary."
-        }
+        "Bring a large pot of water to poil. Cook the [#: orzo | orzo] according to package instructions. When draining, reserve 1/2 cup of pasta water. Run the orzo under cold water after draining.",
+        "Toast the [#: al | almonds] for about 5 minutes until fragrant. Transfer to a cutting board and chop them.",
+        "In a large bowl combine the [#: orzo | orzo], [#: al | almonds], [#: par | parsley] [#: ol | olives] [#: go | green onions] [#: rai | raisins] and [#: feta | feta] if you are using it.",
+        "In a bowl prepare the dressing: combine [#: zest | orange zest] [#: orange | orange juice] [#: oil | olive oil] [#: vin | vinegar] [#: gar | garlic] and [#: sel | salt]. Add 1/4 cup of the pasta cooking water and whisk until blended.",
+        "[&: Let stand | 00:10:00] Pour the dressing on the salad and toss to combine. Leave for 10 minutes. Season with salt if necessary."
       ],
       "commentary": {
         "kind": "blurb",
@@ -3385,39 +3021,17 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Preheat oven to 425F. Line two large baking sheets with parchment paper."
-        },
-        {
-          "original": "Prepare tomatoes by coring them and grate them on a cheeze grater with large holes or blend them to a frothy pulp."
-        },
-        {
-          "original": "Put [#: egg | cubed eggplant] on baking sheet in a single layer and coat with olive oil. Sprink with salt. Set aside."
-        },
-        {
-          "original": "Put [#: zuk | zuchini] and [#: ysqu | yellow squash] on baking sheet. Add 1 tbsp of olive oil. Add 1/4 tsp of salt."
-        },
-        {
-          "original": "[&: Roast eggplant | 00:15:00] Put eggplant in middle rack and vegetable on top rack in the oven. Set timer for 15 minutes."
-        },
-        {
-          "original": "[&: Cook onion | 00:10:00]  Warm 2 tbsp of olive oil in a dutch oven over medium heat. Add [#: onion | yellow onion] and [#: salt | salt]. Cook, stirring occasionally, until onion is tender. About 8 to 10 minutes."
-        },
-        {
-          "original": "Add [#: gar | garlic] to dutch oven, about 30 seconds until fragrant. Add [#: tomat | tomatoes ] and use a wooden spoon or spatula to stir. Reduce to gentle simmer."
-        },
-        {
-          "original": "[&: Step 8 | 00:10:00] When eggplant and friends are done in the oven, take them out, stir around, and put back in, this time switching the racks they are on. Bake for another 10 minutes then remove the eggplant and put it in the dutch oven mix."
-        },
-        {
-          "original": "[&: Step 9 | 00:05:00] Let the squash keep on baking in the oven. Then take it out and put it in the dutch oven for another five minutes."
-        },
-        {
-          "original": "Remove the dutch oven from the heat. Stir in a teaspoon olive oil, [#: bas | chopped basil] and [#: flakes | Red pepper flakes]. Crumble [#: oreg | dried oregano] into the pot. Season with salt and pepper (if you feel like it)."
-        },
-        {
-          "original": "Serve it up! Put it in bowls, drizzle with olive oil. Let it cool. It should last a few days. Maybe add some bread as a side."
-        }
+        "Preheat oven to 425F. Line two large baking sheets with parchment paper.",
+        "Prepare tomatoes by coring them and grate them on a cheeze grater with large holes or blend them to a frothy pulp.",
+        "Put [#: egg | cubed eggplant] on baking sheet in a single layer and coat with olive oil. Sprink with salt. Set aside.",
+        "Put [#: zuk | zuchini] and [#: ysqu | yellow squash] on baking sheet. Add 1 tbsp of olive oil. Add 1/4 tsp of salt.",
+        "[&: Roast eggplant | 00:15:00] Put eggplant in middle rack and vegetable on top rack in the oven. Set timer for 15 minutes.",
+        "[&: Cook onion | 00:10:00]  Warm 2 tbsp of olive oil in a dutch oven over medium heat. Add [#: onion | yellow onion] and [#: salt | salt]. Cook, stirring occasionally, until onion is tender. About 8 to 10 minutes.",
+        "Add [#: gar | garlic] to dutch oven, about 30 seconds until fragrant. Add [#: tomat | tomatoes ] and use a wooden spoon or spatula to stir. Reduce to gentle simmer.",
+        "[&: Step 8 | 00:10:00] When eggplant and friends are done in the oven, take them out, stir around, and put back in, this time switching the racks they are on. Bake for another 10 minutes then remove the eggplant and put it in the dutch oven mix.",
+        "[&: Step 9 | 00:05:00] Let the squash keep on baking in the oven. Then take it out and put it in the dutch oven for another five minutes.",
+        "Remove the dutch oven from the heat. Stir in a teaspoon olive oil, [#: bas | chopped basil] and [#: flakes | Red pepper flakes]. Crumble [#: oreg | dried oregano] into the pot. Season with salt and pepper (if you feel like it).",
+        "Serve it up! Put it in bowls, drizzle with olive oil. Let it cool. It should last a few days. Maybe add some bread as a side."
       ],
       "commentary": {
         "kind": "blurb",
@@ -3492,30 +3106,14 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Dice [#: shal | shallot], mince [#: garlic | garlic] and chop [#: kim | kimchi]."
-        },
-        {
-          "original": "Bring a pot of water to boil to poach your egg."
-        },
-        {
-          "original": "[&: Sauté shallot | 00:02:00] Melt butter in pan on medium until hot enough to sizzle a bit of shallot. Put [#: shal | shallot] in for 2 minutes."
-        },
-        {
-          "original": "[&: Sauté garlic | 00:01:00] Add prepared garlic and sauté for another minute."
-        },
-        {
-          "original": "[&:Sauté kimchi | 00:05:00] Add kimchi and sauté for about five minutes while you poach the egg."
-        },
-        {
-          "original": "[&: Poach egg | 00:04:00] Crack egg into boiling water and leave for 4 minutes. Keep an eye that it doesn't overflow."
-        },
-        {
-          "original": "Toast the bread."
-        },
-        {
-          "original": "Pull it all together: mush [#: avo | avocado] on top of bread. Add a sprinkle of salt. Add garlic, shallot, kimchi mix on top of avocado. Add poached egg on top. Sprinkle with [#: pap | paprika]."
-        }
+        "Dice [#: shal | shallot], mince [#: garlic | garlic] and chop [#: kim | kimchi].",
+        "Bring a pot of water to boil to poach your egg.",
+        "[&: Sauté shallot | 00:02:00] Melt butter in pan on medium until hot enough to sizzle a bit of shallot. Put [#: shal | shallot] in for 2 minutes.",
+        "[&: Sauté garlic | 00:01:00] Add prepared garlic and sauté for another minute.",
+        "[&:Sauté kimchi | 00:05:00] Add kimchi and sauté for about five minutes while you poach the egg.",
+        "[&: Poach egg | 00:04:00] Crack egg into boiling water and leave for 4 minutes. Keep an eye that it doesn't overflow.",
+        "Toast the bread.",
+        "Pull it all together: mush [#: avo | avocado] on top of bread. Add a sprinkle of salt. Add garlic, shallot, kimchi mix on top of avocado. Add poached egg on top. Sprinkle with [#: pap | paprika]."
       ],
       "commentary": {
         "kind": "dialogue",
@@ -3606,24 +3204,12 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Heat oil in large saucepan on high."
-        },
-        {
-          "original": "[&: Cook onion | 00:03:00] Cook white and pale-green parts of green onions. Save the green ends. Add in the [#: gar | garlic] and [#: ging | ginger]. Stir often, about 3 minutes"
-        },
-        {
-          "original": "Add [#: vegbro | broth]. Whisk in [#: go | gochujang] and [#: soy | soy sauce]."
-        },
-        {
-          "original": "[&: Simmer | 00:15:00] Add daikon (or radish if you don't have daikon). Simmer for 15-20 minutes."
-        },
-        {
-          "original": "Add kimchi and tofu. Simmer until tofu is heated through."
-        },
-        {
-          "original": "Divide among bowls, add thinly sliced green onion on top."
-        }
+        "Heat oil in large saucepan on high.",
+        "[&: Cook onion | 00:03:00] Cook white and pale-green parts of green onions. Save the green ends. Add in the [#: gar | garlic] and [#: ging | ginger]. Stir often, about 3 minutes",
+        "Add [#: vegbro | broth]. Whisk in [#: go | gochujang] and [#: soy | soy sauce].",
+        "[&: Simmer | 00:15:00] Add daikon (or radish if you don't have daikon). Simmer for 15-20 minutes.",
+        "Add kimchi and tofu. Simmer until tofu is heated through.",
+        "Divide among bowls, add thinly sliced green onion on top."
       ],
       "commentary": {
         "kind": "blurb",
@@ -3730,27 +3316,13 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Press tofu to remove water. Cube, and marinate."
-        },
-        {
-          "original": "Boil the [#: rice-noodles | rice noodles] according to the package instructors."
-        },
-        {
-          "original": "[&: Heat oil / pepper | :00:02:00] In a skillet, heat a tablespoon of oil and add the bell pepper. Heat for about 2 minutes."
-        },
-        {
-          "original": "[&: Add onion / ginger | 00:01:00] Add [#: greenonion | green onion] and [#: ginger | ginger] and cook for a minute while stirring."
-        },
-        {
-          "original": "Add [#: cocomilk | coconut milk], [#: soy | soy sauce], [#: sugar  | brown sugar] and stir to combine. Bring to a boil and add cooked rice noodles and tofu. Toss over medium-high heat until sauce thickens."
-        },
-        {
-          "original": "Remove from heat and stir in [#: lime | lime juice], [#: cgs | chili-garlic sauce] and [#: cilantro | cilantro]. Season with salt."
-        },
-        {
-          "original": "Top with extra cilantro before serving."
-        }
+        "Press tofu to remove water. Cube, and marinate.",
+        "Boil the [#: rice-noodles | rice noodles] according to the package instructors.",
+        "[&: Heat oil / pepper | :00:02:00] In a skillet, heat a tablespoon of oil and add the bell pepper. Heat for about 2 minutes.",
+        "[&: Add onion / ginger | 00:01:00] Add [#: greenonion | green onion] and [#: ginger | ginger] and cook for a minute while stirring.",
+        "Add [#: cocomilk | coconut milk], [#: soy | soy sauce], [#: sugar  | brown sugar] and stir to combine. Bring to a boil and add cooked rice noodles and tofu. Toss over medium-high heat until sauce thickens.",
+        "Remove from heat and stir in [#: lime | lime juice], [#: cgs | chili-garlic sauce] and [#: cilantro | cilantro]. Season with salt.",
+        "Top with extra cilantro before serving."
       ],
       "commentary": {
         "kind": "whisper",
@@ -3869,24 +3441,12 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Bring a large pot of salted water to a boil."
-        },
-        {
-          "original": "Cook the pasta al dente (according to package instructions.) When it's done, drain and keep 1/2 cup of the pasta water. Rinse the pasta under cool water. Transfer to a large bowl."
-        },
-        {
-          "original": "[&: Toast pepitas |  00:05:00] Toast the [#: pep | pepitas] in a skillet. Stir often until they make little popping noises. When finished, set aside half of the pepitas into a bow as a topper."
-        },
-        {
-          "original": "Put other half of pepitas, [#: basil | basil], [#: lemons | lemon juice] [#: garlic | garlic] and [#: sel | salt] into a food processor or blender. Blend, adding [#:oil | olive oil]  to the mixture intermittently."
-        },
-        {
-          "original": "Assemble the pasta: pour pesto over pasta and toss to combine. Add a bit of pasta water if necessary. Then add the [#: tomat | cherry tomatoes], [#: greens | spinach or arugula], the remaining pepitas and anything else you might like (olives, feta, etc)"
-        },
-        {
-          "original": "Toss it all to combine! Season with a bit of salt and pepper."
-        }
+        "Bring a large pot of salted water to a boil.",
+        "Cook the pasta al dente (according to package instructions.) When it's done, drain and keep 1/2 cup of the pasta water. Rinse the pasta under cool water. Transfer to a large bowl.",
+        "[&: Toast pepitas |  00:05:00] Toast the [#: pep | pepitas] in a skillet. Stir often until they make little popping noises. When finished, set aside half of the pepitas into a bow as a topper.",
+        "Put other half of pepitas, [#: basil | basil], [#: lemons | lemon juice] [#: garlic | garlic] and [#: sel | salt] into a food processor or blender. Blend, adding [#:oil | olive oil]  to the mixture intermittently.",
+        "Assemble the pasta: pour pesto over pasta and toss to combine. Add a bit of pasta water if necessary. Then add the [#: tomat | cherry tomatoes], [#: greens | spinach or arugula], the remaining pepitas and anything else you might like (olives, feta, etc)",
+        "Toss it all to combine! Season with a bit of salt and pepper."
       ],
       "commentary": {
         "kind": "big-quote",
@@ -4040,33 +3600,15 @@ module.exports = {
         }
       ],
       "instructions": [
-        {
-          "original": "Preheat oven to 400F. Line a baking sheet with parchment paper for the tofu."
-        },
-        {
-          "original": "Prepare the tofu: remove from package and drain. Wrap in a tea towl and lay something heavy on top to press the water out."
-        },
-        {
-          "original": "Cut the tofu into 1\" cubes."
-        },
-        {
-          "original": "Bring a large pot of water to boi8l and cook the rice according to package instruction. Remember, brown rice takes longer than most other rices."
-        },
-        {
-          "original": "Put cut tofu into a bowl and marinade it: olive oil, soy sauce, and sprinkle with starch until tofu is evenly coated."
-        },
-        {
-          "original": "[&: Bake tofu | 00:30:00] Put tofu in the oven for 25 to 30 minutes until golden on the edges."
-        },
-        {
-          "original": "Prepare the peanut sauce: mix Peanut butter, 3 tbsp of squeezed lime juice, soy sauce, maple syrup, sesame oil, garlic and red pepper flakes. Stir. Thin with water if needed."
-        },
-        {
-          "original": "Prepare the salsa. In a mixing bowl, combine: mango, bell pepper, onion, jalapeno, lime juice, salt and cilantro. Stir."
-        },
-        {
-          "original": "Prepare your bowl: add rice first, then a handful of the shredded cabbage, then salsa, then tofu, then drizzel with peanut sauce."
-        }
+        "Preheat oven to 400F. Line a baking sheet with parchment paper for the tofu.",
+        "Prepare the tofu: remove from package and drain. Wrap in a tea towl and lay something heavy on top to press the water out.",
+        "Cut the tofu into 1\" cubes.",
+        "Bring a large pot of water to boi8l and cook the rice according to package instruction. Remember, brown rice takes longer than most other rices.",
+        "Put cut tofu into a bowl and marinade it: olive oil, soy sauce, and sprinkle with starch until tofu is evenly coated.",
+        "[&: Bake tofu | 00:30:00] Put tofu in the oven for 25 to 30 minutes until golden on the edges.",
+        "Prepare the peanut sauce: mix Peanut butter, 3 tbsp of squeezed lime juice, soy sauce, maple syrup, sesame oil, garlic and red pepper flakes. Stir. Thin with water if needed.",
+        "Prepare the salsa. In a mixing bowl, combine: mango, bell pepper, onion, jalapeno, lime juice, salt and cilantro. Stir.",
+        "Prepare your bowl: add rice first, then a handful of the shredded cabbage, then salsa, then tofu, then drizzel with peanut sauce."
       ],
       "commentary": {
         "kind": "blurb",

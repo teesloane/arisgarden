@@ -34,15 +34,6 @@ type alias Ingredient =
     }
 
 
-
--- FIXME: Instruction doesn't need to be an alias
-
-
-type alias Instruction =
-    { original : String
-    }
-
-
 type alias Commentary =
     { kind : String
     , val : List String
@@ -62,7 +53,7 @@ type alias Recipe =
     , slug : String
     , time : String
     , ingredients : List Ingredient
-    , instructions : List Instruction
+    , instructions : List String
     , commentary : Commentary
     }
 
@@ -225,12 +216,6 @@ runParser str =
 -- DECODERS --
 
 
-decodeInstruction : Decoder Instruction
-decodeInstruction =
-    Decode.succeed Instruction
-        |> JP.required "original" Decode.string
-
-
 decoderIngredient : Decoder Ingredient
 decoderIngredient =
     Decode.succeed Ingredient
@@ -284,7 +269,7 @@ decodeRecipe =
         |> JP.required "slug" Decode.string
         |> JP.required "time" Decode.string
         |> JP.required "ingredients" (Decode.list decoderIngredient)
-        |> JP.required "instructions" (Decode.list decodeInstruction)
+        |> JP.required "instructions" (Decode.list Decode.string)
         |> JP.required "commentary" decodeCommentary
 
 
@@ -422,7 +407,7 @@ viewInstructions recipe timers activeStep =
                     div []
                         [ div [ style "display" "flex" ]
                             [ span [ class "instruction-num" ] [ text stepNum ]
-                            , buildInstructions <| runParser el.original
+                            , buildInstructions <| runParser el
                             ]
                         ]
             in

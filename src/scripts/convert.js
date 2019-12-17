@@ -95,7 +95,7 @@ function templateParser(str) {
   // let ogRE = /\[(.*?)\]/;
   // let bracketRE = /[^[\]]+(?=])/;
   let newRE = /\s*\[([^\]]*)]\s*/;
-  let out = { original: ogstr };
+  let out = ogstr;
   let splitStr = str.split(newRE).filter(Boolean);
 
   // splitStr.forEach(s => {
