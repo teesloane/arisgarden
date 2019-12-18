@@ -1,4 +1,4 @@
-module Main exposing (..)
+port module Main exposing (..)
 
 import Browser
 import Browser.Navigation as Nav
@@ -6,7 +6,6 @@ import Dict exposing (Dict)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Json.Decode as Decode exposing (Decoder)
-import Json.Decode.Pipeline as JP
 import Pages.Recipe as Recipe exposing (Flags, Recipe)
 import Pages.Router exposing (..)
 import Time
@@ -93,13 +92,11 @@ update msg model =
                 u_timers =
                     List.map (\t -> { t | time = timeDec t }) model.timers
             in
-            ( { model | timers = u_timers }, Cmd.none )
+            ( { model | timers = u_timers }, playSound model.timers )
 
 
 
 -- SUBSCRIPTIONS
---
--- loop through timers and check if any times are > 0
 
 
 timersRunning model =
@@ -126,4 +123,27 @@ view model =
         ( route, routeName ) =
             router model
     in
-    { title = "Ari's Garden — " ++ routeName, body = [ route ] }
+    { title = "Ari's Garden — " ++ routeName
+    , body =
+        [ main_ []
+            [ viewNav model
+            , route
+            ]
+        ]
+    }
+
+
+viewNav model =
+    nav [ class "Navbar" ]
+        [ div [ class "name+icon" ]
+            [ div [] [ text "Ari's Garden" ]
+            ]
+        , div [ class "links" ] []
+        ]
+
+
+
+-- PORTS
+
+
+port playSound : List Timer -> Cmd msg

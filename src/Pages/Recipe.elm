@@ -5,6 +5,7 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onClick)
 import Json.Decode as Decode exposing (Decoder)
+import Json.Encode as Encode 
 import Json.Decode.Pipeline as JP
 import Parser exposing (..)
 import Ui as Ui
@@ -213,8 +214,7 @@ runParser str =
 
 
 
--- DECODERS --
-
+-- DECODERS / ENCODERS --
 
 decoderIngredient : Decoder Ingredient
 decoderIngredient =
