@@ -9,6 +9,7 @@ import Json.Decode as Decode exposing (Decoder)
 import Pages.Recipe as Recipe exposing (Flags, Recipe)
 import Pages.Router exposing (..)
 import Time
+import Ui
 import Update exposing (Msg(..), Timer)
 import Url
 import Util
@@ -129,12 +130,19 @@ view model =
     }
 
 
+viewNav : a -> Html msg
 viewNav _ =
     nav [ class "Navbar" ]
-        [ div [ class "name+icon" ]
-            [ div [] [ text "Ari's Garden" ]
+        [ div [ class "nav-container" ]
+            [ a [ class "name-icon links", href "/" ]
+                [ div [ style "margin-top" "4px" ] [ Ui.icon "c_home.svg" "48" ]
+                , div [ class "link" ] [ text "Ari's Garden" ]
+                ]
+
+            --, div [ class "links" ]
+            --    [ a [ class "link" ] [ text "About" ]
+            --    ]
             ]
-        , div [ class "links" ] []
         ]
 
 

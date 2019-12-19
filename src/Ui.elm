@@ -8,5 +8,6 @@ sectionHeading content =
     h2 [ class "section_heading" ] [ text content ]
 
 
-icon name =
-    div [ class "icon", src ("/icons/" ++ name) ] []
+icon : String -> String -> Html msg
+icon name width =
+    img [ class "icon", style "width" width, src ("/icons/" ++ name) ] []
