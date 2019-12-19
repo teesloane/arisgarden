@@ -1496,9 +1496,11 @@
 8) Prepare the bowl: Put in arugula, quinoa/rice, chickpeas and avocado chunks. Top with dressing.
 ** Content
 :PROPERTIES:
-:type: blurb
+:type: haiku
 :END:
-- Avocado is pretty crucial here! It offsets the texture and flavour of the sweet potato.
+- Orange and Lemon Zest
+- Tomorrow I will find you
+- Hiding under the cutting board.
 * Banana Bread
 :PROPERTIES:
 :belongs_to: sweet
@@ -1535,6 +1537,9 @@
 8) [&: Bake! | 01:00:00] Bake in oven for 60 minutes or until a toothpick placed into the center of the loaf comes out clean.
 ** Content
 :PROPERTIES:
-:type: blurb
+:type: dialogue
 :END:
-- ---
+- Can I have some?
+- No, it has to cool.
+- You have to cool.
+- I'm working on that, too.

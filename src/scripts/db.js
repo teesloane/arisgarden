@@ -3730,9 +3730,11 @@ module.exports = {
         "Prepare the bowl: Put in arugula, quinoa/rice, chickpeas and avocado chunks. Top with dressing."
       ],
       "commentary": {
-        "kind": "blurb",
+        "kind": "haiku",
         "val": [
-          "Avocado is pretty crucial here! It offsets the texture and flavour of the sweet potato."
+          "Orange and Lemon Zest",
+          "Tomorrow I will find you",
+          "Hiding under the cutting board."
         ]
       }
     },
@@ -3820,9 +3822,12 @@ module.exports = {
         "[&: Bake! | 01:00:00] Bake in oven for 60 minutes or until a toothpick placed into the center of the loaf comes out clean."
       ],
       "commentary": {
-        "kind": "blurb",
+        "kind": "dialogue",
         "val": [
-          "---"
+          "Can I have some?",
+          "No, it has to cool.",
+          "You have to cool.",
+          "I'm working on that, too."
         ]
       }
     }
