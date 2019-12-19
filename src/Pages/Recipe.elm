@@ -202,6 +202,8 @@ parseIngredientChunk =
 
 {-| Groups parsers together to result in creating an InstructionParsed type.
 -}
+
+parseEverything : Parser InstructionParsed
 parseEverything =
     succeed InstructionParsed
         |= parseTimer
@@ -318,7 +320,6 @@ viewTimers model =
 
 
 -- Page: RecipeList ------------------------------------------------------------
-
 
 viewList model =
     unwrapRecipes model
@@ -474,6 +475,7 @@ viewSingle model recipeName =
 
 {-| Handles rendering the "Commentary" of a recipe
 -}
+viewCommentary : { a | kind : String, val : List String } -> Html msg
 viewCommentary commentary =
     let
         { kind, val } =
@@ -508,6 +510,7 @@ viewCommentary commentary =
         ]
 
 
+viewHr : String -> Html msg
 viewHr char =
     div [ class "delta-hr" ]
         [ div [ class "border" ] []

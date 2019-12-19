@@ -1,8 +1,6 @@
 module Pages.Router exposing (..)
 
-import Debug
 import Html exposing (p, text)
-import Html.Attributes exposing (..)
 import Pages.Recipe as Recipe
 import Url.Parser as Parser exposing ((</>), Parser, oneOf, s, string)
 
@@ -28,10 +26,6 @@ parser =
         , Parser.map RecipeSingle (s "recipe" </> string)
         , Parser.map About (s "about")
         ]
-
-
-getRoute url =
-    Parser.parse parser url
 
 
 
