@@ -1106,7 +1106,7 @@ module.exports = {
         "Preheat oven to 400F. Add [#: brus | brussel sprouts] to baking sheet in a single layer. Drizzel with [#: oil | oil] and season with salt and pepper. Arranger in a single layer.",
         "Bring a pot of water to a boil.",
         "Heat a skillet. Add 1-2 tbsp of oil. Add [#: garlic | garlic]. Saute for 3 minutes.",
-        "[&: Saute | 13:02:12] Add [#: wine | wine]. Saute for 2-4 minutes.",
+        "[&: Saute | 00:02:00] Add [#: wine | wine]. Saute for 2-4 minutes.",
         "Add [#: corn | cornstarch] and [#: milk | almond milk] and whisk. It'll be clumpy.",
         "Move the mixture to a blender. Add [#: yeast | nutritional yeast], salt + pepper, [#: parm | parmesan cheese]. Blend on high until creamy and smooth.",
         "Transfer sauce back to skilled and warm over medium low heat. It should thicken, then lower the heat to low and simmer until the pasta is cooked. If it gets too thick, add almond milk to thin it out. Try not to let a film form overtop.",
@@ -3614,6 +3614,216 @@ module.exports = {
         "kind": "blurb",
         "val": [
           "I wouldn't recommend putting your  FAVOURITE PLANT on top of the tofu to press it, because when it INEVITABLY FALLS OVER AND SPILLS SOIL EVERYWHERE, YOU WILL BE SAD. And your plant will probably be sad too. I'm so sorry my precious beauty star."
+        ]
+      }
+    },
+    "bowl-3": {
+      "belongs_to": "main",
+      "date_made": "[2019-12-18]",
+      "ease_of_making": "4/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegan",
+      "name": "Bowl #3 (Sweet Potato Arugla)",
+      "original_recipe": "\"\"",
+      "rating": "4/5",
+      "serves": "2",
+      "slug": "bowl-3",
+      "time": "01:00:00",
+      "ingredients": [
+        {
+          "ingredient": "Sweet potato",
+          "quantity": "2",
+          "unit": "",
+          "id": "sp",
+          "group": "Bowl"
+        },
+        {
+          "ingredient": "Olive oil",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "oil",
+          "group": "Bowl"
+        },
+        {
+          "ingredient": "Paprika",
+          "quantity": "1/2",
+          "unit": "tsp",
+          "id": "pap",
+          "group": "Bowl"
+        },
+        {
+          "ingredient": "Chickpeas",
+          "quantity": "14",
+          "unit": "oz",
+          "id": "cp",
+          "group": "Bowl"
+        },
+        {
+          "ingredient": "Arugula",
+          "quantity": "1/2",
+          "unit": "cups",
+          "id": "rug",
+          "group": "Bowl"
+        },
+        {
+          "ingredient": "Avocado",
+          "quantity": "1/2",
+          "unit": "sliced",
+          "id": "avo",
+          "group": "Bowl"
+        },
+        {
+          "ingredient": "Orange",
+          "quantity": "1/2",
+          "unit": "orange (squeezed)",
+          "id": "or",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Lemon",
+          "quantity": "1/2",
+          "unit": "lemon (squeezed)",
+          "id": "lem",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Lemon zest",
+          "quantity": "1/2",
+          "unit": "lemon",
+          "id": "lz",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Orange zest",
+          "quantity": "1/2",
+          "unit": "orange",
+          "id": "oz",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Salt",
+          "quantity": "1/4",
+          "unit": "tsp",
+          "id": "sel",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Olive oil",
+          "quantity": "3",
+          "unit": "tbsp",
+          "id": "oil2",
+          "group": "Dressing"
+        }
+      ],
+      "instructions": [
+        "Preheat oven to 400F.",
+        "Wash sweet potatoes. Cut in half lengthwise and slice into half-moon shapes. Toss in a bowl with olive oil and add salt, pepper, and paprika.",
+        "[&: Sweet Potatoes | 00:45:00] Roast sweet potatoes in oven, on a baking sheet or a oven-safe glass container for 45 minutes or until potatoes are tender.",
+        "Make base (rice or quiona) according to package instructions.",
+        "Drain chickpeas. Put in a bowl and add olive oil and salt and pepper. Stir.",
+        "Make dressing: Combine 3 tbsp of olive oil, juices of lemon and orange, zest of lemon and oragne, half teaspoon of ginger, salt and pepper to taste.",
+        "[&: Heat chickpeas | 00:06:00] Heat chickpeas for 5 - 7 minutes on medium-high. Chickpeas are done when they are crisp on the outside and soft on the inside.",
+        "Prepare the bowl: Put in arugula, quinoa/rice, chickpeas and avocado chunks. Top with dressing."
+      ],
+      "commentary": {
+        "kind": "blurb",
+        "val": [
+          "Avocado is pretty crucial here! It offsets the texture and flavour of the sweet potato."
+        ]
+      }
+    },
+    "banana-bread": {
+      "belongs_to": "sweet",
+      "date_made": "[2019-12-18]",
+      "ease_of_making": "5/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegetarian",
+      "name": "Banana Bread",
+      "original_recipe": "https://www.allrecipes.com/recipe/20739/banana-loaf/",
+      "rating": "4.5/5",
+      "serves": "4",
+      "slug": "banana-bread",
+      "time": "01:15:00",
+      "ingredients": [
+        {
+          "ingredient": "Flour",
+          "quantity": "2",
+          "unit": "cups",
+          "id": "fl",
+          "group": ""
+        },
+        {
+          "ingredient": "Bananas",
+          "quantity": "3",
+          "unit": "Ripe",
+          "id": "ban",
+          "group": ""
+        },
+        {
+          "ingredient": "Eggs",
+          "quantity": "2",
+          "unit": "",
+          "id": "egg",
+          "group": ""
+        },
+        {
+          "ingredient": "Baking Soda",
+          "quantity": "1",
+          "unit": "tsp",
+          "id": "bs",
+          "group": ""
+        },
+        {
+          "ingredient": "Baking Powder",
+          "quantity": "1",
+          "unit": "tsp",
+          "id": "bp",
+          "group": ""
+        },
+        {
+          "ingredient": "Sugar",
+          "quantity": "1",
+          "unit": "cups",
+          "id": "sug",
+          "group": ""
+        },
+        {
+          "ingredient": "Salt",
+          "quantity": "1/2",
+          "unit": "tsp",
+          "id": "sal",
+          "group": ""
+        },
+        {
+          "ingredient": "Butter",
+          "quantity": "1/2",
+          "unit": "cups",
+          "id": "but",
+          "group": ""
+        }
+      ],
+      "instructions": [
+        "Preheat oven to 350F.",
+        "Mash bananas.",
+        "Mix butter and sugar together until creamed together.",
+        "Stir in eggs, one at a time. Beat well.",
+        "Stir in mashed banana.",
+        "In a large bowl, mix flour, baking powder, baking soda, salt.",
+        "Mix banana mixture into flour mixture, stir to combine.",
+        "[&: Bake! | 01:00:00] Bake in oven for 60 minutes or until a toothpick placed into the center of the loaf comes out clean."
+      ],
+      "commentary": {
+        "kind": "blurb",
+        "val": [
+          "---"
         ]
       }
     }

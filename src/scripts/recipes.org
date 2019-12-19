@@ -452,7 +452,7 @@
 1) Preheat oven to 400F. Add [#: brus | brussel sprouts] to baking sheet in a single layer. Drizzel with [#: oil | oil] and season with salt and pepper. Arranger in a single layer.
 2) Bring a pot of water to a boil.
 3) Heat a skillet. Add 1-2 tbsp of oil. Add [#: garlic | garlic]. Saute for 3 minutes.
-4) [&: Saute | 13:02:12] Add [#: wine | wine]. Saute for 2-4 minutes.
+4) [&: Saute | 00:02:00] Add [#: wine | wine]. Saute for 2-4 minutes.
 5) Add [#: corn | cornstarch] and [#: milk | almond milk] and whisk. It'll be clumpy.
 6) Move the mixture to a blender. Add [#: yeast | nutritional yeast], salt + pepper,
    [#: parm | parmesan cheese]. Blend on high until creamy and smooth.
@@ -1456,3 +1456,85 @@
 - I wouldn't recommend putting your  FAVOURITE PLANT on top of the tofu to press
   it, because when it INEVITABLY FALLS OVER AND SPILLS SOIL EVERYWHERE, YOU WILL BE
   SAD. And your plant will probably be sad too. I'm so sorry my precious beauty star.
+* Bowl #3                                                                       :original:
+:PROPERTIES:
+:belongs_to: main
+:date_made: [2019-12-18]
+:ease_of_making: 4/5
+:imgs: ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type: vegan
+:name: Bowl #3 (Sweet Potato Arugla)
+:original_recipe: ""
+:rating: 4/5
+:serves: 2
+:slug: bowl-3
+:time: 01:00:00
+:END:
+** Ingredients
+| Ingredient   | Quantity | Unit              | Id   | Group    |
+|--------------+----------+-------------------+------+----------|
+| Sweet potato | 2        |                   | sp   | Bowl     |
+| Olive oil    | 1        | tbsp              | oil  | Bowl     |
+| Paprika      | 1/2      | tsp               | pap  | Bowl     |
+| Chickpeas    | 14       | oz                | cp   | Bowl     |
+| Arugula      | 1/2      | cups              | rug  | Bowl     |
+| Avocado      | 1/2      | sliced            | avo  | Bowl     |
+| Orange       | 1/2      | orange (squeezed) | or   | Dressing |
+| Lemon        | 1/2      | lemon (squeezed)  | lem  | Dressing |
+| Lemon zest   | 1/2      | lemon             | lz   | Dressing |
+| Orange zest  | 1/2      | orange            | oz   | Dressing |
+| Salt         | 1/4      | tsp               | sel  | Dressing |
+| Olive oil    | 3        | tbsp              | oil2 | Dressing |
+** Steps
+1) Preheat oven to 400F.
+2) Wash sweet potatoes. Cut in half lengthwise and slice into half-moon shapes. Toss in a bowl with olive oil and add salt, pepper, and paprika.
+3) [&: Sweet Potatoes | 00:45:00] Roast sweet potatoes in oven, on a baking sheet or a oven-safe glass container for 45 minutes or until potatoes are tender.
+4) Make base (rice or quiona) according to package instructions.
+5) Drain chickpeas. Put in a bowl and add olive oil and salt and pepper. Stir.
+6) Make dressing: Combine 3 tbsp of olive oil, juices of lemon and orange, zest of lemon and oragne, half teaspoon of ginger, salt and pepper to taste.
+7) [&: Heat chickpeas | 00:06:00] Heat chickpeas for 5 - 7 minutes on medium-high. Chickpeas are done when they are crisp on the outside and soft on the inside.
+8) Prepare the bowl: Put in arugula, quinoa/rice, chickpeas and avocado chunks. Top with dressing.
+** Content
+:PROPERTIES:
+:type: blurb
+:END:
+- Avocado is pretty crucial here! It offsets the texture and flavour of the sweet potato.
+* Banana Bread
+:PROPERTIES:
+:belongs_to: sweet
+:date_made: [2019-12-18]
+:ease_of_making: 5/5
+:imgs: ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type: vegetarian
+:name: Banana Bread
+:original_recipe: https://www.allrecipes.com/recipe/20739/banana-loaf/
+:rating: 4.5/5
+:serves: 4
+:slug: banana-bread
+:time: 01:15:00
+:END:
+** Ingredients
+| Ingredient    | Quantity | Unit | Id  | Group |
+|---------------+----------+------+-----+-------|
+| Flour         |        2 | cups | fl  |       |
+| Bananas       |        3 | Ripe | ban |       |
+| Eggs          |        2 |      | egg |       |
+| Baking Soda   |        1 | tsp  | bs  |       |
+| Baking Powder |        1 | tsp  | bp  |       |
+| Sugar         |        1 | cups | sug |       |
+| Salt          |      1/2 | tsp  | sal |       |
+| Butter        |      1/2 | cups | but |       |
+** Steps
+1) Preheat oven to 350F.
+2) Mash bananas.
+3) Mix butter and sugar together until creamed together.
+4) Stir in eggs, one at a time. Beat well.
+5) Stir in mashed banana.
+6) In a large bowl, mix flour, baking powder, baking soda, salt.
+7) Mix banana mixture into flour mixture, stir to combine.
+8) [&: Bake! | 01:00:00] Bake in oven for 60 minutes or until a toothpick placed into the center of the loaf comes out clean.
+** Content
+:PROPERTIES:
+:type: blurb
+:END:
+- ---
