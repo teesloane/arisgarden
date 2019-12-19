@@ -15,12 +15,10 @@ var app = Elm.Main.init({
 app.ports.playSound.subscribe(function(data) {
   var timers = data.slice(1); // FIXME: temporary hack until I remove "pseudo maybe timer"
   timers.forEach(function(t) {
-    console.log("timer time is", t.time);
     if (t.time == 1) {
+      // FIXME: this can be set to <= 1 when ^^ is fixed.
       var audio = new Audio("/sounds/alarm.wav");
       audio.play();
     }
   });
-
-  // FIXME: LEAVING OFF: IF any timers are 0 in the timers, remove them. (in Main.elm update.)
 });

@@ -90,6 +90,18 @@ p  { margin: 16px 0; }
   }
 }
 
+.Navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 12px;
+  padding: 16px 32px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
 
 // Modular CSS -----------------------------------------------------------------
 //
