@@ -3742,8 +3742,7 @@ module.exports = {
       "ease_of_making": "5/5",
       "imgs": [
         "1.jpg",
-        "2.jpg",
-        "3.jpg"
+        "2.jpg"
       ],
       "meal_type": "vegetarian",
       "name": "Banana Bread",

@@ -1504,7 +1504,7 @@
 :belongs_to: sweet
 :date_made: [2019-12-18]
 :ease_of_making: 5/5
-:imgs: ["1.jpg", "2.jpg", "3.jpg"]
+:imgs: ["1.jpg", "2.jpg"]
 :meal_type: vegetarian
 :name: Banana Bread
 :original_recipe: https://www.allrecipes.com/recipe/20739/banana-loaf/
