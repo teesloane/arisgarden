@@ -3677,30 +3677,44 @@ module.exports = {
           "group": "Bowl"
         },
         {
+          "ingredient": "Rice / Quinoa",
+          "quantity": "1/2",
+          "unit": "cups",
+          "id": "base",
+          "group": "Bowl"
+        },
+        {
           "ingredient": "Orange",
           "quantity": "1/2",
-          "unit": "orange (squeezed)",
+          "unit": "squeezed",
           "id": "or",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Ginger",
+          "quantity": "1",
+          "unit": "tsp",
+          "id": "ging",
           "group": "Dressing"
         },
         {
           "ingredient": "Lemon",
           "quantity": "1/2",
-          "unit": "lemon (squeezed)",
+          "unit": "squeezed",
           "id": "lem",
           "group": "Dressing"
         },
         {
           "ingredient": "Lemon zest",
           "quantity": "1/2",
-          "unit": "lemon",
+          "unit": "tsp",
           "id": "lz",
           "group": "Dressing"
         },
         {
           "ingredient": "Orange zest",
           "quantity": "1/2",
-          "unit": "orange",
+          "unit": "tsp",
           "id": "oz",
           "group": "Dressing"
         },
@@ -3721,11 +3735,11 @@ module.exports = {
       ],
       "instructions": [
         "Preheat oven to 400F.",
-        "Wash sweet potatoes. Cut in half lengthwise and slice into half-moon shapes. Toss in a bowl with olive oil and add salt, pepper, and paprika.",
+        "Wash sweet potatoes. Cut in half lengthwise and slice into half-moon shapes. Toss in a bowl with [#: oil | olive oil] and add [#: sel | salt], pepper, and [#: pap | paprika].",
         "[&: Sweet Potatoes | 00:45:00] Roast sweet potatoes in oven, on a baking sheet or a oven-safe glass container for 45 minutes or until potatoes are tender.",
-        "Make base (rice or quiona) according to package instructions.",
-        "Drain chickpeas. Put in a bowl and add olive oil and salt and pepper. Stir.",
-        "Make dressing: Combine 3 tbsp of olive oil, juices of lemon and orange, zest of lemon and oragne, half teaspoon of ginger, salt and pepper to taste.",
+        "Make [#: base | base] (rice or quiona) according to package instructions.",
+        "Drain [#: cp | chickpeas]. Put in a bowl and add [#: oil2 | olive oil] and salt and pepper. Stir.",
+        "Make dressing: Combine 3 tbsp of olive oil, juice of [#: lem | lemon] and [#: or | orange], [#: lz | lemon zest] and [#: oz | orange zest], [#: gin | ginger]. Salt and pepper to taste.",
         "[&: Heat chickpeas | 00:06:00] Heat chickpeas for 5 - 7 minutes on medium-high. Chickpeas are done when they are crisp on the outside and soft on the inside.",
         "Prepare the bowl: Put in arugula, quinoa/rice, chickpeas and avocado chunks. Top with dressing."
       ],
@@ -3813,11 +3827,11 @@ module.exports = {
       ],
       "instructions": [
         "Preheat oven to 350F.",
-        "Mash bananas.",
-        "Mix butter and sugar together until creamed together.",
+        "Mash [#: ban | bananas].",
+        "Mix [#: but | butter] and [#: sug | sugar] together until creamed together.",
         "Stir in eggs, one at a time. Beat well.",
         "Stir in mashed banana.",
-        "In a large bowl, mix flour, baking powder, baking soda, salt.",
+        "In a large bowl, mix [#: fl | flour], [#: bp | baking powder], [#: bs | baking soda], [#: sal | salt].",
         "Mix banana mixture into flour mixture, stir to combine.",
         "[&: Bake! | 01:00:00] Bake in oven for 60 minutes or until a toothpick placed into the center of the loaf comes out clean."
       ],

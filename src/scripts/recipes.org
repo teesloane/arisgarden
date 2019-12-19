@@ -1471,27 +1471,29 @@
 :time: 01:00:00
 :END:
 ** Ingredients
-| Ingredient   | Quantity | Unit              | Id   | Group    |
-|--------------+----------+-------------------+------+----------|
-| Sweet potato | 2        |                   | sp   | Bowl     |
-| Olive oil    | 1        | tbsp              | oil  | Bowl     |
-| Paprika      | 1/2      | tsp               | pap  | Bowl     |
-| Chickpeas    | 14       | oz                | cp   | Bowl     |
-| Arugula      | 1/2      | cups              | rug  | Bowl     |
-| Avocado      | 1/2      | sliced            | avo  | Bowl     |
-| Orange       | 1/2      | orange (squeezed) | or   | Dressing |
-| Lemon        | 1/2      | lemon (squeezed)  | lem  | Dressing |
-| Lemon zest   | 1/2      | lemon             | lz   | Dressing |
-| Orange zest  | 1/2      | orange            | oz   | Dressing |
-| Salt         | 1/4      | tsp               | sel  | Dressing |
-| Olive oil    | 3        | tbsp              | oil2 | Dressing |
+| Ingredient    | Quantity | Unit     | Id   | Group    |
+|---------------+----------+----------+------+----------|
+| Sweet potato  | 2        |          | sp   | Bowl     |
+| Olive oil     | 1        | tbsp     | oil  | Bowl     |
+| Paprika       | 1/2      | tsp      | pap  | Bowl     |
+| Chickpeas     | 14       | oz       | cp   | Bowl     |
+| Arugula       | 1/2      | cups     | rug  | Bowl     |
+| Avocado       | 1/2      | sliced   | avo  | Bowl     |
+| Rice / Quinoa | 1/2      | cups     | base | Bowl     |
+| Orange        | 1/2      | squeezed | or   | Dressing |
+| Ginger        | 1        | tsp      | ging | Dressing |
+| Lemon         | 1/2      | squeezed | lem  | Dressing |
+| Lemon zest    | 1/2      | tsp      | lz   | Dressing |
+| Orange zest   | 1/2      | tsp      | oz   | Dressing |
+| Salt          | 1/4      | tsp      | sel  | Dressing |
+| Olive oil     | 3        | tbsp     | oil2 | Dressing |
 ** Steps
 1) Preheat oven to 400F.
-2) Wash sweet potatoes. Cut in half lengthwise and slice into half-moon shapes. Toss in a bowl with olive oil and add salt, pepper, and paprika.
+2) Wash sweet potatoes. Cut in half lengthwise and slice into half-moon shapes. Toss in a bowl with [#: oil | olive oil] and add [#: sel | salt], pepper, and [#: pap | paprika].
 3) [&: Sweet Potatoes | 00:45:00] Roast sweet potatoes in oven, on a baking sheet or a oven-safe glass container for 45 minutes or until potatoes are tender.
-4) Make base (rice or quiona) according to package instructions.
-5) Drain chickpeas. Put in a bowl and add olive oil and salt and pepper. Stir.
-6) Make dressing: Combine 3 tbsp of olive oil, juices of lemon and orange, zest of lemon and oragne, half teaspoon of ginger, salt and pepper to taste.
+4) Make [#: base | base] (rice or quiona) according to package instructions.
+5) Drain [#: cp | chickpeas]. Put in a bowl and add [#: oil2 | olive oil] and salt and pepper. Stir.
+6) Make dressing: Combine 3 tbsp of olive oil, juice of [#: lem | lemon] and [#: or | orange], [#: lz | lemon zest] and [#: oz | orange zest], [#: gin | ginger]. Salt and pepper to taste.
 7) [&: Heat chickpeas | 00:06:00] Heat chickpeas for 5 - 7 minutes on medium-high. Chickpeas are done when they are crisp on the outside and soft on the inside.
 8) Prepare the bowl: Put in arugula, quinoa/rice, chickpeas and avocado chunks. Top with dressing.
 ** Content
@@ -1528,11 +1530,11 @@
 | Butter        |      1/2 | cups | but |       |
 ** Steps
 1) Preheat oven to 350F.
-2) Mash bananas.
-3) Mix butter and sugar together until creamed together.
+2) Mash [#: ban | bananas].
+3) Mix [#: but | butter] and [#: sug | sugar] together until creamed together.
 4) Stir in eggs, one at a time. Beat well.
 5) Stir in mashed banana.
-6) In a large bowl, mix flour, baking powder, baking soda, salt.
+6) In a large bowl, mix [#: fl | flour], [#: bp | baking powder], [#: bs | baking soda], [#: sal | salt].
 7) Mix banana mixture into flour mixture, stir to combine.
 8) [&: Bake! | 01:00:00] Bake in oven for 60 minutes or until a toothpick placed into the center of the loaf comes out clean.
 ** Content
