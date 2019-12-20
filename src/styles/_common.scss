@@ -92,14 +92,47 @@ p  { margin: 16px 0; }
 
 .Navbar {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 12px;
-  padding: 16px 32px;
   justify-content: space-between;
+  top: 12px;
   display: flex;
+  width: 100%;
   align-items: center;
   z-index: 2;
+  font-family: "plex-sans";
+
+  .nav-container {
+    max-width: $tablet + 512px;
+    padding: 0 24px;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .name-icon {
+    align-items: center;
+    background: #333;
+    display: flex;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .links {
+    background: #333;
+    display: flex;
+    min-height: 32px;
+  }
+
+  .link {
+    color: white;
+    align-self: center;
+    padding:  8px 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
 }
 
 
