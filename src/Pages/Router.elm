@@ -2,6 +2,8 @@ module Pages.Router exposing (..)
 
 import Html exposing (p, text)
 import Pages.Recipe as Recipe
+import Random
+import Update exposing (Msg(..))
 import Url.Parser as Parser exposing ((</>), Parser, oneOf, s, string)
 
 
@@ -46,3 +48,20 @@ router model =
 
         Just About ->
             ( p [] [ text "About Page" ], "About" )
+
+
+
+-- based on our route, set up the init model / commands
+-- FIXME: This and router ^ should be combined_ (and maybe page title)
+
+
+commands model =
+    case Parser.parse parser model.url of
+        Nothing ->
+            Cmd.none
+
+        Just Home ->
+            Random.generate RandomGot (Random.int 1 6)
+
+        Just a ->
+            Cmd.none

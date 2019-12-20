@@ -9,6 +9,7 @@ type Msg
     = LinkClicked Browser.UrlRequest
     | UrlChanged Url.Url
     | SetCurrentStep Int
+    | RandomGot Int
     | TimerAdd Timer
     | TimerDelete Timer
     | TimerDec Posix

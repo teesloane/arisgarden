@@ -202,7 +202,6 @@ parseIngredientChunk =
 
 {-| Groups parsers together to result in creating an InstructionParsed type.
 -}
-
 parseEverything : Parser InstructionParsed
 parseEverything =
     succeed InstructionParsed
@@ -216,6 +215,7 @@ runParser str =
 
 
 -- DECODERS / ENCODERS --
+
 
 decoderIngredient : Decoder Ingredient
 decoderIngredient =
@@ -320,6 +320,7 @@ viewTimers model =
 
 
 -- Page: RecipeList ------------------------------------------------------------
+
 
 viewList model =
     unwrapRecipes model

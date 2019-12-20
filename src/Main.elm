@@ -7,7 +7,7 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 import Json.Decode as Decode exposing (Decoder)
 import Pages.Recipe as Recipe exposing (Flags, Recipe)
-import Pages.Router exposing (..)
+import Pages.Router as Router exposing (..)
 import Time
 import Ui
 import Update exposing (Msg(..), Timer)
@@ -52,10 +52,21 @@ type alias Model =
 init flags url key =
     case Decode.decodeValue Recipe.recipesDecoder flags.recipes of
         Ok recipes ->
-            ( Model key url (Just recipes) 0 Nothing [ Timer "" "" 0 ], Cmd.none )
+            let
+                model =
+                    Model key url (Just recipes) 0 Nothing [ Timer "" "" 0 ]
+
+                commands =
+                    Router.commands model
+            in
+            ( model, commands )
 
         Err _ ->
             ( Model key url Nothing 0 Nothing [ Timer "" "" 0 ], Cmd.none )
+
+
+
+--noinspection ALL
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -73,7 +84,10 @@ update msg model =
             ( { model | url = url, currentStep = 0, timers = [ Timer "" "" 0 ] }, Cmd.none )
 
         SetCurrentStep index ->
-            ( { model | currentStep = index }, Cmd.none )
+            ( model, Cmd.none )
+
+        RandomGot res ->
+            ( model, Cmd.none )
 
         TimerAdd timer ->
             ( { model | timers = model.timers ++ [ timer ] }, Cmd.none )
