@@ -190,7 +190,7 @@ module.exports = {
       "commentary": {
         "kind": "whisper",
         "val": [
-          "I know of a pantry--and while the light at the outset glows bright and warm--it recedes into such depths that no light can reach. Now there... there grows the great and unimaginable vegetables."
+          "I know of a pantry—and while the light at the outset glows bright and warm—it recedes into such depths that no light can reach. Now there... there grow the great and unimaginable vegetables."
         ]
       }
     },
