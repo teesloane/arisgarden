@@ -7,6 +7,7 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 import Json.Decode as Decode exposing (Decoder)
 import Pages.Recipe as Recipe exposing (Flags, Recipe)
+import Pages.RecipeSingle as RecipeSingle
 import Pages.Router as Router exposing (..)
 import Time
 import Ui
@@ -42,6 +43,8 @@ type alias Model =
     , currentStep : Int
     , currentRecipe : Maybe String
     , timers : List Timer
+    , route : Route
+    , page : Page
     }
 
 
@@ -54,19 +57,51 @@ init flags url key =
         Ok recipes ->
             let
                 model =
-                    Model key url (Just recipes) 0 Nothing [ Timer "" "" 0 ]
+                    { key = key
+                    , url = url
+                    , recipes = Just recipes
+                    , currentStep = 0
+                    , currentRecipe = Nothing
+                    , timers = [ Timer "" "" 0 ]
+                    , route = Router.parseUrl url
+                    , page = NotFoundPage
+                    }
 
                 commands =
-                    Router.commands model
+                    Cmd.none
             in
-            ( model, commands )
+            --( model, commands )
+            initCurrentPage model Cmd.none
 
         Err _ ->
-            ( Model key url Nothing 0 Nothing [ Timer "" "" 0 ], Cmd.none )
+            ( Model key url Nothing 0 Nothing [ Timer "" "" 0 ] (Router.parseUrl url), Cmd.none )
 
 
+initCurrentPage : ( Model, Cmd Msg ) -> ( Model, Cmd Msg )
+initCurrentPage ( model, existingCmds ) =
+    let
+        ( currentPage, mappedPageCmds ) =
+            case model.route of
+                Router.NotFound ->
+                    ( NotFoundPage, Cmd.none )
 
---noinspection ALL
+                Router.RecipeSingle recipeName ->
+                    let
+                        ( pageModel, _ ) =
+                            RecipeSingle.init
+                    in
+                    ( RecipeSinglePage pageModel, Cmd.none )
+
+                Home ->
+                    ( RecipeListPage, Cmd.none )
+    in
+    ( { model | page = currentPage }
+    , Cmd.batch [ existingCmds, mappedPageCmds ]
+    )
+
+
+type BigMsg
+    = RecipeSingleMsg RecipeSingle.Msg
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
