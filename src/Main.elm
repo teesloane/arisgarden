@@ -7,7 +7,7 @@ import Browser.Navigation as Nav
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Json.Decode as Decode exposing (Decoder)
-import Pages.RecipeList as RecipeListPg
+import Pages.RecipeList as RecipeList
 import Pages.RecipeSingle as RecipeSingle exposing (Msg(..))
 import Pages.Router as Router exposing (..)
 import Ui
@@ -18,7 +18,7 @@ import Url
 -- MAIN
 
 
-main : Program RecipeListPg.Flags Model Msg
+main : Program RecipeList.Flags Model Msg
 main =
     Browser.application
         { init = init
@@ -46,6 +46,7 @@ type Msg
     = LinkClicked Browser.UrlRequest
     | UrlChanged Url.Url
     | RecipeSingleMsg RecipeSingle.Msg
+    | RecipeListMsg
 
 
 init flags url key =
@@ -53,7 +54,7 @@ init flags url key =
         model =
             Model key url (Router.parseUrl url) NotFoundPage
     in
-    case Decode.decodeValue RecipeListPg.decodeAll flags.recipes of
+    case Decode.decodeValue RecipeList.decodeAll flags.recipes of
         Ok recipes ->
             initCurrentPage ( model, Cmd.none ) recipes
 
@@ -75,8 +76,12 @@ initCurrentPage ( model, existingCmds ) recipes =
                     in
                     ( RecipeSinglePage pageModel, Cmd.map RecipeSingleMsg pageCmds )
 
-                Home ->
-                    ( RecipeListPage, Cmd.none )
+                RecipeList ->
+                    let
+                        ( pageModel, pageCmds ) =
+                            RecipeList.init recipes
+                    in
+                    ( RecipeListPage pageModel, Cmd.none )
     in
     ( { model | page = currentPage }
     , Cmd.batch [ existingCmds, mappedPageCmds ]
@@ -87,7 +92,7 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     let
         x =
-            Debug.log "message received" msg
+            Debug.log "click clicked" msg
     in
     case ( msg, model.page ) of
         ( LinkClicked urlRequest, _ ) ->
@@ -108,11 +113,14 @@ update msg model =
             in
             ( { model | page = RecipeSinglePage updatedPageModel }, Cmd.map RecipeSingleMsg updatedCmd )
 
+        ( RecipeListMsg, RecipeListPage pageModel ) ->
+            ( { model | page = RecipeListPage pageModel }, Cmd.none )
+
         -- FIXME: Placeholders
         ( RecipeSingleMsg _, NotFoundPage ) ->
             ( model, Cmd.none )
 
-        ( RecipeSingleMsg _, RecipeListPage ) ->
+        ( _, _ ) ->
             ( model, Cmd.none )
 
 
@@ -135,12 +143,7 @@ subscriptions model =
 
 view model =
     { title = "Ari's Garden"
-    , body =
-        [ main_ []
-            [ viewNav model
-            , viewCurrentPage model
-            ]
-        ]
+    , body = [ main_ [] [ viewNav model, viewCurrentPage model ] ]
     }
 
 
@@ -149,8 +152,8 @@ viewCurrentPage model =
         RecipeSinglePage pageModel ->
             RecipeSingle.view pageModel |> Html.map RecipeSingleMsg
 
-        RecipeListPage ->
-            div [] [ text "rlist page" ]
+        RecipeListPage pageModel ->
+            RecipeList.view pageModel
 
         NotFoundPage ->
             div [] [ text "not found 404" ]
