@@ -48,10 +48,6 @@ type Msg
     | RecipeSingleMsg RecipeSingle.Msg
 
 
-
--- FIXME: remove need for "pseudo-maybe timer"
-
-
 init flags url key =
     let
         model =

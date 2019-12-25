@@ -79,9 +79,7 @@ init recipes recipeName =
             List.head (List.filter (\r -> r.slug == recipeName) recipes)
     in
     ( { step = 0
-      , timers = [ Timer "" "" 0 ]
-
-      --, recipes = recipes
+      , timers = [ Timer "" "" 0 ] -- FIXME: remove need for "pseudo-maybe timer"
       , recipe = recipe
       }
     , Cmd.none
@@ -327,12 +325,7 @@ viewHero slug =
 
 {-| displays timers in the bottom left of the screen.
 -}
-
-
-
---viewTimers : List Timer -> Html msg
-
-
+viewTimers : List Timer -> Html Msg
 viewTimers timers =
     let
         filteredTimers =
@@ -455,6 +448,7 @@ viewIngredients recipe =
         ]
 
 
+view : Model -> Html Msg
 view model =
     let
         viewIngrAndInstr recipe =
@@ -483,7 +477,7 @@ view model =
 
 {-| Handles rendering the "Commentary" of a recipe
 -}
-viewCommentary : { a | kind : String, val : List String } -> Html msg
+viewCommentary : Commentary -> Html msg
 viewCommentary commentary =
     let
         { kind, val } =
@@ -531,13 +525,14 @@ viewHr char =
 -- SUBS & PORTS ----------------------------------------------------------------
 
 
-timersRunning rsModel =
-    List.any (\t -> t.time > 0) rsModel.timers
+timersRunning : List Timer -> Bool
+timersRunning timers =
+    List.any (\t -> t.time > 0) timers
 
 
 subscriptions : Model -> Sub Msg
 subscriptions model =
-    case timersRunning model of
+    case timersRunning model.timers of
         True ->
             Time.every 1000 TimerDec
 
