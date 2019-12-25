@@ -1,25 +1,24 @@
-port module Main exposing (..)
+module Main exposing (..)
+
+-- FIXME: better names between RecipeSingle RecipeSinglePage and RecipeSingleMsg ?
 
 import Browser
 import Browser.Navigation as Nav
-import Dict exposing (Dict)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Json.Decode as Decode exposing (Decoder)
-import Pages.Recipe as Recipe exposing (Flags, Recipe)
+import Pages.RecipeList as RecipeList
+import Pages.RecipeSingle as RecipeSingle exposing (Msg(..))
 import Pages.Router as Router exposing (..)
-import Time
 import Ui
-import Update exposing (Msg(..), Timer)
 import Url
-import Util
 
 
 
 -- MAIN
 
 
-main : Program Flags Model Msg
+main : Program RecipeList.Flags Model Msg
 main =
     Browser.application
         { init = init
@@ -38,41 +37,66 @@ main =
 type alias Model =
     { key : Nav.Key
     , url : Url.Url
-    , recipes : Maybe (Dict String Recipe)
-    , currentStep : Int
-    , currentRecipe : Maybe String
-    , timers : List Timer
+    , recipes : Maybe (List RecipeSingle.Recipe)
+    , route : Route
+    , page : Page
     }
 
 
-
--- FIXME: remove need for "pseudo-maybe timer"
+type Msg
+    = LinkClicked Browser.UrlRequest
+    | UrlChanged Url.Url
+    | RecipeSingleMsg RecipeSingle.Msg
+    | RecipeListMsg
 
 
 init flags url key =
-    case Decode.decodeValue Recipe.recipesDecoder flags.recipes of
+    case Decode.decodeValue RecipeList.decodeAll flags.recipes of
         Ok recipes ->
             let
                 model =
-                    Model key url (Just recipes) 0 Nothing [ Timer "" "" 0 ]
-
-                commands =
-                    Router.commands model
+                    Model key url (Just recipes) (Router.parseUrl url) NotFoundPage
             in
-            ( model, commands )
+            initCurrentPage ( model, Cmd.none )
 
         Err _ ->
-            ( Model key url Nothing 0 Nothing [ Timer "" "" 0 ], Cmd.none )
+            let
+                model =
+                    Model key url Nothing (Router.parseUrl url) NotFoundPage
+            in
+            initCurrentPage ( model, Cmd.none )
 
 
+initCurrentPage ( model, existingCmds ) =
+    let
+        ( currentPage, mappedPageCmds ) =
+            case model.route of
+                Router.NotFound ->
+                    ( NotFoundPage, Cmd.none )
 
---noinspection ALL
+                Router.RecipeSingle recipeName ->
+                    let
+                        ( pageModel, pageCmds ) =
+                            RecipeSingle.init model.recipes recipeName
+                    in
+                    ( RecipeSinglePage pageModel, Cmd.map RecipeSingleMsg pageCmds )
+
+                RecipeList ->
+                    let
+                        ( pageModel, pageCmds ) =
+                            RecipeList.init model.recipes
+                    in
+                    ( RecipeListPage pageModel, Cmd.none )
+    in
+    ( { model | page = currentPage }
+    , Cmd.batch [ existingCmds, mappedPageCmds ]
+    )
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
-    case msg of
-        LinkClicked urlRequest ->
+    case ( msg, model.page ) of
+        ( LinkClicked urlRequest, _ ) ->
             case urlRequest of
                 Browser.Internal url ->
                     ( model, Nav.pushUrl model.key (Url.toString url) )
@@ -80,68 +104,65 @@ update msg model =
                 Browser.External href ->
                     ( model, Nav.load href )
 
-        UrlChanged url ->
-            ( { model | url = url, currentStep = 0, timers = [ Timer "" "" 0 ] }, Cmd.none )
-
-        SetCurrentStep index ->
-            ( model, Cmd.none )
-
-        RandomGot res ->
-            ( model, Cmd.none )
-
-        TimerAdd timer ->
-            ( { model | timers = model.timers ++ [ timer ] }, Cmd.none )
-
-        TimerDelete timer ->
-            ( { model | timers = List.filter (\t -> t.step /= timer.step) model.timers }, Cmd.none )
-
-        TimerDec _ ->
+        ( UrlChanged url, _ ) ->
             let
-                timeDec t =
-                    Util.tern (t.time > 0) (t.time - 1) t.time
-
-                u_timers =
-                    List.map (\t -> { t | time = timeDec t }) model.timers
+                newRoute =
+                    Router.parseUrl url
             in
-            ( { model | timers = u_timers }, playSound model.timers )
+            ( { model | route = newRoute }, Cmd.none )
+                |> initCurrentPage
+
+        ( RecipeSingleMsg subMsg, RecipeSinglePage pageModel ) ->
+            let
+                ( updatedPageModel, updatedCmd ) =
+                    RecipeSingle.update subMsg pageModel
+            in
+            ( { model | page = RecipeSinglePage updatedPageModel }, Cmd.map RecipeSingleMsg updatedCmd )
+
+        ( RecipeListMsg, RecipeListPage pageModel ) ->
+            ( { model | page = RecipeListPage pageModel }, Cmd.none )
+
+        -- FIXME: Placeholders
+        ( RecipeSingleMsg _, NotFoundPage ) ->
+            ( model, Cmd.none )
+
+        ( _, _ ) ->
+            ( model, Cmd.none )
 
 
 
--- SUBSCRIPTIONS
+-- SUBSCRIPTIONS --
 
 
-timersRunning model =
-    List.any (\t -> t.time > 0) model.timers
-
-
-subscriptions : Model -> Sub Msg
 subscriptions model =
-    case timersRunning model of
-        True ->
-            Time.every 1000 TimerDec
+    case model.page of
+        RecipeSinglePage subModel ->
+            RecipeSingle.subscriptions subModel |> Sub.map RecipeSingleMsg
 
-        False ->
+        _ ->
             Sub.none
 
 
 
--- VIEW
+-- VIEW --
 
 
-view : Model -> Browser.Document Msg
 view model =
-    let
-        ( route, routeName ) =
-            router model
-    in
-    { title = "Ari's Garden — " ++ routeName
-    , body =
-        [ main_ []
-            [ viewNav model
-            , route
-            ]
-        ]
+    { title = "Ari's Garden"
+    , body = [ main_ [] [ viewNav model, viewCurrentPage model ] ]
     }
+
+
+viewCurrentPage model =
+    case model.page of
+        RecipeSinglePage pageModel ->
+            RecipeSingle.view pageModel |> Html.map RecipeSingleMsg
+
+        RecipeListPage pageModel ->
+            RecipeList.view pageModel
+
+        NotFoundPage ->
+            div [] [ text "not found 404" ]
 
 
 viewNav : a -> Html msg
@@ -149,19 +170,14 @@ viewNav _ =
     nav [ class "Navbar" ]
         [ div [ class "nav-container" ]
             [ a [ class "name-icon links", href "/" ]
-                [ div [ style "margin-top" "4px" ] [ Ui.icon "c_home.svg" "48" ]
-                , div [ class "link" ] [ text "Ari's Garden" ]
-                ]
+                [ div [] [ Ui.icon "c_home.svg" "48" "42" ]
 
-            --, div [ class "links" ]
-            --    [ a [ class "link" ] [ text "About" ]
-            --    ]
+                --, div [ class "link" ] []
+                ]
+            , div [ class "links" ]
+                [--[ a [ class "link" ] [ text "About" ]
+                 --, a [ class "link" ] [ text "Pantry" ]
+                 --, a [ class "link" ] [ text "Support Ari    !" ]
+                ]
             ]
         ]
-
-
-
--- PORTS
-
-
-port playSound : List Timer -> Cmd msg

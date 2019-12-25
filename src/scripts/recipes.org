@@ -1502,6 +1502,56 @@
 - Orange and Lemon Zest
 - Tomorrow I will find you
 - Hiding under the cutting board.
+* Jumpin' Udon Fry                                                              :original:
+:PROPERTIES:
+:belongs_to: main
+:date_made: [2019-12-23]
+:ease_of_making: 4/5
+:imgs: ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type: vegetarian
+:name: Jumpin' Udon Fry
+:original_recipe: ""
+:rating: 4/5
+:serves: 2
+:slug: jumpin-udon
+:time: 00:25:00
+:END:
+** Ingredients
+| Ingredient           | Quantity | Unit    | Id    | Group   |
+|----------------------+----------+---------+-------+---------|
+| Olive Oil            |        1 | tbsp    | oil   | Stirfry |
+| Green onion (greens) |        1 | cups    | go    | Stirfry |
+| Carrots              |        1 |         | carr  | Stirfry |
+| Baby Bokchoy         |        3 | cups    | bok   | Stirfry |
+| Udon Noodles         |      500 | grams   | udon  | Stirfry |
+| Green Onion (whites) |      1/3 | cups    | go2   | Stirfry |
+| Tofu (firm)          |        1 | package | tofu  | Stirfry |
+| Mushrooms            |        1 | cups    | mush  | Stirfry |
+| Sriracha             |        2 | tsp     | sri   | Sauce   |
+| Soy Sauce            |        3 | tbsp    | soy   | Sauce   |
+| Garlic               |        1 | clove   | gar   | Sauce   |
+| Ginger               |        2 | tsp     | gin   | Sauce   |
+| Sesame Seeds         |        2 | tsp     | seeds | Garnish |
+** Steps
+1) [&: Press tofu | 00:10:00] Drain tofu and press for about 10 minutes. Cube into 1" pieces once pressed.
+2) Mise on place: spiralize, blend, or fine chop [#: carr | carrots]. Chop ends of [#: bok | bokchoy] and rinse, slice [#: go | green onions] (green ends), slice [#: mush | mushrooms].
+3) Mix up the sauce: Combine [#: sri | sriracha], [#: soy | soy sauce], [#: minced garlic | gar] and [#: gin | ginger].
+4) [&: Fry carrots | 00:01:00] In a large pan, heat oil on medium high until hot. Add carrots for a minute.
+5) Add whites of the [#: go2 | green onions], [#:tofu | cubed tofu ] and [#: mush | mushrooms] and cook until soft and carrots are tender. Then add the greens from the green onion for about a minute.
+6) Add udon noodles to stir fry for about 30 seconds. Add sauce and cook for another 30 seconds.
+7) Add bokchoy until it wilts.
+8) Plate stirfry and sprinkle with sesame seeds and any additional green onion.
+:PROPERTIES:
+:type: haiku
+:END:
+- Orange and Lemon Zest
+- Tomorrow I will find you
+- Hiding under the cutting board.
+** Content
+:PROPERTIES:
+:type: blurb
+:END:
+- This recipe only presses the tofu and doesn't marinade it. If I was to do it again, I would marinade it, but with something other than soy sauce, as the soy sauce in the recipe can get things a bit salty already.
 * Banana Bread
 :PROPERTIES:
 :belongs_to: sweet

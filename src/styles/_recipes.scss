@@ -1,5 +1,19 @@
 .RecipeList {
-  margin-top: 128px;
+  .home-hero {
+    align-items: center;
+    background: white;
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+    min-height: $heroSize;
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    .byline {
+      font-size: 20px;
+    }
+  }
 
   .columns {
     column-gap: 64px;
@@ -51,7 +65,7 @@
       margin: 0px auto;
       font-size: 18px;
       line-height: 2;
-      color: var(--offblack);
+      color: $off-black;
     }
 
     .dialogue {

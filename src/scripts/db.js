@@ -3752,6 +3752,132 @@ module.exports = {
         ]
       }
     },
+    "jumpin-udon": {
+      "belongs_to": "main",
+      "date_made": "[2019-12-23]",
+      "ease_of_making": "4/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegetarian",
+      "name": "Jumpin' Udon Fry",
+      "original_recipe": "\"\"",
+      "rating": "4/5",
+      "serves": "2",
+      "slug": "jumpin-udon",
+      "time": "00:25:00",
+      "ingredients": [
+        {
+          "ingredient": "Olive Oil",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "oil",
+          "group": "Stirfry"
+        },
+        {
+          "ingredient": "Green onion (greens)",
+          "quantity": "1",
+          "unit": "cups",
+          "id": "go",
+          "group": "Stirfry"
+        },
+        {
+          "ingredient": "Carrots",
+          "quantity": "1",
+          "unit": "",
+          "id": "carr",
+          "group": "Stirfry"
+        },
+        {
+          "ingredient": "Baby Bokchoy",
+          "quantity": "3",
+          "unit": "cups",
+          "id": "bok",
+          "group": "Stirfry"
+        },
+        {
+          "ingredient": "Udon Noodles",
+          "quantity": "500",
+          "unit": "grams",
+          "id": "udon",
+          "group": "Stirfry"
+        },
+        {
+          "ingredient": "Green Onion (whites)",
+          "quantity": "1/3",
+          "unit": "cups",
+          "id": "go2",
+          "group": "Stirfry"
+        },
+        {
+          "ingredient": "Tofu (firm)",
+          "quantity": "1",
+          "unit": "package",
+          "id": "tofu",
+          "group": "Stirfry"
+        },
+        {
+          "ingredient": "Mushrooms",
+          "quantity": "1",
+          "unit": "cups",
+          "id": "mush",
+          "group": "Stirfry"
+        },
+        {
+          "ingredient": "Sriracha",
+          "quantity": "2",
+          "unit": "tsp",
+          "id": "sri",
+          "group": "Sauce"
+        },
+        {
+          "ingredient": "Soy Sauce",
+          "quantity": "3",
+          "unit": "tbsp",
+          "id": "soy",
+          "group": "Sauce"
+        },
+        {
+          "ingredient": "Garlic",
+          "quantity": "1",
+          "unit": "clove",
+          "id": "gar",
+          "group": "Sauce"
+        },
+        {
+          "ingredient": "Ginger",
+          "quantity": "2",
+          "unit": "tsp",
+          "id": "gin",
+          "group": "Sauce"
+        },
+        {
+          "ingredient": "Sesame Seeds",
+          "quantity": "2",
+          "unit": "tsp",
+          "id": "seeds",
+          "group": "Garnish"
+        }
+      ],
+      "instructions": [
+        "[&: Press tofu | 00:10:00] Drain tofu and press for about 10 minutes. Cube into 1\" pieces once pressed.",
+        "Mise on place: spiralize, blend, or fine chop [#: carr | carrots]. Chop ends of [#: bok | bokchoy] and rinse, slice [#: go | green onions] (green ends), slice [#: mush | mushrooms].",
+        "Mix up the sauce: Combine [#: sri | sriracha], [#: soy | soy sauce], [#: minced garlic | gar] and [#: gin | ginger].",
+        "[&: Fry carrots | 00:01:00] In a large pan, heat oil on medium high until hot. Add carrots for a minute.",
+        "Add whites of the [#: go2 | green onions], [#:tofu | cubed tofu ] and [#: mush | mushrooms] and cook until soft and carrots are tender. Then add the greens from the green onion for about a minute.",
+        "Add udon noodles to stir fry for about 30 seconds. Add sauce and cook for another 30 seconds.",
+        "Add bokchoy until it wilts.",
+        "Plate stirfry and sprinkle with sesame seeds and any additional green onion."
+      ],
+      "commentary": {
+        "kind": "blurb",
+        "val": [
+          "This recipe only presses the tofu and doesn't marinade it. If I was to do it again, I would marinade it, but with something other than soy sauce, as the soy sauce in the recipe can get things a bit salty already."
+        ]
+      }
+    },
     "banana-bread": {
       "belongs_to": "sweet",
       "date_made": "[2019-12-18]",

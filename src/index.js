@@ -6,7 +6,7 @@ const { Elm } = require("./Main");
 var app = Elm.Main.init({
   node: document.querySelector("main"),
   flags: {
-    recipes: db.recipes // [db.recipes["breakfast-quinoa"]]
+    recipes: Object.values(db.recipes) // FIXME - convert.js should hand a list, not an object.
   }
 });
 
