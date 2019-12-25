@@ -1,6 +1,5 @@
 port module Pages.RecipeSingle exposing (..)
 
-import Dict exposing (Dict)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onClick)
@@ -15,20 +14,13 @@ import Util
 type alias Model =
     { step : Int
     , timers : List Timer
-
-    --, recipe : Maybe (DictRecipe
-    , recipes : List Recipe
+    , recipe : Maybe Recipe
     }
 
 
 type MealType
     = Vegetarian
     | Vegan
-
-
-type alias Flags =
-    { recipes : Decode.Value
-    }
 
 
 type alias Ingredient =
@@ -77,37 +69,27 @@ type Msg
     | TimerDec Posix
 
 
-
--- init
-
-
 {-| init takes "recipes" because we currently handle them in a batch from flags.
 If we ever move to a rest API, then we would handle loading a single recipe from the parsed url
 (and yes, have a much faster page load).
 -}
 init recipes recipeName =
-    --let
-    --r =
-    --    case Dict.get recipeName recipes of
-    --        Just recipe ->
-    --            recipe
-    --
-    --        Nothing ->
-    --            Nothing
-    --
-    --y =
-    --    Debug.log "r is" r
-    --in
+    let
+        recipe =
+            List.head (List.filter (\r -> r.slug == recipeName) recipes)
+    in
     ( { step = 0
       , timers = [ Timer "" "" 0 ]
-      , recipes = recipes
+
+      --, recipes = recipes
+      , recipe = recipe
       }
     , Cmd.none
     )
 
 
 
--- PARSER --
+-- PARSER --------------------------------------------------------------------------------------------------------------
 
 
 type alias InstructionParsed =
@@ -256,14 +238,6 @@ decoderIngredient =
         |> JP.required "id" Decode.string
 
 
-
---recipesDecoder : Decoder (Dict.Dict String Recipe)
-
-
-recipesDecoder =
-    Decode.list decodeRecipe
-
-
 decodeCommentary : Decoder Commentary
 decodeCommentary =
     Decode.succeed Commentary
@@ -311,10 +285,11 @@ decodeRecipe =
 -- UPDATE --------------------------------------------------------------------
 
 
+update : Msg -> Model -> ( Model, Cmd msg )
 update msg model =
     case msg of
         SetCurrentStep index ->
-            ( model, Cmd.none )
+            ( { model | step = index }, Cmd.none )
 
         TimerAdd timer ->
             ( { model | timers = model.timers ++ [ timer ] }, Cmd.none )
@@ -337,19 +312,11 @@ update msg model =
 -- VIEWS --
 
 
-unwrapRecipes model fn =
-    case model.recipes of
-        Nothing ->
-            div [] [ text "The recipes did not load. Go print a Debug.log in `init`" ]
-
-        Just recipes ->
-            fn recipes
-
-
-viewHero recipe =
+viewHero : String -> Html msg
+viewHero slug =
     let
         url =
-            "url(/imgs/" ++ recipe.slug ++ "-hero.JPG)"
+            "url(/imgs/" ++ slug ++ "-hero.JPG)"
     in
     section
         [ class "viewHero"
@@ -360,10 +327,16 @@ viewHero recipe =
 
 {-| displays timers in the bottom left of the screen.
 -}
-viewTimers model =
+
+
+
+--viewTimers : List Timer -> Html msg
+
+
+viewTimers timers =
     let
         filteredTimers =
-            List.filter (\t -> t.time > 0) model.timers
+            List.filter (\t -> t.time > 0) timers
 
         timerMarkup t =
             div [ class "timer" ]
@@ -380,7 +353,7 @@ viewTimers model =
 viewImages : Recipe -> Html msg
 viewImages recipe =
     let
-        mapImgs i =
+        mapImages i =
             div
                 [ class "photo"
                 , style "background-image" ("url(/imgs/" ++ recipe.slug ++ "-" ++ i)
@@ -388,7 +361,7 @@ viewImages recipe =
                 []
     in
     if List.length recipe.imgs > 0 then
-        section [ class "photos" ] (List.map mapImgs recipe.imgs)
+        section [ class "photos" ] (List.map mapImages recipe.imgs)
 
     else
         div [] []
@@ -403,11 +376,11 @@ viewImages recipe =
   - FIXME: don't nest let blocks if possible.
 
 -}
-viewInstructions : Recipe -> List Timer -> Int -> Html Msg
-viewInstructions recipe timers activeStep =
+viewInstructions : Model -> Recipe -> Html Msg
+viewInstructions model recipe =
     let
         timerExists chunk =
-            not <| List.any (\n -> n.step == chunk.timer.step) timers
+            not <| List.any (\n -> n.step == chunk.timer.step) model.timers
 
         buildInstructions parsedInstructions =
             let
@@ -449,7 +422,7 @@ viewInstructions recipe timers activeStep =
                         ]
             in
             div
-                [ class <| Util.tern (activeStep == index) "instruction active" "instruction"
+                [ class <| Util.tern (model.step == index) "instruction active" "instruction"
                 , onClick (SetCurrentStep index)
                 ]
                 [ stepText ]
@@ -486,16 +459,16 @@ view model =
     let
         viewIngrAndInstr recipe =
             div [ class "instruction-ingredients" ]
-                [ viewInstructions recipe model.timers model.step
+                [ viewInstructions model recipe -- recipe model.timers model.step
                 , div [ class "separator" ] []
                 , viewIngredients recipe
-                , viewTimers model
+                , viewTimers model.timers
                 ]
     in
     case model.recipe of
         Just recipe ->
             section [ class "RecipeSingle" ]
-                [ viewHero recipe
+                [ viewHero recipe.slug
                 , section [ class "container" ]
                     [ viewIngrAndInstr recipe
                     , viewImages recipe
@@ -552,6 +525,24 @@ viewHr char =
         , div [ class "delta" ] [ text char ]
         , div [ class "border" ] []
         ]
+
+
+
+-- SUBS & PORTS ----------------------------------------------------------------
+
+
+timersRunning rsModel =
+    List.any (\t -> t.time > 0) rsModel.timers
+
+
+subscriptions : Model -> Sub Msg
+subscriptions model =
+    case timersRunning model of
+        True ->
+            Time.every 1000 TimerDec
+
+        False ->
+            Sub.none
 
 
 port playSound : List Timer -> Cmd msg

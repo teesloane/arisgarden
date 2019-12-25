@@ -1,6 +1,7 @@
 module Pages.Router exposing (..)
 
 import Pages.RecipeSingle as RecipeSingle
+import Url exposing (Url)
 import Url.Parser as Parser exposing ((</>), Parser, oneOf, parse, s, string)
 
 
@@ -35,6 +36,7 @@ matchRoute =
         ]
 
 
+parseUrl : Url -> Route
 parseUrl url =
     case parse matchRoute url of
         Just route ->
