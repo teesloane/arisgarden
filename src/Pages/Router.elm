@@ -1,10 +1,6 @@
 module Pages.Router exposing (..)
 
-import Html exposing (p, text)
-import Pages.Recipe as Recipe
 import Pages.RecipeSingle as RecipeSingle
-import Random
-import Update exposing (Msg(..))
 import Url.Parser as Parser exposing ((</>), Parser, oneOf, parse, s, string)
 
 
@@ -21,8 +17,8 @@ type Route
 
 type Page
     = NotFoundPage
-    | RecipeSinglePage RecipeSingle.Model
     | RecipeListPage
+    | RecipeSinglePage RecipeSingle.Model
 
 
 
@@ -66,15 +62,13 @@ parseUrl url =
 --            ( p [] [ text "About Page" ], "About" )
 -- based on our route, set up the init model / commands
 -- FIXME: This and router ^ should be combined_ (and maybe page title)
-
-
-commands model =
-    case Parser.parse matchRoute model.url of
-        Nothing ->
-            Cmd.none
-
-        Just Home ->
-            Random.generate RandomGot (Random.int 1 6)
-
-        Just a ->
-            Cmd.none
+--commands model =
+--    case Parser.parse matchRoute model.url of
+--        Nothing ->
+--            Cmd.none
+--
+--        Just Home ->
+--            Cmd.none
+--
+--        Just a ->
+--            Cmd.none

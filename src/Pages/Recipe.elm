@@ -6,9 +6,10 @@ import Html.Attributes exposing (..)
 import Html.Events exposing (onClick)
 import Json.Decode as Decode exposing (Decoder)
 import Json.Decode.Pipeline as JP
+import Pages.RecipeSingle exposing (Timer)
 import Parser exposing (..)
 import Ui as Ui
-import Update exposing (Msg(..), Timer)
+import Update exposing (Msg(..))
 import Util
 
 
