@@ -22,11 +22,7 @@ decodeAll =
 
 
 init recipes =
-    ( { recipes = Just recipes }, Cmd.none )
-
-
-
--- views --
+    ( { recipes = recipes }, Cmd.none )
 
 
 view model =

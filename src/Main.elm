@@ -37,6 +37,7 @@ main =
 type alias Model =
     { key : Nav.Key
     , url : Url.Url
+    , recipes : Maybe (List RecipeSingle.Recipe)
     , route : Route
     , page : Page
     }
@@ -50,19 +51,23 @@ type Msg
 
 
 init flags url key =
-    let
-        model =
-            Model key url (Router.parseUrl url) NotFoundPage
-    in
     case Decode.decodeValue RecipeList.decodeAll flags.recipes of
         Ok recipes ->
-            initCurrentPage ( model, Cmd.none ) recipes
+            let
+                model =
+                    Model key url (Just recipes) (Router.parseUrl url) NotFoundPage
+            in
+            initCurrentPage ( model, Cmd.none )
 
         Err _ ->
-            ( model, Cmd.none )
+            let
+                model =
+                    Model key url Nothing (Router.parseUrl url) NotFoundPage
+            in
+            initCurrentPage ( model, Cmd.none )
 
 
-initCurrentPage ( model, existingCmds ) recipes =
+initCurrentPage ( model, existingCmds ) =
     let
         ( currentPage, mappedPageCmds ) =
             case model.route of
@@ -72,14 +77,14 @@ initCurrentPage ( model, existingCmds ) recipes =
                 Router.RecipeSingle recipeName ->
                     let
                         ( pageModel, pageCmds ) =
-                            RecipeSingle.init recipes recipeName
+                            RecipeSingle.init model.recipes recipeName
                     in
                     ( RecipeSinglePage pageModel, Cmd.map RecipeSingleMsg pageCmds )
 
                 RecipeList ->
                     let
                         ( pageModel, pageCmds ) =
-                            RecipeList.init recipes
+                            RecipeList.init model.recipes
                     in
                     ( RecipeListPage pageModel, Cmd.none )
     in
@@ -90,10 +95,6 @@ initCurrentPage ( model, existingCmds ) recipes =
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
-    let
-        x =
-            Debug.log "click clicked" msg
-    in
     case ( msg, model.page ) of
         ( LinkClicked urlRequest, _ ) ->
             case urlRequest of
@@ -104,7 +105,12 @@ update msg model =
                     ( model, Nav.load href )
 
         ( UrlChanged url, _ ) ->
-            ( { model | url = url }, Cmd.none )
+            let
+                newRoute =
+                    Router.parseUrl url
+            in
+            ( { model | route = newRoute }, Cmd.none )
+                |> initCurrentPage
 
         ( RecipeSingleMsg subMsg, RecipeSinglePage pageModel ) ->
             let

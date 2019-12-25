@@ -74,16 +74,22 @@ If we ever move to a rest API, then we would handle loading a single recipe from
 (and yes, have a much faster page load).
 -}
 init recipes recipeName =
-    let
-        recipe =
-            List.head (List.filter (\r -> r.slug == recipeName) recipes)
-    in
-    ( { step = 0
-      , timers = [ Timer "" "" 0 ] -- FIXME: remove need for "pseudo-maybe timer"
-      , recipe = recipe
-      }
-    , Cmd.none
-    )
+    case recipes of
+        Just recipes_ ->
+            ( { step = 0
+              , timers = [ Timer "" "" 0 ] -- FIXME: remove need for "pseudo-maybe timer"
+              , recipe = List.head (List.filter (\r -> r.slug == recipeName) recipes_)
+              }
+            , Cmd.none
+            )
+
+        Nothing ->
+            ( { step = 0
+              , timers = [ Timer "" "" 0 ] -- FIXME: remove need for "pseudo-maybe timer"
+              , recipe = Nothing
+              }
+            , Cmd.none
+            )
 
 
 
