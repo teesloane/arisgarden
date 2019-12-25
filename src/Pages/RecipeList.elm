@@ -25,6 +25,15 @@ init recipes =
     ( { recipes = recipes }, Cmd.none )
 
 
+viewHero =
+    section [ class "home-hero" ]
+        [ div []
+            [ div [ class "mainline" ] [ text "Ari's Garden" ]
+            , div [ class "byline" ] [ text "Simple, to-the-point vegetarian and vegan recipes." ]
+            ]
+        ]
+
+
 view model =
     case model.recipes of
         Just recipes ->
@@ -33,7 +42,8 @@ view model =
                     li [] [ a [ href ("/recipe/" ++ recipe.slug) ] [ text recipe.name ] ]
             in
             section [ class "RecipeList" ]
-                [ ul [ class "columns" ] (List.map rList recipes)
+                [ viewHero
+                , ul [ class "columns" ] (List.map rList recipes)
                 ]
 
         _ ->
