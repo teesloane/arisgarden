@@ -334,10 +334,7 @@
     flex: 1;
     flex-direction: column;
     padding: 0px 48px;
-
-    @include at-size(mobile) {
-      padding: 4px;
-    }
+    @include at-size(mobile) { padding: 0; }
   }
 
   .separator {

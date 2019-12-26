@@ -446,7 +446,6 @@
 | Nutritional Yeast        |        4 | tbsp   | yeast  |
 | Parmesean                |      1/4 | cups   | parm   |
 | Pasta                    |       10 | ounces | pasta  |
-|                          |          |        |        |
 ** Steps
 1) Preheat oven to 400F. Add [#: brus | brussel sprouts] to baking sheet in a single layer. Drizzel with [#: oil | oil] and season with salt and pepper. Arranger in a single layer.
 2) Bring a pot of water to a boil.

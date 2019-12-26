@@ -170,7 +170,7 @@ viewNav _ =
     nav [ class "Navbar" ]
         [ div [ class "nav-container" ]
             [ a [ class "name-icon links", href "/" ]
-                [ div [] [ Ui.icon "c_home.svg" "48" "42" ]
+                [ div [] [ Ui.icon "c_home.svg" "46" "38" ]
 
                 --, div [ class "link" ] []
                 ]

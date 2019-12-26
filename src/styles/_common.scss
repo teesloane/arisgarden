@@ -30,6 +30,10 @@ p  { margin: 16px 0; }
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+
+  @include at-size(mobile){
+    padding: 0 20px;
+  }
 }
 
 .ext-link {
@@ -81,7 +85,7 @@ p  { margin: 16px 0; }
 
   .name-icon {
     align-items: center;
-    background: #333;
+    background: #222;
     display: flex;
     letter-spacing: 1px;
     color: white;

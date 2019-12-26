@@ -1094,12 +1094,6 @@ module.exports = {
           "quantity": "10",
           "unit": "ounces",
           "id": "pasta"
-        },
-        {
-          "ingredient": "",
-          "quantity": "",
-          "unit": "",
-          "id": ""
         }
       ],
       "instructions": [
