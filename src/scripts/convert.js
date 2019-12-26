@@ -72,54 +72,9 @@ function getInstructions(n) {
   let out = [];
   list.forEach(l =>
     l.children.map(j => {
-      out.push(templateParser(j.value));
-      // return templateParser(j.value);
+      out.push(j.value);
     })
   );
-  return out;
-}
-
-// Parses recipes instruction strings and returns data structures.
-// example:
-//
-// 1) Chop [#: almonds | almonds] roughly. Put them in a bowl.
-//
-// Will parse the # into a id data attribute.
-// Or,
-//
-// 5) [t: 00:18:00] Cook for 18-30 minutes. Stir frequently.
-// Will return timer data for an inline timer.
-// FIXME: remove! handled in elm now.
-function templateParser(str) {
-  let ogstr = str;
-  // let ogRE = /\[(.*?)\]/;
-  // let bracketRE = /[^[\]]+(?=])/;
-  let newRE = /\s*\[([^\]]*)]\s*/;
-  let out = ogstr;
-  let splitStr = str.split(newRE).filter(Boolean);
-
-  // splitStr.forEach(s => {
-  //   switch (s[0]) {
-  //     case "&":
-  //       out["timer"] = s.slice(2, 11).trim(); // parse the timestring.
-  //       return out;
-
-  //     // Parse # to assign meta data (for linking)
-  //     // NOTE: disable and reimplement this to be easier.
-  //     case "#":
-  //       let split = s.split("|");
-  //       let tagId = split[0].slice(3).trim();
-  //       let tagContent = split[1].trim();
-  //       out["parsed"].push({ val: tagC, attr: tagId });
-  //       return out;
-
-  //     default:
-  //       return out
-  //       // out["parsed"].push({ val: s });
-  //       // out["parsed"].push({ val: s });
-  //   }
-  // });
-
   return out;
 }
 
