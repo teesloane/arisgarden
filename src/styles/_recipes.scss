@@ -90,7 +90,11 @@
       justify-content: center;
       flex-direction: column;
       padding: 0 32px;
+      color: white;
     }
+
+
+     .link { color: white; &:hover {color: orange} }
 
     .vh-recipe-name {
       font-size: $font-h2;
@@ -108,9 +112,6 @@
         font-size: $font-h2;
       }
 
-      &.link {
-        color: white;
-      }
     }
 
     .vh-metadata {

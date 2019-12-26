@@ -355,22 +355,14 @@ viewHero recipe =
                 t
 
         recipeName =
-            if not <| String.isEmpty recipe.original_recipe then
-                a
-                    [ class "vh-recipe-name link"
-                    , href recipe.original_recipe
-                    , target "_blank"
-                    ]
-                    [ text (recipe.name ++ "˚") ]
-
-            else
-                div [ class "vh-recipe-name" ] [ text recipe.name ]
+            div [ class "vh-recipe-name" ] [ text recipe.name ]
 
         links =
-            [ { t = "Serves: ", c = recipe.serves, show = True }
-            , { t = "Time: ", c = cleanTime recipe.time, show = True }
-            , { t = "", c = mealType recipe.meal_type, show = True }
-            , { t = "Rating: ", c = recipe.rating, show = True }
+            [ { el = li [] [ text <| "Serves: " ++ recipe.serves ], show = True }
+            , { el = li [] [ text <| "Time: " ++ cleanTime recipe.time ], show = True }
+            , { el = li [] [ text <| mealType recipe.meal_type ], show = True }
+            , { el = li [] [ text <| "Rating: " ++ recipe.rating ], show = True }
+            , { el = li [] [ a [ class "link", href recipe.original_recipe ] [ text "Inspiration →" ] ], show = not <| String.isEmpty recipe.original_recipe }
             ]
     in
     section
@@ -379,7 +371,7 @@ viewHero recipe =
             [ recipeName
             , ul [ class "vh-metadata" ] <|
                 List.map
-                    (\a -> li [] [ text <| a.t ++ a.c ])
+                    (\a -> a.el)
                     (List.filter (\n -> n.show) links)
             ]
         ]
