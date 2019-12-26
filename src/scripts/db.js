@@ -491,7 +491,7 @@ module.exports = {
         },
         {
           "ingredient": "Quinoa",
-          "quantity": "1+1/2",
+          "quantity": "1.5",
           "unit": "cups",
           "id": "quinoa",
           "group": ""
@@ -597,7 +597,7 @@ module.exports = {
         },
         {
           "ingredient": "Baby potatoes",
-          "quantity": "1+1/2",
+          "quantity": "1.5",
           "unit": "cups",
           "id": "potatoes-baby"
         },
@@ -615,7 +615,7 @@ module.exports = {
         },
         {
           "ingredient": "Water",
-          "quantity": "1+1/2",
+          "quantity": "1.5",
           "unit": "cups",
           "id": "water"
         },
@@ -766,7 +766,7 @@ module.exports = {
         },
         {
           "ingredient": "Green beans (trimmed and halved)",
-          "quantity": "1+1/2",
+          "quantity": "1.5",
           "unit": "cups",
           "id": "green-beans",
           "group": "stir-fry"
@@ -1307,7 +1307,7 @@ module.exports = {
       "name": "Thai-Spice Rice Bowls",
       "original_recipe": "https://cookieandkate.com/thai-spiced-rice-bowls-recipe/",
       "rating": "3/5",
-      "serves": "6",
+      "serves": "3",
       "belongs_to": "main",
       "slug": "thai-rice-bowl",
       "time": "00:40:00",
@@ -1529,7 +1529,7 @@ module.exports = {
         },
         {
           "ingredient": "Pineapple (diced)",
-          "quantity": "1+1/2",
+          "quantity": "1.5",
           "unit": "cups",
           "id": "pineapple",
           "group": "pineapple salsa"
@@ -2151,7 +2151,7 @@ module.exports = {
         },
         {
           "ingredient": "Rolled Oats",
-          "quantity": "1+1/2",
+          "quantity": "1.5",
           "unit": "cups",
           "id": "oats-rolled",
           "group": ""
@@ -2263,7 +2263,7 @@ module.exports = {
       ],
       "meal_type": "vegetarian",
       "name": "Pumpkin Chiffon Pie",
-      "original_recipe": "-",
+      "original_recipe": "",
       "rating": "4/5",
       "serves": "1 pie",
       "slug": "pumpkin-chiffon-pie",
@@ -2741,7 +2741,7 @@ module.exports = {
         },
         {
           "ingredient": "Almond Milk",
-          "quantity": "1+1/2",
+          "quantity": "1.5",
           "unit": "cups",
           "id": "almilk",
           "group": ""
@@ -3050,7 +3050,7 @@ module.exports = {
       ],
       "meal_type": "vegetarian",
       "name": "Kimchi Avocado Egg on Toast",
-      "original_recipe": "?",
+      "original_recipe": "",
       "rating": "3.5/5",
       "serves": "1",
       "slug": "avo-kimchi-egg-toast",
@@ -3628,7 +3628,7 @@ module.exports = {
       ],
       "meal_type": "vegan",
       "name": "Bowl #3 (Sweet Potato Arugla)",
-      "original_recipe": "\"\"",
+      "original_recipe": "",
       "rating": "4/5",
       "serves": "2",
       "slug": "bowl-3",
@@ -3763,7 +3763,7 @@ module.exports = {
       ],
       "meal_type": "vegetarian",
       "name": "Jumpin' Udon Fry",
-      "original_recipe": "\"\"",
+      "original_recipe": "",
       "rating": "4/5",
       "serves": "2",
       "slug": "jumpin-udon",
@@ -3864,7 +3864,7 @@ module.exports = {
       "instructions": [
         "[&: Press tofu | 00:10:00] Drain tofu and press for about 10 minutes. Cube into 1\" pieces once pressed.",
         "Mise on place: spiralize, blend, or fine chop [#: carr | carrots]. Chop ends of [#: bok | bokchoy] and rinse, slice [#: go | green onions] (green ends), slice [#: mush | mushrooms].",
-        "Mix up the sauce: Combine [#: sri | sriracha], [#: soy | soy sauce], [#: minced garlic | gar] and [#: gin | ginger].",
+        "Mix up the sauce: Combine [#: sri | sriracha], [#: soy | soy sauce], [#: gar | minced garlic] and [#: gin | ginger].",
         "[&: Fry carrots | 00:01:00] In a large pan, heat oil on medium high until hot. Add carrots for a minute.",
         "Add whites of the [#: go2 | green onions], [#:tofu | cubed tofu ] and [#: mush | mushrooms] and cook until soft and carrots are tender. Then add the greens from the green onion for about a minute.",
         "Add udon noodles to stir fry for about 30 seconds. Add sauce and cook for another 30 seconds.",

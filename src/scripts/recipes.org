@@ -181,22 +181,22 @@
 :time: 00:50:00
 :END:
 ** Ingredients
-| Ingredient       | Quantity | Unit   | Id               | Group    |
-|------------------+----------+--------+------------------+----------|
-| Sweet Potato     |        1 |        | potato-sweet     |          |
-| Shredded Carrots |        1 |        | avocado          |          |
-| Onion            |        1 |        | onion            |          |
-| Tofu             |        8 | oz     | tofu             |          |
-| Garlic           |        2 | cloves | garlic           |          |
-| Chickpeas        |        1 | cups   | chickpeas        |          |
-| Pepper           |      1/2 | tsp    | pepper           |          |
-| Chili powder     |        1 | tsp    | chili-powder     |          |
-| Garlic powder    |        1 | tsp    | garlic-powder    |          |
-| Quinoa           |    1+1/2 | cups   | quinoa           |          |
-| Sesame Oil       |      1/2 | tsp    | oil-sesame       | Marinade |
-| Hot Sauce        |        1 | tsp    | sauce-hot        | Marinade |
-| Dried thyme      |        2 | tsp    | thyme            | Marinade |
-| Paprika          |        1 | tsp    | paprika          | Marinade |
+| Ingredient       | Quantity | Unit   | Id            | Group    |
+|------------------+----------+--------+---------------+----------|
+| Sweet Potato     |        1 |        | potato-sweet  |          |
+| Shredded Carrots |        1 |        | avocado       |          |
+| Onion            |        1 |        | onion         |          |
+| Tofu             |        8 | oz     | tofu          |          |
+| Garlic           |        2 | cloves | garlic        |          |
+| Chickpeas        |        1 | cups   | chickpeas     |          |
+| Pepper           |      1/2 | tsp    | pepper        |          |
+| Chili powder     |        1 | tsp    | chili-powder  |          |
+| Garlic powder    |        1 | tsp    | garlic-powder |          |
+| Quinoa           |      1.5 | cups   | quinoa        |          |
+| Sesame Oil       |      1/2 | tsp    | oil-sesame    | Marinade |
+| Hot Sauce        |        1 | tsp    | sauce-hot     | Marinade |
+| Dried thyme      |        2 | tsp    | thyme         | Marinade |
+| Paprika          |        1 | tsp    | paprika       | Marinade |
 ** Steps
 1) Make the marinade: combine [#: oil-olive | olive oil], [#: oil-sesame |
    seasame oil], [#: sauce-hot | hot sauce], [#: thyme | thyme], [#: paprika | paprika],
@@ -240,10 +240,10 @@
 | Cumin powder     |        1 | tsp     | cumin-powder     |
 | Coriander powder |        1 | tsp     | coriander-powder |
 | Red Curry Paste  |        5 | tbsp    | red-curry-paste  |
-| Baby potatoes    |    1+1/2 | cups    | potatoes-baby    |
+| Baby potatoes    |      1.5 | cups    | potatoes-baby    |
 | Carrots          |        2 |         | carrots          |
 | Coconut milk     |       28 | oz      | milk-coconut     |
-| Water            |    1+1/2 | cups    | water            |
+| Water            |      1.5 | cups    | water            |
 | Ground cinnamon  |      1/4 | tsp     | ground-cinnamon  |
 | Soy sauce        |        2 | tbsp    | sauce-soy        |
 | Maple syrup      |        2 | tbsp    | maple-syrup      |
@@ -302,7 +302,7 @@
 | Lime juice                       |        2 | tbsp | lime-juice         | sauce       |
 | Chili garlic sauce or sriracha   |      2-4 | tbsp | chili-garlic-sauce | sauce       |
 | Water                            |      2-3 | tbsp | water              | sauce       |
-| Green beans (trimmed and halved) |    1+1/2 | cups | green-beans        | stir-fry    |
+| Green beans (trimmed and halved) |    1.5 | cups | green-beans        | stir-fry    |
 | Cabbage (thinly sliced)          |        1 | cups | cabbage            | stir-fry    |
 | soy-sauce                        |        3 | tbsp | soy-sauce-2        | stir-fry    |
 | Green onions (diced)             |        1 | cups | onions-green       | stir-fry    |
@@ -560,7 +560,7 @@
 :name: Thai-Spice Rice Bowls
 :original_recipe: https://cookieandkate.com/thai-spiced-rice-bowls-recipe/
 :rating: 3/5
-:serves: 6
+:serves: 3
 :belongs_to: main
 :slug: thai-rice-bowl
 :time: 00:40:00
@@ -623,7 +623,7 @@
 | Coconut milk              |        1 | can (400ml) | coconut_milk      | coconut rice    |
 | Brown Sugar               |        2 | tsp         | brown_sugar       | coconut rice    |
 | Coconut oil               |        1 | tsp         | coconut_oil       | coconut rice    |
-| Pineapple (diced)         |    1+1/2 | cups        | pineapple         | pineapple salsa |
+| Pineapple (diced)         |    1.5 | cups        | pineapple         | pineapple salsa |
 | Red onion (diced)         |      1/4 | cups        | red_onion         | pineapple salsa |
 | Jalapenos (seeded, diced) |        1 | pepper      | jalapenos         | pineapple salsa |
 | Garlic (minced)           |        1 | clove       | garlic            | pineapple salsa |
@@ -875,11 +875,11 @@
 ** Ingredients
 | Ingredient                            | Quantity | Unit | Id              | Group |
 |---------------------------------------+----------+------+-----------------+-------|
-| Dates (Deglet noor or medjool)        | 1        | cups | dates           |       |
-| Maple Syrup (or: agava nectar, honey) | 1/4      | cups | maple-syrup     |       |
-| Natural Peanut Butter                 | 1/4      | cups | peanut-butter   |       |
-| Roasted, unsalted almonds             | 1        | cups | almonds         |       |
-| Rolled Oats                           | 1+1/2    | cups | oats-rolled     |       |
+| Dates (Deglet noor or medjool)        |        1 | cups | dates           |       |
+| Maple Syrup (or: agava nectar, honey) |      1/4 | cups | maple-syrup     |       |
+| Natural Peanut Butter                 |      1/4 | cups | peanut-butter   |       |
+| Roasted, unsalted almonds             |        1 | cups | almonds         |       |
+| Rolled Oats                           |      1.5 | cups | oats-rolled     |       |
 | Parchment Paper                       |          |      | parchment-paper |       |
 | 8x8 Baking Pan                        |          |      |                 |       |
 ** Steps
@@ -944,7 +944,7 @@
 :imgs: ["1.JPG", "2.JPG", "3.JPG"]
 :meal_type: vegetarian
 :name: Pumpkin Chiffon Pie
-:original_recipe: -
+:original_recipe:
 :rating: 4/5
 :serves: 1 pie
 :slug: pumpkin-chiffon-pie
@@ -1113,7 +1113,7 @@
 | Ripe / Spotty Bananas | 2        |      | ban    |       |
 | Chia Seeds            | 4        | tbsp | chia   |       |
 | Cinnamon              | 1/2      | tsp  | cin    |       |
-| Almond Milk           | 1+1/2    | cups | almilk |       |
+| Almond Milk           | 1.5    | cups | almilk |       |
 | Oats                  | 1        | cups | oats   |       |
 | Vanilla Extract       | 1/2      | tsp  | van    |       |
 | Fresh fruit           | Optional |      |        |       |
@@ -1231,7 +1231,7 @@
 :imgs: ["1.jpg", "2.jpg"]
 :meal_type: vegetarian
 :name: Kimchi Avocado Egg on Toast
-:original_recipe: ?
+:original_recipe:
 :rating: 3.5/5
 :serves: 1
 :slug: avo-kimchi-egg-toast
@@ -1463,7 +1463,7 @@
 :imgs: ["1.jpg", "2.jpg", "3.jpg"]
 :meal_type: vegan
 :name: Bowl #3 (Sweet Potato Arugla)
-:original_recipe: ""
+:original_recipe:
 :rating: 4/5
 :serves: 2
 :slug: bowl-3
@@ -1510,7 +1510,7 @@
 :imgs: ["1.jpg", "2.jpg", "3.jpg"]
 :meal_type: vegetarian
 :name: Jumpin' Udon Fry
-:original_recipe: ""
+:original_recipe:
 :rating: 4/5
 :serves: 2
 :slug: jumpin-udon
@@ -1535,7 +1535,7 @@
 ** Steps
 1) [&: Press tofu | 00:10:00] Drain tofu and press for about 10 minutes. Cube into 1" pieces once pressed.
 2) Mise on place: spiralize, blend, or fine chop [#: carr | carrots]. Chop ends of [#: bok | bokchoy] and rinse, slice [#: go | green onions] (green ends), slice [#: mush | mushrooms].
-3) Mix up the sauce: Combine [#: sri | sriracha], [#: soy | soy sauce], [#: minced garlic | gar] and [#: gin | ginger].
+3) Mix up the sauce: Combine [#: sri | sriracha], [#: soy | soy sauce], [#: gar | minced garlic] and [#: gin | ginger].
 4) [&: Fry carrots | 00:01:00] In a large pan, heat oil on medium high until hot. Add carrots for a minute.
 5) Add whites of the [#: go2 | green onions], [#:tofu | cubed tofu ] and [#: mush | mushrooms] and cook until soft and carrots are tender. Then add the greens from the green onion for about a minute.
 6) Add udon noodles to stir fry for about 30 seconds. Add sauce and cook for another 30 seconds.
@@ -1593,4 +1593,4 @@
 - Can I have some?
 - No, it has to cool.
 - You have to cool.
-- I'm working on that, too.
+- I'm working on that too.
