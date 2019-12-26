@@ -1,17 +1,19 @@
 .RecipeList {
+  // -- &:HERO
+
   .home-hero {
     align-items: center;
     background: white;
     display: flex;
-    font-size: 80px;
     justify-content: center;
     min-height: $heroSize;
     position: relative;
     width: 100%;
     text-align: center;
-
+    font-size: $font-h1;
     .byline {
       font-size: 20px;
+      font-family: $primary-sans;
     }
   }
 
@@ -34,6 +36,53 @@
 }
 
 .RecipeSingle {
+  // -- &:HERO
+
+  .viewHero {
+    min-height: $heroSize;
+    font-family: $primary-sans, Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: $section-bottom / 2;
+    color: white;
+
+    .vh-container {
+      font-size: $font-h3;
+      width: 100%;
+      max-width: $tablet;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .vh-recipe-name {
+      font-size: $font-h2;
+      padding: 0px 0 32px;
+
+      &.link {
+//       padding: 32px 0;
+      color: white;
+      }
+    }
+
+    .vh-metadata {
+      font-size: 18px;
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      justify-content: space-between;
+    }
+  }
+
+  // -- &:PHOTOS
+
   .photos {
     display: flex;
     margin: 0px 16px $section-bottom;

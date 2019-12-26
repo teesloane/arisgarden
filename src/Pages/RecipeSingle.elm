@@ -286,6 +286,19 @@ decodeRecipe =
 
 
 
+-- Logic, Getters --
+
+
+mealType m =
+    case m of
+        Vegetarian ->
+            "Vegetarian"
+
+        Vegan ->
+            "Vegan"
+
+
+
 -- UPDATE --------------------------------------------------------------------
 
 
@@ -316,17 +329,60 @@ update msg model =
 -- VIEWS --
 
 
-viewHero : String -> Html msg
-viewHero slug =
+viewHero : Recipe -> Html msg
+viewHero recipe =
     let
         url =
-            "url(/imgs/" ++ slug ++ "-hero.JPG)"
+            "url(/imgs/" ++ recipe.slug ++ "-hero.JPG)"
+
+        gradient =
+            "linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%)"
+
+        finalStyle =
+            gradient ++ ", " ++ url
+
+        cleanTime t =
+            if String.startsWith "00:0" t then
+                String.dropLeft 4 t
+
+            else if String.startsWith "00" t then
+                String.dropLeft 3 t
+
+            else if String.startsWith "0" t then
+                String.dropLeft 1 t
+
+            else
+                t
+
+        recipeName =
+            if not <| String.isEmpty recipe.original_recipe then
+                a
+                    [ class "vh-recipe-name link"
+                    , href recipe.original_recipe
+                    , target "_blank"
+                    ]
+                    [ text (recipe.name ++ "˚") ]
+
+            else
+                div [ class "vh-recipe-name" ] [ text recipe.name ]
+
+        links =
+            [ { t = "Serves: ", c = recipe.serves, show = True }
+            , { t = "Time: ", c = cleanTime recipe.time, show = True }
+            , { t = "", c = mealType recipe.meal_type, show = True }
+            , { t = "Rating: ", c = recipe.rating, show = True }
+            ]
     in
     section
-        [ class "viewHero"
-        , style "background-image" url
+        [ class "viewHero", style "background-image" finalStyle ]
+        [ div [ class "vh-container" ]
+            [ recipeName
+            , ul [ class "vh-metadata" ] <|
+                List.map
+                    (\a -> li [] [ text <| a.t ++ a.c ])
+                    (List.filter (\n -> n.show) links)
+            ]
         ]
-        []
 
 
 {-| displays timers in the bottom left of the screen.
@@ -468,7 +524,7 @@ view model =
     case model.recipe of
         Just recipe ->
             section [ class "RecipeSingle" ]
-                [ viewHero recipe.slug
+                [ viewHero recipe
                 , section [ class "container" ]
                     [ viewIngrAndInstr recipe
                     , viewImages recipe

@@ -48,19 +48,6 @@ p  { margin: 16px 0; }
   }
 }
 
-.viewHero {
-  min-height: $heroSize;
-  background-color: #222;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: $section-bottom / 2;
-}
-
 // Elm Ui Classes --------------------------------------------------------------
 
 
@@ -90,6 +77,8 @@ p  { margin: 16px 0; }
     background: #777;
   }
 }
+
+// -- The Nav
 
 .Navbar {
   position: absolute;
@@ -127,8 +116,6 @@ p  { margin: 16px 0; }
     padding:  8px 12px;
     letter-spacing: 1px;
     display: flex;
-
-//     text-transform: uppercase;
     cursor: pointer;
   }
 }
