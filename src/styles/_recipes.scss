@@ -10,10 +10,33 @@
     position: relative;
     width: 100%;
     text-align: center;
-    font-size: $font-h1;
+    @include at-size(mobile) {
+      min-height: 0;
+    }
+
+    .content {
+      max-width: 600px;
+      padding: 0 64px;
+
+      @include at-size(mobile) {
+        align-self: flex-end;
+        padding: 64px;
+      }
+    }
+
+    .mainline {
+      font-size: $font-h1;
+      @include at-size(mobile) {
+        font-size: $font-h3;
+      }
+    }
+
     .byline {
       font-size: 20px;
       font-family: $primary-sans;
+      @include at-size(mobile) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -23,6 +46,11 @@
     margin: 0 auto;
     max-width: $tablet;
     padding: 0px 0 32px 0;
+
+    @include at-size(mobile) {
+      padding: 24px;
+      columns: 1;
+    }
   }
 
   ul {
@@ -47,6 +75,7 @@
     position: relative;
     width: 100%;
     background-size: cover;
+
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: $section-bottom / 2;
@@ -60,15 +89,27 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
+      padding: 0 32px;
     }
 
     .vh-recipe-name {
       font-size: $font-h2;
+      font-family: $primary-serif;
       padding: 0px 0 32px;
 
+      @include at-size(mobile) {
+        font-size: $font-h4;
+      }
+      @include at-size(medium) {
+        font-size: $font-h3;
+      }
+
+      @include at-size(wide) {
+        font-size: $font-h2;
+      }
+
       &.link {
-//       padding: 32px 0;
-      color: white;
+        color: white;
       }
     }
 
@@ -78,6 +119,35 @@
       display: flex;
       margin: 0;
       justify-content: space-between;
+
+      @include at-size(mobile) {
+        flex-direction: column;
+        font-size: $font-h5;
+      }
+    }
+  }
+
+  .delta-hr {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin: 0 0 96px;
+    color: #777;
+
+    .delta {
+      padding: 32px;
+    }
+
+    .border {
+      display: flex;
+      flex: 1;
+      height: 1px;
+      background: #777;
+    }
+
+    @include at-size(mobile) {
+      margin-bottom: 0;
+      //       display: none;
     }
   }
 
@@ -88,6 +158,11 @@
     margin: 0px 16px $section-bottom;
     align-items: center;
     justify-content: space-around;
+
+    @include at-size(mobile) {
+      flex-direction: column;
+      margin: 16px;
+    }
   }
 
   .photo {
@@ -98,12 +173,21 @@
     margin: 0 12px;
     padding: 16px;
     width: 350px;
+
+    @include at-size(mobile) {
+      width: 100%;
+      margin: 0 32px 16px;
+      border-radius: 4px;
+    }
   }
 
   // -- &:COMMENTARY --------------------------------------------------
 
   .commentary {
     margin-bottom: $section-bottom;
+    @include at-size(mobile) {
+      margin-bottom: $section-bottom / 2;
+    }
 
     .blurb {
       display: flex;
@@ -204,6 +288,10 @@
         font-size: 72px;
         line-height: 120%;
         text-align: center;
+
+        @include at-size(mobile) {
+          font-size: $font-h4;
+        }
       }
     }
 
@@ -234,6 +322,10 @@
   .instruction-ingredients {
     display: flex;
     margin-bottom: $section-bottom;
+    @include at-size(mobile) {
+      flex-direction: column;
+      margin-bottom: 64px;
+    }
   }
 
   .instr-ingr-section {
@@ -241,6 +333,10 @@
     flex: 1;
     flex-direction: column;
     padding: 0px 48px;
+
+    @include at-size(mobile) {
+      padding: 4px;
+    }
   }
 
   .separator {
@@ -248,11 +344,18 @@
     background: #efefef;
     height: 180px;
     align-self: center;
+
+    @include at-size(mobile) {
+      display: none;
+    }
   }
 
   .instructions-group {
     flex: 1;
     padding-top: 24px;
+    @include at-size(mobile) {
+      margin-bottom: 48px;
+    }
   }
 
   .instruction-compiled {

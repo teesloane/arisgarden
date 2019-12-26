@@ -27,7 +27,7 @@ init recipes =
 
 viewHero =
     section [ class "home-hero" ]
-        [ div []
+        [ div [ class "content" ]
             [ div [ class "mainline" ] [ text "Ari's Garden" ]
             , div [ class "byline" ] [ text "Simple, to-the-point vegetarian and vegan recipes." ]
             ]

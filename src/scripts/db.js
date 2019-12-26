@@ -255,8 +255,8 @@ module.exports = {
         },
         {
           "ingredient": "Olives",
-          "quantity": "5",
-          "unit": "",
+          "quantity": "1/4",
+          "unit": "cups",
           "id": "olives",
           "group": ""
         },
@@ -815,7 +815,7 @@ module.exports = {
         }
       ],
       "instructions": [
-        "Wash the cauliflower. Chop it in a blender until you have small chunks (that look more like rice than cauliflower.)",
+        "Wash the cauliflower. Chop it in a blender until you have small chunks (that look more like rice than cauliflower).",
         "Create the sauce: add coconut oil, peanut butter, soy sauce lime juice, chili garlic sauce, fresh ginger, maple syrup, and water into a small bowl. Whisk to combine. Set aside.",
         "[&: Step 3 | 00:05:00] Heat a skillet over medium-low. Add cauliflower rice and water. Stir and cover with a lid to steam. Cook for 4-6 minutes or until just tender. Remove and let some steam out.",
         "[&: Step 4. | 00:04:00] Heat another skillet (or pot) on medium heat. When hot, add coconut oil and green beans. Season with 1/3 of the soy sauce used for the stirfry  tbsp). Cover with lid and steam for about 4 minutes.",
@@ -3230,7 +3230,7 @@ module.exports = {
       "meal_type": "vegan",
       "name": "Lime-Rice Noodles with Tofu",
       "original_recipe": "https://www.delish.com/cooking/recipe-ideas/a29215487/cilantro-lime-noodles-with-shrimp-recipe/",
-      "rating": "?/5",
+      "rating": "3/5",
       "serves": "4",
       "slug": "lime-rice-noodles",
       "tags": "creamy, acidy",
@@ -3967,7 +3967,7 @@ module.exports = {
           "Can I have some?",
           "No, it has to cool.",
           "You have to cool.",
-          "I'm working on that, too."
+          "I'm working on that too."
         ]
       }
     }

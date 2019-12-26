@@ -102,7 +102,7 @@
 | Bell Pepper (chopped)     |     1/2/ | cups   | pepper-bell     |       |
 | Diced tomatoes            |       28 | oz     | tomato-diced    |       |
 | Tomato paste              |        3 | tbsp   | tomato-paste    |       |
-| Olives                    |        5 |        | olives          |       |
+| Olives                    |      1/4 | cups   | olives          |       |
 | Maple syrup               |        1 | tbsp   | maple-syrup     |       |
 | Ground cumin              |        1 | tsp    | cumin-ground    |       |
 | Paprika                   |        1 | tsp    | paprika         |       |
@@ -311,7 +311,7 @@
 | A Blender                        |          |      |                    |             |
 ** Steps
 1) Wash the cauliflower. Chop it in a blender until you have small chunks (that
-   look more like rice than cauliflower.)
+   look more like rice than cauliflower).
 2) Create the sauce: add coconut oil, peanut butter, soy sauce lime juice, chili
    garlic sauce, fresh ginger, maple syrup, and water into a small bowl. Whisk
    to combine. Set aside.
@@ -1318,7 +1318,7 @@
 :meal_type: vegan
 :name: Lime-Rice Noodles with Tofu
 :original_recipe: https://www.delish.com/cooking/recipe-ideas/a29215487/cilantro-lime-noodles-with-shrimp-recipe/
-:rating: ?/5
+:rating: 3/5
 :serves: 4
 :slug: lime-rice-noodles
 :tags: creamy, acidy
