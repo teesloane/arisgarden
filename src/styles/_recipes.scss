@@ -93,8 +93,12 @@
       color: white;
     }
 
-
-     .link { color: white; &:hover {color: orange} }
+    .link {
+      color: white;
+      &:hover {
+        color: orange;
+      }
+    }
 
     .vh-recipe-name {
       font-size: $font-h2;
@@ -111,7 +115,6 @@
       @include at-size(wide) {
         font-size: $font-h2;
       }
-
     }
 
     .vh-metadata {
@@ -334,7 +337,9 @@
     flex: 1;
     flex-direction: column;
     padding: 0px 48px;
-    @include at-size(mobile) { padding: 0; }
+    @include at-size(mobile) {
+      padding: 0;
+    }
   }
 
   .separator {
@@ -444,6 +449,16 @@
     display: flex;
     bottom: 24px;
     left: 24px;
+
+    @include at-size(mobile) {
+      display: flex;
+      flex-direction: column;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0;
+      margin: 0;
+    }
   }
 
   .timer {
@@ -453,6 +468,13 @@
     margin: 0 12px;
     padding: 8px 12px;
     align-items: center;
+
+    @include at-size(mobile) {
+      margin: 0;
+      justify-content: space-between;
+      border-top: 1px solid #555;
+    }
+
     .time-string {
       align-self: center;
       display: flex;
@@ -474,5 +496,9 @@
         color: rgba(255, 255, 255, 1);
       }
     }
+  }
+
+  @include at-size(mobile) {
+    margin: 0;
   }
 }
