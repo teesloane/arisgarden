@@ -186,6 +186,8 @@
 | Sweet Potato     |        1 |        | potato-sweet  |          |
 | Shredded Carrots |        1 |        | avocado       |          |
 | Onion            |        1 |        | onion         |          |
+| Olive oil        |        1 | tbsp   | oil-olive     |          |
+| Salt             |      1/2 | tsp    | salt          |          |
 | Tofu             |        8 | oz     | tofu          |          |
 | Garlic           |        2 | cloves | garlic        |          |
 | Chickpeas        |        1 | cups   | chickpeas     |          |

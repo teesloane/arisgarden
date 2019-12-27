@@ -462,13 +462,15 @@ viewInstructions model recipe =
             in
             case val of
                 Just v ->
-                    div []
+                    ( v.quantity ++ " " ++ v.unit
+                    , div []
                         [ h1 [] [ text <| v.quantity ++ " " ++ v.unit ]
                         , h4 [] [ text <| v.ingredient ]
                         ]
+                    )
 
                 Nothing ->
-                    div [] []
+                    ( "", div [] [] )
 
         buildInstructions parsedInstructions =
             let
@@ -479,12 +481,20 @@ viewInstructions model recipe =
                     else
                         div [ class "timer-null" ] []
 
+                getToolTip i =
+                    Tuple.first <| getIngredientQuantity i
+
+                htmlModal i =
+                    Tuple.second <| getIngredientQuantity i
+
                 makeInstruction i =
                     if String.isEmpty i.id then
                         span [] [ text i.val ]
 
                     else
-                        span [ class "bold", onClick (ModalOpen <| getIngredientQuantity i) ] [ text i.val ]
+                        span
+                            [ class "bold", onClick (ModalOpen <| htmlModal i) ]
+                            [ span [ class "tooltipped tooltipped-n", attribute "aria-label" <| getToolTip i ] [ text i.val ] ]
             in
             case parsedInstructions of
                 Ok c ->

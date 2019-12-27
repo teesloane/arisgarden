@@ -448,6 +448,20 @@ module.exports = {
           "group": ""
         },
         {
+          "ingredient": "Olive oil",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "oil-olive",
+          "group": ""
+        },
+        {
+          "ingredient": "Salt",
+          "quantity": "1/2",
+          "unit": "tsp",
+          "id": "salt",
+          "group": ""
+        },
+        {
           "ingredient": "Tofu",
           "quantity": "8",
           "unit": "oz",
