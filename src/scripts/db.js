@@ -1223,86 +1223,6 @@ module.exports = {
         ]
       }
     },
-    "asparagus-spaghetti": {
-      "date_made": "",
-      "ease_of_making": "5/5",
-      "imgs": [
-        "1.JPG",
-        "2.JPG",
-        "3.JPG"
-      ],
-      "meal_type": "vegetarian",
-      "name": "Asparagus Spaghetti + Egg",
-      "original_recipe": "https://www.easycheesyvegetarian.com/asparagus-spaghetti-fried-egg/",
-      "rating": "3.5/5",
-      "belongs_to": "main",
-      "slug": "asparagus-spaghetti",
-      "serves": "2",
-      "time": "00:25:00",
-      "ingredients": [
-        {
-          "ingredient": "Spaghetti",
-          "quantity": "200",
-          "unit": "grams",
-          "id": "spag"
-        },
-        {
-          "ingredient": "Butter",
-          "quantity": "1",
-          "unit": "tbsp",
-          "id": "but"
-        },
-        {
-          "ingredient": "Garlic",
-          "quantity": "2",
-          "unit": "cloves",
-          "id": "garlic"
-        },
-        {
-          "ingredient": "Asparagus (cut to 1-inch pieces)",
-          "quantity": "150",
-          "unit": "grams",
-          "id": "asparagus"
-        },
-        {
-          "ingredient": "Salt/Pepper",
-          "quantity": "1",
-          "unit": "pinch",
-          "id": "sandp"
-        },
-        {
-          "ingredient": "Parmesan",
-          "quantity": "2",
-          "unit": "tbsp",
-          "id": "parm"
-        },
-        {
-          "ingredient": "Eggs",
-          "quantity": "2",
-          "unit": "",
-          "id": "eggs"
-        },
-        {
-          "ingredient": "Pre-made pesto sauce",
-          "quantity": "",
-          "unit": "",
-          "id": ""
-        }
-      ],
-      "instructions": [
-        "[&: Boil spaghetti | 00:10:00] Boil spaghetti until al dente. Around 10 minutes.",
-        "[&: Fry asparagus | 00:04:00] Melt [#: but | butter] in a frying pan and add [#: asparagus | asparagus]. Cook for a few minutes.",
-        "Add the [#: garlic | garlic] and cook a little longer until the asparagus is tender with a bit of a crunch still. Season with salt and pepper.",
-        "When the pasta is ready, drain and add the asparagus mixture and the pesto. Mix everything in and put a lit on to keep the heat in.",
-        "Make two fried eggs. Plate the spaghetti and put the egg on top."
-      ],
-      "commentary": {
-        "kind": "blurb",
-        "val": [
-          "The original recipe instructs you to make your own pesto. I don't have the energy to find million dollar pine nuts right now! Too bad! I'm buying a jar of pesto! Too bad for you recipe! You can't tell me what to do! .... Anyway. This was quick and easy to make, but make sure you use enough asparagus for variety. Maybe consider adding some chopped nuts."
-        ]
-      }
-    },
     "thai-rice-bowl": {
       "date_made": "[2019-10-07]",
       "ease_of_making": "5/5",
@@ -3621,7 +3541,7 @@ module.exports = {
       "commentary": {
         "kind": "blurb",
         "val": [
-          "I wouldn't recommend putting your  FAVOURITE PLANT on top of the tofu to press it, because when it INEVITABLY FALLS OVER AND SPILLS SOIL EVERYWHERE, YOU WILL BE SAD. And your plant will probably be sad too. I'm so sorry my precious beauty star."
+          "I wouldn't recommend putting your  FAVOURITE PLANT on top of the tofu to press it, because when it INEVITABLY FALLS OVER AND SPILLS SOIL EVERYWHERE, you will be sad. And your plant will probably be sad too. I'm so sorry my precious beauty star."
         ]
       }
     },

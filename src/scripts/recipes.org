@@ -510,48 +510,6 @@
 :type: whisper
 :END:
 - You can remove an egg white by moving the egg from hand to hand.
-* Asparagus Spaghetti + Egg
-:PROPERTIES:
-:date_made:
-:ease_of_making: 5/5
-:imgs: ["1.JPG", "2.JPG", "3.JPG"]
-:meal_type: vegetarian
-:name: Asparagus Spaghetti + Egg
-:original_recipe: https://www.easycheesyvegetarian.com/asparagus-spaghetti-fried-egg/
-:rating: 3.5/5
-:belongs_to: main
-:slug: asparagus-spaghetti
-:serves: 2
-:time: 00:25:00
-:END:
-** Ingredients
-| Ingredient                       | Quantity | Unit   | Id        |
-|----------------------------------+----------+--------+-----------|
-| Spaghetti                        |      200 | grams  | spag      |
-| Butter                           |        1 | tbsp   | but       |
-| Garlic                           |        2 | cloves | garlic    |
-| Asparagus (cut to 1-inch pieces) |      150 | grams  | asparagus |
-| Salt/Pepper                      |        1 | pinch  | sandp     |
-| Parmesan                         |        2 | tbsp   | parm      |
-| Eggs                             |        2 |        | eggs      |
-| Pre-made pesto sauce             |          |        |           |
-** Steps
-1) [&: Boil spaghetti | 00:10:00] Boil spaghetti until al dente. Around 10 minutes.
-2) [&: Fry asparagus | 00:04:00] Melt [#: but | butter] in a frying pan and add [#: asparagus |
-   asparagus]. Cook for a few minutes.
-3) Add the [#: garlic | garlic] and cook a little longer until the asparagus is
-   tender with a bit of a crunch still. Season with salt and pepper.
-4) When the pasta is ready, drain and add the asparagus mixture and the pesto.
-   Mix everything in and put a lit on to keep the heat in.
-5) Make two fried eggs. Plate the spaghetti and put the egg on top.
-** Content
-:PROPERTIES:
-:type: blurb
-:END:
-- The original recipe instructs you to make your own pesto. I don't have the energy to find million dollar pine nuts right now! Too bad!
-  I'm buying a jar of pesto! Too bad for you recipe! You can't tell me what to
-  do! .... Anyway. This was quick and easy to make, but make sure you use enough
-  asparagus for variety. Maybe consider adding some chopped nuts.
 * Thai-Spice Rice Bowls
 :PROPERTIES:
 :date_made: [2019-10-07]
@@ -1454,8 +1412,8 @@
 :type: blurb
 :END:
 - I wouldn't recommend putting your  FAVOURITE PLANT on top of the tofu to press
-  it, because when it INEVITABLY FALLS OVER AND SPILLS SOIL EVERYWHERE, YOU WILL BE
-  SAD. And your plant will probably be sad too. I'm so sorry my precious beauty star.
+  it, because when it INEVITABLY FALLS OVER AND SPILLS SOIL EVERYWHERE, you will be
+  sad. And your plant will probably be sad too. I'm so sorry my precious beauty star.
 * Bowl #3                                                                       :original:
 :PROPERTIES:
 :belongs_to: main
