@@ -3,14 +3,15 @@ module Main exposing (..)
 -- FIXME: better names between RecipeSingle RecipeSinglePage and RecipeSingleMsg ?
 
 import Browser
+import Browser.Dom
 import Browser.Navigation as Nav
 import Html exposing (..)
 import Html.Attributes exposing (..)
-import Html.Events exposing (onClick)
 import Json.Decode as Decode exposing (Decoder)
 import Pages.RecipeList as RecipeList
 import Pages.RecipeSingle as RecipeSingle
 import Pages.Router as Router exposing (..)
+import Task
 import Types exposing (Msg(..))
 import Ui
 import Url
@@ -104,7 +105,7 @@ update msg model =
                 newRoute =
                     Router.parseUrl url
             in
-            ( { model | route = newRoute }, Cmd.none )
+            ( { model | route = newRoute }, Task.perform (\_ -> NoOp) <| Browser.Dom.setViewport 0 0 )
                 |> initCurrentPage
 
         ( RecipeSingleMsg subMsg, RecipeSinglePage pageModel ) ->
@@ -119,6 +120,9 @@ update msg model =
 
         -- FIXME: Placeholders
         ( RecipeSingleMsg _, NotFoundPage ) ->
+            ( model, Cmd.none )
+
+        ( NoOp, _ ) ->
             ( model, Cmd.none )
 
         ( _, _ ) ->

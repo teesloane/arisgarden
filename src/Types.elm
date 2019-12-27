@@ -10,3 +10,4 @@ type Msg
     | UrlChanged Url.Url
     | RecipeSingleMsg RecipeSingleMsg
     | RecipeListMsg
+    | NoOp
