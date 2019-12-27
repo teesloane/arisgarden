@@ -1,4 +1,5 @@
 .RecipeList {
+
   // -- &:HERO
 
   .home-hero {
@@ -185,7 +186,7 @@
     }
   }
 
-  // -- &:COMMENTARY --------------------------------------------------
+  // -- &:COMMENTARY
 
   .commentary {
     margin-bottom: $section-bottom;
@@ -501,4 +502,71 @@
   @include at-size(mobile) {
     margin: 0;
   }
+
+
+// -- &:MODAL
+
+$modal-bg: #fefefe;
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+
+  .content {
+    position: relative;
+    display: flex;
+    background-color: $modal-bg;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    min-height: 50%;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .close {
+    color: #dfdfdf;
+    font-size: 64px;
+    font-weight: thin;
+  }
+
+  .sidebar {
+    padding: 2px 16px;
+    color: white;
+    order: 2;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: darken( $modal-bg, 5% );
+    border-left: 1px solid #efefef;
+    cursor: pointer;
+    &:hover, &:focus {
+      .close {
+        color: black;
+      }
+
+    }
+  }
+
+  .body {
+    padding: 2px 16px;
+    flex: 4;
+    order: 1;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
 }

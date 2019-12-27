@@ -6,10 +6,12 @@ import Browser
 import Browser.Navigation as Nav
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Html.Events exposing (onClick)
 import Json.Decode as Decode exposing (Decoder)
 import Pages.RecipeList as RecipeList
-import Pages.RecipeSingle as RecipeSingle exposing (Msg(..))
+import Pages.RecipeSingle as RecipeSingle
 import Pages.Router as Router exposing (..)
+import Types exposing (Msg(..))
 import Ui
 import Url
 
@@ -41,13 +43,6 @@ type alias Model =
     , route : Route
     , page : Page
     }
-
-
-type Msg
-    = LinkClicked Browser.UrlRequest
-    | UrlChanged Url.Url
-    | RecipeSingleMsg RecipeSingle.Msg
-    | RecipeListMsg
 
 
 init flags url key =
@@ -83,7 +78,7 @@ initCurrentPage ( model, existingCmds ) =
 
                 RecipeList ->
                     let
-                        ( pageModel, pageCmds ) =
+                        ( pageModel, _ ) =
                             RecipeList.init model.recipes
                     in
                     ( RecipeListPage pageModel, Cmd.none )
@@ -149,7 +144,12 @@ subscriptions model =
 
 view model =
     { title = "Ari's Garden"
-    , body = [ main_ [] [ viewNav model, viewCurrentPage model ] ]
+    , body =
+        [ main_ []
+            [ viewNav model
+            , viewCurrentPage model
+            ]
+        ]
     }
 
 
@@ -170,10 +170,7 @@ viewNav _ =
     nav [ class "Navbar" ]
         [ div [ class "nav-container" ]
             [ a [ class "name-icon links", href "/" ]
-                [ div [] [ Ui.icon "c_home.svg" "46" "38" ]
-
-                --, div [ class "link" ] []
-                ]
+                [ div [] [ Ui.icon "c_home.svg" "46" "38" ] ]
             , div [ class "links" ]
                 [--[ a [ class "link" ] [ text "About" ]
                  --, a [ class "link" ] [ text "Pantry" ]

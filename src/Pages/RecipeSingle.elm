@@ -1,5 +1,7 @@
 port module Pages.RecipeSingle exposing (..)
 
+--import Types exposing (Msg(..))
+
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onClick)
@@ -15,6 +17,13 @@ type alias Model =
     { step : Int
     , timers : List Timer
     , recipe : Maybe Recipe
+    , modal : Modal
+    }
+
+
+type alias Modal =
+    { open : Bool
+    , content : Html RecipeSingleMsg
     }
 
 
@@ -62,11 +71,13 @@ type alias Timer =
     }
 
 
-type Msg
+type RecipeSingleMsg
     = SetCurrentStep Int
     | TimerAdd Timer
     | TimerDelete Timer
     | TimerDec Posix
+    | ModalClose
+    | ModalOpen (Html RecipeSingleMsg)
 
 
 {-| init takes "recipes" because we currently handle them in a batch from flags.
@@ -79,6 +90,7 @@ init recipes recipeName =
             ( { step = 0
               , timers = [ Timer "" "" 0 ] -- FIXME: remove need for "pseudo-maybe timer"
               , recipe = List.head (List.filter (\r -> r.slug == recipeName) recipes_)
+              , modal = Modal False (div [] [])
               }
             , Cmd.none
             )
@@ -87,6 +99,7 @@ init recipes recipeName =
             ( { step = 0
               , timers = [ Timer "" "" 0 ] -- FIXME: remove need for "pseudo-maybe timer"
               , recipe = Nothing
+              , modal = Modal False (div [] [])
               }
             , Cmd.none
             )
@@ -302,7 +315,7 @@ mealType m =
 -- UPDATE --------------------------------------------------------------------
 
 
-update : Msg -> Model -> ( Model, Cmd msg )
+update : RecipeSingleMsg -> Model -> ( Model, Cmd msg )
 update msg model =
     case msg of
         SetCurrentStep index ->
@@ -323,6 +336,16 @@ update msg model =
                     List.map (\t -> { t | time = timeDec t }) model.timers
             in
             ( { model | timers = u_timers }, playSound model.timers )
+
+        ModalClose ->
+            ( { model | modal = Modal False (div [] []) }, Cmd.none )
+
+        ModalOpen markup ->
+            let
+                newModal =
+                    Modal True markup
+            in
+            ( { model | modal = newModal }, Cmd.none )
 
 
 
@@ -379,7 +402,7 @@ viewHero recipe =
 
 {-| displays timers in the bottom left of the screen.
 -}
-viewTimers : List Timer -> Html Msg
+viewTimers : List Timer -> Html RecipeSingleMsg
 viewTimers timers =
     let
         filteredTimers =
@@ -423,11 +446,29 @@ viewImages recipe =
   - FIXME: don't nest let blocks if possible.
 
 -}
-viewInstructions : Model -> Recipe -> Html Msg
+viewInstructions : Model -> Recipe -> Html RecipeSingleMsg
 viewInstructions model recipe =
     let
         timerExists chunk =
             not <| List.any (\n -> n.step == chunk.timer.step) model.timers
+
+        getIngredientQuantity chunk =
+            let
+                ingr =
+                    List.filter (\n -> n.id == chunk.id) recipe.ingredients
+
+                val =
+                    List.head ingr
+            in
+            case val of
+                Just v ->
+                    div []
+                        [ h1 [] [ text <| v.quantity ++ " " ++ v.unit ]
+                        , h4 [] [ text <| v.ingredient ]
+                        ]
+
+                Nothing ->
+                    div [] []
 
         buildInstructions parsedInstructions =
             let
@@ -443,7 +484,7 @@ viewInstructions model recipe =
                         span [] [ text i.val ]
 
                     else
-                        span [ class "bold " ] [ text i.val ]
+                        span [ class "bold", onClick (ModalOpen <| getIngredientQuantity i) ] [ text i.val ]
             in
             case parsedInstructions of
                 Ok c ->
@@ -502,7 +543,7 @@ viewIngredients recipe =
         ]
 
 
-view : Model -> Html Msg
+view : Model -> Html RecipeSingleMsg
 view model =
     let
         viewIngrAndInstr recipe =
@@ -517,6 +558,7 @@ view model =
         Just recipe ->
             section [ class "RecipeSingle" ]
                 [ viewHero recipe
+                , viewModal model.modal
                 , section [ class "container" ]
                     [ viewIngrAndInstr recipe
                     , viewImages recipe
@@ -575,6 +617,23 @@ viewHr char =
         ]
 
 
+viewModal modal =
+    if modal.open then
+        div [ class "modal" ]
+            [ div [ class "content" ]
+                [ div [ class "sidebar", onClick ModalClose ]
+                    [ span [ class "close" ]
+                        [ text "×" ]
+                    ]
+                , div [ class "body" ]
+                    [ modal.content ]
+                ]
+            ]
+
+    else
+        div [ class "modal-closed" ] []
+
+
 
 -- SUBS & PORTS ----------------------------------------------------------------
 
@@ -584,7 +643,7 @@ timersRunning timers =
     List.any (\t -> t.time > 0) timers
 
 
-subscriptions : Model -> Sub Msg
+subscriptions : Model -> Sub RecipeSingleMsg
 subscriptions model =
     case timersRunning model.timers of
         True ->
