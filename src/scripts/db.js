@@ -2616,9 +2616,9 @@ module.exports = {
         }
       ],
       "instructions": [
-        "[&: Sauté | 00:03:00] Heat a large pot. Add [#: coco | Coconut oil]. Add [#: shal | shallot] [#: gar | garlic] and [#: gin | ginger] [#: ja | jalapeno pepper]. Sauté for 2-3 minutes.",
+        "[&: Sauté | 00:03:00] Heat a large pot. Add [#: coco | Coconut oil]. Add [#: shal | shallot], [#: gar | garlic], [#: gin | ginger], [#: ja | jalapeno pepper]. Sauté for 2-3 minutes.",
         "[&: 2. Curry paste | 00:02:00] Add [#: cur | curry paste]. Cook for 2 minutes.",
-        "Add [#: comilk | coconut milk] [#: tur | turmeric] [#: mapsyr | maple syrup] [#: soysauce | Soy Sauce]  and stir. Bring to simmer over medium heat.",
+        "Add [#: comilk | coconut milk], [#: tur | turmeric], [#: mapsyr | maple syrup], [#: soysauce | Soy Sauce]  and stir. Bring to simmer over medium heat.",
         "Once simmering, add [#: caul | cauliflower] and [#: chick | chickpeas].",
         "[&: 5. Cook | 00:10:00] Cover and cook for 10-15 minutes. Keep at a simmer.",
         "Make quinoa or rice according to package instructions.",
@@ -4134,9 +4134,10 @@ module.exports = {
       "instructions": [
         "Remove the tops of the eggplant and peel them.",
         "Prepare rice according to package instructions.",
-        "[&: Steam eggplant | 00:30:00] Fill a large pot with water one quarter the way up the side and bring to a boil. Place eggplants in a steamer or colander above the water. Make sure they don't touch. Cover tightly and steam for 30 min. Flip eggplants once halfway through.",
+        "[&: Steam eggplant | 00:30:00] Fill a large pot with water one quarter the way up the side and bring to a boil. Place eggplants in a steamer or colander above the water. Make sure eggplant does not have contact with boiling water. Cover tightly and steam for 30 min. Flip eggplants once halfway through.",
         "Make the dressing. Combine [#: mir | mirin], [#: soil | sesame oil], [#: soysauce | soy sauce], [#: ricevin | rice vinegar], [#: syrup | maple syrup] and a few pinches of salt. Add [#: ginger | ginger] and [#: garlic | garlic].",
-        "[&: Drain eggplant strips | 00:20:00] Once eggplant is done steaming, let it cool and drain them. Then, shred the flesh by hand into thin strips, about a 1/4\". Leave to drain for 20 minutes."
+        "[&: Drain eggplant strips | 00:20:00] Once eggplant is done steaming, let it cool and drain them. Then, shred the flesh by hand into thin strips, about a 1/4\". Leave to drain for 20 minutes.",
+        "[&: Marinate strips | 00:10:00] Once eggplant strips are cool, toss with dressing and add green onions and sesame seeds. Leave to marinate for 10 minutes."
       ],
       "commentary": {
         "kind": "haiku",

@@ -1002,7 +1002,7 @@
 - Searching through aisles
 - For dried dill and wondering
 - What dried dill looks like.
-* Chickpea cauliflower Curry
+* Chickpea cauliflower curry
 :PROPERTIES:
 :belongs_to: main
 :date_made: [2019-11-12]
@@ -1035,10 +1035,9 @@
 | Avocado         |        1 |        |          | Toppings |
 | Red onion       |      1/2 | onion  |          | Toppings |
 ** Steps
-1) [&: Sauté | 00:03:00] Heat a large pot. Add [#: coco | Coconut oil]. Add [#: shal | shallot] [#:
-   gar | garlic] and [#: gin | ginger] [#: ja | jalapeno pepper]. Sauté for 2-3 minutes.
+1) [&: Sauté | 00:03:00] Heat a large pot. Add [#: coco | Coconut oil]. Add [#: shal | shallot], [#: gar | garlic], [#: gin | ginger], [#: ja | jalapeno pepper]. Sauté for 2-3 minutes.
 2) [&: 2. Curry paste | 00:02:00] Add [#: cur | curry paste]. Cook for 2 minutes.
-3) Add [#: comilk | coconut milk] [#: tur | turmeric] [#: mapsyr | maple syrup] [#: soysauce | Soy Sauce]  and stir. Bring to simmer over medium heat.
+3) Add [#: comilk | coconut milk], [#: tur | turmeric], [#: mapsyr | maple syrup], [#: soysauce | Soy Sauce]  and stir. Bring to simmer over medium heat.
 4) Once simmering, add [#: caul | cauliflower] and [#: chick | chickpeas].
 5) [&: 5. Cook | 00:10:00] Cover and cook for 10-15 minutes. Keep at a simmer.
 6) Make quinoa or rice according to package instructions.
