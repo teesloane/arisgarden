@@ -495,7 +495,7 @@ viewInstructions model recipe =
                         ]
 
                 Err _ ->
-                    div [] [ text <| Debug.toString parsedInstructions ]
+                    div [] [ text "Missing step" ]
 
         mapInstructions index el =
             let

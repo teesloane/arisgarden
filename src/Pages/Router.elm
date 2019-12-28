@@ -36,10 +36,6 @@ matchRoute =
 
 parseUrl : Url -> Route
 parseUrl url =
-    let
-        x =
-            Debug.log "praser url is " url
-    in
     case parse matchRoute url of
         Just route ->
             route
