@@ -73,3 +73,18 @@ tern test a b =
 
     else
         b
+
+
+cleanTime : String -> String
+cleanTime t =
+    if String.startsWith "00:0" t then
+        String.dropLeft 4 t
+
+    else if String.startsWith "00" t then
+        String.dropLeft 3 t
+
+    else if String.startsWith "0" t then
+        String.dropLeft 1 t
+
+    else
+        t

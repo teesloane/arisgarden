@@ -8,6 +8,7 @@ import Browser.Navigation as Nav
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Json.Decode as Decode exposing (Decoder)
+import Pages.NotFound
 import Pages.RecipeList as RecipeList
 import Pages.RecipeSingle as RecipeSingle
 import Pages.Router as Router exposing (..)
@@ -149,9 +150,9 @@ subscriptions model =
 view model =
     { title = "Ari's Garden"
     , body =
-        [ main_ []
+        [ main_ [ class "main" ]
             [ viewNav model
-            , viewCurrentPage model
+            , div [ style "width" "100%" ] [ viewCurrentPage model ]
             ]
         ]
     }
@@ -166,7 +167,7 @@ viewCurrentPage model =
             RecipeList.view pageModel
 
         NotFoundPage ->
-            div [] [ text "not found 404" ]
+            Pages.NotFound.view
 
 
 viewNav : a -> Html msg

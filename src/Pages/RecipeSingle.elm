@@ -7,6 +7,7 @@ import Html.Attributes exposing (..)
 import Html.Events exposing (onClick)
 import Json.Decode as Decode exposing (Decoder)
 import Json.Decode.Pipeline as JP
+import Pages.NotFound
 import Parser exposing (..)
 import Time exposing (Posix)
 import Ui as Ui
@@ -364,25 +365,12 @@ viewHero recipe =
         finalStyle =
             gradient ++ ", " ++ url
 
-        cleanTime t =
-            if String.startsWith "00:0" t then
-                String.dropLeft 4 t
-
-            else if String.startsWith "00" t then
-                String.dropLeft 3 t
-
-            else if String.startsWith "0" t then
-                String.dropLeft 1 t
-
-            else
-                t
-
         recipeName =
             div [ class "vh-recipe-name" ] [ text recipe.name ]
 
         links =
             [ { el = li [] [ text <| "Serves: " ++ recipe.serves ], show = True }
-            , { el = li [] [ text <| "Time: " ++ cleanTime recipe.time ], show = True }
+            , { el = li [] [ text <| "Time: " ++ Util.cleanTime recipe.time ], show = True }
             , { el = li [] [ text <| mealType recipe.meal_type ], show = True }
             , { el = li [] [ text <| "Rating: " ++ recipe.rating ], show = True }
             , { el = li [] [ a [ class "link", href recipe.original_recipe ] [ text "Inspiration →" ] ], show = not <| String.isEmpty recipe.original_recipe }
@@ -410,7 +398,10 @@ viewTimers timers =
 
         timerMarkup t =
             div [ class "timer" ]
-                [ div [ class "time-string" ] [ text (t.step ++ ": " ++ Util.intToSec t.time) ]
+                [ div [ style "display" "flex" ]
+                    [ span [ class "time-string pr2" ] [ text (t.step ++ ": ") ]
+                    , span [ class "time-string" ] [ text <| Util.cleanTime <| Util.intToSec t.time ]
+                    ]
                 , div [ class "close-btn", onClick (TimerDelete t) ] [ text "×" ]
                 ]
 
@@ -578,7 +569,8 @@ view model =
 
         Nothing ->
             -- FIXME: Add a 404 redirect.
-            div [] [ text "RECIPE NOT FOUND! 404." ]
+            --div [] [ text "RECIPE NOT FOUND! 404." ]
+            Pages.NotFound.view
 
 
 {-| Handles rendering the "Commentary" of a recipe

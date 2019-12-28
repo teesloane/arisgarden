@@ -71,6 +71,12 @@ p {
 }
 
 
+.main {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
 // -- The Nav
 
 .Navbar {
@@ -118,6 +124,9 @@ p {
 .bold {
   font-weight: bold;
 }
+
+.pr1 { padding-right: 4px; }
+.pr2 { padding-right: 8px; }
 
 
 // Elm Ui Classes --------------------------------------------------------------

@@ -2821,8 +2821,8 @@ module.exports = {
       "instructions": [
         "Bring a large pot of water to poil. Cook the [#: orzo | orzo] according to package instructions. When draining, reserve 1/2 cup of pasta water. Run the orzo under cold water after draining.",
         "Toast the [#: al | almonds] for about 5 minutes until fragrant. Transfer to a cutting board and chop them.",
-        "In a large bowl combine the [#: orzo | orzo], [#: al | almonds], [#: par | parsley] [#: ol | olives] [#: go | green onions] [#: rai | raisins] and [#: feta | feta] if you are using it.",
-        "In a bowl prepare the dressing: combine [#: zest | orange zest] [#: orange | orange juice] [#: oil | olive oil] [#: vin | vinegar] [#: gar | garlic] and [#: sel | salt]. Add 1/4 cup of the pasta cooking water and whisk until blended.",
+        "In a large bowl combine the [#: orzo | orzo], [#: al | almonds], [#: par | parsley], [#: oli | olives], [#: go | green onions], [#: rai | raisins] and [#: feta | feta] if you are using it.",
+        "In a bowl prepare the dressing: combine [#: zest | orange zest], [#: orange | orange juice], [#: oil | olive oil], [#: vin | vinegar], [#: gar | garlic], and [#: sel | salt]. Add 1/4 cup of the pasta cooking water and whisk until blended.",
         "[&: Let stand | 00:10:00] Pour the dressing on the salad and toss to combine. Leave for 10 minutes. Season with salt if necessary."
       ],
       "commentary": {
@@ -3531,7 +3531,7 @@ module.exports = {
         "Preheat oven to 400F. Line a baking sheet with parchment paper for the tofu.",
         "Prepare the tofu: remove from package and drain. Wrap in a tea towl and lay something heavy on top to press the water out.",
         "Cut the tofu into 1\" cubes.",
-        "Bring a large pot of water to boi8l and cook the rice according to package instruction. Remember, brown rice takes longer than most other rices.",
+        "Bring a large pot of water to boil and cook the rice according to package instruction. Remember, brown rice takes longer than most other rices.",
         "Put cut tofu into a bowl and marinade it: olive oil, soy sauce, and sprinkle with starch until tofu is evenly coated.",
         "[&: Bake tofu | 00:30:00] Put tofu in the oven for 25 to 30 minutes until golden on the edges.",
         "Prepare the peanut sauce: mix Peanut butter, 3 tbsp of squeezed lime juice, soy sauce, maple syrup, sesame oil, garlic and red pepper flakes. Stir. Thin with water if needed.",
