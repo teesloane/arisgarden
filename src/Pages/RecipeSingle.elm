@@ -484,7 +484,7 @@ viewInstructions model recipe =
 
                     else
                         span
-                            [ class "bold", onClick (ModalOpen <| htmlModal i) ]
+                            [ class "parsed-ingredient", onClick (ModalOpen <| htmlModal i) ]
                             [ span [ class "tooltipped tooltipped-n", attribute "aria-label" <| getToolTip i ] [ text i.val ] ]
             in
             case parsedInstructions of

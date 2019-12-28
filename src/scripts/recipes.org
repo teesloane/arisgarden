@@ -392,19 +392,19 @@
 :time: 01:10:00
 :END:
 ** Ingredients
-| Ingredient                                 | Quantity | Unit   | Id           |
-|--------------------------------------------+----------+--------+--------------|
-| Sweet Potato (large / 600g)                |        1 |        | potato-sweet |
-| Nutritional Yeast or Parmesan (optional)   |      2-3 | tbsp   | parm         |
-| Flour                                      |      1/3 | cups   | flour        |
-| Salt                                       |      1/2 | tsp    | salt         |
-| Cherry tomatoes                            |      250 | grams  | tomatoes     |
-| Vegan butter or coconut oil                |        2 | tbsp   | coco-oil     |
-| Garlic                                     |        3 | cloves | garlic       |
-| Optional Nuts (pine or pecan, or whatever) |        4 | tbsp   | nuts         |
+| Ingredient                      | Quantity | Unit   | Id           |
+|---------------------------------+----------+--------+--------------|
+| Sweet Potato                    |        1 | large  | potato-sweet |
+| Nutritional Yeast (optional)    |      2-3 | tbsp   | parm         |
+| Flour                           |      1/3 | cups   | flour        |
+| Salt                            |      1/2 | tsp    | salt         |
+| Cherry tomatoes                 |      250 | grams  | tomatoes     |
+| Coconut oil                     |        2 | tbsp   | coco-oil     |
+| Garlic                          |        3 | cloves | garlic       |
+| Optional Nuts (pine/pecan etc.) |        4 | tbsp   | nuts         |
 ** Steps
 1) [&: Bake sweet potato | 00:50:00] Prick the [#: potato-sweet | sweet potato] several times with a fork. Put it in the oven for 50-60 minutes at about 425 degrees.
-2) Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add [#: salt | salt]. Add nutritional yeast or parmesan if you want. Add the [#: flour | flour] and knead gently. Don't over knead. Try to use as little flour as possible.
+2) Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add [#: salt | salt]. Add nutritional yeast if you want. Add the [#: flour | flour] and knead gently. Don't over knead. Try to use as little flour as possible.
 3) Transfer the dough to a floured work surface. Form it in a flat ball and cut into quarters. Take a piece and form a long rope, rolling it into a long rope. Cut the rope into 2cm pieces.
 4) Create gnocchi "ridges" into the sweet potato pieces by rolling it along the tines of a fork (from the tip backward).
 5) Bring a pot of salted water to a boil. Add the gnocchi, cook until they float to the top of the water. Drain. Optional: toss with a little olive oil to prevent sticking.
@@ -1389,9 +1389,9 @@
 ** Steps
 1) Preheat the oven to 375F.
 2) [&: 2. Prepare lentils | 00:20:00] Rinse lentils and place in a pot covered by water. Bring to a boil, then reduce and simmer for 20-25 minutes. Strain and sprinkle with salt.
-3) Prepare carrots. Put 'em in a bowl and add [#: oil | olive oil ] and spices: [#: salt | sea salt] [#: pepper | pepper] [#: flakes | red pepper flakes] and [#: cumin | cumin].
+3) Prepare carrots. Put 'em in a bowl and add [#: oil | olive oil ] and spices: [#: salt | sea salt], [#: pepper | pepper], [#: flakes | red pepper flakes] and [#: cumin | cumin].
 4) [&: 4. Bake carrots | 00:15:00] Put carrots on a baking sheet and into the oven for about 15 minutes (or until they are tender).
-5) Create the vinaigrette: mix [#: oil2 | olive oil], [#: vin | balsamic vinegar] [#: tahin | tahini] [#: syru | syrup] [#: garlic | garlic] and [#: sea | salt].
+5) Create the vinaigrette: mix [#: oil2 | olive oil], [#: vin | balsamic vinegar], [#: tahin | tahini], [#: syru | syrup], [#: garlic | garlic] and [#: sea | salt].
 6) Serve: Place spinach into bowls and top with lentils and carrots. Drizzel dressing. Top with [#: pom | pomegrenate] or whatever else suits.
 ** Content
 :PROPERTIES:
