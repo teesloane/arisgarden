@@ -1599,6 +1599,49 @@
 :type: blurb
 :END:
 - This recipe only presses the tofu and doesn't marinade it. If I was to do it again, I would marinade it, but with something other than soy sauce, as the soy sauce in the recipe can get things a bit salty already.
+* Steamed Eggplant
+:PROPERTIES:
+:belongs_to: main
+:date_made: [2019-12-28]
+:ease_of_making: ?/5
+:imgs: ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type: vegan
+:name: Steamed Eggplant
+:original_recipe: https://www.amazon.ca/Plenty-More-Vibrant-Vegetable-Ottolenghi/dp/1607746212
+:rating: 4/5
+:serves: 2
+:slug: steamed-eggplant
+:time: 00:25:00
+:END:
+** Ingredients
+| Ingredient   | Quantity | Unit              | Id       | Group    |
+|--------------+----------+-------------------+----------+----------|
+| Rice         |        1 | cups              | rice     | Base     |
+| Eggplant     |        2 | Topped and Peeled | ep       | Base     |
+| Green onions |        5 | Sliced            | go       | Base     |
+| Sesame seeds |        1 | tbsp              | ss       | Base     |
+| Mirin        |      2.5 | tbsp              | mir      | Dressing |
+| Sesame oil   |      1/2 | tsp               | soil     | Dressing |
+| Soy sauce    |      1.5 | tbsp              | soysauce | Dressing |
+| Rice vinegar |      2.5 | tsp               | ricevin  | Dressing |
+| Maple syrup  |      1.5 | tsp               | syrup    | Dressing |
+| Ginger       |        2 | tsp (chopped)     | ginger   | Dressing |
+| Garlic       |        1 | clove (crushed)   | garlic   | Dressing |
+** Steps
+1) Remove the tops of the eggplant and peel them.
+2) Prepare rice according to package instructions.
+3) [&: Steam eggplant | 00:30:00] Fill a large pot with water one quarter the way up the side and bring to a
+   boil. Place eggplants in a steamer or colander above the water. Make sure
+   they don't touch. Cover tightly and steam for 30 min. Flip eggplants once
+   halfway through.
+4) Make the dressing. Combine [#: mir | mirin], [#: soil | sesame oil], [#:
+   soysauce | soy sauce], [#: ricevin | rice vinegar], [#: syrup | maple syrup] and a few pinches of salt.
+5) [&: Drain eggplant strips | 00:20:00] Once eggplant is done steaming, let it cool and drain them. Then, shred the flesh by hand into thin strips, about a 1/4". Leave to drain for 20 minutes.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- I have a cold coming on, but I WILL make this recipe.
 * Banana Bread
 :PROPERTIES:
 :belongs_to: sweet

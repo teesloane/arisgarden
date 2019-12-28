@@ -19,6 +19,7 @@
   .content {
     max-width: 600px;
     padding: 0 64px;
+    margin: 0 auto;
 
     @include at-size(mobile) {
       align-self: flex-end;
@@ -36,6 +37,8 @@
   }
 
   img {
+    display: flex;
+    align-self: center;
     max-width: 320px;
     margin: 0 auto;
   }

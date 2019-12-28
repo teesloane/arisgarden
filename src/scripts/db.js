@@ -2104,7 +2104,7 @@ module.exports = {
       "instructions": [
         "Chop [#: almonds | almonds] roughly. Put them in a bowl.",
         "Put [#: oats-rolled | oats] in the bowl.",
-        "Blend [#: dates | dates] until dough-y. Put them in the bowl",
+        "Blend [#: dates | dates] until dough-y. Put them in the bowl.",
         "Put [#: maple-syrup | maple syrup] and [#: peanut-butter | peanut-butter] into a saucepan and heat on low. Stir to combine.",
         "Pour mix into the bowl and stir to combine.",
         "Transfer to a baking dish (8 x 8) lined with parchment paper."
@@ -4033,6 +4033,115 @@ module.exports = {
         "kind": "blurb",
         "val": [
           "This recipe only presses the tofu and doesn't marinade it. If I was to do it again, I would marinade it, but with something other than soy sauce, as the soy sauce in the recipe can get things a bit salty already."
+        ]
+      }
+    },
+    "steamed-eggplant": {
+      "belongs_to": "main",
+      "date_made": "[2019-12-28]",
+      "ease_of_making": "?/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegan",
+      "name": "Steamed Eggplant",
+      "original_recipe": "https://www.amazon.ca/Plenty-More-Vibrant-Vegetable-Ottolenghi/dp/1607746212",
+      "rating": "4/5",
+      "serves": "2",
+      "slug": "steamed-eggplant",
+      "time": "00:25:00",
+      "ingredients": [
+        {
+          "ingredient": "Rice",
+          "quantity": "1",
+          "unit": "cups",
+          "id": "rice",
+          "group": "Base"
+        },
+        {
+          "ingredient": "Eggplant",
+          "quantity": "2",
+          "unit": "Topped and Peeled",
+          "id": "ep",
+          "group": "Base"
+        },
+        {
+          "ingredient": "Green onions",
+          "quantity": "5",
+          "unit": "Sliced",
+          "id": "go",
+          "group": "Base"
+        },
+        {
+          "ingredient": "Sesame seeds",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "ss",
+          "group": "Base"
+        },
+        {
+          "ingredient": "Mirin",
+          "quantity": "2.5",
+          "unit": "tbsp",
+          "id": "mir",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Sesame oil",
+          "quantity": "1/2",
+          "unit": "tsp",
+          "id": "soil",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Soy sauce",
+          "quantity": "1.5",
+          "unit": "tbsp",
+          "id": "soysauce",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Rice vinegar",
+          "quantity": "2.5",
+          "unit": "tsp",
+          "id": "ricevin",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Maple syrup",
+          "quantity": "1.5",
+          "unit": "tsp",
+          "id": "syrup",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Ginger",
+          "quantity": "2",
+          "unit": "tsp (chopped)",
+          "id": "ginger",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Garlic",
+          "quantity": "1",
+          "unit": "clove (crushed)",
+          "id": "garlic",
+          "group": "Dressing"
+        }
+      ],
+      "instructions": [
+        "Remove the tops of the eggplant and peel them.",
+        "Prepare rice according to package instructions.",
+        "[&: Steam eggplant | 00:30:00] Fill a large pot with water one quarter the way up the side and bring to a boil. Place eggplants in a steamer or colander above the water. Make sure they don't touch. Cover tightly and steam for 30 min. Flip eggplants once halfway through.",
+        "Make the dressing. Combine [#: mir | mirin], [#: soil | sesame oil], [#: soysauce | soy sauce], [#: ricevin | rice vinegar], [#: syrup | maple syrup] and a few pinches of salt.",
+        "[&: Drain eggplant strips | 00:20:00] Once eggplant is done steaming, let it cool and drain them. Then, shred the flesh by hand into thin strips, about a 1/4\". Leave to drain for 20 minutes."
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "I have a cold coming on, but I WILL make this recipe."
         ]
       }
     },
