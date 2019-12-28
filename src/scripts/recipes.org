@@ -840,7 +840,7 @@
 ** Steps
 1) Chop [#: almonds | almonds] roughly. Put them in a bowl.
 2) Put [#: oats-rolled | oats] in the bowl.
-3) Blend [#: dates | dates] until dough-y. Put them in the bowl
+3) Blend [#: dates | dates] until dough-y. Put them in the bowl.
 4) Put [#: maple-syrup | maple syrup] and [#: peanut-butter | peanut-butter] into a saucepan and heat on low. Stir to combine.
 5) Pour mix into the bowl and stir to combine.
 6) Transfer to a baking dish (8 x 8) lined with parchment paper.
