@@ -1630,13 +1630,11 @@
 ** Steps
 1) Remove the tops of the eggplant and peel them.
 2) Prepare rice according to package instructions.
-3) [&: Steam eggplant | 00:30:00] Fill a large pot with water one quarter the way up the side and bring to a
-   boil. Place eggplants in a steamer or colander above the water. Make sure
-   they don't touch. Cover tightly and steam for 30 min. Flip eggplants once
-   halfway through.
+3) [&: Steam eggplant | 00:30:00] Fill a large pot with water one quarter the way up the side and bring to a boil. Place eggplants in a steamer or colander above the water. Make sure eggplant does not have contact with boiling water. Cover tightly and steam for 30 min. Flip eggplants once halfway through.
 4) Make the dressing. Combine [#: mir | mirin], [#: soil | sesame oil], [#:
    soysauce | soy sauce], [#: ricevin | rice vinegar], [#: syrup | maple syrup] and a few pinches of salt. Add [#: ginger | ginger] and [#: garlic | garlic].
 5) [&: Drain eggplant strips | 00:20:00] Once eggplant is done steaming, let it cool and drain them. Then, shred the flesh by hand into thin strips, about a 1/4". Leave to drain for 20 minutes.
+6) [&: Marinate strips | 00:10:00] Once eggplant strips are cool, toss with dressing and add green onions and sesame seeds. Leave to marinate for 10 minutes.
 ** Content
 :PROPERTIES:
 :type: haiku
