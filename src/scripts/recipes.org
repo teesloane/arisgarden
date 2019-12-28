@@ -16,16 +16,16 @@
 :time: 00:40:00
 :END:
 ** Ingredients
-| Ingredient                  | Quantity | Unit | Id     |
-|-----------------------------+----------+------+--------|
-| Quinoa                      |        1 | cups | quin   |
-| Water                       |        2 | cups | water  |
-| Maple Syrup                 |        2 | tbsp | syr    |
-| Pecans or Walnuts (chopped) |      1/4 | cups | nuts   |
-| Cinnamon                    |   1 or 2 | tsp  | cin    |
-| Coconut oil                 |        2 | tbsp | oil    |
-| Fresh berries               |          |      | berr   |
-| Almond butter               |          |      | almbut |
+| Ingredient        | Quantity | Unit           | Id     |
+|-------------------+----------+----------------+--------|
+| Quinoa            |        1 | cups           | quin   |
+| Water             |        2 | cups           | water  |
+| Maple Syrup       |        2 | tbsp           | syr    |
+| Pecans or Walnuts |      1/4 | cups (chopped) | nuts   |
+| Cinnamon          |   1 or 2 | tsp            | cin    |
+| Coconut oil       |        2 | tbsp           | oil    |
+| Fresh berries     |          |                | berr   |
+| Almond butter     |          |                | almbut |
 ** Steps
 1) [&:1. Make quinoa | 00:15:00] Make the [#: quin | quinoa]: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes
 2) [&:2. Heat nuts | 00:04:00] Heat chopped [#: nuts | nuts] in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes.
@@ -1187,7 +1187,7 @@
 :meal_type: vegetarian
 :name: Kimchi Avocado Egg on Toast
 :original_recipe:
-:rating: 3.5/5
+:rating: 4/5
 :serves: 1
 :slug: avo-kimchi-egg-toast
 :time: 00:15:00
@@ -1570,7 +1570,7 @@
 | Green onion (greens) |        1 | cups    | go    | Stirfry |
 | Carrots              |        1 |         | carr  | Stirfry |
 | Baby Bokchoy         |        3 | cups    | bok   | Stirfry |
-| Udon Noodles         |      500 | grams   | udon  | Stirfry |
+| Udon Noodles         |        1 | lbs     | udon  | Stirfry |
 | Green Onion (whites) |      1/3 | cups    | go2   | Stirfry |
 | Tofu (firm)          |        1 | package | tofu  | Stirfry |
 | Mushrooms            |        1 | cups    | mush  | Stirfry |

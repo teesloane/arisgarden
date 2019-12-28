@@ -32,9 +32,9 @@ module.exports = {
           "id": "syr"
         },
         {
-          "ingredient": "Pecans or Walnuts (chopped)",
+          "ingredient": "Pecans or Walnuts",
           "quantity": "1/4",
-          "unit": "cups",
+          "unit": "cups (chopped)",
           "id": "nuts"
         },
         {
@@ -977,13 +977,13 @@ module.exports = {
       "time": "01:10:00",
       "ingredients": [
         {
-          "ingredient": "Sweet Potato (large / 600g)",
+          "ingredient": "Sweet Potato",
           "quantity": "1",
-          "unit": "",
+          "unit": "large",
           "id": "potato-sweet"
         },
         {
-          "ingredient": "Nutritional Yeast or Parmesan (optional)",
+          "ingredient": "Nutritional Yeast (optional)",
           "quantity": "2-3",
           "unit": "tbsp",
           "id": "parm"
@@ -1007,7 +1007,7 @@ module.exports = {
           "id": "tomatoes"
         },
         {
-          "ingredient": "Vegan butter or coconut oil",
+          "ingredient": "Coconut oil",
           "quantity": "2",
           "unit": "tbsp",
           "id": "coco-oil"
@@ -1019,7 +1019,7 @@ module.exports = {
           "id": "garlic"
         },
         {
-          "ingredient": "Optional Nuts (pine or pecan, or whatever)",
+          "ingredient": "Optional Nuts (pine/pecan etc.)",
           "quantity": "4",
           "unit": "tbsp",
           "id": "nuts"
@@ -1027,7 +1027,7 @@ module.exports = {
       ],
       "instructions": [
         "[&: Bake sweet potato | 00:50:00] Prick the [#: potato-sweet | sweet potato] several times with a fork. Put it in the oven for 50-60 minutes at about 425 degrees.",
-        "Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add [#: salt | salt]. Add nutritional yeast or parmesan if you want. Add the [#: flour | flour] and knead gently. Don't over knead. Try to use as little flour as possible.",
+        "Peel the sweet potato. Scoop the inside into a bowl. Mash it smooth. Add [#: salt | salt]. Add nutritional yeast if you want. Add the [#: flour | flour] and knead gently. Don't over knead. Try to use as little flour as possible.",
         "Transfer the dough to a floured work surface. Form it in a flat ball and cut into quarters. Take a piece and form a long rope, rolling it into a long rope. Cut the rope into 2cm pieces.",
         "Create gnocchi \"ridges\" into the sweet potato pieces by rolling it along the tines of a fork (from the tip backward).",
         "Bring a pot of salted water to a boil. Add the gnocchi, cook until they float to the top of the water. Drain. Optional: toss with a little olive oil to prevent sticking.",
@@ -2981,7 +2981,7 @@ module.exports = {
       "meal_type": "vegetarian",
       "name": "Kimchi Avocado Egg on Toast",
       "original_recipe": "",
-      "rating": "3.5/5",
+      "rating": "4/5",
       "serves": "1",
       "slug": "avo-kimchi-egg-toast",
       "time": "00:15:00",
@@ -3474,9 +3474,9 @@ module.exports = {
       "instructions": [
         "Preheat the oven to 375F.",
         "[&: 2. Prepare lentils | 00:20:00] Rinse lentils and place in a pot covered by water. Bring to a boil, then reduce and simmer for 20-25 minutes. Strain and sprinkle with salt.",
-        "Prepare carrots. Put 'em in a bowl and add [#: oil | olive oil ] and spices: [#: salt | sea salt] [#: pepper | pepper] [#: flakes | red pepper flakes] and [#: cumin | cumin].",
+        "Prepare carrots. Put 'em in a bowl and add [#: oil | olive oil ] and spices: [#: salt | sea salt], [#: pepper | pepper], [#: flakes | red pepper flakes] and [#: cumin | cumin].",
         "[&: 4. Bake carrots | 00:15:00] Put carrots on a baking sheet and into the oven for about 15 minutes (or until they are tender).",
-        "Create the vinaigrette: mix [#: oil2 | olive oil], [#: vin | balsamic vinegar] [#: tahin | tahini] [#: syru | syrup] [#: garlic | garlic] and [#: sea | salt].",
+        "Create the vinaigrette: mix [#: oil2 | olive oil], [#: vin | balsamic vinegar], [#: tahin | tahini], [#: syru | syrup], [#: garlic | garlic] and [#: sea | salt].",
         "Serve: Place spinach into bowls and top with lentils and carrots. Drizzel dressing. Top with [#: pom | pomegrenate] or whatever else suits."
       ],
       "commentary": {
@@ -3957,8 +3957,8 @@ module.exports = {
         },
         {
           "ingredient": "Udon Noodles",
-          "quantity": "500",
-          "unit": "grams",
+          "quantity": "1",
+          "unit": "lbs",
           "id": "udon",
           "group": "Stirfry"
         },

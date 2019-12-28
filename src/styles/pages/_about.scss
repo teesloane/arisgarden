@@ -1,0 +1,64 @@
+.About {
+  .about-hero {
+    min-height: $heroSize;
+
+    font-family: $primary-sans, Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: $primary-serif;
+    @include at-size(mobile) {
+      min-height: 120px;
+      .content {
+        padding: 0;
+      }
+    }
+  }
+  .content {
+    max-width: 600px;
+    padding: 0 64px;
+
+    @include at-size(mobile) {
+      align-self: flex-end;
+      padding: 64px;
+    }
+  }
+
+  .mainline {
+    font-size: $font-h1;
+    color: black;
+    text-align: center;
+    @include at-size(mobile) {
+      font-size: $font-h3;
+    }
+  }
+
+  .text-img {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 32px;
+    line-height: 1.8;
+    max-width: 800;
+    margin: 0 auto;
+    margin: 32px auto;
+    width: 100%;
+
+    @include at-size(mobile) {
+      flex-direction: column;
+    }
+
+    .about-str {
+      flex: 1;
+    }
+
+    img {
+      flex: 1;
+      max-width: 500px;
+      @include at-size(mobile) {
+        max-width: 80%;
+      }
+    }
+  }
+}

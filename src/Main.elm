@@ -8,6 +8,7 @@ import Browser.Navigation as Nav
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Json.Decode as Decode exposing (Decoder)
+import Pages.About as About
 import Pages.NotFound
 import Pages.RecipeList as RecipeList
 import Pages.RecipeSingle as RecipeSingle
@@ -78,12 +79,15 @@ initCurrentPage ( model, existingCmds ) =
                     in
                     ( RecipeSinglePage pageModel, Cmd.map RecipeSingleMsg pageCmds )
 
-                RecipeList ->
+                Router.RecipeList ->
                     let
                         ( pageModel, _ ) =
                             RecipeList.init model.recipes
                     in
                     ( RecipeListPage pageModel, Cmd.none )
+
+                Router.About ->
+                    ( AboutPage, Cmd.none )
     in
     ( { model | page = currentPage }
     , Cmd.batch [ existingCmds, mappedPageCmds ]
@@ -165,6 +169,9 @@ viewCurrentPage model =
 
         RecipeListPage pageModel ->
             RecipeList.view pageModel
+
+        AboutPage ->
+            About.view
 
         NotFoundPage ->
             Pages.NotFound.view

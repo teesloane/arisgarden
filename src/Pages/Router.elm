@@ -1,5 +1,6 @@
 module Pages.Router exposing (..)
 
+import Pages.About as About
 import Pages.RecipeList as RecipeList
 import Pages.RecipeSingle as RecipeSingle
 import Url exposing (Url)
@@ -14,12 +15,14 @@ type Route
     = RecipeList
     | NotFound
     | RecipeSingle String
+    | About
 
 
 type Page
     = NotFoundPage
     | RecipeListPage RecipeList.Model
     | RecipeSinglePage RecipeSingle.Model
+    | AboutPage
 
 
 
@@ -31,6 +34,7 @@ matchRoute =
     oneOf
         [ Parser.map RecipeList Parser.top
         , Parser.map RecipeSingle (s "recipe" </> string)
+        , Parser.map About (s "about")
         ]
 
 
