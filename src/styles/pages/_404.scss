@@ -1,7 +1,15 @@
 .four-oh-four {
   display: flex;
   flex-direction: column;
+
   text-align: center;
-  align-content: center;
   justify-content: center;
+  height: 100vh;
+
+  a {
+    color: #222;
+    &:hover {
+      color: orange;
+    }
+  }
 }

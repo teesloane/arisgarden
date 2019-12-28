@@ -8,4 +8,5 @@ view =
     section [ class "four-oh-four" ]
         [ h1 [] [ text "404" ]
         , h3 [] [ text "Page not found." ]
+        , a [ href "/" ] [ text "Home →" ]
         ]
