@@ -1635,13 +1635,15 @@
    they don't touch. Cover tightly and steam for 30 min. Flip eggplants once
    halfway through.
 4) Make the dressing. Combine [#: mir | mirin], [#: soil | sesame oil], [#:
-   soysauce | soy sauce], [#: ricevin | rice vinegar], [#: syrup | maple syrup] and a few pinches of salt.
+   soysauce | soy sauce], [#: ricevin | rice vinegar], [#: syrup | maple syrup] and a few pinches of salt. Add [#: ginger | ginger] and [#: garlic | garlic].
 5) [&: Drain eggplant strips | 00:20:00] Once eggplant is done steaming, let it cool and drain them. Then, shred the flesh by hand into thin strips, about a 1/4". Leave to drain for 20 minutes.
 ** Content
 :PROPERTIES:
-:type: whisper
+:type: haiku
 :END:
-- I have a cold coming on, but I WILL make this recipe.
+- Eggplant, will you be kind to me?
+- I have a cold and am tired
+- And you look tasty.
 * Banana Bread
 :PROPERTIES:
 :belongs_to: sweet

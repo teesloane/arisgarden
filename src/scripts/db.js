@@ -4135,13 +4135,15 @@ module.exports = {
         "Remove the tops of the eggplant and peel them.",
         "Prepare rice according to package instructions.",
         "[&: Steam eggplant | 00:30:00] Fill a large pot with water one quarter the way up the side and bring to a boil. Place eggplants in a steamer or colander above the water. Make sure they don't touch. Cover tightly and steam for 30 min. Flip eggplants once halfway through.",
-        "Make the dressing. Combine [#: mir | mirin], [#: soil | sesame oil], [#: soysauce | soy sauce], [#: ricevin | rice vinegar], [#: syrup | maple syrup] and a few pinches of salt.",
+        "Make the dressing. Combine [#: mir | mirin], [#: soil | sesame oil], [#: soysauce | soy sauce], [#: ricevin | rice vinegar], [#: syrup | maple syrup] and a few pinches of salt. Add [#: ginger | ginger] and [#: garlic | garlic].",
         "[&: Drain eggplant strips | 00:20:00] Once eggplant is done steaming, let it cool and drain them. Then, shred the flesh by hand into thin strips, about a 1/4\". Leave to drain for 20 minutes."
       ],
       "commentary": {
-        "kind": "whisper",
+        "kind": "haiku",
         "val": [
-          "I have a cold coming on, but I WILL make this recipe."
+          "Eggplant, will you be kind to me?",
+          "I have a cold and am tired",
+          "And you look tasty."
         ]
       }
     },
