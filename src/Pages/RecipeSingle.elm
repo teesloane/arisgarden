@@ -519,8 +519,7 @@ viewInstructions model recipe =
     section [ class "instr-ingr-section", style "flex" "1.5" ]
         [ Ui.sectionHeading "Instructions"
         , div [ class "instructions-group" ]
-            [ div [] (List.indexedMap mapInstructions recipe.instructions)
-            ]
+            (List.indexedMap mapInstructions recipe.instructions)
         ]
 
 

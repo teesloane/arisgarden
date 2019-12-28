@@ -268,15 +268,11 @@
 12) Enjoy with a side of rice.
 ** Content
 :PROPERTIES:
-:type: blurb
+:type: haiku
 :END:
-- We made this quite a while ago. In fact, I can't really remember much about it
-  since then, except that we used shrimp, and now I feel bad about that because
-  the original recipe posts it up as vegan. I shouldn't feel bad, but I'm also
-  making a concerted effort that these recipes be vegetarian or vegan. I've been
-  thinking about those terms a lot. I rarely eat meat these days, and now my
-  decision not to is becoming more intentional and political. So, I guess that
-  comes with a bit of guilt. So yeah. Anyway. It was pretty good.
+- 5 tablespoons
+- of red curry paste sounds like
+- a lot; it isn't.
 * Cauliflower Rice Stir Fry
 :PROPERTIES:
 :date_made: [2019-09-12]
@@ -1316,11 +1312,10 @@
 * Carrot Apple Ginger Soup
 :PROPERTIES:
 :belongs_to: side
-:day_made: [2019-12-01]
+:date_made: [2019-12-01]
 :ease_of_making: 5/5
-:imgs: 1.jpg,2.jpg,3.jpg
-:is_vegan: true
-:is_vegetarian: true
+:imgs: ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type: vegan
 :name: Carrot Apple Ginger Soup
 :original_recipe: https://ohsheglows.com/2011/05/03/carrot-apple-ginger-soup/
 :rating: 4/5
@@ -1360,11 +1355,10 @@
 * Carrot Lentil Salad
 :PROPERTIES:
 :belongs_to: side
-:day_made: [2019-12-03]
+:date_made: [2019-12-03]
 :ease_of_making: 4/5
-:imgs: 1.jpg,2.jpg,3.jpg
-:is_vegan: true
-:is_vegetarian: true
+:imgs: ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type: vegan
 :name: Carrot Lentil Salad
 :original_recipe: https://www.occasionallyeggs.com/spicy-roasted-carrots-with-tahini-lentil-salad/#mv-creation-114-jtr
 :rating: 4/5

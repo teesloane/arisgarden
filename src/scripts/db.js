@@ -685,9 +685,11 @@ module.exports = {
         "Enjoy with a side of rice."
       ],
       "commentary": {
-        "kind": "blurb",
+        "kind": "haiku",
         "val": [
-          "We made this quite a while ago. In fact, I can't really remember much about it since then, except that we used shrimp, and now I feel bad about that because the original recipe posts it up as vegan. I shouldn't feel bad, but I'm also making a concerted effort that these recipes be vegetarian or vegan. I've been thinking about those terms a lot. I rarely eat meat these days, and now my decision not to is becoming more intentional and political. So, I guess that comes with a bit of guilt. So yeah. Anyway. It was pretty good."
+          "5 tablespoons",
+          "of red curry paste sounds like",
+          "a lot; it isn't."
         ]
       }
     },
@@ -3256,6 +3258,234 @@ module.exports = {
         "kind": "whisper",
         "val": [
           "It's like an alfredo sauce, but it's not. (/¯◡ ‿ ◡)/¯ ~ ┻━┻"
+        ]
+      }
+    },
+    "carrot-apple-ginger-soup": {
+      "belongs_to": "side",
+      "date_made": "[2019-12-01]",
+      "ease_of_making": "5/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegan",
+      "name": "Carrot Apple Ginger Soup",
+      "original_recipe": "https://ohsheglows.com/2011/05/03/carrot-apple-ginger-soup/",
+      "rating": "4/5",
+      "serves": "4",
+      "slug": "carrot-apple-ginger-soup",
+      "tags": "soup",
+      "time": "00:45:00",
+      "ingredients": [
+        {
+          "ingredient": "Olive Oil",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "oil"
+        },
+        {
+          "ingredient": "Onion",
+          "quantity": "1",
+          "unit": "",
+          "id": "onion"
+        },
+        {
+          "ingredient": "Ginger (grated)",
+          "quantity": "2",
+          "unit": "tbsp",
+          "id": "ging"
+        },
+        {
+          "ingredient": "Garlic (minced)",
+          "quantity": "2",
+          "unit": "",
+          "id": "garlic"
+        },
+        {
+          "ingredient": "Apple",
+          "quantity": "1",
+          "unit": "",
+          "id": "apple"
+        },
+        {
+          "ingredient": "Carrots",
+          "quantity": "1.5",
+          "unit": "lbs",
+          "id": "carrots"
+        },
+        {
+          "ingredient": "Vegetable Broth",
+          "quantity": "4",
+          "unit": "cups",
+          "id": "broth"
+        },
+        {
+          "ingredient": "Kosher Salt",
+          "quantity": "",
+          "unit": "",
+          "id": "salt"
+        },
+        {
+          "ingredient": "Immersion blender",
+          "quantity": "",
+          "unit": "",
+          "id": ""
+        },
+        {
+          "ingredient": "",
+          "quantity": "",
+          "unit": "",
+          "id": ""
+        }
+      ],
+      "instructions": [
+        "In a large pot, heat [#: oil | olive-oil] over low-medium heat.",
+        "[&:00:05:00] Add chopped onion and cook for 5 minutes.",
+        "[&:00:03:00] Add minced [#: garlic | garlic] and [#: ging | ginger] for a few more minutes.",
+        "[&:00:03:00] Add chopped carrots and apples. Cook for a few more minutes",
+        "[&:00:02:00] Add vegetable broth, stir, and bring to a boil. Reduce to low-medium heat and simmer for 20 minutes or carrots are tender.",
+        "Using your immersion blender, gently blend the soup until it is creamy.",
+        "Add salt and pepper to taste. "
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "If you want to play \"the floor is lava,\" but don't have any lava, this soup will do in a pinch."
+        ]
+      }
+    },
+    "carrot-lentil-salad": {
+      "belongs_to": "side",
+      "date_made": "[2019-12-03]",
+      "ease_of_making": "4/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegan",
+      "name": "Carrot Lentil Salad",
+      "original_recipe": "https://www.occasionallyeggs.com/spicy-roasted-carrots-with-tahini-lentil-salad/#mv-creation-114-jtr",
+      "rating": "4/5",
+      "serves": "2",
+      "slug": "carrot-lentil-salad",
+      "tags": "salad, lentils",
+      "time": "00:40:00",
+      "ingredients": [
+        {
+          "ingredient": "Carrots (halved lengthwise)",
+          "quantity": "7-8",
+          "unit": "",
+          "id": "carrots"
+        },
+        {
+          "ingredient": "Green Lentils",
+          "quantity": "3/4",
+          "unit": "cups",
+          "id": "lentils"
+        },
+        {
+          "ingredient": "Olive Oil (carrots)",
+          "quantity": "1",
+          "unit": "tsp",
+          "id": "oil"
+        },
+        {
+          "ingredient": "Sea Salt",
+          "quantity": "1/2",
+          "unit": "tsp",
+          "id": "salt"
+        },
+        {
+          "ingredient": "Pepper",
+          "quantity": "1/2",
+          "unit": "tsp",
+          "id": "pepper"
+        },
+        {
+          "ingredient": "Red chili flakes",
+          "quantity": "1/2",
+          "unit": "tsp",
+          "id": "flakes"
+        },
+        {
+          "ingredient": "Cumin",
+          "quantity": "1/2",
+          "unit": "tsp",
+          "id": "cumin"
+        },
+        {
+          "ingredient": "Baby Spinach",
+          "quantity": "1/2",
+          "unit": "cups",
+          "id": "spinach"
+        },
+        {
+          "ingredient": "Olive oil (viniagrette)",
+          "quantity": "3",
+          "unit": "tbsp",
+          "id": "oil2"
+        },
+        {
+          "ingredient": "Balsamic Vinegar",
+          "quantity": "2",
+          "unit": "tbsp",
+          "id": "vin"
+        },
+        {
+          "ingredient": "Tahini",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "tahin"
+        },
+        {
+          "ingredient": "Dijon Mustard",
+          "quantity": "1",
+          "unit": "tsp",
+          "id": "mus"
+        },
+        {
+          "ingredient": "Maple Syrup",
+          "quantity": "1/4",
+          "unit": "tsp",
+          "id": "syru"
+        },
+        {
+          "ingredient": "Sea Salt",
+          "quantity": "1/4",
+          "unit": "tsp",
+          "id": "sea"
+        },
+        {
+          "ingredient": "Garlic (minced)",
+          "quantity": "1",
+          "unit": "clove",
+          "id": "garlic"
+        },
+        {
+          "ingredient": "Pomegranate (optional)",
+          "quantity": "1/2",
+          "unit": "cups",
+          "id": "pom"
+        }
+      ],
+      "instructions": [
+        "Preheat the oven to 375F.",
+        "[&:00:20:00] Rinse lentils and place in a pot covered by water. Bring to a boil, then reduce and simmer for 20-25 minutes. Strain and sprinkle with salt.",
+        "Prepare carrots. Put 'em in a bowl and add [#: oil | olive oil ] and spices: [#: salt | sea salt] [#: pepper | pepper] [#: flakes | red pepper flakes] and [#: cumin | cumin].",
+        "[&:00:15:00] Put carrots on a baking sheet and into the oven for about 15 minutes (or until they are tender).",
+        "Create the vinaigrette: mix [#: oil2 | olive oil], [#: vin | balsamic vinegar] [#: tahin | tahini] [#: syru | syrup] [#: garlic | garlic] and [#: sea | salt].",
+        "Serve: Place spinach into bowls and top with lentils and carrots. Drizzel dressing. Top with [#: pom | pomegrenate] or whatever else suits."
+      ],
+      "commentary": {
+        "kind": "haiku",
+        "val": [
+          "Don't use red lentils instead of green.",
+          "They will turn to mush.",
+          "In our time of most dire need; our darkest hour",
+          "We were saved by a can of green lentils."
         ]
       }
     },

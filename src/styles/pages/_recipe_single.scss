@@ -1,4 +1,3 @@
-
 .RecipeSingle {
   // -- &:HERO
 
@@ -308,6 +307,7 @@
     border-left: 3px solid rgba(0, 0, 0, 0);
     cursor: pointer;
     min-height: 26px;
+    line-height: 1.5;
 
     &.active {
       border-left: 3px solid $primary;
