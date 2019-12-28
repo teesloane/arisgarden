@@ -1,0 +1,18 @@
+@import "vars";
+@import "reset";
+@import "common";
+@import "tooltip";
+@import "pages/recipe_list";
+@import "pages/recipe_single";
+@import "pages/404";
+
+@font-face {
+  font-family: $primary-serif;
+  src: url("/_plex-serif.otf"), url("/_plex-serif.otf") format("opentype");
+}
+
+@font-face {
+  font-family: $primary-sans;
+  src: url("/_plex-sans.otf"), url("/_plex-sans.otf") format("opentype");
+}
+

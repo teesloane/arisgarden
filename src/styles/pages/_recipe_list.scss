@@ -1,0 +1,64 @@
+.RecipeList {
+  // -- &:HERO
+
+  .home-hero {
+    align-items: center;
+    background: white;
+    display: flex;
+    justify-content: center;
+    min-height: $heroSize;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    @include at-size(mobile) {
+      min-height: 0;
+    }
+
+    .content {
+      max-width: 600px;
+      padding: 0 64px;
+
+      @include at-size(mobile) {
+        align-self: flex-end;
+        padding: 64px;
+      }
+    }
+
+    .mainline {
+      font-size: $font-h1;
+      @include at-size(mobile) {
+        font-size: $font-h3;
+      }
+    }
+
+    .byline {
+      font-size: 20px;
+      font-family: $primary-sans;
+      @include at-size(mobile) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .columns {
+    column-gap: 64px;
+    columns: 2;
+    margin: 0 auto;
+    max-width: $tablet;
+    padding: 0px 0 32px 0;
+
+    @include at-size(mobile) {
+      padding: 24px;
+      columns: 1;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    li {
+      padding: 4px;
+      color: #333;
+      font-weight: bold;
+    }
+  }
+}

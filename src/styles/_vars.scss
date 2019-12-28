@@ -1,0 +1,48 @@
+/* spacing */
+$section-bottom: 128px;
+
+$tablet: 800px;
+$heroSize: 320px;
+
+/* Fonts */
+$font-h1: 64px;
+$font-h2: 48px;
+$font-h3: 32px;
+$font-h4: 24px;
+$font-h5: 16px;
+$font-h6: 12px;
+
+/* Colour */
+
+$off-black: #555;
+$black: #333;
+
+$primary: #27ae60;
+
+$primary-serif: "Plex-Serif";
+$primary-sans: "Plex-Sans";
+
+// Responsivity
+$break-small: 800px;
+$break-med: 1024px;
+$break-wide: 1260px;
+
+@mixin at-size($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $break-small) {
+      @content;
+    }
+  } @else if $media == medium {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-med - 1) {
+      @content;
+    }
+  } @else if $media == wide {
+    @media only screen and (min-width: $break-med + 1) and (max-width: $break-wide - 1) {
+      @content;
+    }
+  } @else if $media == xwide {
+    @media only screen and (min-width: $break-wide) {
+      @content;
+    }
+  }
+}

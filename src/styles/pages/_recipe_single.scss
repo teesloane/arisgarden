@@ -1,0 +1,514 @@
+
+.RecipeSingle {
+  // -- &:HERO
+
+  .viewHero {
+    min-height: $heroSize;
+    font-family: $primary-sans, Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: $section-bottom / 2;
+    color: white;
+
+    .vh-container {
+      font-size: $font-h3;
+      width: 100%;
+      max-width: $tablet;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 32px;
+      color: white;
+    }
+
+    .link {
+      color: white;
+      &:hover {
+        color: orange;
+      }
+    }
+
+    .vh-recipe-name {
+      font-size: $font-h2;
+      font-family: $primary-serif;
+      padding: 0px 0 32px;
+
+      @include at-size(mobile) {
+        font-size: $font-h4;
+      }
+      @include at-size(medium) {
+        font-size: $font-h3;
+      }
+
+      @include at-size(wide) {
+        font-size: $font-h2;
+      }
+    }
+
+    .vh-metadata {
+      font-size: 18px;
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      justify-content: space-between;
+
+      @include at-size(mobile) {
+        flex-direction: column;
+        font-size: $font-h5;
+      }
+    }
+  }
+
+  .delta-hr {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin: 0 0 96px;
+    color: #777;
+
+    .delta {
+      padding: 32px;
+    }
+
+    .border {
+      display: flex;
+      flex: 1;
+      height: 1px;
+      background: #777;
+    }
+
+    @include at-size(mobile) {
+      margin-bottom: 0;
+      //       display: none;
+    }
+  }
+
+  // -- &:PHOTOS
+
+  .photos {
+    display: flex;
+    margin: 0px 16px $section-bottom;
+    align-items: center;
+    justify-content: space-around;
+
+    @include at-size(mobile) {
+      flex-direction: column;
+      margin: 16px;
+    }
+  }
+
+  .photo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    margin: 0 12px;
+    padding: 16px;
+    width: 350px;
+
+    @include at-size(mobile) {
+      width: 100%;
+      margin: 0 32px 16px;
+      border-radius: 4px;
+    }
+  }
+
+  // -- &:COMMENTARY
+
+  .commentary {
+    margin-bottom: $section-bottom;
+    @include at-size(mobile) {
+      margin-bottom: $section-bottom / 2;
+    }
+
+    .blurb {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      max-width: 600px;
+      margin: 0px auto;
+      font-size: 18px;
+      line-height: 2;
+      color: $off-black;
+    }
+
+    .dialogue {
+      align-content: center;
+      max-width: 500px;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: column;
+
+      .item {
+        padding: 24px;
+        margin: 12px 0;
+        font-size: 20px;
+        position: relative;
+        border-radius: 0.4em;
+        display: inline-flex;
+
+        &:nth-child(odd) {
+          align-self: flex-start;
+          background: #ffd397;
+          color: #333;
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-right-color: #ffd397;
+            border-left: 0;
+            margin-top: -10px;
+            margin-left: -10px;
+          }
+        }
+
+        &:nth-child(even) {
+          align-self: flex-end;
+          background: #c7d6c7;
+          color: #333;
+
+          &:after {
+            content: "";
+            position: absolute;
+            align-self: flex-end;
+            right: 0;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-left-color: #c7d6c7;
+            border-right: 0;
+            text-align: right;
+            margin-top: -10px;
+            margin-right: -10px;
+          }
+        }
+      }
+    }
+
+    .whisper {
+      font-size: 15px;
+      font-style: italic;
+      font-weight: 100;
+      max-width: 470px;
+      display: table;
+      margin: 0 auto;
+      letter-spacing: 1px;
+      padding: 32px;
+      line-height: 2;
+      text-align: center;
+      border: 1px dotted grey;
+    }
+
+    .big-quote {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      max-width: 600px;
+      margin: 0px auto;
+      font-size: 18px;
+      line-height: 2;
+      color: #444;
+
+      .item {
+        font-size: 72px;
+        line-height: 120%;
+        text-align: center;
+
+        @include at-size(mobile) {
+          font-size: $font-h4;
+        }
+      }
+    }
+
+    .haiku {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      margin: 0px auto;
+
+      .item {
+        padding: 24px;
+        margin: 12px 0;
+        font-size: 20px;
+        font-weight: 100;
+        font-style: italic;
+        text-align: center;
+        color: #888;
+      }
+    }
+
+    .dialogue {
+    }
+  }
+
+  // -- &:INSTRUCTIONS/INGREDIENTS -------------------------------------
+
+  .instruction-ingredients {
+    display: flex;
+    margin-bottom: $section-bottom;
+    @include at-size(mobile) {
+      flex-direction: column;
+      margin-bottom: 64px;
+    }
+  }
+
+  .instr-ingr-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 0px 48px;
+    @include at-size(mobile) {
+      padding: 0;
+    }
+  }
+
+  .separator {
+    width: 2px;
+    background: #efefef;
+    height: 180px;
+    align-self: center;
+
+    @include at-size(mobile) {
+      display: none;
+    }
+  }
+
+  .instructions-group {
+    flex: 1;
+    padding-top: 24px;
+    @include at-size(mobile) {
+      margin-bottom: 48px;
+    }
+  }
+
+  .instruction-compiled {
+    padding-right: 12px;
+    flex: 1;
+  }
+
+  .instruction {
+    margin-bottom: 24px;
+    padding-left: 12px;
+    border-left: 3px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    min-height: 26px;
+
+    &.active {
+      border-left: 3px solid $primary;
+    }
+  }
+
+  .instruction-num {
+    display: flex;
+    padding-right: 4px;
+  }
+
+  .instruction-and-timer {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .ingredients {
+    padding-top: 24px;
+    flex: 1;
+  }
+
+  $border-col: #efefef;
+  .ingredient {
+    display: flex;
+    padding: 8px 12px;
+    &:nth-child(odd) {
+      background: #fafafa;
+      border-top: 1px solid $border-col;
+      border-bottom: 1px solid $border-col;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid $border-col;
+    }
+
+    .quant-unit {
+      display: flex;
+    }
+    .quant {
+      padding-right: 4px;
+    }
+
+    .name {
+      flex: 1;
+      padding-right: 4px;
+    }
+  }
+
+  // -- &:TIMER ---------------------------------------------------
+
+  .timer-icon {
+    align-items: center;
+    align-self: center;
+    background-image: url("/icons/watch.svg");
+    display: flex;
+    font-size: 12px;
+    height: 24px;
+    justify-content: center;
+    width: 24px;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .timer-null {
+    display: none;
+  }
+
+  .timers {
+    position: fixed;
+    display: flex;
+    bottom: 24px;
+    left: 24px;
+
+    @include at-size(mobile) {
+      display: flex;
+      flex-direction: column;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .timer {
+    background: #333;
+    color: white;
+    display: flex;
+    margin: 0 12px;
+    padding: 8px 12px;
+    align-items: center;
+
+    @include at-size(mobile) {
+      margin: 0;
+      justify-content: space-between;
+      border-top: 1px solid #555;
+    }
+
+    .time-string {
+      align-self: center;
+      display: flex;
+    }
+
+    .close-btn {
+      cursor: pointer;
+      font-size: 24px;
+      margin-left: 8px;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.7);
+      margin-top: -2px;
+
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+
+  @include at-size(mobile) {
+    margin: 0;
+  }
+
+  // -- &:MODAL
+
+  $modal-bg: #fefefe;
+
+  .modal {
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+
+    .content {
+      position: relative;
+      display: flex;
+      background-color: $modal-bg;
+      margin: auto;
+      padding: 0;
+      border: 1px solid #888;
+      width: 500px;
+      min-height: 50%;
+      box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.1);
+
+      @include at-size(mobile) {
+        flex-direction: column;
+        width: 90%;
+      }
+    }
+
+    .close {
+      color: #999;
+      font-size: 64px;
+      font-weight: thin;
+    }
+
+    .sidebar {
+      padding: 2px 16px;
+      color: white;
+      order: 2;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: darken($modal-bg, 5%);
+      border-left: 1px solid #efefef;
+      cursor: pointer;
+      &:hover,
+      &:focus {
+        .close {
+          color: black;
+        }
+      }
+
+      @include at-size(mobile) {
+        order: 1;
+      }
+    }
+
+    .body {
+      padding: 2px 16px;
+      flex: 4;
+      order: 1;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+}
