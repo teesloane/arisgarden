@@ -3342,10 +3342,10 @@ module.exports = {
       ],
       "instructions": [
         "In a large pot, heat [#: oil | olive-oil] over low-medium heat.",
-        "[&:00:05:00] Add chopped onion and cook for 5 minutes.",
-        "[&:00:03:00] Add minced [#: garlic | garlic] and [#: ging | ginger] for a few more minutes.",
-        "[&:00:03:00] Add chopped carrots and apples. Cook for a few more minutes",
-        "[&:00:02:00] Add vegetable broth, stir, and bring to a boil. Reduce to low-medium heat and simmer for 20 minutes or carrots are tender.",
+        "[&: 2. Sauté onions | 00:05:00] Add chopped onion and cook for 5 minutes.",
+        "[&: 3. Add ginger | 00:03:00] Add minced [#: garlic | garlic] and [#: ging | ginger] for a few more minutes.",
+        "[&: 4. Add carrots + Apples | 00:03:00] Add chopped carrots and apples. Cook for a few more minutes",
+        "[&: 5. Simmer | 00:02:00] Add vegetable broth, stir, and bring to a boil. Reduce to low-medium heat and simmer for 20 minutes or carrots are tender.",
         "Using your immersion blender, gently blend the soup until it is creamy.",
         "Add salt and pepper to taste. "
       ],
@@ -3473,9 +3473,9 @@ module.exports = {
       ],
       "instructions": [
         "Preheat the oven to 375F.",
-        "[&:00:20:00] Rinse lentils and place in a pot covered by water. Bring to a boil, then reduce and simmer for 20-25 minutes. Strain and sprinkle with salt.",
+        "[&: 2. Prepare lentils | 00:20:00] Rinse lentils and place in a pot covered by water. Bring to a boil, then reduce and simmer for 20-25 minutes. Strain and sprinkle with salt.",
         "Prepare carrots. Put 'em in a bowl and add [#: oil | olive oil ] and spices: [#: salt | sea salt] [#: pepper | pepper] [#: flakes | red pepper flakes] and [#: cumin | cumin].",
-        "[&:00:15:00] Put carrots on a baking sheet and into the oven for about 15 minutes (or until they are tender).",
+        "[&: 4. Bake carrots | 00:15:00] Put carrots on a baking sheet and into the oven for about 15 minutes (or until they are tender).",
         "Create the vinaigrette: mix [#: oil2 | olive oil], [#: vin | balsamic vinegar] [#: tahin | tahini] [#: syru | syrup] [#: garlic | garlic] and [#: sea | salt].",
         "Serve: Place spinach into bowls and top with lentils and carrots. Drizzel dressing. Top with [#: pom | pomegrenate] or whatever else suits."
       ],
