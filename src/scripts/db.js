@@ -2616,9 +2616,9 @@ module.exports = {
         }
       ],
       "instructions": [
-        "[&: Sauté | 00:03:00] Heat a large pot. Add [#: coco | Coconut oil]. Add [#: shal | shallot] [#: gar | garlic] and [#: gin | ginger] [#: ja | jalapeno pepper]. Sauté for 2-3 minutes.",
+        "[&: Sauté | 00:03:00] Heat a large pot. Add [#: coco | Coconut oil]. Add [#: shal | shallot], [#: gar | garlic], [#: gin | ginger], [#: ja | jalapeno pepper]. Sauté for 2-3 minutes.",
         "[&: 2. Curry paste | 00:02:00] Add [#: cur | curry paste]. Cook for 2 minutes.",
-        "Add [#: comilk | coconut milk] [#: tur | turmeric] [#: mapsyr | maple syrup] [#: soysauce | Soy Sauce]  and stir. Bring to simmer over medium heat.",
+        "Add [#: comilk | coconut milk], [#: tur | turmeric], [#: mapsyr | maple syrup], [#: soysauce | Soy Sauce]  and stir. Bring to simmer over medium heat.",
         "Once simmering, add [#: caul | cauliflower] and [#: chick | chickpeas].",
         "[&: 5. Cook | 00:10:00] Cover and cook for 10-15 minutes. Keep at a simmer.",
         "Make quinoa or rice according to package instructions.",
@@ -4039,7 +4039,7 @@ module.exports = {
     "steamed-eggplant": {
       "belongs_to": "main",
       "date_made": "[2019-12-28]",
-      "ease_of_making": "?/5",
+      "ease_of_making": "4/5",
       "imgs": [
         "1.jpg",
         "2.jpg",
@@ -4048,10 +4048,10 @@ module.exports = {
       "meal_type": "vegan",
       "name": "Steamed Eggplant",
       "original_recipe": "https://www.amazon.ca/Plenty-More-Vibrant-Vegetable-Ottolenghi/dp/1607746212",
-      "rating": "4/5",
+      "rating": "3/5",
       "serves": "2",
       "slug": "steamed-eggplant",
-      "time": "00:25:00",
+      "time": "01:00:00",
       "ingredients": [
         {
           "ingredient": "Rice",

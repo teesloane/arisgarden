@@ -274,6 +274,8 @@
     padding: 0px 48px;
     @include at-size(mobile) {
       padding: 0;
+      margin-bottom: 48px;
+      display: block;
     }
   }
 
