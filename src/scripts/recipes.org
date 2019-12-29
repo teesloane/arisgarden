@@ -1637,11 +1637,9 @@
 6) [&: Marinate strips | 00:10:00] Once eggplant strips are cool, toss with dressing and add green onions and sesame seeds. Leave to marinate for 10 minutes.
 ** Content
 :PROPERTIES:
-:type: haiku
+:type: blurb
 :END:
-- Eggplant, will you be kind to me?
-- I have a cold and am tired
-- And you look tasty.
+- Eggplant is hard to prepare. Or so I have been told. We had never steamed it until this recipe. Still, with the accompanying sauce, the meal turned out totally fine. I think I'll need to order more eggplant at restaurants to know what to look for in a successful eggplant dish. On another note, shredded eggplant might not be the most visually appealing ingredient to some; if presentation matters quite a bit to you, make sure you have the green onions and maybe get both black and white sesame seeds to top.
 * Banana Bread
 :PROPERTIES:
 :belongs_to: sweet

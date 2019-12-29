@@ -4134,16 +4134,15 @@ module.exports = {
       "instructions": [
         "Remove the tops of the eggplant and peel them.",
         "Prepare rice according to package instructions.",
-        "[&: Steam eggplant | 00:30:00] Fill a large pot with water one quarter the way up the side and bring to a boil. Place eggplants in a steamer or colander above the water. Make sure they don't touch. Cover tightly and steam for 30 min. Flip eggplants once halfway through.",
+        "[&: Steam eggplant | 00:30:00] Fill a large pot with water one quarter the way up the side and bring to a boil. Place eggplants in a steamer or colander above the water. Make sure eggplant does not have contact with boiling water. Cover tightly and steam for 30 min. Flip eggplants once halfway through.",
         "Make the dressing. Combine [#: mir | mirin], [#: soil | sesame oil], [#: soysauce | soy sauce], [#: ricevin | rice vinegar], [#: syrup | maple syrup] and a few pinches of salt. Add [#: ginger | ginger] and [#: garlic | garlic].",
-        "[&: Drain eggplant strips | 00:20:00] Once eggplant is done steaming, let it cool and drain them. Then, shred the flesh by hand into thin strips, about a 1/4\". Leave to drain for 20 minutes."
+        "[&: Drain eggplant strips | 00:20:00] Once eggplant is done steaming, let it cool and drain them. Then, shred the flesh by hand into thin strips, about a 1/4\". Leave to drain for 20 minutes.",
+        "[&: Marinate strips | 00:10:00] Once eggplant strips are cool, toss with dressing and add green onions and sesame seeds. Leave to marinate for 10 minutes."
       ],
       "commentary": {
-        "kind": "haiku",
+        "kind": "blurb",
         "val": [
-          "Eggplant, will you be kind to me?",
-          "I have a cold and am tired",
-          "And you look tasty."
+          "Eggplant is hard to prepare. Or so I have been told. We had never steamed it until this recipe. Still, with the accompanying sauce, the meal turned out totally fine. I think I'll need to order more eggplant at restaurants to know what to look for in a successful eggplant dish. On another note, shredded eggplant might not be the most visually appealing ingredient to some; if presentation matters quite a bit to you, make sure you have the green onions and maybe get both black and white sesame seeds to top."
         ]
       }
     },
