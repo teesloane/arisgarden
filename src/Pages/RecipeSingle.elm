@@ -18,13 +18,6 @@ type alias Model =
     { step : Int
     , timers : List Timer
     , recipe : Maybe Recipe
-    , modal : Modal
-    }
-
-
-type alias Modal =
-    { open : Bool
-    , content : Html RecipeSingleMsg
     }
 
 
@@ -77,8 +70,6 @@ type RecipeSingleMsg
     | TimerAdd Timer
     | TimerDelete Timer
     | TimerDec Posix
-    | ModalClose
-    | ModalOpen (Html RecipeSingleMsg)
 
 
 {-| init takes "recipes" because we currently handle them in a batch from flags.
@@ -91,7 +82,6 @@ init recipes recipeName =
             ( { step = 0
               , timers = [ Timer "" "" 0 ] -- FIXME: remove need for "pseudo-maybe timer"
               , recipe = List.head (List.filter (\r -> r.slug == recipeName) recipes_)
-              , modal = Modal False (div [] [])
               }
             , Cmd.none
             )
@@ -100,7 +90,6 @@ init recipes recipeName =
             ( { step = 0
               , timers = [ Timer "" "" 0 ] -- FIXME: remove need for "pseudo-maybe timer"
               , recipe = Nothing
-              , modal = Modal False (div [] [])
               }
             , Cmd.none
             )
@@ -338,16 +327,6 @@ update msg model =
             in
             ( { model | timers = u_timers }, playSound model.timers )
 
-        ModalClose ->
-            ( { model | modal = Modal False (div [] []) }, Cmd.none )
-
-        ModalOpen markup ->
-            let
-                newModal =
-                    Modal True markup
-            in
-            ( { model | modal = newModal }, Cmd.none )
-
 
 
 -- VIEWS --
@@ -484,7 +463,7 @@ viewInstructions model recipe =
 
                     else
                         span
-                            [ class "parsed-ingredient", onClick (ModalOpen <| htmlModal i) ]
+                            [ class "parsed-ingredient" ]
                             [ span [ class "tooltipped tooltipped-n", attribute "aria-label" <| getToolTip i ] [ text i.val ] ]
             in
             case parsedInstructions of
@@ -558,7 +537,6 @@ view model =
         Just recipe ->
             section [ class "RecipeSingle" ]
                 [ viewHero recipe
-                , viewModal model.modal
                 , section [ class "container" ]
                     [ viewIngrAndInstr recipe
                     , viewImages recipe
@@ -616,23 +594,6 @@ viewHr char =
         , div [ class "delta" ] [ text char ]
         , div [ class "border" ] []
         ]
-
-
-viewModal modal =
-    if modal.open then
-        div [ class "modal" ]
-            [ div [ class "content" ]
-                [ div [ class "sidebar", onClick ModalClose ]
-                    [ span [ class "close" ]
-                        [ text "×" ]
-                    ]
-                , div [ class "body" ]
-                    [ modal.content ]
-                ]
-            ]
-
-    else
-        div [ class "modal-closed" ] []
 
 
 
