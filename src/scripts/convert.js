@@ -20,8 +20,9 @@ fs.readFile("recipes.org", "utf8", function(_, data) {
     output.recipes[key] = _r;
   });
 
-  let stringify = "module.exports = " + JSON.stringify(output, null, 2);
-  fs.writeFile("./db.js", stringify, function(err) {
+  // let stringify = "module.exports = " + JSON.stringify(output, null, 2);
+  let stringify = JSON.stringify(output, null, 2);
+  fs.writeFile("./db.json", stringify, function(err) {
     if (err) {
       return console.log(err);
     }
