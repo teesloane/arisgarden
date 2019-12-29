@@ -97,7 +97,7 @@
 | Ingredient                | Quantity | Unit   | Id              | Group |
 |---------------------------+----------+--------+-----------------+-------|
 | Olive Oil                 |        1 | tbsp   | oil-olive       |       |
-| White onion (or: shallot) |     1/2/ | cups   | onion-white     |       |
+| White onion (or: shallot) |     1/2  | cups   | onion-white     |       |
 | Garlic                    |        3 | cloves | garlic          |       |
 | Bell Pepper (chopped)     |     1/2/ | cups   | pepper-bell     |       |
 | Diced tomatoes            |       28 | oz     | tomato-diced    |       |
