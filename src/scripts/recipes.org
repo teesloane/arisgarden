@@ -1681,3 +1681,83 @@
 - No, it has to cool.
 - You have to cool.
 - I'm working on that too.
+* Kimchi Ramen
+:PROPERTIES:
+:belongs_to: main
+:date_made: [2019-12-29]
+:ease_of_making: 5/5
+:imgs: ["1.jpg", "2.jpg", "3.gif"]
+:meal_type: vegan
+:name: Kimchi Ramen
+:original_recipe:
+:rating: 5/5
+:serves: 4
+:slug: kimchi-ramen
+:time: 00:30:00
+:END:
+** Ingredients
+| Ingredient      | Quantity | Unit          | Id       | Group |
+|-----------------+----------+---------------+----------+-------|
+| coconut oil     |        1 | tbsp          | c_oil    |       |
+| Ginger          |        1 | tbsp (minced) | ginger   |       |
+| Red curry paste |        1 | tsp           | rcp      |       |
+| Leeks           |        2 | small         | leeks    |       |
+| Kale            |        1 | head          | kale     |       |
+| Vegetable broth |        4 | cups          | vegbroth |       |
+| Soy sauce       |        1 | tbsp          | soy      |       |
+| Instant ramen   |        2 | packs         | ramen    |       |
+| Miso            |        2 | tbsp          | miso     |       |
+| Kimchi          |        1 | cup (chopped) | kimchi   |       |
+| Sesame oil      |        1 | tsp           | s_oil    |       |
+| Mushrooms       |        1 | cup (halved)  | mush     |       |
+** Steps
+ 1) Prep the veggies. Slice the [#: leeks | leeks] into half moons (just the white and light-green part), de-stem the [#: kale | kale] and roughly rip/chop, halve the [#: mush | mushrooms] (if they are big).
+ 2) In a big pot, heat the [#: c_oil | coconut oil] on medium.
+ 3) Add the [#: ginger | minced ginger] and [#: rcp | curry paste] and stir for about 30 seconds.
+ 4) Add in the leeks, kale and mushrooms and cook until the kale starts wilting.
+ 5) Pour in the [#: vegbroth | broth] and [#: soy | soy sauce] and turn up the heat to medium-high.
+ 6) [&: Cook noodles | 00:03:00 ] When the soup is simmering add in the [#: ramen | instant noodles]. Cook the noodles for about 2-3 minutes or until they soften, then reduce the heat to low.
+ 7) Place [#: miso | miso] in a small bowl and add a few spoons of the soup to dissolve the miso. Once dissolved add the miso into the soup.
+ 8) Stir in the [#: kimchi | kimchi] and [#: s_oil | sesame oil]. Add salt to taste.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- Sprinkle a bit of sugar on the soup if the kimchi taste is too powerful.
+* Breakfast stack
+:PROPERTIES:
+:belongs_to: breakfast
+:date_made: [2019-12-29]
+:ease_of_making: 5/5
+:imgs: ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type: vegetarian
+:name: Breakfast stack
+:original_recipe:
+:rating: 4/5
+:serves: 4
+:slug: breakfast-stack
+:time: 00:15:00
+:END:
+** Ingredients
+| Ingredient   | Quantity | Unit    | Id      | Group |
+|--------------+----------+---------+---------+-------|
+| Sweet potato |        1 | large   | sp      |       |
+| Eggs         |        2 |         | egg     |       |
+| Tomato       |        1 | large   | tomat   |       |
+| Avocado      |        1 |         | avo     |       |
+| Olive oil    |        1 | tbsp    | oil     |       |
+| Salt+Pepper  |        2 | pinches | salt    |       |
+| Paprika      |        1 | tsp     | paprika |       |
+| Toaster      |          |         |         |       |
+** Steps
+1) Cut two large slices of sweet potato. Put them into the toaster on medium high. You will do this multiple times once it pops up.
+2) Boil some water for the poached egg.
+3) Slice two large pieces of tomato. Beefsteak or Heirloom work best. Salt the slices with a pinch of salt.
+4) Continue toasting the sweet potato until you can easily poke a fork through it with no resistance. The sides will likely be toasty brown. Once finished, drizzle lightlly with olive oil and add salt and pepper.
+5) [&: Poach eggs | 00:03:00 ] Once water is boiled for the eggs, add two capfuls of vinegar and then add the eggs. Poach for 3-4 minutes as per desired level of consistency.
+6) Assemble the breakfast stack! Place sweet potato as base, add tomato, then avocado, and finally the egg. Sprinkle with salt, pepper, and paprika.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- The lesser known of the stacks—the full stack, the waffle stack, the haystack &c; the breakfast stack really holds it's own. (ಥ﹏ಥ)

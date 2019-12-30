@@ -220,7 +220,7 @@
         },
         {
           "ingredient": "White onion (or: shallot)",
-          "quantity": "1/2/",
+          "quantity": "1/2",
           "unit": "cups",
           "id": "onion-white",
           "group": ""
@@ -4236,6 +4236,214 @@
           "No, it has to cool.",
           "You have to cool.",
           "I'm working on that too."
+        ]
+      }
+    },
+    "kimchi-ramen": {
+      "belongs_to": "main",
+      "date_made": "[2019-12-29]",
+      "ease_of_making": "5/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.gif"
+      ],
+      "meal_type": "vegan",
+      "name": "Kimchi Ramen",
+      "original_recipe": "",
+      "rating": "5/5",
+      "serves": "4",
+      "slug": "kimchi-ramen",
+      "time": "00:30:00",
+      "ingredients": [
+        {
+          "ingredient": "coconut oil",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "c_oil",
+          "group": ""
+        },
+        {
+          "ingredient": "Ginger",
+          "quantity": "1",
+          "unit": "tbsp (minced)",
+          "id": "ginger",
+          "group": ""
+        },
+        {
+          "ingredient": "Red curry paste",
+          "quantity": "1",
+          "unit": "tsp",
+          "id": "rcp",
+          "group": ""
+        },
+        {
+          "ingredient": "Leeks",
+          "quantity": "2",
+          "unit": "small",
+          "id": "leeks",
+          "group": ""
+        },
+        {
+          "ingredient": "Kale",
+          "quantity": "1",
+          "unit": "head",
+          "id": "kale",
+          "group": ""
+        },
+        {
+          "ingredient": "Vegetable broth",
+          "quantity": "4",
+          "unit": "cups",
+          "id": "vegbroth",
+          "group": ""
+        },
+        {
+          "ingredient": "Soy sauce",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "soy",
+          "group": ""
+        },
+        {
+          "ingredient": "Instant ramen",
+          "quantity": "2",
+          "unit": "packs",
+          "id": "ramen",
+          "group": ""
+        },
+        {
+          "ingredient": "Miso",
+          "quantity": "2",
+          "unit": "tbsp",
+          "id": "miso",
+          "group": ""
+        },
+        {
+          "ingredient": "Kimchi",
+          "quantity": "1",
+          "unit": "cup (chopped)",
+          "id": "kimchi",
+          "group": ""
+        },
+        {
+          "ingredient": "Sesame oil",
+          "quantity": "1",
+          "unit": "tsp",
+          "id": "s_oil",
+          "group": ""
+        },
+        {
+          "ingredient": "Mushrooms",
+          "quantity": "1",
+          "unit": "cup (halved)",
+          "id": "mush",
+          "group": ""
+        }
+      ],
+      "instructions": [
+        "Prep the veggies. Slice the [#: leeks | leeks] into half moons (just the white and light-green part), de-stem the [#: kale | kale] and roughly rip/chop, halve the [#: mush | mushrooms] (if they are big).",
+        "In a big pot, heat the [#: c_oil | coconut oil] on medium.",
+        "Add the [#: ginger | minced ginger] and [#: rcp | curry paste] and stir for about 30 seconds.",
+        "Add in the leeks, kale and mushrooms and cook until the kale starts wilting.",
+        "Pour in the [#: vegbroth | broth] and [#: soy | soy sauce] and turn up the heat to medium-high.",
+        "[&: Cook noodles | 00:03:00 ] When the soup is simmering add in the [#: ramen | instant noodles]. Cook the noodles for about 2-3 minutes or until they soften, then reduce the heat to low.",
+        "Place [#: miso | miso] in a small bowl and add a few spoons of the soup to dissolve the miso. Once dissolved add the miso into the soup.",
+        "Stir in the [#: kimchi | kimchi] and [#: s_oil | sesame oil]. Add salt to taste."
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "Sprinkle a bit of sugar on the soup if the kimchi taste is too powerful."
+        ]
+      }
+    },
+    "breakfast-stack": {
+      "belongs_to": "breakfast",
+      "date_made": "[2019-12-29]",
+      "ease_of_making": "5/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegetarian",
+      "name": "Breakfast stack",
+      "original_recipe": "",
+      "rating": "4/5",
+      "serves": "4",
+      "slug": "breakfast-stack",
+      "time": "00:15:00",
+      "ingredients": [
+        {
+          "ingredient": "Sweet potato",
+          "quantity": "1",
+          "unit": "large",
+          "id": "sp",
+          "group": ""
+        },
+        {
+          "ingredient": "Eggs",
+          "quantity": "2",
+          "unit": "",
+          "id": "egg",
+          "group": ""
+        },
+        {
+          "ingredient": "Tomato",
+          "quantity": "1",
+          "unit": "large",
+          "id": "tomat",
+          "group": ""
+        },
+        {
+          "ingredient": "Avocado",
+          "quantity": "1",
+          "unit": "",
+          "id": "avo",
+          "group": ""
+        },
+        {
+          "ingredient": "Olive oil",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "oil",
+          "group": ""
+        },
+        {
+          "ingredient": "Salt+Pepper",
+          "quantity": "2",
+          "unit": "pinches",
+          "id": "salt",
+          "group": ""
+        },
+        {
+          "ingredient": "Paprika",
+          "quantity": "1",
+          "unit": "tsp",
+          "id": "paprika",
+          "group": ""
+        },
+        {
+          "ingredient": "Toaster",
+          "quantity": "",
+          "unit": "",
+          "id": "",
+          "group": ""
+        }
+      ],
+      "instructions": [
+        "Cut two large slices of sweet potato. Put them into the toaster on medium high. You will do this multiple times once it pops up.",
+        "Boil some water for the poached egg.",
+        "Slice two large pieces of tomato. Beefsteak or Heirloom work best. Salt the slices with a pinch of salt.",
+        "Continue toasting the sweet potato until you can easily poke a fork through it with no resistance. The sides will likely be toasty brown. Once finished, drizzle lightlly with olive oil and add salt and pepper.",
+        "[&: Poach eggs | 00:03:00 ] Once water is boiled for the eggs, add two capfuls of vinegar and then add the eggs. Poach for 3-4 minutes as per desired level of consistency.",
+        "Assemble the breakfast stack! Place sweet potato as base, add tomato, then avocado, and finally the egg. Sprinkle with salt, pepper, and paprika."
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "The lesser known of the stacks—the full stack, the waffle stack, the haystack &c; the breakfast stack really holds it's own. (ಥ﹏ಥ)"
         ]
       }
     }
