@@ -350,7 +350,7 @@ viewHero recipe =
             , { el = li [] [ text <| "Time: " ++ Util.cleanTime recipe.time ], show = True }
             , { el = li [] [ text <| mealType recipe.meal_type ], show = True }
             , { el = li [] [ text <| "Rating: " ++ recipe.rating ], show = True }
-            , { el = li [] [ a [ class "link", target "_blank", href recipe.original_recipe ] [ text "Source →" ] ], show = not <| String.isEmpty recipe.original_recipe }
+            , { el = li [] [ a [ class "link", target "_blank", href recipe.original_recipe ] [ text "Inspiration→" ] ], show = not <| String.isEmpty recipe.original_recipe }
             ]
     in
     section
