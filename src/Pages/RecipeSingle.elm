@@ -318,7 +318,7 @@ update msg model =
         TimerDec _ ->
             let
                 timeDec t =
-                    Util.tern (t.time > 0) (t.time - 1) t.time
+                    Util.tern (t.time >= 0) (t.time - 1) t.time
 
                 u_timers =
                     List.map (\t -> { t | time = timeDec t }) model.timers
@@ -350,7 +350,7 @@ viewHero recipe =
             , { el = li [] [ text <| "Time: " ++ Util.cleanTime recipe.time ], show = True }
             , { el = li [] [ text <| mealType recipe.meal_type ], show = True }
             , { el = li [] [ text <| "Rating: " ++ recipe.rating ], show = True }
-            , { el = li [] [ a [ class "link", target "_blank", href recipe.original_recipe ] [ text "Inspiration→" ] ], show = not <| String.isEmpty recipe.original_recipe }
+            , { el = li [] [ a [ class "link", target "_blank", href recipe.original_recipe ] [ text "Inspiration →" ] ], show = not <| String.isEmpty recipe.original_recipe }
             ]
     in
     section
@@ -371,7 +371,7 @@ viewTimers : List Timer -> Html RecipeSingleMsg
 viewTimers timers =
     let
         filteredTimers =
-            List.filter (\t -> t.time > 0) timers
+            List.filter (\t -> t.time >= 0) timers
 
         timerMarkup t =
             div [ class "timer" ]
@@ -598,7 +598,7 @@ viewHr char =
 
 timersRunning : List Timer -> Bool
 timersRunning timers =
-    List.any (\t -> t.time > 0) timers
+    List.any (\t -> t.time >= 0) timers
 
 
 subscriptions : Model -> Sub RecipeSingleMsg

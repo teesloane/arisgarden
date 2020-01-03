@@ -6,7 +6,7 @@ const { Elm } = require("./Main");
 var app = Elm.Main.init({
   node: document.querySelector("main"),
   flags: {
-    recipes: Object.values(db.recipes) // FIXME - convert.js should hand a list, not an object.
+    recipes: Object.values(db.recipes)
   }
 });
 
@@ -28,8 +28,7 @@ app.ports.playSound.subscribe(function(data) {
   }
 
   data.forEach(function(t) {
-    if (t.time == 1) {
-      // FIXME: this can be set to <= 1 when ^^ is fixed.
+    if (t.time == 0) {
       var audio = new Audio("/sounds/alarm.wav");
       audio.play();
     }
