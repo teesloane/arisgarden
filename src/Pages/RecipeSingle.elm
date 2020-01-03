@@ -1,7 +1,5 @@
 port module Pages.RecipeSingle exposing (..)
 
---import Types exposing (Msg(..))
-
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onClick)
@@ -80,7 +78,7 @@ init recipes recipeName =
     case recipes of
         Just recipes_ ->
             ( { step = 0
-              , timers = [ Timer "" "" 0 ] -- FIXME: remove need for "pseudo-maybe timer"
+              , timers = []
               , recipe = List.head (List.filter (\r -> r.slug == recipeName) recipes_)
               }
             , Cmd.none
@@ -88,7 +86,7 @@ init recipes recipeName =
 
         Nothing ->
             ( { step = 0
-              , timers = [ Timer "" "" 0 ] -- FIXME: remove need for "pseudo-maybe timer"
+              , timers = []
               , recipe = Nothing
               }
             , Cmd.none
@@ -100,7 +98,7 @@ init recipes recipeName =
 
 
 type alias InstructionParsed =
-    { timer : Timer
+    { timer : Maybe Timer
     , chunks : List InstructionChunk
     }
 
@@ -133,23 +131,23 @@ parseTimer =
             |> andThen
                 (\res ->
                     succeed <|
-                        { res
-                            | step = String.trim res.step
-                            , time = Util.strToSec res.timeString
-                        }
+                        Just
+                            { res
+                                | step = String.trim res.step
+                                , time = Util.strToSec res.timeString
+                            }
                 )
-        , succeed Timer
-            |= succeed ""
-            |= succeed ""
-            |= succeed 0
+        , succeed Nothing
         ]
 
 
-parseChunk =
-    Parser.loop [] parseChunkHelp
+{-| And now the nightmare I don't even remember writing...
+-}
+parseChunks =
+    Parser.loop [] parseChunksHelp
 
 
-parseChunkHelp revStmts =
+parseChunksHelp revStmts =
     oneOf
         [ succeed (\stmt -> Loop (stmt :: revStmts))
             |= parseIngredientChunk
@@ -225,7 +223,7 @@ parseEverything : Parser InstructionParsed
 parseEverything =
     succeed InstructionParsed
         |= parseTimer
-        |= parseChunk
+        |= parseChunks
 
 
 runParser str =
@@ -409,19 +407,19 @@ viewImages recipe =
 
 {-| viewInstructions does a few things:
 
-  - Parse and display a recipe's instructions.
+  - Parse and display a recipe's instructions (with tooltips).
   - Handle rendering the timer and active step.
   - Handle creation of timers.
   - FIXME: rename :"chunk"
-  - FIXME: don't nest let blocks if possible.
 
 -}
 viewInstructions : Model -> Recipe -> Html RecipeSingleMsg
 viewInstructions model recipe =
     let
-        timerExists chunk =
-            not <| List.any (\n -> n.step == chunk.timer.step) model.timers
+        timerExistsInModel timer =
+            not <| List.any (\n -> n.step == timer.step) model.timers
 
+        -- takes parsed ingredient chunk and gets the quantity from the recipe ingredients.
         getIngredientQuantity chunk =
             let
                 ingr =
@@ -432,49 +430,47 @@ viewInstructions model recipe =
             in
             case val of
                 Just v ->
-                    ( v.quantity ++ " " ++ v.unit
-                    , div []
-                        [ h1 [] [ text <| v.quantity ++ " " ++ v.unit ]
-                        , h4 [] [ text <| v.ingredient ]
-                        ]
-                    )
+                    v.quantity ++ " " ++ v.unit
 
                 Nothing ->
-                    ( "", div [] [] )
+                    ""
 
-        buildInstructions parsedInstructions =
-            let
-                makeTimer chunk =
-                    if timerExists chunk then
-                        div [ class "timer-icon", onClick (TimerAdd chunk.timer) ] []
+        -- renders a clickable "create timer" button. Handles case where no timer exists for the expr.
+        buildTimerBtn parsedInstructions =
+            case parsedInstructions.timer of
+                Just timer ->
+                    if timerExistsInModel timer then
+                        div [ class "timer-icon", onClick (TimerAdd timer) ] []
 
                     else
                         div [ class "timer-null" ] []
 
-                getToolTip i =
-                    Tuple.first <| getIngredientQuantity i
+                Nothing ->
+                    span [ class "timer-null" ] []
 
-                htmlModal i =
-                    Tuple.second <| getIngredientQuantity i
+        buildInstructionWithTooltips instructionChunk =
+            if String.isEmpty instructionChunk.id then
+                span [] [ text instructionChunk.val ]
 
-                makeInstruction i =
-                    if String.isEmpty i.id then
-                        span [] [ text i.val ]
+            else
+                span
+                    [ class "parsed-ingredient" ]
+                    [ span
+                        [ class "tooltipped tooltipped-n", attribute "aria-label" <| getIngredientQuantity instructionChunk ]
+                        [ text instructionChunk.val ]
+                    ]
 
-                    else
-                        span
-                            [ class "parsed-ingredient" ]
-                            [ span [ class "tooltipped tooltipped-n", attribute "aria-label" <| getToolTip i ] [ text i.val ] ]
-            in
-            case parsedInstructions of
+        buildInstructions maybeParsedInstructions =
+            case maybeParsedInstructions of
                 Ok c ->
                     div [ class "instruction-and-timer" ]
-                        [ div [ class "instruction-compiled" ] (List.map makeInstruction c.chunks)
-                        , makeTimer c
+                        [ div [ class "instruction-compiled" ] (List.map buildInstructionWithTooltips c.chunks)
+                        , buildTimerBtn c
                         ]
 
                 Err _ ->
-                    div [] [ text "Missing step" ]
+                    -- In which the parser has failed to parse something.
+                    div [] [ text "Parser failed: Incorrectly formatted instruction!" ]
 
         mapInstructions index el =
             let
