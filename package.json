@@ -1,8 +1,8 @@
 {
   "author": "_",
-  "name": "_",
-  "version": "3.9.0",
-  "description": "Elm 0.19 starter with Webpack 4 hot-reloading",
+  "name": "Ari's Garden",
+  "version": "0.1",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "elm-test",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simonh1000/elm-webpack-starter.git"
+    "url": ""
   },
   "license": "MIT",
   "devDependencies": {
