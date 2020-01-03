@@ -6,7 +6,7 @@
 :belongs_to: breakfast
 :date_made: [2019-10-03]
 :ease_of_making: 5/5
-:imgs: []
+:imgs: ["1.jpg", "2.jpg", "3.jpg"]
 :meal_type: vegan
 :name: Breakfast Quinoa
 :original_recipe: https://cookieandkate.com/cinnamon-breakfast-quinoa-recipe/
@@ -27,12 +27,11 @@
 | Fresh berries     |          |                | berr   |
 | Almond butter     |          |                | almbut |
 ** Steps
-1) [&:1. Make quinoa | 00:15:00] Make the [#: quin | quinoa]: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes
-2) [&:2. Heat nuts | 00:04:00] Heat chopped [#: nuts | nuts] in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes.
-3) [&:3. Oil and spices | 00:00:15] Add [#: oil | coconut oil], [#: cin | cinnamon] to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds.
-4) [&:4. Add Quinoa | 00:01:00] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add [#: syr | maple syrup].
-5) Add the nuts to the quinoa. Top with a sprinkle of cinnamon.
-6) Top with [#: berr | fresh berries] and [#: almbut | almond butter].
+1) [&:1. Make quinoa | 00:15:00] Make the [#: quin | quinoa]: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 12 minutes. You can also do this the previous night.
+2) [&:2. Heat nuts | 00:04:00]  Add [#: oil | coconut oil] to a large pot and heat on medium until melted. Add the [#: nuts | nuts] and stir frequently until they smell fragrant, around 4-6 minutes.
+3) [&:3. Add cinnamon | 00:00:30] Add [#: cin | cinnamon] to the pot. Stir to mix with nuts until cinnamon becomes fragrant. About 15-30 seconds.
+4) [&:4. Add Quinoa | 00:01:00] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two (depending if you made the quinoa the night before). Remove from the burner and add [#: syr | maple syrup].
+5) Dish into bowls and top with [#: berr | fresh berries] and [#: almbut | almond butter].
 ** Content
 :PROPERTIES:
 :type: big-quote
