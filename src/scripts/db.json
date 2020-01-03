@@ -234,7 +234,7 @@
         },
         {
           "ingredient": "Bell Pepper (chopped)",
-          "quantity": "1/2/",
+          "quantity": "1/2",
           "unit": "cups",
           "id": "pepper-bell",
           "group": ""
@@ -1174,7 +1174,7 @@
         },
         {
           "ingredient": "Vegetable Broth",
-          "quantity": "1/2/",
+          "quantity": "1/2",
           "unit": "cup",
           "id": "veg-broth"
         },

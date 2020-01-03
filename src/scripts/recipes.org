@@ -99,7 +99,7 @@
 | Olive Oil                 |        1 | tbsp   | oil-olive       |       |
 | White onion (or: shallot) |     1/2  | cups   | onion-white     |       |
 | Garlic                    |        3 | cloves | garlic          |       |
-| Bell Pepper (chopped)     |     1/2/ | cups   | pepper-bell     |       |
+| Bell Pepper (chopped)     |     1/2 | cups   | pepper-bell     |       |
 | Diced tomatoes            |       28 | oz     | tomato-diced    |       |
 | Tomato paste              |        3 | tbsp   | tomato-paste    |       |
 | Olives                    |      1/4 | cups   | olives          |       |
@@ -487,7 +487,7 @@
 | Kimchi (chopped)          |        1 | cups  | kimchi       |
 | Kimchi (juice)            |      1/3 | cups  | kimchi-juice |
 | Gochujang                 |        2 | tbsp  | gochu        |
-| Vegetable Broth           |     1/2/ | cup   | veg-broth    |
+| Vegetable Broth           |     1/2 | cup   | veg-broth    |
 | Udon Noodles              |        1 | lb    | udon         |
 | Toasted Sesame Seeds      |        1 | tbsp  | sesa         |
 | Salt                      |        1 | pinch | salt         |
