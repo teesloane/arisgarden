@@ -423,6 +423,9 @@
     .time-string {
       align-self: center;
       display: flex;
+      align-self: center;
+      min-width: 40px;
+      justify-content: center;
     }
 
     .close-btn {
