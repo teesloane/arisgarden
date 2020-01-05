@@ -107,10 +107,6 @@ p {
     display: flex;
     letter-spacing: 1px;
     color: white;
-    border-right: 1px solid white;
-    @include at-size(mobile) {
-      border-right: none;
-    }
   }
 
   .links {
