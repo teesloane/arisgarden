@@ -1807,3 +1807,43 @@
 :type: whisper
 :END:
 - The original recipe calls for tomato paste, which I forgot to add. We thought it was fine.
+* Squash Linguine
+:PROPERTIES:
+:belongs_to: main
+:date_made: [2020-01-04]
+:ease_of_making: 4/5
+:imgs: ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type: vegan
+:name: Squash Linquine
+:original_recipe: https://cookieandkate.com/creamy-vegan-butternut-squash-linguine-with-fried-sage/
+:rating: 4/5
+:serves: 4
+:slug: squash-linguine
+:time: 01:00:00
+:END:
+** Ingredients
+| Ingredient        | Quantity | Unit   | Id      | Group |
+|-------------------+----------+--------+---------+-------|
+| Olive oil         |        2 | tbsp   | oil     |       |
+| Sage              |        1 | tbsp   | sage    |       |
+| Butternut squash  |        1 | medium | butsqua |       |
+| Yellow onion      |        1 | medium | y_on    |       |
+| Garlic            |        2 | cloves | gar     |       |
+| Red pepper flakes |      1/4 | tsp    | rpf     |       |
+| Vegetable broth   |        2 | cups   | veg_bro |       |
+| Linguine          |       12 | oz     | ling    |       |
+| Salt + Pepper     |          |        |         |       |
+** Steps
+ 1) Prep the veggies: Peel, de-seed, and chop the squash into 1/2 inch pieces. Chop the [#: y_on | yellow onion] and the [#: gar | garlic]. Finely chop the [#: sage | sage].
+ 2) [&: 2. Crisp sage | 00:05:00] Warm the oil in a large skillet. Once it’s shimmering, stir in the sage. Cook for about 5-8 minutes until it’s crispy, then set aside in a small bowl and sprinkle with salt.
+ 3) [&: 3. Cook squash + | 00:08:00] In the same skillet with the remaining olive oil, add the squash, onion, garlic and [#: rpf | red pepper flakes]. Season with salt and pepper. Cook and stir occasionally for 8-10 minutes until the onion is translucent.
+ 4) [&: 4. Simmer | 00:15:00] Add the [#: veg_bro | vegetable broth], and bring the mixture to a boil. Once boiling, reduce to a simmer and cook for 15-20 minutes.
+ 5) While the veggies cook, prepare the [#: ling | pasta]. Save 1 cup of the pasta water before you drain it.
+ 6) When the veggie mix is done cooking, allow it to cool a bit then transfer the contents to a blender. Blend until smooth.
+ 7) Add the pasta and purée back into the skillet and mix together over medium heat. If the purée is too thick, add some of the pasta water. Season with more salt and pepper if desired.
+ 8) Serve with the fried sage on top.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- The original recipe calls for tomato paste, which I forgot to add. We thought it was fine.
