@@ -57,10 +57,20 @@
 
   ul {
     list-style-type: none;
+    margin-left: 0;
     li {
-      padding: 4px;
+      padding: 4px 0;
       color: #333;
       font-weight: bold;
     }
+  }
+
+  .recipe-category {
+    text-transform: capitalize;
+    background: #dfdfdf;
+    padding: 4px;
+    font-family: $primary-sans;
+    font-weight: 100;
+    text-transform: uppercase;
   }
 }
