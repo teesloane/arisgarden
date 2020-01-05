@@ -1760,3 +1760,50 @@
 :type: whisper
 :END:
 - The lesser known of the stacks—the full stack, the waffle stack, the haystack &c; the breakfast stack really holds it's own. (ಥ﹏ಥ)
+* Chili #1
+:PROPERTIES:
+:belongs_to: main
+:date_made: [2020-01-04]
+:ease_of_making: 4/5
+:imgs: ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type: vegan
+:name: Chili #1
+:original_recipe: https://minimalistbaker.com/1-pot-red-lentil-chili/
+:rating: 3.5/5
+:serves: 4
+:slug: chili-1
+:time: 01:00:00
+:END:
+** Ingredients
+| Ingredient     | Quantity | Unit  | Id          | Group |
+|----------------+----------+-------+-------------+-------|
+| Coconut oil    |        2 | tbsp  | c_oil       |       |
+| Yellow onion   |        1 |       | y_on        |       |
+| Bell pepper    |        1 | diced | bellpepp    |       |
+| Jalapeno       |        1 | diced | jala        |       |
+| Garlic         |        4 |       | garl        |       |
+| Chili powder   |        3 | tbsp  | cpowd       |       |
+| Cumin          |        2 | tbsp  | cumin       |       |
+| Paprika        |        1 | tsp   | pap         |       |
+| Diced Tomatoes |       28 | oz    | diced_tomat |       |
+| Water          |      3/4 | cups  | water       |       |
+| Red lentils    |      3/4 | cups  | rlent       |       |
+| Kidney beans   |       15 | oz    | kidbean     |       |
+| Black beans    |       15 | oz    | blackbean   |       |
+| Rice or Quinoa |          |       |             |       |
+** Steps
+1) [&: 1. Sauté | 00:03:00] Heat a large pot or dutch oven on medium heat. When hot, add [#: c_oil |
+   coconut oil], [#: y_on | onion] and [#: bellpepp | bell pepper]. Sauté for
+   three or four minutes.
+2) Grind or blend [#: jala | jalapeno] and [#: garl | garlic] and add to the
+   pot. Stir. Add salt to taste.
+3) Now to add some of the spices: add 2t bsp of the chili powder into the pot and 1 tbsp of the cumin. Then add [#: pap | paprika], [#: diced_tomat | diced tomatoes] and [#: water | water]. Bring to a boil.
+4) [&: 4. Simmer | 00:15:00] Add lentils and reduce heat to a simmer. Cook for about 15 minutes.
+5) Make rice or quinoa for a base if you want to serve chili over it.
+6) [&: 5. Simmer more! | 00:20:00] Drain and add [#: kidbean | kidney beans] and [#: blackbean | black beans]. Add another 1 tbsp of chili powder. Cover and simmer for about 20 minutes.
+7) Serve chili. Garnish optionally with more jalapeno, or avocado.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- The original recipe calls for tomato paste, which I forgot to add. We thought it was fine.

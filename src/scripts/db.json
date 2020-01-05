@@ -4449,6 +4449,138 @@
           "The lesser known of the stacks—the full stack, the waffle stack, the haystack &c; the breakfast stack really holds it's own. (ಥ﹏ಥ)"
         ]
       }
+    },
+    "chili-1": {
+      "belongs_to": "main",
+      "date_made": "[2020-01-04]",
+      "ease_of_making": "4/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegan",
+      "name": "Chili #1",
+      "original_recipe": "https://minimalistbaker.com/1-pot-red-lentil-chili/",
+      "rating": "3.5/5",
+      "serves": "4",
+      "slug": "chili-1",
+      "time": "01:00:00",
+      "ingredients": [
+        {
+          "ingredient": "Coconut oil",
+          "quantity": "2",
+          "unit": "tbsp",
+          "id": "c_oil",
+          "group": ""
+        },
+        {
+          "ingredient": "Yellow onion",
+          "quantity": "1",
+          "unit": "",
+          "id": "y_on",
+          "group": ""
+        },
+        {
+          "ingredient": "Bell pepper",
+          "quantity": "1",
+          "unit": "diced",
+          "id": "bellpepp",
+          "group": ""
+        },
+        {
+          "ingredient": "Jalapeno",
+          "quantity": "1",
+          "unit": "diced",
+          "id": "jala",
+          "group": ""
+        },
+        {
+          "ingredient": "Garlic",
+          "quantity": "4",
+          "unit": "",
+          "id": "garl",
+          "group": ""
+        },
+        {
+          "ingredient": "Chili powder",
+          "quantity": "3",
+          "unit": "tbsp",
+          "id": "cpowd",
+          "group": ""
+        },
+        {
+          "ingredient": "Cumin",
+          "quantity": "2",
+          "unit": "tbsp",
+          "id": "cumin",
+          "group": ""
+        },
+        {
+          "ingredient": "Paprika",
+          "quantity": "1",
+          "unit": "tsp",
+          "id": "pap",
+          "group": ""
+        },
+        {
+          "ingredient": "Diced Tomatoes",
+          "quantity": "28",
+          "unit": "oz",
+          "id": "diced_tomat",
+          "group": ""
+        },
+        {
+          "ingredient": "Water",
+          "quantity": "3/4",
+          "unit": "cups",
+          "id": "water",
+          "group": ""
+        },
+        {
+          "ingredient": "Red lentils",
+          "quantity": "3/4",
+          "unit": "cups",
+          "id": "rlent",
+          "group": ""
+        },
+        {
+          "ingredient": "Kidney beans",
+          "quantity": "15",
+          "unit": "oz",
+          "id": "kidbean",
+          "group": ""
+        },
+        {
+          "ingredient": "Black beans",
+          "quantity": "15",
+          "unit": "oz",
+          "id": "blackbean",
+          "group": ""
+        },
+        {
+          "ingredient": "Rice or Quinoa",
+          "quantity": "",
+          "unit": "",
+          "id": "",
+          "group": ""
+        }
+      ],
+      "instructions": [
+        "[&: 1. Sauté | 00:03:00] Heat a large pot or dutch oven on medium heat. When hot, add [#: c_oil | coconut oil], [#: y_on | onion] and [#: bellpepp | bell pepper]. Sauté for three or four minutes.",
+        "Grind or blend [#: jala | jalapeno] and [#: garl | garlic] and add to the pot. Stir. Add salt to taste.",
+        "Now to add some of the spices: add 2t bsp of the chili powder into the pot and 1 tbsp of the cumin. Then add [#: pap | paprika], [#: diced_tomat | diced tomatoes] and [#: water | water]. Bring to a boil.",
+        "[&: 4. Simmer | 00:15:00] Add lentils and reduce heat to a simmer. Cook for about 15 minutes.",
+        "Make rice or quinoa for a base if you want to serve chili over it.",
+        "[&: 5. Simmer more! | 00:20:00] Drain and add [#: kidbean | kidney beans] and [#: blackbean | black beans]. Add another 1 tbsp of chili powder. Cover and simmer for about 20 minutes.",
+        "Serve chili. Garnish with more jalapeno, or avocado."
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "The original recipe calls for tomato paste, which I forgot to add. We thought it was fine."
+        ]
+      }
     }
   }
 }
