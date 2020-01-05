@@ -86,14 +86,19 @@ p {
   width: 100%;
   align-items: center;
   z-index: 2;
+  font-family: $primary-sans;
+  font-size: 13px;
+  text-transform: uppercase;
 
   .nav-container {
-    justify-content: space-between;
     width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     padding: 16px;
+    @include at-size(mobile) {
+      padding: 0;
+    }
   }
 
   .name-icon {
@@ -102,11 +107,16 @@ p {
     display: flex;
     letter-spacing: 1px;
     color: white;
+    border-right: 1px solid white;
+    @include at-size(mobile) {
+      border-right: none;
+    }
   }
 
   .links {
     display: flex;
     min-height: 42px;
+    background: #222;
   }
 
   .link {
@@ -115,6 +125,11 @@ p {
     letter-spacing: 1px;
     display: flex;
     cursor: pointer;
+    color: white;
+    transition: all 0.1s;
+    &:hover, &:active {
+      color: orange;
+    }
   }
 }
 
