@@ -88,3 +88,42 @@ cleanTime t =
 
     else
         t
+
+
+{-| Group elements together, using a custom comparison test. Start a new group each time the comparison test doesn't hold for two adjacent elements.
+    groupWhileTransitively (<) [1,2,3,2,4,1,3,2,1] == [[1,2,3],[2,4],[1,3],[2],[1]]
+    source: https://github.com/elm-community/list-extra/blob/7.1.0/src/List/Extra.elm#L1331
+
+-}
+groupWhileTransitively : (a -> a -> Bool) -> List a -> List (List a)
+groupWhileTransitively compare list =
+    groupWhileTransitivelyHelp [] [] compare list
+
+
+groupWhileTransitivelyHelp : List (List a) -> List a -> (a -> a -> Bool) -> List a -> List (List a)
+groupWhileTransitivelyHelp result currentGroup compare list =
+    case list of
+        [] ->
+            List.reverse <|
+                if List.isEmpty currentGroup then
+                    result
+                else
+                    List.reverse (currentGroup :: result)
+
+        [ x ] ->
+            List.reverse <|
+                (List.reverse (x :: currentGroup) :: result)
+
+        first :: ((second :: _) as rest) ->
+            if compare first second then
+                groupWhileTransitivelyHelp
+                    result
+                    (first :: currentGroup)
+                    compare
+                    rest
+            else
+                groupWhileTransitivelyHelp
+                    (List.reverse (first :: currentGroup) :: result)
+                    []
+                    compare
+                    rest

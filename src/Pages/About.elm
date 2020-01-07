@@ -14,18 +14,24 @@ aboutStr_2 =
 
 view =
     section [ class "About" ]
-        [ div [ class "content" ]
-            [ viewHero
-            , h2 [] [ text "What is Ari's Garden" ]
+        [ viewHero
+         , div [ class "content" ]
+            [
+             h2 [] [ text "What is Ari's Garden?" ]
             , p [] [ text "Ari's Garden is a site dedicated to cataloguing vegetarian recipes (both original and adapted) and providing tools to making cooking easier and more fun. " ]
-            , p [] [ text "Sally H. and Tyler S. started this project to move ourselves toward healthier eating and away from bad habits" ]
+            , p [] [ text "We started this project to move ourselves toward healthier eating and away from bad habits." ]
+            , p [] [ text "For adapted recipes, please get in touch if you would like them to be taken down; but please note that we do not monetize this site with ads or tracking and make sure to link back to the source materials." ]
             , h2 [] [ text "Who is Ari?" ]
             , p [] [ text aboutStr_1 ]
-            , img [ src <| "/imgs/_ari_1.png" ] []
+            , img [ src <| "/imgs/_aris_about.png" ] []
             , div [ class "about-str" ] [ text aboutStr_2 ]
-            , img [ src <| "/imgs/_ari_2.png" ] []
             , section [ class "about-text" ]
-                [ p [] [ text "" ]
+                [ p []
+                    [h2 [] [text "What machine?"]
+                     , span [] [ text "Ari's Garden is built in the Elm programming language. All of the code for this site is available on " ]
+                    , a [class "ext-link", href "https://github.com/theiceshelf/arisgarden"] [ text "Github." ]
+                    , span [] [ text " We are currently not accepting recipe contributions." ]
+                    ]
                 ]
             ]
         ]
@@ -33,6 +39,6 @@ view =
 
 viewHero =
     section [ class "about-hero" ]
-        [ div [ class "content" ]
+        [ div []
             [ div [ class "mainline" ] [ text "About" ] ]
         ]

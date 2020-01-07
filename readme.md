@@ -1,18 +1,29 @@
-# Ari's Garden
+![](src/assets/imgs/_ari_1.png)
 
-Ari's Garden is a site for collecting and displaying the journey of making and
+[Ari's Garden](https://arisgarden.theiceshelf.com/) is a site for collecting and displaying the journey of making and
 discovering food.
 
+Using Ari's Garden, you can find recipes and use dynamic features like tooltips
+and timers to help you cook.
 
 ## Building / Process 
 
-- Recipes are stored in `recipes.org`. All recipes must follow the same general schema.
-- `convert.js` is used to turn `recipes.org` into a javascript object in the
-  file `db.js`. (eventually, running this in-browser would be great, by
-  vendoring [orga-js](https://github.com/xiaoxinghu/orgajs))
-- Images for recipes can be resized to a consistent size using the _Automator_
-  workflow  `rename-images.workflow`
-- Images can be turned into gifs using `ImageMagick's` `mogrify` command:
+**Requirements**
+
+1. Elm 0.19.1
+2. Node >= 7.x.x
+
+**Steps to Getting Started**
+
+1. Clone the repo
+2. Run `npm install`
+3. Run `npm start`
+
+**Adding new recipes/images**
+
+- Recipes are stored in `src/scripts/recipes.org`. All recipes must follow the same general schema.
+- `convert.js` is used to turn `recipes.org` into `src/scripts/db.json`
+- sequences of images can be turned into gifs using `ImageMagick's` `mogrify` command:
 
 ```sh
 mogrify -resize 400 *.JPG
@@ -20,4 +31,5 @@ mogrify -resize 400 *.JPG
 convert -delay 5 -loop 0 *.JPG output.gif
 ```
   
+
 

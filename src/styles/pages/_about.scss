@@ -16,14 +16,23 @@
       }
     }
   }
+
+  .about-text {
+    border-top: 1px solid #afafaf;
+    margin-top: 32px;
+    padding: 12px 0;
+  }
+
   .content {
     max-width: 600px;
     padding: 0 64px;
     margin: 0 auto;
+    margin-bottom: 128px;
 
     @include at-size(mobile) {
       align-self: flex-end;
-      padding: 64px;
+      padding: 24px;
+    margin-bottom: 24px;
     }
   }
 
@@ -39,7 +48,7 @@
   img {
     display: flex;
     align-self: center;
-    max-width: 320px;
+    max-width: 100%;
     margin: 0 auto;
   }
 }

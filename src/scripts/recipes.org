@@ -6,7 +6,7 @@
 :belongs_to: breakfast
 :date_made: [2019-10-03]
 :ease_of_making: 5/5
-:imgs: []
+:imgs: ["1.jpg", "2.jpg", "3.jpg"]
 :meal_type: vegan
 :name: Breakfast Quinoa
 :original_recipe: https://cookieandkate.com/cinnamon-breakfast-quinoa-recipe/
@@ -27,12 +27,11 @@
 | Fresh berries     |          |                | berr   |
 | Almond butter     |          |                | almbut |
 ** Steps
-1) [&:1. Make quinoa | 00:15:00] Make the [#: quin | quinoa]: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 15 minutes
-2) [&:2. Heat nuts | 00:04:00] Heat chopped [#: nuts | nuts] in a saucepan. Stir frequently until they smell fragrant. Do it for 4-6 minutes.
-3) [&:3. Oil and spices | 00:00:15] Add [#: oil | coconut oil], [#: cin | cinnamon] to the pot. Stir frequently until coconut oil melts and cinnamon becomes fragrant. About 15 seconds.
-4) [&:4. Add Quinoa | 00:01:00] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two. Remove from the burner and add [#: syr | maple syrup].
-5) Add the nuts to the quinoa. Top with a sprinkle of cinnamon.
-6) Top with [#: berr | fresh berries] and [#: almbut | almond butter].
+1) [&:1. Make quinoa | 00:15:00] Make the [#: quin | quinoa]: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 12 minutes. You can also do this the previous night.
+2) [&:2. Heat nuts | 00:04:00]  Add [#: oil | coconut oil] to a large pot and heat on medium until melted. Add the [#: nuts | nuts] and stir frequently until they smell fragrant, around 4-6 minutes.
+3) [&:3. Add cinnamon | 00:00:30] Add [#: cin | cinnamon] to the pot. Stir to mix with nuts until cinnamon becomes fragrant. About 15-30 seconds.
+4) [&:4. Add Quinoa | 00:01:00] Add the quinoa to the pot and stir to combine. Cook, stirring constantly, until quinoa is warmed through. Should take a minute or two (depending if you made the quinoa the night before). Remove from the burner and add [#: syr | maple syrup].
+5) Dish into bowls and top with [#: berr | fresh berries] and [#: almbut | almond butter].
 ** Content
 :PROPERTIES:
 :type: big-quote
@@ -97,9 +96,9 @@
 | Ingredient                | Quantity | Unit   | Id              | Group |
 |---------------------------+----------+--------+-----------------+-------|
 | Olive Oil                 |        1 | tbsp   | oil-olive       |       |
-| White onion (or: shallot) |     1/2/ | cups   | onion-white     |       |
+| White onion (or: shallot) |     1/2  | cups   | onion-white     |       |
 | Garlic                    |        3 | cloves | garlic          |       |
-| Bell Pepper (chopped)     |     1/2/ | cups   | pepper-bell     |       |
+| Bell Pepper (chopped)     |     1/2 | cups   | pepper-bell     |       |
 | Diced tomatoes            |       28 | oz     | tomato-diced    |       |
 | Tomato paste              |        3 | tbsp   | tomato-paste    |       |
 | Olives                    |      1/4 | cups   | olives          |       |
@@ -487,7 +486,7 @@
 | Kimchi (chopped)          |        1 | cups  | kimchi       |
 | Kimchi (juice)            |      1/3 | cups  | kimchi-juice |
 | Gochujang                 |        2 | tbsp  | gochu        |
-| Vegetable Broth           |     1/2/ | cup   | veg-broth    |
+| Vegetable Broth           |     1/2 | cup   | veg-broth    |
 | Udon Noodles              |        1 | lb    | udon         |
 | Toasted Sesame Seeds      |        1 | tbsp  | sesa         |
 | Salt                      |        1 | pinch | salt         |
@@ -1537,7 +1536,7 @@
 | Olive oil     | 3        | tbsp     | oil2 | Dressing |
 ** Steps
 1) Preheat oven to 400F.
-2) Wash sweet potatoes. Cut in half lengthwise and slice into half-moon shapes. Toss in a bowl with [#: oil | olive oil] and add [#: sel | salt], pepper, and [#: pap | paprika].
+2) Wash sweet potatoes. Cut in half lengthwise and slice into half-moon or quarter-moon shapes. Toss in a bowl with [#: oil | olive oil] and add [#: sel | salt], pepper, and [#: pap | paprika].
 3) [&: Sweet Potatoes | 00:45:00] Roast sweet potatoes in oven, on a baking sheet or a oven-safe glass container for 45 minutes or until potatoes are tender.
 4) Make [#: base | base] (rice or quiona) according to package instructions.
 5) Drain [#: cp | chickpeas]. Put in a bowl and add [#: oil2 | olive oil] and salt and pepper. Stir.
@@ -1684,3 +1683,170 @@
 - No, it has to cool.
 - You have to cool.
 - I'm working on that too.
+* Kimchi Ramen
+:PROPERTIES:
+:belongs_to: main
+:date_made: [2019-12-29]
+:ease_of_making: 5/5
+:imgs: ["1.jpg", "2.jpg", "3.gif"]
+:meal_type: vegan
+:name: Kimchi Ramen
+:original_recipe:
+:rating: 5/5
+:serves: 4
+:slug: kimchi-ramen
+:time: 00:30:00
+:END:
+** Ingredients
+| Ingredient      | Quantity | Unit          | Id       | Group |
+|-----------------+----------+---------------+----------+-------|
+| coconut oil     |        1 | tbsp          | c_oil    |       |
+| Ginger          |        1 | tbsp (minced) | ginger   |       |
+| Red curry paste |        1 | tsp           | rcp      |       |
+| Leeks           |        2 | small         | leeks    |       |
+| Kale            |        1 | head          | kale     |       |
+| Vegetable broth |        4 | cups          | vegbroth |       |
+| Soy sauce       |        1 | tbsp          | soy      |       |
+| Instant ramen   |        2 | packs         | ramen    |       |
+| Miso            |        2 | tbsp          | miso     |       |
+| Kimchi          |        1 | cup (chopped) | kimchi   |       |
+| Sesame oil      |        1 | tsp           | s_oil    |       |
+| Mushrooms       |        1 | cup (halved)  | mush     |       |
+** Steps
+ 1) Prep the veggies. Slice the [#: leeks | leeks] into half moons (just the white and light-green part), de-stem the [#: kale | kale] and roughly rip/chop, halve the [#: mush | mushrooms] (if they are big).
+ 2) In a big pot, heat the [#: c_oil | coconut oil] on medium.
+ 3) Add the [#: ginger | minced ginger] and [#: rcp | curry paste] and stir for about 30 seconds.
+ 4) Add in the leeks, kale and mushrooms and cook until the kale starts wilting.
+ 5) Pour in the [#: vegbroth | broth] and [#: soy | soy sauce] and turn up the heat to medium-high.
+ 6) [&: Cook noodles | 00:03:00 ] When the soup is simmering add in the [#: ramen | instant noodles]. Cook the noodles for about 2-3 minutes or until they soften, then reduce the heat to low.
+ 7) Place [#: miso | miso] in a small bowl and add a few spoons of the soup to dissolve the miso. Once dissolved add the miso into the soup.
+ 8) Stir in the [#: kimchi | kimchi] and [#: s_oil | sesame oil]. Add salt to taste.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- Sprinkle a bit of sugar on the soup if the kimchi taste is too powerful.
+* Breakfast stack
+:PROPERTIES:
+:belongs_to: breakfast
+:date_made: [2019-12-29]
+:ease_of_making: 5/5
+:imgs: ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type: vegetarian
+:name: Breakfast stack
+:original_recipe:
+:rating: 4/5
+:serves: 4
+:slug: breakfast-stack
+:time: 00:15:00
+:END:
+** Ingredients
+| Ingredient   | Quantity | Unit    | Id      | Group |
+|--------------+----------+---------+---------+-------|
+| Sweet potato |        1 | large   | sp      |       |
+| Eggs         |        2 |         | egg     |       |
+| Tomato       |        1 | large   | tomat   |       |
+| Avocado      |        1 |         | avo     |       |
+| Olive oil    |        1 | tbsp    | oil     |       |
+| Salt+Pepper  |        2 | pinches | salt    |       |
+| Paprika      |        1 | tsp     | paprika |       |
+| Toaster      |          |         |         |       |
+** Steps
+1) Cut two large slices of sweet potato. Put them into the toaster on medium high. You will do this multiple times once it pops up.
+2) Boil some water for the poached egg.
+3) Slice two large pieces of tomato. Beefsteak or Heirloom work best. Salt the slices with a pinch of salt.
+4) Continue toasting the sweet potato until you can easily poke a fork through it with no resistance. The sides will likely be toasty brown. Once finished, drizzle lightlly with olive oil and add salt and pepper.
+5) [&: Poach eggs | 00:03:00 ] Once water is boiled for the eggs, add two capfuls of vinegar and then add the eggs. Poach for 3-4 minutes as per desired level of consistency.
+6) Assemble the breakfast stack! Place sweet potato as base, add tomato, then avocado, and finally the egg. Sprinkle with salt, pepper, and paprika.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- The lesser known of the stacks—the full stack, the waffle stack, the haystack &c; the breakfast stack really holds it's own. (ಥ﹏ಥ)
+* Chili #1
+:PROPERTIES:
+:belongs_to: main
+:date_made: [2020-01-04]
+:ease_of_making: 4/5
+:imgs: ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type: vegan
+:name: Chili #1
+:original_recipe: https://minimalistbaker.com/1-pot-red-lentil-chili/
+:rating: 3.5/5
+:serves: 4
+:slug: chili-1
+:time: 01:00:00
+:END:
+** Ingredients
+| Ingredient     | Quantity | Unit  | Id          | Group |
+|----------------+----------+-------+-------------+-------|
+| Coconut oil    |        2 | tbsp  | c_oil       |       |
+| Yellow onion   |        1 |       | y_on        |       |
+| Bell pepper    |        1 | diced | bellpepp    |       |
+| Jalapeno       |        1 | diced | jala        |       |
+| Garlic         |        4 |       | garl        |       |
+| Chili powder   |        3 | tbsp  | cpowd       |       |
+| Cumin          |        2 | tbsp  | cumin       |       |
+| Paprika        |        1 | tsp   | pap         |       |
+| Diced Tomatoes |       28 | oz    | diced_tomat |       |
+| Water          |      3/4 | cups  | water       |       |
+| Red lentils    |      3/4 | cups  | rlent       |       |
+| Kidney beans   |       15 | oz    | kidbean     |       |
+| Black beans    |       15 | oz    | blackbean   |       |
+| Rice or Quinoa |          |       |             |       |
+** Steps
+1) [&: 1. Sauté | 00:03:00] Heat a large pot or dutch oven on medium heat. When hot, add [#: c_oil |
+   coconut oil], [#: y_on | onion] and [#: bellpepp | bell pepper]. Sauté for
+   three or four minutes.
+2) Grind or blend [#: jala | jalapeno] and [#: garl | garlic] and add to the
+   pot. Stir. Add salt to taste.
+3) Now to add some of the spices: add 2t bsp of the chili powder into the pot and 1 tbsp of the cumin. Then add [#: pap | paprika], [#: diced_tomat | diced tomatoes] and [#: water | water]. Bring to a boil.
+4) [&: 4. Simmer | 00:15:00] Add lentils and reduce heat to a simmer. Cook for about 15 minutes.
+5) Make rice or quinoa for a base if you want to serve chili over it.
+6) [&: 5. Simmer more! | 00:20:00] Drain and add [#: kidbean | kidney beans] and [#: blackbean | black beans]. Add another 1 tbsp of chili powder. Cover and simmer for about 20 minutes.
+7) Serve chili. Garnish optionally with more jalapeno, or avocado.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- The original recipe calls for tomato paste, which I forgot to add. We thought it was fine.
+* Squash Linguine
+:PROPERTIES:
+:belongs_to: main
+:date_made: [2020-01-04]
+:ease_of_making: 4/5
+:imgs: ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type: vegan
+:name: Squash Linquine
+:original_recipe: https://cookieandkate.com/creamy-vegan-butternut-squash-linguine-with-fried-sage/
+:rating: 4/5
+:serves: 4
+:slug: squash-linguine
+:time: 01:00:00
+:END:
+** Ingredients
+| Ingredient        | Quantity | Unit   | Id      | Group |
+|-------------------+----------+--------+---------+-------|
+| Olive oil         |        2 | tbsp   | oil     |       |
+| Sage              |        1 | tbsp   | sage    |       |
+| Butternut squash  |        1 | medium | butsqua |       |
+| Yellow onion      |        1 | medium | y_on    |       |
+| Garlic            |        2 | cloves | gar     |       |
+| Red pepper flakes |      1/4 | tsp    | rpf     |       |
+| Vegetable broth   |        2 | cups   | veg_bro |       |
+| Linguine          |       12 | oz     | ling    |       |
+| Salt + Pepper     |          |        |         |       |
+** Steps
+ 1) Prep the veggies: Peel, de-seed, and chop the squash into 1/2 inch pieces. Chop the [#: y_on | yellow onion] and the [#: gar | garlic]. Finely chop the [#: sage | sage].
+ 2) [&: 2. Crisp sage | 00:05:00] Warm the oil in a large skillet. Once it’s shimmering, stir in the sage. Cook for about 5-8 minutes until it’s crispy, then set aside in a small bowl and sprinkle with salt.
+ 3) [&: 3. Cook squash + | 00:08:00] In the same skillet with the remaining olive oil, add the squash, onion, garlic and [#: rpf | red pepper flakes]. Season with salt and pepper. Cook and stir occasionally for 8-10 minutes until the onion is translucent.
+ 4) [&: 4. Simmer | 00:15:00] Add the [#: veg_bro | vegetable broth], and bring the mixture to a boil. Once boiling, reduce to a simmer and cook for 15-20 minutes.
+ 5) While the veggies cook, prepare the [#: ling | pasta]. Save 1 cup of the pasta water before you drain it.
+ 6) When the veggie mix is done cooking, allow it to cool a bit then transfer the contents to a blender. Blend until smooth.
+ 7) Add the pasta and purée back into the skillet and mix together over medium heat. If the purée is too thick, add some of the pasta water. Season with more salt and pepper if desired.
+ 8) Serve with the fried sage on top.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- The original recipe calls for tomato paste, which I forgot to add. We thought it was fine.

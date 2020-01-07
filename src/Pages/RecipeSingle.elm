@@ -1,7 +1,5 @@
 port module Pages.RecipeSingle exposing (..)
 
---import Types exposing (Msg(..))
-
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onClick)
@@ -18,13 +16,6 @@ type alias Model =
     { step : Int
     , timers : List Timer
     , recipe : Maybe Recipe
-    , modal : Modal
-    }
-
-
-type alias Modal =
-    { open : Bool
-    , content : Html RecipeSingleMsg
     }
 
 
@@ -77,8 +68,6 @@ type RecipeSingleMsg
     | TimerAdd Timer
     | TimerDelete Timer
     | TimerDec Posix
-    | ModalClose
-    | ModalOpen (Html RecipeSingleMsg)
 
 
 {-| init takes "recipes" because we currently handle them in a batch from flags.
@@ -89,18 +78,16 @@ init recipes recipeName =
     case recipes of
         Just recipes_ ->
             ( { step = 0
-              , timers = [ Timer "" "" 0 ] -- FIXME: remove need for "pseudo-maybe timer"
+              , timers = []
               , recipe = List.head (List.filter (\r -> r.slug == recipeName) recipes_)
-              , modal = Modal False (div [] [])
               }
             , Cmd.none
             )
 
         Nothing ->
             ( { step = 0
-              , timers = [ Timer "" "" 0 ] -- FIXME: remove need for "pseudo-maybe timer"
+              , timers = []
               , recipe = Nothing
-              , modal = Modal False (div [] [])
               }
             , Cmd.none
             )
@@ -111,7 +98,7 @@ init recipes recipeName =
 
 
 type alias InstructionParsed =
-    { timer : Timer
+    { timer : Maybe Timer
     , chunks : List InstructionChunk
     }
 
@@ -144,23 +131,23 @@ parseTimer =
             |> andThen
                 (\res ->
                     succeed <|
-                        { res
-                            | step = String.trim res.step
-                            , time = Util.strToSec res.timeString
-                        }
+                        Just
+                            { res
+                                | step = String.trim res.step
+                                , time = Util.strToSec res.timeString
+                            }
                 )
-        , succeed Timer
-            |= succeed ""
-            |= succeed ""
-            |= succeed 0
+        , succeed Nothing
         ]
 
 
-parseChunk =
-    Parser.loop [] parseChunkHelp
+{-| And now the nightmare I don't even remember writing...
+-}
+parseChunks =
+    Parser.loop [] parseChunksHelp
 
 
-parseChunkHelp revStmts =
+parseChunksHelp revStmts =
     oneOf
         [ succeed (\stmt -> Loop (stmt :: revStmts))
             |= parseIngredientChunk
@@ -236,7 +223,7 @@ parseEverything : Parser InstructionParsed
 parseEverything =
     succeed InstructionParsed
         |= parseTimer
-        |= parseChunk
+        |= parseChunks
 
 
 runParser str =
@@ -331,22 +318,12 @@ update msg model =
         TimerDec _ ->
             let
                 timeDec t =
-                    Util.tern (t.time > 0) (t.time - 1) t.time
+                    Util.tern (t.time >= 0) (t.time - 1) t.time
 
                 u_timers =
                     List.map (\t -> { t | time = timeDec t }) model.timers
             in
             ( { model | timers = u_timers }, playSound model.timers )
-
-        ModalClose ->
-            ( { model | modal = Modal False (div [] []) }, Cmd.none )
-
-        ModalOpen markup ->
-            let
-                newModal =
-                    Modal True markup
-            in
-            ( { model | modal = newModal }, Cmd.none )
 
 
 
@@ -373,7 +350,7 @@ viewHero recipe =
             , { el = li [] [ text <| "Time: " ++ Util.cleanTime recipe.time ], show = True }
             , { el = li [] [ text <| mealType recipe.meal_type ], show = True }
             , { el = li [] [ text <| "Rating: " ++ recipe.rating ], show = True }
-            , { el = li [] [ a [ class "link", target "_blank", href recipe.original_recipe ] [ text "Source →" ] ], show = not <| String.isEmpty recipe.original_recipe }
+            , { el = li [] [ a [ class "link", target "_blank", href recipe.original_recipe ] [ text "Inspiration →" ] ], show = not <| String.isEmpty recipe.original_recipe }
             ]
     in
     section
@@ -394,7 +371,7 @@ viewTimers : List Timer -> Html RecipeSingleMsg
 viewTimers timers =
     let
         filteredTimers =
-            List.filter (\t -> t.time > 0) timers
+            List.filter (\t -> t.time >= 0) timers
 
         timerMarkup t =
             div [ class "timer" ]
@@ -430,19 +407,19 @@ viewImages recipe =
 
 {-| viewInstructions does a few things:
 
-  - Parse and display a recipe's instructions.
+  - Parse and display a recipe's instructions (with tooltips).
   - Handle rendering the timer and active step.
   - Handle creation of timers.
   - FIXME: rename :"chunk"
-  - FIXME: don't nest let blocks if possible.
 
 -}
 viewInstructions : Model -> Recipe -> Html RecipeSingleMsg
 viewInstructions model recipe =
     let
-        timerExists chunk =
-            not <| List.any (\n -> n.step == chunk.timer.step) model.timers
+        timerExistsInModel timer =
+            not <| List.any (\n -> n.step == timer.step) model.timers
 
+        -- takes parsed ingredient chunk and gets the quantity from the recipe ingredients.
         getIngredientQuantity chunk =
             let
                 ingr =
@@ -453,49 +430,47 @@ viewInstructions model recipe =
             in
             case val of
                 Just v ->
-                    ( v.quantity ++ " " ++ v.unit
-                    , div []
-                        [ h1 [] [ text <| v.quantity ++ " " ++ v.unit ]
-                        , h4 [] [ text <| v.ingredient ]
-                        ]
-                    )
+                    v.quantity ++ " " ++ v.unit
 
                 Nothing ->
-                    ( "", div [] [] )
+                    ""
 
-        buildInstructions parsedInstructions =
-            let
-                makeTimer chunk =
-                    if timerExists chunk then
-                        div [ class "timer-icon", onClick (TimerAdd chunk.timer) ] []
+        -- renders a clickable "create timer" button. Handles case where no timer exists for the expr.
+        buildTimerBtn parsedInstructions =
+            case parsedInstructions.timer of
+                Just timer ->
+                    if timerExistsInModel timer then
+                        div [ class "timer-icon", onClick (TimerAdd timer) ] []
 
                     else
                         div [ class "timer-null" ] []
 
-                getToolTip i =
-                    Tuple.first <| getIngredientQuantity i
+                Nothing ->
+                    span [ class "timer-null" ] []
 
-                htmlModal i =
-                    Tuple.second <| getIngredientQuantity i
+        buildInstructionWithTooltips instructionChunk =
+            if String.isEmpty instructionChunk.id then
+                span [] [ text instructionChunk.val ]
 
-                makeInstruction i =
-                    if String.isEmpty i.id then
-                        span [] [ text i.val ]
+            else
+                span
+                    [ class "parsed-ingredient" ]
+                    [ span
+                        [ class "tooltipped tooltipped-n", attribute "aria-label" <| getIngredientQuantity instructionChunk ]
+                        [ text instructionChunk.val ]
+                    ]
 
-                    else
-                        span
-                            [ class "parsed-ingredient", onClick (ModalOpen <| htmlModal i) ]
-                            [ span [ class "tooltipped tooltipped-n", attribute "aria-label" <| getToolTip i ] [ text i.val ] ]
-            in
-            case parsedInstructions of
+        buildInstructions maybeParsedInstructions =
+            case maybeParsedInstructions of
                 Ok c ->
                     div [ class "instruction-and-timer" ]
-                        [ div [ class "instruction-compiled" ] (List.map makeInstruction c.chunks)
-                        , makeTimer c
+                        [ div [ class "instruction-compiled" ] (List.map buildInstructionWithTooltips c.chunks)
+                        , buildTimerBtn c
                         ]
 
                 Err _ ->
-                    div [] [ text "Missing step" ]
+                    -- In which the parser has failed to parse something.
+                    div [] [ text "Parser failed: Incorrectly formatted instruction!" ]
 
         mapInstructions index el =
             let
@@ -558,7 +533,6 @@ view model =
         Just recipe ->
             section [ class "RecipeSingle" ]
                 [ viewHero recipe
-                , viewModal model.modal
                 , section [ class "container" ]
                     [ viewIngrAndInstr recipe
                     , viewImages recipe
@@ -618,30 +592,13 @@ viewHr char =
         ]
 
 
-viewModal modal =
-    if modal.open then
-        div [ class "modal" ]
-            [ div [ class "content" ]
-                [ div [ class "sidebar", onClick ModalClose ]
-                    [ span [ class "close" ]
-                        [ text "×" ]
-                    ]
-                , div [ class "body" ]
-                    [ modal.content ]
-                ]
-            ]
-
-    else
-        div [ class "modal-closed" ] []
-
-
 
 -- SUBS & PORTS ----------------------------------------------------------------
 
 
 timersRunning : List Timer -> Bool
 timersRunning timers =
-    List.any (\t -> t.time > 0) timers
+    List.any (\t -> t.time >= 0) timers
 
 
 subscriptions : Model -> Sub RecipeSingleMsg
