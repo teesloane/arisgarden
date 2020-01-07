@@ -986,9 +986,12 @@
 1) Preheat oven to 400 degrees. Line a large baking sheet with foil.
 2) Rinse potatoes and cut in half. Coat sweet potatoes with olive oil and put
    them face down on the foil.
-3) Drain [#: chick | chickpeas]. Toss in [#: oil | olive oil]. Add spices. 1/2
-   tsp of: cumin, coriander, cinnamon, smoked paprika.
-4) [&: Roast potatoes and chickpeas | 00:45:00] Put potato and chickpeas in the oven.
+3) Drain [#: chick | chickpeas] and add to a large bowl. Toss in [#: oil | olive
+   oil]. Add spices: [#: cumin | cumin], [#: cor | coriander], [#: cin |
+   cinnamon], and [#: pap | smoked paprika].
+4) [&: Roast potatoes and chickpeas | 00:45:00] Put potato and chickpeas in the
+   oven for about 45 minutes. Consider checking in after a half hour; sweet
+   potato is done when easily poked through with a knife or fork.
 5) Create the sauce while things are in the oven. Mix: [#: hum | hummus], [#: lem | lemon juice], [#:
    garlic | garlic], [#: dill | dill] water and salt.
 6) Chop [#: tomat | tomatoes] and [#: cil | cilantro] and put in a bowl with [#:
