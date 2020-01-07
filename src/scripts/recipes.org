@@ -1472,9 +1472,10 @@
 | Maple syrup             |        1 | tbsp                     | syr       | Peanut Sauce |
 | Garlic                  |        2 | cloves (minced)          | gar       | Peanut Sauce |
 | Red Pepper Flakes       |      1/4 | tsp                      | rpf       | Peanut Sauce |
-| Sesame oil              |        2 | tsp                      | sesoili   | Peanut Sauce |
+| Sesame oil              |        2 | tsp                      | sesoil    | Peanut Sauce |
 | Mango                   |        2 | diced                    | mang      | Mango Salsa  |
 | Bell pepper             |        1 | chopped                  | bell      | Mango Salsa  |
+| Cilantro                |      1/4 | cups                     | cil       | Mango Salsa  |
 | Green onions            |        2 | cups (sliced)            | goni      | Mango Salsa  |
 | Jalapeno                |        1 | seeds removed and minced | jal       | Mango Salsa  |
 | Sea salt                |      1/4 | tsp                      | ssal      | Mango Salsa  |
@@ -1489,11 +1490,10 @@
 5) Put cut tofu into a bowl and marinade it: olive oil, soy sauce, and sprinkle
    with starch until tofu is evenly coated.
 6) [&: Bake tofu | 00:30:00] Put tofu in the oven for 25 to 30 minutes until golden on the edges.
-7) Prepare the peanut sauce: mix Peanut butter, 3 tbsp of squeezed lime juice,
-   soy sauce, maple syrup, sesame oil, garlic and red pepper flakes. Stir. Thin
-   with water if needed.
-8) Prepare the salsa. In a mixing bowl, combine: mango, bell pepper, onion,
-   jalapeno, lime juice, salt and cilantro. Stir.
+7) Prepare the peanut sauce: mix [#: pb | peanut butter], 3 tbsp of squeezed lime juice, [#: soy | soy sauce], [#: syr | maple syrup ], [#:sesoil | sesame oil], [#: gar | garlic ] and [#: rpf | red pepper flakes ]. Stir. Thin with water if needed.
+8) Prepare the salsa. In a mixing bowl, combine: [#: mang | mango], [#: bell |
+   bell pepper], [#: goni | onion ], [#: jal | jalapeno ], lime juice (2 tbsp),
+   salt and [#: cil | cilantro]. Stir.
 9) Prepare your bowl: add rice first, then a handful of the shredded cabbage,
    then salsa, then tofu, then drizzel with peanut sauce.
 ** Content

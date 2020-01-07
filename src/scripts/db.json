@@ -3714,7 +3714,7 @@
           "ingredient": "Sesame oil",
           "quantity": "2",
           "unit": "tsp",
-          "id": "sesoili",
+          "id": "sesoil",
           "group": "Peanut Sauce"
         },
         {
@@ -3729,6 +3729,13 @@
           "quantity": "1",
           "unit": "chopped",
           "id": "bell",
+          "group": "Mango Salsa"
+        },
+        {
+          "ingredient": "Cilantro",
+          "quantity": "1/4",
+          "unit": "cups",
+          "id": "cil",
           "group": "Mango Salsa"
         },
         {
@@ -3767,8 +3774,8 @@
         "Bring a large pot of water to boil and cook the rice according to package instruction. Remember, brown rice takes longer than most other rices.",
         "Put cut tofu into a bowl and marinade it: olive oil, soy sauce, and sprinkle with starch until tofu is evenly coated.",
         "[&: Bake tofu | 00:30:00] Put tofu in the oven for 25 to 30 minutes until golden on the edges.",
-        "Prepare the peanut sauce: mix Peanut butter, 3 tbsp of squeezed lime juice, soy sauce, maple syrup, sesame oil, garlic and red pepper flakes. Stir. Thin with water if needed.",
-        "Prepare the salsa. In a mixing bowl, combine: mango, bell pepper, onion, jalapeno, lime juice, salt and cilantro. Stir.",
+        "Prepare the peanut sauce: mix [#: pb | peanut butter], 3 tbsp of squeezed lime juice, [#: soy | soy sauce], [#: syr | maple syrup ], [#:sesoil | sesame oil], [#: gar | garlic ] and [#: rpf | red pepper flakes ]. Stir. Thin with water if needed.",
+        "Prepare the salsa. In a mixing bowl, combine: [#: mang | mango], [#: bell | bell pepper], [#: goni | onion ], [#: jal | jalapeno ], lime juice (2 tbsp), salt and [#: cil | cilantro]. Stir.",
         "Prepare your bowl: add rice first, then a handful of the shredded cabbage, then salsa, then tofu, then drizzel with peanut sauce."
       ],
       "commentary": {
