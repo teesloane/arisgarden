@@ -1,5 +1,4 @@
 #+TITLE: RECIPES
-#+RECIPE_COUNT: 28
 #+CATEGORIES: '(breakfast salad main sweet snack soup side)
 * Breakfast Quinoa
 :PROPERTIES:
@@ -947,18 +946,18 @@
 :END:
 - Come look at this. Look at this beautiful thing!
 - We have like, 10 photos of people holding the pie.
-* Mediterranean Baked Sweet Potatoes
+* Mediterranean Sweet Potatoes
 :PROPERTIES:
 :belongs_to: main
 :date_made: [2019-11-11]
 :ease_of_making: 5/5
 :imgs: ["1.JPG", "2.JPG", "3.JPG"]
 :meal_type: vegan
-:name: Mediterranean Baked Sweet Potatoes
+:name: Mediterranean Sweet Potatoes
 :original_recipe: https://minimalistbaker.com/mediterranean-baked-sweet-potatoes/
 :rating: 5/5
 :serves: 2
-:slug: mediterranean-baked-sweet-potatoes
+:slug: mediterranean-sweet-potatoes
 :time: 01:00:00
 :END:
 ** Ingredients
@@ -996,11 +995,9 @@
    sauce, and cilantro and tomatoes. Serve quickly!
 ** Content
 :PROPERTIES:
-:type: haiku
+:type: big-quote
 :END:
-- Searching through aisles
-- For dried dill and wondering
-- What dried dill looks like.
+- This is a hard meal to photograph. Tastes better than it looks.
 * Chickpea cauliflower curry
 :PROPERTIES:
 :belongs_to: main
