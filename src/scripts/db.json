@@ -2340,7 +2340,7 @@
         ]
       }
     },
-    "mediterranean-baked-sweet-potatoes": {
+    "mediterranean-sweet-potatoes": {
       "belongs_to": "main",
       "date_made": "[2019-11-11]",
       "ease_of_making": "5/5",
@@ -2350,11 +2350,11 @@
         "3.JPG"
       ],
       "meal_type": "vegan",
-      "name": "Mediterranean Baked Sweet Potatoes",
+      "name": "Mediterranean Sweet Potatoes",
       "original_recipe": "https://minimalistbaker.com/mediterranean-baked-sweet-potatoes/",
       "rating": "5/5",
       "serves": "2",
-      "slug": "mediterranean-baked-sweet-potatoes",
+      "slug": "mediterranean-sweet-potatoes",
       "time": "01:00:00",
       "ingredients": [
         {
@@ -2487,11 +2487,9 @@
         "Serve up: take out potatoes, and mash them open a bit. Top with roasted chickpeas, sauce, and cilantro and tomatoes. Serve quickly!"
       ],
       "commentary": {
-        "kind": "haiku",
+        "kind": "big-quote",
         "val": [
-          "Searching through aisles",
-          "For dried dill and wondering",
-          "What dried dill looks like."
+          "This is a hard meal to photograph. Tastes better than it looks."
         ]
       }
     },
