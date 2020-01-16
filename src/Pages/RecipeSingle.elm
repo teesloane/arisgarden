@@ -491,7 +491,7 @@ viewInstructions model recipe =
                 ]
                 [ stepText ]
     in
-    section [ class "instr-ingr-section", style "flex" "1.5" ]
+    section [ class "instr-ingr-section Instructions", style "flex" "1.5" ]
         [ Ui.sectionHeading "Instructions"
         , div [ class "instructions-group" ]
             (List.indexedMap mapInstructions recipe.instructions)

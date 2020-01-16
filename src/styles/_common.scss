@@ -142,10 +142,13 @@ p {
 
 // Elm Ui Classes --------------------------------------------------------------
 
-.section_heading {
+.section-heading {
   color: $off-black;
   font-family: $primary-serif;
   font-size: 1.8em;
   text-align: center;
   margin-bottom: $section-bottom / 2;
+  @include at-size(mobile) {
+    margin: 24px 0;
+  }
 }

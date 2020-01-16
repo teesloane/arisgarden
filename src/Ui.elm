@@ -5,7 +5,7 @@ import Html.Attributes exposing (..)
 
 
 sectionHeading content =
-    h2 [ class "section_heading" ] [ text content ]
+    h2 [ class "section-heading" ] [ text content ]
 
 
 icon name width height =
