@@ -2480,8 +2480,8 @@
       "instructions": [
         "Preheat oven to 400 degrees. Line a large baking sheet with foil.",
         "Rinse potatoes and cut in half. Coat sweet potatoes with olive oil and put them face down on the foil.",
-        "Drain [#: chick | chickpeas]. Toss in [#: oil | olive oil]. Add spices. 1/2 tsp of: cumin, coriander, cinnamon, smoked paprika.",
-        "[&: Roast potatoes and chickpeas | 00:45:00] Put potato and chickpeas in the oven.",
+        "Drain [#: chick | chickpeas] and add to a large bowl. Toss in [#: oil | olive oil]. Add spices: [#: cumin | cumin], [#: cor | coriander], [#: cin | cinnamon], and [#: pap | smoked paprika].",
+        "[&: Roast potatoes and chickpeas | 00:45:00] Put potato and chickpeas in the oven for about 45 minutes. Consider checking in after a half hour; sweet potato is done when easily poked through with a knife or fork.",
         "Create the sauce while things are in the oven. Mix: [#: hum | hummus], [#: lem | lemon juice], [#: garlic | garlic], [#: dill | dill] water and salt.",
         "Chop [#: tomat | tomatoes] and [#: cil | cilantro] and put in a bowl with [#: lemju | lemon juice]. Let it sit and marinade.",
         "Serve up: take out potatoes, and mash them open a bit. Top with roasted chickpeas, sauce, and cilantro and tomatoes. Serve quickly!"
@@ -3712,7 +3712,7 @@
           "ingredient": "Sesame oil",
           "quantity": "2",
           "unit": "tsp",
-          "id": "sesoili",
+          "id": "sesoil",
           "group": "Peanut Sauce"
         },
         {
@@ -3727,6 +3727,13 @@
           "quantity": "1",
           "unit": "chopped",
           "id": "bell",
+          "group": "Mango Salsa"
+        },
+        {
+          "ingredient": "Cilantro",
+          "quantity": "1/4",
+          "unit": "cups",
+          "id": "cil",
           "group": "Mango Salsa"
         },
         {
@@ -3765,8 +3772,8 @@
         "Bring a large pot of water to boil and cook the rice according to package instruction. Remember, brown rice takes longer than most other rices.",
         "Put cut tofu into a bowl and marinade it: olive oil, soy sauce, and sprinkle with starch until tofu is evenly coated.",
         "[&: Bake tofu | 00:30:00] Put tofu in the oven for 25 to 30 minutes until golden on the edges.",
-        "Prepare the peanut sauce: mix Peanut butter, 3 tbsp of squeezed lime juice, soy sauce, maple syrup, sesame oil, garlic and red pepper flakes. Stir. Thin with water if needed.",
-        "Prepare the salsa. In a mixing bowl, combine: mango, bell pepper, onion, jalapeno, lime juice, salt and cilantro. Stir.",
+        "Prepare the peanut sauce: mix [#: pb | peanut butter], 3 tbsp of squeezed lime juice, [#: soy | soy sauce], [#: syr | maple syrup ], [#:sesoil | sesame oil], [#: gar | garlic ] and [#: rpf | red pepper flakes ]. Stir. Thin with water if needed.",
+        "Prepare the salsa. In a mixing bowl, combine: [#: mang | mango], [#: bell | bell pepper], [#: goni | onion ], [#: jal | jalapeno ], lime juice (2 tbsp), salt and [#: cil | cilantro]. Stir.",
         "Prepare your bowl: add rice first, then a handful of the shredded cabbage, then salsa, then tofu, then drizzel with peanut sauce."
       ],
       "commentary": {
