@@ -222,23 +222,23 @@
           "group": ""
         },
         {
-          "ingredient": "White onion (or: shallot)",
+          "ingredient": "White onion",
           "quantity": "1/2",
-          "unit": "cups",
+          "unit": "cups (diced)",
           "id": "onion-white",
           "group": ""
         },
         {
           "ingredient": "Garlic",
           "quantity": "3",
-          "unit": "cloves",
+          "unit": "cloves (diced)",
           "id": "garlic",
           "group": ""
         },
         {
-          "ingredient": "Bell Pepper (chopped)",
+          "ingredient": "Bell Pepper",
           "quantity": "1/2",
-          "unit": "cups",
+          "unit": "cups (chopped)",
           "id": "pepper-bell",
           "group": ""
         },

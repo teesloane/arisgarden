@@ -92,22 +92,22 @@
 :time: 01:00:00
 :END:
 ** Ingredients
-| Ingredient                | Quantity | Unit   | Id              | Group |
-|---------------------------+----------+--------+-----------------+-------|
-| Olive Oil                 |        1 | tbsp   | oil-olive       |       |
-| White onion (or: shallot) |     1/2  | cups   | onion-white     |       |
-| Garlic                    |        3 | cloves | garlic          |       |
-| Bell Pepper (chopped)     |     1/2 | cups   | pepper-bell     |       |
-| Diced tomatoes            |       28 | oz     | tomato-diced    |       |
-| Tomato paste              |        3 | tbsp   | tomato-paste    |       |
-| Olives                    |      1/4 | cups   | olives          |       |
-| Maple syrup               |        1 | tbsp   | maple-syrup     |       |
-| Ground cumin              |        1 | tsp    | cumin-ground    |       |
-| Paprika                   |        1 | tsp    | paprika         |       |
-| Chili powder              |        2 | tsp    | chili-powder    |       |
-| Ground cinnamon           |      1/4 | tsp    | cinnamon-ground |       |
-| Chickpeas                 |       24 | oz     | chickpeas       |       |
-| Sea Salt                  |        1 | pinch  | salt-sea        |       |
+| Ingredient      | Quantity | Unit           | Id              | Group |
+|-----------------+----------+----------------+-----------------+-------|
+| Olive Oil       |        1 | tbsp           | oil-olive       |       |
+| White onion     |      1/2 | cups (diced)   | onion-white     |       |
+| Garlic          |        3 | cloves (diced) | garlic          |       |
+| Bell Pepper     |      1/2 | cups (chopped) | pepper-bell     |       |
+| Diced tomatoes  |       28 | oz             | tomato-diced    |       |
+| Tomato paste    |        3 | tbsp           | tomato-paste    |       |
+| Olives          |      1/4 | cups           | olives          |       |
+| Maple syrup     |        1 | tbsp           | maple-syrup     |       |
+| Ground cumin    |        1 | tsp            | cumin-ground    |       |
+| Paprika         |        1 | tsp            | paprika         |       |
+| Chili powder    |        2 | tsp            | chili-powder    |       |
+| Ground cinnamon |      1/4 | tsp            | cinnamon-ground |       |
+| Chickpeas       |       24 | oz             | chickpeas       |       |
+| Sea Salt        |        1 | pinch          | salt-sea        |       |
 ** Steps
 1) Heat a large metal or cast iron skilled on medium heat.
 2) [&: 2. Sauté vegetables | 00:04:00] When hot, add [#: oil-olive | olive oil ], [#: onion-white | onion], [#: pepper-bell | bell pepper] and [#: garlic | garlic]. Saute for 4-5 minutes, stirring frequently.
