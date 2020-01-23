@@ -57,8 +57,8 @@
 | Diced vegetables (Carrots, Potatoes, Broccoli etc) |        4 | cups  | vegetables-misc  |       |
 | Uncooked red lentils                               |      1/2 | cups  | lentils-red      |       |
 | Water                                              |      1/2 | cups  | water            |       |
-| Diced tomato (1 can or fresh)                      |       14 | oz    | tomato-diced-can |       |
-| Coconut milk (1 can)                               |       14 | oz    | milk-coconut     |       |
+| Diced tomato                                       |       14 | oz    | tomato-diced-can |       |
+| Coconut milk                                       |       14 | oz    | milk-coconut     |       |
 | Garlic powder                                      |      1.5 | tsp   | powder-garlic    |       |
 | Minced onion                                       |      1.5 | tsp   | onion-minced     |       |
 | Curry powder                                       |        1 | tbsp  | powder-curry     |       |
