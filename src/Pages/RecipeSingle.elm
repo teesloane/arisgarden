@@ -94,7 +94,7 @@ init recipes recipeName =
 
 
 
--- PARSER --------------------------------------------------------------------------------------------------------------
+-- PARSER ----------------------------------------------------------------------------------
 
 
 type alias InstructionParsed =
@@ -339,8 +339,10 @@ viewHero recipe =
         gradient =
             "linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%)"
 
+        -- finalStyle =
+        --     gradient ++ ", " ++ url
         finalStyle =
-            gradient ++ ", " ++ url
+            url
 
         recipeName =
             div [ class "vh-recipe-name" ] [ text recipe.name ]
@@ -353,15 +355,25 @@ viewHero recipe =
             , { el = li [] [ a [ class "link", target "_blank", href recipe.original_recipe ] [ text "Inspiration →" ] ], show = not <| String.isEmpty recipe.original_recipe }
             ]
     in
-    section
-        [ class "viewHero", style "background-image" finalStyle ]
-        [ div [ class "vh-container" ]
-            [ recipeName
-            , ul [ class "vh-metadata" ] <|
-                List.map
-                    (\a -> a.el)
-                    (List.filter (\n -> n.show) links)
+        section [ class "viewHero", style "background-image" finalStyle ] []
+
+
+viewMetadata recipe =
+    let
+        links =
+            [ { el = li [] [ text <| "Serves: " ++ recipe.serves ], show = True }
+            , { el = li [] [ text <| "Time: " ++ Util.cleanTime recipe.time ], show = True }
+            , { el = li [] [ text <| mealType recipe.meal_type ], show = True }
+            , { el = li [] [ text <| "Rating: " ++ recipe.rating ], show = True }
+            , { el = li [] [ a [ class "link", target "_blank", href recipe.original_recipe ] [ text "Inspiration →" ] ], show = not <| String.isEmpty recipe.original_recipe }
             ]
+    in
+    div [ class "view-metadata" ]
+        [ h1 [] [ text recipe.name ]
+        , ul [ class "vh-metadata" ] <|
+            List.map
+                (\a -> a.el)
+                (List.filter (\n -> n.show) links)
         ]
 
 
@@ -510,7 +522,7 @@ viewIngredients recipe =
                     ]
                 ]
     in
-    section [ class "instr-ingr-section" ]
+    section [ class "instr-ingr-section Ingredients" ]
         [ Ui.sectionHeading "Ingredients"
         , div [ class "ingredients" ]
             [ div [ class "instructions-list" ] (List.map mapIngr recipe.ingredients)
@@ -534,7 +546,8 @@ view model =
             section [ class "RecipeSingle" ]
                 [ viewHero recipe
                 , section [ class "container" ]
-                    [ viewIngrAndInstr recipe
+                    [ viewMetadata recipe
+                    , viewIngrAndInstr recipe
                     , viewImages recipe
                     , viewCommentary recipe.commentary
                     ]

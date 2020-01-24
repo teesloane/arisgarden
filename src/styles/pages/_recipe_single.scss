@@ -1,43 +1,33 @@
 .RecipeSingle {
   // -- &:HERO
 
-  .viewHero {
-    min-height: $heroSize;
-    font-family: $primary-sans, Arial;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    background-size: cover;
+  }
 
-    background-repeat: no-repeat;
+  .viewHero {
+    align-items: center;
     background-position: center;
-    margin-bottom: $section-bottom / 2;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
+    display: flex;
+    font-family: $primary-sans, Arial;
+    justify-content: center;
+    margin-bottom: $section-bottom / 2;
+    height: 600px;
+    position: relative;
+    margin: 48px auto;
+    padding: 0 24px;
+    max-width: 1152px;
+
 
     @include at-size(mobile) {
+      margin: 0;
       margin-bottom: 24px;
-    }
-
-    .vh-container {
-      font-size: $font-h3;
+      height: 300px;
       width: 100%;
-      max-width: $tablet;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      padding: 0 32px;
-      color: white;
+      padding: 0;
     }
 
-    .link {
-      color: white;
-      &:hover {
-        color: orange;
-      }
-    }
 
     .vh-recipe-name {
       font-size: $font-h2;
@@ -56,11 +46,35 @@
       }
     }
 
+  }
+
+  .view-metadata {
+    margin: 24px 0 128px;
+    border-bottom: 2px solid #333;
+
+    @include at-size(mobile) {
+      margin: 0px 0 96px;
+    }
+    h1 {
+      font-size: 48px;
+      @include at-size(mobile) {
+        margin-bottom: 16px;
+        font-size: 24px;
+
+      }
+    }
+
+    .link {
+      &:hover {
+        color: orange;
+      }
+    }
+    
     .vh-metadata {
       font-size: 18px;
       list-style-type: none;
       display: flex;
-      margin: 0;
+      margin: 0 0 8px 0;
       justify-content: space-between;
 
       @include at-size(mobile) {
@@ -68,6 +82,8 @@
         font-size: $font-h5;
       }
     }
+
+
   }
 
   .delta-hr {
@@ -98,7 +114,7 @@
 
   .photos {
     display: flex;
-    margin: 0px 16px $section-bottom;
+    margin: 0px 0px $section-bottom;
     align-items: center;
     justify-content: space-around;
 
@@ -150,6 +166,7 @@
       margin: 0px auto;
       display: flex;
       flex-direction: column;
+      font-family: $primary-sans;
 
       .item {
         padding: 24px;
@@ -275,13 +292,22 @@
     @include at-size(mobile) {
       order: 1;
     }
+    padding-left: 0;
+    padding: 0 48px 0 0;
+  }
+
+  .Ingredients {
+    padding-left: 24px;
+    @include at-size(mobile) {
+      padding: 0;
+    }
   }
 
   .instr-ingr-section {
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding: 0px 48px;
+    // padding: 0px 48px;
     @include at-size(mobile) {
       padding: 0;
       margin-bottom: 16px;
@@ -302,7 +328,6 @@
 
   .instructions-group {
     flex: 1;
-    padding-top: 24px;
     @include at-size(mobile) {
       margin-bottom: 24px;
     }
@@ -314,7 +339,7 @@
   }
 
   .instruction {
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     padding-left: 12px;
     border-left: 3px solid rgba(0, 0, 0, 0);
     cursor: pointer;
@@ -345,7 +370,6 @@
   }
 
   .ingredients {
-    padding-top: 24px;
     flex: 1;
   }
 
