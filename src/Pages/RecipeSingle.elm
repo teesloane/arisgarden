@@ -554,8 +554,6 @@ view model =
                 ]
 
         Nothing ->
-            -- FIXME: Add a 404 redirect.
-            --div [] [ text "RECIPE NOT FOUND! 404." ]
             Pages.NotFound.view
 
 
