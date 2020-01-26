@@ -1,16 +1,19 @@
 #+TITLE: todo
 
-* New Photos / To Make Again
+* [ ] New Photos / To Make Again                                                :content:
 - Shakshuka
 - Bowl #3
 - chickpea cauliflower curry
 - sweet potato gnocchi (needs finished photo)
-* Possible Recipes to Remove
+* [ ] Possible Recipes to Remove                                                :content:
 - cauliflower-rice-stir-fry
 - miso-asparagus
 - garlic-alfredo-pasta
 - easy marinated tofu (marinated-tofu)
-* Refactor: Better colours for dialogue
-* Feature: Home Page Search / Sort
-* Feature: The Pantry
-* Feature: Recipe multiplier
+* [ ] Better colours for dialogue                                               :refactor:
+* STRT Cleanup navbar                                                           :refactor:
+* [ ] Home Page Search / Sort                                                   :feature:
+* [ ] The Pantry                                                                :feature:
+* [ ] Recipe multiplier                                                         :feature:
+* [X] remove modal css                                                          :refactor:
+CLOSED: [2020-01-26 Sun 13:15]
