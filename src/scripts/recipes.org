@@ -130,7 +130,7 @@
 :meal_type: vegetarian
 :name: Leafy Spaghetti
 :original_recipe: https://cookieandkate.com/lemon-collard-greens-pasta/
-:rating: 5/5
+:rating: 4/5
 :serves: 2
 :slug: collard-green-pasta
 :time: 00:25:00
@@ -173,7 +173,7 @@
 :meal_type: vegan
 :name: Bowl #1
 :original_recipe: https://tasty.co/recipe/protein-packed-buddha-bowl
-:rating: 5/5
+:rating: 4/5
 :serves: 2
 :slug: bowl-1
 :time: 00:50:00
@@ -609,7 +609,7 @@
 :meal_type: vegetarian
 :name: Pear + Brie Salad
 :original_recipe: https://www.theorganickitchen.org/pears-and-brie-salad-with-honey-champagne-vinaigrette/
-:rating: 5/5
+:rating: 4/5
 :serves: 2
 :slug: pear-brie-salad
 :time: 00:30:00
@@ -707,7 +707,7 @@
 :meal_type: vegan
 :name: Black Bean Salad
 :original_recipe: https://cookieandkate.com/black-bean-salad-recipe/
-:rating: 5/5
+:rating: 4/5
 :serves: 4
 :slug: black-bean-salad
 :time: 00:20:00
@@ -1091,7 +1091,7 @@
 :meal_type: vegetarian
 :name: Orange Orzo Salad
 :original_recipe: https://ohsheglows.com/2015/07/22/vegan-overnight-oats/
-:rating: 5/5
+:rating: 4.5/5
 :serves: 2
 :slug: orange-orzo-salad
 :time: 00:30:00
