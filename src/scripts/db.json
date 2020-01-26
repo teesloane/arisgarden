@@ -4225,15 +4225,22 @@
           "unit": "cups",
           "id": "but",
           "group": ""
+        },
+        {
+          "ingredient": "9x5 Loaf pan",
+          "quantity": "",
+          "unit": "",
+          "id": "",
+          "group": ""
         }
       ],
       "instructions": [
-        "Preheat oven to 350F.",
-        "Mash [#: ban | bananas].",
-        "Mix [#: but | butter] and [#: sug | sugar] together until creamed together.",
-        "Stir in eggs, one at a time. Beat well.",
-        "Stir in mashed banana.",
-        "In a large bowl, mix [#: fl | flour], [#: bp | baking powder], [#: bs | baking soda], [#: sal | salt].",
+        "Preheat oven to 350F. Lightly grease your loaf pan with butter.",
+        "Mash [#: ban | bananas] and set aside in a bowl.",
+        "Cream [#: but | butter] and [#: sug | sugar] together in a large bowl.",
+        "One at a time, crack eggs and beat into sugar and butter mixture.",
+        "Stir in mashed banana. Beat with fork until smooth and set aside.",
+        "In another (large) bowl, mix [#: fl | flour], [#: bp | baking powder], [#: bs | baking soda], and [#: sal | salt].",
         "Mix banana mixture into flour mixture, stir to combine.",
         "[&: Bake! | 01:00:00] Bake in oven for 60 minutes or until a toothpick placed into the center of the loaf comes out clean."
       ],
@@ -4682,6 +4689,118 @@
         "kind": "whisper",
         "val": [
           "The original recipe calls for tomato paste, which I forgot to add. We thought it was fine."
+        ]
+      }
+    },
+    "curry-chickpea-bowl": {
+      "belongs_to": "main",
+      "date_made": "[2020-01-25]",
+      "ease_of_making": "",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegetarian",
+      "name": "Curry Chickpea Bowl",
+      "original_recipe": "https://naturallyella.com/curried-chickpea-bowls/",
+      "rating": "",
+      "serves": "2",
+      "slug": "curry-chickpea-bowl",
+      "time": "00:30:00",
+      "ingredients": [
+        {
+          "ingredient": "Olive oil",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "oo",
+          "group": ""
+        },
+        {
+          "ingredient": "Chickpeas",
+          "quantity": "2",
+          "unit": "cups",
+          "id": "cp",
+          "group": ""
+        },
+        {
+          "ingredient": "Shallots",
+          "quantity": "2",
+          "unit": "minced",
+          "id": "shal",
+          "group": ""
+        },
+        {
+          "ingredient": "Garlic",
+          "quantity": "2",
+          "unit": "minced",
+          "id": "garl",
+          "group": ""
+        },
+        {
+          "ingredient": "Curry powder",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "cpowd",
+          "group": ""
+        },
+        {
+          "ingredient": "Coconut milk",
+          "quantity": "1/2",
+          "unit": "cups",
+          "id": "coco",
+          "group": ""
+        },
+        {
+          "ingredient": "Vegetable broth",
+          "quantity": "2",
+          "unit": "cups",
+          "id": "vb",
+          "group": ""
+        },
+        {
+          "ingredient": "Quinoa",
+          "quantity": "1",
+          "unit": "cups",
+          "id": "quin",
+          "group": ""
+        },
+        {
+          "ingredient": "Parsley",
+          "quantity": "2",
+          "unit": "tbsp",
+          "id": "par",
+          "group": ""
+        },
+        {
+          "ingredient": "Lemon",
+          "quantity": "2",
+          "unit": "tbsp (squeezed)",
+          "id": "lemon",
+          "group": ""
+        },
+        {
+          "ingredient": "Feta",
+          "quantity": "",
+          "unit": "",
+          "id": "",
+          "group": ""
+        }
+      ],
+      "instructions": [
+        "Heat a pot or dutch oven on medium heat. Add [#: oo | olive oil].",
+        "Add [#: quin | quinoa] and broth to pot, bring to a boil.",
+        "[&: Make Quinoa | 00:15:00] Cover and reduce heat of quinoa and cook on low for 15 minutes. Once time is up, leave covered and set aside.",
+        "[&: Add shallot | 00:03:00] After oil is heated, add [#: shal | shallot] for 3-4 minutes.",
+        "[&: Add garlic | 00:02:00] Add [#: garl | garlic] to shallots, for 1-2 more minutes.",
+        "Add [#: cp | curry powder] and [#: coco | coconut milk].",
+        "[#: Simmer chickpease | 00:06:00] Add chickpeas. Bring to a boil and then lower to a simmer for 5-6 minutes.",
+        "Serve the curried chickpeas over the quinoa and sprinkle with [#: par | parsley] and feta. Add lemon wedges if desired."
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "Two things make me cry: cutting shallots, and jerks."
         ]
       }
     }
