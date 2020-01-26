@@ -164,18 +164,18 @@
 - Big leaflet of chard
 - Or, collars of collard greens
 - Friend of spaghetti.
-* Bowl #1
+* Tofu Slab Bowl
 :PROPERTIES:
-:belongs_to: main
+:belongs_to: bowl
 :date_made: [2019-09-08]
 :ease_of_making: 3/5
 :imgs: ["1.JPG", "2.JPG", "3.JPG"]
 :meal_type: vegan
-:name: Bowl #1
+:name: Tofu Slab Bowl
 :original_recipe: https://tasty.co/recipe/protein-packed-buddha-bowl
 :rating: 4/5
 :serves: 2
-:slug: bowl-1
+:slug: tofu-slab-bowl
 :time: 00:50:00
 :END:
 ** Ingredients
@@ -271,64 +271,9 @@
 - 5 tablespoons
 - of red curry paste sounds like
 - a lot; it isn't.
-* Cauliflower Rice Stir Fry
-:PROPERTIES:
-:date_made: [2019-09-12]
-:ease_of_making: 5/5
-:imgs: ["1.JPG", "2.JPG", "3.JPG"]
-:meal_type: vegan
-:name: Cauliflower Rice Stir Fry
-:original_recipe: https://minimalistbaker.com/30-minute-cauliflower-rice-stir-fry/
-:rating: 3/5
-:serves: 2
-:belongs_to: main
-:slug: cauliflower-rice-stir-fry
-:time: 00:45:00
-:END:
-** Ingredients
-| Ingredient                       | Quantity | Unit | Id                 | Group       |
-|----------------------------------+----------+------+--------------------+-------------|
-| Cauliflower                      |        1 | head | cauliflower        | cauliflower |
-| Water (for cauliflower rice)     |        3 | tbsp | water              | cauliflower |
-| Coconut oil                      |        1 | tsp  | oil-coconut        | sauce       |
-| Peanut or Almond Butter          |        2 | tbsp | almond-butter      | sauce       |
-| ginger                           |        1 | tbsp | ginger             | sauce       |
-| Maple syrup                      |        1 | tbsp | maple-syrup        | sauce       |
-| Soy sauce (for the sauce)        |        4 | tbsp | soy-sauce-1        | sauce       |
-| Lime juice                       |        2 | tbsp | lime-juice         | sauce       |
-| Chili garlic sauce or sriracha   |      2-4 | tbsp | chili-garlic-sauce | sauce       |
-| Water                            |      2-3 | tbsp | water              | sauce       |
-| Green beans (trimmed and halved) |    1.5 | cups | green-beans        | stir-fry    |
-| Cabbage (thinly sliced)          |        1 | cups | cabbage            | stir-fry    |
-| soy-sauce                        |        3 | tbsp | soy-sauce-2        | stir-fry    |
-| Green onions (diced)             |        1 | cups | onions-green       | stir-fry    |
-| Bell Pepper (sliced thinly)      |        1 |      | pepper-bell        | stir-fry    |
-| Cashews                          |      3/4 | cups | cashews            | stir-fry    |
-| A Blender                        |          |      |                    |             |
-** Steps
-1) Wash the cauliflower. Chop it in a blender until you have small chunks (that
-   look more like rice than cauliflower).
-2) Create the sauce: add coconut oil, peanut butter, soy sauce lime juice, chili
-   garlic sauce, fresh ginger, maple syrup, and water into a small bowl. Whisk
-   to combine. Set aside.
-3) [&: Step 3 | 00:05:00] Heat a skillet over medium-low. Add cauliflower rice and water. Stir and
-   cover with a lid to steam. Cook for 4-6 minutes or until just tender. Remove
-   and let some steam out.
-4) [&: Step 4. | 00:04:00] Heat another skillet (or pot) on medium heat. When hot, add coconut oil and
-   green beans. Season with 1/3 of the soy sauce used for the stirfry  tbsp).
-   Cover with lid and steam for about 4 minutes.
-5) [&: Step 5 | 00:03:00] Add bell peppers, green onion, cabbage, and remaining soy sauce (2tbsp).
-   Stir. Saute for 3-4 minutes.
-6) Add cashes and cauliflower rice and stir to combine.
-7) [&: Step 7. | 00:03:00] Add the sauce to the beans. Increase heat to medium-high. Cook for about
-   3 minutes until hot.
-** Content
-:PROPERTIES:
-:type: whisper
-:END:
-- Don't use too much soy-sauce. Just don't.
 * Spicy Kale and Coconut Fried Rice
 :PROPERTIES:
+:belongs_to: side
 :date_made: [2019-09-17]
 :ease_of_making: 4/5
 :imgs: ["1.JPG", "2.JPG", "3.gif"]
@@ -337,7 +282,6 @@
 :original_recipe: https://cookieandkate.com/spicy-kale-and-coconut-fried-rice/
 :rating: 5/5
 :serves: 4
-:belongs_to: main
 :slug: kale-coconut-rice
 :time: 00:40:00
 :END:
@@ -416,57 +360,9 @@
 :type: big-quote
 :END:
 - This one is worth the extra prep time.
-* White Wine Pasta w/ Brussel Sprouts
-:PROPERTIES:
-:date_made: [2019-09-23]
-:ease_of_making: 3/5
-:imgs: []
-:meal_type: vegan
-:name: White Wine Pasta w/ Brussel Sprouts
-:original_recipe: https://minimalistbaker.com/vegan-garlic-alfredo-pasta/
-:rating: 3/5
-:belongs_to: main
-:slug: garlic-alfredo-pasta
-:serves: 2
-:time: 00:30:00
-:END:
-** Ingredients
-| Ingredient               | Quantity | Unit   | Id     |
-|--------------------------+----------+--------+--------|
-| Brussel Sprouts (halved) |       16 | ounces | brus   |
-| Olive Oil                |      1-2 | tbsp   | oil    |
-| Garlic                   |        4 | cloves | garlic |
-| White Wine               |      1/3 | cups   | wine   |
-| Cornstarch               |        4 | tbsp   | corn   |
-| Almond milk              |      3/4 | cups   | milk   |
-| Nutritional Yeast        |        4 | tbsp   | yeast  |
-| Parmesean                |      1/4 | cups   | parm   |
-| Pasta                    |       10 | ounces | pasta  |
-** Steps
-1) Preheat oven to 400F. Add [#: brus | brussel sprouts] to baking sheet in a single layer. Drizzel with [#: oil | oil] and season with salt and pepper. Arranger in a single layer.
-2) Bring a pot of water to a boil.
-3) Heat a skillet. Add 1-2 tbsp of oil. Add [#: garlic | garlic]. Saute for 3 minutes.
-4) [&: Saute | 00:02:00] Add [#: wine | wine]. Saute for 2-4 minutes.
-5) Add [#: corn | cornstarch] and [#: milk | almond milk] and whisk. It'll be clumpy.
-6) Move the mixture to a blender. Add [#: yeast | nutritional yeast], salt + pepper,
-   [#: parm | parmesan cheese]. Blend on high until creamy and smooth.
-7) Transfer sauce back to skilled and warm over medium low heat. It should
-   thicken, then lower the heat to low and simmer until the pasta is cooked. If
-   it gets too thick, add almond milk to thin it out. Try not to let a film form overtop.
-8) [&: Brussel Sprouts | 00:12:00] Add brussel sprouts to the oven for 12-15 minutes or until
-   golden brown.
-9) At the same time as the previous step, add pasta to boiling water and cook
-   according to the package instructions.
-10) Once the pasta is cooked, drain the water and add directly to the sauce
-    along with the brussel sprouts. Season with more parmesean if you want.
-** Content
-:PROPERTIES:
-:type: big-quote
-:END:
-- I forgot to take photos for this one.
 * Kimchi Udon
 :PROPERTIES:
-:belongs_to: main
+:belongs_to: bowl
 :date_made: [2019-09-30]
 :ease_of_making: 4/5
 :imgs: ["2.JPG", "3.JPG", "4.JPG"]
@@ -514,7 +410,7 @@
 :original_recipe: https://cookieandkate.com/thai-spiced-rice-bowls-recipe/
 :rating: 3/5
 :serves: 3
-:belongs_to: main
+:belongs_to: bowl
 :slug: thai-rice-bowl
 :time: 00:40:00
 :END:
@@ -656,7 +552,7 @@
 :belongs_to: salad
 :date_made: [2019-09-24]
 :ease_of_making: 4/5
-:imgs: ["1.JPG", "2.JPG", "3.JPG", "5.gif"]
+:imgs: ["1.JPG", "2.JPG", "3.JPG"]
 :meal_type: vegan
 :name:     Raw Beet Salad w/ Quinoa
 :original_recipe: https://cookieandkate.com/raw-beet-salad-with-carrot-quinoa-spinach
@@ -737,40 +633,6 @@
 :type: blurb
 :END:
 - This has a lot of ingredients but very few steps. You'll basically end up just combing a bunch of stuff in a bowl  and then adding a dressing. We'd recommend not adding the dressing to the entire bowl if you plan on having leftovers, but adding the dressing every time you have the dish.
-* Easy Marinated Tofu
-:PROPERTIES:
-:belongs_to: side
-:date_made: [2019-09-02]
-:ease_of_making: 5/5
-:imgs: []
-:meal_type: vegan
-:name: Easy Marinated Tofu
-:original_recipe: https://simpleveganblog.com/easy-marinated-tofu/
-:rating: 4/5
-:serves: 2
-:slug: marinated-tofu
-:time: 00:25:00
-:END:
-** Ingredients
-| Ingredient          | Quantity | Unit  | Id                  | Group |
-|---------------------+----------+-------+---------------------+-------|
-| Tofu                |        1 | brick | tofu                |       |
-| Water               |      1/4 | cups  | water               |       |
-| Soy Sauce           |        2 | tbsp  | sauce-soy           |       |
-| Maple syrup         |        1 | tbsp  | maple-syrup         |       |
-| Apple cider vinegar |        1 | tbsp  | vinegar-apple-cider |       |
-| Garlic powder       |        1 | tsp   | powder-garlic       |       |
-** Steps
-1) [&: Press tofu | 00:20:00] Press the [#: tofu | tofu] for a while (around 20 minutes). Then dice/cube it.
-2) Mix the marinade ingredients in a bowl.
-3) [&: Marinade | 00:15:00] Put the tofu in the bowl and cover. Put it in the fridge for 15 min.
-4) Take the tofu out and pan fry until golden brown.
-** Content
-:PROPERTIES:
-:type: whisper
-:END:
-- Well, they are using plants to press the tofu. Big hulking things, sitting
-  on top of 'em. Not trees, mind you. Frankly, I'm not surprised. It's about time they threw that weight around.
 * Miso Asparagus
 :PROPERTIES:
 :belongs_to: side
@@ -1221,7 +1083,7 @@
 - (eyes watering) - Please.
 * Tofu Kimchi Stew
 :PROPERTIES:
-:belongs_to: main
+:belongs_to: soup
 :date_made: [2019-11-15]
 :ease_of_making: 5/5
 :imgs: ["1.jpg", "2.jpg", "3.jpg"]
@@ -1309,7 +1171,7 @@
 - It's like an alfredo sauce, but it's not. (/¯◡ ‿ ◡)/¯ ~ ┻━┻
 * Carrot Apple Ginger Soup
 :PROPERTIES:
-:belongs_to: side
+:belongs_to: soup
 :date_made: [2019-12-01]
 :ease_of_making: 5/5
 :imgs: ["1.jpg", "2.jpg", "3.jpg"]
@@ -1352,7 +1214,7 @@
   will do in a pinch.
 * Carrot Lentil Salad
 :PROPERTIES:
-:belongs_to: side
+:belongs_to: salad
 :date_made: [2019-12-03]
 :ease_of_making: 4/5
 :imgs: ["1.jpg", "2.jpg", "3.jpg"]
@@ -1401,7 +1263,7 @@
 - We were saved by a can of green lentils.
 * Pesto Pasta Salad
 :PROPERTIES:
-:belongs_to: main
+:belongs_to: salad
 :date_made: [2019-11-29]
 :ease_of_making: 4/5
 :imgs: ["1.jpg", "2.jpg", "3.jpg"]
@@ -1441,14 +1303,14 @@
 :type: big-quote
 :END:
 - Don't forget to save your pasta water!
-* Bowl #2
+* Mango Peanut Rice Bowl
 :PROPERTIES:
-:belongs_to: main
+:belongs_to: bowl
 :date_made: [2019-12-10]
 :ease_of_making: 2/5
 :imgs: ["1.jpg", "2.jpg", "3.jpg"]
 :meal_type: vegan
-:name: Bowl #2 (Mango Peanut Rice)
+:name: Mango Peanut Rice Bowl
 :original_recipe: https://cookieandkate.com/mango-burrito-bowls-with-crispy-tofu/#tasty-recipes-33936
 :rating: 4.5/5
 :serves: 4
@@ -1500,14 +1362,14 @@
 - I wouldn't recommend putting your  FAVOURITE PLANT on top of the tofu to press
   it, because when it INEVITABLY FALLS OVER AND SPILLS SOIL EVERYWHERE, you will be
   sad. And your plant will probably be sad too. I'm so sorry my precious beauty star.
-* Bowl #3                                                                       :original:
+* Sweet Potato Arugula Bowl
 :PROPERTIES:
-:belongs_to: main
+:belongs_to: bowl
 :date_made: [2019-12-18]
 :ease_of_making: 4/5
 :imgs: ["1.jpg", "2.jpg", "3.jpg"]
 :meal_type: vegan
-:name: Bowl #3 (Sweet Potato Arugla)
+:name: Sweet Potato Arugula Bowl
 :original_recipe:
 :rating: 4/5
 :serves: 2
@@ -1549,7 +1411,7 @@
 - Hiding under the cutting board.
 * Jumpin' Udon Fry                                                              :original:
 :PROPERTIES:
-:belongs_to: main
+:belongs_to: bowl
 :date_made: [2019-12-23]
 :ease_of_making: 4/5
 :imgs: ["1.jpg", "2.jpg", "3.jpg"]
@@ -1684,7 +1546,7 @@
 - I'm working on that too.
 * Kimchi Ramen
 :PROPERTIES:
-:belongs_to: main
+:belongs_to: soup
 :date_made: [2019-12-29]
 :ease_of_making: 5/5
 :imgs: ["1.jpg", "2.jpg", "3.gif"]
@@ -1764,7 +1626,7 @@
 - The lesser known of the stacks—the full stack, the waffle stack, the haystack &c; the breakfast stack really holds it's own. (ಥ﹏ಥ)
 * Chili #1
 :PROPERTIES:
-:belongs_to: main
+:belongs_to: soup
 :date_made: [2020-01-04]
 :ease_of_making: 4/5
 :imgs: ["1.jpg", "2.jpg", "3.jpg"]
@@ -1851,7 +1713,7 @@
 - The original recipe calls for tomato paste, which I forgot to add. We thought it was fine.
 * Curry Chickpea Bowl
 :PROPERTIES:
-:belongs_to: main
+:belongs_to: bowl
 :date_made: [2020-01-25]
 :ease_of_making:
 :imgs: ["1.jpg", "2.jpg", "3.jpg"]
@@ -1885,11 +1747,11 @@
 4) [&: Add shallot | 00:03:00] After oil is heated, add [#: shal | shallot] for 3-4 minutes.
 5) [&: Add garlic | 00:02:00] Add [#: garl | garlic] to shallots, for 1-2 more minutes.
 6) Add [#: cp | curry powder] and [#: coco | coconut milk].
-7) [#: Simmer chickpease | 00:06:00] Add chickpeas. Bring to a boil and then lower to a simmer for 5-6 minutes.
+7) [&: Simmer chickpeas | 00:06:00] Add chickpeas. Bring to a boil and then lower to a simmer for 5-6 minutes.
 8) Serve the curried chickpeas over the quinoa and sprinkle with [#: par | parsley] and
    feta. Add lemon wedges if desired.
 ** Content
 :PROPERTIES:
 :type: whisper
 :END:
-- Two things make me cry: cutting shallots, and jerks.
+- Two things make me cry: cutting shallots and jerks.

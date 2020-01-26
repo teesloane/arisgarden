@@ -339,7 +339,7 @@
       "meal_type": "vegetarian",
       "name": "Leafy Spaghetti",
       "original_recipe": "https://cookieandkate.com/lemon-collard-greens-pasta/",
-      "rating": "5/5",
+      "rating": "4/5",
       "serves": "2",
       "slug": "collard-green-pasta",
       "time": "00:25:00",
@@ -412,8 +412,8 @@
         ]
       }
     },
-    "bowl-1": {
-      "belongs_to": "main",
+    "tofu-slab-bowl": {
+      "belongs_to": "bowl",
       "date_made": "[2019-09-08]",
       "ease_of_making": "3/5",
       "imgs": [
@@ -422,11 +422,11 @@
         "3.JPG"
       ],
       "meal_type": "vegan",
-      "name": "Bowl #1",
+      "name": "Tofu Slab Bowl",
       "original_recipe": "https://tasty.co/recipe/protein-packed-buddha-bowl",
-      "rating": "5/5",
+      "rating": "4/5",
       "serves": "2",
-      "slug": "bowl-1",
+      "slug": "tofu-slab-bowl",
       "time": "00:50:00",
       "ingredients": [
         {
@@ -696,160 +696,8 @@
         ]
       }
     },
-    "cauliflower-rice-stir-fry": {
-      "date_made": "[2019-09-12]",
-      "ease_of_making": "5/5",
-      "imgs": [
-        "1.JPG",
-        "2.JPG",
-        "3.JPG"
-      ],
-      "meal_type": "vegan",
-      "name": "Cauliflower Rice Stir Fry",
-      "original_recipe": "https://minimalistbaker.com/30-minute-cauliflower-rice-stir-fry/",
-      "rating": "3/5",
-      "serves": "2",
-      "belongs_to": "main",
-      "slug": "cauliflower-rice-stir-fry",
-      "time": "00:45:00",
-      "ingredients": [
-        {
-          "ingredient": "Cauliflower",
-          "quantity": "1",
-          "unit": "head",
-          "id": "cauliflower",
-          "group": "cauliflower"
-        },
-        {
-          "ingredient": "Water (for cauliflower rice)",
-          "quantity": "3",
-          "unit": "tbsp",
-          "id": "water",
-          "group": "cauliflower"
-        },
-        {
-          "ingredient": "Coconut oil",
-          "quantity": "1",
-          "unit": "tsp",
-          "id": "oil-coconut",
-          "group": "sauce"
-        },
-        {
-          "ingredient": "Peanut or Almond Butter",
-          "quantity": "2",
-          "unit": "tbsp",
-          "id": "almond-butter",
-          "group": "sauce"
-        },
-        {
-          "ingredient": "ginger",
-          "quantity": "1",
-          "unit": "tbsp",
-          "id": "ginger",
-          "group": "sauce"
-        },
-        {
-          "ingredient": "Maple syrup",
-          "quantity": "1",
-          "unit": "tbsp",
-          "id": "maple-syrup",
-          "group": "sauce"
-        },
-        {
-          "ingredient": "Soy sauce (for the sauce)",
-          "quantity": "4",
-          "unit": "tbsp",
-          "id": "soy-sauce-1",
-          "group": "sauce"
-        },
-        {
-          "ingredient": "Lime juice",
-          "quantity": "2",
-          "unit": "tbsp",
-          "id": "lime-juice",
-          "group": "sauce"
-        },
-        {
-          "ingredient": "Chili garlic sauce or sriracha",
-          "quantity": "2-4",
-          "unit": "tbsp",
-          "id": "chili-garlic-sauce",
-          "group": "sauce"
-        },
-        {
-          "ingredient": "Water",
-          "quantity": "2-3",
-          "unit": "tbsp",
-          "id": "water",
-          "group": "sauce"
-        },
-        {
-          "ingredient": "Green beans (trimmed and halved)",
-          "quantity": "1.5",
-          "unit": "cups",
-          "id": "green-beans",
-          "group": "stir-fry"
-        },
-        {
-          "ingredient": "Cabbage (thinly sliced)",
-          "quantity": "1",
-          "unit": "cups",
-          "id": "cabbage",
-          "group": "stir-fry"
-        },
-        {
-          "ingredient": "soy-sauce",
-          "quantity": "3",
-          "unit": "tbsp",
-          "id": "soy-sauce-2",
-          "group": "stir-fry"
-        },
-        {
-          "ingredient": "Green onions (diced)",
-          "quantity": "1",
-          "unit": "cups",
-          "id": "onions-green",
-          "group": "stir-fry"
-        },
-        {
-          "ingredient": "Bell Pepper (sliced thinly)",
-          "quantity": "1",
-          "unit": "",
-          "id": "pepper-bell",
-          "group": "stir-fry"
-        },
-        {
-          "ingredient": "Cashews",
-          "quantity": "3/4",
-          "unit": "cups",
-          "id": "cashews",
-          "group": "stir-fry"
-        },
-        {
-          "ingredient": "A Blender",
-          "quantity": "",
-          "unit": "",
-          "id": "",
-          "group": ""
-        }
-      ],
-      "instructions": [
-        "Wash the cauliflower. Chop it in a blender until you have small chunks (that look more like rice than cauliflower).",
-        "Create the sauce: add coconut oil, peanut butter, soy sauce lime juice, chili garlic sauce, fresh ginger, maple syrup, and water into a small bowl. Whisk to combine. Set aside.",
-        "[&: Step 3 | 00:05:00] Heat a skillet over medium-low. Add cauliflower rice and water. Stir and cover with a lid to steam. Cook for 4-6 minutes or until just tender. Remove and let some steam out.",
-        "[&: Step 4. | 00:04:00] Heat another skillet (or pot) on medium heat. When hot, add coconut oil and green beans. Season with 1/3 of the soy sauce used for the stirfry  tbsp). Cover with lid and steam for about 4 minutes.",
-        "[&: Step 5 | 00:03:00] Add bell peppers, green onion, cabbage, and remaining soy sauce (2tbsp). Stir. Saute for 3-4 minutes.",
-        "Add cashes and cauliflower rice and stir to combine.",
-        "[&: Step 7. | 00:03:00] Add the sauce to the beans. Increase heat to medium-high. Cook for about 3 minutes until hot."
-      ],
-      "commentary": {
-        "kind": "whisper",
-        "val": [
-          "Don't use too much soy-sauce. Just don't."
-        ]
-      }
-    },
     "kale-coconut-rice": {
+      "belongs_to": "side",
       "date_made": "[2019-09-17]",
       "ease_of_making": "4/5",
       "imgs": [
@@ -862,7 +710,6 @@
       "original_recipe": "https://cookieandkate.com/spicy-kale-and-coconut-fried-rice/",
       "rating": "5/5",
       "serves": "4",
-      "belongs_to": "main",
       "slug": "kale-coconut-rice",
       "time": "00:40:00",
       "ingredients": [
@@ -1047,95 +894,8 @@
         ]
       }
     },
-    "garlic-alfredo-pasta": {
-      "date_made": "[2019-09-23]",
-      "ease_of_making": "3/5",
-      "imgs": [],
-      "meal_type": "vegan",
-      "name": "White Wine Pasta w/ Brussel Sprouts",
-      "original_recipe": "https://minimalistbaker.com/vegan-garlic-alfredo-pasta/",
-      "rating": "3/5",
-      "belongs_to": "main",
-      "slug": "garlic-alfredo-pasta",
-      "serves": "2",
-      "time": "00:30:00",
-      "ingredients": [
-        {
-          "ingredient": "Brussel Sprouts (halved)",
-          "quantity": "16",
-          "unit": "ounces",
-          "id": "brus"
-        },
-        {
-          "ingredient": "Olive Oil",
-          "quantity": "1-2",
-          "unit": "tbsp",
-          "id": "oil"
-        },
-        {
-          "ingredient": "Garlic",
-          "quantity": "4",
-          "unit": "cloves",
-          "id": "garlic"
-        },
-        {
-          "ingredient": "White Wine",
-          "quantity": "1/3",
-          "unit": "cups",
-          "id": "wine"
-        },
-        {
-          "ingredient": "Cornstarch",
-          "quantity": "4",
-          "unit": "tbsp",
-          "id": "corn"
-        },
-        {
-          "ingredient": "Almond milk",
-          "quantity": "3/4",
-          "unit": "cups",
-          "id": "milk"
-        },
-        {
-          "ingredient": "Nutritional Yeast",
-          "quantity": "4",
-          "unit": "tbsp",
-          "id": "yeast"
-        },
-        {
-          "ingredient": "Parmesean",
-          "quantity": "1/4",
-          "unit": "cups",
-          "id": "parm"
-        },
-        {
-          "ingredient": "Pasta",
-          "quantity": "10",
-          "unit": "ounces",
-          "id": "pasta"
-        }
-      ],
-      "instructions": [
-        "Preheat oven to 400F. Add [#: brus | brussel sprouts] to baking sheet in a single layer. Drizzel with [#: oil | oil] and season with salt and pepper. Arranger in a single layer.",
-        "Bring a pot of water to a boil.",
-        "Heat a skillet. Add 1-2 tbsp of oil. Add [#: garlic | garlic]. Saute for 3 minutes.",
-        "[&: Saute | 00:02:00] Add [#: wine | wine]. Saute for 2-4 minutes.",
-        "Add [#: corn | cornstarch] and [#: milk | almond milk] and whisk. It'll be clumpy.",
-        "Move the mixture to a blender. Add [#: yeast | nutritional yeast], salt + pepper, [#: parm | parmesan cheese]. Blend on high until creamy and smooth.",
-        "Transfer sauce back to skilled and warm over medium low heat. It should thicken, then lower the heat to low and simmer until the pasta is cooked. If it gets too thick, add almond milk to thin it out. Try not to let a film form overtop.",
-        "[&: Brussel Sprouts | 00:12:00] Add brussel sprouts to the oven for 12-15 minutes or until golden brown.",
-        "At the same time as the previous step, add pasta to boiling water and cook according to the package instructions.",
-        "Once the pasta is cooked, drain the water and add directly to the sauce along with the brussel sprouts. Season with more parmesean if you want."
-      ],
-      "commentary": {
-        "kind": "big-quote",
-        "val": [
-          "I forgot to take photos for this one."
-        ]
-      }
-    },
     "kimchi-udon": {
-      "belongs_to": "main",
+      "belongs_to": "bowl",
       "date_made": "[2019-09-30]",
       "ease_of_making": "4/5",
       "imgs": [
@@ -1241,7 +1001,7 @@
       "original_recipe": "https://cookieandkate.com/thai-spiced-rice-bowls-recipe/",
       "rating": "3/5",
       "serves": "3",
-      "belongs_to": "main",
+      "belongs_to": "bowl",
       "slug": "thai-rice-bowl",
       "time": "00:40:00",
       "ingredients": [
@@ -1530,7 +1290,7 @@
       "meal_type": "vegetarian",
       "name": "Pear + Brie Salad",
       "original_recipe": "https://www.theorganickitchen.org/pears-and-brie-salad-with-honey-champagne-vinaigrette/",
-      "rating": "5/5",
+      "rating": "4/5",
       "serves": "2",
       "slug": "pear-brie-salad",
       "time": "00:30:00",
@@ -1656,8 +1416,7 @@
       "imgs": [
         "1.JPG",
         "2.JPG",
-        "3.JPG",
-        "5.gif"
+        "3.JPG"
       ],
       "meal_type": "vegan",
       "name": "Raw Beet Salad w/ Quinoa",
@@ -1786,7 +1545,7 @@
       "meal_type": "vegan",
       "name": "Black Bean Salad",
       "original_recipe": "https://cookieandkate.com/black-bean-salad-recipe/",
-      "rating": "5/5",
+      "rating": "4/5",
       "serves": "4",
       "slug": "black-bean-salad",
       "time": "00:20:00",
@@ -1884,75 +1643,6 @@
         "kind": "blurb",
         "val": [
           "This has a lot of ingredients but very few steps. You'll basically end up just combing a bunch of stuff in a bowl  and then adding a dressing. We'd recommend not adding the dressing to the entire bowl if you plan on having leftovers, but adding the dressing every time you have the dish."
-        ]
-      }
-    },
-    "marinated-tofu": {
-      "belongs_to": "side",
-      "date_made": "[2019-09-02]",
-      "ease_of_making": "5/5",
-      "imgs": [],
-      "meal_type": "vegan",
-      "name": "Easy Marinated Tofu",
-      "original_recipe": "https://simpleveganblog.com/easy-marinated-tofu/",
-      "rating": "4/5",
-      "serves": "2",
-      "slug": "marinated-tofu",
-      "time": "00:25:00",
-      "ingredients": [
-        {
-          "ingredient": "Tofu",
-          "quantity": "1",
-          "unit": "brick",
-          "id": "tofu",
-          "group": ""
-        },
-        {
-          "ingredient": "Water",
-          "quantity": "1/4",
-          "unit": "cups",
-          "id": "water",
-          "group": ""
-        },
-        {
-          "ingredient": "Soy Sauce",
-          "quantity": "2",
-          "unit": "tbsp",
-          "id": "sauce-soy",
-          "group": ""
-        },
-        {
-          "ingredient": "Maple syrup",
-          "quantity": "1",
-          "unit": "tbsp",
-          "id": "maple-syrup",
-          "group": ""
-        },
-        {
-          "ingredient": "Apple cider vinegar",
-          "quantity": "1",
-          "unit": "tbsp",
-          "id": "vinegar-apple-cider",
-          "group": ""
-        },
-        {
-          "ingredient": "Garlic powder",
-          "quantity": "1",
-          "unit": "tsp",
-          "id": "powder-garlic",
-          "group": ""
-        }
-      ],
-      "instructions": [
-        "[&: Press tofu | 00:20:00] Press the [#: tofu | tofu] for a while (around 20 minutes). Then dice/cube it.",
-        "Mix the marinade ingredients in a bowl.",
-        "[&: Marinade | 00:15:00] Put the tofu in the bowl and cover. Put it in the fridge for 15 min.",
-        "Take the tofu out and pan fry until golden brown."
-      ],
-      "commentary": {
-        "kind": "whisper",
-        "val": [
-          "Well, they are using plants to press the tofu. Big hulking things, sitting on top of 'em. Not trees, mind you. Frankly, I'm not surprised. It's about time they threw that weight around."
         ]
       }
     },
@@ -2724,7 +2414,7 @@
       "meal_type": "vegetarian",
       "name": "Orange Orzo Salad",
       "original_recipe": "https://ohsheglows.com/2015/07/22/vegan-overnight-oats/",
-      "rating": "5/5",
+      "rating": "4.5/5",
       "serves": "2",
       "slug": "orange-orzo-salad",
       "time": "00:30:00",
@@ -3056,7 +2746,7 @@
       }
     },
     "tofu-kimchi-stew": {
-      "belongs_to": "main",
+      "belongs_to": "soup",
       "date_made": "[2019-11-15]",
       "ease_of_making": "5/5",
       "imgs": [
@@ -3263,7 +2953,7 @@
       }
     },
     "carrot-apple-ginger-soup": {
-      "belongs_to": "side",
+      "belongs_to": "soup",
       "date_made": "[2019-12-01]",
       "ease_of_making": "5/5",
       "imgs": [
@@ -3358,7 +3048,7 @@
       }
     },
     "carrot-lentil-salad": {
-      "belongs_to": "side",
+      "belongs_to": "salad",
       "date_made": "[2019-12-03]",
       "ease_of_making": "4/5",
       "imgs": [
@@ -3491,7 +3181,7 @@
       }
     },
     "pasta-pesto-salad": {
-      "belongs_to": "main",
+      "belongs_to": "salad",
       "date_made": "[2019-11-29]",
       "ease_of_making": "4/5",
       "imgs": [
@@ -3615,7 +3305,7 @@
       }
     },
     "bowl-2": {
-      "belongs_to": "main",
+      "belongs_to": "bowl",
       "date_made": "[2019-12-10]",
       "ease_of_making": "2/5",
       "imgs": [
@@ -3624,7 +3314,7 @@
         "3.jpg"
       ],
       "meal_type": "vegan",
-      "name": "Bowl #2 (Mango Peanut Rice)",
+      "name": "Mango Peanut Rice Bowl",
       "original_recipe": "https://cookieandkate.com/mango-burrito-bowls-with-crispy-tofu/#tasty-recipes-33936",
       "rating": "4.5/5",
       "serves": "4",
@@ -3784,7 +3474,7 @@
       }
     },
     "bowl-3": {
-      "belongs_to": "main",
+      "belongs_to": "bowl",
       "date_made": "[2019-12-18]",
       "ease_of_making": "4/5",
       "imgs": [
@@ -3793,7 +3483,7 @@
         "3.jpg"
       ],
       "meal_type": "vegan",
-      "name": "Bowl #3 (Sweet Potato Arugla)",
+      "name": "Sweet Potato Arugula Bowl",
       "original_recipe": "",
       "rating": "4/5",
       "serves": "2",
@@ -3919,7 +3609,7 @@
       }
     },
     "jumpin-udon": {
-      "belongs_to": "main",
+      "belongs_to": "bowl",
       "date_made": "[2019-12-23]",
       "ease_of_making": "4/5",
       "imgs": [
@@ -4255,7 +3945,7 @@
       }
     },
     "kimchi-ramen": {
-      "belongs_to": "main",
+      "belongs_to": "soup",
       "date_made": "[2019-12-29]",
       "ease_of_making": "5/5",
       "imgs": [
@@ -4463,7 +4153,7 @@
       }
     },
     "chili-1": {
-      "belongs_to": "main",
+      "belongs_to": "soup",
       "date_made": "[2020-01-04]",
       "ease_of_making": "4/5",
       "imgs": [
@@ -4693,7 +4383,7 @@
       }
     },
     "curry-chickpea-bowl": {
-      "belongs_to": "main",
+      "belongs_to": "bowl",
       "date_made": "[2020-01-25]",
       "ease_of_making": "",
       "imgs": [
@@ -4794,13 +4484,13 @@
         "[&: Add shallot | 00:03:00] After oil is heated, add [#: shal | shallot] for 3-4 minutes.",
         "[&: Add garlic | 00:02:00] Add [#: garl | garlic] to shallots, for 1-2 more minutes.",
         "Add [#: cp | curry powder] and [#: coco | coconut milk].",
-        "[#: Simmer chickpease | 00:06:00] Add chickpeas. Bring to a boil and then lower to a simmer for 5-6 minutes.",
+        "[&: Simmer chickpeas | 00:06:00] Add chickpeas. Bring to a boil and then lower to a simmer for 5-6 minutes.",
         "Serve the curried chickpeas over the quinoa and sprinkle with [#: par | parsley] and feta. Add lemon wedges if desired."
       ],
       "commentary": {
         "kind": "whisper",
         "val": [
-          "Two things make me cry: cutting shallots, and jerks."
+          "Two things make me cry: cutting shallots and jerks."
         ]
       }
     }
