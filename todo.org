@@ -6,12 +6,13 @@
 - Bowl #3
 - chickpea cauliflower curry
 - sweet potato gnocchi (needs finished photo)
-* [-] Possible Recipes to Remove                                                :content:
-- garlic-alfredo-pasta
-- easy marinated tofu (marinated-tofu)
 * [ ] Better colours for dialogue                                               :refactor:
 * [ ] Home Page Search / Sort                                                   :feature:
 * [ ] The Pantry                                                                :feature:
 * [ ] Recipe multiplier                                                         :feature:
+* [X] Possible Recipes to Remove                                                :content:
+CLOSED: [2020-01-26 Sun 15:12]
+- garlic-alfredo-pasta
+- easy marinated tofu (marinated-tofu)
 * [X] remove modal css                                                          :refactor:
 CLOSED: [2020-01-26 Sun 13:15]

@@ -1,5 +1,5 @@
 #+TITLE: RECIPES
-#+CATEGORIES: '(breakfast salad main sweet snack soup side)
+#+CATEGORIES: '(breakfast salad main sweet soup side)
 * Breakfast Quinoa
 :PROPERTIES:
 :belongs_to: breakfast
@@ -675,7 +675,7 @@
   using a grill it would have more places to drip off.
 * 5 ingredient granola bars
 :PROPERTIES:
-:belongs_to: snack
+:belongs_to: sweet
 :date_made: [2019-09-01]
 :ease_of_making: 5/5
 :imgs: ["1.JPG", "2.JPG", "1.gif"]
@@ -1461,7 +1461,7 @@
 - This recipe only presses the tofu and doesn't marinade it. If I was to do it again, I would marinade it, but with something other than soy sauce, as the soy sauce in the recipe can get things a bit salty already.
 * Steamed Eggplant
 :PROPERTIES:
-:belongs_to: main
+:belongs_to: side
 :date_made: [2019-12-28]
 :ease_of_making: 4/5
 :imgs: ["1.jpg", "2.jpg", "3.jpg"]

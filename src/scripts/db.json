@@ -1728,7 +1728,7 @@
       }
     },
     "granola-bars": {
-      "belongs_to": "snack",
+      "belongs_to": "sweet",
       "date_made": "[2019-09-01]",
       "ease_of_making": "5/5",
       "imgs": [
@@ -3735,7 +3735,7 @@
       }
     },
     "steamed-eggplant": {
-      "belongs_to": "main",
+      "belongs_to": "side",
       "date_made": "[2019-12-28]",
       "ease_of_making": "4/5",
       "imgs": [
