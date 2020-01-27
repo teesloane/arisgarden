@@ -30,7 +30,7 @@ view =
                     [h2 [] [text "What machine?"]
                      , span [] [ text "Ari's Garden is built in the Elm programming language. All of the code for this site is available on " ]
                     , a [class "ext-link", href "https://github.com/theiceshelf/arisgarden"] [ text "Github." ]
-                    , span [] [ text " We are currently not accepting recipe contributions." ]
+
                     ]
                 ]
             ]
