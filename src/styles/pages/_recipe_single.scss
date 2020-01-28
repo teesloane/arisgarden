@@ -47,18 +47,18 @@
 
   .view-metadata {
     margin: 24px 0 128px;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #444;
 
     @include at-size(mobile) {
-      margin: 0px 0 96px;
+      margin: 0px 0 48px;
     }
     h1 {
       font-size: 48px;
-      color: #333;
+      color: #444;
       @include at-size(mobile) {
         margin-bottom: 16px;
         font-size: 24px;
-
+				text-align: center;
       }
     }
 
@@ -77,7 +77,10 @@
 
       @include at-size(mobile) {
         flex-direction: column;
+				columns: 2;
+				display: block;
         font-size: $font-h5;
+				text-align: center;
       }
     }
 
@@ -153,9 +156,11 @@
       align-content: center;
       max-width: 600px;
       margin: 0px auto;
+      padding: 0 16px;
+      font-family: $primary-sans;
       font-size: 18px;
       line-height: 2;
-      color: $off-black;
+      color: $black;
     }
 
     .dialogue {
@@ -177,7 +182,7 @@
         &:nth-child(odd) {
           align-self: flex-start;
           background: #ffd397;
-          color: #333;
+          color: $black;
           &:after {
             content: "";
             position: absolute;
@@ -196,7 +201,7 @@
         &:nth-child(even) {
           align-self: flex-end;
           background: #c7d6c7;
-          color: #333;
+          color: $black;
 
           &:after {
             content: "";
@@ -309,8 +314,8 @@
     // padding: 0px 48px;
     @include at-size(mobile) {
       padding: 0;
-      margin-bottom: 16px;
-      display: block;
+      margin-bottom: 48px;
+      display: flex;
     }
   }
 
@@ -441,7 +446,7 @@
   }
 
   .timer {
-    background: #333;
+    background: $black;
     color: white;
     display: flex;
     margin: 0 12px;
@@ -451,7 +456,7 @@
     @include at-size(mobile) {
       margin: 0;
       justify-content: space-between;
-      border-top: 1px solid #555;
+      border-top: 1px solid #444;
     }
 
     .time-string {
