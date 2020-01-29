@@ -77,10 +77,10 @@
 
       @include at-size(mobile) {
         flex-direction: column;
-				columns: 2;
 				display: block;
         font-size: $font-h5;
 				text-align: center;
+        padding-bottom: 32px;
       }
     }
 
@@ -286,7 +286,8 @@
     display: flex;
     margin-bottom: $section-bottom;
     @include at-size(mobile) {
-      flex-direction: column;
+      display: block;
+      // flex-direction: column;
       margin-bottom: 0px;
     }
   }
