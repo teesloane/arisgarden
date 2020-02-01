@@ -107,7 +107,6 @@
 
     @include at-size(mobile) {
       margin-bottom: 0;
-      //       display: none;
     }
   }
 
@@ -122,6 +121,7 @@
     @include at-size(mobile) {
       flex-direction: column;
       margin: 16px;
+      margin-top: 64px;
     }
   }
 
@@ -312,10 +312,8 @@
     flex: 1;
     flex-direction: column;
     font-family: $primary-sans;
-    // padding: 0px 48px;
     @include at-size(mobile) {
       padding: 0;
-      margin-bottom: 48px;
       display: flex;
     }
   }
