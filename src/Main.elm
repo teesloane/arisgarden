@@ -156,7 +156,7 @@ view model =
     , body =
         [ main_ [ class "main" ]
             [ viewNav model
-            , div [ style "width" "100%" ] [ viewCurrentPage model ]
+            , div [ style "width" "100%", style "height" "100vh" ] [ viewCurrentPage model ]
             ]
         ]
     }
