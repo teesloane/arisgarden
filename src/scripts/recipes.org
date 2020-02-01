@@ -1318,27 +1318,27 @@
 :time: 01:20:00
 :END:
 ** Ingredients
-| Ingredient              | Quantity | Unit                     | Id        | Group        |
-|-------------------------+----------+--------------------------+-----------+--------------|
-| Extra-firm Tofu         |        1 | package                  | tofu      | Tofu/Rice    |
-| Olive Oil               |        1 | tbsp                     | oil       | Tofu/Rice    |
-| Soy Sauce               |        1 | tbsp                     | soysauce1 | Tofu/Rice    |
-| Cornstarch              |        1 | tbsp                     | star      | Tofu/Rice    |
-| Brown Rice              |     1.25 | cups                     | br        | Tofu/Rice    |
-| Peanut Butter           |      1/3 | cups                     | pb        | Peanut Sauce |
-| Limes                   |        2 | juiced                   | lime      | Peanut Sauce |
-| Soy Sauce               |        2 | tbsp                     | soy       | Peanut Sauce |
-| Maple syrup             |        1 | tbsp                     | syr       | Peanut Sauce |
-| Garlic                  |        2 | cloves (minced)          | gar       | Peanut Sauce |
-| Red Pepper Flakes       |      1/4 | tsp                      | rpf       | Peanut Sauce |
-| Sesame oil              |        2 | tsp                      | sesoil    | Peanut Sauce |
-| Mango                   |        2 | diced                    | mang      | Mango Salsa  |
-| Bell pepper             |        1 | chopped                  | bell      | Mango Salsa  |
-| Cilantro                |      1/4 | cups                     | cil       | Mango Salsa  |
-| Green onions            |        2 | cups (sliced)            | goni      | Mango Salsa  |
-| Jalapeno                |        1 | seeds removed and minced | jal       | Mango Salsa  |
-| Sea salt                |      1/4 | tsp                      | ssal      | Mango Salsa  |
-| Purple or Green Cabbage |        2 | cups (shredded)          | cabb      | Mango Salsa  |
+| Ingredient              | Quantity | Unit             | Id        | Group        |
+|-------------------------+----------+------------------+-----------+--------------|
+| Extra-firm Tofu         |        1 | package          | tofu      | Tofu/Rice    |
+| Olive Oil               |        1 | tbsp             | oil       | Tofu/Rice    |
+| Soy Sauce               |        1 | tbsp             | soysauce1 | Tofu/Rice    |
+| Cornstarch              |        1 | tbsp             | star      | Tofu/Rice    |
+| Brown Rice              |     1.25 | cups             | br        | Tofu/Rice    |
+| Peanut Butter           |      1/3 | cups             | pb        | Peanut Sauce |
+| Limes                   |        2 | juiced           | lime      | Peanut Sauce |
+| Soy Sauce               |        2 | tbsp             | soy       | Peanut Sauce |
+| Maple syrup             |        1 | tbsp             | syr       | Peanut Sauce |
+| Garlic                  |        2 | cloves (minced)  | gar       | Peanut Sauce |
+| Red Pepper Flakes       |      1/4 | tsp              | rpf       | Peanut Sauce |
+| Sesame oil              |        2 | tsp              | sesoil    | Peanut Sauce |
+| Mango                   |        2 | diced            | mang      | Mango Salsa  |
+| Bell pepper             |        1 | chopped          | bell      | Mango Salsa  |
+| Cilantro                |      1/4 | cups             | cil       | Mango Salsa  |
+| Green onions            |        2 | cups (sliced)    | goni      | Mango Salsa  |
+| Jalapeno                |        1 | minced; no seeds | jal       | Mango Salsa  |
+| Sea salt                |      1/4 | tsp              | ssal      | Mango Salsa  |
+| Purple or Green Cabbage |        2 | cups (shredded)  | cabb      | Mango Salsa  |
 ** Steps
 1) Preheat oven to 400F. Line a baking sheet with parchment paper for the tofu.
 2) Prepare the tofu: remove from package and drain. Wrap in a tea towl and lay

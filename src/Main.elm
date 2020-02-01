@@ -181,12 +181,15 @@ viewNav : a -> Html msg
 viewNav _ =
     nav [ class "Navbar" ]
         [ div [ class "nav-container" ]
-            [ a [ class "name-icon links", href "/" ]
-                [ div [] [ Ui.icon "c_home.svg" "46" "38" ] ]
+            [ a [ class "name-icon", href "/" ]
+                [ Ui.icon "c_home.svg" "46" "38"
+                , div [class "link"] [ text "Ari's Garden" ]
+                ]
             , div [ class "links" ]
-                [ a [href "/about", class "link" ] [ text "About" ]
-                 --, a [ class "link" ] [ text "Pantry" ]
-                 -- , a [ class "link" ] [ text "Support Ari    !" ]
+                [ a [ href "/about", class "link" ] [ text "About" ]
+
+                --, a [ class "link" ] [ text "Pantry" ]
+                -- , a [ class "link" ] [ text "Support Ari    !" ]
                 ]
             ]
         ]

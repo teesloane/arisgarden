@@ -89,22 +89,32 @@ p {
   font-family: $primary-sans;
   font-size: 13px;
   text-transform: uppercase;
+  background: $black;
 
   .nav-container {
     width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
+    padding: 0 16px;
     display: flex;
     align-items: center;
     align-self: flex-start;
+    justify-content: space-between;
     background: $black;
+  }
+
+  .icon {
+    margin-top: 2px;
   }
 
   .name-icon {
     align-items: center;
     background: $black;
+    cursor: pointer;
     display: flex;
     letter-spacing: 1px;
     color: white;
+    justify-content: space-between;
   }
 
   .links {
@@ -148,14 +158,11 @@ p {
   margin-bottom: $section-bottom / 2;
   @include at-size(mobile) {
     font-size: 1.2em;
-
-			background: $black;
-			color: $white;
-      padding: 12px 24px;
-      display: inline-flex;
-      align-self: center;
-
-
+    background: $black;
+    color: $white;
+    padding: 12px 24px;
+    display: inline-flex;
+    align-self: center;
     // margin: 32px 0;
   }
 }
