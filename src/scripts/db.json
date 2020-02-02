@@ -4493,6 +4493,122 @@
           "Two things make me cry: cutting shallots and jerks."
         ]
       }
+    },
+    "chickpea-tomato-peanut-stew": {
+      "belongs_to": "soup",
+      "date_made": "[2020-01-25]",
+      "ease_of_making": "4/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegetarian",
+      "name": "Chickpea Tomato Peanut Stew",
+      "original_recipe": "https://minimalistbaker.com/1-pot-chickpea-tomato-peanut-stew-west-african-inspired/",
+      "rating": "4/5",
+      "serves": "4",
+      "slug": "chickpea-tomato-peanut-stew",
+      "tags": "[\"batch\", \"winter\", \"1-pot\"]",
+      "time": "00:45:00",
+      "ingredients": [
+        {
+          "ingredient": "Coconut oil",
+          "quantity": "2",
+          "unit": "tbsp",
+          "id": "coil",
+          "group": ""
+        },
+        {
+          "ingredient": "Onion",
+          "quantity": "1",
+          "unit": "diced",
+          "id": "on",
+          "group": ""
+        },
+        {
+          "ingredient": "Bell pepper",
+          "quantity": "1",
+          "unit": "diced",
+          "id": "bp",
+          "group": ""
+        },
+        {
+          "ingredient": "Garlic",
+          "quantity": "6",
+          "unit": "cloves (minced)",
+          "id": "garlic",
+          "group": ""
+        },
+        {
+          "ingredient": "Diced tomatoes",
+          "quantity": "28",
+          "unit": "oz",
+          "id": "tom",
+          "group": ""
+        },
+        {
+          "ingredient": "Tomato paste",
+          "quantity": "1/2",
+          "unit": "cup",
+          "id": "tompaste",
+          "group": ""
+        },
+        {
+          "ingredient": "Chili garlic sauce",
+          "quantity": "3",
+          "unit": "tsp",
+          "id": "cgs",
+          "group": ""
+        },
+        {
+          "ingredient": "Peanut Butter",
+          "quantity": "1",
+          "unit": "cups",
+          "id": "pb",
+          "group": ""
+        },
+        {
+          "ingredient": "Coconut milk",
+          "quantity": "2",
+          "unit": "cups",
+          "id": "cmilk",
+          "group": ""
+        },
+        {
+          "ingredient": "Chickpeas",
+          "quantity": "30",
+          "unit": "oz",
+          "id": "chickpeas",
+          "group": ""
+        },
+        {
+          "ingredient": "Water",
+          "quantity": "2",
+          "unit": "cups",
+          "id": "water",
+          "group": ""
+        },
+        {
+          "ingredient": "Rice base (optional)",
+          "quantity": "",
+          "unit": "",
+          "id": "",
+          "group": ""
+        }
+      ],
+      "instructions": [
+        "[&: Onion/Peppers | 00:04:00] Heat a large saucepan over medium. When hot, add oil, [#: on | onion], [#: bp | bell pepper], [#: garlic | garlic], and a pinch of salt. Cook until onions/peppers are softened (about 3-5 minutes).",
+        "Add entire can of [#: tom | tomatoes] (+ juice), [#: tompaste | tomato paste], [#: cgs | chili garlic sauce], [#: pb | peanut butter], [#: cmilk | coconut milk], and the drained [#: chickpeas | chickpeas].",
+        "[&: Simmer it up | 00:15:00] Bring all to a simmer and cook until thickened, about 15-20 min. Simmer, don't boil.",
+        "Serve over whatever you like! Naan, rice, pita etc."
+      ],
+      "commentary": {
+        "kind": "blurb",
+        "val": [
+          "This lasted us for a while and was great when mixed up with other leftovers. We made the Sweet Potato Gnocci the next day and mixed it with this dish to our rambunctious, kitchen-dancing, pan-frying delight."
+        ]
+      }
     }
   }
 }
