@@ -271,6 +271,55 @@
 - 5 tablespoons
 - of red curry paste sounds like
 - a lot; it isn't.
+* No-grain-veg-curry
+:PROPERTIES:
+:belongs_to: main
+:date_made: [2020-02-02]
+:ease_of_making: 4/5
+:imgs: ["1.JPG", "2.JPG", "3.JPG"]
+:meal_type: vegan
+:name: No-grain vegetable curry
+:original_recipe:
+:rating: 3.5/5
+:serves: 2
+:slug: no-grain-veg-curry
+:time: 00:50:00
+:END:
+** Ingredients
+| Ingredient        | Quantity | Unit           | Id     | Group |
+|-------------------+----------+----------------+--------+-------|
+| Cauliflower       |      1.5 | cups (chopped) | caul   |       |
+| Broccoli          |      1.5 | cups (chopped) | broc   |       |
+| Carrots           |      1.5 | cups (chopped) | carr   |       |
+| Frozen Peas       |      1.5 | cups           | peas   |       |
+| Green beans       |      1/2 | cups           | beans  |       |
+| Cilantro          |        1 | handful        | cil    |       |
+| Cashews           |      1/4 | cups           | cash   |       |
+| Olive oil         |        1 | tbsp           | olive  |       |
+| Onion             |        1 | chopped        | onion  |       |
+| Curry paste       |        2 | tbsp           | curpas |       |
+| Coconut cream     |      1/2 | cups           | cococr |       |
+| Lime              |        1 | squeezed       | lim    |       |
+| Turmeric          |        1 | tsp            | tur    |       |
+| Water             |        2 | tbsp           | wa     |       |
+| Blender/processor |          |                |        |       |
+** Steps
+1) Blend [#: cash | cashews] with [#: wa | water] in blender/food processor.
+2) [&: Step 2 | 00:03:00] Heat a pan on medium heat until hot. Add [#: olive | olive oil] to a pan. Add [#: onion | onion], [#: curpas | curry paste] and [#: tur | turmeric] and cook for a few minutes.
+3) [&: Step 3 - simmer | 00:15:00] Add [#: cococr | coconut cream] to pan and simmer for about 15 minutes.
+4) Add [#: lim | lime juice], salt, pepper, and blended cashews.
+5) While curry sauce cooks, steam the vegetables ([#: broc | broccoli], [#:
+   carr | carrots] [#: peas | peas], [#: caul | cauliflower] and [#: beans |
+   green beans]. Steam vegetables until they are soft to your liking.
+6) Plate vegetables and top with curry sauce until coated. Optionally top with
+   additional cashews and cilantro.
+** Content
+:PROPERTIES:
+:type: haiku
+:END:
+- Can of Coconut cream
+- You look very tasty.
+- But I should not eat you with a spoon.
 * Spicy Kale and Coconut Fried Rice
 :PROPERTIES:
 :belongs_to: side
@@ -709,6 +758,45 @@
 :type: big-quote
 :END:
 - I've made a tornado of dates.
+* Protein Bars
+:PROPERTIES:
+:belongs_to: sweet
+:date_made: [2020-02-02]
+:ease_of_making: 4/5
+:imgs: ["1.JPG", "2.JPG", "3.jpg"]
+:meal_type: vegan
+:name: Protein Bars
+:original_recipe:
+:rating: 3.5/5
+:serves: 10-12 bars
+:slug: protein-granola-bars
+:time: 01:00:00
+:END:
+** Ingredients
+| Ingredient      | Quantity | Unit | Id    | Group |
+|-----------------+----------+------+-------+-------|
+| Dates           |        1 | cups | dates |       |
+| Peanut butter   |      2/3 | cups | pb    |       |
+| Protein powder  |      1/4 | cups | pp    |       |
+| Rice malt syrup |        8 | tsp  | rms   |       |
+| Almond meal     |      1/4 | cups | am    |       |
+| Cinnamon        |        1 | tsp  | cin   |       |
+| Rolled oats     |        1 | cups | oats  |       |
+| Water           |        4 | tsp  | water |       |
+** Steps
+ 1) [&: Soak dates | 00:05:00] Soak [#: dates | dates] in hot water for about 5 minutes.
+ 2) Add [#: pb | peanut butter], [#: pp | protein powder], [#: dates | dates],
+    [#: water | water], and [#: cin | cinnamon] in a food processor and blend until combined.
+ 3) Slowly add the rolled oats in, blending periodically.
+ 4) Pour the mixture into a tray lined with parchment paper. Lay parchment paper
+    over top to press or roll with a cup into a rectangular shape.
+ 5) Put in the freezer overnight and when you’re ready to eat cut into bar shapes.
+** Content
+:PROPERTIES:
+:type: blurb
+:END:
+- These turned out pretty squishy, so you might want to keep these in the
+  freezer up till when you eat them.
 * Candied Ginger
 :PROPERTIES:
 :belongs_to: sweet
@@ -1124,6 +1212,51 @@
 - This is quick and easy to make. We couldn't find Daikon so we used radish,
   which seemed to work just fine. We only used 2 tbsp of gochujang and it was
   plenty spicey for us.
+* Lime Rice Noodles with Tofu
+:PROPERTIES:
+:belongs_to: main
+:date_made: [2019-11-22]
+:ease_of_making: ?/5
+:imgs: ["1.jpg", "2.gif", "3.jpg"]
+:meal_type: vegan
+:name: Lime-Rice Noodles with Tofu
+:original_recipe: https://www.delish.com/cooking/recipe-ideas/a29215487/cilantro-lime-noodles-with-shrimp-recipe/
+:rating: 3/5
+:serves: 4
+:slug: lime-rice-noodles
+:tags: creamy, acidy
+:time: 00:35:00
+:END:
+** Ingredients
+| Ingredient             | Quantity | Unit         | Id           |
+|------------------------+----------+--------------+--------------|
+| Tofu (firm)            |        1 | package      | tofu         |
+| Garlic (minced)        |        2 | cloves       | garlic       |
+| Ginger (minced)        |        1 | inch-piece   | ginger       |
+| Bell pepper (sliced)   |        1 |              | bellpep      |
+| Green onions (chopped) |        2 |              | greenonion   |
+| Coconut milk           |        1 | can (14oz)   | cocomilk     |
+| Soy sauce              |        2 | tbsp         | soy          |
+| Brown sugar            |        2 | tsp (packed) | sugar        |
+| Rice stir-fry noodles  |       12 | oz           | rice-noodles |
+| Lime juice             |        3 | tbsp         | lime         |
+| Chili garlic sauce     |        1 | tbsp         | cgs          |
+| Cilantro               |      1/3 | cups         | cilantro     |
+| Kosher Salt            |          |              |              |
+** Steps
+1) Press tofu to remove water. Cube, and marinate.
+2) Boil the [#: rice-noodles | rice noodles] according to the package instructors.
+3) [&: Heat oil / pepper | :00:02:00] In a skillet, heat a tablespoon of oil and add the bell pepper. Heat for about 2 minutes.
+4) [&: Add onion / ginger | 00:01:00] Add [#: greenonion | green onion] and [#: ginger | ginger] and cook for a minute while stirring.
+5) Add [#: cocomilk | coconut milk], [#: soy | soy sauce], [#: sugar  | brown sugar] and stir to combine. Bring to a boil and add cooked rice noodles and tofu. Toss over medium-high heat until sauce thickens.
+6) Remove from heat and stir in [#: lime | lime juice], [#: cgs | chili-garlic
+   sauce] and [#: cilantro | cilantro]. Season with salt.
+7) Top with extra cilantro before serving.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- It's like an alfredo sauce, but it's not. (/¯◡ ‿ ◡)/¯ ~ ┻━┻
 * Carrot Apple Ginger Soup
 :PROPERTIES:
 :belongs_to: soup
