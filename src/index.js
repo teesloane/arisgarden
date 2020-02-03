@@ -3,6 +3,8 @@ require("./styles/main.scss");
 const db = require("./scripts/db.json");
 const { Elm } = require("./Main");
 
+window.recipes = db
+
 var app = Elm.Main.init({
   node: document.querySelector("main"),
   flags: {
