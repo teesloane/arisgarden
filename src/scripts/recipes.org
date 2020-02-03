@@ -1212,51 +1212,6 @@
 - This is quick and easy to make. We couldn't find Daikon so we used radish,
   which seemed to work just fine. We only used 2 tbsp of gochujang and it was
   plenty spicey for us.
-* Lime Rice Noodles with Tofu
-:PROPERTIES:
-:belongs_to: main
-:date_made: [2019-11-22]
-:ease_of_making: ?/5
-:imgs: ["1.jpg", "2.gif", "3.jpg"]
-:meal_type: vegan
-:name: Lime-Rice Noodles with Tofu
-:original_recipe: https://www.delish.com/cooking/recipe-ideas/a29215487/cilantro-lime-noodles-with-shrimp-recipe/
-:rating: 3/5
-:serves: 4
-:slug: lime-rice-noodles
-:tags: creamy, acidy
-:time: 00:35:00
-:END:
-** Ingredients
-| Ingredient             | Quantity | Unit         | Id           |
-|------------------------+----------+--------------+--------------|
-| Tofu (firm)            |        1 | package      | tofu         |
-| Garlic (minced)        |        2 | cloves       | garlic       |
-| Ginger (minced)        |        1 | inch-piece   | ginger       |
-| Bell pepper (sliced)   |        1 |              | bellpep      |
-| Green onions (chopped) |        2 |              | greenonion   |
-| Coconut milk           |        1 | can (14oz)   | cocomilk     |
-| Soy sauce              |        2 | tbsp         | soy          |
-| Brown sugar            |        2 | tsp (packed) | sugar        |
-| Rice stir-fry noodles  |       12 | oz           | rice-noodles |
-| Lime juice             |        3 | tbsp         | lime         |
-| Chili garlic sauce     |        1 | tbsp         | cgs          |
-| Cilantro               |      1/3 | cups         | cilantro     |
-| Kosher Salt            |          |              |              |
-** Steps
-1) Press tofu to remove water. Cube, and marinate.
-2) Boil the [#: rice-noodles | rice noodles] according to the package instructors.
-3) [&: Heat oil / pepper | :00:02:00] In a skillet, heat a tablespoon of oil and add the bell pepper. Heat for about 2 minutes.
-4) [&: Add onion / ginger | 00:01:00] Add [#: greenonion | green onion] and [#: ginger | ginger] and cook for a minute while stirring.
-5) Add [#: cocomilk | coconut milk], [#: soy | soy sauce], [#: sugar  | brown sugar] and stir to combine. Bring to a boil and add cooked rice noodles and tofu. Toss over medium-high heat until sauce thickens.
-6) Remove from heat and stir in [#: lime | lime juice], [#: cgs | chili-garlic
-   sauce] and [#: cilantro | cilantro]. Season with salt.
-7) Top with extra cilantro before serving.
-** Content
-:PROPERTIES:
-:type: whisper
-:END:
-- It's like an alfredo sauce, but it's not. (/¯◡ ‿ ◡)/¯ ~ ┻━┻
 * Carrot Apple Ginger Soup
 :PROPERTIES:
 :belongs_to: soup
