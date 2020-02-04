@@ -156,7 +156,15 @@ view model =
     , body =
         [ main_ [ class "main" ]
             [ viewNav model
-            , div [ style "width" "100%", style "height" "100vh" ] [ viewCurrentPage model ]
+            , div [ style "width" "100%" ] [ viewCurrentPage model ]
+            , div [class "footer"] [
+                   div [] [text "Built by \u{00A0}"]
+                   , a [class "link", target "_blank", href "https://theiceshelf.com"] [text "The Ice Shelf"]
+
+                    , a [target "_blank", class "link", href "https://github.com/theiceshelf/arisgarden"] [Ui.icon "github.svg" "20" "20"]
+                    , a [target "_blank", class "link", href "https://twitter.com/theiceshelf"] [Ui.icon "twitter.svg" "20" "20"]
+
+                  ]
             ]
         ]
     }
