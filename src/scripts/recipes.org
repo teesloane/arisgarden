@@ -291,7 +291,7 @@
 | Cauliflower       |      1.5 | cups (chopped) | caul   |       |
 | Broccoli          |      1.5 | cups (chopped) | broc   |       |
 | Carrots           |      1.5 | cups (chopped) | carr   |       |
-| Frozen Peas       |      1.5 | cups           | peas   |       |
+| Frozen Peas       |        1 | cups           | peas   |       |
 | Green beans       |      1/2 | cups           | beans  |       |
 | Cilantro          |        1 | handful        | cil    |       |
 | Cashews           |      1/4 | cups           | cash   |       |
