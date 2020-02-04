@@ -4724,6 +4724,143 @@
           "This lasted us for a while and was great when mixed up with other leftovers. We made the Sweet Potato Gnocci the next day and mixed it with this dish to our rambunctious, kitchen-dancing, pan-frying delight."
         ]
       }
+    },
+    "vermicelli-salad": {
+      "belongs_to": "salad",
+      "date_made": "[2020-02-02]",
+      "ease_of_making": "4/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegan",
+      "name": "Vermicelli Salad",
+      "original_recipe": "",
+      "rating": "4/5",
+      "serves": "4",
+      "slug": "vermicelli-salad",
+      "tags": "[]",
+      "time": "00:45:00",
+      "ingredients": [
+        {
+          "ingredient": "Vermicelli noodles",
+          "quantity": "120",
+          "unit": "grams",
+          "id": "vermicelli",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Boiling water",
+          "quantity": "2/3",
+          "unit": "cups",
+          "id": "b_w",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Tofu (firm)",
+          "quantity": "350",
+          "unit": "grams  (cubed)",
+          "id": "tofu",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Peanuts",
+          "quantity": "1/4",
+          "unit": "cups (chopped)",
+          "id": "peanuts",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Cilantro",
+          "quantity": "1/4",
+          "unit": "cups (chopped)",
+          "id": "cil",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Olive Oil",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "ooil",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Carrots",
+          "quantity": "3",
+          "unit": "cups (chopped/spiralized )",
+          "id": "carr",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Cabbage",
+          "quantity": "1.5",
+          "unit": "cups (chopped)",
+          "id": "cabb",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Soy sauce",
+          "quantity": "3",
+          "unit": "tbsp",
+          "id": "soy",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Rice wine vinegar",
+          "quantity": "3",
+          "unit": "tbsp",
+          "id": "rwv",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Lime juice",
+          "quantity": "1",
+          "unit": "squeezed",
+          "id": "lime",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Maple syrup",
+          "quantity": "2",
+          "unit": "tsp",
+          "id": "ms",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Mint",
+          "quantity": "2",
+          "unit": "tbsp (chopped)",
+          "id": "mint",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Sesame oil",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "soil",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Olive oil",
+          "quantity": "2",
+          "unit": "tsp",
+          "id": "sala_oil",
+          "group": "Dressing"
+        }
+      ],
+      "instructions": [
+        "[&: Fry tofu | 00:08:00] Heat [#: ooil | olive oil] in a pan on medium heat. Cook the tofu, cubed, for 4-5 minutes on each side.",
+        "[&: Soften noodles | 00:05:00] Add noodles to a bowl and pour boiling water on them. Soak for 5 minutes or until softened. Drain and transfer back into a bowl to cool.",
+        "Add tofu, [#: cabb | cabbage], [#: carr | carrots], [#: cil | cilantro] and [#: peanuts | peanuts] to bowl with noodles.",
+        "Combine the ingredients for the salad dressing ([#: soy | soy sauce ], [#: rwv | rice wine vinegar ], [#: lime | lime], [#: ms | maple syrup], [#: mint | mint ], [#: soil | sesame oil], [#: sala_oil | olive oil])."
+      ],
+      "commentary": {
+        "kind": "big-quote",
+        "val": [
+          "Try putting some KIMCHI on this!"
+        ]
+      }
     }
   }
 }

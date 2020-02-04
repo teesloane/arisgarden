@@ -1838,3 +1838,49 @@
 :type: blurb
 :END:
 - This lasted us for a while and was great when mixed up with other leftovers. We made the Sweet Potato Gnocci the next day and mixed it with this dish to our rambunctious, kitchen-dancing, pan-frying delight.
+* Vermicelli Salad
+:PROPERTIES:
+:belongs_to: salad
+:date_made: [2020-02-02]
+:ease_of_making: 4/5
+:imgs: ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type: vegan
+:name: Vermicelli Salad
+:original_recipe:
+:rating: 4/5
+:serves: 4
+:slug: vermicelli-salad
+:tags: []
+:time: 00:45:00
+:END:
+** Ingredients
+| Ingredient         | Quantity | Unit                        | Id         | Group    |
+|--------------------+----------+-----------------------------+------------+----------|
+| Vermicelli noodles |      120 | grams                       | vermicelli | Salad    |
+| Boiling water      |      2/3 | cups                        | b_w        | Salad    |
+| Tofu (firm)        |      350 | grams  (cubed)              | tofu       | Salad    |
+| Peanuts            |      1/4 | cups (chopped)              | peanuts    | Salad    |
+| Cilantro           |      1/4 | cups (chopped)              | cil        | Salad    |
+| Olive Oil          |        1 | tbsp                        | ooil       | Salad    |
+| Carrots            |        3 | cups (chopped/spiralized )  | carr       | Salad    |
+| Cabbage            |      1.5 | cups (chopped)              | cabb       | Salad    |
+| Soy sauce          |        3 | tbsp                        | soy        | Dressing |
+| Rice wine vinegar  |        3 | tbsp                        | rwv        | Dressing |
+| Lime juice         |        1 | squeezed                    | lime       | Dressing |
+| Maple syrup        |        2 | tsp                         | ms         | Dressing |
+| Mint               |        2 | tbsp (chopped)              | mint       | Dressing |
+| Sesame oil         |        1 | tbsp                        | soil       | Dressing |
+| Olive oil          |        2 | tsp                         | sala_oil   | Dressing |
+** Steps
+1) [&: Fry tofu | 00:08:00] Heat [#: ooil | olive oil] in a pan on medium heat. Cook the tofu, cubed, for 4-5 minutes on each side.
+2) [&: Soften noodles | 00:05:00] Add noodles to a bowl and pour boiling water on them. Soak for 5 minutes or until softened. Drain and transfer back into a bowl to cool.
+3) Add tofu, [#: cabb | cabbage], [#: carr | carrots], [#: cil | cilantro] and
+   [#: peanuts | peanuts] to bowl with noodles.
+4) Combine the ingredients for the salad dressing ([#: soy | soy sauce ], [#:
+   rwv | rice wine vinegar ], [#: lime | lime], [#: ms | maple syrup], [#:
+   mint | mint ], [#: soil | sesame oil], [#: sala_oil | olive oil]).
+** Content
+:PROPERTIES:
+:type: big-quote
+:END:
+- Try putting some KIMCHI on this!
