@@ -1883,7 +1883,7 @@
 :PROPERTIES:
 :type: big-quote
 :END:
-- Try putting some KIMCHI on this!
+- Try putting some kimchi on this!
 * Brown Rice Lentil Bowl
 :PROPERTIES:
 :belongs_to: bowl
