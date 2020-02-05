@@ -275,7 +275,7 @@
 :PROPERTIES:
 :belongs_to: main
 :date_made: [2020-02-02]
-:ease_of_making: 4/5
+:ease_of_making: 5/5
 :imgs: ["1.JPG", "2.JPG", "3.JPG"]
 :meal_type: vegan
 :name: No-grain vegetable curry
@@ -1884,3 +1884,46 @@
 :type: big-quote
 :END:
 - Try putting some KIMCHI on this!
+* Brown Rice Lentil Bowl
+:PROPERTIES:
+:belongs_to: bowl
+:date_made: [2020-02-04]
+:ease_of_making: 5/5
+:imgs: ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type: vegan
+:name: Brown Rice Lentil Bowl
+:original_recipe:
+:rating: 4/5
+:serves: 4
+:slug: brown-rice-lentil-bowl
+:tags: []
+:time: 00:45:00
+:END:
+** Ingredients
+| Ingredient    | Quantity | Unit           | Id   | Group |
+|---------------+----------+----------------+------+-------|
+| Brown lentils |        1 | can            | bl   |       |
+| Broccoli      |      1.5 | cups (chopped) | broc |       |
+| Brown rice    |        1 | cups           | br   |       |
+| Kale          |        4 | cups (chopped) | kale |       |
+| Garlic        |        1 | clove (diced)  | gar  |       |
+| Curry powder  |        1 | tsp            | cp   |       |
+| Lime          |        1 | squeezed       | li   |       |
+| Olive oil     |        1 | tbsp           | oo   |       |
+| Cilantro      |        2 | tbsp           | cil  |       |
+** Steps
+1) Cook the [#: br | rice] until it absorbs the water. Season with [#: cp | curry powder]
+   while cooking.
+2) Transfer finished rice to a bowl and mix in [#: bl | brown lentils].
+3) [&: Sauté Broccoli and Kale | 00:05:00] Heat a new pan on medium. Sauté the
+   [#: broc | broccoli] and [#: kale | kale]
+   for 5-7 minutes.
+4) When broccoli and kale are finished, remove from heat and transfer to the bowl of brown
+   rice. Mix together. Add the [#: cil | chopped cilantro].
+5) Drizzle [#: oo | olive oil], and squeeze a bit of lemon or lime on top i you
+   have one.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- Sprinkle some red chili to BRING THE HEAT.
