@@ -4957,6 +4957,137 @@
           "Sprinkle some red chili to BRING THE HEAT."
         ]
       }
+    },
+    "buckwheat-tzatziki-bowl": {
+      "belongs_to": "bowl",
+      "date_made": "[2020-02-06]",
+      "ease_of_making": "5/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegetarian",
+      "name": "Buckwheat Tzatziki Bowl",
+      "original_recipe": "",
+      "rating": "4/5",
+      "serves": "4",
+      "slug": "buckwheat-tzatziki-bowl",
+      "tags": "[]",
+      "time": "00:35:00",
+      "ingredients": [
+        {
+          "ingredient": "Buckwheat",
+          "quantity": "1",
+          "unit": "cups",
+          "prep": "",
+          "id": "buck",
+          "group": "Base"
+        },
+        {
+          "ingredient": "Water",
+          "quantity": "2",
+          "unit": "cups",
+          "prep": "",
+          "id": "wat",
+          "group": "Base"
+        },
+        {
+          "ingredient": "Olives",
+          "quantity": "1/4",
+          "unit": "cups",
+          "prep": "",
+          "id": "",
+          "group": "Base"
+        },
+        {
+          "ingredient": "Asparagus",
+          "quantity": "1",
+          "unit": "cups",
+          "prep": "chopped",
+          "id": "asp",
+          "group": "Base"
+        },
+        {
+          "ingredient": "Zucchini",
+          "quantity": "1.5",
+          "unit": "cups",
+          "prep": "sliced",
+          "id": "zu",
+          "group": "Base"
+        },
+        {
+          "ingredient": "Bell pepper",
+          "quantity": "1",
+          "unit": "",
+          "prep": "diced",
+          "id": "bp",
+          "group": "Base"
+        },
+        {
+          "ingredient": "Olive oil",
+          "quantity": "1",
+          "unit": "tbsp",
+          "prep": "",
+          "id": "oo",
+          "group": "Base"
+        },
+        {
+          "ingredient": "Yoghurt (plain)",
+          "quantity": "2/3",
+          "unit": "cups",
+          "prep": "",
+          "id": "yogh",
+          "group": "Tzatziki"
+        },
+        {
+          "ingredient": "Cucumber",
+          "quantity": "1/2",
+          "unit": "cups",
+          "prep": "diced",
+          "id": "cuc",
+          "group": "Tzatziki"
+        },
+        {
+          "ingredient": "Mint",
+          "quantity": "1",
+          "unit": "tbsp",
+          "prep": "diced",
+          "id": "mint",
+          "group": "Tzatziki"
+        },
+        {
+          "ingredient": "Garlic",
+          "quantity": "1",
+          "unit": "clove",
+          "prep": "minced",
+          "id": "gar",
+          "group": "Tzatziki"
+        },
+        {
+          "ingredient": "Salt",
+          "quantity": "",
+          "unit": "",
+          "prep": "",
+          "id": "",
+          "group": "Tzatziki"
+        }
+      ],
+      "instructions": [
+        "Preheat oven to 350F.",
+        "Prepare vegetables: [#: zu | zucchini], [#: asp | asparagus] and [#: bp | bell peppers].",
+        "[&: Make buckwheat | 00:15:00] Prepare [#: buck | buckwheat]: put in a pot with [#: wat | water] and a pinch of salt. Bring to a boil and them simmer with lid on for about 15 mintes.",
+        "While buckwheat is being made, add vegetable to baking tray and drizzle with [#: oo | olive oil].",
+        "[&: Bake vegetables | 00:15:00] Bake vegetables in the oven for about 15 minutes, or until golden brown.",
+        "While waiting for buckwheat and vegetables, prepare the tzatziki: combine the [#: yogh | yoghurt], [#: cuc | cucumber], [#: mint | mint] and [#: gar | garlic]. Set aside.",
+        "Dish it out: add buckwheat to bowl, then vegetables, olives, and finally top with tzatziki."
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "This was easy to make! A pleasant surprise. And our first time making buckwheat."
+        ]
+      }
     }
   }
 }

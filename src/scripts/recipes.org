@@ -1927,3 +1927,50 @@
 :type: whisper
 :END:
 - Sprinkle some red chili to BRING THE HEAT.
+* Buckwheat Olive Bowl
+:PROPERTIES:
+:belongs_to: bowl
+:date_made: [2020-02-06]
+:ease_of_making: 5/5
+:imgs:     ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type: vegetarian
+:name:     Buckwheat Tzatziki Bowl
+:original_recipe:
+:rating:   4/5
+:serves:   4
+:slug:     buckwheat-tzatziki-bowl
+:tags:     []
+:time:     00:35:00
+:END:
+** Ingredients
+| Ingredient      | Quantity | Unit  | Prep    | Id   | Group    |
+|-----------------+----------+-------+---------+------+----------|
+| Buckwheat       |        1 | cups  |         | buck | Base     |
+| Water           |        2 | cups  |         | wat  | Base     |
+| Olives          |      1/4 | cups  |         |      | Base     |
+| Asparagus       |        1 | cups  | chopped | asp  | Base     |
+| Zucchini        |      1.5 | cups  | sliced  | zu   | Base     |
+| Bell pepper     |        1 |       | diced   | bp   | Base     |
+| Olive oil       |        1 | tbsp  |         | oo   | Base     |
+| Yoghurt (plain) |      2/3 | cups  |         | yogh | Tzatziki |
+| Cucumber        |      1/2 | cups  | diced   | cuc  | Tzatziki |
+| Mint            |        1 | tbsp  | diced   | mint | Tzatziki |
+| Garlic          |        1 | clove | minced  | gar  | Tzatziki |
+| Salt            |          |       |         |      | Tzatziki |
+** Steps
+1) Preheat oven to 350F.
+2) Prepare vegetables: [#: zu | zucchini], [#: asp | asparagus] and [#: bp |
+   bell peppers].
+3) [&: Make buckwheat | 00:15:00] Prepare [#: buck | buckwheat]: put in a pot with [#: wat | water] and a pinch
+   of salt. Bring to a boil and them simmer with lid on for about 15 mintes.
+4) While buckwheat is being made, add vegetable to baking tray and drizzle with [#: oo | olive oil].
+5) [&: Bake vegetables | 00:15:00] Bake vegetables in the oven for about 15 minutes, or until golden brown.
+6) While waiting for buckwheat and vegetables, prepare the tzatziki: combine the [#: yogh | yoghurt], [#: cuc | cucumber], [#: mint | mint] and [#: gar | garlic]. Set aside.
+7) Dish it out: add buckwheat to bowl, then vegetables, olives, and finally top
+   with tzatziki.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- This was easy to make! A pleasant surprise. And our first time making
+  buckwheat.
