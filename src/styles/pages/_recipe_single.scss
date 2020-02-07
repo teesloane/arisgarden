@@ -164,25 +164,28 @@
     }
 
     .dialogue {
+      $bubble-l-col: #16a085;
+      $bubble-r-col: #2980b9;
+
       align-content: center;
       max-width: 500px;
       margin: 0px auto;
       display: flex;
       flex-direction: column;
+      color: white;
       font-family: $primary-sans;
 
       .item {
-        padding: 24px;
+        padding: 16px;
         margin: 12px 0;
-        font-size: 20px;
+        font-size: 18px;
         position: relative;
-        border-radius: 0.4em;
+        border-radius: 0.8em;
         display: inline-flex;
 
         &:nth-child(odd) {
           align-self: flex-start;
-          background: #ffd397;
-          color: $black;
+          background: $bubble-l-col;
           &:after {
             content: "";
             position: absolute;
@@ -190,18 +193,17 @@
             top: 50%;
             width: 0;
             height: 0;
-            border: 10px solid transparent;
-            border-right-color: #ffd397;
+            border: 8px solid transparent;
+            border-right-color: $bubble-l-col;
             border-left: 0;
-            margin-top: -10px;
-            margin-left: -10px;
+            margin-top: -8px;
+            margin-left: -8px;
           }
         }
 
         &:nth-child(even) {
           align-self: flex-end;
-          background: #c7d6c7;
-          color: $black;
+          background: $bubble-r-col;
 
           &:after {
             content: "";
@@ -211,12 +213,12 @@
             top: 50%;
             width: 0;
             height: 0;
-            border: 10px solid transparent;
-            border-left-color: #c7d6c7;
+            border: 8px solid transparent;
+            border-left-color: $bubble-r-col;
             border-right: 0;
             text-align: right;
-            margin-top: -10px;
-            margin-right: -10px;
+            margin-top: -8px;
+            margin-right: -8px;
           }
         }
       }
@@ -276,8 +278,6 @@
       }
     }
 
-    .dialogue {
-    }
   }
 
   // -- &:INSTRUCTIONS/INGREDIENTS -------------------------------------
