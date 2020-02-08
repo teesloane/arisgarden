@@ -29,6 +29,8 @@ type alias Ingredient =
     , quantity : String
     , unit : String
     , id : String
+    , group: String
+    , prep: String
     }
 
 
@@ -241,6 +243,8 @@ decoderIngredient =
         |> JP.required "quantity" Decode.string
         |> JP.required "unit" Decode.string
         |> JP.required "id" Decode.string
+        |> JP.required "group" Decode.string
+        |> JP.required "prep" Decode.string
 
 
 decodeCommentary : Decoder Commentary

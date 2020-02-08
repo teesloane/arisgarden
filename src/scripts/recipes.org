@@ -15,16 +15,16 @@
 :time: 00:40:00
 :END:
 ** Ingredients
-| Ingredient        | Quantity | Unit | Id     | Prep    |
-|-------------------+----------+------+--------+---------|
-| Quinoa            |        1 | cups | quin   |         |
-| Water             |        2 | cups | water  |         |
-| Maple Syrup       |        2 | tbsp | syr    |         |
-| Pecans or Walnuts |      1/4 | cups | nuts   | chopped |
-| Cinnamon          |   1 or 2 | tsp  | cin    |         |
-| Coconut oil       |        2 | tbsp | oil    |         |
-| Fresh berries     |          |      | berr   |         |
-| Almond butter     |          |      | almbut |         |
+| Ingredient        | Quantity | Unit | Id     | Prep    | Group |
+|-------------------+----------+------+--------+---------+-------|
+| Quinoa            |        1 | cups | quin   |         |       |
+| Water             |        2 | cups | water  |         |       |
+| Maple Syrup       |        2 | tbsp | syr    |         |       |
+| Pecans or Walnuts |      1/4 | cups | nuts   | chopped |       |
+| Cinnamon          |   1 or 2 | tsp  | cin    |         |       |
+| Coconut oil       |        2 | tbsp | oil    |         |       |
+| Fresh berries     |          |      | berr   |         |       |
+| Almond butter     |          |      | almbut |         |       |
 ** Steps
 1) [&:1. Make quinoa | 00:15:00] Make the [#: quin | quinoa]: Put two cups of water and one cup of quinoa into a pot. Bring it to a boil and then reduce to a simmer and cover for 12 minutes. You can also do this the previous night.
 2) [&:2. Heat nuts | 00:04:00]  Add [#: oil | coconut oil] to a large pot and heat on medium until melted. Add the [#: nuts | nuts] and stir frequently until they smell fragrant, around 4-6 minutes.
@@ -92,22 +92,22 @@
 :time: 01:00:00
 :END:
 ** Ingredients
-| Ingredient      | Quantity | Unit           | Id              | Group |
-|-----------------+----------+----------------+-----------------+-------|
-| Olive oil       |        1 | tbsp           | oil-olive       |       |
-| White onion     |      1/2 | cups (diced)   | onion-white     |       |
-| Garlic          |        3 | cloves (diced) | garlic          |       |
-| Bell pepper     |      1/2 | cups (chopped) | pepper-bell     |       |
-| Diced tomatoes  |       28 | oz             | tomato-diced    |       |
-| Tomato paste    |        3 | tbsp           | tomato-paste    |       |
-| Olives          |      1/4 | cups           | olives          |       |
-| Maple syrup     |        1 | tbsp           | maple-syrup     |       |
-| Ground cumin    |        1 | tsp            | cumin-ground    |       |
-| Paprika         |        1 | tsp            | paprika         |       |
-| Chili powder    |        2 | tsp            | chili-powder    |       |
-| Ground cinnamon |      1/4 | tsp            | cinnamon-ground |       |
-| Chickpeas       |       24 | oz             | chickpeas       |       |
-| Sea Salt        |        1 | pinch          | salt-sea        |       |
+| Ingredient      | Quantity | Unit           | Id              | Group | Prep |
+|-----------------+----------+----------------+-----------------+-------+------|
+| Olive oil       |        1 | tbsp           | oil-olive       |       |      |
+| White onion     |      1/2 | cups (diced)   | onion-white     |       |      |
+| Garlic          |        3 | cloves (diced) | garlic          |       |      |
+| Bell pepper     |      1/2 | cups (chopped) | pepper-bell     |       |      |
+| Diced tomatoes  |       28 | oz             | tomato-diced    |       |      |
+| Tomato paste    |        3 | tbsp           | tomato-paste    |       |      |
+| Olives          |      1/4 | cups           | olives          |       |      |
+| Maple syrup     |        1 | tbsp           | maple-syrup     |       |      |
+| Ground cumin    |        1 | tsp            | cumin-ground    |       |      |
+| Paprika         |        1 | tsp            | paprika         |       |      |
+| Chili powder    |        2 | tsp            | chili-powder    |       |      |
+| Ground cinnamon |      1/4 | tsp            | cinnamon-ground |       |      |
+| Chickpeas       |       24 | oz             | chickpeas       |       |      |
+| Sea Salt        |        1 | pinch          | salt-sea        |       |      |
 ** Steps
 1) Heat a large metal or cast iron skilled on medium heat.
 2) [&: 2. Sauté vegetables | 00:04:00] When hot, add [#: oil-olive | olive oil ], [#: onion-white | onion], [#: pepper-bell | bell pepper] and [#: garlic | garlic]. Saute for 4-5 minutes, stirring frequently.
@@ -179,24 +179,24 @@
 :time: 00:50:00
 :END:
 ** Ingredients
-| Ingredient       | Quantity | Unit   | Id            | Group    |
-|------------------+----------+--------+---------------+----------|
-| Sweet potato     |        1 |        | potato-sweet  |          |
-| Shredded carrots |        1 |        | avocado       |          |
-| Onion            |        1 |        | onion         |          |
-| Olive oil        |        1 | tbsp   | oil-olive     |          |
-| Salt             |      1/2 | tsp    | salt          |          |
-| Tofu             |        8 | oz     | tofu          |          |
-| Garlic           |        2 | cloves | garlic        |          |
-| Chickpeas        |        1 | cups   | chickpeas     |          |
-| Pepper           |      1/2 | tsp    | pepper        |          |
-| Chili powder     |        1 | tsp    | chili-powder  |          |
-| Garlic powder    |        1 | tsp    | garlic-powder |          |
-| Quinoa           |      1.5 | cups   | quinoa        |          |
-| Sesame Oil       |      1/2 | tsp    | oil-sesame    | Marinade |
-| Hot Sauce        |        1 | tsp    | sauce-hot     | Marinade |
-| Dried thyme      |        2 | tsp    | thyme         | Marinade |
-| Paprika          |        1 | tsp    | paprika       | Marinade |
+| Ingredient       | Quantity | Unit   | Id            | Group    | Prep |
+|------------------+----------+--------+---------------+----------+------|
+| Sweet potato     |        1 |        | potato-sweet  |          |      |
+| Shredded carrots |        1 |        | avocado       |          |      |
+| Onion            |        1 |        | onion         |          |      |
+| Olive oil        |        1 | tbsp   | oil-olive     |          |      |
+| Salt             |      1/2 | tsp    | salt          |          |      |
+| Tofu             |        8 | oz     | tofu          |          |      |
+| Garlic           |        2 | cloves | garlic        |          |      |
+| Chickpeas        |        1 | cups   | chickpeas     |          |      |
+| Pepper           |      1/2 | tsp    | pepper        |          |      |
+| Chili powder     |        1 | tsp    | chili-powder  |          |      |
+| Garlic powder    |        1 | tsp    | garlic-powder |          |      |
+| Quinoa           |      1.5 | cups   | quinoa        |          |      |
+| Sesame Oil       |      1/2 | tsp    | oil-sesame    | Marinade |      |
+| Hot Sauce        |        1 | tsp    | sauce-hot     | Marinade |      |
+| Dried thyme      |        2 | tsp    | thyme         | Marinade |      |
+| Paprika          |        1 | tsp    | paprika       | Marinade |      |
 ** Steps
 1) Make the marinade: combine [#: oil-olive | olive oil], [#: oil-sesame |
    seasame oil], [#: sauce-hot | hot sauce], [#: thyme | thyme], [#: paprika | paprika],
@@ -813,12 +813,12 @@
 :END:
 ** Ingredients
 
-| Ingredient  | Quantity | Unit  | Id          | Group |
-|-------------+----------+-------+-------------+-------|
-| Ginger      |        1 | lbs   | ginger      |       |
-| White Sugar |        4 | cups  | sugar-white |       |
-| Water       |        4 | cups  | water       |       |
-| Salt        |        1 | pinch | salt        |       |
+| Ingredient  | Quantity | Unit  | Id          | Group | Prep |
+|-------------+----------+-------+-------------+-------+------|
+| Ginger      |        1 | lbs   | ginger      |       |      |
+| White Sugar |        4 | cups  | sugar-white |       |      |
+| Water       |        4 | cups  | water       |       |      |
+| Salt        |        1 | pinch | salt        |       |      |
 ** Steps
 1) Peel the [#: ginger | ginger].
 2) Slice the ginger thinly.
@@ -855,24 +855,24 @@
 :END:
 ** Ingredients
 
-| Ingredient           | Quantity | Unit | Id       | Group           |
-|----------------------+----------+------+----------+-----------------|
-| Whipping cream       | 1        | cups | wc       | Creamy filling  |
-| Icing sugar          | 3/4      | cups | is       | Creamy filling  |
-| Vanilla              | 1/2      | tsp  | van      | Creamy filling  |
-| Cinnamon             | 1/2      | tsp  | cin      | Creamy filling  |
-| Plain gelatin        | 1~       | tbsp | gelatin  | Pumpkin filling |
-| Cold water           | 1/4      | cups | water    | Pumpkin filling |
-| Eggs                 | 3        |      | eggs     | Pumpkin filling |
-| White sugar          | 1/3      | cups | ws       | Pumpkin filling |
-| Cinnamon             | 1        | tsp  | cin2     | Pumpkin filling |
-| Ginger               | 1/4      | tsp  | ginger   | Pumpkin filling |
-| Salt                 | 1/2      | tsp  | salt     | Pumpkin filling |
-| Allspice             | 1/2      | tsp  | allspice | Pumpkin filling |
-| Canned pumpkin       | 1+1/4    | cups | pumpkin  | Pumpkin filling |
-| Milk                 | 1/2      | cups | milk     | Pumpkin filling |
-| Icing sugar          | 1/4      | cups | icsug    | Pumpkin filling |
-| Pre-made crust shell |          |      |          | Crust           |
+| Ingredient           | Quantity | Unit | Id       | Group           | Prep |
+|----------------------+----------+------+----------+-----------------+------|
+| Whipping cream       | 1        | cups | wc       | Creamy filling  |      |
+| Icing sugar          | 3/4      | cups | is       | Creamy filling  |      |
+| Vanilla              | 1/2      | tsp  | van      | Creamy filling  |      |
+| Cinnamon             | 1/2      | tsp  | cin      | Creamy filling  |      |
+| Plain gelatin        | 1~       | tbsp | gelatin  | Pumpkin filling |      |
+| Cold water           | 1/4      | cups | water    | Pumpkin filling |      |
+| Eggs                 | 3        |      | eggs     | Pumpkin filling |      |
+| White sugar          | 1/3      | cups | ws       | Pumpkin filling |      |
+| Cinnamon             | 1        | tsp  | cin2     | Pumpkin filling |      |
+| Ginger               | 1/4      | tsp  | ginger   | Pumpkin filling |      |
+| Salt                 | 1/2      | tsp  | salt     | Pumpkin filling |      |
+| Allspice             | 1/2      | tsp  | allspice | Pumpkin filling |      |
+| Canned pumpkin       | 1+1/4    | cups | pumpkin  | Pumpkin filling |      |
+| Milk                 | 1/2      | cups | milk     | Pumpkin filling |      |
+| Icing sugar          | 1/4      | cups | icsug    | Pumpkin filling |      |
+| Pre-made crust shell |          |      |          | Crust           |      |
 ** Steps
  1) [&: Bake pie shell | 00:08:00] Prepare the pie shell based on its package instructions. They should outline how long to bake the shell without a filling but if not - bake for 8-10 minutes at 425c.
  2) Start with the pumpkin filling. Add the [#: gelatin | gelatin] to a bowl of cold water.
@@ -1769,7 +1769,7 @@
 :time: 00:30:00
 :END:
 ** Ingredients
-| Ingredient      | Quantity | Unit | Id    | Group |          |
+| Ingredient      | Quantity | Unit | Id    | Group | Prep     |
 |-----------------+----------+------+-------+-------+----------|
 | Olive oil       |        1 | tbsp | oo    |       |          |
 | Chickpeas       |        2 | cups | cp    |       |          |
@@ -1814,20 +1814,20 @@
 :time: 00:45:00
 :END:
 ** Ingredients
-| Ingredient         | Quantity | Unit   | Id        | Group  |
-|--------------------+----------+--------+-----------+--------|
-| Coconut oil        |        2 | tbsp   | coil      |        |
-| Onion              |        1 |        | on        | diced  |
-| Bell pepper        |        1 |        | bp        | diced  |
-| Garlic             |        6 | cloves | garlic    | minced |
-| Diced tomatoes     |       28 | oz     | tom       |        |
-| Tomato paste       |      1/2 | cups   | tompaste  |        |
-| Chili garlic sauce |        3 | tsp    | cgs       |        |
-| Peanut butter      |        1 | cups   | pb        |        |
-| Coconut milk       |        2 | cups   | cmilk     |        |
-| Chickpeas          |       30 | oz     | chickpeas |        |
-| Water              |        2 | cups   | water     |        |
-| Rice/Quinoa        |          |        |           |        |
+| Ingredient         | Quantity | Unit   | Id        | Group  | Prep |
+|--------------------+----------+--------+-----------+--------+------|
+| Coconut oil        |        2 | tbsp   | coil      |        |      |
+| Onion              |        1 |        | on        | diced  |      |
+| Bell pepper        |        1 |        | bp        | diced  |      |
+| Garlic             |        6 | cloves | garlic    | minced |      |
+| Diced tomatoes     |       28 | oz     | tom       |        |      |
+| Tomato paste       |      1/2 | cups   | tompaste  |        |      |
+| Chili garlic sauce |        3 | tsp    | cgs       |        |      |
+| Peanut butter      |        1 | cups   | pb        |        |      |
+| Coconut milk       |        2 | cups   | cmilk     |        |      |
+| Chickpeas          |       30 | oz     | chickpeas |        |      |
+| Water              |        2 | cups   | water     |        |      |
+| Rice/Quinoa        |          |        |           |        |      |
 ** Steps
 1) [&: Onion/Peppers | 00:04:00] Heat a large saucepan over medium. When hot, add oil, [#: on | onion], [#: bp | bell pepper], [#: garlic | garlic], and a pinch of salt. Cook until onions/peppers are softened (about 3-5 minutes).
 2) Add entire can of [#: tom | tomatoes] (+ juice), [#: tompaste | tomato paste], [#: cgs | chili garlic sauce], [#: pb | peanut butter], [#: cmilk | coconut milk], and the drained [#: chickpeas | chickpeas].

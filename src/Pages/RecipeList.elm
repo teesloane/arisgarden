@@ -65,5 +65,6 @@ view model =
                 , div [ class "columns" ] (List.map sectionList groupedRecipes)
                 ]
 
-        _ ->
+        err ->
+            let x = Debug.log "failure" err in
             div [] [ text "failed" ]
