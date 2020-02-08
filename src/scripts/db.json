@@ -5088,6 +5088,128 @@
           "This was easy to make! A pleasant surprise. And our first time making buckwheat."
         ]
       }
+    },
+    "vegetable-casserole": {
+      "belongs_to": "main",
+      "date_made": "[2020-02-08]",
+      "ease_of_making": "4/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegetarian",
+      "name": "Vegetable Casserole",
+      "original_recipe": "",
+      "rating": "4/5",
+      "serves": "4???",
+      "slug": "vegetable-casserole",
+      "tags": "[]",
+      "time": "00:50:00",
+      "ingredients": [
+        {
+          "ingredient": "Olive oil",
+          "quantity": "1",
+          "unit": "tbsp",
+          "prep": "",
+          "id": "ooil",
+          "group": ""
+        },
+        {
+          "ingredient": "Yellow onion",
+          "quantity": "1",
+          "unit": "",
+          "prep": "chopped",
+          "id": "on",
+          "group": ""
+        },
+        {
+          "ingredient": "Garlic",
+          "quantity": "2",
+          "unit": "",
+          "prep": "chopped",
+          "id": "gar",
+          "group": ""
+        },
+        {
+          "ingredient": "Eggplant",
+          "quantity": "1",
+          "unit": "",
+          "prep": "chopped",
+          "id": "egg",
+          "group": ""
+        },
+        {
+          "ingredient": "Zucchini",
+          "quantity": "3",
+          "unit": "",
+          "prep": "chopped",
+          "id": "zuc",
+          "group": ""
+        },
+        {
+          "ingredient": "Orange peppers",
+          "quantity": "2",
+          "unit": "",
+          "prep": "chopped",
+          "id": "opep",
+          "group": ""
+        },
+        {
+          "ingredient": "Diced tomatoes",
+          "quantity": "48",
+          "unit": "oz",
+          "prep": "",
+          "id": "dt",
+          "group": ""
+        },
+        {
+          "ingredient": "Chickpeas",
+          "quantity": "18",
+          "unit": "oz",
+          "prep": "",
+          "id": "chi",
+          "group": ""
+        },
+        {
+          "ingredient": "Basil",
+          "quantity": "1/4",
+          "unit": "cups",
+          "prep": "copped",
+          "id": "bas",
+          "group": ""
+        },
+        {
+          "ingredient": "Chili flakes",
+          "quantity": "1",
+          "unit": "tsp",
+          "prep": "",
+          "id": "cf",
+          "group": ""
+        },
+        {
+          "ingredient": "Mozarella cheeze",
+          "quantity": "2",
+          "unit": "cups",
+          "prep": "shredded",
+          "id": "moz",
+          "group": ""
+        }
+      ],
+      "instructions": [
+        "Preheat the oven to 375F.",
+        "Heat up the [#: ooil | olive oil] on medium heat and add the [#: on | onion] and [#: gar | garlic]. Cook until fragrant.",
+        "Add the chopped [#: egg | eggplant], [#: zuc | zucchini], and [#: opep | pepper] and cook for 5 minutes.",
+        "Add in the [#: dt | tomatoes], [#: bas | basil], [#: chi | chickpeas] and [#: cf | chilli flakes] and cook for another 10 minutes.",
+        "Transfer the mix over to a baking dish, then sprinkle the [#: moz | cheese] over top.",
+        "[&: Bake casserole | 00:15:00] Bake the casserole for 10-15 minutes or until the cheese turns golden brown."
+      ],
+      "commentary": {
+        "kind": "big-quote",
+        "val": [
+          "You're going to want a big pan or wok for this one."
+        ]
+      }
     }
   }
 }

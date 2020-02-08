@@ -1974,3 +1974,45 @@
 :END:
 - This was easy to make! A pleasant surprise. And our first time making
   buckwheat.
+* Vegetable Casserole
+:PROPERTIES:
+:belongs_to:      main
+:date_made:       [2020-02-08]
+:ease_of_making:  4/5
+:imgs:            ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type:       vegetarian
+:name:            Vegetable Casserole
+:original_recipe:
+:rating:          4/5
+:serves:          4???
+:slug:            vegetable-casserole
+:tags:            []
+:time:            00:50:00
+:END:
+** Ingredients
+| Ingredient       | Quantity | Unit | Prep     | Id   | Group |
+|------------------+----------+------+----------+------+-------|
+| Olive oil        |        1 | tbsp |          | ooil |       |
+| Yellow onion     |        1 |      | chopped  | on   |       |
+| Garlic           |        2 |      | chopped  | gar  |       |
+| Eggplant         |        1 |      | chopped  | egg  |       |
+| Zucchini         |        3 |      | chopped  | zuc  |       |
+| Orange peppers   |        2 |      | chopped  | opep |       |
+| Diced tomatoes   |       48 | oz   |          | dt   |       |
+| Chickpeas        |       18 | oz   |          | chi  |       |
+| Basil            |      1/4 | cups | copped   | bas  |       |
+| Chili flakes     |        1 | tsp  |          | cf   |       |
+| Mozarella cheeze |        2 | cups | shredded | moz  |       |
+** Steps
+ 1) Preheat the oven to 375F.
+ 2) Heat up the [#: ooil | olive oil] on medium heat and add the [#: on | onion]
+    and [#: gar | garlic]. Cook until fragrant.
+ 3) Add the chopped [#: egg | eggplant], [#: zuc | zucchini], and [#: opep | pepper] and cook for 5 minutes.
+ 4) Add in the [#: dt | tomatoes], [#: bas | basil], [#: chi | chickpeas] and [#: cf | chilli flakes] and cook for another 10 minutes.
+ 5) Transfer the mix over to a baking dish, then sprinkle the [#: moz | cheese] over top.
+ 6) [&: Bake casserole | 00:15:00] Bake the casserole for 10-15 minutes or until the cheese turns golden brown.
+** Content
+:PROPERTIES:
+:type: big-quote
+:END:
+- You're going to want a big pan or wok for this one.
