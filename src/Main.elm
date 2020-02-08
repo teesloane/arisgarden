@@ -156,7 +156,7 @@ view model =
     , body =
         [ main_ [ class "main" ]
             [ viewNav model
-            , div [ style "width" "100%" ] [ viewCurrentPage model ]
+            , div [ class "currentPage" ] [ viewCurrentPage model ]
             , div [class "footer"] [
                    div [] [text "Built by \u{00A0}"]
                    , a [class "link", target "_blank", href "https://theiceshelf.com"] [text "The Ice Shelf"]

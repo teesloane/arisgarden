@@ -7,6 +7,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const autoprefixer = require('autoprefixer');
 
 // to extract the css as a separate file
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -55,12 +56,16 @@ var common = {
         test: /\.scss$/,
         exclude: [/elm-stuff/, /node_modules/],
         // see https://github.com/webpack-contrib/css-loader#url
-        loaders: ["style-loader", "css-loader?url=false", "sass-loader"]
+        loaders: ["style-loader",
+                  "css-loader?url=false",
+                  {loader: 'postcss-loader', options: {plugins: () => autoprefixer()}},
+                  "sass-loader"]
       },
       {
         test: /\.css$/,
         exclude: [/elm-stuff/, /node_modules/],
-        loaders: ["style-loader", "css-loader?url=false"]
+        loaders: ["style-loader",
+                  "css-loader?url=false"]
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
