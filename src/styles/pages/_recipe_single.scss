@@ -58,7 +58,7 @@
       @include at-size(mobile) {
         margin-bottom: 16px;
         font-size: 24px;
-				text-align: center;
+        text-align: center;
       }
     }
 
@@ -77,9 +77,9 @@
 
       @include at-size(mobile) {
         flex-direction: column;
-				display: block;
+        display: block;
         font-size: $font-h5;
-				text-align: center;
+        text-align: center;
         padding-bottom: 32px;
       }
     }
@@ -286,24 +286,35 @@
     display: flex;
     margin-bottom: $section-bottom;
     @include at-size(mobile) {
-      display: block;
-      // flex-direction: column;
+      display: flex;
+      flex-direction: column;
       margin-bottom: 0px;
     }
   }
 
-  .Instructions {
-    @include at-size(mobile) {
-      order: 1;
-    }
+  .instructions {
+    font-family: $primary-sans;
+    display: flex;
     padding-left: 0;
+    flex: 1.5;
     padding: 0 48px 0 0;
-  }
-
-  .Ingredients {
-    padding-left: 24px;
+    flex-direction: column;
     @include at-size(mobile) {
       padding: 0;
+      display: flex;
+      order: 2;
+    }
+  }
+
+  .ingredients {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 24px;
+    @include at-size(mobile) {
+      order: 1;
+      padding: 0;
+      margin-bottom: $section-bottom / 5;
     }
   }
 
@@ -372,9 +383,6 @@
     justify-content: space-between;
   }
 
-  .ingredients {
-    flex: 1;
-  }
 
   $border-col: #efefef;
   .ingredient {
@@ -390,16 +398,31 @@
       border-bottom: 1px solid $border-col;
     }
 
-    .quant-unit {
+    .quant-unit-prep {
       display: flex;
+      align-self: center;
     }
-    .quant {
-      padding-right: 4px;
-    }
+    .quant {padding-right: 4px;}
 
     .name {
       flex: 1;
+      display: flex;
       padding-right: 4px;
+      align-content: center;
+
+      @include at-size(mobile) { flex-direction: column; }
+    }
+
+    .name-prep {
+      color:  $off-black;
+      padding-left: 8px;
+      font-size: 12px;
+      margin-top: 2px;
+
+      @include at-size(mobile) {
+        padding-left: 0;
+        margin-top: 0;
+      }
     }
   }
 

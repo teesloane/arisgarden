@@ -21,49 +21,65 @@
           "ingredient": "Quinoa",
           "quantity": "1",
           "unit": "cups",
-          "id": "quin"
+          "id": "quin",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Water",
           "quantity": "2",
           "unit": "cups",
-          "id": "water"
+          "id": "water",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Maple Syrup",
           "quantity": "2",
           "unit": "tbsp",
-          "id": "syr"
+          "id": "syr",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Pecans or Walnuts",
           "quantity": "1/4",
-          "unit": "cups (chopped)",
-          "id": "nuts"
+          "unit": "cups",
+          "id": "nuts",
+          "prep": "chopped",
+          "group": ""
         },
         {
           "ingredient": "Cinnamon",
           "quantity": "1 or 2",
           "unit": "tsp",
-          "id": "cin"
+          "id": "cin",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Coconut oil",
           "quantity": "2",
           "unit": "tbsp",
-          "id": "oil"
+          "id": "oil",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Fresh berries",
           "quantity": "",
           "unit": "",
-          "id": "berr"
+          "id": "berr",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Almond butter",
           "quantity": "",
           "unit": "",
-          "id": "almbut"
+          "id": "almbut",
+          "prep": "",
+          "group": ""
         }
       ],
       "instructions": [
@@ -102,84 +118,96 @@
           "quantity": "1",
           "unit": "tbsp",
           "id": "oil-coconut",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Diced vegetables (Carrots, Potatoes, Broccoli etc)",
+          "ingredient": "Mixed fresh vegetables",
           "quantity": "4",
           "unit": "cups",
           "id": "vegetables-misc",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Uncooked red lentils",
+          "ingredient": "Red lentils (uncooked)",
           "quantity": "1/2",
           "unit": "cups",
           "id": "lentils-red",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Water",
           "quantity": "1/2",
           "unit": "cups",
           "id": "water",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Diced tomato",
           "quantity": "14",
           "unit": "oz",
           "id": "tomato-diced-can",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Coconut milk",
           "quantity": "14",
           "unit": "oz",
           "id": "milk-coconut",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Garlic powder",
           "quantity": "1.5",
           "unit": "tsp",
           "id": "powder-garlic",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Minced onion",
           "quantity": "1.5",
           "unit": "tsp",
           "id": "onion-minced",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Curry powder",
           "quantity": "1",
           "unit": "tbsp",
           "id": "powder-curry",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Sea salt",
           "quantity": "1",
           "unit": "tsp",
           "id": "salt-sea",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Pepper",
           "quantity": "1",
           "unit": "pinch",
           "id": "pepper",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Rice or Grain for Base",
           "quantity": "",
           "unit": "",
           "id": "rice",
-          "group": ""
+          "group": "",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -215,102 +243,116 @@
       "time": "01:00:00",
       "ingredients": [
         {
-          "ingredient": "Olive Oil",
+          "ingredient": "Olive oil",
           "quantity": "1",
           "unit": "tbsp",
           "id": "oil-olive",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "White onion",
           "quantity": "1/2",
           "unit": "cups (diced)",
           "id": "onion-white",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Garlic",
           "quantity": "3",
           "unit": "cloves (diced)",
           "id": "garlic",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Bell Pepper",
+          "ingredient": "Bell pepper",
           "quantity": "1/2",
           "unit": "cups (chopped)",
           "id": "pepper-bell",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Diced tomatoes",
           "quantity": "28",
           "unit": "oz",
           "id": "tomato-diced",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Tomato paste",
           "quantity": "3",
           "unit": "tbsp",
           "id": "tomato-paste",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Olives",
           "quantity": "1/4",
           "unit": "cups",
           "id": "olives",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Maple syrup",
           "quantity": "1",
           "unit": "tbsp",
           "id": "maple-syrup",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Ground cumin",
           "quantity": "1",
           "unit": "tsp",
           "id": "cumin-ground",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Paprika",
           "quantity": "1",
           "unit": "tsp",
           "id": "paprika",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Chili powder",
           "quantity": "2",
           "unit": "tsp",
           "id": "chili-powder",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Ground cinnamon",
           "quantity": "1/4",
           "unit": "tsp",
           "id": "cinnamon-ground",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Chickpeas",
           "quantity": "24",
           "unit": "oz",
           "id": "chickpeas",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Sea Salt",
           "quantity": "1",
           "unit": "pinch",
           "id": "salt-sea",
-          "group": ""
+          "group": "",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -345,52 +387,68 @@
       "time": "00:25:00",
       "ingredients": [
         {
-          "ingredient": "Swiss Chard",
+          "ingredient": "Swiss chard",
           "quantity": "10",
           "unit": "leaves",
-          "id": "swiss-chard"
+          "id": "swiss-chard",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Spaghetti",
           "quantity": "1/3",
           "unit": "package",
-          "id": "spaghetti"
+          "id": "spaghetti",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Chopped Nuts",
+          "ingredient": "Nuts",
           "quantity": "3",
           "unit": "tbsp",
-          "id": "nuts"
+          "id": "nuts",
+          "prep": "chopped",
+          "group": ""
         },
         {
-          "ingredient": "Olive Oil",
+          "ingredient": "Olive oil",
           "quantity": "1",
           "unit": "tbsp",
-          "id": "oil-olive"
+          "id": "oil-olive",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Garlic",
           "quantity": "2",
           "unit": "cloves",
-          "id": "garlic"
+          "id": "garlic",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Red Pepper Flakes",
+          "ingredient": "Red pepper flakes",
           "quantity": "1",
           "unit": "pinch",
-          "id": "red-pepper-flakes"
+          "id": "red-pepper-flakes",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Parmesan Cheese",
+          "ingredient": "Parmesan cheese",
           "quantity": "1",
           "unit": "ounce",
-          "id": "cheese-parmesan"
+          "id": "cheese-parmesan",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Lemon",
           "quantity": "1",
           "unit": "",
-          "id": "lemon"
+          "id": "lemon",
+          "prep": "",
+          "group": ""
         }
       ],
       "instructions": [
@@ -430,116 +488,132 @@
       "time": "00:50:00",
       "ingredients": [
         {
-          "ingredient": "Sweet Potato",
+          "ingredient": "Sweet potato",
           "quantity": "1",
           "unit": "",
           "id": "potato-sweet",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Shredded Carrots",
+          "ingredient": "Shredded carrots",
           "quantity": "1",
           "unit": "",
           "id": "avocado",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Onion",
           "quantity": "1",
           "unit": "",
           "id": "onion",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Olive oil",
           "quantity": "1",
           "unit": "tbsp",
           "id": "oil-olive",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Salt",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "salt",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Tofu",
           "quantity": "8",
           "unit": "oz",
           "id": "tofu",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Garlic",
           "quantity": "2",
           "unit": "cloves",
           "id": "garlic",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Chickpeas",
           "quantity": "1",
           "unit": "cups",
           "id": "chickpeas",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Pepper",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "pepper",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Chili powder",
           "quantity": "1",
           "unit": "tsp",
           "id": "chili-powder",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Garlic powder",
           "quantity": "1",
           "unit": "tsp",
           "id": "garlic-powder",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Quinoa",
           "quantity": "1.5",
           "unit": "cups",
           "id": "quinoa",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Sesame Oil",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "oil-sesame",
-          "group": "Marinade"
+          "group": "Marinade",
+          "prep": ""
         },
         {
           "ingredient": "Hot Sauce",
           "quantity": "1",
           "unit": "tsp",
           "id": "sauce-hot",
-          "group": "Marinade"
+          "group": "Marinade",
+          "prep": ""
         },
         {
           "ingredient": "Dried thyme",
           "quantity": "2",
           "unit": "tsp",
           "id": "thyme",
-          "group": "Marinade"
+          "group": "Marinade",
+          "prep": ""
         },
         {
           "ingredient": "Paprika",
           "quantity": "1",
           "unit": "tsp",
           "id": "paprika",
-          "group": "Marinade"
+          "group": "Marinade",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -580,97 +654,129 @@
           "ingredient": "Tofu",
           "quantity": "1",
           "unit": "package",
-          "id": "tofu"
+          "id": "tofu",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Coconut oil",
           "quantity": "2",
           "unit": "tbsp",
-          "id": "oil-coconut"
+          "id": "oil-coconut",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Shallots",
           "quantity": "3",
           "unit": "",
-          "id": "shallots"
+          "id": "shallots",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Cumin powder",
           "quantity": "1",
           "unit": "tsp",
-          "id": "cumin-powder"
+          "id": "cumin-powder",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Coriander powder",
           "quantity": "1",
           "unit": "tsp",
-          "id": "coriander-powder"
+          "id": "coriander-powder",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Red Curry Paste",
+          "ingredient": "Red curry paste",
           "quantity": "5",
           "unit": "tbsp",
-          "id": "red-curry-paste"
+          "id": "red-curry-paste",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Baby potatoes",
           "quantity": "1.5",
           "unit": "cups",
-          "id": "potatoes-baby"
+          "id": "potatoes-baby",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Carrots",
           "quantity": "2",
           "unit": "",
-          "id": "carrots"
+          "id": "carrots",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Coconut milk",
           "quantity": "28",
           "unit": "oz",
-          "id": "milk-coconut"
+          "id": "milk-coconut",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Water",
           "quantity": "1.5",
           "unit": "cups",
-          "id": "water"
+          "id": "water",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Ground cinnamon",
           "quantity": "1/4",
           "unit": "tsp",
-          "id": "ground-cinnamon"
+          "id": "ground-cinnamon",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Soy sauce",
           "quantity": "2",
           "unit": "tbsp",
-          "id": "sauce-soy"
+          "id": "sauce-soy",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Maple syrup",
           "quantity": "2",
           "unit": "tbsp",
-          "id": "maple-syrup"
+          "id": "maple-syrup",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Peanut butter",
           "quantity": "2",
           "unit": "tbsp",
-          "id": "peanut-butter"
+          "id": "peanut-butter",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Lime juice",
           "quantity": "2",
           "unit": "tbsp",
-          "id": "lime-juice"
+          "id": "lime-juice",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Rice/Grain",
           "quantity": "",
           "unit": "",
-          "id": "rice"
+          "id": "rice",
+          "prep": "",
+          "group": ""
         }
       ],
       "instructions": [
@@ -716,107 +822,122 @@
         {
           "ingredient": "Cauliflower",
           "quantity": "1.5",
-          "unit": "cups (chopped)",
+          "unit": "cups",
           "id": "caul",
-          "group": ""
+          "group": "",
+          "prep": "chopped"
         },
         {
           "ingredient": "Broccoli",
           "quantity": "1.5",
-          "unit": "cups (chopped)",
+          "unit": "cups",
           "id": "broc",
-          "group": ""
+          "group": "",
+          "prep": "chopped"
         },
         {
           "ingredient": "Carrots",
           "quantity": "1.5",
-          "unit": "cups (chopped)",
+          "unit": "cups",
           "id": "carr",
-          "group": ""
+          "group": "",
+          "prep": "chopped"
         },
         {
-          "ingredient": "Frozen Peas",
+          "ingredient": "Frozen peas",
           "quantity": "1",
           "unit": "cups",
           "id": "peas",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Green beans",
           "quantity": "1/2",
           "unit": "cups",
           "id": "beans",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Cilantro",
           "quantity": "1",
           "unit": "handful",
           "id": "cil",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Cashews",
           "quantity": "1/4",
           "unit": "cups",
           "id": "cash",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Olive oil",
           "quantity": "1",
           "unit": "tbsp",
           "id": "olive",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Onion",
           "quantity": "1",
           "unit": "chopped",
           "id": "onion",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Curry paste",
           "quantity": "2",
           "unit": "tbsp",
           "id": "curpas",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Coconut cream",
           "quantity": "1/2",
           "unit": "cups",
           "id": "cococr",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Lime",
           "quantity": "1",
           "unit": "squeezed",
           "id": "lim",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Turmeric",
           "quantity": "1",
           "unit": "tsp",
           "id": "tur",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Water",
           "quantity": "2",
           "unit": "tbsp",
           "id": "wa",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Blender/processor",
           "quantity": "",
           "unit": "",
           "id": "",
-          "group": ""
+          "group": "",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -857,79 +978,105 @@
           "ingredient": "Coconut oil",
           "quantity": "2",
           "unit": "tbsp",
-          "id": "oil-coconut"
+          "id": "oil-coconut",
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Eggs",
           "quantity": "2",
           "unit": "",
-          "id": "eggs"
+          "id": "eggs",
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Garlic (minced)",
+          "ingredient": "Garlic",
           "quantity": "2",
           "unit": "cloves",
-          "id": "garlic"
+          "id": "garlic",
+          "group": "",
+          "prep": "minced"
         },
         {
-          "ingredient": "Green onions (chopped)",
+          "ingredient": "Green onions",
           "quantity": "1",
           "unit": "bunch",
-          "id": "onions-green"
+          "id": "onions-green",
+          "group": "",
+          "prep": "chopped"
         },
         {
-          "ingredient": "Chopped vegetables (peppers, brussel sprouts etc)",
+          "ingredient": "Mixed fresh vegetables",
           "quantity": "1",
           "unit": "cups",
-          "id": "vegetables-chopped"
+          "id": "vegetables-chopped",
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Kale (ribs removed, chopped)",
+          "ingredient": "Kale",
           "quantity": "1",
           "unit": "bunch",
-          "id": "kale"
+          "id": "kale",
+          "group": "",
+          "prep": "De-ribbed, chopped"
         },
         {
           "ingredient": "Sea salt",
           "quantity": "1/4",
           "unit": "tsp",
-          "id": "salt-sea"
+          "id": "salt-sea",
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Coconut flakes",
           "quantity": "3/4",
           "unit": "cups",
-          "id": "coconut-flakes"
+          "id": "coconut-flakes",
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Rice",
           "quantity": "1",
           "unit": "cup",
-          "id": "rice"
+          "id": "rice",
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Soy sauce",
           "quantity": "2",
           "unit": "tsp",
-          "id": "sauce-soy"
+          "id": "sauce-soy",
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Sriracha",
           "quantity": "2",
           "unit": "tsp",
-          "id": "sriracha"
+          "id": "sriracha",
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Lime (halved)",
+          "ingredient": "Lime",
           "quantity": "1",
           "unit": "",
-          "id": "lime"
+          "id": "lime",
+          "group": "",
+          "prep": "squeezed"
         },
         {
           "ingredient": "Cilantro",
           "quantity": "1",
           "unit": "handful",
-          "id": "cilantro"
+          "id": "cilantro",
+          "group": "",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -970,49 +1117,65 @@
           "ingredient": "Sweet Potato",
           "quantity": "1",
           "unit": "large",
-          "id": "potato-sweet"
+          "id": "potato-sweet",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Nutritional Yeast (optional)",
+          "ingredient": "Nutritional yeast",
           "quantity": "2-3",
           "unit": "tbsp",
-          "id": "parm"
+          "id": "parm",
+          "prep": "optional",
+          "group": ""
         },
         {
           "ingredient": "Flour",
           "quantity": "1/3",
           "unit": "cups",
-          "id": "flour"
+          "id": "flour",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Salt",
           "quantity": "1/2",
           "unit": "tsp",
-          "id": "salt"
+          "id": "salt",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Cherry tomatoes",
           "quantity": "250",
           "unit": "grams",
-          "id": "tomatoes"
+          "id": "tomatoes",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Coconut oil",
           "quantity": "2",
           "unit": "tbsp",
-          "id": "coco-oil"
+          "id": "coco-oil",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Garlic",
           "quantity": "3",
           "unit": "cloves",
-          "id": "garlic"
+          "id": "garlic",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Optional Nuts (pine/pecan etc.)",
+          "ingredient": "Nuts",
           "quantity": "4",
           "unit": "tbsp",
-          "id": "nuts"
+          "id": "nuts",
+          "prep": "",
+          "group": ""
         }
       ],
       "instructions": [
@@ -1052,64 +1215,84 @@
       "time": "00:30:00",
       "ingredients": [
         {
-          "ingredient": "Butter, unsalted",
+          "ingredient": "Butter",
           "quantity": "5",
           "unit": "tbsp",
-          "id": "butter"
+          "id": "butter",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Kimchi (chopped)",
+          "ingredient": "Kimchi",
           "quantity": "1",
           "unit": "cups",
-          "id": "kimchi"
+          "id": "kimchi",
+          "prep": "chopped",
+          "group": ""
         },
         {
-          "ingredient": "Kimchi (juice)",
+          "ingredient": "Kimchi juice",
           "quantity": "1/3",
           "unit": "cups",
-          "id": "kimchi-juice"
+          "id": "kimchi-juice",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Gochujang",
           "quantity": "2",
           "unit": "tbsp",
-          "id": "gochu"
+          "id": "gochu",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Vegetable Broth",
+          "ingredient": "Vegetable broth",
           "quantity": "1/2",
           "unit": "cup",
-          "id": "veg-broth"
+          "id": "veg-broth",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Udon Noodles",
+          "ingredient": "Udon noodles",
           "quantity": "1",
           "unit": "lb",
-          "id": "udon"
+          "id": "udon",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Toasted Sesame Seeds",
+          "ingredient": "Sesame seeds",
           "quantity": "1",
           "unit": "tbsp",
-          "id": "sesa"
+          "id": "sesa",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Salt",
           "quantity": "1",
           "unit": "pinch",
-          "id": "salt"
+          "id": "salt",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Egg yolks",
-          "quantity": "2- 4",
+          "quantity": "-",
           "unit": "",
-          "id": "yolks"
+          "id": "yolks",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Scallions (thinly sliced)",
+          "ingredient": "Scallions",
           "quantity": "3",
           "unit": "",
-          "id": "scall"
+          "id": "scall",
+          "prep": "thinly sliced",
+          "group": ""
         }
       ],
       "instructions": [
@@ -1150,119 +1333,136 @@
           "quantity": "1",
           "unit": "tsp",
           "id": "oil",
-          "group": "broth"
+          "group": "broth",
+          "prep": ""
         },
         {
           "ingredient": "Red curry paste",
           "quantity": "1",
           "unit": "tbsp",
           "id": "rcp",
-          "group": "broth"
+          "group": "broth",
+          "prep": ""
         },
         {
           "ingredient": "Soy sauce",
           "quantity": "1/4",
           "unit": "cups",
           "id": "soysauce",
-          "group": "broth"
+          "group": "broth",
+          "prep": ""
         },
         {
           "ingredient": "Peanut butter",
           "quantity": "1/4",
           "unit": "cups",
           "id": "pb",
-          "group": "broth"
+          "group": "broth",
+          "prep": ""
         },
         {
           "ingredient": "Vegetable broth",
           "quantity": "4",
           "unit": "cups",
           "id": "vegbroth",
-          "group": "broth"
+          "group": "broth",
+          "prep": ""
         },
         {
           "ingredient": "Honey",
           "quantity": "2",
           "unit": "tbsp",
           "id": "honey",
-          "group": "broth"
+          "group": "broth",
+          "prep": ""
         },
         {
           "ingredient": "Coconut milk",
-          "quantity": "1 (14 oz)",
-          "unit": "can",
+          "quantity": "14",
+          "unit": "oz",
           "id": "coco",
-          "group": "broth"
+          "group": "broth",
+          "prep": ""
         },
         {
           "ingredient": "Garlic",
           "quantity": "4",
           "unit": "cloves",
           "id": "garlic",
-          "group": "broth"
+          "group": "broth",
+          "prep": ""
         },
         {
           "ingredient": "Ginger",
           "quantity": "1",
           "unit": "thumb-tip",
           "id": "ginger",
-          "group": "broth"
+          "group": "broth",
+          "prep": ""
         },
         {
           "ingredient": "Rice",
           "quantity": "1",
           "unit": "cups",
           "id": "rice",
-          "group": ""
+          "group": "bowl",
+          "prep": ""
         },
         {
-          "ingredient": "Carrots (matchsticked)",
+          "ingredient": "Carrots",
           "quantity": "1",
           "unit": "cups",
           "id": "carrots",
-          "group": ""
+          "group": "bowl",
+          "prep": "julienned"
         },
         {
           "ingredient": "Peanuts",
           "quantity": "1/4",
           "unit": "cups",
           "id": "peanuts",
-          "group": ""
+          "group": "bowl",
+          "prep": ""
         },
         {
           "ingredient": "Cucumber",
           "quantity": "1/2",
           "unit": "",
           "id": "cucu",
-          "group": ""
+          "group": "bowl",
+          "prep": ""
         },
         {
-          "ingredient": "Bell pepper (sliced)",
+          "ingredient": "Bell pepper",
           "quantity": "1",
           "unit": "",
           "id": "bell",
-          "group": ""
+          "group": "bowl",
+          "prep": "sliced"
         },
         {
-          "ingredient": "Green onions (sliced)",
+          "ingredient": "Green onions",
           "quantity": "2",
           "unit": "",
           "id": "gonion",
-          "group": ""
+          "group": "bowl",
+          "prep": "sliced"
         },
         {
           "ingredient": "Jalapeno",
           "quantity": "1",
           "unit": "",
           "id": "jalap",
-          "group": ""
+          "group": "bowl",
+          "prep": ""
         },
         {
           "ingredient": "Lime",
           "quantity": "1",
           "unit": "",
           "id": "lime",
-          "group": ""
+          "group": "bowl",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -1298,109 +1498,116 @@
       "time": "00:50:00",
       "ingredients": [
         {
-          "ingredient": "Olive oil",
-          "quantity": "",
-          "unit": "",
-          "id": "olive_oil",
-          "group": "tofu"
-        },
-        {
           "ingredient": "Bell pepper",
           "quantity": "1",
           "unit": "",
           "id": "bell_pepper",
-          "group": "pineapple salsa"
+          "group": "pineapple salsa",
+          "prep": ""
         },
         {
           "ingredient": "Tofu (firm)",
           "quantity": "1",
           "unit": "package",
           "id": "tofu",
-          "group": "tofu"
+          "group": "tofu",
+          "prep": ""
         },
         {
           "ingredient": "Salt",
           "quantity": "",
           "unit": "pinch",
           "id": "salt",
-          "group": "tofu"
+          "group": "tofu",
+          "prep": ""
         },
         {
-          "ingredient": "Shredded Coconut",
+          "ingredient": "Shredded coconut",
           "quantity": "1/4",
           "unit": "cups",
           "id": "shredded_coconut",
-          "group": "coconut rice"
+          "group": "coconut rice",
+          "prep": ""
         },
         {
           "ingredient": "Brown rice",
           "quantity": "1",
           "unit": "cups",
           "id": "brown_rice",
-          "group": "coconut rice"
+          "group": "coconut rice",
+          "prep": ""
         },
         {
           "ingredient": "Coconut milk",
           "quantity": "1",
           "unit": "can (400ml)",
           "id": "coconut_milk",
-          "group": "coconut rice"
+          "group": "coconut rice",
+          "prep": ""
         },
         {
-          "ingredient": "Brown Sugar",
+          "ingredient": "Brown sugar",
           "quantity": "2",
           "unit": "tsp",
           "id": "brown_sugar",
-          "group": "coconut rice"
+          "group": "coconut rice",
+          "prep": ""
         },
         {
           "ingredient": "Coconut oil",
           "quantity": "1",
           "unit": "tsp",
           "id": "coconut_oil",
-          "group": "coconut rice"
+          "group": "coconut rice",
+          "prep": ""
         },
         {
-          "ingredient": "Pineapple (diced)",
+          "ingredient": "Pineapple",
           "quantity": "1.5",
           "unit": "cups",
           "id": "pineapple",
-          "group": "pineapple salsa"
+          "group": "pineapple salsa",
+          "prep": "diced"
         },
         {
-          "ingredient": "Red onion (diced)",
+          "ingredient": "Red onion",
           "quantity": "1/4",
           "unit": "cups",
           "id": "red_onion",
-          "group": "pineapple salsa"
+          "group": "pineapple salsa",
+          "prep": "diced"
         },
         {
-          "ingredient": "Jalapenos (seeded, diced)",
+          "ingredient": "Jalapenos",
           "quantity": "1",
           "unit": "pepper",
           "id": "jalapenos",
-          "group": "pineapple salsa"
+          "group": "pineapple salsa",
+          "prep": "seeded, diced"
         },
         {
-          "ingredient": "Garlic (minced)",
+          "ingredient": "Garlic",
           "quantity": "1",
           "unit": "clove",
           "id": "garlic",
-          "group": "pineapple salsa"
+          "group": "pineapple salsa",
+          "prep": "minced"
         },
         {
-          "ingredient": "Fresh lime juice",
+          "ingredient": "Lime",
           "quantity": "3",
           "unit": "tbsp",
           "id": "lime_juice",
-          "group": "pineapple salsa"
+          "group": "pineapple salsa",
+          "prep": "squeezed"
         },
         {
           "ingredient": "Red pepper flakes",
           "quantity": "1",
           "unit": "dash",
           "id": "red_pepper_flakes",
-          "group": "pineapple salsa"
+          "group": "pineapple salsa",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -1440,98 +1647,112 @@
           "quantity": "2",
           "unit": "cups",
           "id": "broc",
-          "group": "salad"
+          "group": "salad",
+          "prep": "chopped"
         },
         {
-          "ingredient": "Potatoes (chopped)",
+          "ingredient": "Potatoes",
           "quantity": "1",
           "unit": "cups",
           "id": "potatoes",
-          "group": "salad"
+          "group": "salad",
+          "prep": "chopped"
         },
         {
           "ingredient": "Dill",
           "quantity": "1",
           "unit": "sprig",
           "id": "dill",
-          "group": "salad"
+          "group": "salad",
+          "prep": ""
         },
         {
-          "ingredient": "Pears (sliced)",
+          "ingredient": "Pears sliced",
           "quantity": "2",
           "unit": "",
           "id": "pears",
-          "group": "salad"
+          "group": "salad",
+          "prep": "sliced"
         },
         {
           "ingredient": "Brie cheese",
           "quantity": "4-6",
           "unit": "slices",
           "id": "cheese",
-          "group": "salad"
+          "group": "salad",
+          "prep": ""
         },
         {
           "ingredient": "Cranberries",
           "quantity": "1/3",
           "unit": "cups",
           "id": "cran",
-          "group": "salad"
+          "group": "salad",
+          "prep": ""
         },
         {
           "ingredient": "Avocado",
           "quantity": "1/2",
           "unit": "",
           "id": "avocado",
-          "group": "salad"
+          "group": "salad",
+          "prep": ""
         },
         {
-          "ingredient": "Pecans (chopped)",
+          "ingredient": "Pecans",
           "quantity": "1/3",
           "unit": "cups",
           "id": "pecans",
-          "group": "salad"
+          "group": "salad",
+          "prep": "chopped"
         },
         {
           "ingredient": "Olive oil",
           "quantity": "1/2",
           "unit": "cups",
           "id": "oil-olive",
-          "group": "dressing"
+          "group": "dressing",
+          "prep": ""
         },
         {
           "ingredient": "Apple cider vinegar",
           "quantity": "2",
           "unit": "tsp",
           "id": "vinegar-apple",
-          "group": "dressing"
+          "group": "dressing",
+          "prep": ""
         },
         {
           "ingredient": "Rice wine vinegar",
           "quantity": "1/4",
           "unit": "cups",
           "id": "vinegar-rice-wine",
-          "group": "dressing"
+          "group": "dressing",
+          "prep": ""
         },
         {
-          "ingredient": "Shallots (minced)",
+          "ingredient": "Shallots",
           "quantity": "1",
           "unit": "tbsp",
           "id": "shallots",
-          "group": "dressing"
+          "group": "dressing",
+          "prep": "minced"
         },
         {
           "ingredient": "Maple Syrup",
           "quantity": "1",
           "unit": "tbsp",
           "id": "maple-syrup",
-          "group": "dressing"
+          "group": "dressing",
+          "prep": ""
         },
         {
           "ingredient": "Pepper",
           "quantity": "1",
           "unit": "pinch",
           "id": "pepper",
-          "group": "dressing"
+          "group": "dressing",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -1571,91 +1792,104 @@
           "quantity": "1/2",
           "unit": "cups",
           "id": "quin",
-          "group": "salad"
+          "group": "salad",
+          "prep": ""
         },
         {
           "ingredient": "Edamame",
           "quantity": "1",
           "unit": "cups",
           "id": "eda",
-          "group": "salad"
+          "group": "salad",
+          "prep": ""
         },
         {
-          "ingredient": "Nuts (almonds, pecans, whatever)",
+          "ingredient": "Nuts",
           "quantity": "1/3",
           "unit": "cups",
           "id": "nuts",
-          "group": "salad"
+          "group": "salad",
+          "prep": "chopped"
         },
         {
-          "ingredient": "A Beet (peeled)",
+          "ingredient": "Beet",
           "quantity": "1",
           "unit": "",
           "id": "beet",
-          "group": "salad"
+          "group": "salad",
+          "prep": "peeled"
         },
         {
-          "ingredient": "A Large carrot",
+          "ingredient": "Carrot",
           "quantity": "1",
           "unit": "",
           "id": "carrot",
-          "group": "salad"
+          "group": "salad",
+          "prep": ""
         },
         {
-          "ingredient": "Baby Spinach or Arugula",
+          "ingredient": "Leafy greens",
           "quantity": "2",
           "unit": "cups",
           "id": "greens",
-          "group": "salad"
+          "group": "salad",
+          "prep": ""
         },
         {
-          "ingredient": "Avocado (cubed)",
+          "ingredient": "Avocado",
           "quantity": "1",
           "unit": "",
           "id": "avo",
-          "group": "salad"
+          "group": "salad",
+          "prep": "cubed"
         },
         {
-          "ingredient": "Apple Cider Vinegar",
+          "ingredient": "Apple cider winegar",
           "quantity": "3",
           "unit": "tbsp",
           "id": "vin",
-          "group": "dressing"
+          "group": "dressing",
+          "prep": ""
         },
         {
-          "ingredient": "Lime Juice",
+          "ingredient": "Lime",
           "quantity": "2",
           "unit": "tbsp",
           "id": "lime",
-          "group": "dressing"
+          "group": "dressing",
+          "prep": "squeezed"
         },
         {
-          "ingredient": "Olive Oil",
+          "ingredient": "Olive oil",
           "quantity": "2",
           "unit": "tbsp",
           "id": "oil",
-          "group": "dressing"
+          "group": "dressing",
+          "prep": ""
         },
         {
-          "ingredient": "Maple Syrup",
+          "ingredient": "Maple syrup",
           "quantity": "2",
           "unit": "tbsp",
           "id": "syr",
-          "group": "dressing"
+          "group": "dressing",
+          "prep": ""
         },
         {
-          "ingredient": "Dijon Mustard",
+          "ingredient": "Dijon mustard",
           "quantity": "1",
           "unit": "tsp",
           "id": "dij",
-          "group": "dressing"
+          "group": "dressing",
+          "prep": ""
         },
         {
-          "ingredient": "Salt, Pepper",
+          "ingredient": "Salt/pepper",
           "quantity": "1",
           "unit": "dash",
           "id": "salt",
-          "group": "dressing"
+          "group": "dressing",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -1694,89 +1928,117 @@
           "ingredient": "Black beans",
           "quantity": "3",
           "unit": "Cans (15oz/each)",
-          "id": "beans"
+          "id": "beans",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Canned Corn",
+          "ingredient": "Canned corn",
           "quantity": "1",
           "unit": "cups",
-          "id": "corn"
+          "id": "corn",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Bell Pepper (any colour)",
+          "ingredient": "Bell pepper",
           "quantity": "1",
           "unit": "",
-          "id": "pepper"
+          "id": "pepper",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Cherry Tomatoes",
+          "ingredient": "Cherry tomatoes",
           "quantity": "1",
           "unit": "cups",
-          "id": "tomatoes"
+          "id": "tomatoes",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Red Onion (diced)",
+          "ingredient": "Red onion",
           "quantity": "1",
           "unit": "cups",
-          "id": "onion"
+          "id": "onion",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Jalapeno (seeds optional)",
+          "ingredient": "Jalapeno",
           "quantity": "1",
           "unit": "",
-          "id": "jalap"
+          "id": "jalap",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Lime Zest",
+          "ingredient": "Lime zest",
           "quantity": "1/2",
           "unit": "tsp",
-          "id": "lime-zest"
+          "id": "lime-zest",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Lime juice",
           "quantity": "2",
           "unit": "tbsp",
-          "id": "lime-juice"
+          "id": "lime-juice",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Olive oil",
           "quantity": "1/4",
           "unit": "cups",
-          "id": "oil"
+          "id": "oil",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "White vinegar",
           "quantity": "1/4",
           "unit": "cups",
-          "id": "vin-wh"
+          "id": "vin-wh",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Chili powder",
           "quantity": "1/2",
           "unit": "tsp",
-          "id": "chil"
+          "id": "chil",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Cumin",
           "quantity": "1/2",
           "unit": "tsp",
-          "id": "cumin"
+          "id": "cumin",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Salt",
           "quantity": "1/2",
           "unit": "tsp",
-          "id": "salt"
+          "id": "salt",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Sliced Avocado (optional)",
+          "ingredient": "Avocado",
           "quantity": "1",
           "unit": "",
-          "id": "avo"
+          "id": "avo",
+          "prep": "",
+          "group": ""
         }
       ],
       "instructions": [
-        "In a large serving bowl combine all the ingredients.",
+        "Chop all vegetables into bite sized pieces. In a large serving bowl combine all the ingredients. Feel free to leave or take out the seeds of the jalapeno.",
         "Cover and chill. Leftovers should last 3 to 4 days."
       ],
       "commentary": {
@@ -1807,49 +2069,65 @@
           "ingredient": "Mirin",
           "quantity": "1/4",
           "unit": "cups",
-          "id": "mirin"
+          "id": "mirin",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Miso",
           "quantity": "1/4",
           "unit": "cups",
-          "id": "miso"
+          "id": "miso",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Rice Wine Vinegar",
+          "ingredient": "Rice wine vinegar",
           "quantity": "2",
           "unit": "tbsp",
-          "id": "rwv"
+          "id": "rwv",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Ginger - peeled and grated",
+          "ingredient": "Ginger",
           "quantity": "2",
           "unit": "tsp",
-          "id": "ginger"
+          "id": "ginger",
+          "prep": "peeled and grated",
+          "group": ""
         },
         {
           "ingredient": "Asparagus",
           "quantity": "2",
           "unit": "bunches",
-          "id": "asp"
+          "id": "asp",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Lime wedges",
           "quantity": "4",
           "unit": "",
-          "id": "lime"
+          "id": "lime",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Scallions (Green onions)",
+          "ingredient": "Scallions",
           "quantity": "1/4",
           "unit": "cups",
-          "id": "scall"
+          "id": "scall",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Sesame Seeds",
           "quantity": "",
           "unit": "sprinkle",
-          "id": "seeds"
+          "id": "seeds",
+          "prep": "",
+          "group": ""
         }
       ],
       "instructions": [
@@ -1885,53 +2163,60 @@
       "time": "00:25:00",
       "ingredients": [
         {
-          "ingredient": "Dates (Deglet noor or medjool)",
+          "ingredient": "Dates",
           "quantity": "1",
           "unit": "cups",
           "id": "dates",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Maple Syrup (or: agava nectar, honey)",
+          "ingredient": "Maple syrup",
           "quantity": "1/4",
           "unit": "cups",
           "id": "maple-syrup",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Natural Peanut Butter",
+          "ingredient": "Peanut butter",
           "quantity": "1/4",
           "unit": "cups",
           "id": "peanut-butter",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Roasted, unsalted almonds",
+          "ingredient": "Almonds",
           "quantity": "1",
           "unit": "cups",
           "id": "almonds",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Rolled Oats",
+          "ingredient": "Rolled oats",
           "quantity": "1.5",
           "unit": "cups",
           "id": "oats-rolled",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Parchment Paper",
           "quantity": "",
           "unit": "",
           "id": "parchment-paper",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "8x8 Baking Pan",
           "quantity": "",
           "unit": "",
           "id": "",
-          "group": ""
+          "group": "",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -1971,56 +2256,64 @@
           "quantity": "1",
           "unit": "cups",
           "id": "dates",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Peanut butter",
           "quantity": "2/3",
           "unit": "cups",
           "id": "pb",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Protein powder",
           "quantity": "1/4",
           "unit": "cups",
           "id": "pp",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Rice malt syrup",
           "quantity": "8",
           "unit": "tsp",
           "id": "rms",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Almond meal",
           "quantity": "1/4",
           "unit": "cups",
           "id": "am",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Cinnamon",
           "quantity": "1",
           "unit": "tsp",
           "id": "cin",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Rolled oats",
           "quantity": "1",
           "unit": "cups",
           "id": "oats",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Water",
           "quantity": "4",
           "unit": "tsp",
           "id": "water",
-          "group": ""
+          "group": "",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -2059,28 +2352,32 @@
           "quantity": "1",
           "unit": "lbs",
           "id": "ginger",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "White Sugar",
           "quantity": "4",
           "unit": "cups",
           "id": "sugar-white",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Water",
           "quantity": "4",
           "unit": "cups",
           "id": "water",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Salt",
           "quantity": "1",
           "unit": "pinch",
           "id": "salt",
-          "group": ""
+          "group": "",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -2125,112 +2422,128 @@
           "quantity": "1",
           "unit": "cups",
           "id": "wc",
-          "group": "Creamy filling"
+          "group": "Creamy filling",
+          "prep": ""
         },
         {
           "ingredient": "Icing sugar",
           "quantity": "3/4",
           "unit": "cups",
           "id": "is",
-          "group": "Creamy filling"
+          "group": "Creamy filling",
+          "prep": ""
         },
         {
           "ingredient": "Vanilla",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "van",
-          "group": "Creamy filling"
+          "group": "Creamy filling",
+          "prep": ""
         },
         {
           "ingredient": "Cinnamon",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "cin",
-          "group": "Creamy filling"
+          "group": "Creamy filling",
+          "prep": ""
         },
         {
-          "ingredient": "Plain Gelatin",
+          "ingredient": "Plain gelatin",
           "quantity": "1~",
           "unit": "tbsp",
           "id": "gelatin",
-          "group": "Pumpkin filling"
+          "group": "Pumpkin filling",
+          "prep": ""
         },
         {
-          "ingredient": "Cold Water",
+          "ingredient": "Cold water",
           "quantity": "1/4",
           "unit": "cups",
           "id": "water",
-          "group": "Pumpkin filling"
+          "group": "Pumpkin filling",
+          "prep": ""
         },
         {
           "ingredient": "Eggs",
           "quantity": "3",
           "unit": "",
           "id": "eggs",
-          "group": "Pumpkin filling"
+          "group": "Pumpkin filling",
+          "prep": ""
         },
         {
           "ingredient": "White sugar",
           "quantity": "1/3",
           "unit": "cups",
           "id": "ws",
-          "group": "Pumpkin filling"
+          "group": "Pumpkin filling",
+          "prep": ""
         },
         {
           "ingredient": "Cinnamon",
           "quantity": "1",
           "unit": "tsp",
           "id": "cin2",
-          "group": "Pumpkin filling"
+          "group": "Pumpkin filling",
+          "prep": ""
         },
         {
           "ingredient": "Ginger",
           "quantity": "1/4",
           "unit": "tsp",
           "id": "ginger",
-          "group": "Pumpkin filling"
+          "group": "Pumpkin filling",
+          "prep": ""
         },
         {
           "ingredient": "Salt",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "salt",
-          "group": "Pumpkin filling"
+          "group": "Pumpkin filling",
+          "prep": ""
         },
         {
           "ingredient": "Allspice",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "allspice",
-          "group": "Pumpkin filling"
+          "group": "Pumpkin filling",
+          "prep": ""
         },
         {
           "ingredient": "Canned pumpkin",
           "quantity": "1+1/4",
           "unit": "cups",
           "id": "pumpkin",
-          "group": "Pumpkin filling"
+          "group": "Pumpkin filling",
+          "prep": ""
         },
         {
           "ingredient": "Milk",
           "quantity": "1/2",
           "unit": "cups",
           "id": "milk",
-          "group": "Pumpkin filling"
+          "group": "Pumpkin filling",
+          "prep": ""
         },
         {
           "ingredient": "Icing sugar",
           "quantity": "1/4",
           "unit": "cups",
           "id": "icsug",
-          "group": "Pumpkin filling"
+          "group": "Pumpkin filling",
+          "prep": ""
         },
         {
           "ingredient": "Pre-made crust shell",
           "quantity": "",
           "unit": "",
           "id": "",
-          "group": "Crust"
+          "group": "Crust",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -2276,123 +2589,140 @@
       "time": "01:00:00",
       "ingredients": [
         {
-          "ingredient": "Sweet Potato",
+          "ingredient": "Sweet potato",
           "quantity": "2",
           "unit": "",
           "id": "sw",
-          "group": "Main"
+          "group": "Main",
+          "prep": ""
         },
         {
           "ingredient": "Chickpeas",
           "quantity": "15",
           "unit": "oz",
           "id": "chick",
-          "group": "Main"
+          "group": "Main",
+          "prep": ""
         },
         {
-          "ingredient": "Olive Oil",
+          "ingredient": "Olive oil",
           "quantity": "1/2",
           "unit": "tbsp",
           "id": "oil",
-          "group": "Main"
+          "group": "Main",
+          "prep": ""
         },
         {
           "ingredient": "Cumin",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "cumin",
-          "group": "Main"
+          "group": "Main",
+          "prep": ""
         },
         {
           "ingredient": "Coriander",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "cor",
-          "group": "Main"
+          "group": "Main",
+          "prep": ""
         },
         {
           "ingredient": "Cinnamon",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "cin",
-          "group": "Main"
+          "group": "Main",
+          "prep": ""
         },
         {
           "ingredient": "Paprika",
           "quantity": "l",
           "unit": "tsp",
           "id": "pap",
-          "group": "Main"
+          "group": "Main",
+          "prep": ""
         },
         {
           "ingredient": "Hummus",
           "quantity": "1/4",
           "unit": "cup",
           "id": "hum",
-          "group": "Garlic Herb Sauce"
+          "group": "Garlic Herb Sauce",
+          "prep": ""
         },
         {
-          "ingredient": "Dried Dill",
+          "ingredient": "Dill (dried)",
           "quantity": "1",
           "unit": "tsp",
           "id": "dill",
-          "group": "Garlic Herb Sauce"
+          "group": "Garlic Herb Sauce",
+          "prep": ""
         },
         {
           "ingredient": "Garlic",
           "quantity": "3",
           "unit": "cloves",
           "id": "garlic",
-          "group": "Garlic Herb Sauce"
+          "group": "Garlic Herb Sauce",
+          "prep": ""
         },
         {
           "ingredient": "Lemon",
           "quantity": "1/2",
           "unit": "lemon",
           "id": "lem",
-          "group": "Garlic Herb Sauce"
+          "group": "Garlic Herb Sauce",
+          "prep": ""
         },
         {
           "ingredient": "Water",
           "quantity": "",
           "unit": "splash",
           "id": "water",
-          "group": "Garlic Herb Sauce"
+          "group": "Garlic Herb Sauce",
+          "prep": ""
         },
         {
           "ingredient": "Salt",
           "quantity": "",
           "unit": "pinch",
           "id": "salt",
-          "group": "Garlic Herb Sauce"
+          "group": "Garlic Herb Sauce",
+          "prep": ""
         },
         {
-          "ingredient": "Cherry Tomatoes",
+          "ingredient": "Cherry tomatoes",
           "quantity": "1/4",
           "unit": "cup",
           "id": "tomat",
-          "group": "Toppings"
+          "group": "Toppings",
+          "prep": ""
         },
         {
-          "ingredient": "Chopped Cilantro",
+          "ingredient": "Cilantro",
           "quantity": "1/4",
           "unit": "cup",
           "id": "cil",
-          "group": "Toppings"
+          "group": "Toppings",
+          "prep": "chopped"
         },
         {
-          "ingredient": "Lemon Juice",
+          "ingredient": "Lemon",
           "quantity": "2",
           "unit": "tbsp",
           "id": "lemju",
-          "group": "Toppings"
+          "group": "Toppings",
+          "prep": "squeezed"
         },
         {
-          "ingredient": "Chili Garlic Sauce",
+          "ingredient": "Chili garlic sauce",
           "quantity": "",
           "unit": "pinch",
           "id": "chilsauce",
-          "group": "Toppings"
+          "group": "Toppings",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -2433,105 +2763,120 @@
           "quantity": "2",
           "unit": "tbsp",
           "id": "coco",
-          "group": "Curry"
+          "group": "Curry",
+          "prep": ""
         },
         {
           "ingredient": "Shallot",
           "quantity": "1/3",
           "unit": "cups",
           "id": "shal",
-          "group": "Curry"
+          "group": "Curry",
+          "prep": ""
         },
         {
           "ingredient": "Garlic",
           "quantity": "4",
           "unit": "cloves",
           "id": "gar",
-          "group": "Curry"
+          "group": "Curry",
+          "prep": ""
         },
         {
           "ingredient": "Ginger",
           "quantity": "2",
           "unit": "tbsp",
           "id": "gin",
-          "group": "Curry"
+          "group": "Curry",
+          "prep": ""
         },
         {
           "ingredient": "Jalapeno pepper",
           "quantity": "1",
           "unit": "",
           "id": "ja",
-          "group": "Curry"
+          "group": "Curry",
+          "prep": ""
         },
         {
           "ingredient": "Curry paste",
           "quantity": "4",
           "unit": "tbsp",
           "id": "cur",
-          "group": "Curry"
+          "group": "Curry",
+          "prep": ""
         },
         {
           "ingredient": "Coconut milk",
           "quantity": "2",
           "unit": "cups",
           "id": "comilk",
-          "group": "Curry"
+          "group": "Curry",
+          "prep": ""
         },
         {
           "ingredient": "Turmeric",
           "quantity": "1",
           "unit": "tsp",
           "id": "tur",
-          "group": "Curry"
+          "group": "Curry",
+          "prep": ""
         },
         {
-          "ingredient": "Maple Syrup",
+          "ingredient": "Maple syrup",
           "quantity": "1",
           "unit": "tbsp",
           "id": "mapsyr",
-          "group": "Curry"
+          "group": "Curry",
+          "prep": ""
         },
         {
-          "ingredient": "Soy Sauce",
+          "ingredient": "Soy sauce",
           "quantity": "2",
           "unit": "tbsp",
           "id": "soysauce",
-          "group": "Curry"
+          "group": "Curry",
+          "prep": ""
         },
         {
           "ingredient": "Cauliflower",
           "quantity": "1",
           "unit": "cups",
           "id": "caul",
-          "group": "Curry"
+          "group": "Curry",
+          "prep": ""
         },
         {
           "ingredient": "Chickpeas",
           "quantity": "1+1/4",
           "unit": "cups",
           "id": "chick",
-          "group": "Curry"
+          "group": "Curry",
+          "prep": ""
         },
         {
           "ingredient": "Quinoa/Rice",
           "quantity": "1",
           "unit": "cups",
           "id": "quin",
-          "group": "Base"
+          "group": "Base",
+          "prep": ""
         },
         {
           "ingredient": "Avocado",
           "quantity": "1",
           "unit": "",
           "id": "",
-          "group": "Toppings"
+          "group": "Toppings",
+          "prep": ""
         },
         {
           "ingredient": "Red onion",
           "quantity": "1/2",
           "unit": "onion",
           "id": "",
-          "group": "Toppings"
+          "group": "Toppings",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -2568,53 +2913,60 @@
       "time": "00:10:00",
       "ingredients": [
         {
-          "ingredient": "Ripe / Spotty Bananas",
+          "ingredient": "Bananas (extra ripe)",
           "quantity": "2",
           "unit": "",
           "id": "ban",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Chia Seeds",
           "quantity": "4",
           "unit": "tbsp",
           "id": "chia",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Cinnamon",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "cin",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Almond Milk",
+          "ingredient": "Almond milk",
           "quantity": "1.5",
           "unit": "cups",
           "id": "almilk",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Oats",
           "quantity": "1",
           "unit": "cups",
           "id": "oats",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Vanilla Extract",
+          "ingredient": "Vanilla extract",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "van",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Fresh fruit",
-          "quantity": "Optional",
+          "quantity": "",
           "unit": "",
           "id": "",
-          "group": ""
+          "group": "",
+          "prep": "optional"
         }
       ],
       "instructions": [
@@ -2648,95 +3000,108 @@
       "time": "00:30:00",
       "ingredients": [
         {
-          "ingredient": "Orzo Pasta",
+          "ingredient": "Orzo pasta",
           "quantity": "1",
           "unit": "cups",
           "id": "orzo",
-          "group": "Salad"
+          "group": "Salad",
+          "prep": ""
         },
         {
           "ingredient": "Almonds",
           "quantity": "1/2",
           "unit": "cups",
           "id": "al",
-          "group": "Salad"
+          "group": "Salad",
+          "prep": ""
         },
         {
-          "ingredient": "Chopped Parsley",
+          "ingredient": "Parsley",
           "quantity": "1",
           "unit": "cups",
           "id": "par",
-          "group": "Salad"
+          "group": "Salad",
+          "prep": "chopped"
         },
         {
-          "ingredient": "Pitted Kalamata Olives",
+          "ingredient": "Olives (kalamata)",
           "quantity": "1/2",
           "unit": "cups",
           "id": "oli",
-          "group": "Salad"
+          "group": "Salad",
+          "prep": "pitted"
         },
         {
-          "ingredient": "Chopped Green onion",
+          "ingredient": "Green onion",
           "quantity": "1/2",
           "unit": "cups",
           "id": "go",
-          "group": "Salad"
+          "group": "Salad",
+          "prep": "chopped"
         },
         {
           "ingredient": "Raisins",
           "quantity": "1/2",
           "unit": "cups",
           "id": "rai",
-          "group": "Salad"
+          "group": "Salad",
+          "prep": ""
         },
         {
-          "ingredient": "Feta (optional)",
+          "ingredient": "Feta",
           "quantity": "1/2",
           "unit": "cups",
           "id": "feta",
-          "group": "Salad"
+          "group": "Salad",
+          "prep": "optional"
         },
         {
-          "ingredient": "Orange Zest",
+          "ingredient": "Orange zest",
           "quantity": "1",
           "unit": "tsp",
           "id": "zest",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         },
         {
-          "ingredient": "Fresh Orange Juice",
+          "ingredient": "Oranges",
           "quantity": "1-2",
           "unit": "oranges",
           "id": "orange",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": "squeezed"
         },
         {
           "ingredient": "Olive oil",
           "quantity": "1/4",
           "unit": "cups",
           "id": "oil",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         },
         {
           "ingredient": "White wine vinegar",
           "quantity": "2",
           "unit": "tbsp",
           "id": "vin",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         },
         {
-          "ingredient": "Minced Garlic",
+          "ingredient": "Garlic",
           "quantity": "1",
           "unit": "clove",
           "id": "gar",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": "minced"
         },
         {
           "ingredient": "Salt",
           "quantity": "1/4",
           "unit": "tsp",
           "id": "sel",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -2771,102 +3136,116 @@
       "time": "01:20:00",
       "ingredients": [
         {
-          "ingredient": "Large tomatoes",
+          "ingredient": "Tomatoes",
           "quantity": "4",
-          "unit": "",
+          "unit": "large",
           "id": "tomat",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Eggplant (cubed)",
+          "ingredient": "Eggplant",
           "quantity": "1",
           "unit": "",
           "id": "egg",
-          "group": ""
+          "group": "",
+          "prep": "cubed"
         },
         {
-          "ingredient": "Bell pepper (diced)",
+          "ingredient": "Bell pepper",
           "quantity": "1",
           "unit": "",
           "id": "pep",
-          "group": ""
+          "group": "",
+          "prep": "diced"
         },
         {
-          "ingredient": "Zucchini (cubed)",
+          "ingredient": "Zucchini",
           "quantity": "1",
           "unit": "",
           "id": "zuk",
-          "group": ""
+          "group": "",
+          "prep": "cubed"
         },
         {
-          "ingredient": "Yellow Squash (cubed)",
+          "ingredient": "Yellow Squash",
           "quantity": "1",
           "unit": "",
           "id": "ysqu",
-          "group": ""
+          "group": "",
+          "prep": "cubed"
         },
         {
           "ingredient": "Olive oil",
           "quantity": "6",
           "unit": "",
           "id": "oil",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Salt",
           "quantity": "1/4",
           "unit": "tsp",
           "id": "salt",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Yellow onion (chopped)",
+          "ingredient": "Yellow onion",
           "quantity": "1",
           "unit": "",
           "id": "onion",
-          "group": ""
+          "group": "",
+          "prep": "chopped"
         },
         {
-          "ingredient": "Garlic (minced)",
+          "ingredient": "Garlic",
           "quantity": "4",
           "unit": "",
           "id": "gar",
-          "group": ""
+          "group": "",
+          "prep": "minced"
         },
         {
-          "ingredient": "Basil  (chopped)",
+          "ingredient": "Basil",
           "quantity": "1/4",
           "unit": "cups",
           "id": "bas",
-          "group": ""
+          "group": "",
+          "prep": "chopped"
         },
         {
           "ingredient": "Red pepper flakes",
           "quantity": "1/4",
           "unit": "tsp",
           "id": "flakes",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Dried oregano",
           "quantity": "1/4",
           "unit": "tsp",
           "id": "oreg",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Ground pepper",
           "quantity": "",
           "unit": "",
           "id": "",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Cheese grater/blender",
+          "ingredient": "Blender / grater",
           "quantity": "",
           "unit": "",
           "id": "",
-          "group": ""
+          "group": "",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -2909,49 +3288,65 @@
           "ingredient": "Kimchi",
           "quantity": "1/4",
           "unit": "cups",
-          "id": "kim"
+          "id": "kim",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Shallot",
           "quantity": "1",
           "unit": "shallot",
-          "id": "shal"
+          "id": "shal",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Garlic",
           "quantity": "1",
           "unit": "clove",
-          "id": "garlic"
+          "id": "garlic",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Bread (sourdough)",
+          "ingredient": "Bread",
           "quantity": "1",
           "unit": "slice",
-          "id": "bread"
+          "id": "bread",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Avocado",
           "quantity": "1/2",
           "unit": "",
-          "id": "avo"
+          "id": "avo",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Egg (poached)",
+          "ingredient": "Egg",
           "quantity": "1",
           "unit": "",
-          "id": "egg"
+          "id": "egg",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Paprika",
           "quantity": "1/4",
           "unit": "tsp",
-          "id": "pap"
+          "id": "pap",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Salt",
           "quantity": "1",
           "unit": "pinch",
-          "id": "salt"
+          "id": "salt",
+          "prep": "",
+          "group": ""
         }
       ],
       "instructions": [
@@ -2995,61 +3390,81 @@
           "ingredient": "Olive oil",
           "quantity": "",
           "unit": "",
-          "id": ""
+          "id": "",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Green onions",
           "quantity": "6",
           "unit": "",
-          "id": "go"
+          "id": "go",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Garlic",
           "quantity": "4",
           "unit": "cloves",
-          "id": "gar"
+          "id": "gar",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Ginger",
           "quantity": "1",
           "unit": "1-inch piece",
-          "id": "ging"
+          "id": "ging",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Vegetable broth",
           "quantity": "4",
           "unit": "cups",
-          "id": "vegbro"
+          "id": "vegbro",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Gochujang",
           "quantity": "3",
           "unit": "tbsp",
-          "id": "gochu"
+          "id": "gochu",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Soy sauce",
           "quantity": "3",
           "unit": "tbsp",
-          "id": "soy"
+          "id": "soy",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Daikon (or Radish)",
-          "quantity": "1",
+          "ingredient": "Daikon/Radish",
+          "quantity": "-",
           "unit": "",
-          "id": "sliced"
+          "id": "sliced",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Kimchi",
           "quantity": "1/2",
           "unit": "cups",
-          "id": ""
+          "id": "",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Silken Tofu",
           "quantity": "1/2",
           "unit": "block",
-          "id": "silk"
+          "id": "silk",
+          "prep": "",
+          "group": ""
         }
       ],
       "instructions": [
@@ -3086,64 +3501,84 @@
       "time": "00:45:00",
       "ingredients": [
         {
-          "ingredient": "Olive Oil",
+          "ingredient": "Olive oil",
           "quantity": "1",
           "unit": "tbsp",
-          "id": "oil"
+          "id": "oil",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Onion",
           "quantity": "1",
           "unit": "",
-          "id": "onion"
+          "id": "onion",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Ginger (grated)",
+          "ingredient": "Ginger",
           "quantity": "2",
           "unit": "tbsp",
-          "id": "ging"
+          "id": "ging",
+          "prep": "grated",
+          "group": ""
         },
         {
-          "ingredient": "Garlic (minced)",
+          "ingredient": "Garlic",
           "quantity": "2",
           "unit": "",
-          "id": "garlic"
+          "id": "garlic",
+          "prep": "minced",
+          "group": ""
         },
         {
           "ingredient": "Apple",
           "quantity": "1",
           "unit": "",
-          "id": "apple"
+          "id": "apple",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Carrots",
           "quantity": "1.5",
           "unit": "lbs",
-          "id": "carrots"
+          "id": "carrots",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Vegetable Broth",
+          "ingredient": "Vegetable broth",
           "quantity": "4",
           "unit": "cups",
-          "id": "broth"
+          "id": "broth",
+          "prep": "",
+          "group": ""
         },
         {
-          "ingredient": "Kosher Salt",
+          "ingredient": "Kosher salt",
           "quantity": "",
           "unit": "",
-          "id": "salt"
+          "id": "salt",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "Immersion blender",
           "quantity": "",
           "unit": "",
-          "id": ""
+          "id": "",
+          "prep": "",
+          "group": ""
         },
         {
           "ingredient": "",
           "quantity": "",
           "unit": "",
-          "id": ""
+          "id": "",
+          "prep": "",
+          "group": ""
         }
       ],
       "instructions": [
@@ -3181,100 +3616,132 @@
       "time": "00:40:00",
       "ingredients": [
         {
-          "ingredient": "Carrots (halved lengthwise)",
+          "ingredient": "Carrots",
           "quantity": "7-8",
           "unit": "",
-          "id": "carrots"
+          "id": "carrots",
+          "prep": "halved lengthwise",
+          "group": "base"
         },
         {
           "ingredient": "Green Lentils",
           "quantity": "3/4",
           "unit": "cups",
-          "id": "lentils"
+          "id": "lentils",
+          "prep": "",
+          "group": "base"
         },
         {
-          "ingredient": "Olive Oil (carrots)",
+          "ingredient": "Olive oil",
           "quantity": "1",
           "unit": "tsp",
-          "id": "oil"
+          "id": "oil",
+          "prep": "",
+          "group": "base"
         },
         {
           "ingredient": "Sea Salt",
           "quantity": "1/2",
           "unit": "tsp",
-          "id": "salt"
+          "id": "salt",
+          "prep": "",
+          "group": "base"
         },
         {
           "ingredient": "Pepper",
           "quantity": "1/2",
           "unit": "tsp",
-          "id": "pepper"
+          "id": "pepper",
+          "prep": "",
+          "group": "base"
         },
         {
           "ingredient": "Red chili flakes",
           "quantity": "1/2",
           "unit": "tsp",
-          "id": "flakes"
+          "id": "flakes",
+          "prep": "",
+          "group": "base"
         },
         {
           "ingredient": "Cumin",
           "quantity": "1/2",
           "unit": "tsp",
-          "id": "cumin"
+          "id": "cumin",
+          "prep": "",
+          "group": "base"
         },
         {
           "ingredient": "Baby Spinach",
           "quantity": "1/2",
           "unit": "cups",
-          "id": "spinach"
-        },
-        {
-          "ingredient": "Olive oil (viniagrette)",
-          "quantity": "3",
-          "unit": "tbsp",
-          "id": "oil2"
+          "id": "spinach",
+          "prep": "",
+          "group": "base"
         },
         {
           "ingredient": "Balsamic Vinegar",
           "quantity": "2",
           "unit": "tbsp",
-          "id": "vin"
+          "id": "vin",
+          "prep": "",
+          "group": "base"
         },
         {
           "ingredient": "Tahini",
           "quantity": "1",
           "unit": "tbsp",
-          "id": "tahin"
+          "id": "tahin",
+          "prep": "",
+          "group": "vinaigrette"
         },
         {
           "ingredient": "Dijon Mustard",
           "quantity": "1",
           "unit": "tsp",
-          "id": "mus"
+          "id": "mus",
+          "prep": "",
+          "group": "vinaigrette"
+        },
+        {
+          "ingredient": "Olive oil",
+          "quantity": "3",
+          "unit": "tbsp",
+          "id": "oil2",
+          "prep": "",
+          "group": "vinaigrette"
         },
         {
           "ingredient": "Maple Syrup",
           "quantity": "1/4",
           "unit": "tsp",
-          "id": "syru"
+          "id": "syru",
+          "prep": "",
+          "group": "vinaigrette"
         },
         {
           "ingredient": "Sea Salt",
           "quantity": "1/4",
           "unit": "tsp",
-          "id": "sea"
+          "id": "sea",
+          "prep": "",
+          "group": "vinaigrette"
         },
         {
-          "ingredient": "Garlic (minced)",
+          "ingredient": "Garlic",
           "quantity": "1",
           "unit": "clove",
-          "id": "garlic"
+          "id": "garlic",
+          "prep": "minced",
+          "group": "vinaigrette"
         },
         {
-          "ingredient": "Pomegranate (optional)",
+          "ingredient": "Pomegranate",
           "quantity": "1/2",
           "unit": "cups",
-          "id": "pom"
+          "id": "pom",
+          "prep": "",
+          "group": "vinaigrette"
         }
       ],
       "instructions": [
@@ -3313,95 +3780,108 @@
       "time": "00:30:00",
       "ingredients": [
         {
-          "ingredient": "Pasta (whole grain)",
+          "ingredient": "Pasta",
           "quantity": "1",
           "unit": "lb",
           "id": "pasta",
-          "group": "salad"
+          "group": "salad",
+          "prep": ""
         },
         {
-          "ingredient": "Cherry Tomatoes",
+          "ingredient": "Cherry tomatoes",
           "quantity": "1",
           "unit": "pint",
           "id": "tomat",
-          "group": "salad"
+          "group": "salad",
+          "prep": ""
         },
         {
-          "ingredient": "Spinach or arugula)",
+          "ingredient": "Mixed greens",
           "quantity": "3",
           "unit": "handfuls",
           "id": "greens",
-          "group": "salad"
+          "group": "salad",
+          "prep": ""
         },
         {
-          "ingredient": "Kalamata olives",
+          "ingredient": "Olives (kalamata)",
           "quantity": "1/2",
           "unit": "cups",
           "id": "olives",
-          "group": "salad"
+          "group": "salad",
+          "prep": ""
         },
         {
-          "ingredient": "Feta cheese (optional)",
+          "ingredient": "Feta cheese",
           "quantity": "2",
           "unit": "handfuls",
           "id": "cheese",
-          "group": "salad"
+          "group": "salad",
+          "prep": "optional"
         },
         {
           "ingredient": "Pepitas",
           "quantity": "1/2",
           "unit": "cups",
           "id": "pep",
-          "group": "pesto"
+          "group": "pesto",
+          "prep": ""
         },
         {
-          "ingredient": "Basil leaves (packed)",
+          "ingredient": "Basil leaves",
           "quantity": "1/2",
           "unit": "cups",
           "id": "basil",
-          "group": "pesto"
+          "group": "pesto",
+          "prep": "packed"
         },
         {
-          "ingredient": "Parsley leaves (packed)",
+          "ingredient": "Parsley leaves",
           "quantity": "1/2",
           "unit": "cups",
           "id": "parsley",
-          "group": "pesto"
+          "group": "pesto",
+          "prep": "packed"
         },
         {
-          "ingredient": "Lemon Juice",
+          "ingredient": "Lemon",
           "quantity": "2",
           "unit": "lemons",
           "id": "lemons",
-          "group": "pesto"
+          "group": "pesto",
+          "prep": "squeezed"
         },
         {
-          "ingredient": "Garlic (chopped)",
+          "ingredient": "Garlic",
           "quantity": "1",
           "unit": "clove",
           "id": "garlic",
-          "group": "pesto"
+          "group": "pesto",
+          "prep": "chopped"
         },
         {
           "ingredient": "Salt",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "sel",
-          "group": "pesto"
+          "group": "pesto",
+          "prep": ""
         },
         {
           "ingredient": "Olive oil",
           "quantity": "1/3",
           "unit": "cups",
           "id": "oil",
-          "group": "pesto"
+          "group": "pesto",
+          "prep": ""
         },
         {
-          "ingredient": "Food Processor / Blender",
+          "ingredient": "Processor / Blender",
           "quantity": "",
           "unit": "",
           "id": "",
-          "group": ""
+          "group": "",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -3437,137 +3917,156 @@
       "time": "01:20:00",
       "ingredients": [
         {
-          "ingredient": "Extra-firm Tofu",
+          "ingredient": "Tofu (firm)",
           "quantity": "1",
           "unit": "package",
           "id": "tofu",
-          "group": "Tofu/Rice"
+          "group": "Tofu/Rice",
+          "prep": ""
         },
         {
-          "ingredient": "Olive Oil",
+          "ingredient": "Olive oil",
           "quantity": "1",
           "unit": "tbsp",
           "id": "oil",
-          "group": "Tofu/Rice"
+          "group": "Tofu/Rice",
+          "prep": ""
         },
         {
-          "ingredient": "Soy Sauce",
+          "ingredient": "Soy sauce",
           "quantity": "1",
           "unit": "tbsp",
           "id": "soysauce1",
-          "group": "Tofu/Rice"
+          "group": "Tofu/Rice",
+          "prep": ""
         },
         {
           "ingredient": "Cornstarch",
           "quantity": "1",
           "unit": "tbsp",
           "id": "star",
-          "group": "Tofu/Rice"
+          "group": "Tofu/Rice",
+          "prep": ""
         },
         {
-          "ingredient": "Brown Rice",
+          "ingredient": "Brown rice",
           "quantity": "1.25",
           "unit": "cups",
           "id": "br",
-          "group": "Tofu/Rice"
+          "group": "Tofu/Rice",
+          "prep": ""
         },
         {
-          "ingredient": "Peanut Butter",
+          "ingredient": "Peanut butter",
           "quantity": "1/3",
           "unit": "cups",
           "id": "pb",
-          "group": "Peanut Sauce"
+          "group": "Peanut Sauce",
+          "prep": ""
         },
         {
           "ingredient": "Limes",
           "quantity": "2",
-          "unit": "juiced",
+          "unit": "",
           "id": "lime",
-          "group": "Peanut Sauce"
+          "group": "Peanut Sauce",
+          "prep": "squeezed"
         },
         {
-          "ingredient": "Soy Sauce",
+          "ingredient": "Soy sauce",
           "quantity": "2",
           "unit": "tbsp",
           "id": "soy",
-          "group": "Peanut Sauce"
+          "group": "Peanut Sauce",
+          "prep": ""
         },
         {
           "ingredient": "Maple syrup",
           "quantity": "1",
           "unit": "tbsp",
           "id": "syr",
-          "group": "Peanut Sauce"
+          "group": "Peanut Sauce",
+          "prep": ""
         },
         {
           "ingredient": "Garlic",
           "quantity": "2",
-          "unit": "cloves (minced)",
+          "unit": "cloves",
           "id": "gar",
-          "group": "Peanut Sauce"
+          "group": "Peanut Sauce",
+          "prep": "minced"
         },
         {
-          "ingredient": "Red Pepper Flakes",
+          "ingredient": "Red pepper flakes",
           "quantity": "1/4",
           "unit": "tsp",
           "id": "rpf",
-          "group": "Peanut Sauce"
+          "group": "Peanut Sauce",
+          "prep": ""
         },
         {
           "ingredient": "Sesame oil",
           "quantity": "2",
           "unit": "tsp",
           "id": "sesoil",
-          "group": "Peanut Sauce"
+          "group": "Peanut Sauce",
+          "prep": ""
         },
         {
           "ingredient": "Mango",
           "quantity": "2",
-          "unit": "diced",
+          "unit": "",
           "id": "mang",
-          "group": "Mango Salsa"
+          "group": "Mango Salsa",
+          "prep": "diced"
         },
         {
           "ingredient": "Bell pepper",
           "quantity": "1",
-          "unit": "chopped",
+          "unit": "",
           "id": "bell",
-          "group": "Mango Salsa"
+          "group": "Mango Salsa",
+          "prep": "chopped"
         },
         {
           "ingredient": "Cilantro",
           "quantity": "1/4",
           "unit": "cups",
           "id": "cil",
-          "group": "Mango Salsa"
+          "group": "Mango Salsa",
+          "prep": ""
         },
         {
           "ingredient": "Green onions",
           "quantity": "2",
-          "unit": "cups (sliced)",
+          "unit": "cups",
           "id": "goni",
-          "group": "Mango Salsa"
+          "group": "Mango Salsa",
+          "prep": ""
         },
         {
           "ingredient": "Jalapeno",
           "quantity": "1",
-          "unit": "minced; no seeds",
+          "unit": "minced",
           "id": "jal",
-          "group": "Mango Salsa"
+          "group": "Mango Salsa",
+          "prep": "minced; no seeds"
         },
         {
           "ingredient": "Sea salt",
           "quantity": "1/4",
           "unit": "tsp",
           "id": "ssal",
-          "group": "Mango Salsa"
+          "group": "Mango Salsa",
+          "prep": ""
         },
         {
-          "ingredient": "Purple or Green Cabbage",
+          "ingredient": "Cabbage",
           "quantity": "2",
-          "unit": "cups (shredded)",
+          "unit": "cups",
           "id": "cabb",
-          "group": "Mango Salsa"
+          "group": "Mango Salsa",
+          "prep": "shredded"
         }
       ],
       "instructions": [
@@ -3610,98 +4109,112 @@
           "quantity": "2",
           "unit": "",
           "id": "sp",
-          "group": "Bowl"
+          "group": "Bowl",
+          "prep": ""
         },
         {
           "ingredient": "Olive oil",
           "quantity": "1",
           "unit": "tbsp",
           "id": "oil",
-          "group": "Bowl"
+          "group": "Bowl",
+          "prep": ""
         },
         {
           "ingredient": "Paprika",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "pap",
-          "group": "Bowl"
+          "group": "Bowl",
+          "prep": ""
         },
         {
           "ingredient": "Chickpeas",
           "quantity": "14",
           "unit": "oz",
           "id": "cp",
-          "group": "Bowl"
+          "group": "Bowl",
+          "prep": ""
         },
         {
           "ingredient": "Arugula",
           "quantity": "1/2",
           "unit": "cups",
           "id": "rug",
-          "group": "Bowl"
+          "group": "Bowl",
+          "prep": ""
         },
         {
           "ingredient": "Avocado",
           "quantity": "1/2",
-          "unit": "sliced",
+          "unit": "",
           "id": "avo",
-          "group": "Bowl"
+          "group": "Bowl",
+          "prep": "sliced"
         },
         {
           "ingredient": "Rice / Quinoa",
           "quantity": "1/2",
           "unit": "cups",
           "id": "base",
-          "group": "Bowl"
+          "group": "Bowl",
+          "prep": ""
         },
         {
           "ingredient": "Orange",
           "quantity": "1/2",
-          "unit": "squeezed",
+          "unit": "",
           "id": "or",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": "squeezed"
         },
         {
           "ingredient": "Ginger",
           "quantity": "1",
           "unit": "tsp",
           "id": "ging",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         },
         {
           "ingredient": "Lemon",
           "quantity": "1/2",
-          "unit": "squeezed",
+          "unit": "",
           "id": "lem",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": "squeezed"
         },
         {
           "ingredient": "Lemon zest",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "lz",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         },
         {
           "ingredient": "Orange zest",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "oz",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         },
         {
           "ingredient": "Salt",
           "quantity": "1/4",
           "unit": "tsp",
           "id": "sel",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         },
         {
           "ingredient": "Olive oil",
           "quantity": "3",
           "unit": "tbsp",
           "id": "oil2",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -3741,95 +4254,108 @@
       "time": "00:25:00",
       "ingredients": [
         {
-          "ingredient": "Olive Oil",
+          "ingredient": "Olive oil",
           "quantity": "1",
           "unit": "tbsp",
           "id": "oil",
-          "group": "Stirfry"
+          "group": "Stirfry",
+          "prep": ""
         },
         {
           "ingredient": "Green onion (greens)",
           "quantity": "1",
           "unit": "cups",
           "id": "go",
-          "group": "Stirfry"
+          "group": "Stirfry",
+          "prep": ""
         },
         {
           "ingredient": "Carrots",
           "quantity": "1",
           "unit": "",
           "id": "carr",
-          "group": "Stirfry"
+          "group": "Stirfry",
+          "prep": ""
         },
         {
-          "ingredient": "Baby Bokchoy",
+          "ingredient": "Baby bokchoy",
           "quantity": "3",
           "unit": "cups",
           "id": "bok",
-          "group": "Stirfry"
+          "group": "Stirfry",
+          "prep": ""
         },
         {
-          "ingredient": "Udon Noodles",
+          "ingredient": "Udon noodles",
           "quantity": "1",
           "unit": "lbs",
           "id": "udon",
-          "group": "Stirfry"
+          "group": "Stirfry",
+          "prep": ""
         },
         {
-          "ingredient": "Green Onion (whites)",
+          "ingredient": "Green onion (whites)",
           "quantity": "1/3",
           "unit": "cups",
           "id": "go2",
-          "group": "Stirfry"
+          "group": "Stirfry",
+          "prep": ""
         },
         {
           "ingredient": "Tofu (firm)",
           "quantity": "1",
           "unit": "package",
           "id": "tofu",
-          "group": "Stirfry"
+          "group": "Stirfry",
+          "prep": ""
         },
         {
           "ingredient": "Mushrooms",
           "quantity": "1",
           "unit": "cups",
           "id": "mush",
-          "group": "Stirfry"
+          "group": "Stirfry",
+          "prep": ""
         },
         {
           "ingredient": "Sriracha",
           "quantity": "2",
           "unit": "tsp",
           "id": "sri",
-          "group": "Sauce"
+          "group": "Sauce",
+          "prep": ""
         },
         {
           "ingredient": "Soy Sauce",
           "quantity": "3",
           "unit": "tbsp",
           "id": "soy",
-          "group": "Sauce"
+          "group": "Sauce",
+          "prep": ""
         },
         {
           "ingredient": "Garlic",
           "quantity": "1",
           "unit": "clove",
           "id": "gar",
-          "group": "Sauce"
+          "group": "Sauce",
+          "prep": ""
         },
         {
           "ingredient": "Ginger",
           "quantity": "2",
           "unit": "tsp",
           "id": "gin",
-          "group": "Sauce"
+          "group": "Sauce",
+          "prep": ""
         },
         {
           "ingredient": "Sesame Seeds",
           "quantity": "2",
           "unit": "tsp",
           "id": "seeds",
-          "group": "Garnish"
+          "group": "Garnish",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -3871,77 +4397,88 @@
           "quantity": "1",
           "unit": "cups",
           "id": "rice",
-          "group": "Base"
+          "group": "Base",
+          "prep": ""
         },
         {
           "ingredient": "Eggplant",
           "quantity": "2",
-          "unit": "Topped and Peeled",
+          "unit": "",
           "id": "ep",
-          "group": "Base"
+          "group": "Base",
+          "prep": "topped and peeled"
         },
         {
           "ingredient": "Green onions",
           "quantity": "5",
-          "unit": "Sliced",
+          "unit": "",
           "id": "go",
-          "group": "Base"
+          "group": "Base",
+          "prep": "sliced"
         },
         {
           "ingredient": "Sesame seeds",
           "quantity": "1",
           "unit": "tbsp",
           "id": "ss",
-          "group": "Base"
+          "group": "Base",
+          "prep": ""
         },
         {
           "ingredient": "Mirin",
           "quantity": "2.5",
           "unit": "tbsp",
           "id": "mir",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         },
         {
           "ingredient": "Sesame oil",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "soil",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         },
         {
           "ingredient": "Soy sauce",
           "quantity": "1.5",
           "unit": "tbsp",
           "id": "soysauce",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         },
         {
           "ingredient": "Rice vinegar",
           "quantity": "2.5",
           "unit": "tsp",
           "id": "ricevin",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         },
         {
           "ingredient": "Maple syrup",
           "quantity": "1.5",
           "unit": "tsp",
           "id": "syrup",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         },
         {
           "ingredient": "Ginger",
           "quantity": "2",
-          "unit": "tsp (chopped)",
+          "unit": "tsp",
           "id": "ginger",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": "chopped"
         },
         {
           "ingredient": "Garlic",
           "quantity": "1",
-          "unit": "clove (crushed)",
+          "unit": "clove",
           "id": "garlic",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": "crushed"
         }
       ],
       "instructions": [
@@ -3980,63 +4517,72 @@
           "quantity": "2",
           "unit": "cups",
           "id": "fl",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Bananas",
           "quantity": "3",
           "unit": "Ripe",
           "id": "ban",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Eggs",
           "quantity": "2",
           "unit": "",
           "id": "egg",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Baking Soda",
+          "ingredient": "Baking soda",
           "quantity": "1",
           "unit": "tsp",
           "id": "bs",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Baking Powder",
+          "ingredient": "Baking powder",
           "quantity": "1",
           "unit": "tsp",
           "id": "bp",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Sugar",
           "quantity": "1",
           "unit": "cups",
           "id": "sug",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Salt",
           "quantity": "1/2",
           "unit": "tsp",
           "id": "sal",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Butter",
           "quantity": "1/2",
           "unit": "cups",
           "id": "but",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "9x5 Loaf pan",
           "quantity": "",
           "unit": "",
           "id": "",
-          "group": ""
+          "group": "",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -4081,13 +4627,15 @@
           "quantity": "1",
           "unit": "tbsp",
           "id": "c_oil",
+          "prep": "",
           "group": ""
         },
         {
           "ingredient": "Ginger",
           "quantity": "1",
-          "unit": "tbsp (minced)",
+          "unit": "tbsp",
           "id": "ginger",
+          "prep": "minced",
           "group": ""
         },
         {
@@ -4095,13 +4643,15 @@
           "quantity": "1",
           "unit": "tsp",
           "id": "rcp",
+          "prep": "",
           "group": ""
         },
         {
           "ingredient": "Leeks",
           "quantity": "2",
-          "unit": "small",
+          "unit": "",
           "id": "leeks",
+          "prep": "",
           "group": ""
         },
         {
@@ -4109,6 +4659,7 @@
           "quantity": "1",
           "unit": "head",
           "id": "kale",
+          "prep": "",
           "group": ""
         },
         {
@@ -4116,6 +4667,7 @@
           "quantity": "4",
           "unit": "cups",
           "id": "vegbroth",
+          "prep": "",
           "group": ""
         },
         {
@@ -4123,6 +4675,7 @@
           "quantity": "1",
           "unit": "tbsp",
           "id": "soy",
+          "prep": "",
           "group": ""
         },
         {
@@ -4130,6 +4683,7 @@
           "quantity": "2",
           "unit": "packs",
           "id": "ramen",
+          "prep": "",
           "group": ""
         },
         {
@@ -4137,13 +4691,15 @@
           "quantity": "2",
           "unit": "tbsp",
           "id": "miso",
+          "prep": "",
           "group": ""
         },
         {
           "ingredient": "Kimchi",
           "quantity": "1",
-          "unit": "cup (chopped)",
+          "unit": "cup",
           "id": "kimchi",
+          "prep": "chopped",
           "group": ""
         },
         {
@@ -4151,13 +4707,15 @@
           "quantity": "1",
           "unit": "tsp",
           "id": "s_oil",
+          "prep": "",
           "group": ""
         },
         {
           "ingredient": "Mushrooms",
           "quantity": "1",
-          "unit": "cup (halved)",
+          "unit": "cup",
           "id": "mush",
+          "prep": "halved",
           "group": ""
         }
       ],
@@ -4200,56 +4758,64 @@
           "quantity": "1",
           "unit": "large",
           "id": "sp",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Eggs",
           "quantity": "2",
           "unit": "",
           "id": "egg",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Tomato",
           "quantity": "1",
           "unit": "large",
           "id": "tomat",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Avocado",
           "quantity": "1",
           "unit": "",
           "id": "avo",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Olive oil",
           "quantity": "1",
           "unit": "tbsp",
           "id": "oil",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Salt+Pepper",
+          "ingredient": "Salt/pepper",
           "quantity": "2",
           "unit": "pinches",
           "id": "salt",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Paprika",
           "quantity": "1",
           "unit": "tsp",
           "id": "paprika",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Toaster",
           "quantity": "",
           "unit": "",
           "id": "",
-          "group": ""
+          "group": "",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -4289,98 +4855,112 @@
           "quantity": "2",
           "unit": "tbsp",
           "id": "c_oil",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Yellow onion",
           "quantity": "1",
           "unit": "",
           "id": "y_on",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Bell pepper",
           "quantity": "1",
-          "unit": "diced",
+          "unit": "",
           "id": "bellpepp",
-          "group": ""
+          "group": "",
+          "prep": "diced"
         },
         {
           "ingredient": "Jalapeno",
           "quantity": "1",
-          "unit": "diced",
+          "unit": "",
           "id": "jala",
-          "group": ""
+          "group": "",
+          "prep": "diced"
         },
         {
           "ingredient": "Garlic",
           "quantity": "4",
           "unit": "",
           "id": "garl",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Chili powder",
           "quantity": "3",
           "unit": "tbsp",
           "id": "cpowd",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Cumin",
           "quantity": "2",
           "unit": "tbsp",
           "id": "cumin",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Paprika",
           "quantity": "1",
           "unit": "tsp",
           "id": "pap",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Diced Tomatoes",
+          "ingredient": "Diced tomatoes",
           "quantity": "28",
           "unit": "oz",
           "id": "diced_tomat",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Water",
           "quantity": "3/4",
           "unit": "cups",
           "id": "water",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Red lentils",
           "quantity": "3/4",
           "unit": "cups",
           "id": "rlent",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Kidney beans",
           "quantity": "15",
           "unit": "oz",
           "id": "kidbean",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Black beans",
           "quantity": "15",
           "unit": "oz",
           "id": "blackbean",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Rice or Quinoa",
+          "ingredient": "Rice/quinoa",
           "quantity": "",
           "unit": "",
           "id": "",
-          "group": ""
+          "group": "",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -4421,63 +5001,72 @@
           "quantity": "2",
           "unit": "tbsp",
           "id": "oil",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Sage",
           "quantity": "1",
           "unit": "tbsp",
           "id": "sage",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Butternut squash",
           "quantity": "1",
           "unit": "medium",
           "id": "butsqua",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Yellow onion",
           "quantity": "1",
           "unit": "medium",
           "id": "y_on",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Garlic",
           "quantity": "2",
           "unit": "cloves",
           "id": "gar",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Red pepper flakes",
           "quantity": "1/4",
           "unit": "tsp",
           "id": "rpf",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Vegetable broth",
           "quantity": "2",
           "unit": "cups",
           "id": "veg_bro",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Linguine",
           "quantity": "12",
           "unit": "oz",
           "id": "ling",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Salt + Pepper",
+          "ingredient": "Salt/Pepper",
           "quantity": "",
           "unit": "",
           "id": "",
-          "group": ""
+          "group": "",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -4519,77 +5108,88 @@
           "quantity": "1",
           "unit": "tbsp",
           "id": "oo",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Chickpeas",
           "quantity": "2",
           "unit": "cups",
           "id": "cp",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Shallots",
           "quantity": "2",
-          "unit": "minced",
+          "unit": "",
           "id": "shal",
-          "group": ""
+          "group": "",
+          "prep": "minced"
         },
         {
           "ingredient": "Garlic",
           "quantity": "2",
-          "unit": "minced",
+          "unit": "",
           "id": "garl",
-          "group": ""
+          "group": "",
+          "prep": "minced"
         },
         {
           "ingredient": "Curry powder",
           "quantity": "1",
           "unit": "tbsp",
           "id": "cpowd",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Coconut milk",
           "quantity": "1/2",
           "unit": "cups",
           "id": "coco",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Vegetable broth",
           "quantity": "2",
           "unit": "cups",
           "id": "vb",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Quinoa",
           "quantity": "1",
           "unit": "cups",
           "id": "quin",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Parsley",
           "quantity": "2",
           "unit": "tbsp",
           "id": "par",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Lemon",
           "quantity": "2",
-          "unit": "tbsp (squeezed)",
+          "unit": "tbsp",
           "id": "lemon",
-          "group": ""
+          "group": "",
+          "prep": "squeezed"
         },
         {
           "ingredient": "Feta",
           "quantity": "",
           "unit": "",
           "id": "",
-          "group": ""
+          "group": "",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -4632,84 +5232,96 @@
           "quantity": "2",
           "unit": "tbsp",
           "id": "coil",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Onion",
           "quantity": "1",
-          "unit": "diced",
+          "unit": "",
           "id": "on",
-          "group": ""
+          "group": "diced",
+          "prep": ""
         },
         {
           "ingredient": "Bell pepper",
           "quantity": "1",
-          "unit": "diced",
+          "unit": "",
           "id": "bp",
-          "group": ""
+          "group": "diced",
+          "prep": ""
         },
         {
           "ingredient": "Garlic",
           "quantity": "6",
-          "unit": "cloves (minced)",
+          "unit": "cloves",
           "id": "garlic",
-          "group": ""
+          "group": "minced",
+          "prep": ""
         },
         {
           "ingredient": "Diced tomatoes",
           "quantity": "28",
           "unit": "oz",
           "id": "tom",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Tomato paste",
           "quantity": "1/2",
-          "unit": "cup",
+          "unit": "cups",
           "id": "tompaste",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Chili garlic sauce",
           "quantity": "3",
           "unit": "tsp",
           "id": "cgs",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Peanut Butter",
+          "ingredient": "Peanut butter",
           "quantity": "1",
           "unit": "cups",
           "id": "pb",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Coconut milk",
           "quantity": "2",
           "unit": "cups",
           "id": "cmilk",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Chickpeas",
           "quantity": "30",
           "unit": "oz",
           "id": "chickpeas",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Water",
           "quantity": "2",
           "unit": "cups",
           "id": "water",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
-          "ingredient": "Rice base (optional)",
+          "ingredient": "Rice/Quinoa",
           "quantity": "",
           "unit": "",
           "id": "",
-          "group": ""
+          "group": "",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -4748,105 +5360,120 @@
           "quantity": "120",
           "unit": "grams",
           "id": "vermicelli",
-          "group": "Salad"
+          "group": "Salad",
+          "prep": ""
         },
         {
           "ingredient": "Boiling water",
           "quantity": "2/3",
           "unit": "cups",
           "id": "b_w",
-          "group": "Salad"
+          "group": "Salad",
+          "prep": ""
         },
         {
           "ingredient": "Tofu (firm)",
           "quantity": "350",
-          "unit": "grams  (cubed)",
+          "unit": "grams",
           "id": "tofu",
-          "group": "Salad"
+          "group": "Salad",
+          "prep": "cubed"
         },
         {
           "ingredient": "Peanuts",
           "quantity": "1/4",
-          "unit": "cups (chopped)",
+          "unit": "cups",
           "id": "peanuts",
-          "group": "Salad"
+          "group": "Salad",
+          "prep": "chopped"
         },
         {
           "ingredient": "Cilantro",
           "quantity": "1/4",
-          "unit": "cups (chopped)",
+          "unit": "cups",
           "id": "cil",
-          "group": "Salad"
+          "group": "Salad",
+          "prep": "chopped"
         },
         {
-          "ingredient": "Olive Oil",
+          "ingredient": "Olive oil",
           "quantity": "1",
           "unit": "tbsp",
           "id": "ooil",
-          "group": "Salad"
+          "group": "Salad",
+          "prep": ""
         },
         {
           "ingredient": "Carrots",
           "quantity": "3",
-          "unit": "cups (chopped/spiralized )",
+          "unit": "cups",
           "id": "carr",
-          "group": "Salad"
+          "group": "Salad",
+          "prep": "spiralized/chopped"
         },
         {
           "ingredient": "Cabbage",
           "quantity": "1.5",
-          "unit": "cups (chopped)",
+          "unit": "cups",
           "id": "cabb",
-          "group": "Salad"
+          "group": "Salad",
+          "prep": "chopped"
         },
         {
           "ingredient": "Soy sauce",
           "quantity": "3",
           "unit": "tbsp",
           "id": "soy",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         },
         {
           "ingredient": "Rice wine vinegar",
           "quantity": "3",
           "unit": "tbsp",
           "id": "rwv",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         },
         {
-          "ingredient": "Lime juice",
+          "ingredient": "Lime",
           "quantity": "1",
-          "unit": "squeezed",
+          "unit": "",
           "id": "lime",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": "squeezed"
         },
         {
           "ingredient": "Maple syrup",
           "quantity": "2",
           "unit": "tsp",
           "id": "ms",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         },
         {
           "ingredient": "Mint",
           "quantity": "2",
-          "unit": "tbsp (chopped)",
+          "unit": "tbsp",
           "id": "mint",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": "chopped"
         },
         {
           "ingredient": "Sesame oil",
           "quantity": "1",
           "unit": "tbsp",
           "id": "soil",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         },
         {
           "ingredient": "Olive oil",
           "quantity": "2",
           "unit": "tsp",
           "id": "sala_oil",
-          "group": "Dressing"
+          "group": "Dressing",
+          "prep": ""
         }
       ],
       "instructions": [
@@ -4885,63 +5512,72 @@
           "quantity": "1",
           "unit": "can",
           "id": "bl",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Broccoli",
           "quantity": "1.5",
-          "unit": "cups (chopped)",
+          "unit": "cups",
           "id": "broc",
-          "group": ""
+          "group": "",
+          "prep": "chopped"
         },
         {
           "ingredient": "Brown rice",
           "quantity": "1",
           "unit": "cups",
           "id": "br",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Kale",
           "quantity": "4",
-          "unit": "cups (chopped)",
+          "unit": "cups",
           "id": "kale",
-          "group": ""
+          "group": "",
+          "prep": "chopped"
         },
         {
           "ingredient": "Garlic",
           "quantity": "1",
-          "unit": "clove (diced)",
+          "unit": "clove",
           "id": "gar",
-          "group": ""
+          "group": "",
+          "prep": "diced"
         },
         {
           "ingredient": "Curry powder",
           "quantity": "1",
           "unit": "tsp",
           "id": "cp",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Lime",
           "quantity": "1",
           "unit": "squeezed",
           "id": "li",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Olive oil",
           "quantity": "1",
           "unit": "tbsp",
           "id": "oo",
-          "group": ""
+          "group": "",
+          "prep": ""
         },
         {
           "ingredient": "Cilantro",
           "quantity": "2",
           "unit": "tbsp",
           "id": "cil",
-          "group": ""
+          "group": "",
+          "prep": ""
         }
       ],
       "instructions": [
