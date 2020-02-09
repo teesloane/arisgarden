@@ -5101,8 +5101,8 @@
       "meal_type": "vegetarian",
       "name": "Vegetable Casserole",
       "original_recipe": "",
-      "rating": "4/5",
-      "serves": "4???",
+      "rating": "3.5/5",
+      "serves": "6",
       "slug": "vegetable-casserole",
       "tags": "[]",
       "time": "00:50:00",
@@ -5207,7 +5207,7 @@
       "commentary": {
         "kind": "big-quote",
         "val": [
-          "You're going to want a big pan or wok for this one."
+          "You'll want a big pan and casserole-dish for this one."
         ]
       }
     }
