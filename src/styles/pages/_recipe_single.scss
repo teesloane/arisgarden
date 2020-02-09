@@ -16,6 +16,9 @@
     padding: 0 24px;
     max-width: 1152px;
 
+    @include at-size(medium) {
+      margin-top: 0;
+    }
 
     @include at-size(mobile) {
       margin: 0;
