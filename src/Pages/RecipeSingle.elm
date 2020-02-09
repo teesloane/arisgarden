@@ -507,7 +507,7 @@ viewInstructions model recipe =
                 ]
                 [ stepText ]
     in
-    section [ class "instr-ingr-section Instructions", style "flex" "1.5" ]
+    section [ class " instructions"]
         [ Ui.sectionHeading "Instructions"
         , div [ class "instructions-group" ]
             (List.indexedMap mapInstructions recipe.instructions)
@@ -517,21 +517,23 @@ viewInstructions model recipe =
 viewIngredients : Recipe -> Html msg
 viewIngredients recipe =
     let
+        showPrep s = if String.isEmpty s then s else ("(" ++ s ++ ")")
+
         mapIngr i =
             div [ class "ingredient" ]
-                [ div [ class "name" ] [ text i.ingredient ]
-                , div [ class "quant-unit" ]
+                [ div [ class "name" ] [
+                       div [] [text i.ingredient]
+                       ,  div [ class "name-prep"] [text <| showPrep i.prep]
+                      ]
+                , div [ class "quant-unit-prep" ]
                     [ div [ class "quant" ] [ text i.quantity ]
                     , div [ class "unit" ] [ text i.unit ]
                     ]
                 ]
     in
-    section [ class "instr-ingr-section Ingredients" ]
+    section [ class "ingredients" ]
         [ Ui.sectionHeading "Ingredients"
-        , div [ class "ingredients" ]
-            [ div [ class "instructions-list" ] (List.map mapIngr recipe.ingredients)
-            ]
-        ]
+        , div [ class "ingredients" ] (List.map mapIngr recipe.ingredients)]
 
 
 view : Model -> Html RecipeSingleMsg

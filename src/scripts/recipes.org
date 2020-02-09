@@ -232,24 +232,24 @@
 :time: 01:00:00
 :END:
 ** Ingredients
-| Ingredient       | Quantity | Unit    | Id               | Prep | Group |
-|------------------+----------+---------+------------------+------+-------|
-| Tofu             |        1 | package | tofu             |      |       |
-| Coconut oil      |        2 | tbsp    | oil-coconut      |      |       |
-| Shallots         |        3 |         | shallots         |      |       |
-| Cumin powder     |        1 | tsp     | cumin-powder     |      |       |
-| Coriander powder |        1 | tsp     | coriander-powder |      |       |
-| Red curry paste  |        5 | tbsp    | red-curry-paste  |      |       |
-| Baby potatoes    |      1.5 | cups    | potatoes-baby    |      |       |
-| Carrots          |        2 |         | carrots          |      |       |
-| Coconut milk     |       28 | oz      | milk-coconut     |      |       |
-| Water            |      1.5 | cups    | water            |      |       |
-| Ground cinnamon  |      1/4 | tsp     | ground-cinnamon  |      |       |
-| Soy sauce        |        2 | tbsp    | sauce-soy        |      |       |
-| Maple syrup      |        2 | tbsp    | maple-syrup      |      |       |
-| Peanut butter    |        2 | tbsp    | peanut-butter    |      |       |
-| Lime juice       |        2 | tbsp    | lime-juice       |      |       |
-| Rice/Grain       |          |         | rice             |      |       |
+| Ingredient       | Quantity | Unit    | Id               | Prep   | Group |
+|------------------+----------+---------+------------------+--------+-------|
+| Tofu             |        1 | package | tofu             |        |       |
+| Coconut oil      |        2 | tbsp    | oil-coconut      |        |       |
+| Shallots         |        3 |         | shallots         | sliced |       |
+| Cumin powder     |        1 | tsp     | cumin-powder     |        |       |
+| Coriander powder |        1 | tsp     | coriander-powder |        |       |
+| Red curry paste  |        5 | tbsp    | red-curry-paste  |        |       |
+| Baby potatoes    |      1.5 | cups    | potatoes-baby    |        |       |
+| Carrots          |        2 |         | carrots          | diced  |       |
+| Coconut milk     |       28 | oz      | milk-coconut     |        |       |
+| Water            |      1.5 | cups    | water            |        |       |
+| Ground cinnamon  |      1/4 | tsp     | ground-cinnamon  |        |       |
+| Soy sauce        |        2 | tbsp    | sauce-soy        |        |       |
+| Maple syrup      |        2 | tbsp    | maple-syrup      |        |       |
+| Peanut butter    |        2 | tbsp    | peanut-butter    |        |       |
+| Lime             |        2 | tbsp    | lime-juice       | juiced |       |
+| Rice/Grain       |          |         | rice             |        |       |
 ** Steps
 1) Press your tofu. You'll come back and cube it once pressed.
 2) Cook desired serving of rice as per package instructions.
