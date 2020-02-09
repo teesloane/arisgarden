@@ -161,6 +161,10 @@
       font-size: 18px;
       line-height: 2;
       color: $black;
+
+      .item {
+        padding: 8px 0;
+      }
     }
 
     .dialogue {

@@ -5841,9 +5841,12 @@
         "[&: Bake casserole | 00:15:00] Bake the casserole for 10-15 minutes or until the cheese turns golden brown."
       ],
       "commentary": {
-        "kind": "big-quote",
+        "kind": "blurb",
         "val": [
-          "You'll want a big pan and casserole-dish for this one."
+          "A few notes. Doing this again, we would maybe:",
+          "1) replace the chickpeas with chickpea pasta that has been cooked and layer it into the casserole part of the dish.",
+          "2) Drain some of the tomato juice so it's not so liquid-y.",
+          "Other than that, it's not bad. A bit like ratatouille, but faster to make."
         ]
       }
     },
