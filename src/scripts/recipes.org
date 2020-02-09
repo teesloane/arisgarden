@@ -2016,3 +2016,46 @@
 :type: big-quote
 :END:
 - You'll want a big pan and casserole-dish for this one.
+* Almond Banana Muffins
+:PROPERTIES:
+:belongs_to:      sweet
+:date_made:       [2020-02-09]
+:ease_of_making:  5/5
+:imgs:            ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type:       vegan
+:name:            Almond Banana Muffins
+:original_recipe:
+:rating:          4.5/5
+:serves:          12 muffins
+:slug:            almond-banana-muffins
+:tags:            []
+:time:            00:50:00
+:END:
+** Ingredients
+| Ingredient      | Quantity | Unit | Id  | Prep   | Group |
+|-----------------+----------+------+-----+--------+-------|
+| Almond flour    |        1 | cups | af  |        |       |
+| Coconut flakes  |      1/4 | cups | cf  |        |       |
+| Baking powder   |        2 | tsp  | bp  |        |       |
+| Stevia          |        1 | tsp  | st  |        |       |
+| Cinnamon        |        2 | tsp  | cin |        |       |
+| Bananas         |        3 |      | bn  | mashed |       |
+| Rice malt syrup |        2 | tbsp | rms |        |       |
+| Almond butter   |        3 | tbsp | ab  |        |       |
+| Almond milk     |      1/2 | cups | am  |        |       |
+** Steps
+ 1) Preheat the oven to 375F.
+ 2) Prepare 2 muffin trays by lining each pocket with a small amount of coconut oil.
+ 3) In a large bowl mix together the [#: af | almond flour], [#: cf | coconut
+    flakes], [#: bp | baking powder], [#: st | stevia] and [#: cin | cinnamon].
+ 4) In a separate bowl, mash the [#: bn | bananas] and mix in the [#: rms | rice
+    malt syrup], [#: ab | almond butter] and [#: am | almond milk].
+ 5) Add the wet mixture in to the dry mixture and combine well.
+ 6) Pour the mixture into the muffin trays.
+ 7) [&: Bake | 00:35:00] Bake for about 35 minutes, or until the tops are golden brown.
+ 8) Let cool for about 5 minutes before eating.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- The almond butter makes these muffins creamy, and well, that is a good thing.

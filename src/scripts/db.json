@@ -5846,6 +5846,114 @@
           "You'll want a big pan and casserole-dish for this one."
         ]
       }
+    },
+    "almond-banana-muffins": {
+      "belongs_to": "sweet",
+      "date_made": "[2020-02-09]",
+      "ease_of_making": "5/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegan",
+      "name": "Almond Banana Muffins",
+      "original_recipe": "",
+      "rating": "4.5/5",
+      "serves": "12 muffins",
+      "slug": "almond-banana-muffins",
+      "tags": "[]",
+      "time": "00:50:00",
+      "ingredients": [
+        {
+          "ingredient": "Almond flour",
+          "quantity": "1",
+          "unit": "cups",
+          "id": "af",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Coconut flakes",
+          "quantity": "1/4",
+          "unit": "cups",
+          "id": "cf",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Baking powder",
+          "quantity": "2",
+          "unit": "tsp",
+          "id": "bp",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Stevia",
+          "quantity": "1",
+          "unit": "tsp",
+          "id": "st",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Cinnamon",
+          "quantity": "2",
+          "unit": "tsp",
+          "id": "cin",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Bananas",
+          "quantity": "3",
+          "unit": "",
+          "id": "bn",
+          "prep": "mashed",
+          "group": ""
+        },
+        {
+          "ingredient": "Rice malt syrup",
+          "quantity": "2",
+          "unit": "tbsp",
+          "id": "rms",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Almond butter",
+          "quantity": "3",
+          "unit": "tbsp",
+          "id": "ab",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Almond milk",
+          "quantity": "1/2",
+          "unit": "cups",
+          "id": "am",
+          "prep": "",
+          "group": ""
+        }
+      ],
+      "instructions": [
+        "Preheat the oven to 375F.",
+        "Prepare 2 muffin trays by lining each pocket with a small amount of coconut oil.",
+        "In a large bowl mix together the [#: af | almond flour], [#: cf | coconut flakes], [#: bp | baking powder], [#: st | stevia] and [#: cin | cinnamon].",
+        "In a separate bowl, mash the [#: bn | bananas] and mix in the [#: rms | rice malt syrup], [#: ab | almond butter] and [#: am | almond milk].",
+        "Add the wet mixture in to the dry mixture and combine well.",
+        "Pour the mixture into the muffin trays.",
+        "[&: Bake | 00:35:00] Bake for about 35 minutes, or until the tops are golden brown.",
+        "Let cool for about 5 minutes before eating."
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "The almond butter makes these muffins creamy, and well, that is a good thing."
+        ]
+      }
     }
   }
 }
