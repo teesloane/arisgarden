@@ -21,7 +21,7 @@
 | Water             |        2 | cups | water  |         |       |
 | Maple Syrup       |        2 | tbsp | syr    |         |       |
 | Pecans or Walnuts |      1/4 | cups | nuts   | chopped |       |
-| Cinnamon          |   1 or 2 | tsp  | cin    |         |       |
+| Cinnamon          |        2 | tsp  | cin    |         |       |
 | Coconut oil       |        2 | tbsp | oil    |         |       |
 | Fresh berries     |          |      | berr   |         |       |
 | Almond butter     |          |      | almbut |         |       |
@@ -92,22 +92,22 @@
 :time: 01:00:00
 :END:
 ** Ingredients
-| Ingredient      | Quantity | Unit           | Id              | Group | Prep |
-|-----------------+----------+----------------+-----------------+-------+------|
-| Olive oil       |        1 | tbsp           | oil-olive       |       |      |
-| White onion     |      1/2 | cups (diced)   | onion-white     |       |      |
-| Garlic          |        3 | cloves (diced) | garlic          |       |      |
-| Bell pepper     |      1/2 | cups (chopped) | pepper-bell     |       |      |
-| Diced tomatoes  |       28 | oz             | tomato-diced    |       |      |
-| Tomato paste    |        3 | tbsp           | tomato-paste    |       |      |
-| Olives          |      1/4 | cups           | olives          |       |      |
-| Maple syrup     |        1 | tbsp           | maple-syrup     |       |      |
-| Ground cumin    |        1 | tsp            | cumin-ground    |       |      |
-| Paprika         |        1 | tsp            | paprika         |       |      |
-| Chili powder    |        2 | tsp            | chili-powder    |       |      |
-| Ground cinnamon |      1/4 | tsp            | cinnamon-ground |       |      |
-| Chickpeas       |       24 | oz             | chickpeas       |       |      |
-| Sea Salt        |        1 | pinch          | salt-sea        |       |      |
+| Ingredient      | Quantity | Unit   | Id              | Group | Prep    |
+|-----------------+----------+--------+-----------------+-------+---------|
+| Olive oil       |        1 | tbsp   | oil-olive       |       |         |
+| White onion     |      1/2 | cups   | onion-white     |       | diced   |
+| Garlic          |        3 | cloves | garlic          |       | diced   |
+| Bell pepper     |      1/2 | cups   | pepper-bell     |       | chopped |
+| Diced tomatoes  |       28 | oz     | tomato-diced    |       |         |
+| Tomato paste    |        3 | tbsp   | tomato-paste    |       |         |
+| Olives          |      1/4 | cups   | olives          |       |         |
+| Maple syrup     |        1 | tbsp   | maple-syrup     |       |         |
+| Ground cumin    |        1 | tsp    | cumin-ground    |       |         |
+| Paprika         |        1 | tsp    | paprika         |       |         |
+| Chili powder    |        2 | tsp    | chili-powder    |       |         |
+| Ground cinnamon |      1/4 | tsp    | cinnamon-ground |       |         |
+| Chickpeas       |       24 | oz     | chickpeas       |       |         |
+| Sea Salt        |        1 | pinch  | salt-sea        |       |         |
 ** Steps
 1) Heat a large metal or cast iron skilled on medium heat.
 2) [&: 2. Sauté vegetables | 00:04:00] When hot, add [#: oil-olive | olive oil ], [#: onion-white | onion], [#: pepper-bell | bell pepper] and [#: garlic | garlic]. Saute for 4-5 minutes, stirring frequently.
@@ -371,12 +371,12 @@
 * Sweet Potato Gnocchi
 :PROPERTIES:
 :date_made: [2019-09-22]
-:ease_of_making: 3/5
+:ease_of_making: 2.5/5
 :imgs: ["1.JPG", "2.JPG", "4.gif"]
 :meal_type: vegetarian
 :name: Sweet Potato Gnocchi
 :original_recipe: https://biancazapatka.com/en/vegan-sweet-potato-gnocchi/
-:rating: 4/5
+:rating: 5/5
 :belongs_to: main
 :slug: sweet-potato-gnocci
 :serves: 2
@@ -386,7 +386,7 @@
 | Ingredient        | Quantity | Unit   | Id           | Prep     | Group |
 |-------------------+----------+--------+--------------+----------+-------|
 | Sweet Potato      |        1 | large  | potato-sweet |          |       |
-| Nutritional yeast |      2-3 | tbsp   | parm         | optional |       |
+| Nutritional yeast |      2   | tbsp   | parm         | optional |       |
 | Flour             |      1/3 | cups   | flour        |          |       |
 | Salt              |      1/2 | tsp    | salt         |          |       |
 | Cherry tomatoes   |      250 | grams  | tomatoes     |          |       |
@@ -435,7 +435,7 @@
 | Sesame seeds    |        1 | tbsp  | sesa         |               |       |
 | Salt            |        1 | pinch | salt         |               |       |
 | Egg yolks       |        - |       | yolks        |               |       |
-| Scallions       |        3 |       | scall        | thinly sliced |       |
+| Scallions       |        3 |       | scall        | sliced |       |
 ** Steps
 1) Chop [#: kimchi | kimchi] and collect [#: kimchi-juice | kimchi juice].
 2) [&: 2. Butter + Kimchi |  00:04:00] Heat 2 tbsp of butter on medium high. Add chopped kimchi and [#: gochu | gochujang] and cook, stirring until kimchi is softened and lightly caramelized, around 4 minutes.
@@ -510,22 +510,22 @@
 :time: 00:50:00
 :END:
 ** Ingredients
-| Ingredient        | Quantity | Unit        | Id                | Group           | Prep          |
-|-------------------+----------+-------------+-------------------+-----------------+---------------|
-| Bell pepper       |        1 |             | bell_pepper       | pineapple salsa |               |
-| Tofu (firm)       |        1 | package     | tofu              | tofu            |               |
-| Salt              |          | pinch       | salt              | tofu            |               |
-| Shredded coconut  |      1/4 | cups        | shredded_coconut  | coconut rice    |               |
-| Brown rice        |        1 | cups        | brown_rice        | coconut rice    |               |
-| Coconut milk      |        1 | can (400ml) | coconut_milk      | coconut rice    |               |
-| Brown sugar       |        2 | tsp         | brown_sugar       | coconut rice    |               |
-| Coconut oil       |        1 | tsp         | coconut_oil       | coconut rice    |               |
-| Pineapple         |      1.5 | cups        | pineapple         | pineapple salsa | diced         |
-| Red onion         |      1/4 | cups        | red_onion         | pineapple salsa | diced         |
-| Jalapenos         |        1 | pepper      | jalapenos         | pineapple salsa | seeded, diced |
-| Garlic            |        1 | clove       | garlic            | pineapple salsa | minced        |
-| Lime              |        3 | tbsp        | lime_juice        | pineapple salsa | squeezed      |
-| Red pepper flakes |        1 | dash        | red_pepper_flakes | pineapple salsa |               |
+| Ingredient        | Quantity | Unit    | Id                | Group           | Prep          |
+|-------------------+----------+---------+-------------------+-----------------+---------------|
+| Bell pepper       |        1 |         | bell_pepper       | pineapple salsa |               |
+| Tofu (firm)       |        1 | package | tofu              | tofu            |               |
+| Salt              |          | pinch   | salt              | tofu            |               |
+| Shredded coconut  |      1/4 | cups    | shredded_coconut  | coconut rice    |               |
+| Brown rice        |        1 | cups    | brown_rice        | coconut rice    |               |
+| Coconut milk      |      1.5 | cups    | coconut_milk      | coconut rice    |               |
+| Brown sugar       |        2 | tsp     | brown_sugar       | coconut rice    |               |
+| Coconut oil       |        1 | tsp     | coconut_oil       | coconut rice    |               |
+| Pineapple         |      1.5 | cups    | pineapple         | pineapple salsa | diced         |
+| Red onion         |      1/4 | cups    | red_onion         | pineapple salsa | diced         |
+| Jalapenos         |        1 | pepper  | jalapenos         | pineapple salsa | seeded, diced |
+| Garlic            |        1 | clove   | garlic            | pineapple salsa | minced        |
+| Lime              |        3 | tbsp    | lime_juice        | pineapple salsa | squeezed      |
+| Red pepper flakes |        1 | dash    | red_pepper_flakes | pineapple salsa |               |
 ** Steps
 1) [&: 1. Press tofu | 00:20:00] Press the [#: tofu | tofu] for about 20 minutes (put something heavy on it).
 2) [&: 2. Toast coconut | 00:08:00] Preheat oven to 300F. Toast [#: shredded_coconut | coconut] for 8-12 minutes until golden brown.
@@ -559,22 +559,22 @@
 :time: 00:30:00
 :END:
 ** Ingredients
-| Ingredient          | Quantity | Unit   | Id                | Group    | Prep    |
-|---------------------+----------+--------+-------------------+----------+---------|
-| Broccoli            |        2 | cups   | broc              | salad    | chopped |
-| Potatoes            |        1 | cups   | potatoes          | salad    | chopped |
-| Dill                |        1 | sprig  | dill              | salad    |         |
-| Pears sliced        |        2 |        | pears             | salad    | sliced  |
-| Brie cheese         |      4-6 | slices | cheese            | salad    |         |
-| Cranberries         |      1/3 | cups   | cran              | salad    |         |
-| Avocado             |      1/2 |        | avocado           | salad    |         |
-| Pecans              |      1/3 | cups   | pecans            | salad    | chopped |
-| Olive oil           |      1/2 | cups   | oil-olive         | dressing |         |
-| Apple cider vinegar |        2 | tsp    | vinegar-apple     | dressing |         |
-| Rice wine vinegar   |      1/4 | cups   | vinegar-rice-wine | dressing |         |
-| Shallots            |        1 | tbsp   | shallots          | dressing | minced  |
-| Maple Syrup         |        1 | tbsp   | maple-syrup       | dressing |         |
-| Pepper              |        1 | pinch  | pepper            | dressing |         |
+| Ingredient          | Quantity | Unit  | Id                | Group    | Prep    |
+|---------------------+----------+-------+-------------------+----------+---------|
+| Broccoli            |        2 | cups  | broc              | salad    | chopped |
+| Potatoes            |        1 | cups  | potatoes          | salad    | chopped |
+| Dill                |        1 | sprig | dill              | salad    |         |
+| Pears sliced        |        2 |       | pears             | salad    | sliced  |
+| Brie cheese         |        - |       | cheese            | salad    | sliced  |
+| Cranberries         |      1/3 | cups  | cran              | salad    |         |
+| Avocado             |      1/2 |       | avocado           | salad    |         |
+| Pecans              |      1/3 | cups  | pecans            | salad    | chopped |
+| Olive oil           |      1/2 | cups  | oil-olive         | dressing |         |
+| Apple cider vinegar |        2 | tsp   | vinegar-apple     | dressing |         |
+| Rice wine vinegar   |      1/4 | cups  | vinegar-rice-wine | dressing |         |
+| Shallots            |        1 | tbsp  | shallots          | dressing | minced  |
+| Maple Syrup         |        1 | tbsp  | maple-syrup       | dressing |         |
+| Pepper              |        1 | pinch | pepper            | dressing |         |
 ** Steps
 1) Preheat oven to 425.
 2) Add chopped [#: potatoes | potatoes] and [#: broc | broccoli] florets to bowl with [#: oil-olive | olive oil] and salt and pepper and [#: dill | dill]. Stir to coat.
@@ -619,7 +619,7 @@
 | Carrot              |        1 |      | carrot | salad    |          |
 | Leafy greens        |        2 | cups | greens | salad    |          |
 | Avocado             |        1 |      | avo    | salad    | cubed    |
-| Apple cider winegar |        3 | tbsp | vin    | dressing |          |
+| Apple cider vinegar |        3 | tbsp | vin    | dressing |          |
 | Lime                |        2 | tbsp | lime   | dressing | squeezed |
 | Olive oil           |        2 | tbsp | oil    | dressing |          |
 | Maple syrup         |        2 | tbsp | syr    | dressing |          |
@@ -657,22 +657,22 @@
 :time: 00:20:00
 :END:
 ** Ingredients
-| Ingredient      | Quantity | Unit             | Id         | Prep | Group |
-|-----------------+----------+------------------+------------+------+-------|
-| Black beans     |        3 | Cans (15oz/each) | beans      |      |       |
-| Canned corn     |        1 | cups             | corn       |      |       |
-| Bell pepper     |        1 |                  | pepper     |      |       |
-| Cherry tomatoes |        1 | cups             | tomatoes   |      |       |
-| Red onion       |        1 | cups             | onion      |      |       |
-| Jalapeno        |        1 |                  | jalap      |      |       |
-| Lime zest       |      1/2 | tsp              | lime-zest  |      |       |
-| Lime juice      |        2 | tbsp             | lime-juice |      |       |
-| Olive oil       |      1/4 | cups             | oil        |      |       |
-| White vinegar   |      1/4 | cups             | vin-wh     |      |       |
-| Chili powder    |      1/2 | tsp              | chil       |      |       |
-| Cumin           |      1/2 | tsp              | cumin      |      |       |
-| Salt            |      1/2 | tsp              | salt       |      |       |
-| Avocado         |        1 |                  | avo        |      |       |
+| Ingredient      | Quantity | Unit | Id         | Prep | Group |
+|-----------------+----------+------+------------+------+-------|
+| Black beans     |       45 | oz   | beans      |      |       |
+| Canned corn     |        1 | cups | corn       |      |       |
+| Bell pepper     |        1 |      | pepper     |      |       |
+| Jalapeno        |        1 |      | jalap      |      |       |
+| Cherry tomatoes |        1 | cups | tomatoes   |      |       |
+| Red onion       |        1 | cups | onion      |      |       |
+| Lime zest       |      1/2 | tsp  | lime-zest  |      |       |
+| Lime juice      |        2 | tbsp | lime-juice |      |       |
+| Olive oil       |      1/4 | cups | oil        |      |       |
+| White vinegar   |      1/4 | cups | vin-wh     |      |       |
+| Chili powder    |      1/2 | tsp  | chil       |      |       |
+| Cumin           |      1/2 | tsp  | cumin      |      |       |
+| Salt            |      1/2 | tsp  | salt       |      |       |
+| Avocado         |        1 |      | avo        |      |       |
 ** Steps
 1) Chop all vegetables into bite sized pieces. In a large serving bowl combine
    all the ingredients. Feel free to leave or take out the seeds of the jalapeno.
@@ -861,7 +861,7 @@
 | Icing sugar          | 3/4      | cups | is       | Creamy filling  |      |
 | Vanilla              | 1/2      | tsp  | van      | Creamy filling  |      |
 | Cinnamon             | 1/2      | tsp  | cin      | Creamy filling  |      |
-| Plain gelatin        | 1~       | tbsp | gelatin  | Pumpkin filling |      |
+| Plain gelatin        | 1        | tbsp | gelatin  | Pumpkin filling |      |
 | Cold water           | 1/4      | cups | water    | Pumpkin filling |      |
 | Eggs                 | 3        |      | eggs     | Pumpkin filling |      |
 | White sugar          | 1/3      | cups | ws       | Pumpkin filling |      |
@@ -869,7 +869,7 @@
 | Ginger               | 1/4      | tsp  | ginger   | Pumpkin filling |      |
 | Salt                 | 1/2      | tsp  | salt     | Pumpkin filling |      |
 | Allspice             | 1/2      | tsp  | allspice | Pumpkin filling |      |
-| Canned pumpkin       | 1+1/4    | cups | pumpkin  | Pumpkin filling |      |
+| Canned pumpkin       | 1.25     | cups | pumpkin  | Pumpkin filling |      |
 | Milk                 | 1/2      | cups | milk     | Pumpkin filling |      |
 | Icing sugar          | 1/4      | cups | icsug    | Pumpkin filling |      |
 | Pre-made crust shell |          |      |          | Crust           |      |
@@ -979,7 +979,7 @@
 | Maple syrup     |        1 | tbsp   | mapsyr   | Curry    |      |
 | Soy sauce       |        2 | tbsp   | soysauce | Curry    |      |
 | Cauliflower     |        1 | cups   | caul     | Curry    |      |
-| Chickpeas       |    1+1/4 | cups   | chick    | Curry    |      |
+| Chickpeas       |      1.5 | cups   | chick    | Curry    |      |
 | Quinoa/Rice     |        1 | cups   | quin     | Base     |      |
 | Avocado         |        1 |        |          | Toppings |      |
 | Red onion       |      1/2 | onion  |          | Toppings |      |
@@ -1057,7 +1057,7 @@
 | Raisins            | 1/2      | cups    | rai    | Salad    |          |
 | Feta               | 1/2      | cups    | feta   | Salad    | optional |
 | Orange zest        | 1        | tsp     | zest   | Dressing |          |
-| Oranges            | 1-2      | oranges | orange | Dressing | squeezed |
+| Oranges            | 1        | oranges | orange | Dressing | squeezed |
 | Olive oil          | 1/4      | cups    | oil    | Dressing |          |
 | White wine vinegar | 2        | tbsp    | vin    | Dressing |          |
 | Garlic             | 1        | clove   | gar    | Dressing | minced   |
@@ -1194,7 +1194,7 @@
 | Vegetable broth |        4 | cups         | vegbro |      |       |
 | Gochujang       |        3 | tbsp         | gochu  |      |       |
 | Soy sauce       |        3 | tbsp         | soy    |      |       |
-| Daikon/Radish   |        - |              | sliced |      |       |
+| Daikon/Radish   |        1 | cups         | sliced |      |       |
 | Kimchi          |      1/2 | cups         |        |      |       |
 | Silken Tofu     |      1/2 | block        | silk   |      |       |
 ** Steps
@@ -1228,18 +1228,18 @@
 :time: 00:45:00
 :END:
 ** Ingredients
-| Ingredient        | Quantity | Unit | Id      | Prep   | Group |
-|-------------------+----------+------+---------+--------+-------|
-| Olive oil         |        1 | tbsp | oil     |        |       |
-| Onion             |        1 |      | onion   |        |       |
-| Ginger            |        2 | tbsp | ging    | grated |       |
-| Garlic            |        2 |      | garlic  | minced |       |
-| Apple             |        1 |      | apple   |        |       |
-| Carrots           |      1.5 | lbs  | carrots |        |       |
-| Vegetable broth   |        4 | cups | broth   |        |       |
-| Kosher salt       |          |      | salt    |        |       |
-| Immersion blender |          |      |         |        |       |
-|                   |          |      |         |        |       |
+| Ingredient        | Quantity | Unit  | Id      | Prep   | Group |
+|-------------------+----------+-------+---------+--------+-------|
+| Olive oil         |        1 | tbsp  | oil     |        |       |
+| Onion             |        1 |       | onion   |        |       |
+| Ginger            |        2 | tbsp  | ging    | grated |       |
+| Garlic            |        2 |       | garlic  | minced |       |
+| Apple             |        1 |       | apple   |        |       |
+| Carrots           |      1.5 | lbs   | carrots |        |       |
+| Vegetable broth   |        4 | cups  | broth   |        |       |
+| Kosher salt       |        1 | pinch | salt    |        |       |
+| Immersion blender |          |       |         |        |       |
+|                   |          |       |         |        |       |
 ** Steps
 1) In a large pot, heat [#: oil | olive-oil] over low-medium heat.
 2) [&: 2. Sauté onions | 00:05:00] Add chopped onion and cook for 5 minutes.
@@ -1423,15 +1423,15 @@
 | Ingredient    | Quantity | Unit | Id   | Group    | Prep     |
 |---------------+----------+------+------+----------+----------|
 | Sweet potato  | 2        |      | sp   | Bowl     |          |
+| Avocado       | 1/2      |      | avo  | Bowl     | sliced   |
+| Orange        | 1/2      |      | or   | Dressing | squeezed |
+| Lemon         | 1/2      |      | lem  | Dressing | squeezed |
 | Olive oil     | 1        | tbsp | oil  | Bowl     |          |
 | Paprika       | 1/2      | tsp  | pap  | Bowl     |          |
 | Chickpeas     | 14       | oz   | cp   | Bowl     |          |
 | Arugula       | 1/2      | cups | rug  | Bowl     |          |
-| Avocado       | 1/2      |      | avo  | Bowl     | sliced   |
 | Rice / Quinoa | 1/2      | cups | base | Bowl     |          |
-| Orange        | 1/2      |      | or   | Dressing | squeezed |
 | Ginger        | 1        | tsp  | ging | Dressing |          |
-| Lemon         | 1/2      |      | lem  | Dressing | squeezed |
 | Lemon zest    | 1/2      | tsp  | lz   | Dressing |          |
 | Orange zest   | 1/2      | tsp  | oz   | Dressing |          |
 | Salt          | 1/4      | tsp  | sel  | Dressing |          |

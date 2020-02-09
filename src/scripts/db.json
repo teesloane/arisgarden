@@ -51,7 +51,7 @@
         },
         {
           "ingredient": "Cinnamon",
-          "quantity": "1 or 2",
+          "quantity": "2",
           "unit": "tsp",
           "id": "cin",
           "prep": "",
@@ -253,26 +253,26 @@
         {
           "ingredient": "White onion",
           "quantity": "1/2",
-          "unit": "cups (diced)",
+          "unit": "cups",
           "id": "onion-white",
           "group": "",
-          "prep": ""
+          "prep": "diced"
         },
         {
           "ingredient": "Garlic",
           "quantity": "3",
-          "unit": "cloves (diced)",
+          "unit": "cloves",
           "id": "garlic",
           "group": "",
-          "prep": ""
+          "prep": "diced"
         },
         {
           "ingredient": "Bell pepper",
           "quantity": "1/2",
-          "unit": "cups (chopped)",
+          "unit": "cups",
           "id": "pepper-bell",
           "group": "",
-          "prep": ""
+          "prep": "chopped"
         },
         {
           "ingredient": "Diced tomatoes",
@@ -671,7 +671,7 @@
           "quantity": "3",
           "unit": "",
           "id": "shallots",
-          "prep": "",
+          "prep": "sliced",
           "group": ""
         },
         {
@@ -711,7 +711,7 @@
           "quantity": "2",
           "unit": "",
           "id": "carrots",
-          "prep": "",
+          "prep": "diced",
           "group": ""
         },
         {
@@ -763,11 +763,11 @@
           "group": ""
         },
         {
-          "ingredient": "Lime juice",
+          "ingredient": "Lime",
           "quantity": "2",
           "unit": "tbsp",
           "id": "lime-juice",
-          "prep": "",
+          "prep": "juiced",
           "group": ""
         },
         {
@@ -1098,7 +1098,7 @@
     },
     "sweet-potato-gnocci": {
       "date_made": "[2019-09-22]",
-      "ease_of_making": "3/5",
+      "ease_of_making": "2.5/5",
       "imgs": [
         "1.JPG",
         "2.JPG",
@@ -1107,7 +1107,7 @@
       "meal_type": "vegetarian",
       "name": "Sweet Potato Gnocchi",
       "original_recipe": "https://biancazapatka.com/en/vegan-sweet-potato-gnocchi/",
-      "rating": "4/5",
+      "rating": "5/5",
       "belongs_to": "main",
       "slug": "sweet-potato-gnocci",
       "serves": "2",
@@ -1123,7 +1123,7 @@
         },
         {
           "ingredient": "Nutritional yeast",
-          "quantity": "2-3",
+          "quantity": "2",
           "unit": "tbsp",
           "id": "parm",
           "prep": "optional",
@@ -1291,7 +1291,7 @@
           "quantity": "3",
           "unit": "",
           "id": "scall",
-          "prep": "thinly sliced",
+          "prep": "sliced",
           "group": ""
         }
       ],
@@ -1539,8 +1539,8 @@
         },
         {
           "ingredient": "Coconut milk",
-          "quantity": "1",
-          "unit": "can (400ml)",
+          "quantity": "1.5",
+          "unit": "cups",
           "id": "coconut_milk",
           "group": "coconut rice",
           "prep": ""
@@ -1676,11 +1676,11 @@
         },
         {
           "ingredient": "Brie cheese",
-          "quantity": "4-6",
-          "unit": "slices",
+          "quantity": "-",
+          "unit": "",
           "id": "cheese",
           "group": "salad",
-          "prep": ""
+          "prep": "sliced"
         },
         {
           "ingredient": "Cranberries",
@@ -1844,7 +1844,7 @@
           "prep": "cubed"
         },
         {
-          "ingredient": "Apple cider winegar",
+          "ingredient": "Apple cider vinegar",
           "quantity": "3",
           "unit": "tbsp",
           "id": "vin",
@@ -1926,8 +1926,8 @@
       "ingredients": [
         {
           "ingredient": "Black beans",
-          "quantity": "3",
-          "unit": "Cans (15oz/each)",
+          "quantity": "45",
+          "unit": "oz",
           "id": "beans",
           "prep": "",
           "group": ""
@@ -1949,6 +1949,14 @@
           "group": ""
         },
         {
+          "ingredient": "Jalapeno",
+          "quantity": "1",
+          "unit": "",
+          "id": "jalap",
+          "prep": "",
+          "group": ""
+        },
+        {
           "ingredient": "Cherry tomatoes",
           "quantity": "1",
           "unit": "cups",
@@ -1961,14 +1969,6 @@
           "quantity": "1",
           "unit": "cups",
           "id": "onion",
-          "prep": "",
-          "group": ""
-        },
-        {
-          "ingredient": "Jalapeno",
-          "quantity": "1",
-          "unit": "",
-          "id": "jalap",
           "prep": "",
           "group": ""
         },
@@ -2451,7 +2451,7 @@
         },
         {
           "ingredient": "Plain gelatin",
-          "quantity": "1~",
+          "quantity": "1",
           "unit": "tbsp",
           "id": "gelatin",
           "group": "Pumpkin filling",
@@ -2515,7 +2515,7 @@
         },
         {
           "ingredient": "Canned pumpkin",
-          "quantity": "1+1/4",
+          "quantity": "1.25",
           "unit": "cups",
           "id": "pumpkin",
           "group": "Pumpkin filling",
@@ -2848,7 +2848,7 @@
         },
         {
           "ingredient": "Chickpeas",
-          "quantity": "1+1/4",
+          "quantity": "1.5",
           "unit": "cups",
           "id": "chick",
           "group": "Curry",
@@ -3065,7 +3065,7 @@
         },
         {
           "ingredient": "Oranges",
-          "quantity": "1-2",
+          "quantity": "1",
           "unit": "oranges",
           "id": "orange",
           "group": "Dressing",
@@ -3444,8 +3444,8 @@
         },
         {
           "ingredient": "Daikon/Radish",
-          "quantity": "-",
-          "unit": "",
+          "quantity": "1",
+          "unit": "cups",
           "id": "sliced",
           "prep": "",
           "group": ""
@@ -3558,8 +3558,8 @@
         },
         {
           "ingredient": "Kosher salt",
-          "quantity": "",
-          "unit": "",
+          "quantity": "1",
+          "unit": "pinch",
           "id": "salt",
           "prep": "",
           "group": ""
@@ -4113,6 +4113,30 @@
           "prep": ""
         },
         {
+          "ingredient": "Avocado",
+          "quantity": "1/2",
+          "unit": "",
+          "id": "avo",
+          "group": "Bowl",
+          "prep": "sliced"
+        },
+        {
+          "ingredient": "Orange",
+          "quantity": "1/2",
+          "unit": "",
+          "id": "or",
+          "group": "Dressing",
+          "prep": "squeezed"
+        },
+        {
+          "ingredient": "Lemon",
+          "quantity": "1/2",
+          "unit": "",
+          "id": "lem",
+          "group": "Dressing",
+          "prep": "squeezed"
+        },
+        {
           "ingredient": "Olive oil",
           "quantity": "1",
           "unit": "tbsp",
@@ -4145,14 +4169,6 @@
           "prep": ""
         },
         {
-          "ingredient": "Avocado",
-          "quantity": "1/2",
-          "unit": "",
-          "id": "avo",
-          "group": "Bowl",
-          "prep": "sliced"
-        },
-        {
           "ingredient": "Rice / Quinoa",
           "quantity": "1/2",
           "unit": "cups",
@@ -4161,28 +4177,12 @@
           "prep": ""
         },
         {
-          "ingredient": "Orange",
-          "quantity": "1/2",
-          "unit": "",
-          "id": "or",
-          "group": "Dressing",
-          "prep": "squeezed"
-        },
-        {
           "ingredient": "Ginger",
           "quantity": "1",
           "unit": "tsp",
           "id": "ging",
           "group": "Dressing",
           "prep": ""
-        },
-        {
-          "ingredient": "Lemon",
-          "quantity": "1/2",
-          "unit": "",
-          "id": "lem",
-          "group": "Dressing",
-          "prep": "squeezed"
         },
         {
           "ingredient": "Lemon zest",
