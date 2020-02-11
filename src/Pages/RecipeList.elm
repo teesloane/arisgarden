@@ -45,17 +45,12 @@ init recipes =
 
 
 -- Update --
---
 
 
 type RecipeListMsg
     = HandleInput String
     | ToggleFilters
     | ToggleFilter Filter
-
-
-
--- update : RecipeListMsg -> Model -> ( Model, Cmd msg )
 
 
 update msg model =
@@ -96,11 +91,19 @@ viewHero =
 
 
 viewSearch model =
-    section [ class "section-search content" ]
-        [ input [ class "input search-input", value model.searchVal, onInput HandleInput ] []
-        , Ui.btn "FILTERS" ToggleFilters "secondary"
-
-        -- , button [ class "button search-btn", onClick ToggleFilters ] [ text "FILTERS" ]
+    let
+        sectionClass =
+            Util.tern model.filtersOpen "section-search filter-open content" "section-search content"
+    in
+    section [ class sectionClass ]
+        [ input
+            [ class "input search-input"
+            , placeholder "Search recipes..."
+            , value model.searchVal
+            , onInput HandleInput
+            ]
+            []
+        , Ui.btnToggle "Filters" ToggleFilters model.filtersOpen
         ]
 
 
@@ -108,15 +111,12 @@ viewFilters model =
     let
         sectionClass =
             Util.tern model.filtersOpen "section-filters" "section-filters hide"
+
+        buildToggles =
+            \n -> div [ style "margin-right" "16px" ] [ Ui.btnToggle n.name (ToggleFilter n) n.isOn ]
     in
     section [ class sectionClass ]
-        (List.map (\n -> Ui.btnToggle n.name (ToggleFilter n) n.isOn) model.filters)
-
-
-
--- [ Ui.btnToggle "Vegan" ToggleFilters True
--- , Ui.btnToggle "Ari's Favourite" ToggleFilters True
--- ]
+        (List.map buildToggles model.filters)
 
 
 {-| <view> provides:
@@ -130,11 +130,14 @@ view model =
     case model.recipes of
         Just recipes ->
             let
-                sortedRecipes =
-                    List.sortBy .belongs_to recipes
+                matchSearch r =
+                    String.contains (String.toLower model.searchVal) (String.toLower r.name)
 
-                groupedRecipes =
-                    Util.groupWhileTransitively (\a b -> a.belongs_to == b.belongs_to) sortedRecipes
+                recipesFmt =
+                    recipes
+                        |> List.filter matchSearch
+                        |> List.sortBy .belongs_to
+                        |> Util.groupWhileTransitively (\a b -> a.belongs_to == b.belongs_to)
 
                 getCategoryName sec =
                     case List.head sec of
@@ -144,21 +147,29 @@ view model =
                         Nothing ->
                             ""
 
-                sectionList sec =
+                classColumn =
+                    Util.tern (not <| model.searchVal == "") "columns col-1" "columns col-2"
+
+                viewRecipe recipe =
+                    li [] [ a [ href ("/recipe/" ++ recipe.slug) ] [ text recipe.name ] ]
+
+                viewRecipeSection sec =
                     div []
                         [ h4 [ class "recipe-category" ] [ text <| getCategoryName sec ]
-                        , ul [] (List.map rList sec)
+                        , ul [] (List.map viewRecipe sec)
                         ]
-
-                rList recipe =
-                    li [] [ a [ href ("/recipe/" ++ recipe.slug) ] [ text recipe.name ] ]
             in
             section [ class "RecipeList" ]
                 [ viewHero
                 , viewSearch model
                 , viewFilters model
-                , div [ class "columns" ] (List.map sectionList groupedRecipes)
+                , div [ class classColumn ] (List.map viewRecipeSection recipesFmt)
                 ]
 
         _ ->
             div [] [ text "failed" ]
+
+
+
+--  TODO: Leaving off, build filters.
+-- applyFilter model recipes =

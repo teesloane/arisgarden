@@ -15,12 +15,14 @@
     background: white;
     display: flex;
     justify-content: center;
-    min-height: $heroSize;
+    margin: 64px 0 24px;
     position: relative;
     width: 100%;
     text-align: center;
     @include at-size(mobile) {
       min-height: 0;
+      margin: 24px 0 24px;
+      margin-bottom:  24px;
     }
 
     .content {
@@ -53,8 +55,14 @@
   // -- Search section
   .section-search {
     @include section;
+    margin: 48px auto 44px;
+
+    &.filter-open {
+      margin-bottom: 0px;
+    }
 
     .search-input {
+      margin-right: 8px;
     }
 
     .search-btn {
@@ -79,16 +87,18 @@
 
   .columns {
     column-gap: 64px;
-    columns: 2;
     margin: 0 auto;
     max-width: $tablet;
     padding: 0px 0 32px 0;
 
     @include at-size(mobile) {
       padding: 24px;
-      columns: 1;
+      columns: 1 !important;
     }
   }
+
+  .col-2 {columns: 2;}
+  .col-1 {columns: 1;}
 
   ul {
     list-style-type: none;
