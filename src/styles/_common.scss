@@ -200,37 +200,40 @@ p {
 
 .button {
   background-color: #333;
-  background-image: none;
-  border-color: #d9d9d9;
-  border-radius: 1px;
-  border: 1px solid transparent;
+  border: none;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
   color: $off-white;
   cursor: pointer;
-  display: inline-block;
   font-size: 14px;
-  font-weight: 400;
   height: 32px;
-  line-height: 1.499;
-  padding: 0 15px;
-  position: relative;
+  padding: 0 16px;
   text-align: center;
-  touch-action: manipulation;
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  user-select: none;
-  white-space: nowrap;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 
-  &:hover {
-    color: white;
-    background-color: #555;
-    border-color: #444;
-  }
-
-  &:active {
-    color: white;
+  &.primary {
     background-color: #333;
-    border-color: #888;
+    background-image: none;
+    border-color: #d9d9d9;
+
+    &:hover {
+      // color: white;
+      // background-color: #555;
+      // border-color: #444;
+    }
+
+    &:active {
+      // color: white;
+      // background-color: #333;
+      // border-color: #888;
+    }
+
   }
+
+  &.secondary {
+    background-color: #efefef;
+    color: #333;
+  }
+
 }
 
 

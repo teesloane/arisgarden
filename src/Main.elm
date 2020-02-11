@@ -136,7 +136,7 @@ update msg model =
                 ( updatedPageModel, updatedCmd ) =
                     RecipeList.update subMsg pageModel
             in
-            ( { model | page = RecipeListPage pageModel }, Cmd.map T.RecipeListMsg updatedCmd )
+            ( { model | page = RecipeListPage updatedPageModel }, Cmd.map T.RecipeListMsg updatedCmd )
 
         ( _, _ ) ->
             ( model, Cmd.none )

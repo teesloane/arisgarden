@@ -1,3 +1,10 @@
+@mixin section {
+  max-width: $tablet;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+}
+
 .RecipeList {
   margin-bottom: 32px;
 
@@ -45,10 +52,7 @@
 
   // -- Search section
   .section-search {
-    max-width: $tablet;
-    padding: 0 24px;
-    margin: -24px auto 48px;
-    display: flex;
+    @include section;
 
     .search-input {
     }
@@ -57,6 +61,16 @@
       margin-left: 8px;
       font-size: 0.8rem;
       letter-spacing: 2px;
+    }
+  }
+
+  // -- Filter section
+  .section-filters {
+    @include section;
+    margin-top: 12px;
+
+    &.hide {
+      display: none;
     }
   }
 
