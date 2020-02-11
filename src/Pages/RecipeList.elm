@@ -2,6 +2,7 @@ module Pages.RecipeList exposing (..)
 
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Html.Events exposing (onInput)
 import Json.Decode as Decode
 import Pages.RecipeSingle exposing (Recipe, decodeRecipe)
 import Ui
@@ -15,6 +16,7 @@ type alias Flags =
 
 type alias Model =
     { recipes : Maybe (List Recipe)
+    , searchVal : String
     }
 
 
@@ -24,7 +26,34 @@ decodeAll =
 
 
 init recipes =
-    ( { recipes = recipes }, Cmd.none )
+    ( { recipes = recipes
+      , searchVal = ""
+      }
+    , Cmd.none
+    )
+
+
+
+-- Update --
+--
+
+
+type RecipeListMsg
+    = HandleInput String
+
+
+
+-- update : RecipeListMsg -> Model -> ( Model, Cmd msg )
+
+
+update msg model =
+    case msg of
+        HandleInput e ->
+            ( { model | searchVal = e }, Cmd.none )
+
+
+
+-- Views --
 
 
 viewHero =
@@ -36,10 +65,10 @@ viewHero =
         ]
 
 
-viewSearch =
+viewSearch model =
     section [ class "section-search content" ]
-        [ input [ class "search-input" ] []
-        , button [ class "search-btn" ] [ text "Search" ]
+        [ input [ class "input search-input", value model.searchVal, onInput HandleInput ] []
+        , button [ class "button search-btn" ] [ text "FILTERS" ]
         ]
 
 
@@ -72,7 +101,7 @@ view model =
             in
             section [ class "RecipeList" ]
                 [ viewHero
-                , viewSearch
+                , viewSearch model
                 , div [ class "columns" ] (List.map sectionList groupedRecipes)
                 ]
 

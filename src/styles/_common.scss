@@ -197,3 +197,68 @@ p {
     // margin: 32px 0;
   }
 }
+
+.button {
+  background-color: #333;
+  background-image: none;
+  border-color: #d9d9d9;
+  border-radius: 1px;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+  color: $off-white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  line-height: 1.499;
+  padding: 0 15px;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  user-select: none;
+  white-space: nowrap;
+
+  &:hover {
+    color: white;
+    background-color: #555;
+    border-color: #444;
+  }
+
+  &:active {
+    color: white;
+    background-color: #333;
+    border-color: #888;
+  }
+}
+
+
+.input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 8px;
+  font-variant: tabular-nums;
+  list-style: none;
+  font-feature-settings: 'tnum';
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 32px;
+  padding: 4px 11px;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-family: $primary-sans;
+  letter-spacing: 1.1px;
+  line-height: 1.5;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-top-color: rgb(217, 217, 217);
+  border-right-color: rgb(217, 217, 217);
+  border-right-width: 1px;
+  border-bottom-color: rgb(217, 217, 217);
+  border-left-color: rgb(217, 217, 217);
+  border-radius: 0px;
+  transition: all 0.3s;
+}

@@ -1,7 +1,5 @@
 module Main exposing (..)
 
--- FIXME: better names between RecipeSingle RecipeSinglePage and RecipeSingleMsg ?
-
 import Browser
 import Browser.Dom
 import Browser.Navigation as Nav
@@ -14,7 +12,7 @@ import Pages.RecipeList as RecipeList
 import Pages.RecipeSingle as RecipeSingle
 import Pages.Router as Router exposing (..)
 import Task
-import Types exposing (Msg(..))
+import Types as T
 import Ui
 import Url
 
@@ -23,15 +21,15 @@ import Url
 -- MAIN
 
 
-main : Program RecipeList.Flags Model Msg
+main : Program RecipeList.Flags Model T.Msg
 main =
     Browser.application
         { init = init
         , view = view
         , update = update
         , subscriptions = subscriptions
-        , onUrlChange = UrlChanged
-        , onUrlRequest = LinkClicked
+        , onUrlChange = T.UrlChanged
+        , onUrlRequest = T.LinkClicked
         }
 
 
@@ -65,6 +63,12 @@ init flags url key =
             initCurrentPage ( model, Cmd.none )
 
 
+{-| initCurrentPage cases over the possible model.routes,
+returning the model and the commands for each possible sub page.
+
+TODO: type annotations
+TODO: maybe move this to the router, or at least, the case model.route...
+-}
 initCurrentPage ( model, existingCmds ) =
     let
         ( currentPage, mappedPageCmds ) =
@@ -77,14 +81,14 @@ initCurrentPage ( model, existingCmds ) =
                         ( pageModel, pageCmds ) =
                             RecipeSingle.init model.recipes recipeName
                     in
-                    ( RecipeSinglePage pageModel, Cmd.map RecipeSingleMsg pageCmds )
+                    ( RecipeSinglePage pageModel, Cmd.map T.RecipeSingleMsg pageCmds )
 
                 Router.RecipeList ->
                     let
-                        ( pageModel, _ ) =
+                        ( pageModel, pageCmds ) =
                             RecipeList.init model.recipes
                     in
-                    ( RecipeListPage pageModel, Cmd.none )
+                    ( RecipeListPage pageModel, Cmd.map T.RecipeListMsg pageCmds )
 
                 Router.About ->
                     ( AboutPage, Cmd.none )
@@ -94,10 +98,17 @@ initCurrentPage ( model, existingCmds ) =
     )
 
 
-update : Msg -> Model -> ( Model, Cmd Msg )
+{-| The main update function for the application.
+It aggregates all the sub-update functions of each page.
+
+For each possible permutation of the union type of Msg + model.page,
+we pass the state into the update functions of the sub-update on each page.
+
+-}
+update : T.Msg -> Model -> ( Model, Cmd T.Msg )
 update msg model =
     case ( msg, model.page ) of
-        ( LinkClicked urlRequest, _ ) ->
+        ( T.LinkClicked urlRequest, _ ) ->
             case urlRequest of
                 Browser.Internal url ->
                     ( model, Nav.pushUrl model.key (Url.toString url) )
@@ -105,30 +116,23 @@ update msg model =
                 Browser.External href ->
                     ( model, Nav.load href )
 
-        ( UrlChanged url, _ ) ->
+        ( T.UrlChanged url, _ ) ->
             let
                 newRoute =
                     Router.parseUrl url
             in
-            ( { model | route = newRoute }, Task.perform (\_ -> NoOp) <| Browser.Dom.setViewport 0 0 )
+            ( { model | route = newRoute }, Task.perform (\_ -> T.NoOp) <| Browser.Dom.setViewport 0 0 )
                 |> initCurrentPage
 
-        ( RecipeSingleMsg subMsg, RecipeSinglePage pageModel ) ->
+        ( T.RecipeSingleMsg subMsg, RecipeSinglePage pageModel ) ->
             let
                 ( updatedPageModel, updatedCmd ) =
                     RecipeSingle.update subMsg pageModel
             in
-            ( { model | page = RecipeSinglePage updatedPageModel }, Cmd.map RecipeSingleMsg updatedCmd )
+            ( { model | page = RecipeSinglePage updatedPageModel }, Cmd.map T.RecipeSingleMsg updatedCmd )
 
-        ( RecipeListMsg, RecipeListPage pageModel ) ->
+        ( T.RecipeListMsg subMsg, RecipeListPage pageModel ) ->
             ( { model | page = RecipeListPage pageModel }, Cmd.none )
-
-        -- FIXME: Placeholders
-        ( RecipeSingleMsg _, NotFoundPage ) ->
-            ( model, Cmd.none )
-
-        ( NoOp, _ ) ->
-            ( model, Cmd.none )
 
         ( _, _ ) ->
             ( model, Cmd.none )
@@ -138,10 +142,11 @@ update msg model =
 -- SUBSCRIPTIONS --
 
 
+subscriptions : Model -> Sub T.Msg
 subscriptions model =
     case model.page of
         RecipeSinglePage subModel ->
-            RecipeSingle.subscriptions subModel |> Sub.map RecipeSingleMsg
+            RecipeSingle.subscriptions subModel |> Sub.map T.RecipeSingleMsg
 
         _ ->
             Sub.none
@@ -157,14 +162,12 @@ view model =
         [ main_ [ class "main" ]
             [ viewNav model
             , div [ class "currentPage" ] [ viewCurrentPage model ]
-            , div [class "footer"] [
-                   div [] [text "Built by \u{00A0}"]
-                   , a [class "link", target "_blank", href "https://theiceshelf.com"] [text "The Ice Shelf"]
-
-                    , a [target "_blank", class "link", href "https://github.com/theiceshelf/arisgarden"] [Ui.icon "github.svg" "20" "20"]
-                    , a [target "_blank", class "link", href "https://twitter.com/theiceshelf"] [Ui.icon "twitter.svg" "20" "20"]
-
-                  ]
+            , div [ class "footer" ]
+                [ div [] [ text "Built by \u{00A0}" ]
+                , a [ class "link", target "_blank", href "https://theiceshelf.com" ] [ text "The Ice Shelf" ]
+                , a [ target "_blank", class "link", href "https://github.com/theiceshelf/arisgarden" ] [ Ui.icon "github.svg" "20" "20" ]
+                , a [ target "_blank", class "link", href "https://twitter.com/theiceshelf" ] [ Ui.icon "twitter.svg" "20" "20" ]
+                ]
             ]
         ]
     }
@@ -173,10 +176,10 @@ view model =
 viewCurrentPage model =
     case model.page of
         RecipeSinglePage pageModel ->
-            RecipeSingle.view pageModel |> Html.map RecipeSingleMsg
+            RecipeSingle.view pageModel |> Html.map T.RecipeSingleMsg
 
         RecipeListPage pageModel ->
-            RecipeList.view pageModel
+            RecipeList.view pageModel |> Html.map T.RecipeListMsg
 
         AboutPage ->
             About.view
@@ -191,7 +194,7 @@ viewNav _ =
         [ div [ class "nav-container" ]
             [ a [ class "name-icon", href "/" ]
                 [ Ui.icon "c_home.svg" "46" "38"
-                , div [class "link"] [ text "Ari's Garden" ]
+                , div [ class "link" ] [ text "Ari's Garden" ]
                 ]
             , div [ class "links" ]
                 [ a [ href "/about", class "link" ] [ text "About" ]

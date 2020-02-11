@@ -31,5 +31,17 @@ mogrify -resize 400 *.JPG
 convert -delay 5 -loop 0 *.JPG output.gif
 ```
   
+### Notes on adding new pages.
 
+When adding a new (stateful) page, you have to make a few changes. A page is a "mini-version" of The Elm Architecture.
+
+- *File*: Create a new file + namespace in Pages/<your_page.elm> with:
+    - a model
+    - an update + types
+    - a view
+- *Routing* Add the page + it's types to the Router and it's parser.
+- *Main* Update main with the mini TEA into the main TEA:
+    - Refactor Update to handle passing the sub state around, and map commands.o=
+    - Map.html for subviews.
+    - Add the sum of the msg types to the union types under Types.elm ( Naming 🤦‍♂️))
 
