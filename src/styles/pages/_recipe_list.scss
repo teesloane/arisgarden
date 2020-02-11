@@ -43,6 +43,25 @@
     }
   }
 
+  // -- Search section
+  .section-search {
+    max-width: $tablet;
+    margin: 0 auto;
+    display: flex;
+
+    .search-input {
+      display: flex;
+      flex: 1;
+    }
+
+    .search-btn {
+      padding: 4px;
+    }
+  }
+
+
+  // Columns / Recipes List
+
   .columns {
     column-gap: 64px;
     columns: 2;
