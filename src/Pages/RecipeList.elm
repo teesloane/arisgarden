@@ -111,6 +111,9 @@ viewSearch model =
     let
         sectionClass =
             Util.tern model.filtersOpen "section-search filter-open content" "section-search content"
+
+        fText =
+            Util.tern model.filtersOpen "Filters ▼" "Filters ►"
     in
     section [ class sectionClass ]
         [ input
@@ -121,7 +124,7 @@ viewSearch model =
             ]
             []
         , div [ class "filters-btn-wrap" ]
-            [ Ui.btnToggle "Filters" ToggleFilters model.filtersOpen
+            [ Ui.btnToggle fText ToggleFilters model.filtersOpen
             ]
         ]
 

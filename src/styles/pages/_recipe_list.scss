@@ -73,6 +73,7 @@
     @include at-size(small) {
       margin-bottom: 0;
       flex-direction: column;
+      .search-input { margin-right: 0px;  }
       .filters-btn-wrap {
         margin-top: 16px;
         width: 100%;
