@@ -4,7 +4,7 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onClick, onInput)
 import Json.Decode as Decode
-import Pages.RecipeSingle exposing (Recipe, decodeRecipe)
+import Pages.RecipeSingle exposing (MealType(..), Recipe, decodeRecipe)
 import Ui
 import Util
 
@@ -37,7 +37,10 @@ init recipes =
     ( { recipes = recipes
       , searchVal = ""
       , filtersOpen = False
-      , filters = [ Filter False "Vegan", Filter False "Ari's Favourites" ]
+      , filters =
+            [ Filter False "Vegan"
+            , Filter False "Ari's Favourites"
+            ]
       }
     , Cmd.none
     )
@@ -133,8 +136,12 @@ view model =
                 matchSearch r =
                     String.contains (String.toLower model.searchVal) (String.toLower r.name)
 
+                thing =
+                    applyFilter model.filters recipes
+
                 recipesFmt =
                     recipes
+                        |> applyFilter model.filters
                         |> List.filter matchSearch
                         |> List.sortBy .belongs_to
                         |> Util.groupWhileTransitively (\a b -> a.belongs_to == b.belongs_to)
@@ -171,5 +178,30 @@ view model =
 
 
 
---  TODO: Leaving off, build filters.
--- applyFilter model recipes =
+--  for each filter in model.filters, apply this -
+-- recursively filter down the recipes based on what filters are active.
+
+
+applyFilter filters recipes =
+    let
+        filterRecipes r filter =
+            if not filter.isOn then
+                True
+
+            else
+                case filter.name of
+                    "Vegan" ->
+                        r.meal_type == Vegan
+
+                    "Ari's Favourites" ->
+                        r.rating == "5/5"
+
+                    _ ->
+                        True
+    in
+    case filters of
+        [] ->
+            recipes
+
+        x :: xs ->
+            applyFilter xs (List.filter (\recipe -> filterRecipes recipe x) recipes)
