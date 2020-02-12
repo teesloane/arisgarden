@@ -55,20 +55,31 @@
   // -- Search section
   .section-search {
     @include section;
-    margin: 48px auto 44px;
+    margin: 48px auto 24px;
 
-    &.filter-open {
-      margin-bottom: 0px;
-    }
-
-    .search-input {
-      margin-right: 8px;
-    }
+    &.filter-open { margin-bottom: 0px; }
+    .search-input { margin-right: 8px;  }
 
     .search-btn {
       margin-left: 8px;
       font-size: 0.8rem;
       letter-spacing: 2px;
+    }
+
+    .filters-btn-wrap {
+    }
+
+
+    @include at-size(small) {
+      margin-bottom: 0;
+      flex-direction: column;
+      .filters-btn-wrap {
+        margin-top: 16px;
+        width: 100%;
+        .button {
+          width: 100%;
+        }
+      }
     }
   }
 
@@ -76,6 +87,16 @@
   .section-filters {
     @include section;
     margin-top: 12px;
+    margin-bottom: 8px;
+
+    .filter-btn-wrap { margin-right: 8px; }
+
+    @include at-size(small) {
+      flex-direction: column;
+      display: flex;
+      .filter-btn-wrap { margin-right: 0; }
+      .button {width: 100%; margin: 4px 0;}
+    }
 
     &.hide {
       display: none;

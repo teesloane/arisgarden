@@ -40,6 +40,7 @@ init recipes =
       , filters =
             [ Filter False "Vegan"
             , Filter False "Ari's Favourites"
+            , Filter False "Under 30 Minutes"
             ]
       }
     , Cmd.none
@@ -56,13 +57,24 @@ type RecipeListMsg
     | ToggleFilter Filter
 
 
+update : RecipeListMsg -> Model -> ( Model, Cmd msg )
 update msg model =
     case msg of
         HandleInput e ->
             ( { model | searchVal = e }, Cmd.none )
 
         ToggleFilters ->
-            ( { model | filtersOpen = not model.filtersOpen }, Cmd.none )
+            -- if we are closing our filters, remove all the selected ones.
+            if model.filtersOpen == True then
+                ( { model
+                    | filtersOpen = False
+                    , filters = List.map (\n -> { n | isOn = False }) model.filters
+                  }
+                , Cmd.none
+                )
+
+            else
+                ( { model | filtersOpen = True }, Cmd.none )
 
         ToggleFilter f ->
             let
@@ -84,6 +96,7 @@ update msg model =
 -- Views --
 
 
+viewHero : Html msg
 viewHero =
     section [ class "home-hero" ]
         [ div [ class "content" ]
@@ -93,6 +106,7 @@ viewHero =
         ]
 
 
+viewSearch : Model -> Html RecipeListMsg
 viewSearch model =
     let
         sectionClass =
@@ -106,17 +120,20 @@ viewSearch model =
             , onInput HandleInput
             ]
             []
-        , Ui.btnToggle "Filters" ToggleFilters model.filtersOpen
+        , div [ class "filters-btn-wrap" ]
+            [ Ui.btnToggle "Filters" ToggleFilters model.filtersOpen
+            ]
         ]
 
 
+viewFilters : Model -> Html RecipeListMsg
 viewFilters model =
     let
         sectionClass =
             Util.tern model.filtersOpen "section-filters" "section-filters hide"
 
         buildToggles =
-            \n -> div [ style "margin-right" "16px" ] [ Ui.btnToggle n.name (ToggleFilter n) n.isOn ]
+            \n -> div [ class "filter-btn-wrap" ] [ Ui.btnToggle n.name (ToggleFilter n) n.isOn ]
     in
     section [ class sectionClass ]
         (List.map buildToggles model.filters)
@@ -129,6 +146,7 @@ viewFilters model =
   - The recipes as sorted by their categories.
 
 -}
+view : Model -> Html RecipeListMsg
 view model =
     case model.recipes of
         Just recipes ->
@@ -182,6 +200,7 @@ view model =
 -- recursively filter down the recipes based on what filters are active.
 
 
+applyFilter : List Filter -> List Recipe -> List Recipe
 applyFilter filters recipes =
     let
         filterRecipes r filter =
@@ -195,6 +214,9 @@ applyFilter filters recipes =
 
                     "Ari's Favourites" ->
                         r.rating == "5/5"
+
+                    "Under 30 Minutes" ->
+                        Util.strToSec r.time < 1800
 
                     _ ->
                         True
