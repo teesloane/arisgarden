@@ -1,0 +1,69 @@
+// Classes to go along with Ui.elm
+
+.button {
+		background-color: #333;
+		border: none;
+		box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+		cursor: pointer;
+		font-size: 14px;
+		height: 32px;
+		padding: 0 16px;
+		text-align: center;
+		transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+		&.primary {
+				$prim-btn-color: #555;
+				background-color: $prim-btn-color;
+				background-image: none;
+				border: 1px solid lighten($prim-btn-color, 10%);
+				color: $off-white;
+
+				&:hover {
+						color: white;
+						background-color: lighten($prim-btn-color, 5%);
+						border-color: lighten($prim-btn-color, 5%);
+				}
+
+				&:active {
+						color: white;
+						background-color: darken($prim-btn-color, 3%);
+				}
+
+		}
+
+		&.secondary {
+				$sec-btn-color: $off-white;
+				border: 1px solid darken($sec-btn-color, 10%);
+				background-color: $sec-btn-color;
+				color: $off-black;
+
+				&:hover {
+						background-color: lighten($sec-btn-color, 2%);
+				}
+
+				&:active {
+						background-color: darken($sec-btn-color, 2%);
+				}
+		}
+}
+
+
+.input {
+		margin: 0;
+		padding: 0 8px;
+		list-style: none;
+		position: relative;
+		display: inline-block;
+		flex: 1;
+		height: 32px;
+		padding: 4px 11px;
+		color: rgba(0, 0, 0, 0.65);
+		font-size: 14px;
+		font-family: $primary-sans;
+		letter-spacing: 1.1px;
+		line-height: 1.5;
+		background-color: #fff;
+		border: 1px solid #d9d9d9;
+		border-radius: 0px;
+		transition: all 0.3s;
+}

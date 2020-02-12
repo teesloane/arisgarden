@@ -1,6 +1,7 @@
 module Util exposing (..)
 
 {-| Fn: "00:20:45" -> 1245
+
 TODO: I'm not sure if there is a better way to get access to the index of
 a list in Elm. The original JS function looked like this:
 
@@ -91,9 +92,8 @@ cleanTime t =
 
 
 {-| Group elements together, using a custom comparison test. Start a new group each time the comparison test doesn't hold for two adjacent elements.
-    groupWhileTransitively (<) [1,2,3,2,4,1,3,2,1] == [[1,2,3],[2,4],[1,3],[2],[1]]
-    source: https://github.com/elm-community/list-extra/blob/7.1.0/src/List/Extra.elm#L1331
-
+groupWhileTransitively (<) [1,2,3,2,4,1,3,2,1] == [[1,2,3],[2,4],[1,3],[2],[1]]
+source: <https://github.com/elm-community/list-extra/blob/7.1.0/src/List/Extra.elm#L1331>
 -}
 groupWhileTransitively : (a -> a -> Bool) -> List a -> List (List a)
 groupWhileTransitively compare list =
@@ -107,6 +107,7 @@ groupWhileTransitivelyHelp result currentGroup compare list =
             List.reverse <|
                 if List.isEmpty currentGroup then
                     result
+
                 else
                     List.reverse (currentGroup :: result)
 
@@ -121,6 +122,7 @@ groupWhileTransitivelyHelp result currentGroup compare list =
                     (first :: currentGroup)
                     compare
                     rest
+
             else
                 groupWhileTransitivelyHelp
                     (List.reverse (first :: currentGroup) :: result)

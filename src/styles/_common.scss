@@ -71,7 +71,12 @@ p {
 }
 
 
-.main {}
+.main {
+  // Make footer sticky with the following:
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
 
 
 .currentPage {}
@@ -197,3 +202,4 @@ p {
     // margin: 32px 0;
   }
 }
+

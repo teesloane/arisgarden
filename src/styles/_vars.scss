@@ -5,10 +5,10 @@ $tablet: 800px;
 $heroSize: 320px;
 
 /* Fonts */
-$font-h1: 64px;
-$font-h2: 48px;
-$font-h3: 32px;
-$font-h4: 24px;
+$font-h1: 48px;
+$font-h2: 32px;
+$font-h3: 24px;
+$font-h4: 20px;
 $font-h5: 16px;
 $font-h6: 12px;
 
@@ -16,7 +16,8 @@ $font-h6: 12px;
 
 $off-black: #555;
 $black: #333;
-$white: #efefef;
+$white: #fafafa;
+$off-white: #efefef;
 
 $primary: #27ae60;
 
@@ -24,15 +25,22 @@ $primary-serif: "Plex-Serif";
 $primary-sans: "Plex-Sans";
 
 // Responsivity
+$break-smaller: 500px;
 $break-small: 800px;
 $break-med: 1024px;
 $break-wide: 1260px;
 
 @mixin at-size($media) {
-  @if $media == mobile {
-    @media only screen and (max-width: $break-small) {
+  @if $media == small {
+    @media only screen and (max-width: $break-smaller) {
       @content;
     }
+  }
+  @if $media == mobile {
+    @media only screen and (max-width: $break-small+1) {
+      @content;
+    }
+
   } @else if $media == medium {
     @media only screen and (min-width: $break-small + 1) and (max-width: $break-med - 1) {
       @content;
