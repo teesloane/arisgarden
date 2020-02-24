@@ -5957,6 +5957,342 @@
           "The almond butter makes these muffins creamy, and well, that is a good thing."
         ]
       }
+    },
+    "zucchini-noodle-medley": {
+      "belongs_to": "main",
+      "date_made": "[2020-02-18]",
+      "ease_of_making": "4/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegan",
+      "name": "Zucchini Noodle Medley",
+      "original_recipe": "",
+      "rating": "3/5",
+      "serves": "4",
+      "slug": "zucchini-noodle-medley",
+      "tags": "[]",
+      "time": "00:45:00",
+      "ingredients": [
+        {
+          "ingredient": "Olive oil",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "oo",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Yellow onion",
+          "quantity": "2",
+          "unit": "",
+          "id": "yo",
+          "prep": "diced",
+          "group": ""
+        },
+        {
+          "ingredient": "Garlic cloves",
+          "quantity": "4",
+          "unit": "",
+          "id": "gar",
+          "prep": "minced",
+          "group": ""
+        },
+        {
+          "ingredient": "Carrots",
+          "quantity": "2",
+          "unit": "",
+          "id": "car",
+          "prep": "diced",
+          "group": ""
+        },
+        {
+          "ingredient": "Celery",
+          "quantity": "3",
+          "unit": "stalks",
+          "id": "cel",
+          "prep": "diced",
+          "group": ""
+        },
+        {
+          "ingredient": "Chickpeas",
+          "quantity": "2",
+          "unit": "cups",
+          "id": "cp",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Diced tomatoes",
+          "quantity": "2",
+          "unit": "cups",
+          "id": "dt",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Coconut milk",
+          "quantity": "3/4",
+          "unit": "cups",
+          "id": "cm",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Tomato paste",
+          "quantity": "1/4",
+          "unit": "cups",
+          "id": "tp",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Water",
+          "quantity": "2",
+          "unit": "cups",
+          "id": "water",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Basil leaves",
+          "quantity": "1/4",
+          "unit": "cups",
+          "id": "bl",
+          "prep": "chopped",
+          "group": ""
+        },
+        {
+          "ingredient": "Spinach leaves",
+          "quantity": "2",
+          "unit": "cups",
+          "id": "sl",
+          "prep": "packed",
+          "group": ""
+        },
+        {
+          "ingredient": "Zucchini",
+          "quantity": "2",
+          "unit": "large",
+          "id": "zuc",
+          "prep": "spiralized",
+          "group": ""
+        },
+        {
+          "ingredient": "Spiralizer",
+          "quantity": "",
+          "unit": "(optional)",
+          "id": "",
+          "prep": "",
+          "group": ""
+        }
+      ],
+      "instructions": [
+        "Heat oil in a large pan on medium heat.",
+        "[&: Sauté | 00:03:00] Add [#: yo | onion], [#: gar | garlic], [#: car | carrots], and [#: cel | celery]. Sauté for 3-4 minutes.",
+        "[&: Simmer everything | 00:10:00] Add [#: cp | chickpeas], [#: dt | diced tomatoes ], [#: cm | coconut milk], [#: tp | tomato paste] and [#: water | water]. Bring to a boil and simmer for about 8-10 minutes or until thickened.",
+        "Spiralize zucchini (if you have a spiralizer), otherwise, slice into long matchsticks.",
+        "Stir in basil leaves and spinach until wilted. Season with salt.",
+        "[&: Add zucchini | 00:03:00] Add in zucchini for 2-3 minutes."
+      ],
+      "commentary": {
+        "kind": "haiku",
+        "val": [
+          "This came out a little bland.",
+          "In retrospect, the recipe had no spices!",
+          "Maybe some cumin would have been interesting?"
+        ]
+      }
+    },
+    "spaghetti-squash-burrito-bowl": {
+      "belongs_to": "main",
+      "date_made": "[2020-02-21 Fri]",
+      "ease_of_making": "5/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegetarian",
+      "name": "Spaghetti Squash Burrito Bowl",
+      "original_recipe": "https://cookieandkate.com/spaghetti-squash-burrito-bowl-recipe/",
+      "rating": "5/5",
+      "serves": "4",
+      "slug": "spaghetti-squash-burrito-bowl",
+      "tags": "[]",
+      "time": "00:45:00",
+      "ingredients": [
+        {
+          "ingredient": "Spaghetti squash",
+          "quantity": "2",
+          "unit": "",
+          "id": "ss",
+          "prep": "halved, seeds removed",
+          "group": "Spaghetti Squash"
+        },
+        {
+          "ingredient": "Olive oil",
+          "quantity": "2",
+          "unit": "tbsp",
+          "id": "oo",
+          "prep": "",
+          "group": "Spaghetti Squash"
+        },
+        {
+          "ingredient": "Salt and Pepper",
+          "quantity": "",
+          "unit": "",
+          "id": "sp",
+          "prep": "",
+          "group": "Spaghetti Squash"
+        },
+        {
+          "ingredient": "Purple cabbage",
+          "quantity": "2",
+          "unit": "cups",
+          "id": "pc",
+          "prep": "sliced, 2 inches long",
+          "group": "Filling"
+        },
+        {
+          "ingredient": "Black beans",
+          "quantity": "15",
+          "unit": "oz",
+          "id": "bb",
+          "prep": "rinsed, drained",
+          "group": "Filling"
+        },
+        {
+          "ingredient": "Bell pepper",
+          "quantity": "1",
+          "unit": "",
+          "id": "bp",
+          "prep": "chopped",
+          "group": "Filling"
+        },
+        {
+          "ingredient": "Green onions",
+          "quantity": "1/3",
+          "unit": "cups",
+          "id": "go",
+          "prep": "chopped",
+          "group": "Filling"
+        },
+        {
+          "ingredient": "Cilantro",
+          "quantity": "1/3",
+          "unit": "cups",
+          "id": "cil",
+          "prep": "chopped",
+          "group": "Filling"
+        },
+        {
+          "ingredient": "Olive oil",
+          "quantity": "1",
+          "unit": "tsp",
+          "id": "oo2",
+          "prep": "",
+          "group": "Filling"
+        },
+        {
+          "ingredient": "Lime juice",
+          "quantity": "3",
+          "unit": "tbsp",
+          "id": "lime",
+          "prep": "squeezed",
+          "group": "Filling"
+        },
+        {
+          "ingredient": "Salt",
+          "quantity": "1/4",
+          "unit": "tsp",
+          "id": "salt2",
+          "prep": "",
+          "group": "Filling"
+        },
+        {
+          "ingredient": "Salsa Verde",
+          "quantity": "3/4",
+          "unit": "cups",
+          "id": "verde",
+          "prep": "",
+          "group": "Avocado Salsa Verde"
+        },
+        {
+          "ingredient": "Avocado",
+          "quantity": "1",
+          "unit": "",
+          "id": "avo",
+          "prep": "diced",
+          "group": "Avocado Salsa Verde"
+        },
+        {
+          "ingredient": "Cilantro",
+          "quantity": "1/3",
+          "unit": "cups",
+          "id": "cil2",
+          "prep": "de-stemmed",
+          "group": "Avocado Salsa Verde"
+        },
+        {
+          "ingredient": "Lime juice",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "lime2",
+          "prep": "squeezed",
+          "group": "Avocado Salsa Verde"
+        },
+        {
+          "ingredient": "Garlic",
+          "quantity": "1",
+          "unit": "",
+          "id": "garlic",
+          "prep": "chopped",
+          "group": "Avocado Salsa Verde"
+        },
+        {
+          "ingredient": "Feta",
+          "quantity": "1/3",
+          "unit": "cups",
+          "id": "feta",
+          "prep": "crumbled",
+          "group": "Topping (optional)"
+        },
+        {
+          "ingredient": "Pepitas",
+          "quantity": "1/4",
+          "unit": "cups",
+          "id": "pep",
+          "prep": "",
+          "group": "Topping (optional)"
+        },
+        {
+          "ingredient": "Blender",
+          "quantity": "",
+          "unit": "",
+          "id": "",
+          "prep": "",
+          "group": ""
+        }
+      ],
+      "instructions": [
+        "Prehead oven to 400F.",
+        "Prepare the squash. Halve and de-seed. Drizzel and rub inside with [#: oo | olive oil].",
+        "[&: Roast squash | 00:40:00] Put squashes on parchment paper and onto an oven sheet. Bake for 40 minutes or until easily pierced with a fork.",
+        "Assemble the Filling while squashes are in the oven. In a medium bowl, combine [#: pc | cabbage], [#: bb | black beans], [#: bp | bell pepper],  [#: go | green onion], [#: cil | cilantro], [#: lime | lime juice], [#: oo2 | olive oil] and salt. Toss to combine and set aside.",
+        "Make the salsa verde: combine [#: avo | avocado], [#: verde | salsa verde], [#: cil2 | cilantro], [#: lime2 | lime juice] and [#: garlic | garlic] into a blender. Blend until smooth.",
+        "Assemble: use a fork to separate and fluff the inside of the spaghetti squash. Divide the filling into each squash and then top with the avocado salsa verde. Top with feta, salt and pepper and pepitas."
+      ],
+      "commentary": {
+        "kind": "haiku",
+        "val": [
+          "The squash bowl is fine",
+          "A bowl to have just one time",
+          "You cannot keep it."
+        ]
+      }
     }
   }
 }
