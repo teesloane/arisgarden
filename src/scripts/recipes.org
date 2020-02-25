@@ -466,23 +466,23 @@
 ** Ingredients
 | Ingredient      | Quantity | Unit      | Id       | Group | Prep      |
 |-----------------+----------+-----------+----------+-------+-----------|
-| Olive oil       |        1 | tsp       | oil      | broth |           |
-| Red curry paste |        1 | tbsp      | rcp      | broth |           |
-| Soy sauce       |      1/4 | cups      | soysauce | broth |           |
-| Peanut butter   |      1/4 | cups      | pb       | broth |           |
-| Vegetable broth |        4 | cups      | vegbroth | broth |           |
-| Honey           |        2 | tbsp      | honey    | broth |           |
-| Coconut milk    |       14 | oz        | coco     | broth |           |
-| Garlic          |        4 | cloves    | garlic   | broth |           |
-| Ginger          |        1 | thumb-tip | ginger   | broth |           |
-| Rice            |        1 | cups      | rice     | bowl  |           |
-| Carrots         |        1 | cups      | carrots  | bowl  | julienned |
-| Peanuts         |      1/4 | cups      | peanuts  | bowl  |           |
-| Cucumber        |      1/2 |           | cucu     | bowl  |           |
-| Bell pepper     |        1 |           | bell     | bowl  | sliced    |
-| Green onions    |        2 |           | gonion   | bowl  | sliced    |
-| Jalapeno        |        1 |           | jalap    | bowl  |           |
-| Lime            |        1 |           | lime     | bowl  |           |
+| Olive oil       |        1 | tsp       | oil      | Broth |           |
+| Red curry paste |        1 | tbsp      | rcp      | Broth |           |
+| Soy sauce       |      1/4 | cups      | soysauce | Broth |           |
+| Peanut butter   |      1/4 | cups      | pb       | Broth |           |
+| Vegetable broth |        4 | cups      | vegbroth | Broth |           |
+| Honey           |        2 | tbsp      | honey    | Broth |           |
+| Coconut milk    |       14 | oz        | coco     | Broth |           |
+| Garlic          |        4 | cloves    | garlic   | Broth |           |
+| Ginger          |        1 | thumb-tip | ginger   | Broth |           |
+| Rice            |        1 | cups      | rice     | Bowl  |           |
+| Carrots         |        1 | cups      | carrots  | Bowl  | julienned |
+| Peanuts         |      1/4 | cups      | peanuts  | Bowl  |           |
+| Cucumber        |      1/2 |           | cucu     | Bowl  |           |
+| Bell pepper     |        1 |           | bell     | Bowl  | sliced    |
+| Green onions    |        2 |           | gonion   | Bowl  | sliced    |
+| Jalapeno        |        1 |           | jalap    | Bowl  |           |
+| Lime            |        1 |           | lime     | Bowl  |           |
 ** Steps
 1) Make the [#: rice | rice]. Cook according to packaging.
 2) Prepare garnishes: matchstick the [#:carrots | carrots], thinly slice the [#: cucu | cucumber], slice the [#: jalap | jalapeno] into rings and chop the [#: peanuts | peanuts].

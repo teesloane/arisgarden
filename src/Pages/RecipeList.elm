@@ -157,9 +157,6 @@ view model =
                 matchSearch r =
                     String.contains (String.toLower model.searchVal) (String.toLower r.name)
 
-                thing =
-                    applyFilter model.filters recipes
-
                 recipesFmt =
                     recipes
                         |> applyFilter model.filters

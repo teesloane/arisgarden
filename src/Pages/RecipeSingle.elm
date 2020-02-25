@@ -29,8 +29,8 @@ type alias Ingredient =
     , quantity : String
     , unit : String
     , id : String
-    , group: String
-    , prep: String
+    , group : String
+    , prep : String
     }
 
 
@@ -339,27 +339,8 @@ viewHero recipe =
     let
         url =
             "url(/imgs/" ++ recipe.slug ++ "-hero.JPG)"
-
-        gradient =
-            "linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%)"
-
-        -- finalStyle =
-        --     gradient ++ ", " ++ url
-        finalStyle =
-            url
-
-        recipeName =
-            div [ class "vh-recipe-name" ] [ text recipe.name ]
-
-        links =
-            [ { el = li [] [ text <| "Serves: " ++ recipe.serves ], show = True }
-            , { el = li [] [ text <| "Time: " ++ Util.cleanTime recipe.time ], show = True }
-            , { el = li [] [ text <| mealType recipe.meal_type ], show = True }
-            , { el = li [] [ text <| "Rating: " ++ recipe.rating ], show = True }
-            , { el = li [] [ a [ class "link", target "_blank", href recipe.original_recipe ] [ text "Inspiration →" ] ], show = not <| String.isEmpty recipe.original_recipe }
-            ]
     in
-        section [ class "viewHero", style "background-image" finalStyle ] []
+    section [ class "viewHero", style "background-image" url ] []
 
 
 viewMetadata recipe =
@@ -507,7 +488,7 @@ viewInstructions model recipe =
                 ]
                 [ stepText ]
     in
-    section [ class " instructions"]
+    section [ class " instructions" ]
         [ Ui.sectionHeading "Instructions"
         , div [ class "instructions-group" ]
             (List.indexedMap mapInstructions recipe.instructions)
@@ -517,23 +498,56 @@ viewInstructions model recipe =
 viewIngredients : Recipe -> Html msg
 viewIngredients recipe =
     let
-        showPrep s = if String.isEmpty s then s else ("(" ++ s ++ ")")
+        showPrep s =
+            if String.isEmpty s then
+                s
+
+            else
+                "(" ++ s ++ ")"
+
+        -- group all ingredients into sub lists
+        sortedIngredients =
+            recipe.ingredients
+                |> List.sortBy .group
+                |> Util.groupWhileTransitively (\a b -> a.group == b.group)
 
         mapIngr i =
             div [ class "ingredient" ]
-                [ div [ class "name" ] [
-                       div [] [text i.ingredient]
-                       ,  div [ class "name-prep"] [text <| showPrep i.prep]
-                      ]
+                [ div [ class "name" ]
+                    [ div [] [ text i.ingredient ]
+                    , div [ class "name-prep" ] [ text <| showPrep i.prep ]
+                    ]
                 , div [ class "quant-unit-prep" ]
                     [ div [ class "quant" ] [ text i.quantity ]
                     , div [ class "unit" ] [ text i.unit ]
                     ]
                 ]
+
+        getGroupName group =
+            case List.head group of
+                Just r ->
+                    r.group
+
+                Nothing ->
+                    ""
+
+        buildGroupHeading groupName =
+            if String.isEmpty groupName then
+                div [ style "display" "none" ] []
+
+            else
+                div [ class "ingredient-heading" ] [ text groupName ]
+
+        mapGroup group =
+            div [ class "ingredient-group" ]
+                [ buildGroupHeading <| getGroupName group
+                , div [] (List.map mapIngr group)
+                ]
     in
     section [ class "ingredients" ]
         [ Ui.sectionHeading "Ingredients"
-        , div [ class "ingredients" ] (List.map mapIngr recipe.ingredients)]
+        , div [] (List.map mapGroup sortedIngredients)
+        ]
 
 
 view : Model -> Html RecipeSingleMsg

@@ -287,7 +287,7 @@
 
   }
 
-  // -- &:INSTRUCTIONS/INGREDIENTS -------------------------------------
+  // -- &:INSTRUCTIONS -------------------------------------
 
   .instruction-ingredients {
     display: flex;
@@ -313,17 +313,6 @@
     }
   }
 
-  .ingredients {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding-left: 24px;
-    @include at-size(mobile) {
-      order: 1;
-      padding: 0;
-      margin-bottom: $section-bottom / 5;
-    }
-  }
 
   .instr-ingr-section {
     display: flex;
@@ -390,8 +379,37 @@
     justify-content: space-between;
   }
 
+  // -- &:INGREDIENTS -------------------------------------
 
   $border-col: #efefef;
+
+  .ingredients {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 24px;
+    @include at-size(mobile) {
+      order: 1;
+      padding: 0;
+      margin-bottom: $section-bottom / 5;
+    }
+
+    .ingredient-heading {
+      display: flex;
+      justify-content: center;
+      padding: 0 0 16px 0;
+      font-style: italic;
+      text-transform: capitalize;
+      font-weight: 700;
+
+
+      &.hidden {
+        display: none;
+
+      }
+    }
+  }
+
   .ingredient {
     display: flex;
     padding: 8px 12px;
@@ -403,6 +421,7 @@
 
     &:last-child {
       border-bottom: 1px solid $border-col;
+      margin-bottom: 16px;
     }
 
     .quant-unit-prep {
