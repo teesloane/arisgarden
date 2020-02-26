@@ -559,6 +559,9 @@
 :time: 00:30:00
 :END:
 ** Ingredients
+:PROPERTIES:
+:ID:       20134CB2-E274-492E-844C-519D626F58A9
+:END:
 | Ingredient          | Quantity | Unit  | Id                | Group    | Prep    |
 |---------------------+----------+-------+-------------------+----------+---------|
 | Broccoli            |        2 | cups  | broc              | salad    | chopped |
@@ -2167,3 +2170,55 @@
 - The squash bowl is fine
 - A bowl to have just one time
 - You cannot keep it.
+* Beet Burgers with Cucumber
+:PROPERTIES:
+:belongs_to:      main
+:date_made:       [2020-02-25 Tue]
+:ease_of_making:  3.5/5
+:imgs:            ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type:       vegetarian
+:name:            Yogurt Cucumber Beet Burger
+:original_recipe:
+:rating:          ?/5
+:serves:          4
+:slug:            beet-burgers
+:tags:            []
+:time:            01:10:00
+:END:
+** Ingredients
+| Ingredient       | Quantity | Unit    | Id    | Prep         | Group   |
+|------------------+----------+---------+-------+--------------+---------|
+| Grater           |          |         |       | grated       | Burger  |
+| Beets            |        2 | (small) | be    | grated       | Burger  |
+| Carrots          |        2 |         | car   | grated       | Burger  |
+| Potatoes         |        2 | (small) | pot   | grated       | Burger  |
+| Garlic           |        4 | cloves  | gar   | minced       | Burger  |
+| Parsley          |        1 | bunch   | par   | finely diced | Burger  |
+| Tahini           |        2 | tbsp    | tah   |              | Burger  |
+| Chia seeds       |        2 | tbsp    | chia  |              | Burger  |
+| Hemp seeds       |        2 | tbsp    | hemp  |              | Burger  |
+| Ground coriander |        2 | tsp     | cori  |              | Burger  |
+| Cumin            |        2 | tsp     | cumin |              | Burger  |
+| Almond flour     |      2/3 | cups    | af    |              | Burger  |
+| Salt/Pepper      |          |         | sp    |              | Burger  |
+| Cucumber         |        2 | (small) | cuc   | spiralized   | Topping |
+| Coconut Yogurt   |      100 | grams   | yog   |              | Topping |
+|------------------+----------+---------+-------+--------------+---------|
+** Steps
+1) Preheat oven to 350F and line a baking tray with baking paper.
+2) Grate the [#: be | beets], [#: pot | potatoes] and [#: car | carrots] into a
+   large bowl.
+3) Add to bowl: [#: par | parsley], [#: gar | garlic], [#: tah | tahini], [#:
+   chia | chia seeds], [#: hemp | hemp seeds], [#: cumin | cumin], [#: cori |
+   coriander] and [#: af | almond flour]. Season with salt and pepper.
+4) Use your hands to mix the contents of the bowl until it forms a  wet dough.
+   Shape mixture into ten to twelve burger patties and place on the lined tray.
+5) [&: Bake patties | 00:15:00] Bake in the oven for 15 minutes, remove and flip.
+6) Repeat the previous step.
+7) Top patties with spiralized [#: cuc | cucumber] and [#: yog | coconut yoghurt].
+
+** Content
+:PROPERTIES:
+:type: big-quote
+:END:
+- "BE CAREFUL WITH THE GRATER."

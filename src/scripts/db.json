@@ -1333,7 +1333,7 @@
           "quantity": "1",
           "unit": "tsp",
           "id": "oil",
-          "group": "broth",
+          "group": "Broth",
           "prep": ""
         },
         {
@@ -1341,7 +1341,7 @@
           "quantity": "1",
           "unit": "tbsp",
           "id": "rcp",
-          "group": "broth",
+          "group": "Broth",
           "prep": ""
         },
         {
@@ -1349,7 +1349,7 @@
           "quantity": "1/4",
           "unit": "cups",
           "id": "soysauce",
-          "group": "broth",
+          "group": "Broth",
           "prep": ""
         },
         {
@@ -1357,7 +1357,7 @@
           "quantity": "1/4",
           "unit": "cups",
           "id": "pb",
-          "group": "broth",
+          "group": "Broth",
           "prep": ""
         },
         {
@@ -1365,7 +1365,7 @@
           "quantity": "4",
           "unit": "cups",
           "id": "vegbroth",
-          "group": "broth",
+          "group": "Broth",
           "prep": ""
         },
         {
@@ -1373,7 +1373,7 @@
           "quantity": "2",
           "unit": "tbsp",
           "id": "honey",
-          "group": "broth",
+          "group": "Broth",
           "prep": ""
         },
         {
@@ -1381,7 +1381,7 @@
           "quantity": "14",
           "unit": "oz",
           "id": "coco",
-          "group": "broth",
+          "group": "Broth",
           "prep": ""
         },
         {
@@ -1389,7 +1389,7 @@
           "quantity": "4",
           "unit": "cloves",
           "id": "garlic",
-          "group": "broth",
+          "group": "Broth",
           "prep": ""
         },
         {
@@ -1397,7 +1397,7 @@
           "quantity": "1",
           "unit": "thumb-tip",
           "id": "ginger",
-          "group": "broth",
+          "group": "Broth",
           "prep": ""
         },
         {
@@ -1405,7 +1405,7 @@
           "quantity": "1",
           "unit": "cups",
           "id": "rice",
-          "group": "bowl",
+          "group": "Bowl",
           "prep": ""
         },
         {
@@ -1413,7 +1413,7 @@
           "quantity": "1",
           "unit": "cups",
           "id": "carrots",
-          "group": "bowl",
+          "group": "Bowl",
           "prep": "julienned"
         },
         {
@@ -1421,7 +1421,7 @@
           "quantity": "1/4",
           "unit": "cups",
           "id": "peanuts",
-          "group": "bowl",
+          "group": "Bowl",
           "prep": ""
         },
         {
@@ -1429,7 +1429,7 @@
           "quantity": "1/2",
           "unit": "",
           "id": "cucu",
-          "group": "bowl",
+          "group": "Bowl",
           "prep": ""
         },
         {
@@ -1437,7 +1437,7 @@
           "quantity": "1",
           "unit": "",
           "id": "bell",
-          "group": "bowl",
+          "group": "Bowl",
           "prep": "sliced"
         },
         {
@@ -1445,7 +1445,7 @@
           "quantity": "2",
           "unit": "",
           "id": "gonion",
-          "group": "bowl",
+          "group": "Bowl",
           "prep": "sliced"
         },
         {
@@ -1453,7 +1453,7 @@
           "quantity": "1",
           "unit": "",
           "id": "jalap",
-          "group": "bowl",
+          "group": "Bowl",
           "prep": ""
         },
         {
@@ -1461,7 +1461,7 @@
           "quantity": "1",
           "unit": "",
           "id": "lime",
-          "group": "bowl",
+          "group": "Bowl",
           "prep": ""
         }
       ],
@@ -6291,6 +6291,161 @@
           "The squash bowl is fine",
           "A bowl to have just one time",
           "You cannot keep it."
+        ]
+      }
+    },
+    "beet-burgers": {
+      "belongs_to": "main",
+      "date_made": "[2020-02-25 Tue]",
+      "ease_of_making": "3.5/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegetarian",
+      "name": "Yogurt Cucumber Beet Burger",
+      "original_recipe": "",
+      "rating": "?/5",
+      "serves": "4",
+      "slug": "beet-burgers",
+      "tags": "[]",
+      "time": "01:10:00",
+      "ingredients": [
+        {
+          "ingredient": "Grater",
+          "quantity": "",
+          "unit": "",
+          "id": "",
+          "prep": "grated",
+          "group": "Burger"
+        },
+        {
+          "ingredient": "Beets",
+          "quantity": "2",
+          "unit": "(small)",
+          "id": "be",
+          "prep": "grated",
+          "group": "Burger"
+        },
+        {
+          "ingredient": "Carrots",
+          "quantity": "2",
+          "unit": "",
+          "id": "car",
+          "prep": "grated",
+          "group": "Burger"
+        },
+        {
+          "ingredient": "Potatoes",
+          "quantity": "2",
+          "unit": "(small)",
+          "id": "pot",
+          "prep": "grated",
+          "group": "Burger"
+        },
+        {
+          "ingredient": "Garlic",
+          "quantity": "4",
+          "unit": "cloves",
+          "id": "gar",
+          "prep": "minced",
+          "group": "Burger"
+        },
+        {
+          "ingredient": "Parsley",
+          "quantity": "1",
+          "unit": "bunch",
+          "id": "par",
+          "prep": "finely diced",
+          "group": "Burger"
+        },
+        {
+          "ingredient": "Tahini",
+          "quantity": "2",
+          "unit": "tbsp",
+          "id": "tah",
+          "prep": "",
+          "group": "Burger"
+        },
+        {
+          "ingredient": "Chia seeds",
+          "quantity": "2",
+          "unit": "tbsp",
+          "id": "chia",
+          "prep": "",
+          "group": "Burger"
+        },
+        {
+          "ingredient": "Hemp seeds",
+          "quantity": "2",
+          "unit": "tbsp",
+          "id": "hemp",
+          "prep": "",
+          "group": "Burger"
+        },
+        {
+          "ingredient": "Ground coriander",
+          "quantity": "2",
+          "unit": "tsp",
+          "id": "cori",
+          "prep": "",
+          "group": "Burger"
+        },
+        {
+          "ingredient": "Cumin",
+          "quantity": "2",
+          "unit": "tsp",
+          "id": "cumin",
+          "prep": "",
+          "group": "Burger"
+        },
+        {
+          "ingredient": "Almond flour",
+          "quantity": "2/3",
+          "unit": "cups",
+          "id": "af",
+          "prep": "",
+          "group": "Burger"
+        },
+        {
+          "ingredient": "Salt/Pepper",
+          "quantity": "",
+          "unit": "",
+          "id": "sp",
+          "prep": "",
+          "group": "Burger"
+        },
+        {
+          "ingredient": "Cucumber",
+          "quantity": "2",
+          "unit": "(small)",
+          "id": "cuc",
+          "prep": "spiralized",
+          "group": "Topping"
+        },
+        {
+          "ingredient": "Coconut Yogurt",
+          "quantity": "100",
+          "unit": "grams",
+          "id": "yog",
+          "prep": "",
+          "group": "Topping"
+        }
+      ],
+      "instructions": [
+        "Preheat oven to 350F and line a baking tray with baking paper.",
+        "Grate the [#: be | beets], [#: pot | potatoes] and [#: car | carrots] into a large bowl.",
+        "Add to bowl: [#: par | parsley], [#: gar | garlic], [#: tah | tahini], [#: chia | chia seeds], [#: hemp | hemp seeds], [#: cumin | cumin], [#: cori | coriander] and [#: af | almond flour]. Season with salt and pepper.",
+        "Use your hands to mix the contents of the bowl until it forms a  wet dough. Shape mixture into ten to twelve burger patties and place on the lined tray.",
+        "[&: Bake patties | 00:15:00] Bake in the oven for 15 minutes, remove and flip.",
+        "Repeat the previous step.",
+        "Top patties with spiralized [#: cuc | cucumber] and [#: yog | coconut yoghurt]."
+      ],
+      "commentary": {
+        "kind": "big-quote",
+        "val": [
+          "\"BE CAREFUL WITH THE GRATER.\""
         ]
       }
     }
