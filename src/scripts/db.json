@@ -6448,6 +6448,116 @@
           "\"BE CAREFUL WITH THE GRATER.\""
         ]
       }
+    },
+    "sweet-potato-stuffed-peppers": {
+      "belongs_to": "main",
+      "date_made": "[2020-02-27]",
+      "ease_of_making": "5/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegetarian",
+      "name": "Sweet Potato Stuffed Peppers",
+      "original_recipe": "",
+      "rating": "5/5",
+      "serves": "4",
+      "slug": "sweet-potato-stuffed-peppers",
+      "tags": "[]",
+      "time": "01:00:00",
+      "ingredients": [
+        {
+          "ingredient": "Bell peppers",
+          "quantity": "4",
+          "unit": "",
+          "id": "pep",
+          "prep": "Tops removed",
+          "group": ""
+        },
+        {
+          "ingredient": "Canned brown lentils",
+          "quantity": "1",
+          "unit": "",
+          "id": "bl",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Sweet potato",
+          "quantity": "1",
+          "unit": "(large)",
+          "id": "sp",
+          "prep": "Shredded",
+          "group": ""
+        },
+        {
+          "ingredient": "Feta",
+          "quantity": "1/4",
+          "unit": "cups",
+          "id": "feta",
+          "prep": "Crumbled",
+          "group": ""
+        },
+        {
+          "ingredient": "Red onion",
+          "quantity": "1/2/",
+          "unit": "cups",
+          "id": "ro",
+          "prep": "Finely diced",
+          "group": ""
+        },
+        {
+          "ingredient": "Spinach",
+          "quantity": "1",
+          "unit": "cups",
+          "id": "sp",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Garlic",
+          "quantity": "4",
+          "unit": "cloves",
+          "id": "gar",
+          "prep": "crushed",
+          "group": ""
+        },
+        {
+          "ingredient": "Oregano",
+          "quantity": "2",
+          "unit": "tsp",
+          "id": "oreg",
+          "prep": "dried",
+          "group": ""
+        },
+        {
+          "ingredient": "Olive oil",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "oil",
+          "prep": "",
+          "group": ""
+        }
+      ],
+      "instructions": [
+        "Preheat the oven to 350F. Line an oven tray with baking paper.",
+        "Shred the [#: sp | potato] with a cheese grater.",
+        "Remove the tops of the bell peppers and deseed them. Place them on the baking sheet.",
+        "[&: Step 3 | 00:03:00] Heat a pan on medium heat and sauté the [#: ro | onion ] and [#: sp | spinach] and [#: gar | garlic] for a couple minutes.",
+        "[&: Step 5 | 00:07:00] Add the sweet potato, [#: oreg | oregano] and [#: bl | brown lentils] and cook for about 7 or 8 minutes. Mix the feta in while you cook.",
+        "Divide contents of frying pan into the peppers, filling them evenly.",
+        "Place the top back on the peppers if possible and drizzle with olive oil.",
+        "[&: 7. Bake peppers | 00:40:00] Bake the stuffed peppers in the oven for 40-45 minutes or until it has darkened on the outside."
+      ],
+      "commentary": {
+        "kind": "haiku",
+        "val": [
+          "Shredded potato",
+          "You are versatile",
+          "Why am I only realizing this now?"
+        ]
+      }
     }
   }
 }

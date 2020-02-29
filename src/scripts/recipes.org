@@ -2222,3 +2222,50 @@
 :type: big-quote
 :END:
 - "BE CAREFUL WITH THE GRATER."
+* Potato Stuffed Peppers
+:PROPERTIES:
+:belongs_to:      main
+:date_made:       [2020-02-27]
+:ease_of_making:  5/5
+:imgs:            ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type:       vegetarian
+:name:            Sweet Potato Stuffed Peppers
+:original_recipe:
+:rating:          5/5
+:serves:          4
+:slug:            sweet-potato-stuffed-peppers
+:tags:            []
+:time:            01:00:00
+:END:
+** Ingredients
+| Ingredient           | Quantity | Unit    | Id   | Prep         | Group |
+|----------------------+----------+---------+------+--------------+-------|
+| Bell peppers         |        4 |         | pep  | Tops removed |       |
+| Canned brown lentils |        1 |         | bl   |              |       |
+| Sweet potato         |        1 | (large) | sp   | Shredded     |       |
+| Feta                 |      1/4 | cups    | feta | Crumbled     |       |
+| Red onion            |     1/2/ | cups    | ro   | Finely diced |       |
+| Spinach              |        1 | cups    | sp   |              |       |
+| Garlic               |        4 | cloves  | gar  | crushed      |       |
+| Oregano              |        2 | tsp     | oreg | dried        |       |
+| Olive oil            |        1 | tbsp    | oil  |              |       |
+
+** Steps
+1) Preheat the oven to 350F. Line an oven tray with baking paper.
+2) Shred the [#: sp | potato] with a cheese grater.
+3) Remove the tops of the bell peppers and deseed them. Place them on the baking sheet.
+4) [&: Step 3 | 00:03:00] Heat a pan on medium heat and sauté the [#: ro | onion ] and [#: sp |
+   spinach] and [#: gar | garlic] for a couple minutes.
+5) [&: Step 5 | 00:07:00] Add the sweet potato, [#: oreg | oregano] and [#: bl | brown lentils] and
+   cook for about 7 or 8 minutes. Mix the feta in while you cook.
+6) Divide contents of frying pan into the peppers, filling them evenly.
+7) Place the top back on the peppers if possible and drizzle with olive oil.
+8) [&: 7. Bake peppers | 00:40:00] Bake the stuffed peppers in the oven for 40-45 minutes or until it has darkened on the outside.
+
+** Content
+:PROPERTIES:
+:type: haiku
+:END:
+- Shredded potato
+- You are versatile
+- Why am I only realizing this now?
