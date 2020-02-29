@@ -6558,6 +6558,94 @@
           "Why am I only realizing this now?"
         ]
       }
+    },
+    "dato-globes": {
+      "belongs_to": "sweet",
+      "date_made": "[2020-02-29]",
+      "ease_of_making": "5/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegan",
+      "name": "Date Oat Globes (\"Dato Globes!\")",
+      "original_recipe": "",
+      "rating": "5/5",
+      "serves": "10-12",
+      "slug": "dato-globes",
+      "tags": "[\"snack\", \"granola\", \"oven-free\"]",
+      "time": "00:25:00",
+      "ingredients": [
+        {
+          "ingredient": "Blender",
+          "quantity": "",
+          "unit": "",
+          "id": "",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Dates",
+          "quantity": "1",
+          "unit": "cups",
+          "id": "da",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Almond butter",
+          "quantity": "1/3",
+          "unit": "cups",
+          "id": "ab",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Rolled oats",
+          "quantity": "1/3",
+          "unit": "cups",
+          "id": "oats",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Shredded coconut",
+          "quantity": "1/4",
+          "unit": "cups",
+          "id": "sc",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Rice Malt Syrup",
+          "quantity": "4",
+          "unit": "tsp",
+          "id": "rms",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Cinnamon",
+          "quantity": "1",
+          "unit": "tsp",
+          "id": "cin",
+          "prep": "",
+          "group": ""
+        }
+      ],
+      "instructions": [
+        "[&: Soften Dates | 00:05:00] Soften the [#: da | dates] in warm water for a few minutes and then drain.",
+        "Blend the dates.",
+        "In a large bowl, add the blended dates, [#: ab | almond butter], [#: oats | oats], [#: sc | coconut], [#: rms | rice malt syrup], and [#: cin | cinnamon] and mix by hand until combined.",
+        "Roll the mixture into bowls, place in a container. Keep in freezer."
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "Date. Oat. Globes. DATO GLOBES."
+        ]
+      }
     }
   }
 }

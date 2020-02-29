@@ -2269,3 +2269,39 @@
 - Shredded potato
 - You are versatile
 - Why am I only realizing this now?
+* Date Oat Globes (/Dato Globes/)
+:PROPERTIES:
+:belongs_to:      sweet
+:date_made:       [2020-02-29]
+:ease_of_making:  5/5
+:imgs:            ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type:       vegan
+:name:            Date Oat Globes
+:original_recipe:
+:rating:          5/5
+:serves:          10-12
+:slug:            dato-globes
+:tags:            ["snack", "granola", "oven-free" "Dato"]
+:time:            00:25:00
+:END:
+** Ingredients
+| Ingredient       | Quantity | Unit | Id   | Prep | Group |
+|------------------+----------+------+------+------+-------|
+| Blender          |          |      |      |      |       |
+| Dates            | 1        | cups | da   |      |       |
+| Almond butter    | 1/3      | cups | ab   |      |       |
+| Rolled oats      | 1/3      | cups | oats |      |       |
+| Shredded coconut | 1/4      | cups | sc   |      |       |
+| Rice Malt Syrup  | 4        | tsp  | rms  |      |       |
+| Cinnamon         | 1        | tsp  | cin  |      |       |
+** Steps
+1. [&: Soften Dates | 00:05:00] Soften the [#: da | dates] in warm water for a few minutes and then drain.
+2. Blend the dates.
+3. In a large bowl, add the blended dates, [#: ab | almond butter], [#: oats | oats], [#: sc | coconut], [#:
+   rms | rice malt syrup], and [#: cin | cinnamon] and mix by hand until combined.
+4. Roll the mixture into bowls, place in a container. Keep in freezer.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- Date. Oat. Globes. DATO GLOBES.
