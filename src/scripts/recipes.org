@@ -2244,7 +2244,7 @@
 | Canned brown lentils |        1 |         | bl   |              |       |
 | Sweet potato         |        1 | (large) | sp   | Shredded     |       |
 | Feta                 |      1/4 | cups    | feta | Crumbled     |       |
-| Red onion            |     1/2/ | cups    | ro   | Finely diced |       |
+| Red onion            |     1/2  | cups    | ro   | Finely diced |       |
 | Spinach              |        1 | cups    | sp   |              |       |
 | Garlic               |        4 | cloves  | gar  | crushed      |       |
 | Oregano              |        2 | tsp     | oreg | dried        |       |
