@@ -2111,7 +2111,7 @@
 - This came out a little bland.
 - In retrospect, the recipe had no spices!
 - Maybe some cumin would have been interesting?
-* Spaghetti Squash Burrito Bowl
+* Spaghetti Squash Burrito Bowl                                                 :main:five_stars:
 :PROPERTIES:
 :belongs_to:      main
 :date_made:       [2020-02-21 Fri]
@@ -2170,7 +2170,7 @@
 - The squash bowl is fine
 - A bowl to have just one time
 - You cannot keep it.
-* Beet Burgers with Cucumber
+* Beet Burgers with Cucumber                                                    :main:
 :PROPERTIES:
 :belongs_to:      main
 :date_made:       [2020-02-25 Tue]
@@ -2222,7 +2222,7 @@
 :type: big-quote
 :END:
 - "BE CAREFUL WITH THE GRATER."
-* Potato Stuffed Peppers
+* Potato Stuffed Peppers                                                        :main:
 :PROPERTIES:
 :belongs_to:      main
 :date_made:       [2020-02-27]
@@ -2269,7 +2269,7 @@
 - Shredded potato
 - You are versatile
 - Why am I only realizing this now?
-* Date Oat Globes (/Dato Globes/)
+* Date Oat Globes (/Dato Globes/)                                               :sweet:
 :PROPERTIES:
 :belongs_to:      sweet
 :date_made:       [2020-02-29]
@@ -2305,3 +2305,51 @@
 :type: whisper
 :END:
 - Date. Oat. Globes. DATO GLOBES.
+* Zucchini Chickpea Salad                                                       :salad:
+:PROPERTIES:
+:belongs_to:      salad
+:date_made:       [2020-03-01]
+:ease_of_making:  5/5
+:imgs:            ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type:       vegetarian
+:name:            Zucchini Chickpea Salad
+:original_recipe:
+:rating:          4/5
+:serves:          4
+:slug:            zuc-chickpea-salad
+:tags:            ["zucchini", "salad", "lunch"]
+:time:            00:45:00
+:END:
+** Ingredients
+| Ingredient       | Quantity | Unit  | Id  | Prep                 | Group    |
+|------------------+----------+-------+-----+----------------------+----------|
+| Chickpeas        |      400 | grams | cp  | Drained and Dried    | Salad    |
+| Zucchini         |        6 | cups  | zuc | Peeled or Spiralized | Salad    |
+| Cucumber         |        2 | cups  | cuc | Peeled or Spiralized | Salad    |
+| Goat cheese      |      1/2 | cups  | gc  | Crumbled             | Salad    |
+| Red oinion       |      2/3 | cups  | ro  | Sliced               | Salad    |
+| Cherry tomatoes  |      1/2 | cups  | ct  | Chopped              | Salad    |
+| Olive oil        |        1 | tbsp  | oo1 |                      | Salad    |
+| Paprika          |        2 | tsp   | pap |                      | Salad    |
+| Salt             |        1 | pinch | sal |                      | Salad    |
+| Grain Mustard    |        2 | tsp   | mu  |                      | Dressing |
+| Olive oil        |        1 | tbsp  | oo2 |                      | Dressing |
+| Balsamic Vinegar |        2 | tbsp  | bv  |                      | Dressing |
+** Steps
+1) Pre-heat oven to 350F degrees. Line a baking tray with baking paper.
+2) Dry [#: cp | chickpeas] with a towel. Once dry, transfer the chickpeas to a
+   baking tray. Drizzle [#: oo2 | olive oil ] and add [#: pap | paprika] and [#:
+   sal | salt].
+3) [&: Bake Chickpeas | 00:15:00] Bake the chickpeas for 15-20 minutes or until golden brown. When done, remove from the oven and allow to cool.
+4) Spiralize zucchini and cucumber.
+5) Add the [#: zuc | zucchini], [#: cuc | cucumber], [#: ro | onion] and [#: ct | cherry tomato] into a bowl.
+6) Add the chickpeas and [#: gc | goat cheese ] to the bowl.
+7) Make the dressing: combine [#: mu | grain mustard], [#: oo2 | olive oil] and
+   [#: bv | balsamic vinegar] into a jar. Stir well to combine.
+8) Add dressing to salad and serve.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- This cucumber thinks it's a zucchini. Here look. Just wait for it. See! Did
+  you see it?

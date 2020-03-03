@@ -6569,12 +6569,12 @@
         "3.jpg"
       ],
       "meal_type": "vegan",
-      "name": "Date Oat Globes (\"Dato Globes!\")",
+      "name": "Date Oat Globes",
       "original_recipe": "",
       "rating": "5/5",
       "serves": "10-12",
       "slug": "dato-globes",
-      "tags": "[\"snack\", \"granola\", \"oven-free\"]",
+      "tags": "[\"snack\", \"granola\", \"oven-free\" \"Dato\"]",
       "time": "00:25:00",
       "ingredients": [
         {
@@ -6644,6 +6644,138 @@
         "kind": "whisper",
         "val": [
           "Date. Oat. Globes. DATO GLOBES."
+        ]
+      }
+    },
+    "zuc-chickpea-salad": {
+      "belongs_to": "salad",
+      "date_made": "[2020-03-01]",
+      "ease_of_making": "5/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegetarian",
+      "name": "Zucchini Chickpea Salad",
+      "original_recipe": "",
+      "rating": "4/5",
+      "serves": "4",
+      "slug": "zuc-chickpea-salad",
+      "tags": "[\"zucchini\", \"salad\", \"lunch\"]",
+      "time": "00:45:00",
+      "ingredients": [
+        {
+          "ingredient": "Chickpeas",
+          "quantity": "400",
+          "unit": "grams",
+          "id": "cp",
+          "prep": "Drained and Dried",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Zucchini",
+          "quantity": "6",
+          "unit": "cups",
+          "id": "zuc",
+          "prep": "Peeled or Spiralized",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Cucumber",
+          "quantity": "2",
+          "unit": "cups",
+          "id": "cuc",
+          "prep": "Peeled or Spiralized",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Goat cheese",
+          "quantity": "1/2",
+          "unit": "cups",
+          "id": "gc",
+          "prep": "Crumbled",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Red oinion",
+          "quantity": "2/3",
+          "unit": "cups",
+          "id": "ro",
+          "prep": "Sliced",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Cherry tomatoes",
+          "quantity": "1/2",
+          "unit": "cups",
+          "id": "ct",
+          "prep": "Chopped",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Olive oil",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "oo1",
+          "prep": "",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Paprika",
+          "quantity": "2",
+          "unit": "tsp",
+          "id": "pap",
+          "prep": "",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Salt",
+          "quantity": "1",
+          "unit": "pinch",
+          "id": "sal",
+          "prep": "",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Grain Mustard",
+          "quantity": "2",
+          "unit": "tsp",
+          "id": "mu",
+          "prep": "",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Olive oil",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "oo2",
+          "prep": "",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Balsamic Vinegar",
+          "quantity": "2",
+          "unit": "tbsp",
+          "id": "bv",
+          "prep": "",
+          "group": "Dressing"
+        }
+      ],
+      "instructions": [
+        "Pre-heat oven to 350F degrees. Line a baking tray with baking paper.",
+        "Dry [#: cp | chickpeas] with a towel. Once dry, transfer the chickpeas to a baking tray. Drizzle [#: oo2 | olive oil ] and add [#: pap | paprika] and [#: sal | salt].",
+        "[&: Bake Chickpeas | 00:15:00] Bake the chickpeas for 15-20 minutes or until golden brown. When done, remove from the oven and allow to cool.",
+        "Spiralize zucchini and cucumber.",
+        "Add the [#: zuc | zucchini], [#: cuc | cucumber], [#: ro | onion] and [#: ct | cherry tomato] into a bowl.",
+        "Add the chickpeas and [#: gc | goat cheese ] to the bowl.",
+        "Make the dressing: combine [#: mu | grain mustard], [#: oo2 | olive oil] and [#: bv | balsamic vinegar] into a jar. Stir well to combine.",
+        "Add dressing to salad and serve."
+      ],
+      "commentary": {
+        "kind": "whisper",
+        "val": [
+          "This cucumber thinks it's a zucchini. Here look. Just wait for it. See! Did you see it?"
         ]
       }
     }
