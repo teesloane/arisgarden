@@ -2353,3 +2353,60 @@
 :END:
 - This cucumber thinks it's a zucchini. Here look. Just wait for it. See! Did
   you see it?
+* Cauliflower Potato Balls
+:PROPERTIES:
+:belongs_to:      main
+:date_made:       [2020-03-15 Sun]
+:ease_of_making:  3.5/5
+:imgs:            ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type:       vegan
+:name:            Cauliflower Potato Balls
+:original_recipe:
+:rating:          4/5
+:serves:          4
+:slug:            cauliflower-potato-balls
+:tags:            ["curry"]
+:time:            01:00:00
+:END:
+** Ingredients
+| Ingredient      | Quantity | Unit   | Id     | Prep           | Group                    |
+|-----------------+----------+--------+--------+----------------+--------------------------|
+| Cauliflower     |        1 | head   | cau    | finely chopped | Cauliflower Potato Balls |
+| Potatoes        |        3 | cups   | pot    | chopped        | Cauliflower Potato Balls |
+| Corn startch    |        4 | tsp    | cs     |                | Cauliflower Potato Balls |
+| Baking soda     |        1 | tsp    | bs     |                | Cauliflower Potato Balls |
+| Dried coriander |        1 | tsp    | dc     |                | Cauliflower Potato Balls |
+| Cumin           |        2 | tsp    | cumin  |                | Cauliflower Potato Balls |
+| Olive oil       |        1 | tbsp   | oil    |                | Cauliflower Potato Balls |
+| Salt and Pepper |       -- |        | sp     |                | Cauliflower Potato Balls |
+| Coconut milk    |      300 | ml     | com    |                | Creamy Curry Sauce       |
+| Tomatoes        |      800 | grams  | tom    |                | Creamy Curry Sauce       |
+| Water           |      1/2 | cups   | wa     |                | Creamy Curry Sauce       |
+| Brown onion     |      1/2 |        | bo     | diced          | Creamy Curry Sauce       |
+| Cashews         |        3 | tbsp   | cash   |                | Creamy Curry Sauce       |
+| Olive oil       |          |        |        |                | Creamy Curry Sauce       |
+| Garlic          |        1 | cloves | gar    | diced          | Creamy Curry Sauce       |
+| Dried coriander |        1 | tsp    | dc2    |                | Creamy Curry Sauce       |
+| Cumin           |        2 | tsp    | cumin2 |                | Creamy Curry Sauce       |
+| Turmeric        |        1 | tsp    | tur    |                | Creamy Curry Sauce       |
+| Dijon mustard   |        2 | tsp    | dij    |                | Creamy Curry Sauce       |
+| Red chilies     |        2 | tsp    | redch  | chopped        | Creamy Curry Sauce       |
+| Salt and Pepper |          |        |        |                | Creamy Curry Sauce       |
+** Steps
+ 1. Preheat the oven to 350 degrees. Prepare a baking sheet (or two) with parchment paper.
+ 2. Bring a large pot of water to a boil and cook the [#: pot | potatoes] for 10 minutes, or until the potato is soft.
+ 3. Drain the potatoes and place them in a large bowl. Mash the potato, and let it cool for a bit.
+ 4. After a few minutes, mix in the [#: cau | cauliflower], [#: cs | corn starch], [#: bs | baking soda], [#: dc | coriander], and [#: cumin | cumin]. Season with salt and pepper to taste.
+ 5. Once combined, use your hands to roll the mixture into 20 - 24 balls.
+ 6. Lightly coat the outside of each ball with olive oil and add it to the baking sheet.
+ 7. Cook the balls for 30 minutes, turning them over half way through.
+ 8. While the balls cook the curry cream sauce.
+ 9. Heat olive oil in a sauce pan then add the [#: bo | onion], [#: gar | garlic], [#: redch | chilies], [#: dij | mustard], [#: cumin2 | cumin] and [#: tur |  turmeric]. Let cook, stirring occasionally, for 4-5 minutes.
+ 10. Add the [#: tom | tomatoes], [#: wa | water], [#: com | coconut milk], [#: dc2 | coriander], and a bit of salt and pepper. Cook at a simmer for 10 minutes.
+ 11. Add in the [#: cash | cashews] and cook for 5 more minutes.
+ 12. When the Cauliflower-Potato balls come out of the oven, serve in a bowl or rimmed plate and pour the curry sauce over top.
+** Content
+:PROPERTIES:
+:type: whisper
+:END:
+- Chop the cauliflower finely!
