@@ -6986,6 +6986,113 @@
           "Chop the cauliflower finely!"
         ]
       }
+    },
+    "halloumi-pomegranate-salad": {
+      "belongs_to": "main",
+      "date_made": "[2020-03-24 Tue]",
+      "ease_of_making": "3/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegetarian",
+      "name": "Halloumi Pomegranate Salad",
+      "original_recipe": "",
+      "rating": "4/5",
+      "serves": "2",
+      "slug": "halloumi-pomegranate-salad",
+      "tags": "[\"salad\", \"light\", \"salty\"]",
+      "time": "01:00:00",
+      "ingredients": [
+        {
+          "ingredient": "Halloumi Cheese",
+          "quantity": "150",
+          "unit": "grams",
+          "id": "hal",
+          "prep": "sliced",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Lettuce",
+          "quantity": "120",
+          "unit": "grams",
+          "id": "",
+          "prep": "washed / shredded",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Cherry tomatoes",
+          "quantity": "1",
+          "unit": "cups",
+          "id": "ct",
+          "prep": "chopped",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Red onions",
+          "quantity": "1/4",
+          "unit": "cups",
+          "id": "ro",
+          "prep": "sliced",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Pomegranate",
+          "quantity": "1/3",
+          "unit": "cups",
+          "id": "pom",
+          "prep": "",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Almonds",
+          "quantity": "1/4",
+          "unit": "cups",
+          "id": "alm",
+          "prep": "chopped",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Olive oil",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "oil",
+          "prep": "",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Balsamic vinegar",
+          "quantity": "3",
+          "unit": "tbsp",
+          "id": "vin",
+          "prep": "",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Wholegrain mustard",
+          "quantity": "1",
+          "unit": "tsp",
+          "id": "mu",
+          "prep": "",
+          "group": "Dressing"
+        }
+      ],
+      "instructions": [
+        "Prepare the pomegranate: fill a large bowl with water and loosen seeds in the water. This saves making a mess, seeds you don't get will sink to the bottom and the shell will float in the water.",
+        "Mise en place the [#: ct |  cherry tomatoes ], the [#: ro | red onion] and the [#: alm | almonds]. Slice the halloumi.",
+        "Heat up a pan on medium heat. Add the halloumi to the pan, for about 3 or 4 minutes a side until golden.",
+        "While the cheese fries, combine tomatoes, almonds, lettuce, and red onion in a large bowl.",
+        "Prepare the dressing by mixing the [#: oil | olive oil], [#: vin | balsamic] and [#: mu | mustard] in a jar and stir to combine.",
+        "Mix the cheese into the salad and top with dressing and pomegranates."
+      ],
+      "commentary": {
+        "kind": "haiku",
+        "val": [
+          "\"What now?\" muttered Morand under his breath. He glanced at Garibaldo in the corner. He was hiding something. Morand advanced on him, cursing. He had the halloumi, and he knew it. It wasn't likely he would get it back.",
+          "\"Borrowingly Yours\" - Pg 103."
+        ]
+      }
     }
   }
 }
