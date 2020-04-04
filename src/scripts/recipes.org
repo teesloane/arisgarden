@@ -2410,7 +2410,7 @@
 :type: whisper
 :END:
 - Chop the cauliflower finely!
-* Halloumi Pomegranate  Salad
+* Halloumi Pomegranate Salad
 :PROPERTIES:
 :belongs_to:      main
 :date_made:       [2020-03-24 Tue]
@@ -2458,3 +2458,46 @@
   the corner. He was hiding something. Morand advanced on him, cursing. He had
   the halloumi, and he knew it. It wasn't likely he would get it back.
 - "Borrowingly Yours" - Pg 103.
+* Spice and Rice Tofu Salad
+:PROPERTIES:
+:belongs_to:      salad
+:date_made:       [2020-04-01 Wed]
+:ease_of_making:  4/5
+:imgs:            ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type:       vegetarian
+:name:            Spice and Rice Tofu Salad
+:original_recipe:
+:rating:          3.5/5
+:serves:          4
+:slug:            spice-and-rice-tofu-salad
+:tags:            ["salad", "light", "salty"]
+:time:            01:00:00
+:END:
+** Ingredients
+| Ingredient        | Quantity | Unit    | Id   | Prep    | Group    |
+|-------------------+----------+---------+------+---------+----------|
+| Firm tofu         |        1 | package | tofu | chopped | Salad    |
+| Brown rice        |        1 | cups    | rice |         | Salad    |
+| Kale              |      1/2 | cups    | kale | chopped | Salad    |
+| Cabbage           |        1 | cups    | cab  | chopped | Salad    |
+| Avocado           |        1 |         | avo  | chopped | Salad    |
+| Garlic            |        2 |         | gar  | minched | Salad    |
+| Cumin             |        2 | tsp     | cu   |         | Salad    |
+| Dried coriander   |        2 | tsp     | cor  |         | Salad    |
+| Turmeric          |        1 | tsp     | tur  |         | Salad    |
+| Salt and Pepper   |    Pinch |         | sp   |         | Salad    |
+| Olive oil         |        2 | tbsp    | oil  |         | Dressing |
+| Balasamic vinegar |        4 | tbsp    | vin  |         | Dressing |
+** Steps
+1. [&: Prepare rice | 00:30:00] Prepare the rice: put rice in a pot with 2 cups of water and bring to a boil. Once boiling, lower temperature to low-medium and cook for about 25 minutes or until water is absorbed.
+2. While rice is cooking, prepare [#: tofu | tofu]. Mix [#: cu | cumin], [#: cor | coriander], [#: tur | turmeric] and [#: sp | salt and pepper] in a bowl.
+3. [&: Heat tofu on all sides | 00:08:00] Heat a pan with a drizzle of olive oil. Once hot, add the tofu, and sprinkle the spices on the tofu. Cook the tofu for about 4 minutes, then flip and repeat until tofu is golden brown.
+4. While tofu is cooking, combine [#: kale | kale], [#: cab | cabbage], [#: avo | avocado] in a bowl. Once the rice is cooked, and it to the bowl.
+5. Mix [#: oil | olive oil] and [#: vin | balsamic vinegar] in a jar and then drizzle over the bowl.
+** Content
+:PROPERTIES:
+:type: big-quote
+:END:
+- S-P-I-C-E.
+- N'.
+- R-I-C-E.

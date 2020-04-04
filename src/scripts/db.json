@@ -7093,6 +7093,137 @@
           "\"Borrowingly Yours\" - Pg 103."
         ]
       }
+    },
+    "spice-and-rice-tofu-salad": {
+      "belongs_to": "salad",
+      "date_made": "[2020-04-01 Wed]",
+      "ease_of_making": "4/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegetarian",
+      "name": "Spice and Rice Tofu Salad",
+      "original_recipe": "",
+      "rating": "3.5/5",
+      "serves": "4",
+      "slug": "spice-and-rice-tofu-salad",
+      "tags": "[\"salad\", \"light\", \"salty\"]",
+      "time": "01:00:00",
+      "ingredients": [
+        {
+          "ingredient": "Firm tofu",
+          "quantity": "1",
+          "unit": "package",
+          "id": "tofu",
+          "prep": "chopped",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Brown rice",
+          "quantity": "1",
+          "unit": "cups",
+          "id": "rice",
+          "prep": "",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Kale",
+          "quantity": "1/2",
+          "unit": "cups",
+          "id": "kale",
+          "prep": "chopped",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Cabbage",
+          "quantity": "1",
+          "unit": "cups",
+          "id": "cab",
+          "prep": "chopped",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Avocado",
+          "quantity": "1",
+          "unit": "",
+          "id": "avo",
+          "prep": "chopped",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Garlic",
+          "quantity": "2",
+          "unit": "",
+          "id": "gar",
+          "prep": "minched",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Cumin",
+          "quantity": "2",
+          "unit": "tsp",
+          "id": "cu",
+          "prep": "",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Dried coriander",
+          "quantity": "2",
+          "unit": "tsp",
+          "id": "cor",
+          "prep": "",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Turmeric",
+          "quantity": "1",
+          "unit": "tsp",
+          "id": "tur",
+          "prep": "",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Salt and Pepper",
+          "quantity": "Pinch",
+          "unit": "",
+          "id": "sp",
+          "prep": "",
+          "group": "Salad"
+        },
+        {
+          "ingredient": "Olive oil",
+          "quantity": "2",
+          "unit": "tbsp",
+          "id": "oil",
+          "prep": "",
+          "group": "Dressing"
+        },
+        {
+          "ingredient": "Balasamic vinegar",
+          "quantity": "4",
+          "unit": "tbsp",
+          "id": "vin",
+          "prep": "",
+          "group": "Dressing"
+        }
+      ],
+      "instructions": [
+        "[&: Prepare rice | 00:30:00] Prepare the rice: put rice in a pot with 2 cups of water and bring to a boil. Once boiling, lower temperature to low-medium and cook for about 25 minutes or until water is absorbed.",
+        "While rice is cooking, prepare [#: tofu | tofu]. Mix [#: cu | cumin], [#: cor | coriander], [#: tur | turmeric] and [#: sp | salt and pepper] in a bowl.",
+        "[&: Heat tofu on all sides | 00:08:00] Heat a pan with a drizzle of olive oil. Once hot, add the tofu, and sprinkle the spices on the tofu. Cook the tofu for about 4 minutes, then flip and repeat until tofu is golden brown.",
+        "While tofu is cooking, combine [#: kale | kale], [#: cab | cabbage], [#: avo | avocado] in a bowl. Once the rice is cooked, and it to the bowl.",
+        "Mix [#: oil | olive oil] and [#: vin | balsamic vinegar] in a jar and then drizzle over the bowl."
+      ],
+      "commentary": {
+        "kind": "big-quote",
+        "val": [
+          "S-P-I-C-E.",
+          "N'.",
+          "R-I-C-E."
+        ]
+      }
     }
   }
 }
