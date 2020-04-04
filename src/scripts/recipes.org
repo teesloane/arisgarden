@@ -2501,3 +2501,51 @@
 - S-P-I-C-E.
 - N'.
 - R-I-C-E.
+* Quinoa Fritters
+:PROPERTIES:
+:belongs_to:      side
+:date_made:       [2020-04-03 Fri]
+:ease_of_making:  4/5
+:imgs:            ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type:       vegetarian
+:name:  Quinoa Fritters
+:original_recipe:
+:rating:          5/5
+:serves:          4
+:slug:            quinoa-fritters
+:tags:            ["light"]
+:time:            00:50:00
+:END:
+** Ingredients
+| Ingredient      | Quantity | Unit   | Id    | Prep              | Group |
+|-----------------+----------+--------+-------+-------------------+-------|
+| Quinoa (cooked) |        2 | cups   | qu    |                   |       |
+| Sweet potato    |        2 | cups   | sp    | shredded          |       |
+| Olive oil       |        2 | tbsp   | oil   |                   |       |
+| Red onion       |      1/2 | cups   | ro    | diced             |       |
+| Garlic          |        4 | cloves | gar   | minced            |       |
+| Salt            |        1 | pinch  | sal   |                   |       |
+| Spinach         |        2 | cup    | spin  | copped            |       |
+| Eggs            |        3 |        | egg   | whisked           |       |
+| Curry powder    |        1 | tsp    | cp    |                   |       |
+| Flour           |      1/2 | cups   | flour |                   |       |
+| Jalapeno        |        1 | 1      | jal   | sliced or pickled |       |
+| Yogurt          |        1 | cups   | yog   |                   |       |
+| Cucumber        |        1 | cups   | cuc   | sliced            |       |
+** Steps
+1. Make enough quinoa so that you have 2 cups of cooked quinoa. This usually
+   equates to about 3/4 cups dry quinoa.
+2. Shred sweet potato with a grater or food processor.
+3. [&: Sauté | 00:05:00 ] Heat a large pot or skillet. Once hot, add [#: oil | olive oil] and heat. Then add [#: ro | onion], [#: sp | shredded sweet potato], [#: gar | garlic], and [#: sal | salt]. Sauté for 4-5 minutes.
+4. Add chopped spinach to skillet until it wilts.
+5. In a large mixing bowl, crack three eggs and whisk. Set aside.
+6. In the large mixing bowl, add the sautéed vegetables, the [#: quinoa | qu], a pinch of salt, and [#: cp | curry powder] . Mix until combined.
+7. It's patty time! Make patties about the size of your hand until there is no mixture left.
+8. [&: Fry fritters | 00:08:00 ] Heat a skillet until hot. Add oil, and start to fry your fritters. Fry them for about 4 minutes on each side.
+9. Optionally, heat up an oven to keep fritters warm while others cook. This can add a nice crisp to them.
+10. Cut up cucumber and dish [#: yog | yogurt] into a bowl. Slice avocado. Plate avocado and cucumber, alongside fritters with a dollop of yogurt. Optionally, add rings of [#: jalapeno | jal].
+** Content
+:PROPERTIES:
+:type: big-quote
+:END:
+- It's all about the toppings. And the base. It's all about the everything.
