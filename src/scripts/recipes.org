@@ -1111,7 +1111,7 @@
 ** Steps
 1) Preheat oven to 425F. Line two large baking sheets with parchment paper.
 2) Prepare tomatoes by coring them and grate them on a cheeze grater with large holes or blend them to a frothy pulp.
-3) Put [#: egg | cubed eggplant] on baking sheet in a single layer and coat with olive oil. Sprink with salt. Set aside.
+3) Put [#: egg | cubed eggplant] on baking sheet in a single layer and coat with olive oil. Sprinkle with salt. Set aside.
 4) Put [#: zuk | zuchini] and [#: ysqu | yellow squash] on baking sheet. Add 1 tbsp of olive oil. Add 1/4 tsp of salt.
 5) [&: Roast eggplant | 00:15:00] Put eggplant in middle rack and vegetable on top rack in the oven. Set timer for 15 minutes.
 6) [&: Cook onion | 00:10:00]  Warm 2 tbsp of olive oil in a dutch oven over medium heat. Add [#: onion | yellow onion] and [#: salt | salt]. Cook, stirring occasionally, until onion is tender. About 8 to 10 minutes.
