@@ -380,7 +380,7 @@
 :belongs_to: main
 :slug: sweet-potato-gnocci
 :serves: 2
-:time: 01:10:00
+:time: 02:30:00
 :END:
 ** Ingredients
 | Ingredient        | Quantity | Unit   | Id           | Prep     | Group |
