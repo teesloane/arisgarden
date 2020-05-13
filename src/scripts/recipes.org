@@ -386,7 +386,7 @@
 | Ingredient        | Quantity | Unit   | Id           | Prep     | Group |
 |-------------------+----------+--------+--------------+----------+-------|
 | Sweet Potato      |        1 | large  | potato-sweet |          |       |
-| Nutritional yeast |      2   | tbsp   | parm         | optional |       |
+| Nutritional yeast |        2 | tbsp   | parm         | optional |       |
 | Flour             |      1/3 | cups   | flour        |          |       |
 | Salt              |      1/2 | tsp    | salt         |          |       |
 | Cherry tomatoes   |      250 | grams  | tomatoes     |          |       |
@@ -424,18 +424,18 @@
 :time: 00:30:00
 :END:
 ** Ingredients
-| Ingredient      | Quantity | Unit  | Id           | Prep          | Group |
-|-----------------+----------+-------+--------------+---------------+-------|
-| Butter          |        5 | tbsp  | butter       |               |       |
-| Kimchi          |        1 | cups  | kimchi       | chopped       |       |
-| Kimchi juice    |      1/3 | cups  | kimchi-juice |               |       |
-| Gochujang       |        2 | tbsp  | gochu        |               |       |
-| Vegetable broth |      1/2 | cup   | veg-broth    |               |       |
-| Udon noodles    |        1 | lb    | udon         |               |       |
-| Sesame seeds    |        1 | tbsp  | sesa         |               |       |
-| Salt            |        1 | pinch | salt         |               |       |
-| Egg yolks       |        - |       | yolks        |               |       |
-| Scallions       |        3 |       | scall        | sliced |       |
+| Ingredient      | Quantity | Unit  | Id           | Prep    | Group |
+|-----------------+----------+-------+--------------+---------+-------|
+| Butter          |        5 | tbsp  | butter       |         |       |
+| Kimchi          |        1 | cups  | kimchi       | chopped |       |
+| Kimchi juice    |      1/3 | cups  | kimchi-juice |         |       |
+| Gochujang       |        2 | tbsp  | gochu        |         |       |
+| Vegetable broth |      1/2 | cup   | veg-broth    |         |       |
+| Udon noodles    |        1 | lb    | udon         |         |       |
+| Sesame seeds    |        1 | tbsp  | sesa         |         |       |
+| Salt            |        1 | pinch | salt         |         |       |
+| Egg yolks       |        - |       | yolks        |         |       |
+| Scallions       |        3 |       | scall        | sliced  |       |
 ** Steps
 1) Chop [#: kimchi | kimchi] and collect [#: kimchi-juice | kimchi juice].
 2) [&: 2. Butter + Kimchi |  00:04:00] Heat 2 tbsp of butter on medium high. Add chopped kimchi and [#: gochu | gochujang] and cook, stirring until kimchi is softened and lightly caramelized, around 4 minutes.
@@ -2244,7 +2244,7 @@
 | Canned brown lentils |        1 |         | bl   |              |       |
 | Sweet potato         |        1 | (large) | sp   | Shredded     |       |
 | Feta                 |      1/4 | cups    | feta | Crumbled     |       |
-| Red onion            |     1/2  | cups    | ro   | Finely diced |       |
+| Red onion            |      1/2 | cups    | ro   | Finely diced |       |
 | Spinach              |        1 | cups    | sp   |              |       |
 | Garlic               |        4 | cloves  | gar  | crushed      |       |
 | Oregano              |        2 | tsp     | oreg | dried        |       |
@@ -2549,3 +2549,48 @@
 :type: big-quote
 :END:
 - It's all about the toppings. And the base. It's all about the everything.
+
+* Black Lentils and Sriracha Veggies
+:PROPERTIES:
+:belongs_to:      main
+:date_made:       [2020-05-07 Thu]
+:ease_of_making:  4/5
+:imgs:            ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type:       vegetarian
+:name:  Black Lentils and Sriracha Veggies
+:original_recipe: https://www.bonappetit.com/recipe/black-lentil-and-harissa-roasted-veggie-bowl
+:rating:          5/5
+:serves:          4
+:slug:            black-lentil-spicey-veggies
+:tags:            []
+:time:            00:45:00
+:END:
+** Ingredients
+| Ingredient       | Quantity | Unit | Id   | Prep    | Group              |
+|------------------+----------+------+------+---------+--------------------|
+| Salt             | 1/2      | tsp  | sel  |         | Roasted vegetables |
+| Coriander        | 1/2      | tsp  | gc   |         | Roasted vegetables |
+| Olive oil        | 2        | tbsp | oil  |         | Roasted vegetables |
+| Sriracha         | 1        | tbsp | sri  |         | Roasted vegetables |
+| Sweet potatoes   | 2        |      | sp   | Chopped | Roasted vegetables |
+| Cherry tomatoes  | 1        | pint | ct   | Halved  | Roasted vegetables |
+| Black lentils    | 1        | cups | bl   |         | Black Lentils      |
+| Red wine vinegar | 1+1/2    | tbsp | rwv  |         | Black Lentils      |
+| Honey            | 1/2      | tbsp | hon  |         | Black Lentils      |
+| Sriracha         | 1        | tbsp | sri2 |         | Black Lentils      |
+| Oil              | 1+1/2    | tbsp | oil2 |         | Black Lentils      |
+| Cilantro         | 1/4      | cups | cil  | Chopped | Black Lentils      |
+** Steps
+ 1. Preheat the oven to 425.
+ 2. [&: Cook lentils | 00:25:00] While the oven heats up, bring a pot of water to a boil and add in the [#: bl | lentils]. Lower the heat to a simmer and cook for 25-30 minutes. When the timers up, drain and transfer to a large bowl.
+ 3. On a rimmed baking sheet, lay out the [#: sp | sweet potato] and [#: ct | cherry tomatoes].
+ 4. In a small bowl, whisk together the [#: gc | coriander], [#: sel | salt], [#: oil | olive oil] and [#: sri | sriracha]. Pour the mixture over the vegetables (save the bowl).
+ 5. [&: Roast vegetables | 00:25:00] Roast for 25-30 minutes, until the sweet potato is tender. Toss the vegetables about half way through.
+ 6. In the saved sriracha bowl, whisk in the [#: rwv | vinegar], [#: hon | honey], [#: sri2 | sriracha] and [#: oil2 | olive oil], season with salt and pepper to taste.
+ 7. Pour about half of the dressing straight on the lentils and mix in.
+ 8. To serve add the roasted sweet potato and tomatoes on top of a bowl of lentils. Top with more vinaigrette and more cilantro/parsley.
+** Content
+:PROPERTIES:
+:type: haiku
+:END:
+- Spicey Spicey Lentil.

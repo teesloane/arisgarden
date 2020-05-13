@@ -7366,6 +7366,138 @@
           "It's all about the toppings. And the base. It's all about the everything."
         ]
       }
+    },
+    "black-lentil-spicey-veggies": {
+      "belongs_to": "main",
+      "date_made": "[2020-05-07 Thu]",
+      "ease_of_making": "4/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegetarian",
+      "name": "Black Lentils and Sriracha Veggies",
+      "original_recipe": "https://www.bonappetit.com/recipe/black-lentil-and-harissa-roasted-veggie-bowl",
+      "rating": "5/5",
+      "serves": "4",
+      "slug": "black-lentil-spicey-veggies",
+      "tags": "[]",
+      "time": "00:45:00",
+      "ingredients": [
+        {
+          "ingredient": "Salt",
+          "quantity": "1/2",
+          "unit": "tsp",
+          "id": "sel",
+          "prep": "",
+          "group": "Roasted vegetables"
+        },
+        {
+          "ingredient": "Coriander",
+          "quantity": "1/2",
+          "unit": "tsp",
+          "id": "gc",
+          "prep": "",
+          "group": "Roasted vegetables"
+        },
+        {
+          "ingredient": "Olive oil",
+          "quantity": "2",
+          "unit": "tbsp",
+          "id": "oil",
+          "prep": "",
+          "group": "Roasted vegetables"
+        },
+        {
+          "ingredient": "Sriracha",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "sri",
+          "prep": "",
+          "group": "Roasted vegetables"
+        },
+        {
+          "ingredient": "Sweet potatoes",
+          "quantity": "2",
+          "unit": "",
+          "id": "sp",
+          "prep": "Chopped",
+          "group": "Roasted vegetables"
+        },
+        {
+          "ingredient": "Cherry tomatoes",
+          "quantity": "1",
+          "unit": "pint",
+          "id": "ct",
+          "prep": "Halved",
+          "group": "Roasted vegetables"
+        },
+        {
+          "ingredient": "Black lentils",
+          "quantity": "1",
+          "unit": "cups",
+          "id": "bl",
+          "prep": "",
+          "group": "Black Lentils"
+        },
+        {
+          "ingredient": "Red wine vinegar",
+          "quantity": "1+1/2",
+          "unit": "tbsp",
+          "id": "rwv",
+          "prep": "",
+          "group": "Black Lentils"
+        },
+        {
+          "ingredient": "Honey",
+          "quantity": "1/2",
+          "unit": "tbsp",
+          "id": "hon",
+          "prep": "",
+          "group": "Black Lentils"
+        },
+        {
+          "ingredient": "Sriracha",
+          "quantity": "1",
+          "unit": "tbsp",
+          "id": "sri2",
+          "prep": "",
+          "group": "Black Lentils"
+        },
+        {
+          "ingredient": "Oil",
+          "quantity": "1+1/2",
+          "unit": "tbsp",
+          "id": "oil2",
+          "prep": "",
+          "group": "Black Lentils"
+        },
+        {
+          "ingredient": "Cilantro",
+          "quantity": "1/4",
+          "unit": "cups",
+          "id": "cil",
+          "prep": "Chopped",
+          "group": "Black Lentils"
+        }
+      ],
+      "instructions": [
+        "Preheat the oven to 425.",
+        "[&: Cook lentils | 00:25:00] While the oven heats up, bring a pot of water to a boil and add in the [#: bl | lentils]. Lower the heat to a simmer and cook for 25-30 minutes. When the timers up, drain and transfer to a large bowl.",
+        "On a rimmed baking sheet, lay out the [#: sp | sweet potato] and [#: ct | cherry tomatoes].",
+        "In a small bowl, whisk together the [#: gc | coriander], [#: sel | salt], [#: oil | olive oil] and [#: sri | sriracha]. Pour the mixture over the vegetables (save the bowl).",
+        "[&: Roast vegetables | 00:25:00] Roast for 25-30 minutes, until the sweet potato is tender. Toss the vegetables about half way through.",
+        "In the saved sriracha bowl, whisk in the [#: rwv | vinegar], [#: hon | honey], [#: sri2 | sriracha] and [#: oil2 | olive oil], season with salt and pepper to taste.",
+        "Pour about half of the dressing straight on the lentils and mix in.",
+        "To serve add the roasted sweet potato and tomatoes on top of a bowl of lentils. Top with more vinaigrette and more cilantro/parsley."
+      ],
+      "commentary": {
+        "kind": "haiku",
+        "val": [
+          "Spicey Spicey Lentil."
+        ]
+      }
     }
   }
 }
