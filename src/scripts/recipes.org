@@ -387,7 +387,7 @@
 |-------------------+----------+--------+--------------+----------+-------|
 | Sweet Potato      |        1 | large  | potato-sweet |          |       |
 | Nutritional yeast |        2 | tbsp   | parm         | optional |       |
-| Flour             |      1/3 | cups   | flour        |          |       |
+| Flour             |    1+1/3 | cups   | flour        |          |       |
 | Salt              |      1/2 | tsp    | salt         |          |       |
 | Cherry tomatoes   |      250 | grams  | tomatoes     |          |       |
 | Coconut oil       |        2 | tbsp   | coco-oil     |          |       |
