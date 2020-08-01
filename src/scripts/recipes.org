@@ -2529,7 +2529,7 @@
 | Eggs            |        3 |        | egg   | whisked           |       |
 | Curry powder    |        1 | tsp    | cp    |                   |       |
 | Flour           |      1/2 | cups   | flour |                   |       |
-| Jalapeno        |        1 | 1      | jal   | sliced or pickled |       |
+| Jalapeno        |        1 |        | jal   | sliced or pickled |       |
 | Yogurt          |        1 | cups   | yog   |                   |       |
 | Cucumber        |        1 | cups   | cuc   | sliced            |       |
 ** Steps
@@ -2543,7 +2543,7 @@
 7. It's patty time! Make patties about the size of your hand until there is no mixture left.
 8. [&: Fry fritters | 00:08:00 ] Heat a skillet until hot. Add oil, and start to fry your fritters. Fry them for about 4 minutes on each side.
 9. Optionally, heat up an oven to keep fritters warm while others cook. This can add a nice crisp to them.
-10. Cut up cucumber and dish [#: yog | yogurt] into a bowl. Slice avocado. Plate avocado and cucumber, alongside fritters with a dollop of yogurt. Optionally, add rings of [#: jalapeno | jal].
+10. Cut up cucumber and dish [#: yog | yogurt] into a bowl. Slice avocado. Plate avocado and cucumber, alongside fritters with a dollop of yogurt. Optionally, add rings of [#: jal | jalapeno].
 ** Content
 :PROPERTIES:
 :type: big-quote
@@ -2594,3 +2594,50 @@
 :type: haiku
 :END:
 - Spicey Spicey Lentil.
+* Sweet Potato Balls with Tomato Sauce
+:PROPERTIES:
+:belongs_to:      main
+:date_made:       [2020-07-10]
+:ease_of_making:  4/5
+:imgs:            ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type:       vegetarian
+:name: Sweet Potato Balls with Tomato Sauce
+:original_recipe:
+:rating:          3.5/5
+:serves:          4
+:slug:            sweet-potato-balls
+:tags:            ["spicey", "no-grain"]
+:time:            01:00:00
+:END:
+** Ingredients
+| Ingredient      | Quantity | Unit   | Id      | Prep    | Group |
+|-----------------+----------+--------+---------+---------+-------|
+| Sweet potato    |        2 |        | sp      | Chopped |       |
+| Almond flour    |      3/4 | cups   | af      |         |       |
+| Canned tomatoes |       28 | oz     | ct      |         |       |
+| Feta cheese     |          |        | fc      |         |       |
+| Onion           |        1 |        | on      | Chopped |       |
+| Carrots         |        2 | cups   | car     | Grated  |       |
+| Spinach         |        2 | cups   | spi     |         |       |
+| Basil           |        2 | tsp    | basi    | Chopped |       |
+| Bell pepper     |        1 |        | bp      | Chopped |       |
+| Garlic          |        2 | cloves | gar     | Minced  |       |
+| Coconut oil     |        1 | tsp    | cocoil  |         |       |
+| Cumin           |      1.5 | tbsp   | cumin   |         |       |
+| Paprika         |      1.5 | tbsp   | paprika |         |       |
+| Chili flakes    |        1 | tsp    | chfl    |         |       |
+** Steps
+1. [&: 1. Boil potatoes | 00:20:00] Boil [#: sp | sweet potatoes] for 20 minutes or until soft.
+2. Drain potatoes and move back into pot. Mash the potatoes.
+3. Add [#: on | onion], [#: af | flour], feta, [#: car | carrots], spices, 1 garlic clove, salt and pepper. Mix together.
+4. [&: Refridgerate potato balls | 00:30:00] Roll mixture into balls, set in fridge for 1/2 hour.
+5. [&: Sauté balls | 00:07:00] Heat coconut oil in pan over medium. Place balls on pan, cook 7-10 minutes stirring occasionally.
+6. Meanwhile, heat saucepan over medium with 1 tbsp of olive oil. Sauté [#: bp | bell pepper], [#: spi | spinach] and remaining garlic clove for a few minutes. Add [#: ct | tomatoes] and [#: basi | basil] and simmer for 10 minutes.
+7. Place balls in bowl and pour tomato mix over top.
+** Content
+:PROPERTIES:
+:type: haiku
+:END:
+- Patiently we sit
+- For the evening, or for
+- our dinner to cool.

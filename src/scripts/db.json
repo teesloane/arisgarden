@@ -7326,7 +7326,7 @@
         {
           "ingredient": "Jalapeno",
           "quantity": "1",
-          "unit": "1",
+          "unit": "",
           "id": "jal",
           "prep": "sliced or pickled",
           "group": ""
@@ -7358,7 +7358,7 @@
         "It's patty time! Make patties about the size of your hand until there is no mixture left.",
         "[&: Fry fritters | 00:08:00 ] Heat a skillet until hot. Add oil, and start to fry your fritters. Fry them for about 4 minutes on each side.",
         "Optionally, heat up an oven to keep fritters warm while others cook. This can add a nice crisp to them.",
-        "Cut up cucumber and dish [#: yog | yogurt] into a bowl. Slice avocado. Plate avocado and cucumber, alongside fritters with a dollop of yogurt. Optionally, add rings of [#: jalapeno | jal]."
+        "Cut up cucumber and dish [#: yog | yogurt] into a bowl. Slice avocado. Plate avocado and cucumber, alongside fritters with a dollop of yogurt. Optionally, add rings of [#: jal | jalapeno]."
       ],
       "commentary": {
         "kind": "big-quote",
@@ -7496,6 +7496,155 @@
         "kind": "haiku",
         "val": [
           "Spicey Spicey Lentil."
+        ]
+      }
+    },
+    "sweet-potato-balls": {
+      "belongs_to": "main",
+      "date_made": "[2020-07-10]",
+      "ease_of_making": "4/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegetarian",
+      "name": "Sweet Potato Balls with Tomato Sauce",
+      "original_recipe": "",
+      "rating": "3.5/5",
+      "serves": "4",
+      "slug": "sweet-potato-balls",
+      "tags": "[\"spicey\", \"no-grain\"]",
+      "time": "01:00:00",
+      "ingredients": [
+        {
+          "ingredient": "Sweet potato",
+          "quantity": "2",
+          "unit": "",
+          "id": "sp",
+          "prep": "Chopped",
+          "group": ""
+        },
+        {
+          "ingredient": "Almond flour",
+          "quantity": "3/4",
+          "unit": "cups",
+          "id": "af",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Canned tomatoes",
+          "quantity": "28",
+          "unit": "oz",
+          "id": "ct",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Feta cheese",
+          "quantity": "",
+          "unit": "",
+          "id": "fc",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Onion",
+          "quantity": "1",
+          "unit": "",
+          "id": "on",
+          "prep": "Chopped",
+          "group": ""
+        },
+        {
+          "ingredient": "Carrots",
+          "quantity": "2",
+          "unit": "cups",
+          "id": "car",
+          "prep": "Grated",
+          "group": ""
+        },
+        {
+          "ingredient": "Spinach",
+          "quantity": "2",
+          "unit": "cups",
+          "id": "spi",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Basil",
+          "quantity": "2",
+          "unit": "tsp",
+          "id": "basi",
+          "prep": "Chopped",
+          "group": ""
+        },
+        {
+          "ingredient": "Bell pepper",
+          "quantity": "1",
+          "unit": "",
+          "id": "bp",
+          "prep": "Chopped",
+          "group": ""
+        },
+        {
+          "ingredient": "Garlic",
+          "quantity": "2",
+          "unit": "cloves",
+          "id": "gar",
+          "prep": "Minced",
+          "group": ""
+        },
+        {
+          "ingredient": "Coconut oil",
+          "quantity": "1",
+          "unit": "tsp",
+          "id": "cocoil",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Cumin",
+          "quantity": "1.5",
+          "unit": "tbsp",
+          "id": "cumin",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Paprika",
+          "quantity": "1.5",
+          "unit": "tbsp",
+          "id": "paprika",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Chili flakes",
+          "quantity": "1",
+          "unit": "tsp",
+          "id": "chfl",
+          "prep": "",
+          "group": ""
+        }
+      ],
+      "instructions": [
+        "[&: 1. Boil potatoes | 00:20:00] Boil [#: sp | sweet potatoes] for 20 minutes or until soft.",
+        "Drain potatoes and move back into pot. Mash the potatoes.",
+        "Add [#: on | onion], [#: af | flour], feta, [#: car | carrots], spices, 1 garlic clove, salt and pepper. Mix together.",
+        "[&: Refridgerate potato balls | 00:30:00] Roll mixture into balls, set in fridge for 1/2 hour.",
+        "[&: Sauté balls | 00:07:00] Heat coconut oil in pan over medium. Place balls on pan, cook 7-10 minutes stirring occasionally.",
+        "Meanwhile, heat saucepan over medium with 1 tbsp of olive oil. Sauté [#: bp | bell pepper], [#: spi | spinach] and remaining garlic clove for a few minutes. Add [#: ct | tomatoes] and [#: basi | basil] and simmer for 10 minutes.",
+        "Place balls in bowl and pour tomato mix over top."
+      ],
+      "commentary": {
+        "kind": "haiku",
+        "val": [
+          "Patiently we sit",
+          "For the evening, or for",
+          "our dinner to cool."
         ]
       }
     }
