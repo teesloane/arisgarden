@@ -2400,11 +2400,10 @@
  5. Once combined, use your hands to roll the mixture into 20 - 24 balls.
  6. Lightly coat the outside of each ball with olive oil and add it to the baking sheet.
  7. Cook the balls for 30 minutes, turning them over half way through.
- 8. While the balls cook the curry cream sauce.
- 9. Heat olive oil in a sauce pan then add the [#: bo | onion], [#: gar | garlic], [#: redch | chilies], [#: dij | mustard], [#: cumin2 | cumin] and [#: tur |  turmeric]. Let cook, stirring occasionally, for 4-5 minutes.
- 10. Add the [#: tom | tomatoes], [#: wa | water], [#: com | coconut milk], [#: dc2 | coriander], and a bit of salt and pepper. Cook at a simmer for 10 minutes.
- 11. Add in the [#: cash | cashews] and cook for 5 more minutes.
- 12. When the Cauliflower-Potato balls come out of the oven, serve in a bowl or rimmed plate and pour the curry sauce over top.
+ 8. While the balls cook, prepare the curry cream sauce: heat olive oil in a sauce pan then add the [#: bo | onion], [#: gar | garlic], [#: redch | chilies], [#: dij | mustard], [#: cumin2 | cumin] and [#: tur |  turmeric]. Let cook, stirring occasionally, for 4-5 minutes.
+ 9. Add the [#: tom | tomatoes], [#: wa | water], [#: com | coconut milk], [#: dc2 | coriander], and a bit of salt and pepper. Cook at a simmer for 10 minutes.
+ 10. Add in the [#: cash | cashews] and cook for 5 more minutes.
+ 11. When the Cauliflower-Potato balls come out of the oven, serve in a bowl or rimmed plate and pour the curry sauce over top.
 ** Content
 :PROPERTIES:
 :type: whisper
