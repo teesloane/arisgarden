@@ -2595,7 +2595,7 @@
 - Spicey Spicey Lentil.
 * Challah Bread
 :PROPERTIES:
-:belongs_to:      main
+:belongs_to:      sweet
 :date_made:       [2020-05-07 Thu]
 :ease_of_making:  3/5
 :imgs:            ["1.jpg", "2.jpg", "3.jpg"]
