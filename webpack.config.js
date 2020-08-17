@@ -124,7 +124,6 @@ if (MODE === "development") {
       contentBase: path.join(__dirname, "src/assets"),
       historyApiFallback: true,
       port: process.env.PORT || 3000,
-      public: "arisgarden.bof", // hotel typicode addr.
       // feel free to delete this section if you don't need anything like this
       before(app) {
         // on port 3000

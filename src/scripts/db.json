@@ -7497,6 +7497,131 @@
           "Spicey Spicey Lentil."
         ]
       }
+    },
+    "challah-bread": {
+      "belongs_to": "main",
+      "date_made": "[2020-05-07 Thu]",
+      "ease_of_making": "3/5",
+      "imgs": [
+        "1.jpg",
+        "2.jpg",
+        "3.jpg"
+      ],
+      "meal_type": "vegetarian",
+      "name": "Challah Bread",
+      "original_recipe": "https://en.wikipedia.org/wiki/Joy_of_Cooking",
+      "rating": "4/5",
+      "serves": "2 Loaves",
+      "slug": "challah-bread",
+      "tags": "[\"bread\", \"baking\"]",
+      "time": "04:00:00",
+      "ingredients": [
+        {
+          "ingredient": "Warm Water",
+          "quantity": "",
+          "unit": "",
+          "id": "",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Salt",
+          "quantity": "",
+          "unit": "",
+          "id": "",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Sugar",
+          "quantity": "",
+          "unit": "",
+          "id": "",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Flour",
+          "quantity": "6",
+          "unit": "cups",
+          "id": "flour",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Yeast",
+          "quantity": "4",
+          "unit": "tsp",
+          "id": "ye",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Eggs",
+          "quantity": "3",
+          "unit": "",
+          "id": "eggs",
+          "prep": "slightly beaten",
+          "group": ""
+        },
+        {
+          "ingredient": "Egg Yolk",
+          "quantity": "1",
+          "unit": "",
+          "id": "",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Vegetable oil",
+          "quantity": "1/4",
+          "unit": "cups",
+          "id": "voil",
+          "prep": "",
+          "group": ""
+        },
+        {
+          "ingredient": "Poppy seeds",
+          "quantity": "2",
+          "unit": "tbsp",
+          "id": "",
+          "prep": "optional",
+          "group": ""
+        },
+        {
+          "ingredient": "Baking sheets",
+          "quantity": "2",
+          "unit": "",
+          "id": "",
+          "prep": "",
+          "group": ""
+        }
+      ],
+      "instructions": [
+        "Combine [#: ye | yeast] with 1 tsp of sugar and 1/4 cup of warm water.",
+        "In a large bowl, add [#: flour | flour] and 1 tbsp of salt.",
+        "Make a \"well\" in the flour and pour in the yeast mixture. Combine.",
+        "Add to the mixture: 2 cups of warm water, [#: eggs | slightly beaten eggs], [#: voil | vegetable oil], 3 tbsp of sugar.",
+        "Beat well until a ball of dough is formed. It will be pretty oily and damp, but don't stress.",
+        "Put dough on well-floured board and knead for about 10 minutes, until smooth and elastic.",
+        "[&: Let dough rise | 01:00:00] Place in a greased bowl, cover and allow to rise until doubled in size (about 1 hour).",
+        "Punch down dough and divide into two sections. Knead both for several minutes.",
+        "Make the braids: cut each section of dough into 3 parts and roll between hands or on a board into long tapered cylinders.",
+        "Using the three ropes of dough, lay them side by side on a greased floured sheet. Braid them loosely from center to end. Repeat with the other three ropes of dough.",
+        "Finish the ends by tucking them under the dough.",
+        "Cover with a damp tea towel and let rise until almost doubled in bulk.",
+        "Brush tops with egg wash (1 egg yolk diluted with 1 to 2 tbsp of milk or water).",
+        "sprinkle with poppy seeds.",
+        "Bake for 15 minutes in the oven at 400 degrees.",
+        "Reduce oven heat to 375 and bake about 45 minutes longer."
+      ],
+      "commentary": {
+        "kind": "blurb",
+        "val": [
+          "This recipe was definitely more challenging (and nerve racking!) I had made pretzels before, but never braided three big braids of dough.",
+          "I found the dough to be very wet in the process of kneading, so I frequently added a bit of flour to prevent sticking."
+        ]
+      }
     }
   }
 }

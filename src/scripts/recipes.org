@@ -2593,3 +2593,56 @@
 :type: haiku
 :END:
 - Spicey Spicey Lentil.
+* Challah Bread
+:PROPERTIES:
+:belongs_to:      main
+:date_made:       [2020-05-07 Thu]
+:ease_of_making:  3/5
+:imgs:            ["1.jpg", "2.jpg", "3.jpg"]
+:meal_type:       vegetarian
+:name:            Challah Bread
+:original_recipe: https://en.wikipedia.org/wiki/Joy_of_Cooking
+:rating:          4/5
+:serves:          2 Loaves
+:slug:            challah-bread
+:tags:            ["bread", "baking"]
+:time:            04:00:00
+:END:
+** Ingredients
+| Ingredient    | Quantity | Unit | Id    | Prep            | Group |
+|---------------+----------+------+-------+-----------------+-------|
+| Warm Water    |          |      |       |                 |       |
+| Salt          |          |      |       |                 |       |
+| Sugar         |          |      |       |                 |       |
+| Flour         |        6 | cups | flour |                 |       |
+| Yeast         |        4 | tsp  | ye    |                 |       |
+| Eggs          |        3 |      | eggs  | slightly beaten |       |
+| Egg Yolk      |        1 |      |       |                 |       |
+| Vegetable oil |      1/4 | cups | voil  |                 |       |
+| Poppy seeds   |        2 | tbsp |       | optional        |       |
+| Baking sheets |        2 |      |       |                 |       |
+
+** Steps
+1. Combine [#: ye | yeast] with 1 tsp of sugar and 1/4 cup of warm water.
+2. In a large bowl, add [#: flour | flour] and 1 tbsp of salt.
+3. Make a "well" in the flour and pour in the yeast mixture. Combine.
+4. Add to the mixture: 2 cups of warm water, [#: eggs | slightly beaten eggs], [#: voil | vegetable oil], 3 tbsp of sugar.
+5. Beat well until a ball of dough is formed. It will be pretty oily and damp, but don't stress.
+6. Put dough on well-floured board and knead for about 10 minutes, until smooth and elastic.
+7. [&: Let dough rise | 01:00:00] Place in a greased bowl, cover and allow to rise until doubled in size (about 1 hour).
+8. Punch down dough and divide into two sections. Knead both for several minutes.
+9. Make the braids: cut each section of dough into 3 parts and roll between hands or on a board into long tapered cylinders.
+10. Using the three ropes of dough, lay them side by side on a greased floured sheet. Braid them loosely from center to end. Repeat with the other three ropes of dough.
+11. Finish the ends by tucking them under the dough.
+12. Cover with a damp tea towel and let rise until almost doubled in bulk.
+13. Brush tops with egg wash (1 egg yolk diluted with 1 to 2 tbsp of milk or water).
+14. sprinkle with poppy seeds.
+15. Bake for 15 minutes in the oven at 400 degrees.
+16. Reduce oven heat to 375 and bake about 45 minutes longer.
+
+** Content
+:PROPERTIES:
+:type: blurb
+:END:
+- This recipe was definitely more challenging (and nerve racking!) I had made pretzels before, but never braided three big braids of dough.
+- I found the dough to be very wet in the process of kneading, so I frequently added a bit of flour to prevent sticking.
