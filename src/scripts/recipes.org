@@ -1204,7 +1204,7 @@
 1) Heat oil in large saucepan on high.
 2) [&: Cook onion | 00:03:00] Cook white and pale-green parts of green onions (save the green
    ends) and the [#: gar | garlic] and [#: ging | ginger]. Stir often, about 3 minutes.
-3) Add [#: vegbro | broth]. Whisk in [#: go | gochujang] and [#: soy | soy sauce].
+3) Add [#: vegbro | broth]. Whisk in [#: gochu | gochujang] and [#: soy | soy sauce].
 4) [&: Simmer | 00:15:00] Add daikon (or radish if you don't have daikon). Simmer for 15-20 minutes.
 5) Add kimchi and tofu. Simmer until tofu is heated through.
 6) Divide among bowls, add thinly sliced green onion on top.
