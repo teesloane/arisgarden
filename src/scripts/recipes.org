@@ -922,7 +922,7 @@
 | Cumin              | 1/2      | tsp    | cumin     | Main              |          |
 | Coriander          | 1/2      | tsp    | cor       | Main              |          |
 | Cinnamon           | 1/2      | tsp    | cin       | Main              |          |
-| Paprika            | l        | tsp    | pap       | Main              |          |
+| Paprika            | 1        | tsp    | pap       | Main              |          |
 | Hummus             | 1/4      | cup    | hum       | Garlic Herb Sauce |          |
 | Dill (dried)       | 1        | tsp    | dill      | Garlic Herb Sauce |          |
 | Garlic             | 3        | cloves | garlic    | Garlic Herb Sauce |          |
